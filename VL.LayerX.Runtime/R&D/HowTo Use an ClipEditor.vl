@@ -347,26 +347,39 @@
           </Node>
           <Pad Id="Uo8dDe4JFOUN3HJoGp14hA" Comment="Sources" Bounds="1273,1989,190,132" ShowValueBox="true" isIOBox="true" />
           <Pad Id="FRa8ceTgnqSOJ6jFN1gb5X" Comment="Model Stream" Bounds="979,1995,190,132" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="282,1239,85,19" Id="OVlV1q9GWTyOksLvBLSCVT">
+          <Node Bounds="282,1239,92,19" Id="OVlV1q9GWTyOksLvBLSCVT">
             <p:NodeReference LastCategoryFullName="LayerX" LastDependency="VL.LayerX.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="ClipEditor" />
+              <Choice Kind="ProcessAppFlag" Name="ClipComposition" />
             </p:NodeReference>
             <Pin Id="J5yLja3K6NUPm8D742ucD7" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="PdVQyyj27GlLQlp7N7lKbY" Name="Model" Kind="InputPin">
               <p:DefaultValue xmlns:r="reflection" r:Version="2">
                 <Clips>
-                  <Item Key="5157255f-af63-44a1-8224-a34941464678">
-                    <Value Alpha="1" Duration="0.5" Enabled="True" ID="5157255f-af63-44a1-8224-a34941464678" Position="1.5">
+                  <Item Key="8a6dcaa5-85b7-4826-9388-5f92c80b2c0b">
+                    <Value Alpha="1" Duration="0.5" Enabled="True" ID="8a6dcaa5-85b7-4826-9388-5f92c80b2c0b" Position="1.5">
                       <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
                       <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                      <Blending_Model r:Type="MultiplyBlendingModel [AlchemX.Blending.Model]" />
-                      <Layer_Model Global_Channel_Path="MyGlobalChannel" r:Type="GlobalChannelLayerModel [LayerX.Layer]" />
+                      <Blending_Model r:Type="AdditiveBlendingModel [AlchemX.Blending.Model]" />
+                      <Layer_Model r:Type="LayerSourceLayerModel [LayerX.Layer]">
+                        <Source_Key r:Type="String [Primitive]">MySineLayer</Source_Key>
+                      </Layer_Model>
                       <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
                     </Value>
                   </Item>
-                  <Item Key="c9538a1a-e2ec-4755-86d2-f43e94d53f35">
-                    <Value Alpha="1" Duration="3" Enabled="True" ID="c9538a1a-e2ec-4755-86d2-f43e94d53f35" Position="1">
+                  <Item Key="86d37395-bf85-4989-b500-268b493c27d5">
+                    <Value Alpha="1" Duration="3" Enabled="True" ID="86d37395-bf85-4989-b500-268b493c27d5" Position="0.5">
+                      <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
+                      <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
+                      <Blending_Model r:Type="AdditiveBlendingModel [AlchemX.Blending.Model]" />
+                      <Layer_Model r:Type="ValueLayerModel [LayerX.Layer]">
+                        <Value r:Type="Float32 [Primitive]">0.1</Value>
+                      </Layer_Model>
+                      <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
+                    </Value>
+                  </Item>
+                  <Item Key="99131805-9e1f-43fa-b243-51befb04dc94">
+                    <Value Alpha="1" Duration="0.3" Enabled="True" ID="99131805-9e1f-43fa-b243-51befb04dc94" Position="1">
                       <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
                       <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
                       <Blending_Model r:Type="AdditiveBlendingModel [AlchemX.Blending.Model]" />
@@ -376,25 +389,12 @@
                       <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
                     </Value>
                   </Item>
-                  <Item Key="31ae60d9-ad09-419a-9e71-1384f2f6e334">
-                    <Value Alpha="1" Duration="3" Enabled="True" ID="31ae60d9-ad09-419a-9e71-1384f2f6e334" Position="0.5">
+                  <Item Key="79157c38-c5ec-477d-8139-ce781855bd68">
+                    <Value Alpha="1" Duration="3" Enabled="True" ID="79157c38-c5ec-477d-8139-ce781855bd68" Position="1.5">
                       <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
                       <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                      <Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                      <Layer_Model r:Type="ValueLayerModel [LayerX.Layer]">
-                        <Value r:Type="Float32 [Primitive]">0.1</Value>
-                      </Layer_Model>
-                      <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
-                    </Value>
-                  </Item>
-                  <Item Key="cefb37fe-44b2-4f42-afdf-72edd0487ef9">
-                    <Value Alpha="1" Duration="0.5" Enabled="True" ID="cefb37fe-44b2-4f42-afdf-72edd0487ef9" Position="1.5">
-                      <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                      <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                      <Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                      <Layer_Model r:Type="LayerSourceLayerModel [LayerX.Layer]">
-                        <Source_Key r:Type="String [Primitive]">MySineLayer</Source_Key>
-                      </Layer_Model>
+                      <Blending_Model r:Type="MultiplyBlendingModel [AlchemX.Blending.Model]" />
+                      <Layer_Model Global_Channel_Path="MyGlobalChannel" r:Type="GlobalChannelLayerModel [LayerX.Layer]" />
                       <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
                     </Value>
                   </Item>
@@ -407,9 +407,8 @@
             <Pin Id="GyIrExAhsJVOQQ7iDYiv69" Name="Sampling Position" Kind="InputPin" />
             <Pin Id="NPxDay9UXQbPhMAWujz10A" Name="Output" Kind="StateOutputPin" />
             <Pin Id="PZnrlGechLWLKuYRiZ6klk" Name="Value" Kind="OutputPin" />
-            <Pin Id="RizdGvl7TaWM5eCldbY79y" Name="LFO" Kind="InputPin" />
-            <Pin Id="OzquhWMCL1ZOgZLhJ8XsUG" Name="MySineLayer" Kind="InputPin" />
-            <Pin Id="FntQrFQSC4iNWbzHj2EijO" Name="Random" Kind="InputPin" />
+            <Pin Id="PSYWFi53pkUM6u3q7bZMeQ" Name="LFO" Kind="InputPin" />
+            <Pin Id="StjXz9vkOflLCuxWaKpfqG" Name="MySineLayer" Kind="InputPin" />
           </Node>
           <Pad Id="CgnqEP30gHhNT8kT5Xpg4C" Comment="" Bounds="-169,1360,506,293" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Bhp9zqwYiWsQYFyzZtCdqc" Comment="LFO" Bounds="835,1726,35,35" ShowValueBox="true" isIOBox="true">
@@ -831,9 +830,9 @@
                 <Pin Id="E4M8vovZ8rFO645n5Ojr13" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="1329,1317,91,26" Id="O0EumOvxmOdMNm1HX3AafU">
-                <p:NodeReference LastCategoryFullName="LayerX.ClipEditor" LastDependency="VL.LayerX.vl">
+                <p:NodeReference LastCategoryFullName="LayerX.ClipComposition" LastDependency="VL.LayerX.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="ClipEditor" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="ClassType" Name="ClipComposition" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetModelStream" />
                 </p:NodeReference>
                 <Pin Id="EKDEKnHyD0iLl4sLk9tX1D" Name="Input" Kind="StateInputPin" />
@@ -883,7 +882,7 @@
               <Choice Kind="TypeFlag" Name="Float64" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Mw0L0W2xiI2O8ddjVcH5Lv" Comment="Duration" Bounds="1572,725,35,15" ShowValueBox="true" isIOBox="true" Value="3">
+          <Pad Id="Mw0L0W2xiI2O8ddjVcH5Lv" Comment="Duration" Bounds="1572,725,35,15" ShowValueBox="true" isIOBox="true" Value="0.3">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float64" />
             </p:TypeAnnotation>
@@ -911,7 +910,7 @@
               <Choice Kind="TypeFlag" Name="Float64" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Ust849Xcd1KMSpzWSkZGpF" Comment="Duration" Bounds="1937,738,35,15" ShowValueBox="true" isIOBox="true" Value="0.5">
+          <Pad Id="Ust849Xcd1KMSpzWSkZGpF" Comment="Duration" Bounds="1937,738,35,15" ShowValueBox="true" isIOBox="true" Value="3">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float64" />
             </p:TypeAnnotation>
@@ -1040,10 +1039,10 @@
               <Choice Kind="TypeFlag" Name="Float64" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="228,2002,56,26" Id="OTrjHIZ2qfCLaeTk1c912G">
-            <p:NodeReference LastCategoryFullName="LayerX.ClipEditor" LastDependency="VL.LayerX.vl">
+          <Node Bounds="228,2002,76,26" Id="OTrjHIZ2qfCLaeTk1c912G">
+            <p:NodeReference LastCategoryFullName="LayerX.ClipComposition" LastDependency="VL.LayerX.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="ClassType" Name="ClipEditor" NeedsToBeDirectParent="true" />
+              <CategoryReference Kind="ClassType" Name="ClipComposition" NeedsToBeDirectParent="true" />
               <Choice Kind="OperationCallFlag" Name="GetLayer" />
             </p:NodeReference>
             <Pin Id="HyIbEa9SaaNNhrgvhKK3Lw" Name="Input" Kind="StateInputPin" />
@@ -1059,9 +1058,10 @@
             <Pin Id="Pw2p7HOYgJdQCdUjUr1ola" Name="Input" Kind="InputPin" />
             <Pin Id="OsS4kJtiAsDMrIpJtfJ26g" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="-1041,1325,68,26" Id="GNjcTQGH8SbOECHoaEdQfW">
-            <p:NodeReference LastCategoryFullName="LayerX.ClipEditor" LastDependency="VL.LayerX.vl">
+          <Node Bounds="-1041,1325,76,26" Id="GNjcTQGH8SbOECHoaEdQfW">
+            <p:NodeReference LastCategoryFullName="LayerX.ClipComposition" LastDependency="VL.LayerX.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="ClipComposition" NeedsToBeDirectParent="true" />
               <Choice Kind="OperationCallFlag" Name="GetContext" />
             </p:NodeReference>
             <Pin Id="UJDvDImAHrmO4OpaqGjeKS" Name="Input" Kind="StateInputPin" />
@@ -1220,6 +1220,40 @@
           </Node>
           <Pad Id="MFKach2VguKNZoFLCccXNw" Comment="" Bounds="-113,2362,190,132" ShowValueBox="true" isIOBox="true" />
           <Pad Id="TQeij2EAHQPNFMswTYnhjx" Comment="Values" Bounds="-1075,1939,503,1033" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BvYQpEVntsYLUE1KeSzgrs" Comment="Sampling Position" Bounds="14,1128,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float64" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="82,1074,65,19" Id="JpvwgtI9Q17LTjz2a2xqs2">
+            <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Integrator" />
+            </p:NodeReference>
+            <Pin Id="B0kxZ52nFSMMa8XuNdXlWc" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="KCaMpibGVKJMsya39r7QMi" Name="Initial Value" Kind="InputPin" />
+            <Pin Id="J4Vkd6IHk3hNAAQi6WEfaj" Name="Offset" Kind="InputPin" />
+            <Pin Id="VrB6uIS3GywQRAhDIiuuiP" Name="Reset Value" Kind="InputPin" />
+            <Pin Id="NHYtQXU6eHIQMdYVMMahvv" Name="Value" Kind="OutputPin" />
+            <Pin Id="HHHnOnvHuf4OC1019Hm8Mx" Name="Reset" Kind="InputPin" />
+          </Node>
+          <Pad Id="UdqBVznTjfJO9GcaMupNxd" Comment="Offset" Bounds="78,1023,35,15" ShowValueBox="true" isIOBox="true" Value="0.003">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">3</p:precision>
+              <p:stepsize p:Type="Single">0.01</p:stepsize>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Jjn9lQKFO1COumEbExOCdE" Comment="Reset" Bounds="159,1042,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="FSVHgsUJMVHN69WuqjNh39" Name="Create" />
         <Patch Id="IZujogNUJB3NANeh5TC7vE" Name="Update" />
@@ -1257,9 +1291,6 @@
         <Link Id="CRNmJYNPEjoLLTG1SlMNnV" Ids="OMDUsOchJuIOB986Uompu6,FRa8ceTgnqSOJ6jFN1gb5X" />
         <Link Id="SrHcxWtG5ZuMSxYJXajlZm" Ids="C1ntOLR9XpwLlYewIsPBBX,KBk7io7ef59MkhWyr1FQZq" />
         <Link Id="OM1U0GcXYGkPcSxxTcP689" Ids="CwEzEMg5LxDPdrMZviuXe7,QlA82a5CxToOGHoFda8Edp" />
-        <Link Id="AQ5KHfZUcUvOHybdgcSdGC" Ids="Fd6MvvSJgMhNoaxz3t1iaX,RizdGvl7TaWM5eCldbY79y" />
-        <Link Id="GDQaxOdYBTaPyprjroJLrG" Ids="R4FguDf5anqMHREN5Qkmie,OzquhWMCL1ZOgZLhJ8XsUG" />
-        <Link Id="Mz8jfCfKupALDPQdrgjoyZ" Ids="ANkRNPkEWk0PsV9N6TYT3X,FntQrFQSC4iNWbzHj2EijO" />
         <Link Id="AXxdR1GhAkXQVe3kRN9zDe" Ids="NPxDay9UXQbPhMAWujz10A,CgnqEP30gHhNT8kT5Xpg4C" />
         <Link Id="OkHiZGC9rklPeIRJMiy7mq" Ids="SlT2178GJboQR9SZmq17OQ,QN0ptEcYnelLpt1Q2BgJo7" />
         <Link Id="F6LglROmYAULjzqIa0UP5c" Ids="B5AeCt9PdXGPhVCIOwXnro,CeteaIqQ6sbLRlCKKEKQYT" />
@@ -1383,6 +1414,13 @@
         <Link Id="MBESFTDvJGVOl9E8bdAqnX" Ids="E85LNazhYiCL541MSLZh4Z,DgLX81miGxmNpeLJjSyy4B" />
         <Link Id="VakFcZTQFNDLnUdsPMFGXn" Ids="DgLX81miGxmNpeLJjSyy4B,MFKach2VguKNZoFLCccXNw" />
         <Link Id="NUBLiAqllNWMjel7J1cLPv" Ids="FWmNhKMIs4DNO6Smr8Eb8A,TQeij2EAHQPNFMswTYnhjx" />
+        <Link Id="MSPCazLP8lMN0XNdeRLdbl" Ids="BvYQpEVntsYLUE1KeSzgrs,GyIrExAhsJVOQQ7iDYiv69" />
+        <Link Id="QSLT4tqcnMkMlX1acEtR9n" Ids="UdqBVznTjfJO9GcaMupNxd,J4Vkd6IHk3hNAAQi6WEfaj" />
+        <Link Id="IlPJL0Z59X5OmNDWIorwiE" Ids="Fd6MvvSJgMhNoaxz3t1iaX,PSYWFi53pkUM6u3q7bZMeQ" />
+        <Link Id="Gcz3ZLxoan9PE0jdNwzgRF" Ids="R4FguDf5anqMHREN5Qkmie,StjXz9vkOflLCuxWaKpfqG" />
+        <Link Id="Sy5OmJww3fILzAbx72KIfH" Ids="KNec5YFLTLZLKmLhAiv8f3,LvgTstjDdDaOPVPG9hkLtT" />
+        <Link Id="T96fqprhQKYMYjsWISX9gh" Ids="Jjn9lQKFO1COumEbExOCdE,HHHnOnvHuf4OC1019Hm8Mx" />
+        <Link Id="D5AuM206RuwPoNuxzfROeO" Ids="KNec5YFLTLZLKmLhAiv8f3,Vb1ERxV1ixXOgNrBbTRB7j" />
       </Patch>
     </Node>
   </Patch>
