@@ -1,7 +1,7 @@
 
 [Kairos] Source-Available License
 
-Version 1.0, [20/06/2023]
+Version 2.0, [11/11/2024]
 
 This license applies to the [Kairos] software (the "Software") developed by [Kairos Research lab] (the "Licensor"). By accessing or using the Software, you agree to be bound by the terms and conditions of this license.
 
