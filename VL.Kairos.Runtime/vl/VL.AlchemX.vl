@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Hatf0vcG0RkNzMrtWROKa9" LanguageVersion="2024.6.7-0196-g6a855a4938" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="Hatf0vcG0RkNzMrtWROKa9" LanguageVersion="2024.6.7-0235-g5172ef47fd" Version="0.128">
   <Patch Id="J72u6CBUd6XM3j1pxrkHyj">
     <Canvas Id="OBogDDLg1FnLWtgehpl63O" DefaultCategory="AlchemX" CanvasType="FullCategory">
       <Canvas Id="Ny82CVmyP3FMPyJVfHpPj6" Name="Interpolation" Position="260,193">
@@ -2580,10 +2580,12 @@
               <ControlPoint Id="F9SyR9GraE5LF8569Pc86c" Bounds="504,370" />
               <ControlPoint Id="F31h2nFfNjfMqw3kKRVTVc" Bounds="476,451" />
               <Node Bounds="474,403,61,19" Id="Do6eGeay48OLO52BtG8q3g">
-                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.AdaptiveLerp" LastDependency="VL.AlchemX.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Lerp" />
+                  <FullNameCategoryReference ID="AlchemX.Interpolation.AdaptiveLerp" />
+                  <Choice Kind="ProcessAppFlag" Name="Lerp" />
                 </p:NodeReference>
+                <Pin Id="GVmUiln7u6KNhrLNcmyPRX" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="H9tC0NOwYt8OAqRrDgFfhu" Name="Input" Kind="InputPin" />
                 <Pin Id="DBJvKeC3xgaMLBf83dHe1d" Name="Input 2" Kind="InputPin" />
                 <Pin Id="CjcPiKkpUVxORDXWyMJl7T" Name="Scalar" Kind="InputPin" />
@@ -2633,10 +2635,12 @@
               <ControlPoint Id="PR0WvsXjPvNLM9xn8DsFsM" Bounds="504,370" />
               <ControlPoint Id="HeSveUCRf4rLxdItx7uxk8" Bounds="476,526" />
               <Node Bounds="474,478,61,19" Id="IUVd86M0nJkMWyUBXIR8kZ">
-                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.AdaptiveLerp" LastDependency="VL.AlchemX.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Lerp" />
+                  <FullNameCategoryReference ID="AlchemX.Interpolation.AdaptiveLerp" />
+                  <Choice Kind="ProcessAppFlag" Name="Lerp" />
                 </p:NodeReference>
+                <Pin Id="CBweJUY1dqROkAEqPUAwaq" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="QuM1AuE0w6hOGW5FpBO9Ib" Name="Input" Kind="InputPin" />
                 <Pin Id="NA5rRLx1tLeLyA4qUDaF0i" Name="Input 2" Kind="InputPin" />
                 <Pin Id="GgOulqhrzf7NRERcqg0FPB" Name="Scalar" Kind="InputPin" />
@@ -3581,6 +3585,316 @@
         <Overlay Id="BwppGvktBaGMH5iGRfgo2q" Name="" Bounds="821,725,179,91">
           <p:ColorIndex p:Type="Int32">5</p:ColorIndex>
         </Overlay>
+        <Canvas Id="O2TVDCRmYY5ORvS7hlahdk" Name="AdaptiveLerp" Position="1071,791">
+          <!--
+
+    ************************ ILerp ************************
+
+-->
+          <Node Name="ILerp" Aspects="Internal" Bounds="76,82" Id="KB5j4w18mgEP7iDxivwotm">
+            <p:NodeReference>
+              <Choice Kind="InterfaceDefinition" />
+            </p:NodeReference>
+            <Patch Id="DIzqBGvxVUxPVr5cdIjdXD" IsGeneric="true" ExplicitTypeParameters="T">
+              <Canvas Id="AbG46SHLSCqLNljTEwNxuI" CanvasType="Group">
+                <Node Bounds="369,227,45,19" Id="G9s60Fp3KtEQIfC34abNQp">
+                  <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Lerp" />
+                  </p:NodeReference>
+                  <Pin Id="Ksvs8r7CPwqNQCUaBnT8Cq" Name="Input" Kind="InputPin" />
+                  <Pin Id="Msjz2OQQB30QAiwRW3frwo" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="JZllH0Ty1leLJpe0mnJlrY" Name="Scalar" Kind="InputPin" />
+                  <Pin Id="TCR6XBZTn2CLEZXQQ0nE3Q" Name="Output" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="CiPqtq8oPnZMGwvPG1fcGp" Bounds="345,165" />
+                <ControlPoint Id="QMwRqV7hMQoMFpffi1F7pd" Bounds="412,166" />
+                <ControlPoint Id="DZMNxv2kZLbN2YtLnoZ5Iw" Bounds="367,301" />
+                <ControlPoint Id="Dgk6SN6edeCLBARGTdT1XD" Bounds="510,165" />
+                <!--
+
+    ************************ CreateLerp (Adaptive Internal) ************************
+
+-->
+                <Node Name="CreateLerp (Adaptive Internal)" Bounds="733,192,100,88" Id="SS4z01RlKqwN7LlplhS7Yq">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                    <Choice Kind="OperationDefinition" Name="Operation" />
+                  </p:NodeReference>
+                  <Patch Id="DTZyYVNJHuhMsGYyh58eiS" IsGeneric="true" ExplicitTypeParameters="T">
+                    <ControlPoint Id="LWc8VtSYnbfPhPogolKZXL" Bounds="747,263" />
+                    <Link Id="SpxN8zJEbyyLM0dQDbupzg" Ids="LWc8VtSYnbfPhPogolKZXL,Ph7WBUKpUs1LucgWmsrQhD" IsHidden="true" />
+                    <ControlPoint Id="G0C36fJooqLMFXc4hLHDtm" Bounds="747,210" />
+                    <Link Id="J7YghVGX3hiMWSDmnJ4gId" Ids="GQb6Z3ol60ULUAX6l50Kzh,G0C36fJooqLMFXc4hLHDtm" IsHidden="true" />
+                    <Pin Id="GQb6Z3ol60ULUAX6l50Kzh" Name="Node Context" Kind="InputPin">
+                      <p:TypeAnnotation LastCategoryFullName="System.Reflection" LastDependency="VL.CoreLib.vl">
+                        <Choice Kind="TypeFlag" Name="NodeContext" />
+                      </p:TypeAnnotation>
+                    </Pin>
+                    <Pin Id="Ph7WBUKpUs1LucgWmsrQhD" Name="Output" Kind="OutputPin">
+                      <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.AdaptiveLerp" LastDependency="VL.AlchemX.vl">
+                        <Choice Kind="TypeFlag" Name="ILerp" />
+                        <p:TypeArguments>
+                          <TypeReference>
+                            <Choice Kind="TypeFlag" Name="T" />
+                          </TypeReference>
+                        </p:TypeArguments>
+                      </p:TypeAnnotation>
+                    </Pin>
+                  </Patch>
+                </Node>
+              </Canvas>
+              <ProcessDefinition Id="KorTuJiI4n9NluKsDBzgMs" IsHidden="true">
+                <Fragment Id="PpFb6mUR1jFLSKo9IGqmdq" Patch="UlFfivLR4ZSQWlN5Tifmqu" />
+                <Fragment Id="TKIsjO22ZZqNVpQv1xxf0i" Patch="SS4z01RlKqwN7LlplhS7Yq" />
+              </ProcessDefinition>
+              <Patch Id="UlFfivLR4ZSQWlN5Tifmqu" Name="Lerp">
+                <Pin Id="FZathjFu96HNySAqByRinV" Name="Input" Kind="InputPin">
+                  <p:TypeAnnotation p:Type="TypeParameterReference" Name="T" />
+                </Pin>
+                <Pin Id="FXTKkeMgIVMOAAxc8hSCaY" Name="Input 2" Kind="InputPin">
+                  <p:TypeAnnotation p:Type="TypeParameterReference" Name="T" />
+                </Pin>
+                <Pin Id="Is9sdC0VdNcNZ3jqIQGxwT" Name="Output" Kind="OutputPin">
+                  <p:TypeAnnotation>
+                    <Choice Kind="TypeFlag" Name="T" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="Agkx9cclFBbObqW6beQysq" Name="Scalar" Kind="InputPin" />
+              </Patch>
+              <Link Id="Lm7OpDS6OHrONavdCzbvHL" Ids="CiPqtq8oPnZMGwvPG1fcGp,Ksvs8r7CPwqNQCUaBnT8Cq" />
+              <Link Id="AGuWmRxdNjOO0FBn8Ms0zB" Ids="FZathjFu96HNySAqByRinV,CiPqtq8oPnZMGwvPG1fcGp" IsHidden="true" />
+              <Link Id="EU3apFrwKeGNDqPcUTTcP7" Ids="QMwRqV7hMQoMFpffi1F7pd,Msjz2OQQB30QAiwRW3frwo" />
+              <Link Id="IxTlfEMM07GLvr7fLfVw7P" Ids="FXTKkeMgIVMOAAxc8hSCaY,QMwRqV7hMQoMFpffi1F7pd" IsHidden="true" />
+              <Link Id="BrRVjjQjxHON532PWJPN81" Ids="TCR6XBZTn2CLEZXQQ0nE3Q,DZMNxv2kZLbN2YtLnoZ5Iw" />
+              <Link Id="JQXYQ7i7ZELOVp8Ef31fwO" Ids="DZMNxv2kZLbN2YtLnoZ5Iw,Is9sdC0VdNcNZ3jqIQGxwT" IsHidden="true" />
+              <Link Id="CWWTHWQzIFGPG5Sbwe6Aff" Ids="Dgk6SN6edeCLBARGTdT1XD,JZllH0Ty1leLJpe0mnJlrY" />
+              <Link Id="LZ3a5lJgCEePRw7XXAOlM3" Ids="Agkx9cclFBbObqW6beQysq,Dgk6SN6edeCLBARGTdT1XD" IsHidden="true" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ DefaultLerp (Internal) ************************
+
+-->
+          <Node Name="DefaultLerp (Internal)" Aspects="Internal" Bounds="76,134" Id="BTfprv4dXYpMx3NZz7j7NO">
+            <p:NodeReference>
+              <Choice Kind="ClassDefinition" />
+            </p:NodeReference>
+            <p:Interfaces>
+              <TypeReference LastCategoryFullName="AlchemX.Interpolation.AdaptiveLerp" LastDependency="VL.AlchemX.vl">
+                <Choice Kind="InterfaceTypeFlag" Name="ILerp" />
+              </TypeReference>
+            </p:Interfaces>
+            <Patch Id="GFyNjmTmqVCMvqffXCIxNg" IsGeneric="true" ExplicitTypeParameters="T">
+              <Canvas Id="QhzaE0cfrRvN46NOLSFDSu" CanvasType="Group">
+                <Node Bounds="347,225,140,19" Id="Axxc1vDcRiSPFU2jEcK5yE">
+                  <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Lerp" />
+                  </p:NodeReference>
+                  <Pin Id="NEtctnVGJTGNkCIQ3maHWk" Name="Input" Kind="InputPin" />
+                  <Pin Id="Bvv7BKaYjedOKTvdwpeCcg" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="FdPYWz5O5pwPop6veJdYps" Name="Scalar" Kind="InputPin" />
+                  <Pin Id="FFKRxLZOhqeLjAHeHICSVr" Name="Output" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="D9ImNGVuqiGM5WrVF13rfe" Bounds="349,193" />
+                <ControlPoint Id="NUS20W2cWZbLfEpLOYYq9D" Bounds="416,194" />
+                <ControlPoint Id="D3jNyLw4O6oLuH0D1VmMtM" Bounds="349,284" />
+                <ControlPoint Id="LKUoXPfMuIuNQgX4coyjO2" Bounds="484,193" />
+                <!--
+
+    ************************ CreateLerp (Internal) ************************
+
+-->
+                <Node Name="CreateLerp (Internal)" Bounds="653,188,100,112" Id="F5upfXBBM8jNvamnboEeRT">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                    <Choice Kind="OperationDefinition" Name="Operation" />
+                  </p:NodeReference>
+                  <Patch Id="KFwtsE64vwSOspB9DvhqPA" IsGeneric="true" ExplicitTypeParameters="T">
+                    <ControlPoint Id="N4XAWuwr8UWOCdUG5l7RDn" Bounds="667,283" />
+                    <Link Id="LwMoCzB7LTiOJurMxBodHQ" Ids="N4XAWuwr8UWOCdUG5l7RDn,IscR95xPlKNLaBWBBNVFNG" IsHidden="true" />
+                    <ControlPoint Id="SSqSv8cJrL9Nj8tsEIsrVV" Bounds="667,206" />
+                    <Link Id="GqPAOtQKB8yNZtNwF3IKCS" Ids="IYl87eYOov4Pue5EhVrNxq,SSqSv8cJrL9Nj8tsEIsrVV" IsHidden="true" />
+                    <Pin Id="IYl87eYOov4Pue5EhVrNxq" Name="Node Context" Kind="InputPin">
+                      <p:TypeAnnotation LastCategoryFullName="System.Reflection" LastDependency="VL.CoreLib.vl">
+                        <Choice Kind="TypeFlag" Name="NodeContext" />
+                      </p:TypeAnnotation>
+                    </Pin>
+                    <Pin Id="IscR95xPlKNLaBWBBNVFNG" Name="Output" Kind="OutputPin">
+                      <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.AdaptiveLerp" LastDependency="VL.AlchemX.vl">
+                        <Choice Kind="TypeFlag" Name="ILerp" />
+                        <p:TypeArguments>
+                          <TypeReference>
+                            <Choice Kind="TypeFlag" Name="T" />
+                          </TypeReference>
+                        </p:TypeArguments>
+                      </p:TypeAnnotation>
+                    </Pin>
+                    <Node Bounds="665,228,58,26" Id="UKTt2fOk6nRLyp2jzPfu5b">
+                      <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.AdaptiveLerp.DefaultLerp" LastDependency="VL.AlchemX.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="ClassType" Name="DefaultLerp" />
+                        <Choice Kind="OperationCallFlag" Name="Create" />
+                      </p:NodeReference>
+                      <Pin Id="GG4pCDryfANOMpI4tW0ARJ" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="OVun8BROaL9OJjiLaf6sMy" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                    </Node>
+                    <Link Id="FOAYIPSKGiINTozUKHIDPL" Ids="GG4pCDryfANOMpI4tW0ARJ,N4XAWuwr8UWOCdUG5l7RDn" />
+                  </Patch>
+                </Node>
+              </Canvas>
+              <Patch Id="Np34UEIwquBMQtb0lKTGvU" Name="Create" />
+              <ProcessDefinition Aspects="Internal" Id="FWuf7DJgIC9PPryE0EVppN" HasStateOut="true" IsHidden="true">
+                <Fragment Id="A43DbCTiN9oPjxxv91HQLp" Patch="Np34UEIwquBMQtb0lKTGvU" Enabled="true" />
+                <Fragment Id="TCxMif1WpSJNqux06zv7mb" Patch="VLMBreE3wCGQLgdpvUxDpX" Enabled="true" />
+                <Fragment Id="MP3tYDLUAIqNgenomiv3u0" Patch="F5upfXBBM8jNvamnboEeRT" />
+              </ProcessDefinition>
+              <Patch Id="VLMBreE3wCGQLgdpvUxDpX" Name="Lerp">
+                <Pin Id="Ajc0jB0RzZUPmDWf8DumnH" MergeId="228158" Name="Input" Kind="InputPin">
+                  <p:TypeAnnotation p:Type="TypeParameterReference" Name="T" />
+                </Pin>
+                <Pin Id="S66RMIxAzcqOIkICQjLlhq" MergeId="228186" Name="Input 2" Kind="InputPin">
+                  <p:TypeAnnotation p:Type="TypeParameterReference" Name="T" />
+                </Pin>
+                <Pin Id="Fg4lm6GRk2PPbgSd6alGS0" MergeId="228212" Name="Output" Kind="OutputPin">
+                  <p:TypeAnnotation>
+                    <Choice Kind="TypeFlag" Name="T" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="DSlkYBpfDgJNhQzqqh2xQ1" MergeId="243719" Name="Scalar" Kind="InputPin" />
+              </Patch>
+              <Link Id="OnjlzUrCR4TOCnVLEoDYY8" Ids="D9ImNGVuqiGM5WrVF13rfe,NEtctnVGJTGNkCIQ3maHWk" />
+              <Link Id="PJtPk1Lq5I1MKcqict4ugz" Ids="Ajc0jB0RzZUPmDWf8DumnH,D9ImNGVuqiGM5WrVF13rfe" IsHidden="true" />
+              <Link Id="MZvIDyNwYljOJblfHy5MXx" Ids="NUS20W2cWZbLfEpLOYYq9D,Bvv7BKaYjedOKTvdwpeCcg" />
+              <Link Id="DIZzZ1AHaQaOvDEtgWA5uT" Ids="S66RMIxAzcqOIkICQjLlhq,NUS20W2cWZbLfEpLOYYq9D" IsHidden="true" />
+              <Link Id="G5gahbkgkfVL6mzPB7vPdj" Ids="FFKRxLZOhqeLjAHeHICSVr,D3jNyLw4O6oLuH0D1VmMtM" />
+              <Link Id="Hul76LyYR1qNYIEDnwPeKN" Ids="D3jNyLw4O6oLuH0D1VmMtM,Fg4lm6GRk2PPbgSd6alGS0" IsHidden="true" />
+              <Link Id="G9tqjCKigXrOe4M2092Pdy" Ids="LKUoXPfMuIuNQgX4coyjO2,FdPYWz5O5pwPop6veJdYps" />
+              <Link Id="R7VawXQD9Z2LyvY6K24ZMD" Ids="DSlkYBpfDgJNhQzqqh2xQ1,LKUoXPfMuIuNQgX4coyjO2" IsHidden="true" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ Lerp ************************
+
+-->
+          <Node Name="Lerp" Bounds="76,214" Id="PuJw7g00qFML5cPnCcEnB1">
+            <p:NodeReference>
+              <Choice Kind="ContainerDefinition" />
+            </p:NodeReference>
+            <Patch Id="PVbg0Db8v2PLjtGELlQ01i" IsGeneric="true" ExplicitTypeParameters="T">
+              <Canvas Id="NMwCQJ1uLefLBwev81GKje" CanvasType="Group">
+                <Node Bounds="147,167,90,74" Id="JXECBMDKHKlMmFx2AZoaBw">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <CategoryReference Kind="Category" Name="Primitive" />
+                    <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                  </p:NodeReference>
+                  <Pin Id="Cho6ZYkjbi1MupRATmQMk4" Name="Force" Kind="InputPin" DefaultValue="False" />
+                  <Pin Id="D3oqnMTgqhqPp9yZjqMmFO" Name="Dispose Cached Outputs" Kind="InputPin" DefaultValue="True" />
+                  <Pin Id="PQVnHZv24UsNG7xnRY9nPo" Name="Has Changed" Kind="OutputPin" />
+                  <ControlPoint Id="AVVdaUu4eI9NKnSdksugE7" Bounds="161,235" Alignment="Bottom" />
+                  <Patch Id="C1YTHkM62gCLaTwV7KEI9R" ManuallySortedPins="true">
+                    <Patch Id="TXixaXJhD8MOWKChf3Rjo4" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="RLShuIVQXZKNsTHdhRGLIl" Name="Then" ManuallySortedPins="true" />
+                    <Node Bounds="159,201,66,19" Id="OnTw0pDZX0LOuwHvmriA9E">
+                      <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.AdaptiveLerp.ILerp" LastDependency="VL.AlchemX.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="InterfaceTypeFlag" Name="ILerp" NeedsToBeDirectParent="true" />
+                        <Choice Kind="OperationCallFlag" Name="CreateLerp" />
+                      </p:NodeReference>
+                      <Pin Id="AKSjq823tivPgbLOlW0hsV" Name="Node Context" Kind="InputPin" />
+                      <Pin Id="GnmYLGNl8C7PoyicSZuU19" Name="Output" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="SraIfoWbgzsLexE04G4NSD" Bounds="161,173" Alignment="Top" />
+                </Node>
+                <ControlPoint Id="SeyCdzxGKq7N5jnH5CMDxE" Bounds="369,416" />
+                <ControlPoint Id="QY6ftp7C6dVQYC3DlQiuQv" Bounds="369,276" />
+                <ControlPoint Id="GVBjDhcB2rsNMw2B5JM4rw" Bounds="300,276" />
+                <ControlPoint Id="VCbj6YH8juJNE6r5pOWED7" Bounds="230,276" />
+                <ControlPoint Id="LID9AFllmwBLNQ3sXdvmwr" Bounds="161,108" />
+                <Node Bounds="159,126,54,26" Id="GjiHvSx8h4IPjdig3fO7cI">
+                  <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="Object" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="GetType" />
+                  </p:NodeReference>
+                  <Pin Id="B1pySdTwQexN5t6927jXkp" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="QTW0Pa1JfFHPO2lQPibEDA" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="147,307,284,80" Id="LGhiNIBXuD6M4FXcU5ny0o">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <CategoryReference Kind="Category" Name="Primitive" />
+                    <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                  </p:NodeReference>
+                  <Pin Id="ArtLgPknnY7QOd6nLwSZln" Name="Condition" Kind="InputPin" />
+                  <Patch Id="SY0ZTKglWZFOxwT1OhV3ws" ManuallySortedPins="true">
+                    <Patch Id="BBg0DV1eHG7MIS39ELDss8" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="CmJgM5yKa6jMRlTLwBIKe7" Name="Then" ManuallySortedPins="true" />
+                    <Node Bounds="159,336,213,26" Id="NrBCQfAtHSbMZqv5vdYuRf">
+                      <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.AdaptiveLerp.ILerp" LastDependency="VL.AlchemX.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="InterfaceTypeFlag" Name="ILerp" />
+                        <Choice Kind="OperationCallFlag" Name="Lerp" />
+                      </p:NodeReference>
+                      <Pin Id="HqEMMvkfV36OxH4QzfYmtU" Name="State Input" Kind="InputPin" />
+                      <Pin Id="D2GQsSSdKIxP8oXvoEJ6Nn" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="Uv1xMZyMovjOtXs88FGFmG" Name="Input 2" Kind="InputPin" />
+                      <Pin Id="TtoMpMbIhrnMhSxQmVdakR" Name="Scalar" Kind="InputPin" DefaultValue="0.79999995" />
+                      <Pin Id="QlTh3TwezriNh4b3jynNff" Name="State Output" Kind="OutputPin" />
+                      <Pin Id="KJvLJpwSnjjN137MaAtQmF" Name="Output" Kind="StateOutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="QRDFuymnpwWMzguC3GEOvb" Bounds="369,381" Alignment="Bottom" />
+                  <ControlPoint Id="GpgIZLnkffdLjuObkiOlIW" Bounds="414,313" Alignment="Top" />
+                </Node>
+                <Node Bounds="147,268,65,19" Id="J92tzPzxeDMMg9DfsDEbaD">
+                  <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+                  </p:NodeReference>
+                  <Pin Id="Bo57jRgPzLsMdqsC7bcmMU" Name="X" Kind="InputPin" />
+                  <Pin Id="CDa30FaRbDsLx8xynRidl1" Name="Result" Kind="OutputPin" />
+                  <Pin Id="Ml1UdfEmt6fMUpj0ZRbxMZ" Name="Not Assigned" Kind="OutputPin" />
+                </Node>
+              </Canvas>
+              <Patch Id="ILwQ7cd8yNwNDIgjfnEpA2" Name="Create" />
+              <Patch Id="N1GjIem1G4lLLIF2NbxKYB" Name="Update">
+                <Pin Id="QPCEcjDpLrjLFHrACS7EsM" Name="Input" Kind="InputPin" Bounds="660,340" />
+                <Pin Id="BWVbFBFxm21QUSdHx6nHJU" Name="Input 2" Kind="InputPin" Bounds="691,389" />
+                <Pin Id="DC4VzYVetckOlmSqjgNW6x" Name="Scalar" Kind="InputPin" Bounds="751,485" DefaultValue="0" />
+                <Pin Id="N5XB1v9ggdSLiK1vuv4h6T" Name="Output" Kind="OutputPin" Bounds="503,378">
+                  <p:TypeAnnotation>
+                    <Choice Kind="TypeFlag" Name="T" />
+                  </p:TypeAnnotation>
+                </Pin>
+              </Patch>
+              <ProcessDefinition Id="JeBqiqKcdYLNR9L9vr0HZk">
+                <Fragment Id="IdLulPOvfADMoW2yRdJBHr" Patch="ILwQ7cd8yNwNDIgjfnEpA2" Enabled="true" />
+                <Fragment Id="QzE8E7dmMonMcQEN8r2Uq5" Patch="N1GjIem1G4lLLIF2NbxKYB" Enabled="true" />
+              </ProcessDefinition>
+              <Link Id="HskPY0OzR8zLTF07A5644e" Ids="SeyCdzxGKq7N5jnH5CMDxE,N5XB1v9ggdSLiK1vuv4h6T" IsHidden="true" />
+              <Link Id="FWKoaORyzh8P13C1nje7l4" Ids="QY6ftp7C6dVQYC3DlQiuQv,TtoMpMbIhrnMhSxQmVdakR" />
+              <Link Id="OiVaZ5hy1cFQVvRTpOK57M" Ids="DC4VzYVetckOlmSqjgNW6x,QY6ftp7C6dVQYC3DlQiuQv" IsHidden="true" />
+              <Link Id="LQVuIQUywYAPdGSCfz5eZo" Ids="BWVbFBFxm21QUSdHx6nHJU,GVBjDhcB2rsNMw2B5JM4rw" IsHidden="true" />
+              <Link Id="FQjWErwmfu6NqNJWTwPrPH" Ids="QPCEcjDpLrjLFHrACS7EsM,VCbj6YH8juJNE6r5pOWED7" IsHidden="true" />
+              <Link Id="TyU9CTtVyHBOfsH6gqI6Gq" Ids="AVVdaUu4eI9NKnSdksugE7,HqEMMvkfV36OxH4QzfYmtU" />
+              <Link Id="MnbyvPXT4TOMxLZSFq9U8Q" Ids="VCbj6YH8juJNE6r5pOWED7,D2GQsSSdKIxP8oXvoEJ6Nn" />
+              <Link Id="JukAmujK1okOxPIzTZu8Dj" Ids="GVBjDhcB2rsNMw2B5JM4rw,Uv1xMZyMovjOtXs88FGFmG" />
+              <Link Id="LANb4ir6kKyMwEt3bGNmlr" Ids="QPCEcjDpLrjLFHrACS7EsM,LID9AFllmwBLNQ3sXdvmwr" IsHidden="true" />
+              <Link Id="FJUKYl4NaFuLW9v9ZUPKxT" Ids="LID9AFllmwBLNQ3sXdvmwr,B1pySdTwQexN5t6927jXkp" />
+              <Link Id="SMBGn54O8LENB8EJkHDXCn" Ids="QTW0Pa1JfFHPO2lQPibEDA,SraIfoWbgzsLexE04G4NSD" />
+              <Link Id="JSM8ReY50yjQMrwfRvN9x3" Ids="AVVdaUu4eI9NKnSdksugE7,Bo57jRgPzLsMdqsC7bcmMU" />
+              <Link Id="PZoE8DIKSZdLsTGABkPbXL" Ids="CDa30FaRbDsLx8xynRidl1,ArtLgPknnY7QOd6nLwSZln" />
+              <Link Id="IXoByJQ6ksHPQLp8Mqqmt3" Ids="GpgIZLnkffdLjuObkiOlIW,QRDFuymnpwWMzguC3GEOvb" IsFeedback="true" />
+              <Link Id="LfBTUBURQ5aPtqsddHF4ye" Ids="KJvLJpwSnjjN137MaAtQmF,QRDFuymnpwWMzguC3GEOvb" />
+              <Link Id="VVTCfLPxmgvQFyZxXTY8Xd" Ids="QRDFuymnpwWMzguC3GEOvb,SeyCdzxGKq7N5jnH5CMDxE" />
+              <Link Id="RlQAXvlPURcPpjV13uSSzU" Ids="GnmYLGNl8C7PoyicSZuU19,AVVdaUu4eI9NKnSdksugE7" />
+            </Patch>
+          </Node>
+        </Canvas>
       </Canvas>
       <Canvas Id="IZs68JMHz12Mi2VUe63eAQ" Name="Blending" Position="260,253">
         <!--
@@ -14391,7 +14705,26 @@
         <FullNameCategoryReference ID="Primitive" />
       </p:NodeReference>
       <Patch Id="Jggdh1rAfYvQR16j67iY7L">
-        <Canvas Id="OstzNZzMld8NUFeIhF1NGW" CanvasType="Group" />
+        <Canvas Id="OstzNZzMld8NUFeIhF1NGW" CanvasType="Group">
+          <!--
+
+    ************************ ++ ************************
+
+-->
+          <Node Name="++" Bounds="909,327" Id="F5Ez0G3BN5cLTduWxqvEp3">
+            <p:NodeReference>
+              <Choice Kind="ContainerDefinition" />
+            </p:NodeReference>
+            <Patch Id="VScloKCz1wMMaJxiZamusn">
+              <Patch Id="SWTeQBvQD9mP4etzeL8Gz2" Name="Create" />
+              <Patch Id="KyUcDI9EEHSNyHzdUo4kZ4" Name="Update" />
+              <ProcessDefinition Id="PwCekA8prAnNNHU1n8aQVp">
+                <Fragment Id="NkUOjwbcAf7NjNDpT8XM4Y" Patch="SWTeQBvQD9mP4etzeL8Gz2" Enabled="true" />
+                <Fragment Id="L1Uac16bVwpO9SSewoQHUu" Patch="KyUcDI9EEHSNyHzdUo4kZ4" Enabled="true" />
+              </ProcessDefinition>
+            </Patch>
+          </Node>
+        </Canvas>
         <Patch Id="EZDk07rra5VMjaVxY0VGin" Name="Create" />
         <Patch Id="M2qT6PHcixvL25ZCobooWS" Name="Update" />
         <ProcessDefinition Id="HOPkYbT81WxL9yErkRThN5">
@@ -14401,6 +14734,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="MEqGjnAxdnCLGn42yhcs6m" Location="VL.CoreLib" Version="2024.6.7-0196-g6a855a4938" />
+  <NugetDependency Id="MEqGjnAxdnCLGn42yhcs6m" Location="VL.CoreLib" Version="2024.6.7-0235-g5172ef47fd" />
   <PlatformDependency Id="Ms36Za2nMUQNH5GmJEBuMB" Location="../lib/net6.0/VL.Kairos.Runtime.CSharp.dll" />
 </Document>
