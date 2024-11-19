@@ -25,9 +25,10 @@
             <Pin Id="RpFSNxZEmhkPtA8RfNiUlY" Name="Duration" Kind="InputPin" />
             <Pin Id="BpJXBidPjYbPAn2NiUXoa9" Name="Enabled" Kind="InputPin" />
             <Pin Id="OEhWExiksbpPjXmqKySVWE" Name="Interpolation Model" Kind="InputPin" />
+            <Pin Id="Er44RerQWdyM8btpuJzbba" Name="Sampling Settings" Kind="InputPin" />
             <Pin Id="Dar0hjDMfyGOdrsTzwf1xT" Name="Compositing Model" Kind="InputPin" />
             <Pin Id="CCHyPyOn4Z5Oql89ru3W1T" Name="Layer Model" Kind="InputPin" />
-            <Pin Id="JoZIzqixp8JQPxIa7NuWKD" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="R5yLqhZJO5aNpBRTwjE3pC" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="128,123,130,19" Id="TFe2KPB1f0mM4vD9yV1JAL">
             <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.vl">
@@ -84,7 +85,7 @@
             <Pin Id="Pru47BkG3oKQZOaupfx2UK" Name="SpreadCount Interpolation Model" Kind="InputPin" />
             <Pin Id="G4wdA49l0mbPFH8Aq17hty" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="1298,107,107,19" Id="FqljT2S76GoOlDEH4FUrup">
+          <Node Bounds="567,443,107,19" Id="FqljT2S76GoOlDEH4FUrup">
             <p:NodeReference LastCategoryFullName="LayerX.Domain" LastDependency="VL.Kairos.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Sampling1DSettings (InsideOutsideDomain)" />
@@ -180,7 +181,6 @@
             <Pin Id="QlAn4p842dMOq4OqSNQQHZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="OphX2D2c1eUMR63D44P0EJ" Name="Layer Model" Kind="InputPin" />
             <Pin Id="JjPVevyFnCVPzLKy6YUNTI" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="JuRJqK3RRN8O6vu7a3OWqr" Name="Sampling Settings" Kind="InputPin" />
           </Node>
           <Node Bounds="1066,325,158,19" Id="K8KxZoo6JC7OUZJyDWTTp4">
             <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
@@ -191,7 +191,6 @@
             <Pin Id="DVHhjRgKqstOXMPMzshSsc" Name="Global Channel Path" Kind="InputPin" />
             <Pin Id="IEbUyeWn3zrP00g4m8xgTN" Name="Output" Kind="StateOutputPin" />
             <Pin Id="Sk3dIom5wWXNB7RBGS0GBP" Name="Type Full Name" Kind="InputPin" />
-            <Pin Id="BLbqu1VmoXTLzPwbg9wn1v" Name="Sampling Settings" Kind="InputPin" />
           </Node>
           <Node Bounds="989,198,123,19" Id="UUL0ZDTEO2GOp5sKxyLOSb">
             <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
@@ -212,7 +211,6 @@
             <Pin Id="GcgRt3wfTlhNE5Y1N6X3Vc" Name="Source Key" Kind="InputPin" />
             <Pin Id="PpjlNAbloN3Px0ovmhGEmC" Name="Output" Kind="StateOutputPin" />
             <Pin Id="DHKhB7Xj4oEPYbL0ugvvNI" Name="Type Full Name" Kind="InputPin" />
-            <Pin Id="PtgsY5a5r9kMXS2q4Piosh" Name="Sampling Settings" Kind="InputPin" />
           </Node>
           <Pad Id="DRr14ViqTiNOOgY96NlvjE" Bounds="1232,331,356,19" ShowValueBox="true" isIOBox="true" Value="(For a Layer keyframe)(receiving from a global channel)">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -466,7 +464,6 @@
         <Link Id="MutOCoGYNxPNaMP1FpaEyK" Ids="JspL4FNpM4nNLMQoljh12a,OEhWExiksbpPjXmqKySVWE" />
         <Link Id="RxaTOWmOmrXLZS4GdJtBLB" Ids="HAE9UwUp2EGPMMnQK4O80y,Dar0hjDMfyGOdrsTzwf1xT" />
         <Link Id="SSsqaXNBgWMOzK7u4Si9Zu" Ids="GWFDpEAsubnOA7SgCFmb88,CCHyPyOn4Z5Oql89ru3W1T" />
-        <Link Id="NLR8c48ljp9QMze4sKGLQk" Ids="JoZIzqixp8JQPxIa7NuWKD,TbQy70rxM0eOeBDxY4mWzu" />
         <Link Id="EszXBpbTXJCPLVnhzBUPh2" Ids="JJ8vAQfzEzEMeiYkvj0RXd,NEc5W9VY1azQb7XrsCUBC6" />
         <Link Id="MDSYb9KyqvLQQav9HUsEvL" Ids="D3eZrZM95F4O3Nr43K8ad5,NypOGQqZ1llNZMpx6jJuUj" />
         <Link Id="Do6nwkcLp2lMCzrelDop7r" Ids="A9CQiBH4Jx8LGNBNHnwLPZ,Fe92GnvvpnYNHf1S2Cyiul" />
@@ -489,15 +486,14 @@
         <Link Id="FT7SOlE6d7yQId2adnYVBU" Ids="OMjwHY5UmMbLXGidkHukjj,QRzsEDP8KzWOPw37PxysEK" />
         <Link Id="C5uK2nQC8cANS9iIpHeYxP" Ids="UmInjR3qrR6QTsDMIxi0gR,AJW3sOOnqNVLsyBi8aid7y" />
         <Link Id="SuhZe29SrIqQdcq52bLmiE" Ids="QRzsEDP8KzWOPw37PxysEK,VpbCJNLk1NiL3cNEWp6p4C" />
-        <Link Id="TYvIc7Hn9vgMkTJoEt5d2w" Ids="JoZIzqixp8JQPxIa7NuWKD,CpXvGR6a5PMO9gVa0q393J" />
         <Link Id="ThUsS54zcGfNhrFd55sMxc" Ids="IwjZWYl3pMrP5QDy6dmxy0,RWt2telwi3gN1XCCQaMmNP" />
         <Link Id="MMsYTW8VlbONerusD44AcZ" Ids="QFw2ocjy8ZkMoLyEtRbB8b,VNYQMSPrPoHNqpHKGY0OlZ" />
         <Link Id="VMe7O6LfQW9LmejHjhKlqe" Ids="E8d7gkClIyOM4XFdxm1Kyc,NlBnXxdundtPejlGwbeU25" />
         <Link Id="MNosVGcq6vJPdc53fO2YYL" Ids="ViFdnoC5BbeNRCEDi6pnyi,D2dDVYLXdlkLgvDP9g88lD" />
         <Link Id="IOW63ly2ulENQu36TK2aoL" Ids="GWFDpEAsubnOA7SgCFmb88,OphX2D2c1eUMR63D44P0EJ" />
-        <Link Id="FCQFjT6Cd3SOroQ1zGZAGc" Ids="HzRPAbCEfoCPW3O8WYHkqu,JuRJqK3RRN8O6vu7a3OWqr" />
-        <Link Id="PusWF2cM4W1OI5tvxxj1oZ" Ids="HzRPAbCEfoCPW3O8WYHkqu,PtgsY5a5r9kMXS2q4Piosh" />
-        <Link Id="PKDSbIFuNzUPY3I6diBVTR" Ids="HzRPAbCEfoCPW3O8WYHkqu,BLbqu1VmoXTLzPwbg9wn1v" />
+        <Link Id="DEjatc0nxXwPC5H0JoBjCc" Ids="R5yLqhZJO5aNpBRTwjE3pC,TbQy70rxM0eOeBDxY4mWzu" />
+        <Link Id="GS2P2VbReBRLILd9UuLcMK" Ids="R5yLqhZJO5aNpBRTwjE3pC,CpXvGR6a5PMO9gVa0q393J" />
+        <Link Id="UxdHdeMHL0CMiYH7uswt5U" Ids="HzRPAbCEfoCPW3O8WYHkqu,Er44RerQWdyM8btpuJzbba" />
       </Patch>
     </Node>
   </Patch>
