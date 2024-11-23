@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="V4NLgVt45i0LydeUdBkxWJ" LanguageVersion="2024.6.7-0238-g79adbe39f9" Version="0.128">
+  <NugetDependency Id="TpgMo10cPZ5K9r2yotnZyI" Location="VL.CoreLib" Version="2024.6.7-0238-g79adbe39f9" />
+  <Patch Id="TN5NHg6UTf6OpBB4fKAdUs">
+    <Canvas Id="Aa7tkf07eX7OeUzZnyL0zy" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="ItMdkA18TxxQFeDWYaOWxk">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="JLxFrKSnp4qMfuzHXlqNgw">
+        <Canvas Id="CvRO8dVVaDjPfPLAxLyxWA" CanvasType="Group">
+          <Node Bounds="249,333,70,19" Id="Sp38XbWkwghPjcFXZZNQQc">
+            <p:NodeReference LastCategoryFullName="LayerX.Alpha.IAlphaFunction" LastDependency="VL.LayerX.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="InterfaceTypeFlag" Name="IAlphaFunction" />
+              <CategoryReference Kind="InterfaceTypeFlag" Name="IAlphaFunction" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="Sample" />
+            </p:NodeReference>
+            <Pin Id="UFL8tw6heUeMrFGeeMDTua" Name="State Input" Kind="StateInputPin" />
+            <Pin Id="VYk2fNoTU5mOAcSFwVwn4M" Name="Input" Kind="InputPin" />
+            <Pin Id="PaQncQYXn3XOyz4mHiPMlO" Name="State Output" Kind="StateOutputPin" />
+            <Pin Id="Qc6HjZxaEP8NByY0ufcvG7" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="603,488,112,19" Id="Tb5IjLZPCToNaQ79STPgol">
+            <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="BlendAlphaFunction" />
+            </p:NodeReference>
+            <Pin Id="CflzC5bXXMqNeoVzibN1N8" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VbD5VK05W5lNEevg1J8RFD" Name="Alpha Function" Kind="InputPin" />
+            <Pin Id="HeaZLINunhUPXYJla6LnrK" Name="Alpha" Kind="InputPin" />
+            <Pin Id="LFzopCE5RCSLWJskqPyXJL" Name="Alpha Blending Model" Kind="InputPin" />
+            <Pin Id="EIqWi32NTipN9z9VNoi4sn" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="866,392,84,19" Id="Ph1mWFOiLSOP54ErC7AK6N">
+            <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.LayerX.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ComputeAlpha" />
+            </p:NodeReference>
+            <Pin Id="FSDxtpSuxhxNPIvOViEl3p" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Vz4DLA8oJzQOhwgM3QsYQh" Name="Alpha" Kind="InputPin" />
+            <Pin Id="R7uRrzt3ThIQN6jbaoaJSE" Name="Domain Alpha Function" Kind="InputPin" />
+            <Pin Id="SRTLfldKOpGLeoeiFtawSq" Name="Alpha Function" Kind="InputPin" />
+            <Pin Id="DsitTrGUHrjNM0JqY5pKik" Name="Sampling Position" Kind="InputPin" />
+            <Pin Id="KA15svCSRcJPPzpewvOVYx" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Cz7h9Xx6asUL57IjTIZKtm" Comment="" Bounds="333,258,62,78" ShowValueBox="true" isIOBox="true" Value="0.39000005">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Single">1</p:maximum>
+              <p:minimum p:Type="Single">0</p:minimum>
+              <p:showslider p:Type="Boolean">true</p:showslider>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="1002,487,120,19" Id="IIFmipawObNNpLk6dn8DJ2">
+            <p:NodeReference LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.AlchemX.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MultiplyBlendingModel" />
+            </p:NodeReference>
+            <Pin Id="A4dC8bhlCwSL5O8x7voaMb" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="FwFI2RD930zP94MC7IGNZb" Name="Node Context" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="JD2RkBc3cSONHNBd1fV21T" Comment="" Bounds="317,391,62,78" ShowValueBox="true" isIOBox="true" Value="0.0747578">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Single">1</p:maximum>
+              <p:minimum p:Type="Single">0</p:minimum>
+              <p:showslider p:Type="Boolean">true</p:showslider>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Q2c48FYq5w6OZT7efsY20n" Comment="" Bounds="956,638,62,78" ShowValueBox="true" isIOBox="true" Value="0.65">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Single">1</p:maximum>
+              <p:minimum p:Type="Single">0</p:minimum>
+              <p:showslider p:Type="Boolean">true</p:showslider>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="367,948,112,19" Id="TJQqJLKKawVPm4wP9oIO8d">
+            <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="BlendAlphaFunction" />
+            </p:NodeReference>
+            <Pin Id="ExPBDoPqvCvMjitVlsSwEF" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Ilw0ixCWw0dPOioDCyy900" Name="Alpha Function" Kind="InputPin" />
+            <Pin Id="OAHFKtyvxnRPRsLWYKFEKA" Name="Alpha" Kind="InputPin" />
+            <Pin Id="Dsf19kwts40PPRyYDYp77X" Name="Alpha Blending Model" Kind="InputPin" />
+            <Pin Id="DnBB1hql33DPyEiitil1At" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="458,270,112,19" Id="OvIbionttSzMesLd0xCEUI">
+            <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="BlendAlphaFunction" />
+            </p:NodeReference>
+            <Pin Id="IMQ6vlM5OQTONwjshvTn8y" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="ELCFBKyYxrzOTTRbbO1efn" Name="Alpha Function" Kind="InputPin" />
+            <Pin Id="VAzb7cq2zoiOr6kk9bcP5I" Name="Alpha" Kind="InputPin" />
+            <Pin Id="Lxql7qDMiQRLXlFXzBUwN6" Name="Alpha Blending Model" Kind="InputPin" />
+            <Pin Id="KZclwtLkWa7Lc5d41iNz0P" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="599,232,120,19" Id="VIQ00FuAoq5PNJO41vo0Vu">
+            <p:NodeReference LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.AlchemX.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="AdditiveBlendingModel" />
+            </p:NodeReference>
+            <Pin Id="IT1Zoyhx18oQUe7Ivb2ExT" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="GyMz6Mc6M0WMQPJLL1GjKw" Name="Node Context" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="UMSAQPPVcB1MdZbJwy7Hht" Comment="" Bounds="435,812,62,78" ShowValueBox="true" isIOBox="true" Value="0.5700001">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Single">1</p:maximum>
+              <p:minimum p:Type="Single">0</p:minimum>
+              <p:showslider p:Type="Boolean">true</p:showslider>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JBsg21G1OnGLWHxWo0utmu" Comment="" Bounds="500,145,62,78" ShowValueBox="true" isIOBox="true" Value="1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Single">1</p:maximum>
+              <p:minimum p:Type="Single">0</p:minimum>
+              <p:showslider p:Type="Boolean">true</p:showslider>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="509,896,120,19" Id="UlCW0YfkZInNgt9lXPceFZ">
+            <p:NodeReference LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.AlchemX.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MultiplyBlendingModel" />
+            </p:NodeReference>
+            <Pin Id="LawpfzouQIiMMBwnsFZ4uK" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="I5PWBIIk9TVOs8GiYklXKS" Name="Node Context" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Node Bounds="446,1028,70,19" Id="CwWHdITCt0ULlEB0xxHBmo">
+            <p:NodeReference LastCategoryFullName="LayerX.Alpha.IAlphaFunction" LastDependency="VL.LayerX.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="InterfaceTypeFlag" Name="IAlphaFunction" />
+              <CategoryReference Kind="InterfaceTypeFlag" Name="IAlphaFunction" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="Sample" />
+            </p:NodeReference>
+            <Pin Id="B7mplulf2t4NnsxMzsoVjq" Name="State Input" Kind="StateInputPin" />
+            <Pin Id="R8pw50wQxJdMa49xYVZ4hI" Name="Input" Kind="InputPin" />
+            <Pin Id="F7A9PZwdD51LxxuLQviesv" Name="State Output" Kind="StateOutputPin" />
+            <Pin Id="AjtA80sQybzLLD0oFoBjRW" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="GkDSs5YLmG3PniDu7Qn1aI" Comment="" Bounds="522,1076,62,78" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Single">1</p:maximum>
+              <p:minimum p:Type="Single">0</p:minimum>
+              <p:showslider p:Type="Boolean">true</p:showslider>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FCS32bgSC2VNTMC0NWVlUt" Comment="" Bounds="610,956,62,78" ShowValueBox="true" isIOBox="true" Value="0.5600002">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Single">1</p:maximum>
+              <p:minimum p:Type="Single">0</p:minimum>
+              <p:showslider p:Type="Boolean">true</p:showslider>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="625,269,120,19" Id="S9ye3PKRHdtNNSlgX7TSdq">
+            <p:NodeReference LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.AlchemX.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MultiplyBlendingModel" />
+            </p:NodeReference>
+            <Pin Id="NKpSFxkczlBNEQqtele5nQ" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="MQuDUGnzDjqO7Nxyfc1KnK" Name="Node Context" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Node Bounds="743,694,70,19" Id="EoLyLsWhfAxLN2GIdBeMJg">
+            <p:NodeReference LastCategoryFullName="LayerX.Alpha.IAlphaFunction" LastDependency="VL.LayerX.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="InterfaceTypeFlag" Name="IAlphaFunction" />
+              <CategoryReference Kind="InterfaceTypeFlag" Name="IAlphaFunction" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="Sample" />
+            </p:NodeReference>
+            <Pin Id="U7ajbeZqp5dNa3PoqKs6XY" Name="State Input" Kind="StateInputPin" />
+            <Pin Id="S5Q7McAP6kbOuTAo4iffuG" Name="Input" Kind="InputPin" />
+            <Pin Id="GxhxzXD1uLDNJRbKZzdDzy" Name="State Output" Kind="StateOutputPin" />
+            <Pin Id="TmE6hTIuU50NugQU2gPq5k" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="H0mozQi7Z5OPwH1bqlxhMx" Comment="" Bounds="827,619,62,78" ShowValueBox="true" isIOBox="true" Value="1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Single">1</p:maximum>
+              <p:minimum p:Type="Single">0</p:minimum>
+              <p:showslider p:Type="Boolean">true</p:showslider>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KQfpxjhiAUTM1z1IWSVG9x" Comment="" Bounds="811,752,62,78" ShowValueBox="true" isIOBox="true" Value="0.0747578">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Single">1</p:maximum>
+              <p:minimum p:Type="Single">0</p:minimum>
+              <p:showslider p:Type="Boolean">true</p:showslider>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ThZvKGQZUvcPoVnmYi4STF" Comment="" Bounds="926,216,62,78" ShowValueBox="true" isIOBox="true" Value="1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Single">1</p:maximum>
+              <p:minimum p:Type="Single">0</p:minimum>
+              <p:showslider p:Type="Boolean">true</p:showslider>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="NWFIUObKWaFNIFCAzksiw9" Name="Create" />
+        <Patch Id="QGswLJJMXVKNuJR2QejR7u" Name="Update" ParticipatingElements="Sp38XbWkwghPjcFXZZNQQc,CwWHdITCt0ULlEB0xxHBmo,EoLyLsWhfAxLN2GIdBeMJg" />
+        <ProcessDefinition Id="MZ6Kd7qlK89OTJsR0JyVsy">
+          <Fragment Id="S3TU7BtLxrGLKKLYS8kYOZ" Patch="NWFIUObKWaFNIFCAzksiw9" Enabled="true" />
+          <Fragment Id="Gn92uHvgQi3OMLKqRYLY5R" Patch="QGswLJJMXVKNuJR2QejR7u" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="OHhovndSGAIO6RTQM7kUYY" Ids="Cz7h9Xx6asUL57IjTIZKtm,VYk2fNoTU5mOAcSFwVwn4M" />
+        <Link Id="NXkXlbaclTAOVJ5ZDCXG9w" Ids="Qc6HjZxaEP8NByY0ufcvG7,JD2RkBc3cSONHNBd1fV21T" />
+        <Link Id="D8hCmYxXr0lLNvgIrMIvpi" Ids="DnBB1hql33DPyEiitil1At,VbD5VK05W5lNEevg1J8RFD" />
+        <Link Id="INvfpinGhpONJlrtZNydZ1" Ids="UMSAQPPVcB1MdZbJwy7Hht,OAHFKtyvxnRPRsLWYKFEKA" />
+        <Link Id="JyxzSbBF748MMNhdjitqB0" Ids="KZclwtLkWa7Lc5d41iNz0P,UFL8tw6heUeMrFGeeMDTua" />
+        <Link Id="DdxjHBYQcLLMBJLYI6QsIO" Ids="JBsg21G1OnGLWHxWo0utmu,VAzb7cq2zoiOr6kk9bcP5I" />
+        <Link Id="BACfFrN9vyuL6BeGjDsHRu" Ids="DnBB1hql33DPyEiitil1At,B7mplulf2t4NnsxMzsoVjq" />
+        <Link Id="KGaZRfrm0lhLqOZ2VTK4BY" Ids="FCS32bgSC2VNTMC0NWVlUt,R8pw50wQxJdMa49xYVZ4hI" />
+        <Link Id="QWTAwNOXgFJM5gMQ0iOQXY" Ids="AjtA80sQybzLLD0oFoBjRW,GkDSs5YLmG3PniDu7Qn1aI" />
+        <Link Id="VF2tLMkyLPPLUelnCH8eWC" Ids="EIqWi32NTipN9z9VNoi4sn,ELCFBKyYxrzOTTRbbO1efn" />
+        <Link Id="BirfiPxrmkbO2KP0iLZgGU" Ids="H0mozQi7Z5OPwH1bqlxhMx,S5Q7McAP6kbOuTAo4iffuG" />
+        <Link Id="JnVtbwemxbPMnFhcleyute" Ids="TmE6hTIuU50NugQU2gPq5k,KQfpxjhiAUTM1z1IWSVG9x" />
+        <Link Id="Tui1FY5YvILLP0HtNduesl" Ids="EIqWi32NTipN9z9VNoi4sn,U7ajbeZqp5dNa3PoqKs6XY" />
+        <Link Id="PcnLiYvPUzoMr6v2amGUzc" Ids="DnBB1hql33DPyEiitil1At,SRTLfldKOpGLeoeiFtawSq" />
+        <Link Id="IeXddMlw8FNOhlLffSy9va" Ids="ThZvKGQZUvcPoVnmYi4STF,Vz4DLA8oJzQOhwgM3QsYQh" />
+        <Link Id="Lh92SracywGLwCaCgrTwto" Ids="KA15svCSRcJPPzpewvOVYx,HeaZLINunhUPXYJla6LnrK" />
+        <Link Id="JynqRUCx554Ptl3LCd5E0M" Ids="IT1Zoyhx18oQUe7Ivb2ExT,Lxql7qDMiQRLXlFXzBUwN6" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="GLpYOGrjV4QNxRneb0cjGj" Location="VL.Kairos.Runtime" Version="0.0.0" />
+</Document>
