@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="A7SGbRpVoVFOWgXKnVrPpx" LanguageVersion="2024.6.7-0237-g0353095d36" Version="0.128">
-  <NugetDependency Id="O7PDHUGThNbQYX7lMUlg1t" Location="VL.CoreLib" Version="2024.6.7-0237-g0353095d36" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="A7SGbRpVoVFOWgXKnVrPpx" LanguageVersion="2024.6.7-0241-g11560101a2" Version="0.128">
+  <NugetDependency Id="O7PDHUGThNbQYX7lMUlg1t" Location="VL.CoreLib" Version="2024.6.7-0241-g11560101a2" />
   <Patch Id="V0QyYBEAk0FPiPiIw7F9tI">
     <Canvas Id="N340HgLPtjaMIFxCA7QdRW" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -26,7 +26,6 @@
             <Pin Id="BpJXBidPjYbPAn2NiUXoa9" Name="Enabled" Kind="InputPin" />
             <Pin Id="OEhWExiksbpPjXmqKySVWE" Name="Interpolation Model" Kind="InputPin" />
             <Pin Id="Er44RerQWdyM8btpuJzbba" Name="Sampling Settings" Kind="InputPin" />
-            <Pin Id="Dar0hjDMfyGOdrsTzwf1xT" Name="Compositing Model" Kind="InputPin" />
             <Pin Id="CCHyPyOn4Z5Oql89ru3W1T" Name="Layer Model" Kind="InputPin" />
             <Pin Id="R5yLqhZJO5aNpBRTwjE3pC" Name="Output" Kind="OutputPin" />
           </Node>
@@ -85,7 +84,7 @@
             <Pin Id="Pru47BkG3oKQZOaupfx2UK" Name="SpreadCount Interpolation Model" Kind="InputPin" />
             <Pin Id="G4wdA49l0mbPFH8Aq17hty" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="567,443,107,19" Id="FqljT2S76GoOlDEH4FUrup">
+          <Node Bounds="646,441,107,19" Id="FqljT2S76GoOlDEH4FUrup">
             <p:NodeReference LastCategoryFullName="LayerX.Domain" LastDependency="VL.Kairos.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Sampling1DSettings (InsideOutsideDomain)" />
@@ -97,15 +96,6 @@
             <Pin Id="PKH3ypM47ObL5Nym6vS4V7" Name="Bound In Mapping Type" Kind="InputPin" />
             <Pin Id="SeAm3OwLXqQO8jOnjQ72lq" Name="Bound Out Mapping Type" Kind="InputPin" />
             <Pin Id="HzRPAbCEfoCPW3O8WYHkqu" Name="Output" Kind="StateOutputPin" />
-          </Node>
-          <Node Bounds="598,282,102,19" Id="TtOwmZM1DTpLUuUfVPQnLX">
-            <p:NodeReference LastCategoryFullName="LayerX" LastDependency="VL.Kairos.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="CompositingModel" />
-            </p:NodeReference>
-            <Pin Id="NEc5W9VY1azQb7XrsCUBC6" Name="Blending Model" Kind="InputPin" />
-            <Pin Id="JIL55S1HqtgLyYKj2CWaNU" Name="Alpha Model" Kind="InputPin" />
-            <Pin Id="HAE9UwUp2EGPMMnQK4O80y" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="944,107,93,19" Id="Sb6EKlxFi5pLHC6rcZslfW">
             <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.vl">
@@ -211,6 +201,8 @@
             <Pin Id="GcgRt3wfTlhNE5Y1N6X3Vc" Name="Source Key" Kind="InputPin" />
             <Pin Id="PpjlNAbloN3Px0ovmhGEmC" Name="Output" Kind="StateOutputPin" />
             <Pin Id="DHKhB7Xj4oEPYbL0ugvvNI" Name="Type Full Name" Kind="InputPin" />
+            <Pin Id="MHGllteIKBfMsuVgkJ00hB" Name="Domain Type Full Name" Kind="InputPin" />
+            <Pin Id="C2uK0JMniqqPLrcAEeAOju" Name="Update" Kind="InputPin" />
           </Node>
           <Pad Id="DRr14ViqTiNOOgY96NlvjE" Bounds="1232,331,356,19" ShowValueBox="true" isIOBox="true" Value="(For a Layer keyframe)(receiving from a global channel)">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -249,24 +241,6 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="ITxlq60LuQJPvLMfYXG8lG" Name="Layer" Bounds="896,49,732,340" />
-          <Overlay Id="I75975EaVaeOGjoJUL9uIh" Name="Composition" Bounds="542,62,273,290" />
-          <Node Bounds="597,124,120,19" Id="QdUnO1irrvNOfYUmLKXybh">
-            <p:NodeReference LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.Kairos.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="AdditiveBlendingModel" />
-            </p:NodeReference>
-            <Pin Id="JJ8vAQfzEzEMeiYkvj0RXd" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="AxWbRcvBFpbLv9q6xhl743" Name="Node Context" Kind="InputPin" IsHidden="true" />
-          </Node>
-          <Pad Id="LbNSQW5LUjMPwPwtW2c5ZO" Bounds="605,160,196,44" ShowValueBox="true" isIOBox="true" Value="(look for all the IBlendingModel implementations)">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
           <Node Bounds="187,763,55,26" Id="Tx4trtRPlSfNtQFJxTSEex">
             <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -462,9 +436,7 @@
           <Fragment Id="IkvqdkTbDAgNwKWxGwKvIF" Patch="BBTeqmcrlGfLdJQgzBibhf" Enabled="true" />
         </ProcessDefinition>
         <Link Id="MutOCoGYNxPNaMP1FpaEyK" Ids="JspL4FNpM4nNLMQoljh12a,OEhWExiksbpPjXmqKySVWE" />
-        <Link Id="RxaTOWmOmrXLZS4GdJtBLB" Ids="HAE9UwUp2EGPMMnQK4O80y,Dar0hjDMfyGOdrsTzwf1xT" />
         <Link Id="SSsqaXNBgWMOzK7u4Si9Zu" Ids="GWFDpEAsubnOA7SgCFmb88,CCHyPyOn4Z5Oql89ru3W1T" />
-        <Link Id="EszXBpbTXJCPLVnhzBUPh2" Ids="JJ8vAQfzEzEMeiYkvj0RXd,NEc5W9VY1azQb7XrsCUBC6" />
         <Link Id="MDSYb9KyqvLQQav9HUsEvL" Ids="D3eZrZM95F4O3Nr43K8ad5,NypOGQqZ1llNZMpx6jJuUj" />
         <Link Id="Do6nwkcLp2lMCzrelDop7r" Ids="A9CQiBH4Jx8LGNBNHnwLPZ,Fe92GnvvpnYNHf1S2Cyiul" />
         <Link Id="Pxdxonyjv9aMbD9a716SHA" Ids="H82h83xRKxfMr4QO581m4K,GC91V5W1zM7QKc2Jqi27ZF" />
@@ -477,7 +449,6 @@
         </Slot>
         <Link Id="NY3MhmCZEu0M7YTFnvvVdA" Ids="QIxFTYc3zdyN5EvIdPQ40d,BvG7x6pNWupOTUnEA5M5LA" />
         <Link Id="DsJwNokDvp1NK7LAIQ05Js" Ids="HB6FU5U4BOBPeY4r6yYoru,UEtG7zg2cNAQWZDQSiECDK" />
-        <Link Id="MpS1aBX8fvBNnoDHOWbj2f" Ids="JspL4FNpM4nNLMQoljh12a,JIL55S1HqtgLyYKj2CWaNU" />
         <Link Id="SuwQQfJybHDMyMXlJrzO2X" Ids="UeipwaqVJYVNKtSibku6bw,IRm8uUnoGthMKNNL97gNa3" />
         <Link Id="OjqkZB6l3X8LPIMIOuk5cl" Ids="IRm8uUnoGthMKNNL97gNa3,AIp6gf4oniJPZQ04MIYnMz" />
         <Link Id="MpHYDPRG0b1NJOy6ZCfgPG" Ids="O7LMiDfPzxJPTsr8OFicGH,F7IlsBfI7eEMjwZyRhvxyE" />
@@ -498,10 +469,10 @@
     </Node>
   </Patch>
   <NugetDependency Id="QJ5GshCmi5pOyyFFUJveU0" Location="VL.Kairos" IsFriend="true" Version="0.0.0" />
-  <NugetDependency Id="AN8GXwk9aLbOvrfcCYjMtx" Location="VL.ImGui" Version="2024.6.7-0237-g0353095d36" />
-  <NugetDependency Id="OQI6wnGOWgfPROycPr2nFL" Location="VL.ImGui.Skia" Version="2024.6.7-0237-g0353095d36" />
-  <NugetDependency Id="AoR2K3CjqQVMWHvcPAcLXp" Location="VL.Skia" Version="2024.6.7-0237-g0353095d36" />
-  <NugetDependency Id="C8d5zsmJHmZQTafE0HQHj1" Location="VL.HDE" Version="2024.6.7-0237-g0353095d36" />
+  <NugetDependency Id="AN8GXwk9aLbOvrfcCYjMtx" Location="VL.ImGui" Version="2024.6.7-0241-g11560101a2" />
+  <NugetDependency Id="OQI6wnGOWgfPROycPr2nFL" Location="VL.ImGui.Skia" Version="2024.6.7-0241-g11560101a2" />
+  <NugetDependency Id="AoR2K3CjqQVMWHvcPAcLXp" Location="VL.Skia" Version="2024.6.7-0241-g11560101a2" />
+  <NugetDependency Id="C8d5zsmJHmZQTafE0HQHj1" Location="VL.HDE" Version="2024.6.7-0241-g11560101a2" />
   <NugetDependency Id="PHkPfH0lFDJMNT4G3wj2X0" Location="VL.Touchy" IsFriend="true" Version="0.0.0" />
   <NugetDependency Id="IfIsHPrYw8rO4W3XLHL8LT" Location="VL.Kairos.Runtime" IsFriend="true" Version="0.0.0" />
 </Document>
