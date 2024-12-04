@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="I3jTUCjv97ULNLEGdktT13" LanguageVersion="2024.6.7-0241-g11560101a2" Version="0.128">
-  <NugetDependency Id="B9SmXr23urgOrw4Bu21cwW" Location="VL.CoreLib" Version="2024.6.7-0241-g11560101a2" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="I3jTUCjv97ULNLEGdktT13" LanguageVersion="2024.6.7-0258-g67ac288fc9" Version="0.128">
+  <NugetDependency Id="B9SmXr23urgOrw4Bu21cwW" Location="VL.CoreLib" Version="2024.6.7-0258-g67ac288fc9" />
   <Patch Id="RPFNdBojq8VOcYe34eyX6g">
     <Canvas Id="Jx64PswPNNjMfN4f8xRh64" DefaultCategory="LayerX.Common" CanvasType="FullCategory">
-      <Canvas Id="Td2bYCMqEKdNd4sznat5lv" Name="Utils.Internal" Position="147,291">
+      <Canvas Id="Td2bYCMqEKdNd4sznat5lv" Name="Utils.Internal" Position="133,345">
         <!--
 
     ************************ IsWithinBounds (Float32) ************************
@@ -4605,7 +4605,7 @@
           <Link Id="JQZueJElxIdMKnorAlN3WW" Ids="NQfO0JC0DkqLsOqJ92ft1D,A9fx6wVJ6quOCXuMxpCtBM" />
         </Patch>
       </Node>
-      <Canvas Id="EF35HvrLfliMzCcwPB0kL1" Name="ValueMonitorUI.Internal" Position="144,134">
+      <Canvas Id="EF35HvrLfliMzCcwPB0kL1" Name="ValueMonitorUI.Internal" Position="133,278">
         <!--
 
     ************************ CreateValueMonitorUI (Adaptive) ************************
@@ -14186,7 +14186,7 @@
           </Patch>
         </Node>
       </Canvas>
-      <Canvas Id="DknxCoHbmU5M4IWXMLIlbG" Name="Skia.Internal" Position="508,277">
+      <Canvas Id="DknxCoHbmU5M4IWXMLIlbG" Name="Skia.Internal" Position="498,345">
         <!--
 
     ************************ DrawContext ************************
@@ -17196,7 +17196,7 @@
           </Node>
         </Canvas>
       </Canvas>
-      <Canvas Id="GNDBfUyrSKNPWBp8i6biCP" Name="Camera.Internal" Position="515,150" CanvasType="Group">
+      <Canvas Id="GNDBfUyrSKNPWBp8i6biCP" Name="Camera.Internal" Position="498,278" CanvasType="Group">
         <!--
 
     ************************ MouseState (Kairos) ************************
@@ -23040,6 +23040,245 @@
           <Link Id="TECXQAzWfsfLqJneVtPGfg" Ids="PjDMsV3NuZTQK8f01Hl1U9,C6mAf75JlhVN2luCaBrOay" />
         </Patch>
       </Node>
+      <!--
+
+    ************************ ILayerUIModel ************************
+
+-->
+      <Node Name="ILayerUIModel" Bounds="139,144" Id="TuMRf80fhHFL5cL65GHeY4">
+        <p:NodeReference>
+          <Choice Kind="InterfaceDefinition" />
+        </p:NodeReference>
+        <p:Interfaces>
+          <TypeReference LastCategoryFullName="LayerX.Common" LastDependency="VL.Kairos.Runtime.vl">
+            <Choice Kind="InterfaceTypeFlag" Name="IIDProvider" />
+          </TypeReference>
+        </p:Interfaces>
+        <Patch Id="PKGOfjonTaKLAEocCXqXrD">
+          <Canvas Id="OqCS9tsWjAJPA4rnquunXL" CanvasType="Group">
+            <ControlPoint Id="U50ugibEZfYLM7EATyLWcE" Bounds="228,177" />
+            <Pad Id="LKhDaAmphXZNbiYQ9BINPP" SlotId="FdF3sgyo7tQQNqq920YMbZ" Bounds="228,233" />
+            <Overlay Id="Pw8Xi9Muv9VMYgj8OniDoN" Name="Layer Model" Bounds="110,103,263,222">
+              <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
+            </Overlay>
+            <ControlPoint Id="KpCLVBGvkVXMcbnUWXBMsm" Bounds="228,289" />
+            <ControlPoint Id="OrnTRnr8147O7vFZ5A1FVa" Bounds="256,205" />
+          </Canvas>
+          <ProcessDefinition Id="FWQUm6HXx76MrCmeUTrXao" IsHidden="true">
+            <Fragment Id="PaxfSqvowIvOh3vTwsIpVK" Patch="PZmfPYJ9S17LLgpPYeCGFd" />
+            <Fragment Id="SLgglfCOunTL0wgXvh8Ols" Patch="Rk9PPm9Ko8gPdir4z04kmC" />
+            <Fragment Id="Io8u8VOy9fcNT1jIg9lPkG" Patch="HtD2yclbR32MHnJLKtn7wz" />
+          </ProcessDefinition>
+          <Slot Id="FdF3sgyo7tQQNqq920YMbZ" Name="Layer Model">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="ILayerModel" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Patch Id="Rk9PPm9Ko8gPdir4z04kmC" Name="SyncToLayerModel">
+            <Pin Id="Gpvue2XSVy3Nnw0ftSVtpz" MergeId="229847" Name="Layer Model" Kind="InputPin" />
+          </Patch>
+          <Patch Id="PZmfPYJ9S17LLgpPYeCGFd" Name="GetLayerModel">
+            <Pin Id="CNbuEf8L2o9OGStHtRPSDz" MergeId="229851" Name="Layer Model" Kind="OutputPin" />
+          </Patch>
+          <Link Id="NZuXotX0VmONvmrSfb2c8e" Ids="Gpvue2XSVy3Nnw0ftSVtpz,U50ugibEZfYLM7EATyLWcE" IsHidden="true" />
+          <Link Id="LfgDN5e12CVNQ2ZPvvsZWI" Ids="U50ugibEZfYLM7EATyLWcE,LKhDaAmphXZNbiYQ9BINPP" />
+          <Link Id="ROhiapv1QJrOUsGQ3h7TzG" Ids="LKhDaAmphXZNbiYQ9BINPP,KpCLVBGvkVXMcbnUWXBMsm" />
+          <Link Id="IWReJvk0D6pLP0D0yAszCM" Ids="KpCLVBGvkVXMcbnUWXBMsm,CNbuEf8L2o9OGStHtRPSDz" IsHidden="true" />
+          <Patch Id="HtD2yclbR32MHnJLKtn7wz" Name="Configure">
+            <Pin Id="JMKJm4iIgoyMEVhh0Alp0U" Name="Layer Model" Kind="InputPin" />
+          </Patch>
+          <Link Id="DAJz6CgbY97PhvIry1Kqhh" Ids="JMKJm4iIgoyMEVhh0Alp0U,OrnTRnr8147O7vFZ5A1FVa" IsHidden="true" />
+          <Link Id="IXQPuMRtcjuPTY8Gi2067W" Ids="OrnTRnr8147O7vFZ5A1FVa,LKhDaAmphXZNbiYQ9BINPP" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ ILayerUI ************************
+
+-->
+      <Node Name="ILayerUI" Bounds="525,144" Id="IBTswvcUcCfOl2q5Mh5i0P">
+        <p:NodeReference>
+          <Choice Kind="InterfaceDefinition" />
+        </p:NodeReference>
+        <p:Interfaces>
+          <TypeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+            <Choice Kind="InterfaceTypeFlag" Name="ILayerUI (Ungeneric)" />
+          </TypeReference>
+        </p:Interfaces>
+        <Patch Id="MqqYQr9GpaRNfnc3g3LMAk" IsGeneric="true" ExplicitTypeParameters="T,TDomain">
+          <Canvas Id="RoSMmh0RKZBLzDtHS2VGz3" CanvasType="Group" />
+          <ProcessDefinition Id="GTVoESYbUfQPswRmgztyRc" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ ILayerUI (Ungeneric) ************************
+
+-->
+      <Node Name="ILayerUI (Ungeneric)" Bounds="523,88" Id="E9LYCat8q7pPS1zldPuTqE">
+        <p:NodeReference>
+          <Choice Kind="InterfaceDefinition" />
+        </p:NodeReference>
+        <Patch Id="Aa176WBRpL0PxcTwNlgnbZ">
+          <Canvas Id="LP5HFWiAODyMQNkHz5jHHs" CanvasType="Group">
+            <Pad Id="RnTzR9Y0HuBMJKqmwQzmJB" SlotId="MMQkrtUnoWuPxF5MSbI2wT" Bounds="253,189" />
+            <ControlPoint Id="OfADjgm7xLTLL83tizsAqe" Bounds="253,131" />
+            <ControlPoint Id="PKqoZjzWJkQQSXGJxO0taz" Bounds="253,248" />
+            <Pad Id="LmPkvHtVWchNDESKBDzCwy" SlotId="VAove7aasEoLjcwQVmHo5i" Bounds="463,189" />
+            <ControlPoint Id="AMP0pRDBw2uNRoQhiqVLHe" Bounds="463,131" />
+            <ControlPoint Id="BVvPGKCKmZYLJ7vDELNwFg" Bounds="463,248" />
+            <Pad Id="LUVLbkMGYfPPfWYyreM5QT" SlotId="LQbw9cXSXy0OXYR4XitTWH" Bounds="672,189" />
+            <ControlPoint Id="QBwQU0BQobMPLHhUhHwyd9" Bounds="672,131" />
+            <ControlPoint Id="RA2tk96r7VbMhp6bVshdSN" Bounds="672,248" />
+            <Pad Id="HdjMwpxAiHfPyY8g5jRBMX" SlotId="KoNf3V9ESn8NoxKCexY4a9" Bounds="891,189" />
+            <ControlPoint Id="F8o14cnHf8EOrJl2qPVYJ8" Bounds="891,140" />
+            <ControlPoint Id="IDYwYIfVgzjPaDpnWsTYUe" Bounds="394,450" />
+            <ControlPoint Id="H1FwFIl9gyDQRRhZs05QmC" Bounds="294,450" />
+            <ControlPoint Id="Da3cLn70RhTOIwdl6500Ty" Bounds="384,519" />
+            <Overlay Id="OHaK2QyS0eeOff5n8CRFUX" Name="Layout" Bounds="253,381,273,177">
+              <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
+            </Overlay>
+            <Overlay Id="OYFaqf4IjT6OelY5lsYvLS" Name="Is Within View" Bounds="621,381,273,177">
+              <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
+            </Overlay>
+            <ControlPoint Id="MeBJmgmHCdRQCMP1nDAvnJ" Bounds="763,451" />
+            <ControlPoint Id="JSxNEVplGkqLKUoVnPSoY9" Bounds="663,451" />
+            <ControlPoint Id="EkQJMxSObgFOldydj05GoT" Bounds="753,520" />
+            <Overlay Id="HPA7C9sXvhkO9MG40ru0Lh" Name="Draw" Bounds="252,606,273,177">
+              <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
+            </Overlay>
+            <ControlPoint Id="FuQyKkZNinnMIbrkU7igkT" Bounds="346,668" />
+            <ControlPoint Id="FKwIZyTpBuyN1sF4uxFhJj" Bounds="346,734" />
+          </Canvas>
+          <ProcessDefinition Id="RHWa0HlIeGqMr8MevtTENR" IsHidden="true">
+            <Fragment Id="LJSV8sO8BmWOrzu19Yuv8w" Patch="QxAvtLgifi4OF3pR3amnjv" />
+            <Fragment Id="CgaI9pe8FleLyOFVPEG671" Patch="HuWbDBksRY0PLjGEN72SNC" />
+            <Fragment Id="RvU7GWfIw4JPltkkmr3MOX" Patch="ETZFKalqsogNEkhOTKtutY" />
+            <Fragment Id="HvCJQmNZXAoMIcQeC9OrGZ" Patch="P0fNvUsTF25Omqpj92QxpS" />
+            <Fragment Id="EECpGOOYNj3OZy6MRdnbG7" Patch="K20SzUf60dZPM2Xb5LMlxB" />
+            <Fragment Id="CNFyLu3Q73cPXgRuuTwvHy" Patch="B6ybt5pcaz9QMipqaBO2p0" />
+            <Fragment Id="T3Rlq2o6nj8QH5Ek3zRUap" Patch="OBYs1QMq2whOylBVCVjdql" />
+            <Fragment Id="QidIPDMUgugPLjAsoTorHt" Patch="DLM0ucm0fZFNtn1pcDYyzs" />
+          </ProcessDefinition>
+          <Patch Id="QxAvtLgifi4OF3pR3amnjv" Name="Configure">
+            <Pin Id="B424FoPvNeaPXTFURzOBiH" MergeId="428027" Name="Layer Model Stream" Kind="InputPin" />
+            <Pin Id="EoLodGLqpgJNzYF61kPSUQ" MergeId="509269" Name="Layer" Kind="InputPin" />
+            <Pin Id="BN3EkOVgptsPN75kMYUoV6" MergeId="518727" Name="LayerUI Model Stream" Kind="InputPin" />
+          </Patch>
+          <Slot Id="MMQkrtUnoWuPxF5MSbI2wT" Name="Layer Model Stream">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Channel" />
+              <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="ILayerModel" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Slot>
+          <Slot Id="VAove7aasEoLjcwQVmHo5i" Name="Layer">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="ILayer (Ungeneric)" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Slot Id="LQbw9cXSXy0OXYR4XitTWH" Name="LayerUI Model Stream">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Channel" />
+              <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="ILayerUIModel" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="HUyltAjFsPrM1wuqphc0lZ" Ids="OfADjgm7xLTLL83tizsAqe,RnTzR9Y0HuBMJKqmwQzmJB" />
+          <Link Id="RVf9ggYlMJQLn2gxAt2e9U" Ids="B424FoPvNeaPXTFURzOBiH,OfADjgm7xLTLL83tizsAqe" IsHidden="true" />
+          <Link Id="EzJ3XAvIpLRLyZkgRpGN4Z" Ids="RnTzR9Y0HuBMJKqmwQzmJB,PKqoZjzWJkQQSXGJxO0taz" />
+          <Link Id="QGuKOAYQyQlMBpUkN3YJNa" Ids="PKqoZjzWJkQQSXGJxO0taz,RT6OINHCjpGMKgHK2nTNfE" IsHidden="true" />
+          <Link Id="FRfYad1P28pLfPYG1wgfSv" Ids="AMP0pRDBw2uNRoQhiqVLHe,LmPkvHtVWchNDESKBDzCwy" />
+          <Link Id="E1F3TOpDFJPPdERSvuUKvG" Ids="LmPkvHtVWchNDESKBDzCwy,BVvPGKCKmZYLJ7vDELNwFg" />
+          <Link Id="VYaDk9U1ZisMhZShikrrow" Ids="EoLodGLqpgJNzYF61kPSUQ,AMP0pRDBw2uNRoQhiqVLHe" IsHidden="true" />
+          <Link Id="JE5mB3hIWb4N3R5yCejOJQ" Ids="BVvPGKCKmZYLJ7vDELNwFg,T8zYBGe44HSPRNuiElRhle" IsHidden="true" />
+          <Link Id="GyX6DcvDdDEPhcR6xxXRNF" Ids="QBwQU0BQobMPLHhUhHwyd9,LUVLbkMGYfPPfWYyreM5QT" />
+          <Link Id="B3i1R7nnx9tMmtLuHQ5JaS" Ids="BN3EkOVgptsPN75kMYUoV6,QBwQU0BQobMPLHhUhHwyd9" IsHidden="true" />
+          <Link Id="UPYsudcz37ZMpLQ47N2jEK" Ids="LUVLbkMGYfPPfWYyreM5QT,RA2tk96r7VbMhp6bVshdSN" />
+          <Link Id="O4XK2e2AYsePlYr7W2iVkT" Ids="RA2tk96r7VbMhp6bVshdSN,HlKsN4NYM42NZj8GlsAQlR" IsHidden="true" />
+          <Patch Id="HuWbDBksRY0PLjGEN72SNC" Name="GetLayerModelStream">
+            <Pin Id="RT6OINHCjpGMKgHK2nTNfE" Name="Layer Model Stream" Kind="OutputPin" />
+          </Patch>
+          <Patch Id="ETZFKalqsogNEkhOTKtutY" Name="GetLayer">
+            <Pin Id="T8zYBGe44HSPRNuiElRhle" Name="Layer" Kind="OutputPin" />
+          </Patch>
+          <Patch Id="P0fNvUsTF25Omqpj92QxpS" Name="GetLayerUIModelStream">
+            <Pin Id="HlKsN4NYM42NZj8GlsAQlR" Name="LayerUI Model Stream" Kind="OutputPin" />
+          </Patch>
+          <Slot Id="KoNf3V9ESn8NoxKCexY4a9" Name="Model">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="ILayerUIModel" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="LQ1ZM5zTZMBOAgmMJyt5Kn" Ids="F8o14cnHf8EOrJl2qPVYJ8,HdjMwpxAiHfPyY8g5jRBMX" />
+          <Link Id="L16zQnjRj3nMmOj7xeaCWd" Ids="VjzOjmJxSQTQUVXoztr12r,F8o14cnHf8EOrJl2qPVYJ8" IsHidden="true" />
+          <Patch Id="K20SzUf60dZPM2Xb5LMlxB" Name="SyncToModel">
+            <Pin Id="VjzOjmJxSQTQUVXoztr12r" Name="Model" Kind="InputPin" />
+          </Patch>
+          <Patch Id="B6ybt5pcaz9QMipqaBO2p0" Name="Layout">
+            <Pin Id="Lu7yNuAbMvPOVLjIufTvGS" MergeId="3384" Name="Client Bounds" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Rectangle" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="CwB3arw6UVQM9AhhO4neAq" MergeId="3386" Name="Is Visible" Kind="OutputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="J53K2iFlgWQPH2bpBEKLc3" MergeId="3382" Name="View Transform" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Matrix" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <Link Id="UXZpIJzTMt1N7vrtvbkSKs" Ids="J53K2iFlgWQPH2bpBEKLc3,IDYwYIfVgzjPaDpnWsTYUe" IsHidden="true" />
+          <Link Id="QssAUEwjO8ZO1VN0MP5Xg1" Ids="Lu7yNuAbMvPOVLjIufTvGS,H1FwFIl9gyDQRRhZs05QmC" IsHidden="true" />
+          <Link Id="GSXflTR4Bz5Pyx7W6G1syE" Ids="Da3cLn70RhTOIwdl6500Ty,CwB3arw6UVQM9AhhO4neAq" IsHidden="true" />
+          <Patch Id="OBYs1QMq2whOylBVCVjdql" Name="IsWithinView">
+            <Pin Id="Hp2NdU2osmGLKXTkHvMIQN" Name="Client Bounds" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Rectangle" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="CzfzA6UoffEN4UfunNggde" Name="Result" Kind="OutputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="QrQITjwxowvPceZxv0qlZz" Name="View Transform" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Matrix" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <Link Id="KHS6esMiok9NgLQj4o5jX0" Ids="QrQITjwxowvPceZxv0qlZz,MeBJmgmHCdRQCMP1nDAvnJ" IsHidden="true" />
+          <Link Id="Qn47MoCJQboLrvnTUjdIOS" Ids="Hp2NdU2osmGLKXTkHvMIQN,JSxNEVplGkqLKUoVnPSoY9" IsHidden="true" />
+          <Link Id="HGibSvWzKRcOXoCWM9cqAD" Ids="EkQJMxSObgFOldydj05GoT,CzfzA6UoffEN4UfunNggde" IsHidden="true" />
+          <Patch Id="DLM0ucm0fZFNtn1pcDYyzs" Name="Draw">
+            <Pin Id="MUHJmKOlHoFNp9IeWKBBFS" MergeId="3395" Name="Draw Context" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="LayerX.Common.Skia" LastDependency="VL.LayerX.Common.vl">
+                <Choice Kind="TypeFlag" Name="DrawContext" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Khb0LSBiVi4PC1inlC4qYF" Name="Layer" Kind="OutputPin">
+              <p:TypeAnnotation LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
+                <Choice Kind="TypeFlag" Name="Layer" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <Link Id="TQSPdSl40ejL9z3bE0bwiB" Ids="MUHJmKOlHoFNp9IeWKBBFS,FuQyKkZNinnMIbrkU7igkT" IsHidden="true" />
+          <Link Id="AXxzSjYYK0kNGojapAIBzS" Ids="FKwIZyTpBuyN1sF4uxFhJj,Khb0LSBiVi4PC1inlC4qYF" IsHidden="true" />
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 
@@ -23062,10 +23301,10 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Axxdj9yFNa1N9PXEjJL71f" Location="VL.Skia" Version="2024.6.7-0241-g11560101a2" />
-  <NugetDependency Id="McHqbMQRrcaNpOA9LnYljB" Location="VL.ImGui" Version="2024.6.7-0241-g11560101a2" />
+  <NugetDependency Id="Axxdj9yFNa1N9PXEjJL71f" Location="VL.Skia" Version="2024.6.7-0258-g67ac288fc9" />
+  <NugetDependency Id="McHqbMQRrcaNpOA9LnYljB" Location="VL.ImGui" Version="2024.6.7-0258-g67ac288fc9" />
   <NugetDependency Id="A7JOQkeuQEmNDDvd9l7G5A" Location="VL.Touchy" Version="0.0.0" />
-  <NugetDependency Id="PpydUzptoSBNrdcI4odllh" Location="VL.HDE" Version="2024.6.7-0241-g11560101a2" />
-  <NugetDependency Id="KNbJJecmrMfN96DcpsQYXk" Location="VL.EditingFramework" Version="2024.6.7-0241-g11560101a2" />
+  <NugetDependency Id="PpydUzptoSBNrdcI4odllh" Location="VL.HDE" Version="2024.6.7-0258-g67ac288fc9" />
+  <NugetDependency Id="KNbJJecmrMfN96DcpsQYXk" Location="VL.EditingFramework" Version="2024.6.7-0258-g67ac288fc9" />
   <NugetDependency Id="DON63DaMgM8QBMsPNvfxTt" Location="VL.Kairos.Runtime" IsFriend="true" Version="0.0.0" />
 </Document>
