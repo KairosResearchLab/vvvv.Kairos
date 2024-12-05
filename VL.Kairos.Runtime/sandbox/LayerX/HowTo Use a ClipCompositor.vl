@@ -174,35 +174,6 @@
             <Pin Id="ChFTNxX38tWPJOCiQ9XiSH" Name="Context" Kind="InputPin" />
             <Pin Id="SggBnqLlUzPLUZ15CUkBLn" Name="Clips" Kind="OutputPin" />
           </Node>
-          <Node Bounds="595,1455,85,19" Id="HXOBhWiaDxIOwdMJsZz5p4">
-            <p:NodeReference LastCategoryFullName="LayerX.Context" LastDependency="VL.Kairos.Runtime.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="LocalContext" />
-            </p:NodeReference>
-            <Pin Id="NMV5s7ldBC4OByR81Z9ttq" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="S9EL6Opcb9eOZe45pdN5WQ" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="RDeOlFAu8E1MqyVSOzK1dC" Name="Sources Input Pin Group Enabled" Kind="InputPin" IsHidden="true" />
-            <Pin Id="VIycGLNPi2yMMEZlEQZynd" Name="Caller Info" Kind="InputPin" />
-            <Pin Id="UhDhJUIAZVQNh3CKs1euuz" Name="Channel Hub" Kind="InputPin" />
-            <Pin Id="PnyJCHX9A0DONhOvT9gjy5" Name="LFO" Kind="InputPin" PinGroupName="Input">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="Float32" />
-                <CategoryReference Kind="Category" Name="Primitive" NeedsToBeDirectParent="true" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="JX8QofZTJIcNVKYr6ximJx" Name="MyGlobalChannel" Kind="InputPin" PinGroupName="Input">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="Float32" />
-                <CategoryReference Kind="Category" Name="Primitive" NeedsToBeDirectParent="true" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="IBfaydP8JdvNKNr8Me8EZ1" Name="MySineLayer" Kind="InputPin" PinGroupName="Input">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="Float32" />
-                <CategoryReference Kind="Category" Name="Primitive" NeedsToBeDirectParent="true" />
-              </p:TypeAnnotation>
-            </Pin>
-          </Node>
           <Pad Id="T9wcDeIeiArPPVfokGQ7ig" Comment="" Bounds="1118,1423,39,78" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Float32" />
@@ -590,7 +561,7 @@
             <Pin Id="T9N0fw5QflFMtEXoAPj3zQ" Name="GlobalChannel / Source" Kind="InputPin" />
             <Pin Id="HGlZcOCpolaNGPaqxoTw3i" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="D8ACterNaVDNZ3QmV4E1Mn" Comment="Global Channel Path" Bounds="1141,537,153,22" ShowValueBox="true" isIOBox="true" Value="MyGlobalChannel">
+          <Pad Id="D8ACterNaVDNZ3QmV4E1Mn" Comment="Global Channel Path" Bounds="1141,537,110,19" ShowValueBox="true" isIOBox="true" Value="MyGlobalChannel">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -683,7 +654,7 @@
             <Pin Id="NqGmiOAL7H8NmgRKDOrHFd" Name="Update" Kind="InputPin" />
             <Pin Id="LcvvFgwr5IILRTQwC3APQH" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="BMtfZ3VEkfqM4xFeyNeYQB" Comment="Source Key" Bounds="1561,526,82,16" ShowValueBox="true" isIOBox="true" Value="MySineLayer">
+          <Pad Id="BMtfZ3VEkfqM4xFeyNeYQB" Comment="Source Key" Bounds="1603,508,82,16" ShowValueBox="true" isIOBox="true" Value="MySineLayer">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -695,16 +666,6 @@
             <p:ValueBoxSettings>
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="PD9VXvsxwk8QbBYwSnHVSH" Comment="Position" Bounds="1878,633,35,15" ShowValueBox="true" isIOBox="true" Value="3.47">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Float64" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="Tl7wC70zUZaPnf8vsEnNgM" Comment="Duration" Bounds="1914,674,35,15" ShowValueBox="true" isIOBox="true" Value="1.5">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Float64" />
-            </p:TypeAnnotation>
           </Pad>
           <Pad Id="SIa5QZmTweVLOvAQxwP5QE" Comment="Clips" Bounds="353,1192,316,89" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="768,569,123,19" Id="GXS0ten6jbZNyuq9sz1Now">
@@ -744,7 +705,7 @@
               <Choice Kind="ImmutableTypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="1541,484,125,19" Id="AYmbWXS6qh2MwSBIiVCz3h">
+          <Node Bounds="1541,409,125,19" Id="AYmbWXS6qh2MwSBIiVCz3h">
             <p:NodeReference LastCategoryFullName="AlchemX.Utils" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetTypeFullNameFromT" />
@@ -752,12 +713,12 @@
             <Pin Id="D4M1su2cBQqPFbEKV87yaz" Name="Input" Kind="InputPin" />
             <Pin Id="Pqe9VBbLxS0Og8WKgf1tyS" Name="Full Name" Kind="OutputPin" />
           </Node>
-          <Pad Id="KQUT9K3h0vqNDjZR3HZ9NE" Comment="T" Bounds="1543,470,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="KQUT9K3h0vqNDjZR3HZ9NE" Comment="T" Bounds="1543,395,35,15" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="1640,403,125,19" Id="Uy0MiSdObd7LuwqItVvzMo">
+          <Node Bounds="1571,464,125,19" Id="Uy0MiSdObd7LuwqItVvzMo">
             <p:NodeReference LastCategoryFullName="AlchemX.Utils" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetTypeFullNameFromT" />
@@ -765,7 +726,7 @@
             <Pin Id="NDYgYGzt1vNN06tyo8BHpK" Name="Input" Kind="InputPin" />
             <Pin Id="FRb184rH1GOPBOh8Y11qUp" Name="Full Name" Kind="OutputPin" />
           </Node>
-          <Pad Id="PbV2dAngkADNEY7z3Xyj1s" Comment="TDomain" Bounds="1642,389,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="PbV2dAngkADNEY7z3Xyj1s" Comment="TDomain" Bounds="1573,450,35,15" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float64" />
             </p:TypeAnnotation>
@@ -937,6 +898,53 @@
             </Patch>
             <Pin Id="VrKcO0ag0P3MO3iF5pIfRX" Name="Node Context" Kind="InputPin" IsHidden="true" />
           </Node>
+          <Node Bounds="595,1454,85,19" Id="Q4kQq4cvKBVMHp6o6Q1SAB">
+            <p:NodeReference LastCategoryFullName="LayerX.Context" LastDependency="VL.Kairos.Runtime.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="LocalContext" />
+            </p:NodeReference>
+            <Pin Id="RjRsjt8eLVPOTwopSPeIZ5" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DbwdSYR7PcNMt6kyv90oYs" Name="Sources Input Pin Group Enabled" Kind="InputPin" IsHidden="true" />
+            <Pin Id="LUOpsyV6lQTQZ72b64YTRE" Name="Caller Info" Kind="InputPin" />
+            <Pin Id="KMMpr6B90utO1Sh2NlQb5p" Name="Channel Hub" Kind="InputPin" />
+            <Pin Id="VJk6vD3qjJKOb8RcmReBRw" Name="Output" Kind="OutputPin" />
+            <Pin Id="IR0xwpc1SnZMnTS8TWoblz" Name="LFO" Kind="InputPin" PinGroupName="Input">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+                <CategoryReference Kind="Category" Name="Primitive" NeedsToBeDirectParent="true" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="AaAIDLhOBunLpgTgVnNw81" Name="MyGlobalChannel" Kind="InputPin" PinGroupName="Input">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+                <CategoryReference Kind="Category" Name="Primitive" NeedsToBeDirectParent="true" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="UgW9ruQVlgWOkY8DvmGdho" Name="MySineLayer" Kind="InputPin" PinGroupName="Input">
+              <p:TypeAnnotation LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
+                <Choice Kind="TypeFlag" Name="ILayer" />
+                <FullNameCategoryReference ID="LayerX.Layer" />
+                <p:TypeArguments>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="Float32" />
+                    <CategoryReference Kind="Category" Name="Primitive" NeedsToBeDirectParent="true" />
+                  </TypeReference>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="Float64" />
+                    <CategoryReference Kind="Category" Name="Primitive" NeedsToBeDirectParent="true" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+          </Node>
+          <Pad Id="AfM1iexUSuxMTk9TTnFUBf" Comment="GlobalChannel / Source" Bounds="1633,541,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="FSVHgsUJMVHN69WuqjNh39" Name="Create" />
         <Patch Id="IZujogNUJB3NANeh5TC7vE" Name="Update" />
@@ -1013,7 +1021,6 @@
         <Link Id="P0XpSZHsJNMLfDow6bJRiO" Ids="PJmLDIybO36N2CAw4RfKDZ,VwHGHzDUREcLpFUPacC1Ff" />
         <Link Id="Lw1zXSdOhWTLh8ovTHx2i2" Ids="L0eXlGab40MMHmNKRYkFqJ,FQPXWhlPdt0Po6rGxRFJyH" />
         <Link Id="VpKpmLMqWL9NioBGsgaxu1" Ids="FQPXWhlPdt0Po6rGxRFJyH,M49ap3Qt9moLu9LpmWOSHs" />
-        <Link Id="LtwSeQhJiCCP7emo2T1nc1" Ids="Fd6MvvSJgMhNoaxz3t1iaX,PnyJCHX9A0DONhOvT9gjy5" />
         <Link Id="DsTHS2eeewBQclqSWpMMHJ" Ids="Phdblicorv5QVZQWq7SLOL,S45QhAdyfRmO4UKcBu7IXM" IsHidden="true" />
         <Link Id="JZUV1AvaqoMNMGKXc4CuDN" Ids="CbgtJtMlN7MMAicFccgMJe,KNEP7BXL2ZoPF2ZjXhEESW" IsHidden="true" />
         <Link Id="H3tVMLnAJ4EMO2yqsM1UTU" Ids="FFwe95yc1Q7OaOhUidBAwS,QAqQpxW1poZMfEvojtTjgO" IsHidden="true" />
@@ -1028,7 +1035,6 @@
         <Link Id="IXHEQZSJURmPDAVSAv8mG6" Ids="I72i6O4D7NIP2P7WlfuNqa,Ip46XucJVznNf58rTpbNtx" />
         <Link Id="ETJ8qlMUBuhPdZJgzPVbDf" Ids="VdxHHmbdjevOMtPqBZ9jhz,EKFTCeFhRnPOIiEGoAYNVH" />
         <Link Id="EEXarFa97WvO5NU29a9sbK" Ids="HGlZcOCpolaNGPaqxoTw3i,Uiq5zgd4qiNM1T1XUOrK7h" />
-        <Link Id="PHtiOdgEiUoMq0rLiMWymZ" Ids="NMV5s7ldBC4OByR81Z9ttq,QPTPbEBNV8BLxNMXaN92yG" />
         <Link Id="H3TWS1dJTS4MV7J8xqzrsI" Ids="QPTPbEBNV8BLxNMXaN92yG,FFjQKF2mANQLMoKwqt7CXz" />
         <Link Id="Ve86X6lKiycOUXgILEbUht" Ids="QPTPbEBNV8BLxNMXaN92yG,Sqvrr8WWQS1PZ6WxPwhI3s" />
         <Link Id="H4MEjApV4scLQ6FsWTXgaE" Ids="Sqvrr8WWQS1PZ6WxPwhI3s,UIRZzZkDXfnLmzTOnfatnQ" />
@@ -1050,7 +1056,12 @@
         <Link Id="T7erMAU9RRTOQSQ520lLyk" Ids="AlUcvwtw5y0McMAFqKQO1V,Fu9XnneCorKOpNU6flZkP7" />
         <Link Id="RDKidtCir5jMrkP6v6cFw0" Ids="HqKauNDnsPWQR9Wy6DoMvU,Vo71rAfUjl5POeoXOtQe1h" />
         <Link Id="Gfjw1gC8Cb8OglNZLSYaxq" Ids="RXYHQ5wEClROo1xN0ry11z,OEdgmQ2afXqM42mE3PnTeG" />
-        <Link Id="PSfiUjdyHRmNhFbpfs9qaU" Ids="CwEzEMg5LxDPdrMZviuXe7,JX8QofZTJIcNVKYr6ximJx" />
+        <Link Id="EVYSf0S2BrmLDnrX9vDAJf" Ids="FRb184rH1GOPBOh8Y11qUp,KMQjswKc5VJLxJyTKNNIMb" />
+        <Link Id="FOeMYus76uaPcSpcvcN55x" Ids="VJk6vD3qjJKOb8RcmReBRw,QPTPbEBNV8BLxNMXaN92yG" />
+        <Link Id="Q0iJ5zmEOm7PMslWrwamkb" Ids="Fd6MvvSJgMhNoaxz3t1iaX,IR0xwpc1SnZMnTS8TWoblz" />
+        <Link Id="TqOuQHRDCdaLBo43eR0zz5" Ids="ANkRNPkEWk0PsV9N6TYT3X,AaAIDLhOBunLpgTgVnNw81" />
+        <Link Id="OAnSF61SykJQPhYJqc7zeX" Ids="EJEEQj0hubsPbGlaHTfPE0,UgW9ruQVlgWOkY8DvmGdho" />
+        <Link Id="AAJeM0lWfj2Mocgp2gUWY4" Ids="AfM1iexUSuxMTk9TTnFUBf,OIfbwA2x1x9QZ972e0r8Ji" />
       </Patch>
     </Node>
   </Patch>

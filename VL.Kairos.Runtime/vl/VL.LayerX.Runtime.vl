@@ -15759,6 +15759,7 @@
               <Pad Id="Fsb1y0AfoEpLzAT5nMQsGl" SlotId="HMLAvJ8A6g4OrOt0vfyi5B" Bounds="1442,413" />
               <ControlPoint Id="RQcjGbyhHe2N98wouKH5en" Bounds="254,183" />
               <ControlPoint Id="VfknQVhqMCBNjt4okFXAmA" Bounds="384,182" />
+              <ControlPoint Id="VoNvEu1sKemN7jilJRRUhW" Bounds="1474,171" />
             </Canvas>
             <Patch Id="MO4ToHo0iqNOnrfj0Wvkp7" Name="Create" ParticipatingElements="FhJqVjAuDLcO8GsmSiSZxD,N04GATghmImPJYmWbO2dcZ,D6BcnwJQu8zQBUBLLpJ4Rl" />
             <Patch Id="BiAQAbX6tmjPIgkwlXuiG2" Name="Split">
@@ -15791,6 +15792,7 @@
               <Fragment Id="NhLzEVmItCWNi7QcSqaIca" Patch="SccAHbpPuliMvYoBI7tbfW" />
               <Fragment Id="Ey1zkQ4zMTaLmcsMRvaqb6" Patch="Kigofmze2VgPIgKUPsVG7Q" />
               <Fragment Id="Ostrq6AC085MCpf3K6OuoI" Patch="UPclrNGjmb2PMQ1fq22A1s" />
+              <Fragment Id="COaiI1CtkCpM0vb8EWYOlT" Patch="PEvMRygqYA2OYpcUNDWXyQ" />
             </ProcessDefinition>
             <Slot Id="GIlgG8cPw2vMiCEb3WOmrW" Name="Position">
               <p:TypeAnnotation p:Type="TypeReference">
@@ -15903,6 +15905,11 @@
             <Link Id="Nc0MyPEqQObPvdJxL6cXz0" Ids="RK5py2465i1M24r2QtkQcH,VfknQVhqMCBNjt4okFXAmA" IsHidden="true" />
             <Patch Id="UPclrNGjmb2PMQ1fq22A1s" Name="SetDuration">
               <Pin Id="RK5py2465i1M24r2QtkQcH" Name="Duration" Kind="InputPin" />
+            </Patch>
+            <Link Id="Ir2CGJplnDpQRdCCxVaYJF" Ids="VoNvEu1sKemN7jilJRRUhW,ODo6gZXFymkPpTYd1UhKHC" />
+            <Link Id="A0CAajltuvsO4KKtdwl8yL" Ids="QOqvvIegWspOCLw2h9P91H,VoNvEu1sKemN7jilJRRUhW" IsHidden="true" />
+            <Patch Id="PEvMRygqYA2OYpcUNDWXyQ" Name="SetLayerModel">
+              <Pin Id="QOqvvIegWspOCLw2h9P91H" Name="Layer Model" Kind="InputPin" />
             </Patch>
           </Patch>
         </Node>
@@ -16717,7 +16724,7 @@
                   <Choice Kind="OperationCallFlag" Name="Split" />
                 </p:NodeReference>
                 <Pin Id="ABghgBflYbuLVLUD0Fwxoa" Name="Input" Kind="StateInputPin" />
-                <Pin Id="Qt2Ru4bUTD3MRd4uYWYcJj" Name="Output" Kind="OutputPin" IsHidden="true" />
+                <Pin Id="Qt2Ru4bUTD3MRd4uYWYcJj" Name="Output" Kind="OutputPin" />
                 <Pin Id="LIEcF5W0C7ZL9xcl9CZ4v0" Name="ID" Kind="OutputPin" />
                 <Pin Id="QE32vNY3h9cQL0AAsSgG0z" Name="Position" Kind="OutputPin" />
                 <Pin Id="G9Jgl4iw432NhZs43FOIiH" Name="Duration" Kind="OutputPin" />
@@ -17254,7 +17261,7 @@
             </Slot>
             <Link Id="PT9xQLGmjm9QHaBlrw4iTo" Ids="VfjdCnEYgVRMTnebhnaR22,QUntAA7Pr5POGzDeoGD9iv" IsHidden="true" />
             <Link Id="BM3zulmK3pPM7mTrgx909J" Ids="QUntAA7Pr5POGzDeoGD9iv,IindIeKQ4KjNcQrtlEdnl9" />
-            <Patch Id="IKw25VaNGu0QA76D3Xu1J0" Name="Split">
+            <Patch Id="IKw25VaNGu0QA76D3Xu1J0" Name="GetValue">
               <Pin Id="NtqpOVqU2AMQZ4luwqQl5z" Name="Value" Kind="OutputPin" />
             </Patch>
             <Link Id="K5RRwwz6GNiLkpcFxp8kkV" Ids="DAE8hEtRKpnNOsaQ2n3ArI,NtqpOVqU2AMQZ4luwqQl5z" IsHidden="true" />
@@ -17384,10 +17391,10 @@
                 <p:NodeReference LastCategoryFullName="LayerX.Layer.ValueLayerModel" LastDependency="VL.LayerX.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="ValueLayerModel" />
-                  <Choice Kind="OperationCallFlag" Name="Split" />
+                  <Choice Kind="OperationCallFlag" Name="GetValue" />
                 </p:NodeReference>
                 <Pin Id="TOXxcUGR2bQLAdVSUL0flm" Name="Input" Kind="StateInputPin" />
-                <Pin Id="GLSDaVtmkXeP4ZrwJ3A7mm" Name="Output" Kind="OutputPin" IsHidden="true" />
+                <Pin Id="GLSDaVtmkXeP4ZrwJ3A7mm" Name="Output" Kind="OutputPin" />
                 <Pin Id="KeyT9nGSn5xQEF4kJeF0ST" Name="Value" Kind="OutputPin" />
               </Node>
               <Pad Id="Ra3vofdd7YCMG4qQZc2VSZ" SlotId="AQHXkfjafwkMIGx10KiwE8" Bounds="1198,434" />
