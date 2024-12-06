@@ -15663,8 +15663,8 @@
               <Pad Id="KJtLfQpZMdOM638JeZ2XVO" SlotId="GIlgG8cPw2vMiCEb3WOmrW" Bounds="1156,218" />
               <Pad Id="EMUvmz3v8kBN9elAOT0bZ4" SlotId="RgnArFHygHdNeLlQhYQoFC" Bounds="1260,218" />
               <ControlPoint Id="NvbJq1jRynDPMzLqjHfbSf" Bounds="1072,391" />
-              <ControlPoint Id="DCEpEtc2IqLLEYWUkdUwkn" Bounds="251,263" />
-              <ControlPoint Id="OVm1jhybb3gMr4vNPdxHdv" Bounds="382,262" />
+              <ControlPoint Id="DCEpEtc2IqLLEYWUkdUwkn" Bounds="251,278" />
+              <ControlPoint Id="OVm1jhybb3gMr4vNPdxHdv" Bounds="382,277" />
               <!--
 
     ************************ CreateLayer ************************
@@ -15760,6 +15760,8 @@
               <ControlPoint Id="RQcjGbyhHe2N98wouKH5en" Bounds="254,183" />
               <ControlPoint Id="VfknQVhqMCBNjt4okFXAmA" Bounds="384,182" />
               <ControlPoint Id="VoNvEu1sKemN7jilJRRUhW" Bounds="1474,171" />
+              <ControlPoint Id="L3VZTytXuWjNx2wfviACuO" Bounds="741,262" />
+              <ControlPoint Id="GPezgnGqchnNgWWTHURbaS" Bounds="274,249" />
             </Canvas>
             <Patch Id="MO4ToHo0iqNOnrfj0Wvkp7" Name="Create" ParticipatingElements="FhJqVjAuDLcO8GsmSiSZxD,N04GATghmImPJYmWbO2dcZ,D6BcnwJQu8zQBUBLLpJ4Rl" />
             <Patch Id="BiAQAbX6tmjPIgkwlXuiG2" Name="Split">
@@ -15793,6 +15795,8 @@
               <Fragment Id="Ey1zkQ4zMTaLmcsMRvaqb6" Patch="Kigofmze2VgPIgKUPsVG7Q" />
               <Fragment Id="Ostrq6AC085MCpf3K6OuoI" Patch="UPclrNGjmb2PMQ1fq22A1s" />
               <Fragment Id="COaiI1CtkCpM0vb8EWYOlT" Patch="PEvMRygqYA2OYpcUNDWXyQ" />
+              <Fragment Id="Kt6yCpvE4mFNDix19P2M6y" Patch="K6M2Em0Ws9APQT1L20x5Em" />
+              <Fragment Id="Q4ha6nJB3iMO3Rg8PYGOUw" Patch="JxUyA6WWnFCNTK2Y47DXwk" />
             </ProcessDefinition>
             <Slot Id="GIlgG8cPw2vMiCEb3WOmrW" Name="Position">
               <p:TypeAnnotation p:Type="TypeReference">
@@ -15911,6 +15915,16 @@
             <Patch Id="PEvMRygqYA2OYpcUNDWXyQ" Name="SetLayerModel">
               <Pin Id="QOqvvIegWspOCLw2h9P91H" Name="Layer Model" Kind="InputPin" />
             </Patch>
+            <Link Id="JB9O7UAfy6yOFlVjN1LdGO" Ids="OD14mHPJcz0OwFKTwVANqE,L3VZTytXuWjNx2wfviACuO" />
+            <Patch Id="K6M2Em0Ws9APQT1L20x5Em" Name="GetInterpolationModel">
+              <Pin Id="RqhZM61UqXaO8GPaKq4O0u" Name="Interpolation Model" Kind="OutputPin" />
+            </Patch>
+            <Link Id="PpnQ3LtohDXOM0eFCFVBPS" Ids="L3VZTytXuWjNx2wfviACuO,RqhZM61UqXaO8GPaKq4O0u" IsHidden="true" />
+            <Link Id="ULA26M3extYNBOLYshk85Y" Ids="BuMyxYmie2xLP3QD0bD0F3,GPezgnGqchnNgWWTHURbaS" />
+            <Patch Id="JxUyA6WWnFCNTK2Y47DXwk" Name="GetPosition">
+              <Pin Id="ILSI42iWgQyMgQGqitriQe" Name="Position" Kind="OutputPin" />
+            </Patch>
+            <Link Id="Vr6YNiOWhrqPhzheY8k3nZ" Ids="GPezgnGqchnNgWWTHURbaS,ILSI42iWgQyMgQGqitriQe" IsHidden="true" />
           </Patch>
         </Node>
         <!--
@@ -16717,7 +16731,7 @@
               </Node>
               <Pad Id="Dny4NCCRWzAK943gi4tgH8" SlotId="K9VDjNsegR5N45w4O8y7dk" Bounds="310,908" />
               <ControlPoint Id="NZKBKXtVhzlNaZdWwpb9x5" Bounds="479,813" />
-              <Node Bounds="423,492,125,26" Id="LqbVqe1ruSCN2v80f4MhzI">
+              <Node Bounds="423,492,145,26" Id="LqbVqe1ruSCN2v80f4MhzI">
                 <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolator.KeyframeModel" LastDependency="VL.LayerX.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <FullNameCategoryReference ID="LayerX.KeyframeInterpolator.KeyframeModel" />
@@ -17406,6 +17420,8 @@
                 <Pin Id="E9nqLyTKxlrPTafNksg3sM" Name="Input" Kind="StateInputPin" />
                 <Pin Id="Mzr0YuXlG8mLQAUABYJpzM" Name="Result" Kind="OutputPin" />
               </Node>
+              <Pad Id="MkIs33uEH8ELnKMFQBzfZ6" SlotId="HfQD7Q7dQMYLn8YCi4eJz3" Bounds="1115,340" />
+              <ControlPoint Id="L1PJqJaZbhtNhK5r3vibvI" Bounds="1115,373" />
             </Canvas>
             <Patch Id="RPa1ExdQAfcLb9eOVfF5v8" Name="Create" ParticipatingElements="IH8uu0Uhe8WPNNGF4LRbTI,USkHXAUQ0GJMH9pTCNRmln,QcsK1yzzzL8PXErTUGRLM1" />
             <Link Id="MuGe8btl6VILrSw2YOgD2i" Ids="L9QgEzDZGhwOa3e3U5nEXI,HUdjBYQZ33mPOt4fIBgKbD" IsHidden="true" />
@@ -17450,6 +17466,7 @@
               <Fragment Id="Mj15ylXxL5INtq8tFeegGq" Patch="HJ7TkUK7XlnOFcdwTUd5kK" />
               <Fragment Id="U0dOvnM4RVULdE0eoQtEfo" Patch="LoSBJTOmKhVOGDOVAacREe" />
               <Fragment Id="IQDzUmhWaLSNFiEtn1DMFS" Patch="OWocBm8dAcuLcfdjxsmBVv" />
+              <Fragment Id="OWf3RdX8dEvMbNOQMdFgpq" Patch="ADzUXPjSG0cLXAcbK01ba7" />
             </ProcessDefinition>
             <Link Id="QcsK1yzzzL8PXErTUGRLM1" Ids="DsJue1AqZNtLAyTFkXQuyw,VgpUEIRVHXzN3q0D5kv6tD" />
             <Slot Id="ME1u3z9ZHHVOOTh6VgXKqQ" Name="ID" />
@@ -17483,6 +17500,13 @@
             <Link Id="KwzKg6Bojl4OYC3rQZ5DYI" Ids="Ignk7dR7JX3Mt7q34tYZCB,TOXxcUGR2bQLAdVSUL0flm" />
             <Link Id="Oz0RMIGEr9RO7wz8UigPr4" Ids="KeyT9nGSn5xQEF4kJeF0ST,E9nqLyTKxlrPTafNksg3sM" />
             <Link Id="BmH3jtyPf7zN8h2ZQXV8JX" Ids="Mzr0YuXlG8mLQAUABYJpzM,Ra3vofdd7YCMG4qQZc2VSZ" />
+            <Slot Id="HfQD7Q7dQMYLn8YCi4eJz3" Name="Model" />
+            <Patch Id="ADzUXPjSG0cLXAcbK01ba7" Name="GetModel">
+              <Pin Id="KcvmLtfpXuFQOybXpFHz6F" MergeId="537359" Name="Model" Kind="OutputPin" />
+            </Patch>
+            <Link Id="O4f4G4TptZhMQo5wVCcHsF" Ids="L1PJqJaZbhtNhK5r3vibvI,KcvmLtfpXuFQOybXpFHz6F" IsHidden="true" />
+            <Link Id="DxKhwOxN5UhMYyCHxNISD8" Ids="MkIs33uEH8ELnKMFQBzfZ6,L1PJqJaZbhtNhK5r3vibvI" />
+            <Link Id="QSj13IMLFnhLnRIxYjbNzi" Ids="Ignk7dR7JX3Mt7q34tYZCB,MkIs33uEH8ELnKMFQBzfZ6" />
           </Patch>
         </Node>
         <!--
@@ -20156,6 +20180,9 @@
             <TypeReference LastCategoryFullName="LayerX" LastDependency="VL.LayerX.vl">
               <Choice Kind="InterfaceTypeFlag" Name="ILayerModel" />
             </TypeReference>
+            <TypeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.LayerX.Runtime.vl">
+              <Choice Kind="InterfaceTypeFlag" Name="ISamplingLayer" />
+            </TypeReference>
           </p:Interfaces>
           <Patch Id="BtxCg2nPGQQMea4r6NViAB">
             <Canvas Id="MRLGHd2i1EML0TjfhWMM19" CanvasType="Group">
@@ -20855,6 +20882,8 @@
                 <Pin Id="VRTEQtBxgDlP0xw7MR9OMb" Name="State Output" Kind="StateOutputPin" />
                 <Pin Id="AyTaQh0vq5kQcXomX78JJM" Name="Output" Kind="OutputPin" />
               </Node>
+              <Pad Id="DQHLXhOPtxpPPCQF4Od9Bp" SlotId="Uw1ILBLoPpOMBlhdE8qppb" Bounds="1081,406" />
+              <ControlPoint Id="CpREhsx2hKyL0EiJ8OdqeZ" Bounds="1081,439" />
             </Canvas>
             <Patch Id="H9RlTf5u3cjQAnFVNUAAXi" Name="Create" ParticipatingElements="ICKzV46vwPDPMxLTxOB1Wc" />
             <Patch Id="Q8YgfsDR571M54KLlnll6F" Name="Sample">
@@ -20896,6 +20925,7 @@
               <Fragment Id="PVlXKrYpEigOrvIGDwJHHH" Patch="MQh7iglNgYLLcchTig6F8o" Enabled="true" />
               <Fragment Id="CapZSqIH6WBQUevnsGzlSP" Patch="Q8YgfsDR571M54KLlnll6F" />
               <Fragment Id="P16Hq4yAU5KL0REZV6KbjY" Patch="UM3I9CyTDC0OX3SCv0iOXY" />
+              <Fragment Id="KSxOZfsd96IQCI1rkJAGxn" Patch="MA2MBra3iUdNl7dY8luwnR" />
             </ProcessDefinition>
             <Link Id="ICKzV46vwPDPMxLTxOB1Wc" Ids="CMBxcxcJMNSNCPsKp8OBTy,VtGCo4yeKD4PlEt6Fx6nyx" />
             <Slot Id="SKckJj53ywkOdSz0f8qw3H" Name="Blending Model" />
@@ -20947,6 +20977,13 @@
             <Link Id="O3cjouGwoISNpz76922eNW" Ids="VI7XIJRBwAkLtEfyUE8NFL,SKkOeBJHsUHMtr9j4VQTyL" />
             <Link Id="SQzQZkswCBIMArAFDjphx5" Ids="DFFK2umv0suL4YR6t95MnA,GPA8HsUDlNnLyNrVFxEqhH" />
             <Link Id="ReLiBMso8hVLo2ftebpnPi" Ids="AyTaQh0vq5kQcXomX78JJM,PqjGNJhvhZALG8kZmi2USP" />
+            <Slot Id="Uw1ILBLoPpOMBlhdE8qppb" Name="Model" />
+            <Patch Id="MA2MBra3iUdNl7dY8luwnR" Name="GetModel">
+              <Pin Id="JTOKCDi0yUJLu0pqsg2XY3" MergeId="537359" Name="Model" Kind="OutputPin" />
+            </Patch>
+            <Link Id="UyqDiLhmqIxMDHPZdyxn8Q" Ids="CpREhsx2hKyL0EiJ8OdqeZ,JTOKCDi0yUJLu0pqsg2XY3" IsHidden="true" />
+            <Link Id="VYRxec2No2UOsJjE9XflFq" Ids="DQHLXhOPtxpPPCQF4Od9Bp,CpREhsx2hKyL0EiJ8OdqeZ" />
+            <Link Id="JSUtz8WFkHJMXpyebasgN9" Ids="EMxdJR9yynzQOOkM5tiiqs,DQHLXhOPtxpPPCQF4Od9Bp" />
           </Patch>
         </Node>
         <!--
@@ -20962,6 +20999,9 @@
           <p:Interfaces>
             <TypeReference LastCategoryFullName="LayerX" LastDependency="VL.LayerX.vl">
               <Choice Kind="InterfaceTypeFlag" Name="ILayerModel" />
+            </TypeReference>
+            <TypeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.LayerX.Runtime.vl">
+              <Choice Kind="InterfaceTypeFlag" Name="ISamplingLayer" />
             </TypeReference>
           </p:Interfaces>
           <Patch Id="KIuu9f7wc2sNf5lk3IJdzX">
@@ -21349,6 +21389,8 @@
                 <Pin Id="Bv0RpN5u6lqN5ZYZQPwf8C" Name="Output" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="IKpuueXtfAGMkX1sGxxxOt" Bounds="743,856,-18,0" />
+              <Pad Id="NF448hWyT66Pm8VyAqcZqX" SlotId="CitoRknPDjOO1CsuaJ5ZUM" Bounds="1095,399" />
+              <ControlPoint Id="DoRSTTTQjXVMEVLHtDHh03" Bounds="1095,432" />
             </Canvas>
             <Patch Id="P0EAOvwhyxNQAg6aehvK7P" Name="Create" ParticipatingElements="MaZC1spX3ooMlSFnJXDSTk" />
             <Patch Id="TN9EacNpKz7PnqDBgH0xMB" Name="Sample">
@@ -21390,6 +21432,7 @@
               <Fragment Id="LmcXDi7Bd2VPLRp1pq2SBK" Patch="Ej4A4ujW0oLNisyhtNjTBe" Enabled="true" />
               <Fragment Id="Fy4TG1axiiFL5T4ZAstrlh" Patch="TN9EacNpKz7PnqDBgH0xMB" />
               <Fragment Id="ShykpDIMwWzNKlqtaWsaow" Patch="VIkPrPeaEwoNPZLG8dy6HF" />
+              <Fragment Id="LZfCrpKzWeJMBylvBWG4Ai" Patch="KpoX7HW2jn5PpQu39sztHb" />
             </ProcessDefinition>
             <Link Id="MaZC1spX3ooMlSFnJXDSTk" Ids="OT6VbnAiXryMDmnHeXB98e,VpR1gNDm3bJNI6q5vFIy2l" />
             <Slot Id="UikNpXZC6lCPDT9msT3OdO" Name="Blending Model" />
@@ -21446,8 +21489,43 @@
             <Link Id="Dux83eZPl0IPwmgddbEeKX" Ids="Cy4LDje7AOALFHWl9eCZ0J,KFn4Ocw9VsyLMc28gkHVgY" />
             <Link Id="HBIvI2MbAffQWT3ofu4cNI" Ids="IKpuueXtfAGMkX1sGxxxOt,T9DMXUooY3YQPFutQKqjmp" />
             <Link Id="JMqQ0jrP4vmLfZdSGolKnR" Ids="N6aJrqPH2XiPpDqANAnISq,IKpuueXtfAGMkX1sGxxxOt" IsHidden="true" />
+            <Slot Id="CitoRknPDjOO1CsuaJ5ZUM" Name="Model" />
+            <Link Id="UGnEOOoiz2yNClKFwZvJc4" Ids="DoRSTTTQjXVMEVLHtDHh03,NScK94ZKHr8PFCPukFsN3i" IsHidden="true" />
+            <Patch Id="KpoX7HW2jn5PpQu39sztHb" Name="GetModel">
+              <Pin Id="NScK94ZKHr8PFCPukFsN3i" Name="Model" Kind="OutputPin" />
+            </Patch>
+            <Link Id="NswxKytaR2tLyxQ83vlVs5" Ids="EcAl6He7kCWOJl70i2iQp5,NF448hWyT66Pm8VyAqcZqX" />
+            <Link Id="LBxAWqWFwY9NJiZTvXi9RP" Ids="NF448hWyT66Pm8VyAqcZqX,DoRSTTTQjXVMEVLHtDHh03" />
           </Patch>
         </Node>
+        <!--
+
+    ************************ ISamplingLayer ************************
+
+-->
+        <Node Name="ISamplingLayer" Bounds="131,389" Id="EQzIF8L4l92PstQgqPR5sY">
+          <p:NodeReference>
+            <Choice Kind="InterfaceDefinition" />
+          </p:NodeReference>
+          <Patch Id="VZnekGaxH49N2wPtgg9k9Z">
+            <Canvas Id="RFn9bEwbAzNNiRP30kGJal" BordersChecked="false" CanvasType="Group" />
+            <!--
+
+    ************************  ************************
+
+-->
+            <ProcessDefinition Id="D2bounajparLlsNlEY354l" IsHidden="true" />
+          </Patch>
+        </Node>
+        <Pad Id="FsqFtGc22N9MV02vM26U7n" Bounds="268,375,398,19" ShowValueBox="true" isIOBox="true" Value="Marker Interface to recognise those layers that sample other layers">
+          <p:TypeAnnotation>
+            <Choice Kind="TypeFlag" Name="String" />
+          </p:TypeAnnotation>
+          <p:ValueBoxSettings>
+            <p:fontsize p:Type="Int32">9</p:fontsize>
+            <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+          </p:ValueBoxSettings>
+        </Pad>
       </Canvas>
       <Overlay Id="JsmqiUaT0m6Lr8epe61gp2" Name="Layer Operators" Bounds="88,706,221,208">
         <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
