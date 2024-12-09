@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="R8DEPWzfGD4PrmEl7WdDzL" LanguageVersion="2024.6.7-0258-g67ac288fc9" Version="0.128">
-  <NugetDependency Id="B9SmXr23urgOrw4Bu21cwW" Location="VL.CoreLib" Version="2024.6.7-0258-g67ac288fc9" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="R8DEPWzfGD4PrmEl7WdDzL" LanguageVersion="2024.6.7-0274-g87fa1582f0" Version="0.128">
+  <NugetDependency Id="B9SmXr23urgOrw4Bu21cwW" Location="VL.CoreLib" Version="2024.6.7-0274-g87fa1582f0" />
   <Patch Id="RPFNdBojq8VOcYe34eyX6g">
     <Canvas Id="Jx64PswPNNjMfN4f8xRh64" DefaultCategory="LayerX.KeyframeInterpolatorUI" CanvasType="FullCategory">
       <Canvas Id="OmR9TPhPAuvMLaLkDyJrIH" Name="InterpolationUI.Internal" Position="177,207">
@@ -12840,6 +12840,39 @@
               <ControlPoint Id="RvGDr8iWTHYMKoyfSx7LDe" Bounds="695,203" />
               <ControlPoint Id="LP9DhrBab62NKMg6bTYoN7" Bounds="327,168" />
               <Pad Id="J5iHw2PtGYTQJSr3IJgu0U" SlotId="NQvQNQYuIxBNqsYLqLqorL" Bounds="327,231" />
+              <Node Bounds="483,844,76,19" Id="TrNVcww0kT7N8ndPZ48vOw">
+                <p:NodeReference LastCategoryFullName="LayerX.Context" LastDependency="VL.Kairos.Runtime.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="LocalContext" />
+                </p:NodeReference>
+                <Pin Id="FQepy9EPOYePEnKRG98sce" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="LMCrTDXNAJ0QR5RBws2YCF" Name="Sources Input Pin Group Enabled" Kind="InputPin" IsHidden="true" />
+                <Pin Id="JC7LsoaameXNYfPnuviG8J" Name="Caller Info" Kind="InputPin" />
+                <Pin Id="VKtm6WftHQFLdGLHn3GV5l" Name="Channel Hub" Kind="InputPin" />
+                <Pin Id="MKehzOv7FKwMDBux13PO4Y" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="576,846,65,19" Id="MlF8gsDsJT8LwR4FoIpIxw">
+                <p:NodeReference LastCategoryFullName="System.Logging" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Logging" NeedsToBeDirectParent="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Log" />
+                </p:NodeReference>
+                <Pin Id="HBjtDNEGW6wLlfN2MaGhbI" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="Qv25R0BujxBLpSR9ZCp3jT" Name="Message" Kind="InputPin" DefaultValue="TO BE SOLVED" />
+                <Pin Id="Ns0F4XbjPslMJ3nXekNdbF" Name="Log Level" Kind="InputPin" DefaultValue="Warning" />
+                <Pin Id="BewzPBplNCJMbYKG08PRAW" Name="Event Id" Kind="InputPin" IsHidden="true" />
+                <Pin Id="T5ySk9N3PfTLmffKIWa0EP" Name="Category" Kind="InputPin" />
+                <Pin Id="Hohv2Lg2XQdNtz7ONLjPWo" Name="Exception" Kind="InputPin" IsHidden="true" />
+                <Pin Id="F4cxXCu96F3PPu3Ngk7AWJ" Name="Apply" Kind="InputPin" />
+              </Node>
+              <Pad Id="A3LR8cZ1SZLPR2XKM2GqHe" Bounds="442,818,136,15" ShowValueBox="true" isIOBox="true" Value="1, 0, 0, 1">
+                <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="ImmutableTypeFlag" Name="RGBA" />
+                </p:TypeAnnotation>
+                <p:ValueBoxSettings>
+                  <p:showvalue p:Type="Boolean">false</p:showvalue>
+                </p:ValueBoxSettings>
+              </Pad>
             </Canvas>
             <ProcessDefinition Id="I2gXof6yEfJLZYjqu7onHe" IsHidden="true">
               <Fragment Id="I10Rp8OcIkuQZ2iXkqjUsb" Patch="Fd4AnHLDztlLPHGWdrsWgb" Enabled="true" />
@@ -12974,6 +13007,7 @@
             <Link Id="UopL2aLrXLoOB2rZgv11GZ" Ids="RvGDr8iWTHYMKoyfSx7LDe,AQjETwh07EwN0cRASA8CFR" />
             <Link Id="S68Lv28KkLkLloypEkl5oe" Ids="AKCLbauTaO7L1YyFc94Wag,RjhJCmxrEReM0LSE75Vaao" />
             <Link Id="KmuRSCQbgklQTImtWgw60c" Ids="LP9DhrBab62NKMg6bTYoN7,J5iHw2PtGYTQJSr3IJgu0U" />
+            <Link Id="Jj4eDNmYftoLlbNgBbyzrr" Ids="MKehzOv7FKwMDBux13PO4Y,Q2gkR8d4tXzLxM9IQUetYF" />
           </Patch>
         </Node>
         <!--
@@ -31815,12 +31849,12 @@
     ************************ GetPositionDuration ************************
 
 -->
-              <Node Name="GetPositionDuration" Bounds="734,179,153,177" Id="CoC0MIzMahXPCuziAvBVC1">
+              <Node Name="GetPositionDuration" Bounds="815,180,153,177" Id="CoC0MIzMahXPCuziAvBVC1">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="OperationDefinition" Name="Operation" />
                 </p:NodeReference>
                 <Patch Id="LwLC4xecubrN2NZiLEqmeU">
-                  <Node Bounds="746,226,102,26" Id="Bw9fUP1HrxFN2JkTxC8KQm">
+                  <Node Bounds="827,227,102,26" Id="Bw9fUP1HrxFN2JkTxC8KQm">
                     <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeUI.KeyframeUIModel" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="InterfaceTypeFlag" Name="KeyframeUIModel" NeedsToBeDirectParent="true" />
@@ -31830,14 +31864,14 @@
                     <Pin Id="JBoC2CM3q3JPpwxGOld7ub" Name="Output" Kind="OutputPin" />
                     <Pin Id="BkUmojwL0NONdgkZaRnLM6" Name="Keyframe Model" Kind="OutputPin" />
                   </Node>
-                  <ControlPoint Id="SRGu8KAlGz2Oa6y8b3iuVo" Bounds="748,197" />
+                  <ControlPoint Id="SRGu8KAlGz2Oa6y8b3iuVo" Bounds="829,198" />
                   <Link Id="SYB0g0PMAuYNn5AN7gKtwY" Ids="SRGu8KAlGz2Oa6y8b3iuVo,GL6qgTSxU0oO3SSbjD4geL" />
                   <Link Id="FWaULmK0nG9Mox7esuO1gq" Ids="H2UffaEEJ94M55yZzFBtW9,SRGu8KAlGz2Oa6y8b3iuVo" IsHidden="true" />
-                  <ControlPoint Id="Piw2gCmq778NjrIrg5Ac7t" Bounds="748,339" />
+                  <ControlPoint Id="Piw2gCmq778NjrIrg5Ac7t" Bounds="829,340" />
                   <Link Id="JfxQugHRtZjNKSyJ2wteuS" Ids="Piw2gCmq778NjrIrg5Ac7t,PvPY7rQFs3GMdvnqrtsvx3" IsHidden="true" />
-                  <ControlPoint Id="QVZuy0eZdwaMnu0eLNNLR4" Bounds="810,339" />
+                  <ControlPoint Id="QVZuy0eZdwaMnu0eLNNLR4" Bounds="891,340" />
                   <Link Id="IilDV5ZNUJGNx6FIvOa194" Ids="QVZuy0eZdwaMnu0eLNNLR4,MXc53Rm3ahXOVAq2uHAGoS" IsHidden="true" />
-                  <Node Bounds="746,275,129,26" Id="McRXAJTXdQgL0jwNl36YW6">
+                  <Node Bounds="827,276,129,26" Id="McRXAJTXdQgL0jwNl36YW6">
                     <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolator.KeyframeModel" LastDependency="VL.Kairos.Runtime.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="KeyframeModel" NeedsToBeDirectParent="true" />
@@ -31877,12 +31911,12 @@
     ************************ GetInOutPosition ************************
 
 -->
-              <Node Name="GetInOutPosition" Bounds="956,170,164,177" Id="QFA4mZdAQHhPD4LndnFOQE">
+              <Node Name="GetInOutPosition" Bounds="1090,173,164,177" Id="QFA4mZdAQHhPD4LndnFOQE">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="OperationDefinition" Name="Operation" />
                 </p:NodeReference>
                 <Patch Id="GPmLUJqegLOLZdNzwFoDHv">
-                  <Node Bounds="968,217,102,26" Id="Ck51wayC4AYMl7Au51SGlX">
+                  <Node Bounds="1102,220,102,26" Id="Ck51wayC4AYMl7Au51SGlX">
                     <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeUI.KeyframeUIModel" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="InterfaceTypeFlag" Name="KeyframeUIModel" NeedsToBeDirectParent="true" />
@@ -31892,12 +31926,12 @@
                     <Pin Id="KKm0X9arE9NNaFGzGo7rFK" Name="Output" Kind="OutputPin" />
                     <Pin Id="L4LnjHy8NF4MyvBBV282WS" Name="Keyframe Model" Kind="OutputPin" />
                   </Node>
-                  <ControlPoint Id="DPEJFhh20e4L0ndSQPGbSD" Bounds="970,188" />
+                  <ControlPoint Id="DPEJFhh20e4L0ndSQPGbSD" Bounds="1104,191" />
                   <Link Id="Cv0zgfgkdFlOLIeUuWGYrz" Ids="DPEJFhh20e4L0ndSQPGbSD,Q9h7V3kfTkeLfkFfpJmN71" />
                   <Link Id="UzzE16HJZsbPDZJMdIuyUa" Ids="TD4YD4VB6WJMC962Qn9Dtd,DPEJFhh20e4L0ndSQPGbSD" IsHidden="true" />
-                  <ControlPoint Id="VnlwzQfs22HPdRZnx5cGCd" Bounds="970,330" />
+                  <ControlPoint Id="VnlwzQfs22HPdRZnx5cGCd" Bounds="1104,333" />
                   <Link Id="VHMKl0SxcGFLwTGSsJGMXt" Ids="VnlwzQfs22HPdRZnx5cGCd,NW6NdmSyHOzLhRakLQriSN" IsHidden="true" />
-                  <Node Bounds="968,266,129,26" Id="Q4gk1VS7g9fP9YLAqiAqKB">
+                  <Node Bounds="1102,269,129,26" Id="Q4gk1VS7g9fP9YLAqiAqKB">
                     <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolator.KeyframeModel" LastDependency="VL.Kairos.Runtime.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="KeyframeModel" NeedsToBeDirectParent="true" />
@@ -31912,7 +31946,7 @@
                   <Pin Id="TD4YD4VB6WJMC962Qn9Dtd" Name="Input" Kind="InputPin" Bounds="380,499" />
                   <Pin Id="NW6NdmSyHOzLhRakLQriSN" Name="Position" Kind="OutputPin" Bounds="485,681" />
                   <Link Id="NthkWyom9oYPOw8rPG4JB3" Ids="L4LnjHy8NF4MyvBBV282WS,RbwwKkXU6fVO1X6MqGk89V" />
-                  <ControlPoint Id="KvNNxig48jbQUsAyi9Wtzm" Bounds="1041,330" />
+                  <ControlPoint Id="KvNNxig48jbQUsAyi9Wtzm" Bounds="1175,333" />
                   <Link Id="Cxenl4vDwgsNu5onThbPsO" Ids="FEPjcBDYhMNN5Uni68QIgb,KvNNxig48jbQUsAyi9Wtzm" />
                   <Pin Id="F96MnAK5BwMOJUZzekebFR" Name="End Position" Kind="OutputPin" />
                   <Link Id="TK5uQAdQGs7MrBJnPZTX6z" Ids="KvNNxig48jbQUsAyi9Wtzm,F96MnAK5BwMOJUZzekebFR" IsHidden="true" />
@@ -32205,7 +32239,7 @@
               <ControlPoint Id="U14QQVQVcZPMechmlx2Uqx" Bounds="1482,385" />
               <ControlPoint Id="HhOBW0jUckPN17izlvcb7y" Bounds="1462,362" />
               <ControlPoint Id="B3EobsSmbG7N71VFaV6YvE" Bounds="1422,344" />
-              <Node Bounds="51,147,128,19" Id="FR7Jz2cqVEJNt4jAyQRrNq">
+              <Node Bounds="51,147,128,26" Id="FR7Jz2cqVEJNt4jAyQRrNq">
                 <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" />
@@ -32329,11 +32363,7 @@
             </Patch>
             <Patch Id="MDIEgRCPgmLPBc02EpBROF" Name="Layout">
               <Pin Id="GV4mjVwjBVlOHQMVzd7wI7" Name="Is Visible" Kind="OutputPin" />
-              <Pin Id="Nodqyq2kq2MO1cni2ai3ov" Name="View Transform" Kind="InputPin">
-                <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
-                  <Choice Kind="TypeFlag" Name="Matrix" />
-                </p:TypeAnnotation>
-              </Pin>
+              <Pin Id="Nodqyq2kq2MO1cni2ai3ov" Name="View Transform" Kind="InputPin" />
               <Pin Id="LKiZTrhUr29QAjGHjkSb5m" Name="Client Bounds" Kind="InputPin" />
             </Patch>
             <Patch Id="M4Wp6vDmR9aPdJcEgAY2oG" Name="Interact">
@@ -32352,9 +32382,6 @@
               <Pin Id="RB4x8dEOy01P7vVQXOnEYm" Name="KeyframeModel Stream" Kind="InputPin" />
               <Pin Id="Rs7BqSKB9tWLNR48GUnpJl" Name="Keyframe" Kind="InputPin" />
               <Pin Id="C2UVwArHa5dNcYd5s3fz3g" Name="KeyframeUIModel Stream" Kind="InputPin" />
-              <Pin Id="PYyDCou0Q0zNqgcv9nLMdc" MergeId="536957" Name="Layer" Kind="InputPin" />
-              <Pin Id="Eh8BenVISkcQOBEYDgrott" MergeId="536959" Name="LayerUI Model Stream" Kind="InputPin" />
-              <Pin Id="A5QeiuGMRA8OQyRsQm7kIV" MergeId="536955" Name="Layer Model Stream" Kind="InputPin" />
             </Patch>
             <Slot Id="JctSXTjIEgpOD1lLMGqLjD" Name="KeyframeModel Stream">
               <p:TypeAnnotation p:Type="TypeReference">
@@ -32439,10 +32466,7 @@
             <Link Id="OZz7jvxko7QQB1qQ7pqw7G" Ids="EYtWWxZCowuOJCv6PFvNW3,TVOSHK6n9akPAhRyuPArQt" />
             <Link Id="J8Lhn86WG78P4XiyGZAgSH" Ids="Ex4OU3uzK8uPMfVYvDd1Zn,INEyCp80WORNzDWd8MWu6A" />
             <Link Id="UgK0QrUNoqHM1hzM5U7Ojm" Ids="LslAWcXuJZVOgRlw1f5RCN,VLtJiCVRqhXP0crz42zPs5" />
-            <Link Id="Qyf2U6RuIslMSVMmGWMn9g" Ids="A5QeiuGMRA8OQyRsQm7kIV,DL3ARJbSWwNLtgRXuzmQxq" IsHidden="true" />
-            <Link Id="Mroh7snl2BnMpxoUmdeaXY" Ids="Eh8BenVISkcQOBEYDgrott,FhNA8nYE5knLYx6wVJkfWi" IsHidden="true" />
             <Link Id="E9wgiI0dTEwLiXiaT0jlV0" Ids="BAX5x2EKicNPsRq1MX89Tr,Qsbm4apxq9XLnSQvmQ8Dfo" />
-            <Link Id="H4wdPmISqlyLVYLtrjLdx5" Ids="PYyDCou0Q0zNqgcv9nLMdc,JLnNXgePfhrM5UWQZKIAhB" IsHidden="true" />
             <Link Id="HvRq1tmWu63Ls5kzS6W4xh" Ids="JLnNXgePfhrM5UWQZKIAhB,DPWI4hOJxlOPvadHgXqkgM" />
             <Link Id="D3cB6G3J7k9Ncxlq5kjlUo" Ids="FhNA8nYE5knLYx6wVJkfWi,NYFEAMFLaivQQInjLBsfQQ" />
             <Link Id="SFYYRdcC76DMhvt8dCdsMV" Ids="DL3ARJbSWwNLtgRXuzmQxq,HHuezabdMPrLWsx9SZLUOE" />
@@ -32454,9 +32478,6 @@
             <Link Id="NcYbVQiodmBPzSjUU4I8om" Ids="AANDGQiu3XsLPBwOf8K1n7,EZbVt32JHNQMSQ7hwSoZL5" />
             <Link Id="RbSzmuipKlLOYGihulyFky" Ids="Fc2n7YhzOWGOo9VVQziyiE,Ouy6EBkDjXnOBVe43sEhrI" />
             <Link Id="RbcwMUnqBGzPxPvywEXzu2" Ids="Bo4FmsBUk84OEqOjys4MTR,Es1CfPlCZ9BQa15919r9i4" />
-            <Link Id="HjiWwy806OhQbINCAyGn4k" Ids="A5QeiuGMRA8OQyRsQm7kIV,U14QQVQVcZPMechmlx2Uqx" IsHidden="true" />
-            <Link Id="GXqA0fBG7quLz6CWgulpoA" Ids="Eh8BenVISkcQOBEYDgrott,HhOBW0jUckPN17izlvcb7y" IsHidden="true" />
-            <Link Id="FyZ37GgvU5jMrvoylyFbcG" Ids="PYyDCou0Q0zNqgcv9nLMdc,B3EobsSmbG7N71VFaV6YvE" IsHidden="true" />
             <Link Id="VWpAny33dKwQcKxG5ifqYn" Ids="B3EobsSmbG7N71VFaV6YvE,GHUeZxatiemNRtRNkmpT67" />
             <Link Id="EO3pFQnWuMoLeB4RPs6ghK" Ids="HhOBW0jUckPN17izlvcb7y,KFMYOr5SL9wOzTVpHMLoTM" />
             <Link Id="D77n4FWC2VpMBJgBHE3JxR" Ids="U14QQVQVcZPMechmlx2Uqx,JwmmgbJQ8PIPXZ2H0acZkJ" />
@@ -32474,6 +32495,13 @@
             <Patch Id="J4nWTFznE6TLvjqG8IawE2" Name="GetKeyframeModel">
               <Pin Id="G0P1vahSIfqMpbgKMc4iOt" Name="KeyframeModel" Kind="OutputPin" />
             </Patch>
+            <Link Id="RJ8ScdrGtXeP4V43TYuQqU" Ids="Rs7BqSKB9tWLNR48GUnpJl,JLnNXgePfhrM5UWQZKIAhB" IsHidden="true" />
+            <Link Id="Jk7NXIl3FmrOgrWkNaswB9" Ids="Rs7BqSKB9tWLNR48GUnpJl,B3EobsSmbG7N71VFaV6YvE" IsHidden="true" />
+            <Link Id="IY3aRPbE0fCMzMmtt7N74O" Ids="RB4x8dEOy01P7vVQXOnEYm,DL3ARJbSWwNLtgRXuzmQxq" IsHidden="true" />
+            <Link Id="GNJS1GANtKKNPAHlOU4KZ0" Ids="RB4x8dEOy01P7vVQXOnEYm,U14QQVQVcZPMechmlx2Uqx" IsHidden="true" />
+            <Link Id="IHfSyANFv7TNh3jsfLHzP2" Ids="C2UVwArHa5dNcYd5s3fz3g,FhNA8nYE5knLYx6wVJkfWi" IsHidden="true" />
+            <Link Id="CynEO3RFzlFMOD7YoOfUUK" Ids="C2UVwArHa5dNcYd5s3fz3g,HhOBW0jUckPN17izlvcb7y" IsHidden="true" />
+            <Link Id="IgUi0Xh5fN5LARtE0zMWSC" Ids="A4QW86eJvA2ND9cRUMSK0m,FBVQbpCZhPxQW8YpIUEYgz" />
           </Patch>
         </Node>
         <!--
@@ -32522,8 +32550,8 @@
               <Fragment Id="FIVMeYdB6AVPx6oxrNGr3s" Patch="RtDAlElotTvQKa4FuNmW1M" />
             </ProcessDefinition>
             <Patch Id="RtDAlElotTvQKa4FuNmW1M" Name="Configure">
-              <Pin Id="KT8QaIpN5sZM24a8yEzP3b" Name="Keyframe Layout" Kind="InputPin" />
-              <Pin Id="J8W7y0UGF0IM5WW83dY4dd" Name="KeyframeUIModel" Kind="InputPin" />
+              <Pin Id="Db0YPgwuXGsNjJslro9O2F" Name="Keyframe Layout" Kind="InputPin" />
+              <Pin Id="Ui0lkrkw2fPNGH0cAlb0sw" Name="KeyframeUIModel" Kind="InputPin" />
               <Pin Id="Bi1q7vbxL6PLcig2eIbCBs" MergeId="324248" Name="Keyframe" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="LayerX.KeyframeInterpolator" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="TypeFlag" Name="Keyframe" />
@@ -32534,10 +32562,10 @@
                   </p:TypeArguments>
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="Fxa1rFT6rfgPt6Dp2JO94l" Name="KeyframeUIModel Stream" Kind="InputPin" />
-              <Pin Id="GnogDWw5WLRMNFQa4IMsLt" Name="KeyframeModel Stream" Kind="InputPin" />
-              <Pin Id="SUq7JDzPBl5PVsjGYfEg7v" Name="KeyframeInterpolatorUI" Kind="InputPin" />
-              <Pin Id="VL5Ni7g528QOBbeoiWpYVD" Name="KeyframeInterpolator" Kind="InputPin" />
+              <Pin Id="CJW4BZSBGYjL2GXnKuUzLD" Name="KeyframeUIModel Stream" Kind="InputPin" />
+              <Pin Id="JkeSwmrUoFeOlgEvYq8mBN" Name="KeyframeModel Stream" Kind="InputPin" />
+              <Pin Id="GS620bdkdKdQP2jAJJyvWC" Name="KeyframeInterpolatorUI" Kind="InputPin" />
+              <Pin Id="Lg0X1P7MDxoLcMvrFwrwbz" Name="KeyframeInterpolator" Kind="InputPin" />
             </Patch>
             <Link Id="OEKeHgtPRH5MeAmrns02Zl" Ids="Hi33gwpnOA7P1WPDym0AUR,OBL4T2CezaCNv9BNYvBwQx" />
             <Link Id="CGZqYk1GVNvQW6Ll8hxLBq" Ids="UoJY1FlQJLJLHurp5b18CF,Ej85QtfUwFnP2MEf8feiJm" />
@@ -32591,8 +32619,8 @@
             </ProcessDefinition>
             <Link Id="EJXkqoTk4orNlIMkCpkZ2S" Ids="AIwDAFAvqNLLOPfy6CJzDU,VBNQZhwTx9uPZvWi2RXj3a" />
             <Patch Id="AqobOCvuvqcP3PwmCot5RR" Name="Configure">
-              <Pin Id="ENSin0jiKTeP5LENzLp0O5" Name="Keyframe Layout" Kind="InputPin" />
-              <Pin Id="GpKgDMDum4YLQHcdCOvGut" Name="KeyframeUIModel" Kind="InputPin" />
+              <Pin Id="MlivY7HeLzaO9mjfXFLycg" Name="Keyframe Layout" Kind="InputPin" />
+              <Pin Id="MRkLW2ze7xEOOcrcOhMmUZ" Name="KeyframeUIModel" Kind="InputPin" />
               <Pin Id="Gg7m8s03NU1N5sJwI1uLUh" Name="Keyframe" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="LayerX.KeyframeInterpolator" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="TypeFlag" Name="Keyframe" />
@@ -32603,10 +32631,10 @@
                   </p:TypeArguments>
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="EHiwV9loLONM0XF5AXyG2u" Name="KeyframeUIModel Stream" Kind="InputPin" />
-              <Pin Id="RRTPd4SE0sPNxa4PiMSpA9" Name="KeyframeModel Stream" Kind="InputPin" />
-              <Pin Id="Puasdqfht0aLjngjHtmN7b" Name="KeyframeInterpolatorUI" Kind="InputPin" />
-              <Pin Id="StsAyeBqxUvPXB0VOUuyKR" Name="KeyframeInterpolator" Kind="InputPin" />
+              <Pin Id="DebcHHFVeqYOYIFDvHTBC7" Name="KeyframeUIModel Stream" Kind="InputPin" />
+              <Pin Id="UMvia0The8lN1K0rDr4IOZ" Name="KeyframeModel Stream" Kind="InputPin" />
+              <Pin Id="TYJEkvBDNYyMkoC2jHXISh" Name="KeyframeInterpolatorUI" Kind="InputPin" />
+              <Pin Id="AMot7mHM29aPC65rgyS319" Name="KeyframeInterpolator" Kind="InputPin" />
             </Patch>
             <Link Id="KgZ8ySujgsQLPjE0ceRWEQ" Ids="EBkLfx1LgwVPODtDQmb8Eg,JWZOiAT4pfqLdmC0cEK7GB" />
             <Link Id="M3sG71xiHU3OJhCRR3hRsj" Ids="Gg7m8s03NU1N5sJwI1uLUh,EBkLfx1LgwVPODtDQmb8Eg" IsHidden="true" />
@@ -34016,7 +34044,7 @@
               </p:NodeReference>
               <Pin Id="JGekBRlRH6zPAfbtigVj3d" Name="Condition" Kind="InputPin" />
               <ControlPoint Id="BsHMv0YctPRLClm1xE3qmo" Bounds="493,2001" Alignment="Bottom" />
-              <ControlPoint Id="HBxTSS0reRFLm3qstWFbXS" Bounds="694,364" Alignment="Top" />
+              <ControlPoint Id="HBxTSS0reRFLm3qstWFbXS" Bounds="604,364" Alignment="Top" />
               <Patch Id="ItpnrYZqyMSPd1CGmRs3nL" ManuallySortedPins="true">
                 <Patch Id="S1o0gmCH3JWQZfpg6w29g0" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="GcUXJHBt7gMLC5NM3ZdgcM" Name="Then" ManuallySortedPins="true" />
@@ -34405,7 +34433,7 @@
                     <Pad Id="NsG6PR5K2bCOldeaXNvkLw" Bounds="899,1783" />
                   </Patch>
                 </Node>
-                <Node Bounds="306,669,34,19" Id="NvnoIiiHet8MWVh3atUDLY">
+                <Node Bounds="306,654,34,19" Id="NvnoIiiHet8MWVh3atUDLY">
                   <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
@@ -34514,10 +34542,10 @@
               <Pin Id="UeDroF6JBplMnBx82V4Yo6" Name="Output" Kind="OutputPin" />
               <Pin Id="NFD4mkUvxsTPHV9KoCdIxa" Name="UI Keyframes" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="BOjcdLDyzISLQrc4fHqGke" Bounds="449,337" />
+            <ControlPoint Id="BOjcdLDyzISLQrc4fHqGke" Bounds="689,318" />
             <ControlPoint Id="MxuYiMwBW1mO3ShxFZb5T6" Bounds="493,2142" />
             <Pad Id="MujwFWVL2c1OezEBzT8Xzu" SlotId="O1oWrnHbsx9Nx4vFwARskB" Bounds="493,2060" />
-            <Pad Id="S1b8tQ9L6r3O5kbxi1nUzo" SlotId="O1oWrnHbsx9Nx4vFwARskB" Bounds="694,319" />
+            <Pad Id="S1b8tQ9L6r3O5kbxi1nUzo" SlotId="O1oWrnHbsx9Nx4vFwARskB" Bounds="604,318" />
             <Node Bounds="530,2084,67,19" Id="ATjM9h0h85tQA2RG0DnfLa">
               <p:NodeReference LastCategoryFullName="Primitive.IDisposable" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -35853,7 +35881,7 @@
             <ControlPoint Id="IiU3hRuJOgYMHpJ4p7EyQN" Bounds="576,491" />
             <ControlPoint Id="DPLWRckKqxXPFV0OCta26Z" Bounds="364,1025" />
           </Canvas>
-          <ProcessDefinition Id="JNwyPqURHIFOX4NfEgJ6wu" IsHidden="true">
+          <ProcessDefinition Id="JNwyPqURHIFOX4NfEgJ6wu">
             <Fragment Id="PTo2XVR1yc3MQNH197jZVH" Patch="MiwfUBSmMwoQAa5iSLVNx3" Enabled="true" />
             <Fragment Id="FSkFZkF2ogNMjkdHbpH6vZ" Patch="UbPz5gfRrnIP6l85IKziWs" />
             <Fragment Id="VRnN0EB8ChQMMvdlKxRWVJ" Patch="D13nIfhC5PcQPgwwv9Anbq" />
@@ -36079,7 +36107,7 @@
               </p:ValueBoxSettings>
             </Pad>
             <ControlPoint Id="L5V5nkwRE90OGElKbyNLS7" Bounds="419,289" />
-            <Node Bounds="996,384,143,19" Id="DuUl7l8kMPyQZ4mmSgQStN">
+            <Node Bounds="1022,477,143,19" Id="DuUl7l8kMPyQZ4mmSgQStN">
               <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="SyncKeyframesToModelNew" />
@@ -36091,11 +36119,20 @@
               <Pin Id="A67AExZfZSVNjYi7jFYWWU" Name="Interpolators" Kind="OutputPin" />
               <Pin Id="RM84NEmthQwOKkWCIQpOS0" Name="Keyframes Model Changed" Kind="OutputPin" />
             </Node>
+            <Pad Id="DrF1i6TfNAWMl8lg8OHUXE" SlotId="EE0e4XsE2j6K9rPcX4dCsR" Bounds="1017,433" />
+            <Node Bounds="1136,441,36,19" Id="SUO9A5pAj00OyVARzcFD50">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ProcessNode" Name="This" />
+              </p:NodeReference>
+              <Pin Id="GoAkGejKJnRQNA3lmoQcPm" Name="Instance" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <Patch Id="K78af4P5X54MDMqRV4HP8b" Name="Create" />
-          <ProcessDefinition Id="GsRe93BpejxPzUZTL34dQz" IsHidden="true">
+          <ProcessDefinition Id="GsRe93BpejxPzUZTL34dQz" HasStateOut="true">
             <Fragment Id="EMhojycWJbGMMTpjZvNeeE" Patch="K78af4P5X54MDMqRV4HP8b" Enabled="true" />
-            <Fragment Id="ObhfNeqRtnOPH5GJTduEQv" Patch="KhBpl8N3bCOLnDn7HwDGb0" />
+            <Fragment Id="ObhfNeqRtnOPH5GJTduEQv" Patch="KhBpl8N3bCOLnDn7HwDGb0" Enabled="true" />
             <Fragment Id="KzNR6NN5GshMcmkeCQsmEU" Patch="GDOsBQ4o2xMQDlIjXwes9p" />
             <Fragment Id="PO80drZewIXOvhew2zPobB" Patch="OgnkLZ1GQeAOmPaSrl1fU6" />
             <Fragment Id="KyyIfPqyufXLWjQdsvVcYu" Patch="Tibjfq7iATIOeneFBzQKZa" />
@@ -36255,6 +36292,9 @@
           <Patch Id="CR9kl02p2GcMaAOhubZ1Y9" Name="GetKeyframeInterpolator">
             <Pin Id="TAWlgF7KFMKNon2isefPWv" Name="Layer" Kind="OutputPin" />
           </Patch>
+          <Slot Id="EE0e4XsE2j6K9rPcX4dCsR" Name="UI Keyframes" />
+          <Link Id="Q0UUAQLr4tqNkfWhMfyn0E" Ids="DrF1i6TfNAWMl8lg8OHUXE,IW9DX4Wgvo2PxmfKWmuW3v" />
+          <Link Id="GXRQ5oPjDluQGHvxnOHmb6" Ids="IgbWR1U1hGbOSMv7nsVApG,Ac8c2HFkmHwMRtHOv4shoi" />
         </Patch>
       </Node>
       <Overlay Id="TrHpfYSHoCGMUTLn7eqx0Y" Name="Old" Bounds="112,482,651,223">
@@ -36282,11 +36322,11 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Axxdj9yFNa1N9PXEjJL71f" Location="VL.Skia" Version="2024.6.7-0258-g67ac288fc9" />
-  <NugetDependency Id="McHqbMQRrcaNpOA9LnYljB" Location="VL.ImGui" Version="2024.6.7-0258-g67ac288fc9" />
+  <NugetDependency Id="Axxdj9yFNa1N9PXEjJL71f" Location="VL.Skia" Version="2024.6.7-0274-g87fa1582f0" />
+  <NugetDependency Id="McHqbMQRrcaNpOA9LnYljB" Location="VL.ImGui" Version="2024.6.7-0274-g87fa1582f0" />
   <NugetDependency Id="A7JOQkeuQEmNDDvd9l7G5A" Location="VL.Touchy" Version="0.0.0" />
-  <NugetDependency Id="PpydUzptoSBNrdcI4odllh" Location="VL.HDE" Version="2024.6.7-0258-g67ac288fc9" />
-  <NugetDependency Id="KNbJJecmrMfN96DcpsQYXk" Location="VL.EditingFramework" Version="2024.6.7-0258-g67ac288fc9" />
+  <NugetDependency Id="PpydUzptoSBNrdcI4odllh" Location="VL.HDE" Version="2024.6.7-0274-g87fa1582f0" />
+  <NugetDependency Id="KNbJJecmrMfN96DcpsQYXk" Location="VL.EditingFramework" Version="2024.6.7-0274-g87fa1582f0" />
   <DocumentDependency Id="T65o4EMK18DNwf18CdatsD" Location="./VL.LayerX.Common.vl" IsFriend="true" />
   <NugetDependency Id="SIAm8D0q8sYQcO68hGczUB" Location="VL.Kairos.Runtime" IsFriend="true" Version="0.0.0" />
 </Document>
