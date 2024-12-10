@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="CWFl0Oq91IFOUjOp46bkPP" LanguageVersion="2024.6.7-0177-ge02e8501bb" Version="0.128">
-  <NugetDependency Id="R5Oo0yyTQLYMQ9eSjO3Z2R" Location="VL.CoreLib" Version="2024.6.7-0177-ge02e8501bb" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="CWFl0Oq91IFOUjOp46bkPP" LanguageVersion="2024.6.7-0282-gb45ecfaff4" Version="0.128">
+  <NugetDependency Id="R5Oo0yyTQLYMQ9eSjO3Z2R" Location="VL.CoreLib" Version="2024.6.7-0282-gb45ecfaff4" />
   <Patch Id="NZjuPi7UhJKOFXHiP4km8D">
     <Canvas Id="DeriBPgH7mAOfrJLWHl1EM" DefaultCategory="FancyRect" CanvasType="FullCategory">
       <Canvas Id="ICzxDQtL7nyPSjgRVpx4EA" Name="Adaptive.Advanced" Position="198,161" DefaultCategory="Adaptive">
@@ -3354,6 +3354,59 @@
             </Pin>
             <Pin Id="R2BO26XX93LPBq0OqSxNxu" Name="Offset Mult" Kind="InputPin" Bounds="1033,-1030" />
             <Pin Id="MnA9NFsQlaLO9MvMCJU5Nn" Name="Output" Kind="OutputPin" Bounds="854,-869" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Transform ************************
+
+-->
+        <Node Name="Transform" Bounds="205,3996,158,199" Id="FFlQBkdfG0GN4mEJwGS6OP">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" />
+          </p:NodeReference>
+          <Patch Id="NFrRdGnEdOhMG7sLV65UjE">
+            <Node Bounds="217,4134,134,19" Id="FuZ33ZMBQh4L0JmBS8a4cG">
+              <p:NodeReference LastCategoryFullName="2D.Rectangle" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Rectangle" />
+                <Choice Kind="OperationCallFlag" Name="FromQuadTransformation" />
+              </p:NodeReference>
+              <Pin Id="IbzoBzghm1CPKAlazS3RDM" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Qa05aXaHNnbMT4dGDHTpwT" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="217,4033,122,19" Id="UkppmHEF9pvLgLC6Al0I3Z">
+              <p:NodeReference LastCategoryFullName="2D.Rectangle" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="ToQuadTransformation" />
+              </p:NodeReference>
+              <Pin Id="SOMoJ7zCqO5QOjbk2IWJDc" Name="Input" Kind="StateInputPin" />
+              <Pin Id="JPbdgMp8CGiPHpGb3cG2MW" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="V09JE07UUo6Mh3I4lCRSWF" Bounds="219,4014" />
+            <Link Id="AjRIFlb4qphN7pU3CYSVQ6" Ids="V09JE07UUo6Mh3I4lCRSWF,SOMoJ7zCqO5QOjbk2IWJDc" />
+            <Pin Id="COywW6jYeZUNrW9TvJO04T" Name="Input" Kind="InputPin" />
+            <Link Id="N2Mpqzs5ZukPwaOTdTSLJA" Ids="COywW6jYeZUNrW9TvJO04T,V09JE07UUo6Mh3I4lCRSWF" IsHidden="true" />
+            <Link Id="VCzoOA0xW0iPjtSqbAiGDh" Ids="JPbdgMp8CGiPHpGb3cG2MW,H61xQyWe6sDQUkuV7DAFEy" />
+            <Node Bounds="217,4092,25,19" Id="E3bRLmyRJQnNubEEo8rYeX">
+              <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <FullNameCategoryReference ID="Math" />
+                <Choice Kind="OperationCallFlag" Name="*" />
+              </p:NodeReference>
+              <Pin Id="H61xQyWe6sDQUkuV7DAFEy" Name="Input" Kind="InputPin" />
+              <Pin Id="GL0lTasD19IPpWRkE73AUz" Name="Input 2" Kind="InputPin" />
+              <Pin Id="Sa5IjKZheXxLdzy7sKhrI2" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Link Id="CR1xwMtLpdsLW1yO8ZkLuy" Ids="Sa5IjKZheXxLdzy7sKhrI2,IbzoBzghm1CPKAlazS3RDM" />
+            <ControlPoint Id="D0CEtnMBUs4QBJxUhZ67mm" Bounds="239,4073" />
+            <Link Id="KFek07jCVduQD6KGsQvyDI" Ids="D0CEtnMBUs4QBJxUhZ67mm,GL0lTasD19IPpWRkE73AUz" />
+            <Pin Id="HqGUtBPMGjGLfTabQdZMID" Name="Transform" Kind="InputPin" />
+            <Link Id="MbxZs6IaSQoNurazt3fsH8" Ids="HqGUtBPMGjGLfTabQdZMID,D0CEtnMBUs4QBJxUhZ67mm" IsHidden="true" />
+            <ControlPoint Id="GWOaf7e1fFCMnzF5sP5oqq" Bounds="219,4178" />
+            <Link Id="EGf5a3pmhiEOsjUrz4xglC" Ids="Qa05aXaHNnbMT4dGDHTpwT,GWOaf7e1fFCMnzF5sP5oqq" />
+            <Pin Id="QjOAeCyuIA4OXrQga7hW3R" Name="Output" Kind="OutputPin" />
+            <Link Id="UGLphmwNaRxPolYLbXd8yX" Ids="GWOaf7e1fFCMnzF5sP5oqq,QjOAeCyuIA4OXrQga7hW3R" IsHidden="true" />
           </Patch>
         </Node>
       </Canvas>
