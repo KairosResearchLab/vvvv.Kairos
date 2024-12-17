@@ -15073,7 +15073,7 @@
                 <Pin Id="CeVxhmvnjlPNdg3i6Ne6kF" Name="Value" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="OFIwmK3xRL0PmLKgEQmnLX" Bounds="244,39" />
-              <ControlPoint Id="QaFcxzihzCFNooB3xwkBT4" Bounds="574,477" />
+              <ControlPoint Id="QaFcxzihzCFNooB3xwkBT4" Bounds="574,497" />
               <Pad Id="HvZHK85w6PxPyevCf9mXLO" SlotId="Mb89QKXVKInN6UDLYBtFew" Bounds="574,415" />
               <ControlPoint Id="HakmNWFDf15PtmVRGV1lff" Bounds="244,381" />
               <Node Bounds="387,472,118,86" Id="Qon8pEQp8xCNH2K2JGMWjS">
@@ -15225,6 +15225,8 @@
                 <ControlPoint Id="Io1eXF0PZtSObfE921Wwsi" Bounds="244,187" Alignment="Bottom" />
                 <ControlPoint Id="I4T2SfpMDq9OrJdNyiAxJ0" Bounds="244,119" Alignment="Top" />
               </Node>
+              <ControlPoint Id="RwVMcRxWItJLhtBaMV7ChW" Bounds="609,467" />
+              <ControlPoint Id="MyGfsbFTj9cMg9vbLbiuDE" Bounds="821,293" />
             </Canvas>
             <Patch Id="HIP7DNIkdcKQd4lDOpIwsV" Name="Create" ParticipatingElements="VkfHJYMRsbOQRzhwkne0kY,LulsjYpH5eHLt5C5xf2RrF,Lr4OnjxaBjkPelJNrb5RXO">
               <Pin Id="OegV62dSouFLhbPPDCiMTn" Name="Node Context" Kind="InputPin" />
@@ -15275,7 +15277,14 @@
             <Link Id="P8PEQOeKDJ2LnteqfJ8C5J" Ids="SLq025YGoIPPte3sICUJal,HakmNWFDf15PtmVRGV1lff" />
             <Link Id="E5w8hWaTFTOMdI57DuOXRv" Ids="HakmNWFDf15PtmVRGV1lff,RyAXHhBPaI5LAeHlqrRjw3" IsHidden="true" />
             <Patch Id="GIxPvsElUp1L5xGaR6Sc0n" Name="GetModelStream">
-              <Pin Id="RyAXHhBPaI5LAeHlqrRjw3" Name="Model Stream" Kind="OutputPin" />
+              <Pin Id="RyAXHhBPaI5LAeHlqrRjw3" Name="Model Stream" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Channel" />
+                  <p:TypeArguments>
+                    <TypeParameterReference Name="TModel" />
+                  </p:TypeArguments>
+                </p:TypeAnnotation>
+              </Pin>
             </Patch>
             <Link Id="LulsjYpH5eHLt5C5xf2RrF" Ids="SLq025YGoIPPte3sICUJal,TGcHdl8Pu6UL2O8ObWkt3k" />
             <Link Id="KuT4N2NrzfEPjuVG1X8fPx" Ids="CxTgDOkgW4eOpy1yMeUvh6,TMG93qOBicfNmkt4OHahR6" />
@@ -15336,8 +15345,28 @@
               <Fragment Id="RuVS6s87GRuOP63PoZ2aHf" Patch="GIxPvsElUp1L5xGaR6Sc0n" Enabled="true" />
               <Fragment Id="MZaUVpRYjV5NUA2riMyBtz" Patch="KYP99KPxvGoQDrW0VvGCM7" Enabled="true" />
               <Fragment Id="GjPaNsiDs5FLHD3UBfA0sf" Patch="EPXwcyfddlTPjf3fzFSFic" Enabled="true" />
+              <Fragment Id="Bd3GqruqiU6OIW82gTpp50" Patch="Pryx8I0h2j6NLPGu1IQpb5" />
+              <Fragment Id="RjtQPkCpwrHMr6xGH0OxDd" Patch="R3jYTHKMIACQK3sBvPKFYn" />
             </ProcessDefinition>
             <Link Id="AesoYlQ8J0OOhhCm2AQt9D" Ids="T5G8xLifwKNLNbxXru4IrK,EZ9amGkCnC8PckYSS7cEsg" />
+            <Patch Id="Pryx8I0h2j6NLPGu1IQpb5" Name="GetLayerUngeneric">
+              <Pin Id="KYRyaAmJ4cFP5h6PKAkhSi" MergeId="82962" Name="Layer" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="LayerX.Layer" LastDependency="VL.LayerX.Runtime.vl">
+                  <Choice Kind="TypeFlag" Name="ILayer (Ungeneric)" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+            <Link Id="Rk1kRJM25ViOkl6OtCdFI7" Ids="RwVMcRxWItJLhtBaMV7ChW,KYRyaAmJ4cFP5h6PKAkhSi" IsHidden="true" />
+            <Link Id="Crin3RhpRIpNjVjH0CgBq9" Ids="HvZHK85w6PxPyevCf9mXLO,RwVMcRxWItJLhtBaMV7ChW" />
+            <Patch Id="R3jYTHKMIACQK3sBvPKFYn" Name="GetLocalContext">
+              <Pin Id="Kj73HpjA3ddL7gEi52Vdm8" MergeId="82883" Name="Local Context" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="LayerX.Context" LastDependency="VL.LayerX.Runtime.vl">
+                  <Choice Kind="TypeFlag" Name="LayerContext" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+            <Link Id="DU3A0KzkY6FQbbCOj7fhuN" Ids="MyGfsbFTj9cMg9vbLbiuDE,Kj73HpjA3ddL7gEi52Vdm8" IsHidden="true" />
+            <Link Id="PPDcg356vsHLZ8YCm2gQDL" Ids="T5G8xLifwKNLNbxXru4IrK,MyGfsbFTj9cMg9vbLbiuDE" />
           </Patch>
         </Node>
         <Overlay Id="KxwrkmcXFzTOPoMv8Ighhl" Name="Experimental" Bounds="140,575,392,272">
