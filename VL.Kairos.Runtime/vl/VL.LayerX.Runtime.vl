@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Q5gxGPO5irXPMzGPkC28oK" LanguageVersion="2024.6.7-0287-g117afa1769" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="Q5gxGPO5irXPMzGPkC28oK" LanguageVersion="2024.6.7-0308-g293be43e1a" Version="0.128">
   <Patch Id="LXv0ddmdjXNQZnqEXXDb3W">
     <Canvas Id="KCGQRwxbluWObmtEmvdQAk" DefaultCategory="LayerX" CanvasType="FullCategory">
       <Canvas Id="PftHvP35pKrMWHSa0o9qSO" Name="Background" Position="97,129">
@@ -21302,8 +21302,8 @@
               <Pin Id="CNT3hKhGC1HQSzROGy1FM0" Name="Value" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="CUacUHe8aLbQTCxWuVyA3S" Bounds="244,39" />
-            <ControlPoint Id="L7GmljxhcpGLeNi8mPpulY" Bounds="584,416" />
-            <Pad Id="TikHlufOz5mND2skZkL4y1" SlotId="TaRJn7OCywsNeowdWqzcR6" Bounds="541,377" />
+            <ControlPoint Id="L7GmljxhcpGLeNi8mPpulY" Bounds="509,388" />
+            <Pad Id="TikHlufOz5mND2skZkL4y1" SlotId="TaRJn7OCywsNeowdWqzcR6" Bounds="466,349" />
             <ControlPoint Id="GYbP9tEhHP2QaDyVkMnFaK" Bounds="244,393" />
             <Node Bounds="451,546,282,269" Id="IU8Zme9gY9QOju1b34MyNM">
               <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
@@ -21473,7 +21473,7 @@
               <ControlPoint Id="CWOU5abHP8FQGtWrpvD6xw" Bounds="244,192" Alignment="Bottom" />
               <ControlPoint Id="RJzQPET9SnLM5zP9iFVxzq" Bounds="244,119" Alignment="Top" />
             </Node>
-            <Node Bounds="539,328,125,19" Id="LkqOh1aPcZAPypr6uTTOq0">
+            <Node Bounds="464,300,125,19" Id="LkqOh1aPcZAPypr6uTTOq0">
               <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolator" LastDependency="VL.LayerX.Runtime.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="KeyframeInterpolator" />
@@ -21491,8 +21491,14 @@
               <Pin Id="GnIflt2EqqZQDgixKDuIsx" Name="Keyframes" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="Iv55tUyAWfRMvLunomxXgJ" Bounds="756,340" />
-            <ControlPoint Id="IuJw9DanHYSPaDZJvVutlT" Bounds="658,410" />
-            <ControlPoint Id="OQ2w3HisUusQSot7IzbGaU" Bounds="557,443" />
+            <ControlPoint Id="IuJw9DanHYSPaDZJvVutlT" Bounds="586,349" />
+            <ControlPoint Id="OQ2w3HisUusQSot7IzbGaU" Bounds="482,415" />
+            <ControlPoint Id="KLk3CUd8fiYPuHfrngdbmH" Bounds="1234,66" />
+            <ControlPoint Id="A74cJz192hsOIQLqw6o0eM" Bounds="1095,66" />
+            <Pad Id="DJ3ATMdKjUcOybXlF5SBvk" SlotId="DjL8xrey5VYO1lVZV8XpD2" Bounds="1095,103" />
+            <Pad Id="Rd0xu8iHoFKOqb0LnnoZ9e" SlotId="Q7jUZXV8Rl4OWPyOFHBpES" Bounds="1234,103" />
+            <ControlPoint Id="HdTQH5CAhc0MqChZZYMaSa" Bounds="1095,148" />
+            <ControlPoint Id="FefKdSEKes1QSNwdc4T5XF" Bounds="1234,148" />
           </Canvas>
           <Patch Id="JRXbpnnK1erLjenDzR9nNz" Name="Create" ParticipatingElements="RJBIt7m14DRNfXUeHaK7Uz,DttleoUz1X6PbNHiqL30ZJ,JIvbxC0qHkDMbqpJfxXmtC,SMYohdw3B3CNnTvFwPwzvT,R7LdWgUBEQaQNxVJ96jZNF,RhiEN6LZfHwNFoqmluqm8p">
             <Pin Id="ESonMflgj42QIgBmX6562f" Name="Node Context" Kind="InputPin" Visibility="Optional" />
@@ -21519,6 +21525,16 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="UdRpPxbQvBBNVDxmRF9ef9" Name="Keyframes" Kind="OutputPin" />
+            <Pin Id="DGcRx9ordfRMBB5EJDkHju" Name="View Zoom" Kind="InputPin" DefaultValue="1">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="OfeaUIvff5COhxfGXs4fac" Name="View Offset" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
           </Patch>
           <Slot Id="LeLaobuBrhsNg4cdmluNCe" Name="Model Stream">
             <p:TypeAnnotation p:Type="TypeReference">
@@ -21627,6 +21643,7 @@
             <Fragment Id="LP0KbdPgynBPaGVCni1P7A" Patch="Vo3dqDnLWVgPVRXhI3QS4C" Enabled="true" />
             <Fragment Id="Ay8QkGLrhl9MvSbYJcJz30" Patch="HW3v2e7QuVKN9QRGk1LK45" />
             <Fragment Id="AfFLMKmFMbOLioSSfJLESa" Patch="PdRe4Jwnp1rN5fqbafi07S" />
+            <Fragment Id="TFzHlKN8jqjQXiKSuXsG3b" Patch="Dcy3qrEUwFOLwgUmm2evRU" />
           </ProcessDefinition>
           <Link Id="IF3WhdAqUjxNmp6uuCGwTu" Ids="GnIflt2EqqZQDgixKDuIsx,IuJw9DanHYSPaDZJvVutlT" />
           <Link Id="CaHcL4QfJeXOyuZNkmEbp2" Ids="IuJw9DanHYSPaDZJvVutlT,UdRpPxbQvBBNVDxmRF9ef9" IsHidden="true" />
@@ -21639,6 +21656,20 @@
           </Patch>
           <Link Id="CyEWNmKOGKVOhWVrRoPQPj" Ids="OQ2w3HisUusQSot7IzbGaU,QtQo3evClocNcHei0QdAe4" IsHidden="true" />
           <Link Id="L8dWmp6KsUUN4gaPURcdg7" Ids="TikHlufOz5mND2skZkL4y1,OQ2w3HisUusQSot7IzbGaU" />
+          <Link Id="Irja1B7vm3MMV8l3fT2K7y" Ids="OfeaUIvff5COhxfGXs4fac,KLk3CUd8fiYPuHfrngdbmH" IsHidden="true" />
+          <Link Id="PcWgVudxS6lLRxH3q2Qe2x" Ids="DGcRx9ordfRMBB5EJDkHju,A74cJz192hsOIQLqw6o0eM" IsHidden="true" />
+          <Slot Id="DjL8xrey5VYO1lVZV8XpD2" Name="View Zoom" />
+          <Link Id="VZHv8sMLh3JPOSRznTwwRn" Ids="A74cJz192hsOIQLqw6o0eM,DJ3ATMdKjUcOybXlF5SBvk" />
+          <Slot Id="Q7jUZXV8Rl4OWPyOFHBpES" Name="View Offset" />
+          <Link Id="UPJsZ8dheVuPQtTzJSBW7e" Ids="KLk3CUd8fiYPuHfrngdbmH,Rd0xu8iHoFKOqb0LnnoZ9e" />
+          <Link Id="D9OupXX4QD4LOV0NcZo9Am" Ids="DJ3ATMdKjUcOybXlF5SBvk,HdTQH5CAhc0MqChZZYMaSa" />
+          <Link Id="OOuUUiytTSsNHvkanJ3HiA" Ids="HdTQH5CAhc0MqChZZYMaSa,AEj2RDSfMZAOMJo6BpFabr" IsHidden="true" />
+          <Link Id="J8tQnBVUZCdMi3BtvABbW1" Ids="Rd0xu8iHoFKOqb0LnnoZ9e,FefKdSEKes1QSNwdc4T5XF" />
+          <Link Id="RvQvjk0FHqjPiySAGsavnc" Ids="FefKdSEKes1QSNwdc4T5XF,AIOoM64p47iLvwWt35KeE5" IsHidden="true" />
+          <Patch Id="Dcy3qrEUwFOLwgUmm2evRU" Name="GetView">
+            <Pin Id="AEj2RDSfMZAOMJo6BpFabr" Name="View Zoom" Kind="OutputPin" />
+            <Pin Id="AIOoM64p47iLvwWt35KeE5" Name="View Offset" Kind="OutputPin" />
+          </Patch>
         </Patch>
       </Node>
       <!--
@@ -24406,7 +24437,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="QnDHxC4i33tP8umQ1pzflv" Location="VL.CoreLib" Version="2024.6.7-0287-g117afa1769" />
+  <NugetDependency Id="QnDHxC4i33tP8umQ1pzflv" Location="VL.CoreLib" Version="2024.6.7-0308-g293be43e1a" />
   <PlatformDependency Id="SGNxFlC1lhiQHDpNf91irS" Location="../lib/net6.0/VL.Kairos.Runtime.CSharp.dll" />
   <DocumentDependency Id="H3Iu0axjfxyMngsCP9F3W3" Location="./VL.FancyRect.vl" IsForward="true" />
   <DocumentDependency Id="K8o81lrxb6ILQJXxlMCPWB" Location="./VL.AlchemX.vl" IsForward="true" />
