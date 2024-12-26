@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="F71xDblX41WLpjme0AY0iv" LanguageVersion="2024.6.7-0287-g117afa1769" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="F71xDblX41WLpjme0AY0iv" LanguageVersion="2024.6.7-0308-g293be43e1a" Version="0.128">
   <Patch Id="D2othUnTm8PLmxhBjgYYoO">
     <Canvas Id="Tu1o9F78Y7pPw6M7dbbdBI" DefaultCategory="Kairos" CanvasType="FullCategory">
       <!--
@@ -587,7 +587,7 @@
               <Node Bounds="77,734,86,19" Id="G4ttyYE806LPqkQuZ3aC07">
                 <p:NodeReference LastCategoryFullName="Kairos" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="KeyframeEditor" />
+                  <Choice Kind="ProcessAppFlag" Name="KairosComposition" />
                 </p:NodeReference>
                 <Pin Id="CK2EKxFdUNINVi0Kwn1Pws" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="EGHLf1C6d5XOV7VoLt7Cwb" Name="Model" Kind="InputPin">
@@ -596,6 +596,8 @@
                 <Pin Id="RbYuhJuXoq2OzQtNTu7ohw" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="AZwtCmeeQDXMbwEH8Cg1jY" Name="Composition Name" Kind="InputPin" IsHidden="true" />
                 <Pin Id="Mm2770oRKJ9LlX7o0D8u89" Name="Write Model Pin on model change" Kind="InputPin" />
+                <Pin Id="OzTCTgtIpeSPQwGSt388hI" Name="Sources Input Pin Group Enabled" Kind="InputPin" IsHidden="true" />
+                <Pin Id="Ier24R9Jh3PLTKkUXdWuIr" Name="Channel Hub" Kind="InputPin" IsHidden="true" />
               </Node>
               <ControlPoint Id="BM71abuDlNeMOKY3kUcxST" Bounds="79,819" />
               <Node Bounds="1184,148,101,26" Id="RLBw5QofKqxLewnF3bB13d">
@@ -690,7 +692,7 @@
               <Node Bounds="179,854,91,19" Id="TI8E0CUygNqNUrCN1022nf">
                 <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="KeyframeEditor" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="ClassType" Name="KairosComposition" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetModelStream" />
                 </p:NodeReference>
                 <Pin Id="RJhY1OYUiSDL0CKUOnGsy4" Name="Input" Kind="StateInputPin" />
@@ -2937,15 +2939,15 @@
     </Patch>
   </Patch>
   <NugetDependency Id="UUSToxE4x4NNqojjVHEgWm" Location="VL.Kairos.Runtime" IsForward="true" IsFriend="true" Version="2.1.0" />
-  <NugetDependency Id="RONaeGCuUrlMDhXvQVMY8C" Location="VL.CoreLib" Version="2024.6.7-0287-g117afa1769" />
-  <NugetDependency Id="LIDp3KxtUFdOq8Qps9I5Kn" Location="VL.Skia" Version="2024.6.7-0287-g117afa1769" />
-  <NugetDependency Id="UGVGIYVMD28M2Xt2zgW3yP" Location="VL.ImGui" Version="2024.6.7-0287-g117afa1769" />
-  <NugetDependency Id="C4iz8GfaxTHOPzbTdIGhPj" Location="VL.ImGui.Skia" Version="2024.6.7-0287-g117afa1769" />
+  <NugetDependency Id="RONaeGCuUrlMDhXvQVMY8C" Location="VL.CoreLib" Version="2024.6.7-0308-g293be43e1a" />
+  <NugetDependency Id="LIDp3KxtUFdOq8Qps9I5Kn" Location="VL.Skia" Version="2024.6.7-0308-g293be43e1a" />
+  <NugetDependency Id="UGVGIYVMD28M2Xt2zgW3yP" Location="VL.ImGui" Version="2024.6.7-0308-g293be43e1a" />
+  <NugetDependency Id="C4iz8GfaxTHOPzbTdIGhPj" Location="VL.ImGui.Skia" Version="2024.6.7-0308-g293be43e1a" />
   <NugetDependency Id="HchzITl1qL0Pl5J9Bq2Ign" Location="VL.Touchy" IsFriend="true" Version="1.1.0" />
-  <NugetDependency Id="NgL0IY7UFyFOpBoFCwzPM0" Location="VL.CoreLib.Windows" Version="2024.6.7-0287-g117afa1769" />
+  <NugetDependency Id="NgL0IY7UFyFOpBoFCwzPM0" Location="VL.CoreLib.Windows" Version="2024.6.7-0308-g293be43e1a" />
   <DocumentDependency Id="At0AAj6BDMeM7Weepxsdog" Location="./vl/VL.Kairos.Common.vl" IsForward="true" IsFriend="true" />
-  <NugetDependency Id="TJl8wZHN8i0QC59vyR9UH1" Location="VL.HDE" Version="2024.6.7-0287-g117afa1769" />
-  <NugetDependency Id="JdMGwJLU3i9MSjf5PAMf7b" Location="VL.Core" Version="2024.6.7-0287-g117afa1769" />
+  <NugetDependency Id="TJl8wZHN8i0QC59vyR9UH1" Location="VL.HDE" Version="2024.6.7-0308-g293be43e1a" />
+  <NugetDependency Id="JdMGwJLU3i9MSjf5PAMf7b" Location="VL.Core" Version="2024.6.7-0308-g293be43e1a" />
   <DocumentDependency Id="Ek6o6k76kHmLNjH1Q3lFsP" Location="./vl/VL.LayerX.Common.vl" IsForward="true" IsFriend="true" />
   <DocumentDependency Id="Fl3tcfOBheLQJ1qEOkHnTN" Location="./vl/VL.LayerX.KeyframeInterpolatorUI.vl" IsForward="true" IsFriend="true" />
 </Document>

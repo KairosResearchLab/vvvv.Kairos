@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="UaF07rFVakaO1PRgf471XZ" LanguageVersion="2024.6.7-0258-g67ac288fc9" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="UaF07rFVakaO1PRgf471XZ" LanguageVersion="2024.6.7-0308-g293be43e1a" Version="0.128">
   <Patch Id="OdwjHxvmpTwQVNFJ9pLKQP">
     <Canvas Id="TFkrzzMqabMLaJgnlwzp1b" DefaultCategory="Kairos.KeyframeEditor" CanvasType="FullCategory">
       <!--
@@ -13,7 +13,7 @@
         </p:NodeReference>
         <p:Interfaces>
           <TypeReference LastCategoryFullName="Kairos.Runtime.Core" LastDependency="VL.Kairos.Runtime.Core.vl">
-            <Choice Kind="InterfaceTypeFlag" Name="IComposition1D" />
+            <Choice Kind="InterfaceTypeFlag" Name="IKairosComposition1D" />
           </TypeReference>
           <TypeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
             <Choice Kind="MutableInterfaceType" Name="IDisposable" />
@@ -36,6 +36,7 @@
               </p:NodeReference>
               <Pin Id="ARzDk8vTZnhMa05uW3gVzI" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="O3asvXS2A1gObng5MhbuuN" Name="Composition" Kind="InputPin" />
+              <Pin Id="Vj8wdUC2GpVLYgH4sky9Y4" Name="Update" Kind="InputPin" />
               <Pin Id="C5BuFXHG0YNNp8pqn1OLRZ" Name="Input Pins" Kind="InputPin" />
               <Pin Id="CtFAGP7Mtv7OFXZmE7BVCP" Name="Output" Kind="OutputPin" />
               <Pin Id="J7PlR31iD6MM7mku5XpyGS" Name="Embeddings" Kind="OutputPin" />
@@ -70,10 +71,11 @@
               <Pin Id="A6BMBOSEtlZN3meenofY9j" Name="Model Stream" Kind="InputPin" />
               <Pin Id="DaAKe5djQDuMrhxYFLt852" Name="Tracks" Kind="InputPin" />
               <Pin Id="CU2EdUqqwKIL8cT8Yw4VX5" Name="Controllers" Kind="InputPin" />
-              <Pin Id="AaJkdbZRsfxMGHn58bgpoJ" Name="Server" Kind="InputPin" />
               <Pin Id="RHuq8t3klY6Lof2lQC9F4T" Name="Write Model Pin on model change" Kind="InputPin" />
+              <Pin Id="OOQnGzPnVXGLLgONnPOK3l" Name="Local Context" Kind="InputPin" />
               <Pin Id="Jgb1FeSxeBBNUjLSonDhqY" Name="Update" Kind="ApplyPin" />
               <Pin Id="CucqA4fToBPPhM0UqYtp8e" Name="Post Sync Model Channel" Kind="OutputPin" />
+              <Pin Id="AaJkdbZRsfxMGHn58bgpoJ" Name="Server" Kind="InputPin" />
             </Node>
             <Node Bounds="167,516,36,19" Id="I5DX1vFftimMuKuNqeI1fb">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -156,7 +158,7 @@
             </Node>
             <ControlPoint Id="U95rj3hIX4kM3efwk6M0Hl" Bounds="1024,462" />
             <ControlPoint Id="BCwKf7F8sXuLIvD7kHVg2y" Bounds="427,235" />
-            <Node Bounds="345,326,86,26" Id="IqpsSP2z9gmMcYZ7Yby1Zs">
+            <Node Bounds="345,326,86,19" Id="IqpsSP2z9gmMcYZ7Yby1Zs">
               <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.ICompositionModel" LastDependency="VL.Kairos.Runtime.Core.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="InterfaceTypeFlag" Name="ICompositionModel" NeedsToBeDirectParent="true" />
@@ -515,7 +517,7 @@
                       <Pin Id="AZJg0AqoDcTLWEbAAYSW7x" Name="Output" Kind="OutputPin" IsHidden="true" />
                       <Pin Id="FufBsyofAnVLLlQ0fSCOPn" Name="Value" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="283,883,85,26" Id="VRIKB1YffjlQBnyBWXVsNm">
+                    <Node Bounds="283,883,85,19" Id="VRIKB1YffjlQBnyBWXVsNm">
                       <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.Commons.IBounds1DProvider" LastDependency="VL.Kairos.Runtime.Core.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="InterfaceTypeFlag" Name="IBounds1DProvider" NeedsToBeDirectParent="true" />
@@ -575,7 +577,7 @@
                     <Patch Id="LMUi8RDDb1TOa8xNqIljAd" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="JDVoRsJAGkoQDCMIQmRMcw" Name="Update" ManuallySortedPins="true" />
                     <Patch Id="LWi7h4qZ6TrOlWdrL6TNwH" Name="Dispose" ManuallySortedPins="true" />
-                    <Node Bounds="255,1085,85,26" Id="LeuDbcawNRcLBx0GTl7VgL">
+                    <Node Bounds="255,1085,85,19" Id="LeuDbcawNRcLBx0GTl7VgL">
                       <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.Commons.IBounds1DProvider" LastDependency="VL.Kairos.Runtime.Core.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="InterfaceTypeFlag" Name="IBounds1DProvider" NeedsToBeDirectParent="true" />
@@ -699,7 +701,7 @@
                   <Choice Kind="TypeFlag" Name="String" />
                 </TypeReference>
                 <TypeReference>
-                  <Choice Kind="TypeFlag" Name="ITrackModel" />
+                  <Choice Kind="TypeFlag" Name="KairosTrackModel" />
                 </TypeReference>
               </p:TypeArguments>
             </p:TypeAnnotation>
@@ -712,7 +714,7 @@
                   <Choice Kind="TypeFlag" Name="String" />
                 </TypeReference>
                 <TypeReference>
-                  <Choice Kind="TypeFlag" Name="IControllerModel" />
+                  <Choice Kind="TypeFlag" Name="IKairosControllerModel" />
                 </TypeReference>
               </p:TypeArguments>
             </p:TypeAnnotation>
@@ -3003,7 +3005,7 @@
             <Link Id="SqUiFhoEnyPOkhj7uBVqjV" Ids="AeNTPqV8HPeMknjYzddb5s,OHhs9gIT7uIPHBLZxCG9Vf" />
             <Slot Id="MCksF7gwczXOJEzpZvJAac" Name="Composition">
               <p:TypeAnnotation p:Type="TypeReference">
-                <Choice Kind="TypeFlag" Name="IComposition" />
+                <Choice Kind="TypeFlag" Name="KairosCompositionOld" />
               </p:TypeAnnotation>
             </Slot>
             <Link Id="JqoFekkpfJsQZPO5oMwzYv" Ids="Os4cQaU9BVUMKv707jhSM9,HJbQOX9pvmoOhsxrWuKoz2" />
@@ -3139,7 +3141,7 @@
             <Link Id="Dc3lpc9SN4ENavR5CwJ06m" Ids="EBz5gYOPjPyPwsDc6LJ2gh,FQgI2fEFeAUPuWkylRPHlh" />
             <Slot Id="SsOjg0M5fkWN7OzU6WxbJ7" Name="Composition">
               <p:TypeAnnotation p:Type="TypeReference">
-                <Choice Kind="TypeFlag" Name="IComposition" />
+                <Choice Kind="TypeFlag" Name="KairosCompositionOld" />
               </p:TypeAnnotation>
             </Slot>
             <Link Id="HqT23AoEnGXL7CMobWL9Sa" Ids="CEtxUy4mw1bNwiLbSMIdBW,Ln7w6h1BUy7MORcrKlwyDW" />
@@ -3408,7 +3410,7 @@
             <Link Id="QGBXk33CwreNn7dbqrx1Bd" Ids="EhKkY2Dx6i4P18wV1tjGH7,Q4OXpmJsOkhLtnHFcbo2Xg" />
             <Slot Id="GQotvK65EJ0NL6SQao1IfY" Name="Composition">
               <p:TypeAnnotation p:Type="TypeReference">
-                <Choice Kind="TypeFlag" Name="IComposition" />
+                <Choice Kind="TypeFlag" Name="KairosCompositionOld" />
               </p:TypeAnnotation>
             </Slot>
             <Link Id="BTkzOdhjtVsOcHVItUUZS0" Ids="CbVEs0t6CweNL5oNYVDzm9,HRTLwvJS7TlO2fC8lj8frj" />
@@ -3773,7 +3775,7 @@
             <Link Id="Qznx6fEcJjiL0vicHrEUMU" Ids="QNADRCJV6QeLMklEXdzJuX,P94l2sjQu7XNynUBkGn6GH" />
             <Slot Id="PCntrK9uRGuNeYGA4upux5" Name="Composition">
               <p:TypeAnnotation p:Type="TypeReference">
-                <Choice Kind="TypeFlag" Name="IComposition" />
+                <Choice Kind="TypeFlag" Name="KairosCompositionOld" />
               </p:TypeAnnotation>
             </Slot>
             <Link Id="OJvlQjNk3GmMsh22nzy6Mr" Ids="KTReIso542eO3RSyub60at,LImMMX0mLtJOy3L3SVSL8T" />
@@ -4277,22 +4279,24 @@
               <Node Bounds="1637,297,59,19" Id="CD5nc5dUxxZLFqNIR2TJCz">
                 <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.IComposition" LastDependency="VL.Kairos.Runtime.Core.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="InterfaceTypeFlag" Name="IComposition" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="InterfaceTypeFlag" Name="KairosCompositionOld" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetModel" />
                 </p:NodeReference>
                 <Pin Id="PsfDagYnu66MFuSo1AA4jN" Name="Input" Kind="InputPin" />
+                <Pin Id="FUFp9oZbpVcPuXpJxclMWU" Name="Output" Kind="OutputPin" />
                 <Pin Id="DXBUB89av02MTOLieeCZus" Name="Tracks" Kind="OutputPin" />
               </Node>
               <Node Bounds="1336,339,77,19" Id="I1MpdREqUzTLV4owdA52rx">
                 <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.IComposition" LastDependency="VL.Kairos.Runtime.Core.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetController" />
-                  <CategoryReference Kind="InterfaceTypeFlag" Name="IComposition" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="InterfaceTypeFlag" Name="KairosCompositionOld" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="EGTHHayKQA0Lp2jfSf1OGm" Name="Input" Kind="InputPin" />
                 <Pin Id="KuDXy2kkKsfNIAorZL2qW5" Name="Key" Kind="InputPin" />
+                <Pin Id="RGw0KTFkVr7M4RlhDR7qgS" Name="Output" Kind="OutputPin" />
+                <Pin Id="Gol5CaxLY3iNFaiVJr53TE" Name="Found" Kind="OutputPin" />
                 <Pin Id="GFEZZxIh8iDMwPDMw3epNO" Name="Controller" Kind="OutputPin" />
-                <Pin Id="N8AFHQZRevfNlJLL5TOgkb" Name="Found" Kind="OutputPin" />
               </Node>
               <Node Bounds="1336,378,58,19" Id="L75Seevck5hPGwxAaNEoLo">
                 <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
@@ -4504,7 +4508,7 @@
             <Link Id="BUzNc9CD6GLN4m55hxLAGI" Ids="NlQTlBt5Pq8O0lPTTPIO6m,DAg8fCXBVtgOOYJPBywYLb" />
             <Slot Id="Nyv225JOVKMMiLGZNhD2wy" Name="Composition">
               <p:TypeAnnotation p:Type="TypeReference">
-                <Choice Kind="TypeFlag" Name="IComposition" />
+                <Choice Kind="TypeFlag" Name="KairosCompositionOld" />
               </p:TypeAnnotation>
             </Slot>
             <Link Id="MIGB0FFEujJO7CwjZzmKuV" Ids="Ml3nTcVX91hLUdO2UGDQhm,UFMLLGdPE3QNCq0y8xQgVN" />
@@ -4822,7 +4826,7 @@
             <Link Id="O6FKEGO852OLqsx2tYie5r" Ids="RPmH7MSbVckNetrL4Xxhxt,NTgrKXr3MUrOXfTp6ezboB" />
             <Slot Id="S2CMNREzPJdOZzVqyd4lux" Name="Composition">
               <p:TypeAnnotation p:Type="TypeReference">
-                <Choice Kind="TypeFlag" Name="IComposition" />
+                <Choice Kind="TypeFlag" Name="KairosCompositionOld" />
               </p:TypeAnnotation>
             </Slot>
             <Link Id="Ig7LHWVyzydO9zS85ZJdTx" Ids="AVtr8o6Hv0GPhzl2uzfkkR,KFeV9vkE2vKOIg9X2dffJm" />
@@ -4930,7 +4934,7 @@
               <Node Bounds="788,576,96,26" Id="INAQjvRiXENMaWX9Hq86wd">
                 <p:NodeReference LastCategoryFullName="Kairos.Parameter" LastDependency="VL.Kairos.Runtime.Core.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="RecordType" Name="Parameter" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="RecordType" Name="KairosParameter" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetTypeFullName" />
                 </p:NodeReference>
                 <Pin Id="AVMo817yqtzMBsoZ4OI4Jx" Name="Input" Kind="StateInputPin" />
@@ -4995,7 +4999,7 @@
                 <Pin Id="E00mEiHyPSQNB2ByQ2oX2N" Name="Output" Kind="StateOutputPin" />
               </Node>
               <ControlPoint Id="HNDW1JCFqW4QK2iNAuKOos" Bounds="374,789" />
-              <Node Bounds="298,832,55,26" Id="C9sWfe3I3uaLwWVBE8uzxp">
+              <Node Bounds="298,832,55,19" Id="C9sWfe3I3uaLwWVBE8uzxp">
                 <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.Commons.IIDProvider" LastDependency="VL.Kairos.Runtime.Core.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="InterfaceTypeFlag" Name="IIDProvider" NeedsToBeDirectParent="true" />
@@ -5088,7 +5092,7 @@
                         <Pin Id="IgJdojyHT5eNFP4mZGF7dY" Name="Output" Kind="OutputPin" IsHidden="true" />
                         <Pin Id="ELUO6c9JKO5QLV4Vt2nBUT" Name="Value" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="782,1048,85,26" Id="K16o4TNAFLVOgk2DXrM6Kw">
+                      <Node Bounds="782,1048,85,19" Id="K16o4TNAFLVOgk2DXrM6Kw">
                         <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.Commons.IBounds1DProvider" LastDependency="VL.Kairos.Runtime.Core.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="InterfaceTypeFlag" Name="IBounds1DProvider" NeedsToBeDirectParent="true" />
@@ -5277,7 +5281,7 @@
                 </AttributeData>
               </p:Attributes>
               <p:TypeAnnotation p:Type="TypeReference">
-                <Choice Kind="TypeFlag" Name="Parameter" />
+                <Choice Kind="TypeFlag" Name="KairosParameter" />
               </p:TypeAnnotation>
             </Slot>
             <Link Id="P9HKRMAy16yOK9Uuvtwr1b" Ids="C9TDeuvnm80NEpMrI5cvsj,KgJ02cnnpSJLZOVrPCUFCg" />
@@ -5610,13 +5614,13 @@
     ************************ CompositionKeyframe (KeyframeEditor) ************************
 
 -->
-        <Node Name="CompositionKeyframe (KeyframeEditor)" Aspects="Internal" Bounds="474,262" Id="CiC0rLNGCNUPZX882jVjX1">
+        <Node Name="CompositionKeyframe (KeyframeEditor)" Aspects="Internal" Bounds="519,262" Id="CiC0rLNGCNUPZX882jVjX1">
           <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
             <Choice Kind="ClassDefinition" Name="Class" />
           </p:NodeReference>
           <p:Interfaces>
             <TypeReference LastCategoryFullName="Kairos.Core.Controller" LastDependency="VL.Kairos.Core.vl">
-              <Choice Kind="InterfaceTypeFlag" Name="IController" />
+              <Choice Kind="InterfaceTypeFlag" Name="IKairosController" />
             </TypeReference>
             <TypeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="MutableInterfaceType" Name="IDisposable" />
@@ -5650,7 +5654,7 @@
                 <Pin Id="Gv1gQQ1rXMQOPEExBmRqBU" Name="Input" Kind="StateInputPin" />
                 <Pin Id="QxPW27Ao7GBNz0rJXytMEM" Name="Result" Kind="OutputPin" />
               </Node>
-              <Node Bounds="2388,855,155,26" Id="C9nd7aVxMRwPJFnByoInaf">
+              <Node Bounds="2388,855,178,26" Id="C9nd7aVxMRwPJFnByoInaf">
                 <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Controller.CompositionKeyframeModel (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetCompositionInputPinName" />
@@ -5659,7 +5663,7 @@
                 <Pin Id="GS4hRJKKREcPQ4V02GKAKv" Name="Output" Kind="OutputPin" />
                 <Pin Id="JZ6oCx1tQb6P0ukcDeVmAt" Name="Composition Input Pin Name" Kind="OutputPin" />
               </Node>
-              <Node Bounds="2068,809,55,26" Id="H4MU0nwqTNKPBX9fybpb9E">
+              <Node Bounds="2068,809,55,19" Id="H4MU0nwqTNKPBX9fybpb9E">
                 <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.Commons.IIDProvider" LastDependency="VL.Kairos.Runtime.Core.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="InterfaceTypeFlag" Name="IIDProvider" NeedsToBeDirectParent="true" />
@@ -5700,7 +5704,7 @@
                   <ControlPoint Id="TdY2B8uSd43N1pOP7Wtn4A" Bounds="1322,237" />
                   <Pin Id="HiqcOw0VVUAM0hKFxY1noH" Name="Result" Kind="OutputPin" />
                   <ControlPoint Id="LMFz1dmC3YpOQcBaADjdU7" Bounds="1322,585" />
-                  <Node Bounds="1320,266,107,26" Id="OJ4MgWL6RxAOdmpQXPB2ey">
+                  <Node Bounds="1320,266,119,26" Id="OJ4MgWL6RxAOdmpQXPB2ey">
                     <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Track.TrackModel (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="TrackModel (KeyframeEditor)" />
@@ -5748,7 +5752,7 @@
                       </Node>
                     </Patch>
                   </Node>
-                  <Node Bounds="1320,535,105,26" Id="AXdcHhzrieDMFxOLRU0t6I">
+                  <Node Bounds="1320,535,119,26" Id="AXdcHhzrieDMFxOLRU0t6I">
                     <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Track.TrackModel (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="TrackModel (KeyframeEditor)" />
@@ -5768,7 +5772,7 @@
                     <Pin Id="AOcnB8Df7L6NArQnedgNGG" Name="Output" Kind="OutputPin" />
                     <Pin Id="JgMBvciWc4TNW0E0UrAWpb" Name="Value" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="1567,288,55,26" Id="EAlyqYaVZJ9P8Fp8FVSX2E">
+                  <Node Bounds="1567,288,55,19" Id="EAlyqYaVZJ9P8Fp8FVSX2E">
                     <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.Commons.IIDProvider" LastDependency="VL.Kairos.Runtime.Core.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="InterfaceTypeFlag" Name="IIDProvider" NeedsToBeDirectParent="true" />
@@ -5790,7 +5794,7 @@
                   </Node>
                 </Patch>
               </Node>
-              <Node Bounds="1580,682,139,185" Id="AWg6TqyP6BBN8XatQxBeLd">
+              <Node Bounds="1580,682,143,185" Id="AWg6TqyP6BBN8XatQxBeLd">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
@@ -5802,7 +5806,7 @@
                   <ControlPoint Id="FZiQO5IfrTYPwAujRVsLIZ" Bounds="1594,770" />
                   <Pin Id="JipIIiXdEYlLJQaNeqkGZn" Name="Result" Kind="OutputPin" />
                   <ControlPoint Id="OUv11OAvWaUMYJ98UZ97Xb" Bounds="1594,850" />
-                  <Node Bounds="1592,801,96,26" Id="MuYFti35xicLcs5Qh91p3X">
+                  <Node Bounds="1592,801,119,26" Id="MuYFti35xicLcs5Qh91p3X">
                     <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Track.TrackModel (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="TrackModel (KeyframeEditor)" />
@@ -5823,7 +5827,7 @@
                     <Pin Id="Vu0cbEWRNxXN1MGg31l3yP" Name="Output" Kind="OutputPin" />
                     <Pin Id="OACXrjipPiYPY0z9KsiZTN" Name="Value" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="1652,752,55,26" Id="DnJ4NSgDDV5PV2HN81nRdO">
+                  <Node Bounds="1652,752,55,19" Id="DnJ4NSgDDV5PV2HN81nRdO">
                     <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.Commons.IIDProvider" LastDependency="VL.Kairos.Runtime.Core.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="InterfaceTypeFlag" Name="IIDProvider" NeedsToBeDirectParent="true" />
@@ -5835,7 +5839,7 @@
                   </Node>
                 </Patch>
               </Node>
-              <Node Bounds="1035,582,132,115" Id="PklucjvOXTyQLEjHl6t4Pq">
+              <Node Bounds="853,583,144,115" Id="PklucjvOXTyQLEjHl6t4Pq">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
@@ -5844,10 +5848,10 @@
                 <Pin Id="I27HaiMRQQxLLM194RcPEW" Name="Functionality" Kind="OutputPin" />
                 <Patch Id="KX5xk68aODhNP9qIiS84s8" ManuallySortedPins="true">
                   <Pin Id="KBcMIv2oCQjO9vhLqf9RKP" Name="Arg" Kind="InputPin" />
-                  <ControlPoint Id="JFnxdv7ZLFgNw3z2aOEYxM" Bounds="1049,600" />
+                  <ControlPoint Id="JFnxdv7ZLFgNw3z2aOEYxM" Bounds="867,601" />
                   <Pin Id="IxNeyqpDwLiNSPgyNkCXwF" Name="Result" Kind="OutputPin" />
-                  <ControlPoint Id="EqeHEGZt1z2QEJNOQjEICm" Bounds="1049,680" />
-                  <Node Bounds="1048,629,107,26" Id="ErNv82mf2JePfrm1qarpCJ">
+                  <ControlPoint Id="EqeHEGZt1z2QEJNOQjEICm" Bounds="867,681" />
+                  <Node Bounds="866,630,119,26" Id="ErNv82mf2JePfrm1qarpCJ">
                     <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Track.TrackModel (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="TrackModel (KeyframeEditor)" />
@@ -5859,7 +5863,7 @@
                   </Node>
                 </Patch>
               </Node>
-              <Node Bounds="1848,298,554,418" Id="AsgoT3FEvvUNUekrocs1f9">
+              <Node Bounds="1848,298,577,418" Id="AsgoT3FEvvUNUekrocs1f9">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
@@ -5871,7 +5875,7 @@
                   <ControlPoint Id="JelFhikczv5LIPXi9xaOyt" Bounds="1862,323" />
                   <Pin Id="PFjARJxcKYCNpP9W40OBhQ" Name="Result" Kind="OutputPin" />
                   <ControlPoint Id="Ai3ksmeNnYlPH1Wm4Up7ZJ" Bounds="1862,699" />
-                  <Node Bounds="1860,362,107,26" Id="VujFQm6SbxnPF6F9y47OOj">
+                  <Node Bounds="1860,362,119,26" Id="VujFQm6SbxnPF6F9y47OOj">
                     <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Track.TrackModel (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="TrackModel (KeyframeEditor)" />
@@ -5881,7 +5885,7 @@
                     <Pin Id="CDpIbyXD1ryNFv1LI0EpDG" Name="Output" Kind="OutputPin" />
                     <Pin Id="TWoqqJKiUMeO1nrGH6lanP" Name="Items Model" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="1860,657,105,26" Id="S68DwjJraa2M5bjB3vmcWZ">
+                  <Node Bounds="1860,657,119,26" Id="S68DwjJraa2M5bjB3vmcWZ">
                     <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Track.TrackModel (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="TrackModel (KeyframeEditor)" />
@@ -5891,7 +5895,7 @@
                     <Pin Id="TIxgqZEWBBdMcDbdA97UUd" Name="Items Model" Kind="InputPin" />
                     <Pin Id="Qq1P40ip8ziOigTEOgLfeF" Name="Output" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="2008,406,129,26" Id="GepkdYQn5y9MuNViNOfXEK">
+                  <Node Bounds="2008,406,153,26" Id="GepkdYQn5y9MuNViNOfXEK">
                     <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Keyframe.ProxyKeyframeModel (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="ProxyKeyframeModel (KeyframeEditor)" />
@@ -5901,7 +5905,7 @@
                     <Pin Id="L0P5clDa4EuMWmci5uZWqQ" Name="Author" Kind="InputPin" />
                     <Pin Id="PjOvoHb8pqDMSNdkqLuTQB" Name="Output" Kind="StateOutputPin" />
                   </Node>
-                  <Node Bounds="2130,367,96,26" Id="SYe43DZ5DlgOVluCR6hAXt">
+                  <Node Bounds="2130,367,119,26" Id="SYe43DZ5DlgOVluCR6hAXt">
                     <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Track.TrackModel (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="TrackModel (KeyframeEditor)" />
@@ -5911,10 +5915,10 @@
                     <Pin Id="EAWGsJZWYZTNvg3yd5M6P3" Name="Output" Kind="OutputPin" />
                     <Pin Id="BHGr3tgGK4lNXylZJK44sh" Name="Parameter" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="2130,404,52,26" Id="BNCBkQpihwkMaL5rH5lOXe">
+                  <Node Bounds="2130,404,75,26" Id="BNCBkQpihwkMaL5rH5lOXe">
                     <p:NodeReference LastCategoryFullName="Kairos.Parameter" LastDependency="VL.Kairos.Runtime.Core.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <CategoryReference Kind="RecordType" Name="Parameter" />
+                      <CategoryReference Kind="RecordType" Name="KairosParameter" />
                       <Choice Kind="OperationCallFlag" Name="GetPath" />
                     </p:NodeReference>
                     <Pin Id="UYTwhM7TAvHMY7e5fnF0MN" Name="Input" Kind="StateInputPin" />
@@ -5932,7 +5936,7 @@
                     <Pin Id="Qe1AkLoN0DNQG4ztqexDn8" Name="Value" Kind="InputPin" />
                     <Pin Id="Gq1WKRAGlvjOqyRtVbAIUW" Name="Output" Kind="StateOutputPin" />
                   </Node>
-                  <Node Bounds="2235,367,155,26" Id="HPtXnt2rYydLhfC5GL5W8y">
+                  <Node Bounds="2235,367,178,26" Id="HPtXnt2rYydLhfC5GL5W8y">
                     <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Controller.CompositionKeyframeModel (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="GetSettings" />
@@ -5952,7 +5956,7 @@
                     <Pin Id="FI11uhd1X5VMqwIouNOBWy" Name="Output" Kind="OutputPin" />
                     <Pin Id="ImCPya7SUIjPO1NblT13VI" Name="Value" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="2008,367,55,26" Id="IF2snX0MDe8Napb4sAPKgN">
+                  <Node Bounds="2008,367,55,19" Id="IF2snX0MDe8Napb4sAPKgN">
                     <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.Commons.IIDProvider" LastDependency="VL.Kairos.Runtime.Core.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="InterfaceTypeFlag" Name="IIDProvider" NeedsToBeDirectParent="true" />
@@ -5972,7 +5976,7 @@
                     <Pin Id="JKS6ULQ8UVjPZPIHDUso6T" Name="Settings" Kind="InputPin" />
                     <Pin Id="TgrisivHHfvLHnsNrp2KUg" Name="Output" Kind="StateOutputPin" />
                   </Node>
-                  <Node Bounds="2008,484,129,26" Id="ATA6E3cXXDNOGXnb7Au4Vl">
+                  <Node Bounds="2008,484,153,26" Id="ATA6E3cXXDNOGXnb7Au4Vl">
                     <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Keyframe.ProxyKeyframeModel (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="SetUpstreamTrackKey" />
@@ -5981,7 +5985,7 @@
                     <Pin Id="IuviSoEmVBpONTvyX6JUz7" Name="Upstream Track Key" Kind="InputPin" />
                     <Pin Id="FFLosEZhCd1L5OjvZb4Ekv" Name="Output" Kind="StateOutputPin" />
                   </Node>
-                  <Node Bounds="1934,569,55,26" Id="Gjm53AWvJYqLMiZtorQ0EH">
+                  <Node Bounds="1934,569,55,19" Id="Gjm53AWvJYqLMiZtorQ0EH">
                     <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.Commons.IIDProvider" LastDependency="VL.Kairos.Runtime.Core.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="InterfaceTypeFlag" Name="IIDProvider" NeedsToBeDirectParent="true" />
@@ -6114,7 +6118,7 @@
                     <Pin Id="D5XzuWPtpUJMcxPi0n37jT" Name="Output" Kind="StateOutputPin" />
                     <Pin Id="HptpZUodgpBO2fQ1bvzhJV" Name="Value" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="607,1381,83,26" Id="Fa7SgUKudp0QcnW2wJ4wBQ">
+                  <Node Bounds="607,1381,106,26" Id="Fa7SgUKudp0QcnW2wJ4wBQ">
                     <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Keyframe.Settings (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="Settings (KeyframeEditor)" NeedsToBeDirectParent="true" />
@@ -6124,7 +6128,7 @@
                     <Pin Id="A9Bma43b2qlPvmDthx7HSO" Name="Output" Kind="OutputPin" />
                     <Pin Id="U3UFwD9fJVcOXXHkNXdQYq" Name="Position" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="660,1417,85,26" Id="E2PvxDHNAw8PijPsm5awjl">
+                  <Node Bounds="660,1417,106,26" Id="E2PvxDHNAw8PijPsm5awjl">
                     <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Keyframe.Settings (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="Settings (KeyframeEditor)" NeedsToBeDirectParent="true" />
@@ -6160,7 +6164,7 @@
                 <Pin Id="UG9ffivTUK0PYeaDR8jDo0" Name="Set Model Func" Kind="InputPin" />
                 <Pin Id="E2Bc4DG3cKgNqdzAZTZif7" Name="Model Channel" Kind="InputPin" />
               </Node>
-              <Node Bounds="859,1397,171,226" Id="He7UXbKtr95MrOYV8GT6hO">
+              <Node Bounds="859,1397,192,226" Id="He7UXbKtr95MrOYV8GT6hO">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
@@ -6185,7 +6189,7 @@
                     <Pin Id="P1R8FNf1QpzLYJ6PuR6yCO" Name="Max Bound" Kind="InputPin" />
                     <Pin Id="I5TQgowj8vJLedDpZaD9cy" Name="Output" Kind="StateOutputPin" />
                   </Node>
-                  <Node Bounds="902,1469,83,26" Id="TmHtMOcOO9yO9Js9QG8sVT">
+                  <Node Bounds="902,1469,106,26" Id="TmHtMOcOO9yO9Js9QG8sVT">
                     <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Keyframe.Settings (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="Settings (KeyframeEditor)" NeedsToBeDirectParent="true" />
@@ -6195,7 +6199,7 @@
                     <Pin Id="JHeyQSY2CfpLW380LcfRwU" Name="Output" Kind="OutputPin" />
                     <Pin Id="PRUuvTuZiRjMZ3TLeZ0XGu" Name="Position" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="933,1509,85,26" Id="LWWtxaBo2VIOw6epCoqOGS">
+                  <Node Bounds="933,1509,106,26" Id="LWWtxaBo2VIOw6epCoqOGS">
                     <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Keyframe.Settings (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="Settings (KeyframeEditor)" NeedsToBeDirectParent="true" />
@@ -6208,7 +6212,7 @@
                 </Patch>
               </Node>
               <Pad Id="OauSPGp2ORMNXqGm0fE8fv" SlotId="Kw2p5PHumHkNGWS6Ymeb1R" Bounds="1062,1261" />
-              <Node Bounds="114,1645,88,26" Id="G4Qt7Qob7OIP8k75g3IHXO">
+              <Node Bounds="114,1645,88,19" Id="G4Qt7Qob7OIP8k75g3IHXO">
                 <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.Embedding.IEmbeddable1D" LastDependency="VL.Kairos.Runtime.Core.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="InterfaceTypeFlag" Name="IEmbeddable1D" NeedsToBeDirectParent="true" />
@@ -6315,7 +6319,7 @@
                 <Pin Id="ORxlSGdrTmJLurADsfuvTY" Name="Input" Kind="StateInputPin" />
                 <Pin Id="NV9Flr96j3QMd1q6tUQSC9" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="3187,845,155,26" Id="CaEIWUtMQO2PohtHRbfcY9">
+              <Node Bounds="3197,846,178,26" Id="CaEIWUtMQO2PohtHRbfcY9">
                 <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Controller.CompositionKeyframeModel (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="CompositionKeyframeModel (KeyframeEditor)" NeedsToBeDirectParent="true" />
@@ -6328,7 +6332,7 @@
               <Overlay Id="RxHptUgsPqFMsAHV7X30jx" Name="Proxy Handler" Bounds="2781,992,476,409">
                 <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
               </Overlay>
-              <Node Bounds="3132,893,155,26" Id="FagBtEkKBAaPVI4XQWm9Qo">
+              <Node Bounds="3132,893,178,26" Id="FagBtEkKBAaPVI4XQWm9Qo">
                 <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Controller.CompositionKeyframeModel (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="CompositionKeyframeModel (KeyframeEditor)" NeedsToBeDirectParent="true" />
@@ -6382,7 +6386,7 @@
                         <Pin Id="VDrIEXwIS2RM8dAjC2zt2x" Name="Source" Kind="InputPin" />
                         <Pin Id="Eu4eAkV2sB9LyKR0Nt814m" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="3031,1163,129,26" Id="R4b8gF30DlXL8O6bTDL8q1">
+                      <Node Bounds="3031,1163,153,26" Id="R4b8gF30DlXL8O6bTDL8q1">
                         <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Keyframe.ProxyKeyframeModel (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="RecordType" Name="ProxyKeyframeModel (KeyframeEditor)" NeedsToBeDirectParent="true" />
@@ -6392,7 +6396,7 @@
                         <Pin Id="T4XqW4PRJE9MfEY1mlOSb0" Name="Output" Kind="StateOutputPin" />
                         <Pin Id="FkmEVS3oizvLKWHrCkHPVQ" Name="Settings" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="3031,1239,129,26" Id="NSwwszR5TldO3a28iHMoFs">
+                      <Node Bounds="3031,1239,153,26" Id="NSwwszR5TldO3a28iHMoFs">
                         <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Keyframe.ProxyKeyframeModel (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="RecordType" Name="ProxyKeyframeModel (KeyframeEditor)" NeedsToBeDirectParent="true" />
@@ -6402,7 +6406,7 @@
                         <Pin Id="BwVoCw0SC6AP6Y84ZBegLy" Name="Settings" Kind="InputPin" />
                         <Pin Id="T4NkRBOoftsOMVpE28Oqja" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="3031,1291,129,26" Id="T7jY6NcNp3aOARNhui7qvh">
+                      <Node Bounds="3031,1291,153,26" Id="T7jY6NcNp3aOARNhui7qvh">
                         <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Keyframe.ProxyKeyframeModel (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="RecordType" Name="ProxyKeyframeModel (KeyframeEditor)" NeedsToBeDirectParent="true" />
@@ -6439,7 +6443,7 @@
             </Slot>
             <Slot Id="D8VD7XHJwQeL1xeNdd1FNu" Name="This Composition">
               <p:TypeAnnotation p:Type="TypeReference">
-                <Choice Kind="TypeFlag" Name="IComposition" />
+                <Choice Kind="TypeFlag" Name="KairosCompositionOld" />
               </p:TypeAnnotation>
             </Slot>
             <Link Id="QXiZ6MEriqvP7vTza2dnYO" Ids="M1KHreascZRLbubbyavD8G,O63hJdSO2r5NK036UOqxOz" />
@@ -6521,7 +6525,7 @@
                 <Choice Kind="TypeFlag" Name="Channel" />
                 <p:TypeArguments>
                   <TypeReference>
-                    <Choice Kind="TypeFlag" Name="IComposition1D" />
+                    <Choice Kind="TypeFlag" Name="IKairosComposition1D" />
                   </TypeReference>
                 </p:TypeArguments>
               </p:TypeAnnotation>
@@ -6659,7 +6663,7 @@
           </p:NodeReference>
           <p:Interfaces>
             <TypeReference LastCategoryFullName="Kairos.Core.Controller" LastDependency="VL.Kairos.Core.vl">
-              <Choice Kind="InterfaceTypeFlag" Name="IControllerModel" />
+              <Choice Kind="InterfaceTypeFlag" Name="IKairosControllerModel" />
             </TypeReference>
             <TypeReference LastCategoryFullName="Kairos.Runtime.KeyframeEditor.Keyframe" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
               <Choice Kind="InterfaceTypeFlag" Name="IKeyframeModel (KeyframeEditor)" />
@@ -6680,7 +6684,7 @@
               <ControlPoint Id="A4hA8xJoPgjPQzKPGPNrH3" Bounds="1068,599" />
               <ControlPoint Id="FvSWzyqAz7KPOgKsCoI186" Bounds="1068,673" />
               <ControlPoint Id="ICofa8Je2yyN8tPnhTTbka" Bounds="601,401" />
-              <Node Bounds="599,345,95,26" Id="A7WqYY7ycLMQM6LReL3sLV">
+              <Node Bounds="599,345,157,26" Id="A7WqYY7ycLMQM6LReL3sLV">
                 <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Controller.CompositionKeyframe (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="CompositionKeyframe (KeyframeEditor)" />
@@ -6723,7 +6727,7 @@
               <ControlPoint Id="G823G4beQJZPZ6jJykgIHq" Bounds="626,686" />
               <ControlPoint Id="DnJZNGyMjxdLWBteGxSFJs" Bounds="731,686" />
               <Pad Id="UdyK1Px4eliPyKOFWko9YA" SlotId="Kvhq1JPjujWOolf8pZo84o" Bounds="731,606" />
-              <Node Bounds="624,637,78,26" Id="GdWks50FRhSN765E6LLdKJ">
+              <Node Bounds="624,637,106,26" Id="GdWks50FRhSN765E6LLdKJ">
                 <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Keyframe.Settings (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="Settings (KeyframeEditor)" NeedsToBeDirectParent="true" />
@@ -6733,7 +6737,7 @@
                 <Pin Id="AeFakomeLjtMjZtSHM9zc1" Name="Output" Kind="OutputPin" />
                 <Pin Id="QGJ7fiLV5JyM5CSSjZCTq8" Name="Position" Kind="OutputPin" />
               </Node>
-              <Node Bounds="729,637,85,26" Id="VIOTCe0jczQPZoKfCmTsci">
+              <Node Bounds="729,637,106,26" Id="VIOTCe0jczQPZoKfCmTsci">
                 <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditor.Keyframe.Settings (KeyframeEditor)" LastDependency="VL.Kairos.Runtime.KeyframeEditor.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="Settings (KeyframeEditor)" NeedsToBeDirectParent="true" />
@@ -6951,9 +6955,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="I9r7OOr28ZKQU0kOe9kITs" Location="VL.CoreLib" Version="2024.6.7-0258-g67ac288fc9" />
-  <DocumentDependency Id="Q8lsl2aQ2woPUyzp18N2aP" Location="./VL.Kairos.Runtime.Core.vl" IsFriend="true" />
-  <NugetDependency Id="N060MY3I3NaQIFfIU14wMb" Location="VL.Core" Version="2024.6.7-0258-g67ac288fc9" />
-  <DocumentDependency Id="JvdCzTkbpYPODWoGAMub81" Location="./VL.LayerX.Runtime.vl" IsFriend="true" />
-  <DocumentDependency Id="E2qOqPVzfKKMPOfpVoEIYw" Location="./VL.AlchemX.vl" IsFriend="true" />
+  <NugetDependency Id="I9r7OOr28ZKQU0kOe9kITs" Location="VL.CoreLib" Version="2024.6.7-0308-g293be43e1a" />
+  <NugetDependency Id="N060MY3I3NaQIFfIU14wMb" Location="VL.Core" Version="2024.6.7-0308-g293be43e1a" />
+  <DocumentDependency Id="TG0iwoQR7DoLXXhoh70TJ6" Location="../../vl/VL.Kairos.Runtime.Core.vl" IsFriend="true" />
 </Document>

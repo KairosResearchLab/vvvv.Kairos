@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="DtB1sAuTwf7MpboMgQn2vP" LanguageVersion="2024.6.7-0196-g6a855a4938" Version="0.128">
-  <NugetDependency Id="TKrHVWOBKJZNPKl7rQv2oy" Location="VL.CoreLib" Version="2024.6.7-0196-g6a855a4938" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="DtB1sAuTwf7MpboMgQn2vP" LanguageVersion="2024.6.7-0308-g293be43e1a" Version="0.128">
+  <NugetDependency Id="TKrHVWOBKJZNPKl7rQv2oy" Location="VL.CoreLib" Version="2024.6.7-0308-g293be43e1a" />
   <Patch Id="VzmxMhtWO4GL7l2nwmyS1m">
     <Canvas Id="GeDfDvmY4SSMe0jsjKPUNt" DefaultCategory="Kairos.Common.Internal" CanvasType="FullCategory">
       <!--
@@ -1009,7 +1009,7 @@
               <Choice Kind="TypeFlag" Name="Channel" />
               <p:TypeArguments>
                 <TypeReference>
-                  <Choice Kind="TypeFlag" Name="ICompositionModel" />
+                  <Choice Kind="TypeFlag" Name="KairosCompositionModel" />
                 </TypeReference>
               </p:TypeArguments>
             </p:TypeAnnotation>
@@ -1855,7 +1855,7 @@
                 <Node Bounds="482,1192,175,26" Id="GHTDlV3SCVtLCFX5lJ19OM">
                   <p:NodeReference LastCategoryFullName="Kairos.Parameter" LastDependency="VL.Kairos.Runtime.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="RecordType" Name="Parameter" />
+                    <CategoryReference Kind="RecordType" Name="KairosParameter" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
                   <Pin Id="JKe2FzUilTJNaGT8iADs9M" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -1889,7 +1889,7 @@
                 <Node Bounds="250,1202,91,26" Id="FmvGHKSmZeqNQUfTNJ0WBK">
                   <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.IComposition" LastDependency="VL.Kairos.Runtime.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="InterfaceTypeFlag" Name="IComposition" NeedsToBeDirectParent="true" />
+                    <CategoryReference Kind="InterfaceTypeFlag" Name="KairosCompositionOld" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="GetModelStream" />
                   </p:NodeReference>
                   <Pin Id="UX5PJcHbVVJO8rJF3QAl6x" Name="Input" Kind="StateInputPin" />
@@ -2068,7 +2068,7 @@
                 <Node Bounds="172,260,91,26" Id="M8bBkU3VAGQNPaVQS1746Z">
                   <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.IComposition" LastDependency="VL.Kairos.Runtime.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="InterfaceTypeFlag" Name="IComposition" NeedsToBeDirectParent="true" />
+                    <CategoryReference Kind="InterfaceTypeFlag" Name="KairosCompositionOld" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="GetModelStream" />
                   </p:NodeReference>
                   <Pin Id="EBkBSGWhRajNCiA5ao7eeF" Name="Input" Kind="StateInputPin" />
@@ -2078,13 +2078,14 @@
                 <Node Bounds="270,335,57,19" Id="Q0VN35Lmz9RPlaW5LLmgk7">
                   <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.ICompositionModel" LastDependency="VL.Kairos.Runtime.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="InterfaceTypeFlag" Name="ICompositionModel" NeedsToBeDirectParent="true" />
+                    <CategoryReference Kind="InterfaceTypeFlag" Name="KairosCompositionModel" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="GetTrack" />
                   </p:NodeReference>
                   <Pin Id="K9lcdHKUfSWPJ2sEC3cG26" Name="Input" Kind="InputPin" />
                   <Pin Id="D4zUeaIOEDyLa1BPt497Dy" Name="Key" Kind="InputPin" />
-                  <Pin Id="SrDYRsQusV5N0mkRoc5iZo" Name="Model of Track" Kind="OutputPin" />
+                  <Pin Id="OOkvnk11SfYMHwdzBFSP8w" Name="Output" Kind="OutputPin" />
                   <Pin Id="TFRPwCcF38KLcT8ID15Ynl" Name="Found" Kind="OutputPin" />
+                  <Pin Id="SrDYRsQusV5N0mkRoc5iZo" Name="Model of Track" Kind="OutputPin" />
                 </Node>
                 <Patch Id="HZLGr38Vd5HLeU1ZNwG0jg" Name="Dispose" />
               </Patch>
@@ -2448,7 +2449,7 @@
                         <Node Bounds="654,1820,52,26" Id="TWegxxUvKh1OtcDcq39JiI">
                           <p:NodeReference LastCategoryFullName="Kairos.Parameter" LastDependency="VL.Kairos.Runtime.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                            <CategoryReference Kind="RecordType" Name="Parameter" />
+                            <CategoryReference Kind="RecordType" Name="KairosParameter" />
                             <Choice Kind="OperationCallFlag" Name="Create" />
                           </p:NodeReference>
                           <Pin Id="KRACA65zo5aO34cNjZhXJs" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -2529,7 +2530,7 @@
                 <Node Bounds="339,1461,91,26" Id="BKKuGONQElvQXNahGfkOUG">
                   <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.IComposition" LastDependency="VL.Kairos.Runtime.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="InterfaceTypeFlag" Name="IComposition" NeedsToBeDirectParent="true" />
+                    <CategoryReference Kind="InterfaceTypeFlag" Name="KairosCompositionOld" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="GetModelStream" />
                   </p:NodeReference>
                   <Pin Id="NgxyxwmkeV6OOfAjwvgvyb" Name="Input" Kind="StateInputPin" />
@@ -2693,7 +2694,7 @@
             <Node Bounds="1374,410,91,26" Id="Vbp9WExJaCeOb58spqr2f7">
               <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.IComposition" LastDependency="VL.Kairos.Runtime.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="InterfaceTypeFlag" Name="IComposition" NeedsToBeDirectParent="true" />
+                <CategoryReference Kind="InterfaceTypeFlag" Name="KairosCompositionOld" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="GetModelStream" />
               </p:NodeReference>
               <Pin Id="HHA9tDqa1RfNs41kGIMHlS" Name="Input" Kind="StateInputPin" />
@@ -3105,13 +3106,14 @@
                         <Node Bounds="739,602,57,19" Id="ADNO8mDUcMfLipHvPZIa0V">
                           <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.ICompositionModel" LastDependency="VL.Kairos.Runtime.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                            <CategoryReference Kind="InterfaceTypeFlag" Name="ICompositionModel" NeedsToBeDirectParent="true" />
+                            <CategoryReference Kind="InterfaceTypeFlag" Name="KairosCompositionModel" NeedsToBeDirectParent="true" />
                             <Choice Kind="OperationCallFlag" Name="GetTrack" />
                           </p:NodeReference>
                           <Pin Id="KjqM8GatA9CO0kVnH2m1LN" Name="Input" Kind="InputPin" />
                           <Pin Id="DDoKhcu3QlqO1Ft4YnSjNU" Name="Key" Kind="InputPin" />
-                          <Pin Id="FcgpWcbt3wIPBfY1w4RPSL" Name="Model of Track" Kind="OutputPin" />
+                          <Pin Id="Elneaycn3v9QUSy0oQ6ZvS" Name="Output" Kind="OutputPin" />
                           <Pin Id="EbW4S9dTFpoLxIKvGt0lHF" Name="Found" Kind="OutputPin" />
+                          <Pin Id="FcgpWcbt3wIPBfY1w4RPSL" Name="Model of Track" Kind="OutputPin" />
                         </Node>
                         <Node Bounds="791,645,37,19" Id="T8eduWzlFcpMB3a79cphrZ">
                           <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
@@ -10935,7 +10937,7 @@
           <Patch Id="HIu04DtU48JO0yDWYhijKQ" Name="GetComposition">
             <Pin Id="SwbdY2bTuXqNo0k9a2iHYg" MergeId="77635" Name="Composition" Kind="OutputPin">
               <p:TypeAnnotation LastCategoryFullName="Kairos.Runtime.Core" LastDependency="VL.Kairos.Runtime.vl">
-                <Choice Kind="TypeFlag" Name="IComposition" />
+                <Choice Kind="TypeFlag" Name="KairosCompositionOld" />
               </p:TypeAnnotation>
             </Pin>
           </Patch>
@@ -10974,7 +10976,7 @@
               <Node Bounds="1146,1082,91,26" Id="HM8QiBYV6VZN1wn2Kyq9fp">
                 <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.IComposition" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="InterfaceTypeFlag" Name="IComposition" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="InterfaceTypeFlag" Name="KairosCompositionOld" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetModelStream" />
                 </p:NodeReference>
                 <Pin Id="QRTWCNkWpA2Lj93KW7OrlJ" Name="Input" Kind="StateInputPin" />
@@ -11370,13 +11372,14 @@
                               <Node Bounds="694,1236,57,19" Id="JHKw9bByxhtL49oBzpG5ZM">
                                 <p:NodeReference LastCategoryFullName="Kairos.Runtime.Core.ICompositionModel" LastDependency="VL.Kairos.Runtime.vl">
                                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                                  <CategoryReference Kind="InterfaceTypeFlag" Name="ICompositionModel" NeedsToBeDirectParent="true" />
+                                  <CategoryReference Kind="InterfaceTypeFlag" Name="KairosCompositionModel" NeedsToBeDirectParent="true" />
                                   <Choice Kind="OperationCallFlag" Name="GetTrack" />
                                 </p:NodeReference>
                                 <Pin Id="SQOBz4Y6ZUjMbjt5iWH75A" Name="Input" Kind="InputPin" />
                                 <Pin Id="CFySAcmR7ALQF5hd4VB9RZ" Name="Key" Kind="InputPin" />
-                                <Pin Id="QtsNsZOFSDvQMAS02ki463" Name="Model of Track" Kind="OutputPin" />
+                                <Pin Id="GybAkuItGwxOOYmB8XgTo4" Name="Output" Kind="OutputPin" />
                                 <Pin Id="PSOkeIjMFxCNqByGnWWUbB" Name="Found" Kind="OutputPin" />
+                                <Pin Id="QtsNsZOFSDvQMAS02ki463" Name="Model of Track" Kind="OutputPin" />
                               </Node>
                               <Node Bounds="694,1269,37,19" Id="VzmxtwVIahTPnyDSjfKusW">
                                 <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
@@ -12447,7 +12450,7 @@
                                   <Node Bounds="3070,926,52,26" Id="NfX3CeMi7WQOS73DOoekRl">
                                     <p:NodeReference LastCategoryFullName="Kairos.Parameter" LastDependency="VL.Kairos.Runtime.vl">
                                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                                      <CategoryReference Kind="RecordType" Name="Parameter" />
+                                      <CategoryReference Kind="RecordType" Name="KairosParameter" />
                                       <Choice Kind="OperationCallFlag" Name="Create" />
                                     </p:NodeReference>
                                     <Pin Id="Hyg7vKWx2fSONVPwZA73Xa" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -13065,7 +13068,7 @@
               <Node Bounds="514,-658,91,26" Id="GkPSMhJEdSlN6KVnGpNXJ9">
                 <p:NodeReference LastCategoryFullName="Kairos.Composition.IComposition" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="InterfaceTypeFlag" Name="IComposition" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="InterfaceTypeFlag" Name="KairosCompositionOld" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetModelStream" />
                 </p:NodeReference>
                 <Pin Id="PVfBErm6hIiNSaaP2qNygd" Name="Input" Kind="StateInputPin" />
@@ -19425,7 +19428,7 @@
                     <Node Bounds="1049,929,91,26" Id="G3irtvm6nNQOePVD9C4win">
                       <p:NodeReference LastCategoryFullName="Kairos.Composition.IComposition" LastDependency="VL.Kairos.Runtime.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="InterfaceTypeFlag" Name="IComposition" NeedsToBeDirectParent="true" />
+                        <CategoryReference Kind="InterfaceTypeFlag" Name="KairosCompositionOld" NeedsToBeDirectParent="true" />
                         <Choice Kind="OperationCallFlag" Name="GetModelStream" />
                       </p:NodeReference>
                       <Pin Id="MCkp73ZcCqGM8Hrt3XU8HF" Name="Input" Kind="StateInputPin" />
@@ -20418,7 +20421,7 @@
                     <Node Bounds="661,333,91,26" Id="Pk40mjudjbXPwwVUYWht3k">
                       <p:NodeReference LastCategoryFullName="Kairos.Composition.IComposition" LastDependency="VL.Kairos.Runtime.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="InterfaceTypeFlag" Name="IComposition" NeedsToBeDirectParent="true" />
+                        <CategoryReference Kind="InterfaceTypeFlag" Name="KairosCompositionOld" NeedsToBeDirectParent="true" />
                         <Choice Kind="OperationCallFlag" Name="GetModelStream" />
                       </p:NodeReference>
                       <Pin Id="H7Ewim7igaiNUlFnzDS46K" Name="Input" Kind="StateInputPin" />
@@ -20439,7 +20442,7 @@
                     </Node>
                     <Pad Id="LME93sFY12LPrEiqG3iaOL" Bounds="774,419">
                       <p:TypeAnnotation LastCategoryFullName="Kairos.Composition" LastDependency="VL.Kairos.Runtime.vl">
-                        <Choice Kind="TypeFlag" Name="ICompositionModel" />
+                        <Choice Kind="TypeFlag" Name="KairosCompositionModel" />
                       </p:TypeAnnotation>
                     </Pad>
                     <Patch Id="OamSvT9zIriMvFckGwVI46" Name="Dispose" />
@@ -20476,7 +20479,7 @@
                     <Node Bounds="175,355,91,26" Id="HUq1MZvcwhUPmgr4dZvXNV">
                       <p:NodeReference LastCategoryFullName="Kairos.Composition.IComposition" LastDependency="VL.Kairos.Runtime.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="InterfaceTypeFlag" Name="IComposition" NeedsToBeDirectParent="true" />
+                        <CategoryReference Kind="InterfaceTypeFlag" Name="KairosCompositionOld" NeedsToBeDirectParent="true" />
                         <Choice Kind="OperationCallFlag" Name="GetModelStream" />
                       </p:NodeReference>
                       <Pin Id="Tqz5RgrAcenNRyREIS92EM" Name="Input" Kind="StateInputPin" />
@@ -20578,7 +20581,7 @@
           <Patch Id="BMdW1hQOtHtMRsbSWbijE6" Name="Update">
             <Pin Id="S866YBm9iegOrllkf5FNmA" Name="Input" Kind="InputPin">
               <p:TypeAnnotation LastCategoryFullName="Kairos.Composition" LastDependency="VL.Kairos.Runtime.vl">
-                <Choice Kind="TypeFlag" Name="IComposition" />
+                <Choice Kind="TypeFlag" Name="KairosCompositionOld" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="R3q5J2nLQYYQDwaoHxXE6s" Name="Write File Path" Kind="InputPin">
@@ -21658,10 +21661,10 @@
   </Patch>
   <NugetDependency Id="EY62Stk1ZSMPP2dXWy8amO" Location="VL.Touchy" Version="0.0.0" />
   <NugetDependency Id="M1vbnylsL2VPHDjiuwayi2" Location="VL.Kairos.Runtime" IsFriend="true" Version="0.0.0" />
-  <NugetDependency Id="J6MFBN8E6v8NqC99D5yZBK" Location="VL.Skia" Version="2024.6.7-0196-g6a855a4938" />
-  <NugetDependency Id="SDkUJ9IIGRrLaSX4O7gINQ" Location="VL.ImGui" Version="2024.6.7-0196-g6a855a4938" />
-  <NugetDependency Id="PGktrRXWLqPQWUGmC8sj0J" Location="VL.HDE" Version="2024.6.7-0196-g6a855a4938" />
-  <NugetDependency Id="AmcuUbCeWt7O9nhD7c4UKJ" Location="VL.ImGui.Skia" Version="2024.6.7-0196-g6a855a4938" />
-  <NugetDependency Id="J5BeSiDvJEwNpUH85FqzlO" Location="VL.EditingFramework" Version="2024.6.7-0196-g6a855a4938" />
+  <NugetDependency Id="J6MFBN8E6v8NqC99D5yZBK" Location="VL.Skia" Version="2024.6.7-0308-g293be43e1a" />
+  <NugetDependency Id="SDkUJ9IIGRrLaSX4O7gINQ" Location="VL.ImGui" Version="2024.6.7-0308-g293be43e1a" />
+  <NugetDependency Id="PGktrRXWLqPQWUGmC8sj0J" Location="VL.HDE" Version="2024.6.7-0308-g293be43e1a" />
+  <NugetDependency Id="AmcuUbCeWt7O9nhD7c4UKJ" Location="VL.ImGui.Skia" Version="2024.6.7-0308-g293be43e1a" />
+  <NugetDependency Id="J5BeSiDvJEwNpUH85FqzlO" Location="VL.EditingFramework" Version="2024.6.7-0308-g293be43e1a" />
   <PlatformDependency Id="Di60Xm95LZMOuczpzVM1LC" Location="System.Windows.Forms" />
 </Document>
