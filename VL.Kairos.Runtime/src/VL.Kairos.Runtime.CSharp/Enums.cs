@@ -12,14 +12,22 @@ namespace AlchemX.Domain
     }
 }
 
-namespace Kairos.Runtime
-{
+//namespace Kairos.Runtime
+//{
    
-    public enum TrackItemType
-    {
-        ConstantValue, LiveValue, Layer
-    }
+//    public enum TrackItemType
+//    {
+//        ConstantValue, LiveValue, Layer
+//    }
 
+//}
+
+namespace LayerX
+{
+    public enum InputMode
+    {
+        Source, GlobalChannel
+    }
 }
 
 namespace LayerX.PresetEditor
