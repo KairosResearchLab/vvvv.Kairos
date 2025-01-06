@@ -19404,15 +19404,16 @@
                   </Node>
                 </Patch>
                 <Pin Id="U6e6eB1wwy9N8OQ7LTd8ze" Name="Node Context" Kind="InputPin" />
+                <Pin Id="Kdv3hPeIi2rOVHv5bGPmu1" Name="Model Stream" Kind="InputPin" />
+                <Pin Id="M4anpeulGKSO1z36gckAcX" Name="Model Pin Name" Kind="InputPin" />
                 <Pin Id="NhX7knsG5NSO5WXBW0LPAf" Name="Write on model change" Kind="InputPin" />
                 <Pin Id="UcCpRJD6i9AO9X0ZJftPTk" Name="Output" Kind="OutputPin" />
                 <Pin Id="P1bWAD7sbtIN1RWPOGkGg0" Name="Model Stream" Kind="OutputPin" />
-                <Pin Id="Kdv3hPeIi2rOVHv5bGPmu1" Name="Model Stream" Kind="InputPin" />
                 <Pin Id="I3PoE9FllNHMz5FsP3nzVn" Name="Throttle Time" Kind="InputPin" />
-                <Pin Id="SXLPDaLgsDzLotLNlT27Wv" Name="Log" Kind="InputPin" />
+                <Pin Id="ReNrPUFJrUAO2A47mxPeEg" Name="Delay Time" Kind="InputPin" />
+                <Pin Id="SXLPDaLgsDzLotLNlT27Wv" Name="Log Enabled" Kind="InputPin" />
+                <Pin Id="D0g6P4wZvjeLzxvWJSSVRA" Name="Save on Dispose" Kind="InputPin" />
                 <Pin Id="PYH3vQ01XttPPW5UKIDpRo" Name="Pin Name" Kind="InputPin" />
-                <Pin Id="KjdEPlADE2WMG9pUAy9Wex" Name="Update" Kind="InputPin" />
-                <Pin Id="D0g6P4wZvjeLzxvWJSSVRA" Name="Enabled" Kind="InputPin" />
               </Node>
               <Node Bounds="383,345,36,19" Id="BbFer8PXhFTPFF6Odw26PN">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -24706,10 +24707,10 @@
       </Overlay>
       <!--
 
-    ************************ UndoRedoProvider (ILayerModel Internal) ************************
+    ************************ UndoRedoProvider (Internal) ************************
 
 -->
-      <Node Name="UndoRedoProvider (ILayerModel Internal)" Bounds="200,894" Id="LU7hN4tqHtINOjBV60kjLB">
+      <Node Name="UndoRedoProvider (Internal)" Bounds="200,894" Id="LU7hN4tqHtINOjBV60kjLB">
         <p:NodeReference>
           <Choice Kind="ClassDefinition" Name="Class" />
           <CategoryReference Kind="Category" Name="Primitive" />
@@ -24719,7 +24720,7 @@
             <Choice Kind="MutableInterfaceType" Name="Layer" />
           </TypeReference>
         </p:Interfaces>
-        <Patch Id="F9yF1PIPsG8O0RSTfxmKJG">
+        <Patch Id="F9yF1PIPsG8O0RSTfxmKJG" IsGeneric="true" ExplicitTypeParameters="T">
           <Canvas Id="Mi9r7cpPNRfOEBQXJLoEIM" CanvasType="Group">
             <Pad Id="DOrJ3wgopGsNlD6BAcC2Pg" Comment="Levels" Bounds="824,177,35,15" ShowValueBox="true" isIOBox="true" Value="100">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -24876,7 +24877,7 @@
             <Node Bounds="229,1246,132,26" Id="REFdVYVcVDOLw3UVqvvQ0x">
               <p:NodeReference LastCategoryFullName="Kairos.Common.UndoRedoProvider" LastDependency="VL.Kairos.Common.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="ClassType" Name="UndoRedoProvider (ILayerModel)" NeedsToBeDirectParent="true" />
+                <CategoryReference Kind="ClassType" Name="UndoRedoProvider" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="Undo" />
               </p:NodeReference>
               <Pin Id="JtI2kadKGxNNWg0ymZtLFE" Name="Input" Kind="StateInputPin" />
@@ -24915,7 +24916,7 @@
             <Node Bounds="405,1246,132,26" Id="L5bBYfrm8ZnLiBUvUnVUKg">
               <p:NodeReference LastCategoryFullName="Kairos.Common.UndoRedoProvider" LastDependency="VL.Kairos.Common.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="ClassType" Name="UndoRedoProvider (ILayerModel)" NeedsToBeDirectParent="true" />
+                <CategoryReference Kind="ClassType" Name="UndoRedoProvider" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="Redo" />
               </p:NodeReference>
               <Pin Id="BI8lpKoCP2KLTm5LSXWNHF" Name="Input" Kind="StateInputPin" />
@@ -24995,7 +24996,7 @@
             <Node Bounds="712,1509,132,26" Id="FaqIpsPdmcjLqt1fhJqg6Z">
               <p:NodeReference LastCategoryFullName="Kairos.Common.UndoRedoProvider" LastDependency="VL.Kairos.Common.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="ClassType" Name="UndoRedoProvider (ILayerModel)" NeedsToBeDirectParent="true" />
+                <CategoryReference Kind="ClassType" Name="UndoRedoProvider" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="Undo" />
               </p:NodeReference>
               <Pin Id="NeILvfHYdLgMy9T44YJT1h" Name="Input" Kind="StateInputPin" />
@@ -25079,7 +25080,7 @@
             <Node Bounds="968,1511,132,26" Id="DEsUl5cCxPKNi9h4MO4vhA">
               <p:NodeReference LastCategoryFullName="Kairos.Common.UndoRedoProvider" LastDependency="VL.Kairos.Common.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="ClassType" Name="UndoRedoProvider (ILayerModel)" NeedsToBeDirectParent="true" />
+                <CategoryReference Kind="ClassType" Name="UndoRedoProvider" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="Redo" />
               </p:NodeReference>
               <Pin Id="D6rqOrsgYY8M436sP0pZg1" Name="Input" Kind="StateInputPin" />
@@ -25273,7 +25274,7 @@
               <Choice Kind="TypeFlag" Name="Channel" />
               <p:TypeArguments>
                 <TypeReference>
-                  <Choice Kind="TypeFlag" Name="ILayerModel" />
+                  <Choice Kind="TypeFlag" Name="T" />
                 </TypeReference>
               </p:TypeArguments>
             </p:TypeAnnotation>

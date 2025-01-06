@@ -96,7 +96,7 @@
               </p:NodeReference>
               <Pin Id="MszXuEd7kNcQcIg0tbwt58" Name="Input" Kind="StateInputPin" />
               <Pin Id="Kot8G1jIYEcLvmcOHYA9dQ" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="GhOfvZVdzxVN8Q9pt9ENdl" Name="Seconds" Kind="InputPin" />
+              <Pin Id="GhOfvZVdzxVN8Q9pt9ENdl" Name="Seek Time" Kind="InputPin" />
               <Pin Id="H3GCcbWwiiIO4ghN6eEjZe" Name="Apply" Kind="InputPin" />
             </Node>
             <ControlPoint Id="QdH3HtPh0DyO1OYLpBWl4R" Bounds="718,425" />
@@ -486,7 +486,7 @@
               <Node Bounds="617,945,111,19" Id="AW4SI6N1fchQY7VJSyGP2H">
                 <p:NodeReference LastCategoryFullName="Kairos.Sampling" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="CompositionSampler (IComposition1D)" />
+                  <Choice Kind="ProcessAppFlag" Name="CompositionSampler1D" />
                 </p:NodeReference>
                 <Pin Id="UiYSksGbMUyM8Vx2fg2TV2" Name="Model" Kind="InputPin">
                   <p:DefaultValue xmlns:r="reflection" r:Version="2">
@@ -544,12 +544,15 @@
                 </Pin>
                 <Pin Id="HVex0VGjdGwL9zp1VbCnWU" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="N68QgTvWpX4PFiRMfJS8Zc" Name="Composition" Kind="InputPin" />
+                <Pin Id="LcT58AxGXGSPsWRvH7aUav" Name="Write on model change" Kind="InputPin" />
+                <Pin Id="Bd13K3DLCBLNBUnCgMPZwP" Name="Layer Context" Kind="InputPin" />
                 <Pin Id="DbBB8qs7XDROwztM221COQ" Name="Sampling Position Provider" Kind="InputPin" />
                 <Pin Id="AFcSlRiGvjEMg3H5T5BOC7" Name="Sampling Position Min Bound" Kind="InputPin" IsHidden="true" />
                 <Pin Id="ErXDkNcQODzLV5tIhn0oB1" Name="Sampling Position Max Bound" Kind="InputPin" IsHidden="true" />
                 <Pin Id="ArLQmZk9EKNM17sGtrxcGN" Name="Force Write to Global Channel" Kind="InputPin" IsHidden="true" />
                 <Pin Id="QmQXBeCHqoJLSM5XkPkVC1" Name="Enabled" Kind="InputPin" />
                 <Pin Id="Rq51OoDWeRtPEhMsMzoDbj" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="RZWbNgyZofTPZa7P2PiaCg" Name="Model Stream" Kind="OutputPin" />
               </Node>
               <Node Bounds="1051,729,205,19" Id="PWcSDaGO7L6M7enrRL10qp">
                 <p:NodeReference LastCategoryFullName="Kairos.Sampling" LastDependency="VL.Kairos.Runtime.vl">
@@ -560,8 +563,8 @@
                   <p:DefaultValue Loop_Out="10" Period="1" Speed="1" />
                 </Pin>
                 <Pin Id="VQVd9MawrVmOWxoqOFRmjA" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="BRYzi0CEQ3xQNXTLKrNMlX" Name="Save Model on Exit Enabled" Kind="InputPin" IsHidden="true" />
                 <Pin Id="Q0WxdKlbFuXOc6WD8ryFBX" Name="Write Model Pin on model change" Kind="InputPin" />
+                <Pin Id="BRYzi0CEQ3xQNXTLKrNMlX" Name="Save Model on Exit Enabled" Kind="InputPin" IsHidden="true" />
                 <Pin Id="AnOnozO817PMDNt9zgwkIX" Name="Initial Playing" Kind="InputPin" IsHidden="true" />
                 <Pin Id="Bcv919sL7gSNO4rYaWH7BI" Name="Initial Time" Kind="InputPin" IsHidden="true" />
                 <Pin Id="MW5cXf9iHreMqPJgte7nsx" Name="BPM" Kind="InputPin" />
@@ -570,7 +573,7 @@
                 <Pin Id="S1E8ivTLnl9LSXRZoXGYAr" Name="Play" Kind="ApplyPin" />
                 <Pin Id="Sz4PMwjWtv1NzfFdr41kz9" Name="Stop" Kind="ApplyPin" />
                 <Pin Id="Ji1lkpIAF24MvoQjEBXVeY" Name="Reset" Kind="ApplyPin" />
-                <Pin Id="NEhY1nIBFqsNo4l17FCTft" Name="Seconds" Kind="InputPin" />
+                <Pin Id="NEhY1nIBFqsNo4l17FCTft" Name="Seek Time" Kind="InputPin" />
                 <Pin Id="RdkitnsGYYpNZCWYAqKUkU" Name="Loop In" Kind="InputPin" />
                 <Pin Id="ACezMpOPTE8NmTnmRoijkk" Name="Loop Out" Kind="InputPin" />
                 <Pin Id="Ndxw5Ic4kKGMmSGh7ArwnP" Name="Loop Enabled" Kind="InputPin" />
@@ -596,8 +599,13 @@
                 <Pin Id="AZwtCmeeQDXMbwEH8Cg1jY" Name="Composition Name" Kind="InputPin" IsHidden="true" />
                 <Pin Id="CK2EKxFdUNINVi0Kwn1Pws" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="Mm2770oRKJ9LlX7o0D8u89" Name="Write Model Pin on model change" Kind="InputPin" />
+                <Pin Id="Si2LBW4ncrmNwMrlLYlbUV" Name="Layer Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="OzTCTgtIpeSPQwGSt388hI" Name="Sources Input Pin Group Enabled" Kind="InputPin" IsHidden="true" />
                 <Pin Id="Ier24R9Jh3PLTKkUXdWuIr" Name="Channel Hub" Kind="InputPin" IsHidden="true" />
+                <Pin Id="EktTeNJmoL5OG0mLzZO7p0" Name="Model Stream" Kind="OutputPin" />
+                <Pin Id="KUSLQm0JKzVNpW6xfeeDui" Name="Model" Kind="OutputPin" />
+                <Pin Id="UAIANiYR5i1QIxdFaLKWIp" Name="Tracks" Kind="OutputPin" />
+                <Pin Id="JAL4GXCms1zMMB4LAXTG4b" Name="Controllers" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="BM71abuDlNeMOKY3kUcxST" Bounds="79,819" />
               <Node Bounds="1184,148,101,26" Id="RLBw5QofKqxLewnF3bB13d">
