@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="JW1hsvrke0BNzPfrEioasm" LanguageVersion="2024.6.7-0258-g67ac288fc9" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="JW1hsvrke0BNzPfrEioasm" LanguageVersion="2024.6.7-0308-g293be43e1a" Version="0.128">
   <Patch Id="HGUDXWO9Z7cNKkjkxtdjvd">
     <Canvas Id="C7TP0nEsgmMPljBzBOMo3C" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -330,6 +330,8 @@
               <Choice Kind="ProcessAppFlag" Name="ValueLayerModel" />
             </p:NodeReference>
             <Pin Id="JBrvRGIU2zyQIKfr49JFTU" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="KJNxkRIxumLQSIlH67YSpw" Name="Value Type Full Name" Kind="InputPin" />
+            <Pin Id="Ow8ueJ6mIV8N4LZkt10jT6" Name="Domain Type Full Name" Kind="InputPin" />
             <Pin Id="H9epjQ5vDciQWEmDNQV6bc" Name="Value" Kind="InputPin" />
             <Pin Id="AqVABSjoUAOQAED44teGJr" Name="Output" Kind="StateOutputPin" />
           </Node>
@@ -426,6 +428,7 @@
                   <Choice Kind="ProcessAppFlag" Name="ClipCompositorModel" />
                 </p:NodeReference>
                 <Pin Id="ADttm5T7grqPyE80kriE4E" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="QzD3VijmBgGLC4GZBSF2F8" Name="Value Type Full Name" Kind="InputPin" />
                 <Pin Id="Dt4PMS1Ni8TLqziPvwO2po" Name="Clips" Kind="InputPin" />
                 <Pin Id="L0eXlGab40MMHmNKRYkFqJ" Name="Output" Kind="StateOutputPin" />
               </Node>
@@ -557,8 +560,9 @@
             </p:NodeReference>
             <Pin Id="JjcsPiW5jjuPkUafwtYfY3" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="HtsvINKLDlZOXUH8m9uUpV" Name="Value Type Full Name" Kind="InputPin" />
+            <Pin Id="H9EyuzNidpNPRpko7q5CSs" Name="Domain Type Full Name" Kind="InputPin" />
             <Pin Id="DzYH20pc4mFQcmaF3yvWI0" Name="Input Key" Kind="InputPin" />
-            <Pin Id="T9N0fw5QflFMtEXoAPj3zQ" Name="GlobalChannel / Source" Kind="InputPin" />
+            <Pin Id="PrUyvvok6lkMaAYx9EiIwt" Name="Input Mode" Kind="InputPin" DefaultValue="GlobalChannel" />
             <Pin Id="HGlZcOCpolaNGPaqxoTw3i" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="D8ACterNaVDNZ3QmV4E1Mn" Comment="Global Channel Path" Bounds="1141,537,110,19" ShowValueBox="true" isIOBox="true" Value="MyGlobalChannel">
@@ -650,7 +654,7 @@
             <Pin Id="DKG78dcWjX8MVDxh1ZJiNZ" Name="Value Type Full Name" Kind="InputPin" />
             <Pin Id="KMQjswKc5VJLxJyTKNNIMb" Name="Domain Type Full Name" Kind="InputPin" />
             <Pin Id="UrPw9M7LgTRPg4jEgYRxdd" Name="Input Key" Kind="InputPin" />
-            <Pin Id="OIfbwA2x1x9QZ972e0r8Ji" Name="GlobalChannel / Source" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="Dn4ai69cRHmLhDaQLhYJOn" Name="Input Mode" Kind="InputPin" />
             <Pin Id="NqGmiOAL7H8NmgRKDOrHFd" Name="Update" Kind="InputPin" />
             <Pin Id="LcvvFgwr5IILRTQwC3APQH" Name="Output" Kind="StateOutputPin" />
           </Node>
@@ -675,8 +679,9 @@
             </p:NodeReference>
             <Pin Id="JHZaMH5NsBTLMzoi5aBUWX" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="POfeqZo3m35QK6TvZ7hUZe" Name="Value Type Full Name" Kind="InputPin" />
+            <Pin Id="TdSw2OF0OrvNCHPaz5V20b" Name="Domain Type Full Name" Kind="InputPin" />
             <Pin Id="UWPBOH00DGBNOLIPfkJLLZ" Name="Input Key" Kind="InputPin" />
-            <Pin Id="Tfxt9QK4FCcOsjOetvNYVS" Name="GlobalChannel / Source" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="IOIF506xirEMUOI1ByuaVn" Name="Input Mode" Kind="InputPin" />
             <Pin Id="U1rufbsvTaJLOVjsxMdl3i" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="768,521,125,19" Id="QqrjcIMVw9oPN1SDNxERI9">
@@ -825,14 +830,6 @@
             <ControlPoint Id="QPTPbEBNV8BLxNMXaN92yG" Bounds="597,1495" Alignment="Top" />
             <ControlPoint Id="Sqvrr8WWQS1PZ6WxPwhI3s" Bounds="598,1569" Alignment="Bottom" />
           </Node>
-          <Pad Id="VK4I46hkpMILFNxvNdNV5s" Comment="GlobalChannel / Source" Bounds="1213,567,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
           <Node Bounds="2172,423,240,195" Id="ITeAbh6GSo9PMyMX3nv4WK">
             <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -914,12 +911,6 @@
                 <CategoryReference Kind="Category" Name="Primitive" NeedsToBeDirectParent="true" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="AaAIDLhOBunLpgTgVnNw81" Name="MyGlobalChannel" Kind="InputPin" PinGroupName="Input">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="Float32" />
-                <CategoryReference Kind="Category" Name="Primitive" NeedsToBeDirectParent="true" />
-              </p:TypeAnnotation>
-            </Pin>
             <Pin Id="UgW9ruQVlgWOkY8DvmGdho" Name="MySineLayer" Kind="InputPin" PinGroupName="Input">
               <p:TypeAnnotation LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
                 <Choice Kind="TypeFlag" Name="ILayer" />
@@ -937,14 +928,6 @@
               </p:TypeAnnotation>
             </Pin>
           </Node>
-          <Pad Id="AfM1iexUSuxMTk9TTnFUBf" Comment="GlobalChannel / Source" Bounds="1633,541,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
         </Canvas>
         <Patch Id="FSVHgsUJMVHN69WuqjNh39" Name="Create" />
         <Patch Id="IZujogNUJB3NANeh5TC7vE" Name="Update" />
@@ -1042,7 +1025,6 @@
         <Link Id="A4oPqOHk7cFOq7v5PmVEAm" Ids="CDSlZm8Vi8cO5SjSYgFxUk,UWPBOH00DGBNOLIPfkJLLZ" />
         <Link Id="CDF6s5NZlcCO1DIftmmkZH" Ids="IX3AChyFNPZOPow2ah0LgB,HtsvINKLDlZOXUH8m9uUpV" />
         <Link Id="ICL1TP9IP2DPcDxtOLywLY" Ids="D8ACterNaVDNZ3QmV4E1Mn,DzYH20pc4mFQcmaF3yvWI0" />
-        <Link Id="KaLNRUiMF2cO5PtkBvouks" Ids="VK4I46hkpMILFNxvNdNV5s,T9N0fw5QflFMtEXoAPj3zQ" />
         <Link Id="CUq2X0xwd1zQTbRGugY6jD" Ids="Pqe9VBbLxS0Og8WKgf1tyS,DKG78dcWjX8MVDxh1ZJiNZ" />
         <Link Id="QTkgVfaPiVbMiuufx2w03O" Ids="BMtfZ3VEkfqM4xFeyNeYQB,UrPw9M7LgTRPg4jEgYRxdd" />
         <Link Id="ECav2soe4mrOfrphIjC9rv" Ids="JOoB2rYxAfuMLvcD0i34qQ,BvGzFS1FvQLLNYMy1spikn" IsHidden="true" />
@@ -1059,12 +1041,10 @@
         <Link Id="EVYSf0S2BrmLDnrX9vDAJf" Ids="FRb184rH1GOPBOh8Y11qUp,KMQjswKc5VJLxJyTKNNIMb" />
         <Link Id="FOeMYus76uaPcSpcvcN55x" Ids="VJk6vD3qjJKOb8RcmReBRw,QPTPbEBNV8BLxNMXaN92yG" />
         <Link Id="Q0iJ5zmEOm7PMslWrwamkb" Ids="Fd6MvvSJgMhNoaxz3t1iaX,IR0xwpc1SnZMnTS8TWoblz" />
-        <Link Id="TqOuQHRDCdaLBo43eR0zz5" Ids="ANkRNPkEWk0PsV9N6TYT3X,AaAIDLhOBunLpgTgVnNw81" />
         <Link Id="OAnSF61SykJQPhYJqc7zeX" Ids="EJEEQj0hubsPbGlaHTfPE0,UgW9ruQVlgWOkY8DvmGdho" />
-        <Link Id="AAJeM0lWfj2Mocgp2gUWY4" Ids="AfM1iexUSuxMTk9TTnFUBf,OIfbwA2x1x9QZ972e0r8Ji" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="OVD4drgo9bxOoEs96ioH1k" Location="VL.CoreLib" Version="2024.6.7-0258-g67ac288fc9" />
+  <NugetDependency Id="OVD4drgo9bxOoEs96ioH1k" Location="VL.CoreLib" Version="2024.6.7-0308-g293be43e1a" />
   <NugetDependency Id="PK3qT6622pWLlgqTlUHFIh" Location="VL.Kairos.Runtime" Version="0.0.0" />
 </Document>
