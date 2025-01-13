@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="SR5mMryJ0IPPBQlmxmhVG5" LanguageVersion="2024.6.7-0308-g293be43e1a" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="SR5mMryJ0IPPBQlmxmhVG5" LanguageVersion="2025.7.0-0005-gfd21b8f14a" Version="0.128">
   <Patch Id="OdwjHxvmpTwQVNFJ9pLKQP">
     <Canvas Id="TFkrzzMqabMLaJgnlwzp1b" DefaultCategory="Kairos" CanvasType="FullCategory">
       <Pad Id="OZ8lzo3XZxPOvj3AxhVK4e" Bounds="76,104,218,52" ShowValueBox="true" isIOBox="true" Value="Kairos Core">
@@ -12418,32 +12418,11 @@
     ************************ HasItemProviderAndIsAuthoredByID ************************
 
 -->
-              <Node Name="HasItemProviderAndIsAuthoredByID" Bounds="2464,565,617,215" Id="SrCE3PSzQ8WP5Fx4CAJnwu">
+              <Node Name="HasItemProviderAndIsAuthoredByID" Bounds="2464,565,404,215" Id="SrCE3PSzQ8WP5Fx4CAJnwu">
                 <p:NodeReference>
                   <Choice Kind="OperationDefinition" />
                 </p:NodeReference>
                 <Patch Id="AsZTXXVIH4nPtXtGK97rE1">
-                  <Node Bounds="2635,610,77,26" Id="FoPKoif1yOOL218uuuD72P">
-                    <p:NodeReference LastCategoryFullName="Kairos.Common.IAuthorable" LastDependency="VL.Kairos.Runtime.Core.vl">
-                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="OperationCallFlag" Name="GetAuthorIDs" />
-                      <CategoryReference Kind="InterfaceTypeFlag" Name="IAuthorable" NeedsToBeDirectParent="true" />
-                    </p:NodeReference>
-                    <Pin Id="SKKc5FlH5LFPsoyfCaj4BB" Name="Input" Kind="StateInputPin" />
-                    <Pin Id="LesdWgUWmIuP468QiecGwJ" Name="Output" Kind="StateOutputPin" />
-                    <Pin Id="HEYcPJ5So52PnzMBosXLSV" Name="Author IDs" Kind="OutputPin" />
-                  </Node>
-                  <Node Bounds="2707,654,56,26" Id="PsvKjOJuZLeMPDkXobURO3">
-                    <p:NodeReference LastCategoryFullName="Collections.HashSet" LastDependency="VL.CoreLib.vl">
-                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="OperationCallFlag" Name="Contains" />
-                      <CategoryReference Kind="RecordType" Name="HashSet" NeedsToBeDirectParent="true" />
-                    </p:NodeReference>
-                    <Pin Id="VzTKLc6a525OXgmaiDoUm1" Name="Input" Kind="StateInputPin" />
-                    <Pin Id="Ta9KslfnjnuPt7CAQ4jP64" Name="Item" Kind="InputPin" />
-                    <Pin Id="GEU8KBmkzP4PqD2PWicyCh" Name="Output" Kind="OutputPin" IsHidden="true" />
-                    <Pin Id="QAj5cXuLkKiPmYBDC7LKwu" Name="Result" Kind="OutputPin" />
-                  </Node>
                   <Node Bounds="2606,694,37,19" Id="IuOBlRa8crMQRUFhk3oglR">
                     <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -12454,14 +12433,10 @@
                     <Pin Id="LFg9wCLMNCGOnLGhalsEpr" Name="Input 2" Kind="InputPin" />
                     <Pin Id="F7aCLzClfi3PeGqDVXzYar" Name="Output" Kind="StateOutputPin" />
                   </Node>
-                  <Link Id="EkhyxFh8SA1MUkNOutaknB" Ids="HEYcPJ5So52PnzMBosXLSV,VzTKLc6a525OXgmaiDoUm1" />
-                  <Link Id="L4NfyY7JZSeLlkFd4lNL3T" Ids="QAj5cXuLkKiPmYBDC7LKwu,LFg9wCLMNCGOnLGhalsEpr" />
                   <ControlPoint Id="IcIKR5nsEUoQPW9atNJPV5" Bounds="2478,583" />
                   <Pin Id="EKjlM01qxKVNaEC6bAPwtO" Name="Input" Kind="InputPin" />
                   <Link Id="DVkMiPRsizQPFZ095B4Wbd" Ids="EKjlM01qxKVNaEC6bAPwtO,IcIKR5nsEUoQPW9atNJPV5" IsHidden="true" />
-                  <Link Id="Pkvwj7ZTPbpPgfbYcjcLuc" Ids="IcIKR5nsEUoQPW9atNJPV5,SKKc5FlH5LFPsoyfCaj4BB" />
-                  <ControlPoint Id="NqUVcTxdymINGQd2XKFEME" Bounds="2760,623" />
-                  <Link Id="TU0Kovn93PiM2KqTKXwdyp" Ids="NqUVcTxdymINGQd2XKFEME,Ta9KslfnjnuPt7CAQ4jP64" />
+                  <ControlPoint Id="NqUVcTxdymINGQd2XKFEME" Bounds="2801,583" />
                   <Pin Id="SeVH5Qz0MPnLsvBIW4tIZ0" Name="Author ID" Kind="InputPin" />
                   <Link Id="UONPirLgUCqPKj7DStgE6e" Ids="SeVH5Qz0MPnLsvBIW4tIZ0,NqUVcTxdymINGQd2XKFEME" IsHidden="true" />
                   <ControlPoint Id="SZJ8ZGIDlkYPdY20MzPajp" Bounds="2542,763" />
@@ -12489,15 +12464,25 @@
                   <Link Id="FECG8VXWYkINDmvQI5nHEP" Ids="NkW5C266Q1jNAIzPqgy1Nb,SZJ8ZGIDlkYPdY20MzPajp" />
                   <Link Id="TH3aHgQjICEMq2NLSuUdA5" Ids="RPtuyWhCsYJLrF7UMcv8Z7,D7rqqltFpAhQUHrut2Er0L" />
                   <ControlPoint Id="Q9trBTNw5bwOoJqQJPr0ng" Bounds="2709,714" />
-                  <Link Id="TLdVVJV2SwbNEuZheWgxT1" Ids="QAj5cXuLkKiPmYBDC7LKwu,Q9trBTNw5bwOoJqQJPr0ng" />
                   <Pin Id="FPn3pmNTzJSM26btHn2KZh" Name="Authored" Kind="OutputPin" />
                   <Link Id="BbcZhPc6ncTLdzY263Hgwz" Ids="Q9trBTNw5bwOoJqQJPr0ng,FPn3pmNTzJSM26btHn2KZh" IsHidden="true" />
-                  <Pad Id="Vp5uaZCQnsHPCkEHFek1w6" Comment="Author IDs" Bounds="2736,596,262,16" ShowValueBox="true" isIOBox="true" />
-                  <Link Id="RR1p2g4wQhQOs3hOg9rUK9" Ids="HEYcPJ5So52PnzMBosXLSV,Vp5uaZCQnsHPCkEHFek1w6" />
-                  <Pad Id="TNndGlUJfjAPqLebR3ffeV" Comment="" Bounds="2812,696,80,35" ShowValueBox="true" isIOBox="true" />
-                  <Link Id="VgvH2yMPTpCQKcZyK55Fci" Ids="QAj5cXuLkKiPmYBDC7LKwu,TNndGlUJfjAPqLebR3ffeV" />
+                  <Pad Id="TNndGlUJfjAPqLebR3ffeV" Comment="" Bounds="2724,655,80,35" ShowValueBox="true" isIOBox="true" />
                   <Pad Id="DD4rNIMoY4aOiNQfUG63CG" Comment="" Bounds="2582,660,35,35" ShowValueBox="true" isIOBox="true" />
                   <Link Id="BTNoBDMsiGHLL7fZdb2iOl" Ids="RPtuyWhCsYJLrF7UMcv8Z7,DD4rNIMoY4aOiNQfUG63CG" />
+                  <Node Bounds="2707,610,97,19" Id="RIZ0r7OJShQN2FB3L2DIqR">
+                    <p:NodeReference LastCategoryFullName="Kairos.Common.IAuthorable" LastDependency="VL.Kairos.Runtime.Common.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ContainsAuthorID" />
+                    </p:NodeReference>
+                    <Pin Id="CPS01bazH2tP0GGlvBl79Q" Name="Input" Kind="InputPin" />
+                    <Pin Id="OMPhyXc1BMgPuNGCP02sx2" Name="Author ID" Kind="InputPin" />
+                    <Pin Id="L5nrcm0XeCRLDny4EhtAB7" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="BAEnbMXt9GbPbSdlnHXfcg" Ids="IcIKR5nsEUoQPW9atNJPV5,CPS01bazH2tP0GGlvBl79Q" />
+                  <Link Id="O5EuweyhHYKNHFSWpyEge4" Ids="NqUVcTxdymINGQd2XKFEME,OMPhyXc1BMgPuNGCP02sx2" />
+                  <Link Id="Cd0cHuZmAgnN2CrdbeLLTN" Ids="L5nrcm0XeCRLDny4EhtAB7,TNndGlUJfjAPqLebR3ffeV" />
+                  <Link Id="LalHuvaf28dOCt9p9YY4Ty" Ids="L5nrcm0XeCRLDny4EhtAB7,Q9trBTNw5bwOoJqQJPr0ng" />
+                  <Link Id="SZlNz7lzHfWL4teGMSWcUK" Ids="L5nrcm0XeCRLDny4EhtAB7,LFg9wCLMNCGOnLGhalsEpr" />
                 </Patch>
               </Node>
               <Pad Id="QTiQ4M04QxvLzZD67lUtKQ" SlotId="UgzN3aF5OWzNmTvM5MoVDA" Bounds="497,1931" />
@@ -17109,10 +17094,10 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="I9r7OOr28ZKQU0kOe9kITs" Location="VL.CoreLib" Version="2024.6.7-0308-g293be43e1a" />
+  <NugetDependency Id="I9r7OOr28ZKQU0kOe9kITs" Location="VL.CoreLib" Version="2025.7.0-0005-gfd21b8f14a" />
   <DocumentDependency Id="TADROdiqlnXNaObdVLQiV7" Location="./TypeForwards.vl" IsFriend="true" />
   <NugetDependency Id="NKKoDC2vdSNMzZUwNeHncX" Location="VL.IO.Midi" Version="1.1.1" />
-  <NugetDependency Id="NzWyo4FY2DmNRd8dx9bxjm" Location="VL.Core" Version="2024.6.7-0308-g293be43e1a" />
+  <NugetDependency Id="NzWyo4FY2DmNRd8dx9bxjm" Location="VL.Core" Version="2025.7.0-0005-gfd21b8f14a" />
   <DocumentDependency Id="I4daLuQUXS3LuPN9hJK4IS" Location="./VL.Kairos.Runtime.AlchemX.vl" IsForward="true" IsFriend="true" />
   <DocumentDependency Id="Lg6XLhqk2DPOjhBrHjwUcl" Location="./VL.Kairos.Runtime.LayerX.vl" IsForward="true" IsFriend="true" />
   <PlatformDependency Id="ESDlZLAqGdTQTo1Er0cYwc" Location="../src/VL.Kairos.Runtime.CSharp/obj/Release/net6.0/VL.Kairos.Runtime.CSharp.dll" IsForward="true" />
