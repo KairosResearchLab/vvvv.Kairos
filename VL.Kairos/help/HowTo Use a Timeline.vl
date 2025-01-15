@@ -437,16 +437,6 @@
                 <Pin Id="NxZZRuU4LnsOEDbuy20sx1" Name="Apply" Kind="InputPin" />
                 <Pin Id="OcHw9cNO6BEMe08O9NW7Rg" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="1506,1049,91,26" Id="Q5ab4TDwJJqMGQWIamQi6n">
-                <p:NodeReference LastCategoryFullName="LayerX.Envelope" LastDependency="VL.Kairos.Runtime.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="Envelope" NeedsToBeDirectParent="true" />
-                  <Choice Kind="OperationCallFlag" Name="GetModelStream" />
-                </p:NodeReference>
-                <Pin Id="IoO7vT6k7MYPXWbLqUtNxI" Name="Input" Kind="StateInputPin" />
-                <Pin Id="Dbf5UtFmEqLLoXtAjyUWVz" Name="Output" Kind="StateOutputPin" />
-                <Pin Id="QXUlkbcUPPmQC49YLp4Rpv" Name="Model Stream" Kind="OutputPin" />
-              </Node>
               <Node Bounds="1523,1133,43,19" Id="JAEDz1srZYLOdwzu9S2CCT">
                 <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -676,7 +666,7 @@
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="932,512,240,208" Id="Tb30Zy1TESoNlMKJjZWk3H">
@@ -711,7 +701,7 @@
                   <Choice Kind="OperationCallFlag" Name="*" />
                 </p:NodeReference>
                 <Pin Id="CQn43YRKxlVNwGW9Q1kv3F" Name="Input" Kind="InputPin" />
-                <Pin Id="En1H5khp2vLMpF0Q07vr8v" Name="Input 2" Kind="InputPin" DefaultValue="5.81" />
+                <Pin Id="En1H5khp2vLMpF0Q07vr8v" Name="Input 2" Kind="InputPin" DefaultValue="50" />
                 <Pin Id="L2RjSsSQ0mdNUFZ7nU8LRW" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="966,646,25,19" Id="Q0vu6ZxTc1mPjy6a9Mqu6j">
@@ -916,34 +906,34 @@
               <p:DefaultValue View_Zoom="1" xmlns:r="reflection" r:Version="2">
                 <KeyframeInterpolator_Model Value_Type_Full_Name="Float32 [Primitive]">
                   <Keyframes>
-                    <Item Key="baf4bbce-680e-43d4-ac8d-d1ea232b985a">
-                      <Value Duration="0.1" Enabled="True" ID="baf4bbce-680e-43d4-ac8d-d1ea232b985a">
+                    <Item Key="013add72-9ad6-4cc2-a14f-574ed78a555c">
+                      <Value Duration="0.03365103900432587" Enabled="True" ID="013add72-9ad6-4cc2-a14f-574ed78a555c" Position="0.07258067280054092">
                         <Interpolation_Model Mode="InOut" Transition="Cubic" r:Type="TweenInterpolationModel [AlchemX.Interpolation.Model]" />
                         <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Value_Type_Full_Name="Float32 [Primitive]" r:Type="ValueLayerModel [LayerX.Layer]">
-                          <Value r:Type="Float32 [Primitive]">0.1</Value>
+                          <Value r:Type="Float32 [Primitive]">0.15707211</Value>
                         </Layer_Model>
                         <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
                       </Value>
                     </Item>
-                    <Item Key="d38fad57-ea6e-4c48-b6b8-208f7e148db7">
-                      <Value Duration="0.09" Enabled="True" ID="d38fad57-ea6e-4c48-b6b8-208f7e148db7" Position="0.45">
-                        <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
+                    <Item Key="79c79753-12ca-4dcb-8ee2-cf585dc4be80">
+                      <Value Duration="0.09" Enabled="True" ID="79c79753-12ca-4dcb-8ee2-cf585dc4be80" Position="0.41994139552116394">
+                        <Interpolation_Model Mode="InOut" Transition="Cubic" r:Type="TweenInterpolationModel [AlchemX.Interpolation.Model]" />
                         <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Input_Key="MyGlobalChannel" Input_Mode="GlobalChannel" Value_Type_Full_Name="Float32 [Primitive]" r:Type="LiveValueLayerModel [LayerX.Layer]" />
                         <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
                       </Value>
                     </Item>
-                    <Item Key="fb0146b3-5ef1-4ef9-82b3-30285e25710b">
-                      <Value Duration="0.18" Enabled="True" ID="fb0146b3-5ef1-4ef9-82b3-30285e25710b" Position="0.65">
-                        <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                        <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Input_Key="MySineLayer" Value_Type_Full_Name="Float32 [Primitive]" r:Type="LiveLayerLayerModel [LayerX.Layer]" />
-                        <Sampling_Settings In="0.13" Out="0.26" Speed="1" />
-                      </Value>
-                    </Item>
-                    <Item Key="3c58c10e-0454-43c1-ae8a-de8343211e9c">
-                      <Value Duration="0.1" Enabled="True" ID="3c58c10e-0454-43c1-ae8a-de8343211e9c" Position="0.23">
+                    <Item Key="309d37b0-16b7-4b4c-b0c2-eded93a84258">
+                      <Value Duration="0.05124634504318237" Enabled="True" ID="309d37b0-16b7-4b4c-b0c2-eded93a84258" Position="0.20837242901325226">
                         <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
                         <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Input_Key="LFO" Value_Type_Full_Name="Float32 [Primitive]" r:Type="LiveValueLayerModel [LayerX.Layer]" />
                         <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
+                      </Value>
+                    </Item>
+                    <Item Key="05f37bb8-b56d-4003-a366-33520fe0b79d">
+                      <Value Duration="0.18" Enabled="True" ID="05f37bb8-b56d-4003-a366-33520fe0b79d" Position="0.7060850262641907">
+                        <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
+                        <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Input_Key="MySineLayer" Value_Type_Full_Name="Float32 [Primitive]" r:Type="LiveLayerLayerModel [LayerX.Layer]" />
+                        <Sampling_Settings In="0.13" Out="0.26" Speed="1" />
                       </Value>
                     </Item>
                   </Keyframes>
@@ -1089,20 +1079,20 @@
               <p:DefaultValue View_Zoom="1" xmlns:r="reflection" r:Version="2">
                 <KeyframeInterpolator_Model>
                   <Keyframes>
-                    <Item Key="c4695a0b-d609-48bf-a957-46de7bdc0a02">
-                      <Value Enabled="True" ID="c4695a0b-d609-48bf-a957-46de7bdc0a02" Position="0.09259258955717087">
-                        <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                        <Layer_Model Value_Type_Full_Name="RGBA [Color]" r:Type="ValueLayerModel [LayerX.Layer]">
-                          <Value r:Type="RGBA [Color]">0, 0.7594938, 1, 1</Value>
-                        </Layer_Model>
-                        <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
-                      </Value>
-                    </Item>
                     <Item Key="3bdf9126-ae73-4a74-9654-e71a7077cdcd">
                       <Value Enabled="True" ID="3bdf9126-ae73-4a74-9654-e71a7077cdcd" Position="0.8194443583488464">
                         <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
                         <Layer_Model Value_Type_Full_Name="RGBA [Color]" r:Type="ValueLayerModel [LayerX.Layer]">
                           <Value r:Type="RGBA [Color]">1, 0, 0, 1</Value>
+                        </Layer_Model>
+                        <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
+                      </Value>
+                    </Item>
+                    <Item Key="c4695a0b-d609-48bf-a957-46de7bdc0a02">
+                      <Value Enabled="True" ID="c4695a0b-d609-48bf-a957-46de7bdc0a02" Position="0.09259258955717087">
+                        <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
+                        <Layer_Model Value_Type_Full_Name="RGBA [Color]" r:Type="ValueLayerModel [LayerX.Layer]">
+                          <Value r:Type="RGBA [Color]">0, 0.7594938, 1, 1</Value>
                         </Layer_Model>
                         <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
                       </Value>
@@ -1208,7 +1198,7 @@
               </CategoryReference>
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="REc3MeE1yp1PbaVR6LzxXq" Name="Bounds" Kind="InputPin" DefaultValue="-2, -299, 1070, 282" IsHidden="true" />
+            <Pin Id="REc3MeE1yp1PbaVR6LzxXq" Name="Bounds" Kind="InputPin" DefaultValue="240, 1060, 1833, 306" IsHidden="true" />
             <Pin Id="LYuPtMxT7jjP5C2nzfDkxW" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="DJtuRz3CWj8P88HYxFFAvH" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="PiXrQ4RWGqqPoALNAOega0" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -1219,7 +1209,7 @@
             <Pin Id="NH6GnBieGebNwmUxZ7XgSq" Name="Clear" Kind="InputPin" />
             <Pin Id="Ci9UTAMymwnNyHo7BBj75C" Name="Space" Kind="InputPin" DefaultValue="DIPTopLeft" />
             <Pin Id="T6QvXiUKk89Nl4aJ3502g8" Name="Show Cursor" Kind="InputPin" />
-            <Pin Id="AtU62DZ7HR8PklMYdeA7tz" Name="VSync" Kind="InputPin" />
+            <Pin Id="AtU62DZ7HR8PklMYdeA7tz" Name="VSync" Kind="InputPin" DefaultValue="False" />
             <Pin Id="IHRZYxSgjJQMdXWm0ktkHP" Name="Commands" Kind="InputPin" IsHidden="true" />
             <Pin Id="PH0r0xomPaUNWYlq2USVmZ" Name="Enable Keyboard Shortcuts" Kind="InputPin" IsHidden="true" />
             <Pin Id="DYNy8a6iqRvODiiGSkswuC" Name="Enabled" Kind="InputPin" />
@@ -1519,10 +1509,10 @@
             <Pin Id="QaNA6Sc9L54MD5xV1t3uOm" Name="Write on model change" Kind="InputPin" IsHidden="true" />
             <Pin Id="LGH1JWuXWT1NmyoJdM6B9q" Name="Model" Kind="InputPin">
               <p:DefaultValue ID="5b5ae8e0-17d4-4026-91bc-07db49e125e0" Name="Default Timeline" xmlns:r="reflection" r:Version="2">
-                <Composition_Model ID="24698d06-f93f-4a18-8760-6d072653e80b" Name="Boh">
+                <Composition_Model ID="9750e444-66b7-4084-9caf-0043c1343088" Name="Boh">
                   <Controllers>
-                    <Item Key="153d1a68-f006-438f-b3d5-fdfa0004ff6b">
-                      <Value Duration="0.3" ID="153d1a68-f006-438f-b3d5-fdfa0004ff6b" Input_Key="ChildComposition" Position="0.98" r:Type="CompositionItem1DModel [Kairos.Controller]">
+                    <Item Key="110a52b5-2605-4c77-971a-064097bd5adc">
+                      <Value Duration="0.3" ID="110a52b5-2605-4c77-971a-064097bd5adc" Input_Key="ChildComposition" Position="0.98" r:Type="CompositionItem1DModel [Kairos.Controller]">
                         <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
                         <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
                       </Value>
@@ -1530,25 +1520,14 @@
                   </Controllers>
                   <Tracks>
                     <Item Key="Gar">
-                      <Value ID="2c4f93db-d465-4e86-964f-1b8ccd079b5e">
+                      <Value ID="2e5a18c1-428c-4e8d-a887-daeab6143678">
                         <Author_IDs>
                           <Item>Default</Item>
                         </Author_IDs>
                         <Layer_Model Value_Type_Full_Name="Float32 [Primitive]" r:Type="ClipCompositorModel [LayerX.ClipCompositor]">
                           <Clips>
-                            <Item Key="635f0b14-a331-41d7-97a5-5f8d435b165c">
-                              <Value Alpha="1" Duration="1" Enabled="True" ID="635f0b14-a331-41d7-97a5-5f8d435b165c" Position="1.5">
-                                <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                <Compositing_Model>
-                                  <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                  <Blending_Model r:Type="MultiplyBlendingModel [AlchemX.Blending.Model]" />
-                                </Compositing_Model>
-                                <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Input_Key="MyGlobalChannel" Input_Mode="GlobalChannel" Value_Type_Full_Name="Float32 [Primitive]" r:Type="LiveValueLayerModel [LayerX.Layer]" />
-                                <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
-                              </Value>
-                            </Item>
-                            <Item Key="edebc7c6-77d9-44c0-9047-4561cdd76345">
-                              <Value Alpha="1" Duration="3" Enabled="True" ID="edebc7c6-77d9-44c0-9047-4561cdd76345" Position="0.5">
+                            <Item Key="1c0dc41a-36df-4697-9fe6-1792b73732bd">
+                              <Value Alpha="1" Duration="3" Enabled="True" ID="1c0dc41a-36df-4697-9fe6-1792b73732bd" Position="0.5">
                                 <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
                                 <Compositing_Model>
                                   <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
@@ -1560,8 +1539,8 @@
                                 <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
                               </Value>
                             </Item>
-                            <Item Key="afe456b5-1af9-4900-9db6-a5b39770a909">
-                              <Value Alpha="1" Duration="3" Enabled="True" ID="afe456b5-1af9-4900-9db6-a5b39770a909" Position="1">
+                            <Item Key="a73eda3f-4d0d-4248-9954-1f673f36dc2f">
+                              <Value Alpha="1" Duration="3" Enabled="True" ID="a73eda3f-4d0d-4248-9954-1f673f36dc2f" Position="1">
                                 <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
                                 <Compositing_Model>
                                   <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
@@ -1571,8 +1550,19 @@
                                 <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
                               </Value>
                             </Item>
-                            <Item Key="e048f89b-9dfd-46a4-aadb-c89217a2a974">
-                              <Value Alpha="1" Duration="0.5" Enabled="True" ID="e048f89b-9dfd-46a4-aadb-c89217a2a974" Position="1.5">
+                            <Item Key="c1bfe719-3ff6-4f1f-98d9-a7530e324422">
+                              <Value Alpha="1" Duration="1" Enabled="True" ID="c1bfe719-3ff6-4f1f-98d9-a7530e324422" Position="1.5">
+                                <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
+                                <Compositing_Model>
+                                  <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
+                                  <Blending_Model r:Type="MultiplyBlendingModel [AlchemX.Blending.Model]" />
+                                </Compositing_Model>
+                                <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Input_Key="MyGlobalChannel" Input_Mode="GlobalChannel" Value_Type_Full_Name="Float32 [Primitive]" r:Type="LiveValueLayerModel [LayerX.Layer]" />
+                                <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
+                              </Value>
+                            </Item>
+                            <Item Key="7fc17436-e87e-44f4-9a5c-d9da4cab309f">
+                              <Value Alpha="1" Duration="0.5" Enabled="True" ID="7fc17436-e87e-44f4-9a5c-d9da4cab309f" Position="1.5">
                                 <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
                                 <Compositing_Model>
                                   <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
@@ -1584,32 +1574,18 @@
                             </Item>
                           </Clips>
                         </Layer_Model>
-                        <Parameter Key="ab7562e1-8d37-4c85-aa00-1c050fe8ae9b" Path="Gar" Type_Full_Name="Float32 [Primitive]" />
+                        <Parameter Key="43e5bc29-f5c3-445f-b412-79735c6b7e7f" Path="Gar" Type_Full_Name="Float32 [Primitive]" />
                       </Value>
                     </Item>
                     <Item Key="Foo">
-                      <Value ID="92aa94af-e7bb-485f-ac7c-d55abc9a6586">
+                      <Value ID="3a65b52a-635b-44d3-ad58-32161f09429e">
                         <Author_IDs>
                           <Item>Default</Item>
                         </Author_IDs>
                         <Layer_Model Value_Type_Full_Name="Float32 [Primitive]" r:Type="KeyframeInterpolatorModel [LayerX.KeyframeInterpolator]">
                           <Keyframes>
-                            <Item Key="448ff8e9-088c-48a6-8d33-9f5649aab029">
-                              <Value Duration="0.18" Enabled="True" ID="448ff8e9-088c-48a6-8d33-9f5649aab029" Position="0.65">
-                                <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Input_Key="MySineLayer" Value_Type_Full_Name="Float32 [Primitive]" r:Type="LiveLayerLayerModel [LayerX.Layer]" />
-                                <Sampling_Settings In="0.13" Out="0.26" Speed="1" />
-                              </Value>
-                            </Item>
-                            <Item Key="dd2b859d-d7dc-42a7-be86-66a995cba072">
-                              <Value Duration="0.1" Enabled="True" ID="dd2b859d-d7dc-42a7-be86-66a995cba072" Position="0.23">
-                                <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Input_Key="LFO" Value_Type_Full_Name="Float32 [Primitive]" r:Type="LiveValueLayerModel [LayerX.Layer]" />
-                                <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
-                              </Value>
-                            </Item>
-                            <Item Key="a160eb2b-ef95-460c-b475-fbc96a37d169">
-                              <Value Duration="0.1" Enabled="True" ID="a160eb2b-ef95-460c-b475-fbc96a37d169">
+                            <Item Key="013add72-9ad6-4cc2-a14f-574ed78a555c">
+                              <Value Duration="0.1" Enabled="True" ID="013add72-9ad6-4cc2-a14f-574ed78a555c">
                                 <Interpolation_Model Mode="InOut" Transition="Cubic" r:Type="TweenInterpolationModel [AlchemX.Interpolation.Model]" />
                                 <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Value_Type_Full_Name="Float32 [Primitive]" r:Type="ValueLayerModel [LayerX.Layer]">
                                   <Value r:Type="Float32 [Primitive]">0.1</Value>
@@ -1617,16 +1593,30 @@
                                 <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
                               </Value>
                             </Item>
-                            <Item Key="5bd9d9c7-10a5-42f6-ab62-3855b8d9535d">
-                              <Value Duration="0.09" Enabled="True" ID="5bd9d9c7-10a5-42f6-ab62-3855b8d9535d" Position="0.45">
-                                <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
+                            <Item Key="79c79753-12ca-4dcb-8ee2-cf585dc4be80">
+                              <Value Duration="0.09" Enabled="True" ID="79c79753-12ca-4dcb-8ee2-cf585dc4be80" Position="0.45">
+                                <Interpolation_Model Mode="InOut" Transition="Cubic" r:Type="TweenInterpolationModel [AlchemX.Interpolation.Model]" />
                                 <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Input_Key="MyGlobalChannel" Input_Mode="GlobalChannel" Value_Type_Full_Name="Float32 [Primitive]" r:Type="LiveValueLayerModel [LayerX.Layer]" />
                                 <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
                               </Value>
                             </Item>
+                            <Item Key="309d37b0-16b7-4b4c-b0c2-eded93a84258">
+                              <Value Duration="0.1" Enabled="True" ID="309d37b0-16b7-4b4c-b0c2-eded93a84258" Position="0.23">
+                                <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
+                                <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Input_Key="LFO" Value_Type_Full_Name="Float32 [Primitive]" r:Type="LiveValueLayerModel [LayerX.Layer]" />
+                                <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
+                              </Value>
+                            </Item>
+                            <Item Key="05f37bb8-b56d-4003-a366-33520fe0b79d">
+                              <Value Duration="0.18" Enabled="True" ID="05f37bb8-b56d-4003-a366-33520fe0b79d" Position="0.65">
+                                <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
+                                <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Input_Key="MySineLayer" Value_Type_Full_Name="Float32 [Primitive]" r:Type="LiveLayerLayerModel [LayerX.Layer]" />
+                                <Sampling_Settings In="0.13" Out="0.26" Speed="1" />
+                              </Value>
+                            </Item>
                           </Keyframes>
                         </Layer_Model>
-                        <Parameter Key="32b1e7e6-0d67-4bd9-8265-fb34bb566f80" Path="Foo" Type_Full_Name="Float32 [Primitive]" />
+                        <Parameter Key="dfe3f8fb-115b-4dca-9274-4e00288e46ad" Path="Foo" Type_Full_Name="Float32 [Primitive]" />
                       </Value>
                     </Item>
                   </Tracks>
@@ -2437,15 +2427,6 @@
             <Pin Id="N7KPAHWenXJMWawWCuVgpP" Name="Output" Kind="StateOutputPin" />
             <Pin Id="Mwd7mJI0f6GOpXWvmzjJBe" Name="Tracks" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1001,1312,125,19" Id="QVXtdksqok4Oo2bE6KyYq0">
-            <p:NodeReference LastCategoryFullName="AlchemX.Utils" LastDependency="VL.AlchemX.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="GetTypeFullNameFromT" />
-            </p:NodeReference>
-            <Pin Id="Luth15d470NMv6HAmO6ZN0" Name="Input" Kind="InputPin" />
-            <Pin Id="SaWBeVxdgFNLCDoWNc8wTO" Name="Full Name" Kind="OutputPin" />
-          </Node>
-          <Pad Id="QIEunz6HaU6NVhhd4o0XvP" Comment="Full Name" Bounds="1003,1354,35,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="4883,-214,125,19" Id="SF12ty3LszsLzkXRSfUxb7">
             <p:NodeReference LastCategoryFullName="AlchemX.Utils" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -2510,15 +2491,6 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="1128,1264,166,19" Id="MCdrHFgzq0AOtB81g4tuzB">
-            <p:NodeReference LastCategoryFullName="Kairos.Common.Type" LastDependency="VL.Kairos.Runtime.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="GetTypeFullNameFromTAsObject" />
-            </p:NodeReference>
-            <Pin Id="NKuLv3SdSJ3O9zXGareUQs" Name="Input" Kind="InputPin" />
-            <Pin Id="EQZZz4yBMgHNmFg5PMFyF2" Name="Full Name" Kind="OutputPin" />
-          </Node>
-          <Pad Id="IXCKP9KroNXQCveDJPP3pS" Comment="Full Name" Bounds="1164,1307,35,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="1347,1452,132,19" Id="Ab5AONwJBr6LPaNFE5Ogv5">
             <p:NodeReference LastCategoryFullName="Kairos.Common.Type" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -2644,28 +2616,14 @@
               <Choice Kind="ProcessAppFlag" Name="KairosComposition" />
             </p:NodeReference>
             <Pin Id="KNkbGUwlsuWOhQtswsKuCD" Name="Model" Kind="InputPin">
-              <p:DefaultValue ID="bfd292cd-33f2-4208-bbdd-691d1803703a" Name="Boh2" xmlns:r="reflection" r:Version="2">
+              <p:DefaultValue ID="2b7c27da-ace0-41a9-82e8-9ac52154f1dc" Name="Boh2" xmlns:r="reflection" r:Version="2">
                 <Tracks>
                   <Item Key="Foo">
-                    <Value ID="0731d7a8-c8a1-4060-8bd2-e51feb3a0d18">
+                    <Value ID="3a65b52a-635b-44d3-ad58-32161f09429e">
                       <Layer_Model Value_Type_Full_Name="Float32 [Primitive]" r:Type="KeyframeInterpolatorModel [LayerX.KeyframeInterpolator]">
                         <Keyframes>
-                          <Item Key="89ec1513-fa24-49f8-81e3-f015627ac296">
-                            <Value Duration="0.1" Enabled="True" ID="89ec1513-fa24-49f8-81e3-f015627ac296" Position="0.23">
-                              <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                              <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Input_Key="LFO" Value_Type_Full_Name="Float32 [Primitive]" r:Type="LiveValueLayerModel [LayerX.Layer]" />
-                              <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
-                            </Value>
-                          </Item>
-                          <Item Key="2bf519eb-f575-40f6-b811-137f633c3bbc">
-                            <Value Duration="0.09" Enabled="True" ID="2bf519eb-f575-40f6-b811-137f633c3bbc" Position="0.45">
-                              <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                              <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Input_Key="MyGlobalChannel" Input_Mode="GlobalChannel" Value_Type_Full_Name="Float32 [Primitive]" r:Type="LiveValueLayerModel [LayerX.Layer]" />
-                              <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
-                            </Value>
-                          </Item>
-                          <Item Key="ea0e1b96-d132-47e8-bc6e-c4338f2ed86d">
-                            <Value Duration="0.1" Enabled="True" ID="ea0e1b96-d132-47e8-bc6e-c4338f2ed86d">
+                          <Item Key="013add72-9ad6-4cc2-a14f-574ed78a555c">
+                            <Value Duration="0.1" Enabled="True" ID="013add72-9ad6-4cc2-a14f-574ed78a555c">
                               <Interpolation_Model Mode="InOut" Transition="Cubic" r:Type="TweenInterpolationModel [AlchemX.Interpolation.Model]" />
                               <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Value_Type_Full_Name="Float32 [Primitive]" r:Type="ValueLayerModel [LayerX.Layer]">
                                 <Value r:Type="Float32 [Primitive]">0.1</Value>
@@ -2673,8 +2631,22 @@
                               <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
                             </Value>
                           </Item>
-                          <Item Key="b14e8cae-345b-4802-b511-03ecd241e4b5">
-                            <Value Duration="0.18" Enabled="True" ID="b14e8cae-345b-4802-b511-03ecd241e4b5" Position="0.65">
+                          <Item Key="79c79753-12ca-4dcb-8ee2-cf585dc4be80">
+                            <Value Duration="0.09" Enabled="True" ID="79c79753-12ca-4dcb-8ee2-cf585dc4be80" Position="0.45">
+                              <Interpolation_Model Mode="InOut" Transition="Cubic" r:Type="TweenInterpolationModel [AlchemX.Interpolation.Model]" />
+                              <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Input_Key="MyGlobalChannel" Input_Mode="GlobalChannel" Value_Type_Full_Name="Float32 [Primitive]" r:Type="LiveValueLayerModel [LayerX.Layer]" />
+                              <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
+                            </Value>
+                          </Item>
+                          <Item Key="309d37b0-16b7-4b4c-b0c2-eded93a84258">
+                            <Value Duration="0.1" Enabled="True" ID="309d37b0-16b7-4b4c-b0c2-eded93a84258" Position="0.23">
+                              <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
+                              <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Input_Key="LFO" Value_Type_Full_Name="Float32 [Primitive]" r:Type="LiveValueLayerModel [LayerX.Layer]" />
+                              <Sampling_Settings Bound_In_Mapping_Type="Clamp" Bound_Out_Mapping_Type="Clamp" Speed="1" />
+                            </Value>
+                          </Item>
+                          <Item Key="05f37bb8-b56d-4003-a366-33520fe0b79d">
+                            <Value Duration="0.18" Enabled="True" ID="05f37bb8-b56d-4003-a366-33520fe0b79d" Position="0.65">
                               <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
                               <Layer_Model Domain_Type_Full_Name="Float64 [Primitive]" Input_Key="MySineLayer" Value_Type_Full_Name="Float32 [Primitive]" r:Type="LiveLayerLayerModel [LayerX.Layer]" />
                               <Sampling_Settings In="0.13" Out="0.26" Speed="1" />
@@ -2682,7 +2654,7 @@
                           </Item>
                         </Keyframes>
                       </Layer_Model>
-                      <Parameter Key="75efde03-583c-4be6-8324-840329100b87" Path="Foo" Type_Full_Name="Float32 [Primitive]" />
+                      <Parameter Key="dfe3f8fb-115b-4dca-9274-4e00288e46ad" Path="Foo" Type_Full_Name="Float32 [Primitive]" />
                     </Value>
                   </Item>
                 </Tracks>
@@ -2995,6 +2967,86 @@
             <Pin Id="BhkYQi1xmhlLDVfXjSFX0V" Name="Path" Kind="InputPin" />
             <Pin Id="JxHywV0jtZBQGPEJ1L8oas" Name="Output" Kind="OutputPin" />
           </Node>
+          <Node Bounds="2359,339,131,19" Id="QRlsGpp8l0PMiYvLCDNPwL">
+            <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="TweenInterpolationModel" />
+            </p:NodeReference>
+            <Pin Id="TK0DP62JIx2QMPoaem4OJG" Name="Transition" Kind="InputPin" DefaultValue="Cubic" />
+            <Pin Id="HUzSs8YFqsfMndwv5FA7dW" Name="Mode" Kind="InputPin" />
+            <Pin Id="DaY0VzWd5pcLI6UVZEIrsW" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="1086,1044,91,26" Id="Q5ab4TDwJJqMGQWIamQi6n">
+            <p:NodeReference LastCategoryFullName="LayerX.Envelope" LastDependency="VL.Kairos.Runtime.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Envelope" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="GetModelStream" />
+            </p:NodeReference>
+            <Pin Id="IoO7vT6k7MYPXWbLqUtNxI" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Dbf5UtFmEqLLoXtAjyUWVz" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="QXUlkbcUPPmQC49YLp4Rpv" Name="Model Stream" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="1137,1191,121,154" Id="KWMg7V83qOOOtfH7CerSOA">
+            <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ForEach (Channel)" />
+            </p:NodeReference>
+            <Pin Id="ACdkMv307F4PHQ0Fb0igKN" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="KJjjJmDDoKpNZWUjHvXjaf" Name="At Least Run Once" Kind="InputPin" />
+            <Patch Id="Lpe2gx0Daw9QAFLBbIwhG3" ManuallySortedPins="true">
+              <Patch Id="KSyUMJQ4rewP2nSh7tCGpS" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="Oib5Jv2ACINQEApNzDlqo7" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="UQFIoHJI7UVQGV0OVvyrUQ" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="1216,1261,30,19" Id="HSfTcoA5G7vODrsWWH4IkM">
+                <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="Int32Type" Name="Integer32" NeedsToBeDirectParent="true">
+                    <p:OuterCategoryReference Kind="Category" Name="Primitive" NeedsToBeDirectParent="true" />
+                  </CategoryReference>
+                  <Choice Kind="OperationCallFlag" Name="Inc" />
+                </p:NodeReference>
+                <Pin Id="TdOWfAquNZaNAr6sAiBqeL" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Ip4dUwI40dsMv14Ma5HAUJ" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="1176,1214,45,26" Id="NHdFgMVffjAMmBLduyCIxO">
+                <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="MutableInterfaceType" Name="Channel" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Value" />
+                </p:NodeReference>
+                <Pin Id="CJ1X4wGMwpTOeaWPhgssxx" Name="Input" Kind="StateInputPin" />
+                <Pin Id="H3rZzL9FYR9QDDqs6hQ1dL" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="OKP4sLCneZ5Njrn4MsNN1T" Name="Value" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="1179,1299,55,26" Id="UWOUiYXpzw1NfbqzjCBeBf">
+                <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="MutableInterfaceType" Name="Channel" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="SetValue" />
+                </p:NodeReference>
+                <Pin Id="Rk5SiWI2cV2NCpfzF0DFIm" Name="Input" Kind="StateInputPin" />
+                <Pin Id="AJpNPLD8vNyMB4Daz6jhOZ" Name="Value" Kind="InputPin" />
+                <Pin Id="Va8FD4ygGcPMAMrecS1vn5" Name="Author" Kind="InputPin" IsHidden="true" />
+                <Pin Id="NcIyjLOvRh9L1cRAuzXQLn" Name="Apply" Kind="InputPin" />
+                <Pin Id="BcMWs3DNz4FL2S7eeAeoCs" Name="Output" Kind="StateOutputPin" />
+              </Node>
+            </Patch>
+            <Pin Id="OgqrTe8IIyELGSO8c0bKBv" Name="Force Push" Kind="InputPin" IsHidden="true" />
+            <ControlPoint Id="SmrRr8YwXI3QZMZLRDlRKp" Bounds="1151,1197" Alignment="Top" />
+          </Node>
+          <Node Bounds="1256,1143,53,19" Id="OaocFL9Yy8FMv1B6V7nntN">
+            <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+              <Choice Kind="ProcessAppFlag" Name="Channel" />
+            </p:NodeReference>
+            <Pin Id="RFrxvQF1MFAN2sUzyy4vjt" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="SrwGyJiCiRqL4iCkRlJptR" Name="Initial Value" Kind="InputPin" IsHidden="true" />
+            <Pin Id="O56yBcEezWaQLbyurnfVKA" Name="Value" Kind="InputPin" />
+            <Pin Id="GATNMuCz6IqNg5Aub3nyGj" Name="Output" Kind="OutputPin" />
+            <Pin Id="M5giZEjpp51Lsud96WayZ4" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Pad Id="ExaLx564eNpNGJTm719C1Q" Comment="" Bounds="1315,1224,35,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="FSVHgsUJMVHN69WuqjNh39" Name="Create" />
         <Patch Id="IZujogNUJB3NANeh5TC7vE" Name="Update" />
@@ -3221,7 +3273,6 @@
         <Link Id="ObN7m6AphJgPm121n1JRQW" Ids="RP3Iet154QgOvg4yVX0fa5,UHcWXUhqDqKMF21KtO7hBJ" />
         <Link Id="UdyDYSYTZwhQDvEuMeVmvp" Ids="CYq3DNUOy2CMpOZLKPRvAY,F3QcJJ38YNONY07HuvXQKe" />
         <Link Id="LEkErcgnojtMUpTjed06An" Ids="MSKGa4a5y6XQCh6ywZsSJb,D4W4tglwHliMPHsPnnDcUp" />
-        <Link Id="LeKxAUAJ8r7OBLV6wUfDwm" Ids="SaWBeVxdgFNLCDoWNc8wTO,QIEunz6HaU6NVhhd4o0XvP" />
         <Link Id="D25Q5Vy2wi8MV5uRqybaKJ" Ids="ExzyaMSanSEL88hBETrJH0,GkYzqNFrXzzM7eGLgrDCEJ" />
         <Link Id="R2nBu5lrWMtPUTGnHTOE2F" Ids="Rr0QrErRxpxLGxuvOtvj8L,MvFBXstc2LZN6MlgBma6U8" />
         <Link Id="QfexuAYrfTOMdcaS22rO8N" Ids="BaawBH2TcfuMQPoBgUduKg,L6Q40sNY1DjOmI1fKww4FU" />
@@ -3247,10 +3298,7 @@
         <Link Id="ETLNiQu9W5iMNzImWT5xqD" Ids="QXUlkbcUPPmQC49YLp4Rpv,MFepNId8EbFPT1cz1uhFmB" />
         <Link Id="NbrXHEBxKkfNYMBRy0aJBE" Ids="FewxkeryjLwNKZ69onK4jz,GwIhKvEIAp5O2e1zAIX6dm" />
         <Link Id="PlZBinImcvJL5f9MI01sgX" Ids="Ilc64qZH3N1QJZthhQIY0T,J1Tpxq6IGJbMxn4eG4dX5q" />
-        <Link Id="IHmrE9I1H3gMjoAbrhlgsc" Ids="LELheWMY9txNBYT4nufxSH,Luth15d470NMv6HAmO6ZN0" />
         <Link Id="QxEF4zGHXK6MQBXzMqUuY5" Ids="SPEiyiXPiSlMBStIq6XKvZ,OGpN7vpI8TQPUCJ3Gx8PZm" />
-        <Link Id="AFzilJemJFXQW5X0ab3oJl" Ids="LELheWMY9txNBYT4nufxSH,NKuLv3SdSJ3O9zXGareUQs" />
-        <Link Id="Mq8bLqN6R1yMmURxdXL5D0" Ids="EQZZz4yBMgHNmFg5PMFyF2,IXCKP9KroNXQCveDJPP3pS" />
         <Link Id="LYDxtOvaK1tOp4ouMRG3sZ" Ids="DVXUpa7tApQLKxCsJNmmHu,CwiQXNp0K6ALN7ePWAetnX" />
         <Link Id="GHMPBRKr5ScOQTgWsRhuIc" Ids="Ib4dK40yEjUOhFmMZBo5HW,R48IAhnw7vuM0EtTermYH5" IsHidden="true" />
         <Link Id="Lyn9CrESxl3M19QghwH81o" Ids="Tv52FhIpfzgQRCo1Qqb4st,IL62tGUkV7DOIJ7nZU2UcI" IsHidden="true" />
@@ -3323,6 +3371,13 @@
         <Link Id="EdYZEKHmiFNNLOjxRVnLmN" Ids="Tuy8fkgFkwGOTjE2scyhrZ,BhkYQi1xmhlLDVfXjSFX0V" />
         <Link Id="UCfA8yPStSbLunRv2XRxQB" Ids="JxHywV0jtZBQGPEJ1L8oas,EhqLtdUBnR7OP14vpZtaSo" />
         <Link Id="SbUyUlNQGrPMLl1hGtYv0U" Ids="MeZ8uYqrM20ObNypxDB6U2,Cz9Ak8iU8qmPGAMXZIDyKa" />
+        <Link Id="EYMI2pdYydPPNbtLsaOJaJ" Ids="DaY0VzWd5pcLI6UVZEIrsW,TS2kl07gm66MLmxX74BayD" />
+        <Link Id="EPBKa0EoSUiLjmGAl8rdFY" Ids="QXUlkbcUPPmQC49YLp4Rpv,SmrRr8YwXI3QZMZLRDlRKp" />
+        <Link Id="NMPknpktodiPHfD0D7InI0" Ids="GATNMuCz6IqNg5Aub3nyGj,CJ1X4wGMwpTOeaWPhgssxx" />
+        <Link Id="JqcoWJPzbNFNFlMbmrR9s9" Ids="OKP4sLCneZ5Njrn4MsNN1T,TdOWfAquNZaNAr6sAiBqeL" />
+        <Link Id="HiDLMOyfMuIQB0FthIxkew" Ids="H3rZzL9FYR9QDDqs6hQ1dL,Rk5SiWI2cV2NCpfzF0DFIm" />
+        <Link Id="JryJdqd9TCePABvoXM9Z2K" Ids="Ip4dUwI40dsMv14Ma5HAUJ,AJpNPLD8vNyMB4Daz6jhOZ" />
+        <Link Id="SUHDr55QLcoNlBixMwEGrk" Ids="M5giZEjpp51Lsud96WayZ4,ExaLx564eNpNGJTm719C1Q" />
       </Patch>
     </Node>
   </Patch>
