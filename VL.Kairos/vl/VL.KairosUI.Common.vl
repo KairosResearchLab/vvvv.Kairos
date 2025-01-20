@@ -47780,14 +47780,14 @@
             </Pad>
             <Pad Id="IEIbxLaZWDEOedY5dNLudR" SlotId="RTxenOI3i93QbCNQEHBQih" Bounds="1378,260" />
             <ControlPoint Id="EfIa2JBaLi6OxAaSJwA9J4" Bounds="1378,330" />
-            <ControlPoint Id="C5lVrRL8HZ1MSznnq2y7oG" Bounds="1533,681" />
+            <ControlPoint Id="C5lVrRL8HZ1MSznnq2y7oG" Bounds="1715,677" />
             <ControlPoint Id="OogZcXbfgWfO4pfnygBPFU" Bounds="344,930" />
             <Overlay Id="GicXIkhzUaxLryZbRT5kTj" Name="Layout" Bounds="177,608,428,390">
               <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
             </Overlay>
             <ControlPoint Id="AmVSUWm9ok3QOOwJOLJYbm" Bounds="464,694" />
             <ControlPoint Id="HGI3Fdc0QcBLWqzGMwM19M" Bounds="240,694" />
-            <Overlay Id="HzfAmgFlRaVNx35naV9Gp7" Name="Draw" Bounds="1107,610,289,490">
+            <Overlay Id="HzfAmgFlRaVNx35naV9Gp7" Name="Draw" Bounds="1107,610,453,490">
               <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
             </Overlay>
             <ControlPoint Id="NfqOXHjgOpVN7K4gXz5uRr" Bounds="1220,692" />
@@ -47812,7 +47812,7 @@
             <Overlay Id="SrK3Jyf4PeVNAi2PztNJ0x" Name="Interact" Bounds="659,608,389,230">
               <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
             </Overlay>
-            <Overlay Id="C42xDy5sPonNbd2d6DGnFn" Name="Sync To Model" Bounds="1444,612,264,168">
+            <Overlay Id="C42xDy5sPonNbd2d6DGnFn" Name="Sync To Model" Bounds="1626,608,264,168">
               <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
             </Overlay>
             <Pad Id="SrXrXgQBaj1LOe5ARgLBmt" SlotId="FlmbNv3EozlOF1nK07L8nc" Bounds="323,284" />
@@ -47876,6 +47876,50 @@
                 <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
               </p:ValueBoxSettings>
             </Pad>
+            <Node Bounds="1236,844,91,26" Id="ME8gwwHfeeMMo0pNg74Nnq">
+              <p:NodeReference LastCategoryFullName="LayerX.Layer.ILayer (Ungeneric)" LastDependency="VL.Kairos.Runtime.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <FullNameCategoryReference ID="LayerX.Layer.ILayer (Ungeneric)" />
+                <Choice Kind="OperationCallFlag" Name="GetModelStream" />
+              </p:NodeReference>
+              <Pin Id="J9Un8G5nrWvO4YaPxps6eY" Name="Input" Kind="StateInputPin" />
+              <Pin Id="NAs1CXnAnx5LtM1nJPxFHv" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="F8Lyc0uBPPVQX5Bw5fvyr7" Name="Model Stream" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1310,900,97,80" Id="IUtSWNGLqHAOEpCoajfqY5">
+              <p:NodeReference LastCategoryFullName="Graphics.Skia.Layer" LastDependency="VL.ImGui.Skia.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="ImGui" />
+              </p:NodeReference>
+              <Pin Id="NkbecRs9Jm4Pxa7H99omZ8" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="MHzS13bSdaLNjoDnupZKsT" Name="Docking Enabled" Kind="InputPin" />
+              <Pin Id="VYhhfrUpJNpNbaLYPTFQl5" Name="Fonts" Kind="InputPin" />
+              <Pin Id="SKVrJB5SKScLap03g7FWEt" Name="Add Fullscreen Window" Kind="InputPin" />
+              <Pin Id="RDfygNP78gnOZ1ZIqIPpEu" Name="Style" Kind="InputPin" />
+              <Pin Id="DPfWI11RkGVM9aF3nzSs2o" Name="Use Skia Space" Kind="InputPin" />
+              <Pin Id="S1Le3fRP65TLGNhQ28RY53" Name="Output" Kind="OutputPin" />
+              <Patch Id="FSsjCPSQG3dOrZLXkS2N0x" ManuallySortedPins="true">
+                <Patch Id="LHiajp9wYYkPxSVo9kmcnE" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="UFan2VDk4pQOxXK4OHQT2H" Name="Update" ManuallySortedPins="true" />
+                <Patch Id="NdpXDLGtNZoNyOZ9V4QOv5" Name="Dispose" ManuallySortedPins="true" />
+                <Node Bounds="1322,932,73,19" Id="CSDfwsT8enVLaBa6F0JQFw">
+                  <p:NodeReference LastCategoryFullName="ImGui.Editors" LastDependency="VL.ImGui.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="ObjectEditor" />
+                  </p:NodeReference>
+                  <Pin Id="BrR2I6EHWdnOTMmQiIfCm5" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="UqoVKnAxYmiOyvmzhnexrC" Name="Context" Kind="InputPin" />
+                  <Pin Id="HErbL9QASJ5LbqLDBleG42" Name="Channel" Kind="InputPin" />
+                  <Pin Id="GacnjfqtAwNLJzIpjG7usn" Name="Label" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="DoWNaXr1uWNQWG3RTYIUW5" Name="Style" Kind="InputPin" />
+                  <Pin Id="J5q2ncN7YsMNvcO8UlAVxr" Name="Context" Kind="OutputPin" />
+                  <Pin Id="OO5QmOBUVsaL3D7DdDp3i1" Name="Has Editor" Kind="OutputPin" />
+                  <Pin Id="QuytQb9lVI0N6ZLotU0lUd" Name="View Only" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="QrZCtDdDzcbNq015n0slER" Name="Factory" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="M5uT02oq13yLYL7iND8zTx" Name="Primitive Only" Kind="InputPin" IsHidden="true" />
+                </Node>
+              </Patch>
+            </Node>
           </Canvas>
           <Patch Id="LgZqNiC93ZfNX2LCAa2Gxi" Name="Create" ParticipatingElements="UiqObSOopOiL696GMCybQP" />
           <ProcessDefinition Id="MtSXySkhwOqOgZcsC8I1SD" IsHidden="true">
@@ -47924,7 +47968,7 @@
             <Pin Id="QgOkD3WD96iLxeCXuKpIdp" MergeId="167874" Name="Is Visible" Kind="OutputPin" />
             <Pin Id="Qom4S6GV9BaLtNGPjvSIuB" MergeId="167876" Name="View Transform" Kind="InputPin" />
           </Patch>
-          <Patch Id="LsE6VCCik0WPMwsPhFvARg" Name="Draw">
+          <Patch Id="LsE6VCCik0WPMwsPhFvARg" Name="Draw" ParticipatingElements="ME8gwwHfeeMMo0pNg74Nnq">
             <Pin Id="UJHyjOz2AshNjxsn4IKtIf" MergeId="167889" Name="Draw Context" Kind="InputPin" />
             <Pin Id="NudiSKfMFSANGuPYVAJUJE" MergeId="167892" Name="Layer" Kind="OutputPin" />
           </Patch>
@@ -48032,10 +48076,12 @@
           <Link Id="ChMr7PQ4ndEO7mUEMKTJVN" Ids="HGOKrgZSNBPP2qkNIqb71h,ItIzZtlE3EkMawpEZQaL0o" IsHidden="true" />
           <Link Id="OpZAWDIVm8rOypAExu80N9" Ids="Auugrjsebn5P9owH3Mzl73,Qq8KCprzcmnQD6inJ68XZc" />
           <Link Id="QnSTkxQi6Y7OBxZQBbyBCA" Ids="SiJZWLR9vPfLrT56exrqmR,DzGPi2tOc2iOlZqBnGR0fy" />
-          <Link Id="ODMYysEVjRNPOHxiZoQYz6" Ids="UVyx95ulYCNPDSSoegfRPt,NMEQvZVopMJPkfSHC8x6uP" />
           <Link Id="AJ5eWFoIsSfMVHtWeyBfuX" Ids="QP7kaJbDaQCQPbFkLupn0x,DmPHT2EvPPfN7TKOzGf3U5" />
           <Link Id="FbNYnAHBsKCPltOIocsjcm" Ids="VvT07jiVmw5PFOr9sCKkGX,OogZcXbfgWfO4pfnygBPFU" />
           <Link Id="CD9N0KGQs3lLDiGk7q32zZ" Ids="EEc42TRFDqGLfX3ugildQ9,IEIbxLaZWDEOedY5dNLudR" />
+          <Link Id="BDOgjZiElMqMiiJFJVj20X" Ids="Auugrjsebn5P9owH3Mzl73,J9Un8G5nrWvO4YaPxps6eY" />
+          <Link Id="DwvzsJQ2bI9PVLBRrvsw3D" Ids="F8Lyc0uBPPVQX5Bw5fvyr7,HErbL9QASJ5LbqLDBleG42" />
+          <Link Id="HXEZimtaMDbO81NHfSIwFC" Ids="UVyx95ulYCNPDSSoegfRPt,NMEQvZVopMJPkfSHC8x6uP" />
         </Patch>
       </Node>
       <!--
@@ -48277,6 +48323,8 @@
           <Link Id="UTmEWG3OGnCMCDElQAgpiN" Ids="Bsa0UE52iaZMrxKxKXKsXt,M4cmTbKTnuhPBbyjrh6Bhg" />
           <Link Id="TWhDA1NRMtILjxDXXfCNx4" Ids="Lqg5RrkkDLPQdZOviKIblg,DZQFkHDQbKhOieYnChzSXJ" />
           <Link Id="ROwtK7EXmnWMI78ZaU27Ts" Ids="T7btxuqNF1lO3mKAZEREqv,Kr0e4nlGKLwPzVvFM5LaLx" />
+          <Pad Id="Q818P2ED2JaLkukdS16jZh" Comment="Full Name" Bounds="2315,1627,319,43" ShowValueBox="true" isIOBox="true" />
+          <Link Id="IagQGbStINxOSoSHQx4U6s" Ids="GsaFnpMmZZsMTumkuKK4RI,Q818P2ED2JaLkukdS16jZh" />
         </Patch>
       </Node>
       <!--
