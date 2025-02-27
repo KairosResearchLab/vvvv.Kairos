@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="NC0JD0LvpjtNNyqlXMVklt" LanguageVersion="2024.6.7-0196-g6a855a4938" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="NC0JD0LvpjtNNyqlXMVklt" LanguageVersion="2025.7.0-0184-g157d61ad29" Version="0.128">
   <Patch Id="HGUDXWO9Z7cNKkjkxtdjvd">
     <Canvas Id="C7TP0nEsgmMPljBzBOMo3C" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -15,9 +15,9 @@
       <Patch Id="PVuobLPgx6pLZVgvPVR8ad">
         <Canvas Id="L6eGPRiaFytNx2mvwvqOy5" CanvasType="Group">
           <Node Bounds="221,2541,508,197" Id="JNoLu7g20CIM3jefvyY2d0">
-            <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
+            <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Layer" />
+              <Choice Kind="ProcessAppFlag" Name="LayerRegion" />
             </p:NodeReference>
             <Pin Id="V7phoZsL7KkPmEvLds9eUE" Name="Output" Kind="StateOutputPin" />
             <Patch Id="LMiuHNJwyNoQT1IP5JLBg8" ManuallySortedPins="true">
@@ -85,8 +85,6 @@
               <ControlPoint Id="AEfvfgZB08hLI0NCvvAbkm" Bounds="420,2551" />
             </Patch>
             <Pin Id="S2RgSjqY1m4MaxvCmQF8VW" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="ISz2ERlNiMSNgXUXDWdiEa" Name="Compositing Model" Kind="InputPin" />
-            <Pin Id="TZRcLk9UL8kNMT0FV3vX72" Name="Alpha" Kind="InputPin" />
           </Node>
           <Node Bounds="221,2871,86,19" Id="AW9jASaUOwrOIbsxxKqsFe">
             <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
@@ -128,9 +126,9 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="233,2301,177,141" Id="EIa3pblnS32LqsfBRC1npM">
-            <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
+            <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Layer" />
+              <Choice Kind="ProcessAppFlag" Name="LayerRegion" />
             </p:NodeReference>
             <Pin Id="UU0xvR4vAprMMRojjmmGta" Name="Output" Kind="StateOutputPin" />
             <Patch Id="CFWKPPDnCBqP7SEG9z72I2" ManuallySortedPins="true">
@@ -153,13 +151,11 @@
               </Pad>
             </Patch>
             <Pin Id="KBlBTYmdVmIOIDfXz1Zi0h" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="NJk2Kxhtkj1N800t7D5YFD" Name="Compositing Model" Kind="InputPin" />
-            <Pin Id="OHEUF7bsNH1Phcr2txOHid" Name="Alpha" Kind="InputPin" />
           </Node>
           <Node Bounds="503,2301,177,141" Id="HT3RxXuyqWhLoUnpfPv1KX">
-            <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
+            <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Layer" />
+              <Choice Kind="ProcessAppFlag" Name="LayerRegion" />
             </p:NodeReference>
             <Pin Id="Oowlg3HLP7EPtBvAiPXAGZ" Name="Output" Kind="StateOutputPin" />
             <Patch Id="Osxp556aBHfLzyFjxvQs5G" ManuallySortedPins="true">
@@ -182,8 +178,6 @@
               </Pad>
             </Patch>
             <Pin Id="CMEMZX86w6nO5AVFZPS6qX" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="RUNXWArC4oYONgdMy7c8S2" Name="Compositing Model" Kind="InputPin" />
-            <Pin Id="MSQEj96vGtEPZSUB0n600C" Name="Alpha" Kind="InputPin" />
           </Node>
           <Node Bounds="302,2784,45,19" Id="GKluQU0qLG6PJqaPAU0U3n">
             <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
@@ -201,9 +195,9 @@
             <Pin Id="M94tjaBnQZjPADjgBCDdpr" Name="Cycles" Kind="OutputPin" />
           </Node>
           <Node Bounds="880,2386,78,19" Id="K9rieOVzHG6LgrR94sahRS">
-            <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
+            <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Value" />
+              <Choice Kind="ProcessAppFlag" Name="ValueLayer" />
             </p:NodeReference>
             <Pin Id="MmyK0IsoE4uOfhPDIgDph4" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="OLeTZWZALriL4yr5vagUgL" Name="Value" Kind="InputPin" />
@@ -216,19 +210,25 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="880,2695,83,19" Id="VUY7vdshIPsL0nKsgnoCnR">
-            <p:NodeReference LastCategoryFullName="LayerX.1D.Interpolator1D" LastDependency="VL.LayerX.vl">
+          <Node Bounds="880,2695,85,19" Id="VUY7vdshIPsL0nKsgnoCnR">
+            <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolator" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Interpolator1D" />
+              <Choice Kind="ProcessAppFlag" Name="KeyframeInterpolator" />
             </p:NodeReference>
             <Pin Id="I2z2z6kgfIYPbAa0BbDNOA" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="HzGEqm775HfPSQQyenIna7" Name="Keyframes" Kind="InputPin" />
+            <Pin Id="Nz50GMeCub9QVG3ESiWlvD" Name="Root Model Stream" Kind="InputPin" />
+            <Pin Id="Tjumk54cnySOqwq5MntIEU" Name="Model Relative Path" Kind="InputPin" />
+            <Pin Id="OJ2tw10cU0kOsTk1pj9sk0" Name="Sync From Stream" Kind="InputPin" />
+            <Pin Id="UXcjUVnUgEbLSeY4pdAok3" Name="Local Context" Kind="InputPin" />
+            <Pin Id="MiCdRZ9rk8WPMraD8dcFWZ" Name="Model" Kind="InputPin" />
             <Pin Id="AMT0fj2m4keOzGcZxrxNig" Name="Background Provider" Kind="InputPin" />
             <Pin Id="VhFXCjIJQlyLgG4wEblCIJ" Name="Sampling Position" Kind="InputPin" />
             <Pin Id="P61OS9vmhI2NlzAGtIE1u7" Name="Alpha Function" Kind="InputPin" />
             <Pin Id="RQGMQirUrTwObZIXBV0MwR" Name="Output" Kind="StateOutputPin" />
             <Pin Id="PyUaHnmor0FN3SSBhncr4b" Name="Value" Kind="OutputPin" />
             <Pin Id="F36rNEWV7elM5d7JZqFzxR" Name="Context" Kind="InputPin" />
+            <Pin Id="HzGEqm775HfPSQQyenIna7" Name="Keyframes" Kind="InputPin" />
+            <Pin Id="PwnABF2XpmrLZGkPkfisZW" Name="Keyframes" Kind="OutputPin" />
           </Node>
           <Node Bounds="880,2635,230,19" Id="S4pSvltNrx5MJ7VdPMfIQw">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
@@ -241,25 +241,23 @@
             <Pin Id="BLkZgYYfxSnM68uLNtCT8b" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="880,2576,105,19" Id="GxJeBus7MG3P3jW3syX9XP">
-            <p:NodeReference LastCategoryFullName="LayerX.1D.Interpolator1D" LastDependency="VL.LayerX.vl">
+            <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolator" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Keyframe (Interpolator1D)" />
+              <Choice Kind="ProcessAppFlag" Name="Keyframe" />
             </p:NodeReference>
             <Pin Id="OcThfAxMJdoPb1mnFdqMFG" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="TzptuHqL51lMa5AAlKLygZ" Name="Layer" Kind="InputPin" />
             <Pin Id="C5rjn1OcsIKNd38gesIAN9" Name="Position" Kind="InputPin" />
             <Pin Id="Fi6V7S86PyAMQwMg4HcLlt" Name="Duration" Kind="InputPin" />
+            <Pin Id="UDX4aivhI1vMeimLKv5kq5" Name="Sampling Settings" Kind="InputPin" />
             <Pin Id="B2bmAzg8yXuOnXlXbuQGwL" Name="Interpolation Model" Kind="InputPin" />
-            <Pin Id="HPgBM1gZqzzO5KoFYIcnIs" Name="Transport Function" Kind="InputPin" IsHidden="true" />
-            <Pin Id="GaH0iIXYBAMLueXs4esIzj" Name="Enabled" Kind="InputPin" IsHidden="true" />
-            <Pin Id="H7TEyteLtEzOSSCOvTmxS3" Name="Alpha" Kind="InputPin" />
-            <Pin Id="S9ZsI3kZdReL8ynH5dRdvp" Name="Alpha Blending Model" Kind="InputPin" />
+            <Pin Id="GaH0iIXYBAMLueXs4esIzj" Name="Enabled" Kind="InputPin" />
             <Pin Id="JbS2zIz6x3ON3IRksr0hZb" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="1105,2386,78,19" Id="Dbb7J6L275OLu3uDe5a6aO">
-            <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
+            <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Value" />
+              <Choice Kind="ProcessAppFlag" Name="ValueLayer" />
             </p:NodeReference>
             <Pin Id="UHLIWCTk8ZANMxiJeGbk2s" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="IPyOI8t5uQmOQKTxzpL24b" Name="Value" Kind="InputPin" />
@@ -329,9 +327,9 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="142,184,197,141" Id="QPPE09t5FLjOqZX0J3aqH9">
-            <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
+            <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Layer" />
+              <Choice Kind="ProcessAppFlag" Name="LayerRegion" />
             </p:NodeReference>
             <Pin Id="EudFqpS3GksNBXwzIHM6Ua" Name="Output" Kind="StateOutputPin" />
             <Patch Id="TEUj60DtvqdM8aRWJtSKpk" ManuallySortedPins="true">
@@ -355,8 +353,6 @@
               <Pad Id="PeYbZlLqfJZPRFuvtAvWRr" Comment="Sampling Position" Bounds="189,258,35,15" ShowValueBox="true" isIOBox="true" />
             </Patch>
             <Pin Id="AQmfrQl0Q16Oa6D9n6JjiN" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="GmMSFoosnNeQBW1NWT5Y4r" Name="Compositing Model" Kind="InputPin" />
-            <Pin Id="CNxjPEnabzbPztQbCt5p2G" Name="Alpha" Kind="InputPin" />
           </Node>
           <Pad Id="Ajp6f1baWQWL36bU5K4ZW4" Comment="Sampling Position" Bounds="184,354,35,15" ShowValueBox="true" isIOBox="true" Value="0.23999999463558197">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -392,9 +388,9 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="215,1760,165,138" Id="DSbQ3wly9kdLu6dc4RTb4J">
-            <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
+            <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Layer" />
+              <Choice Kind="ProcessAppFlag" Name="LayerRegion" />
             </p:NodeReference>
             <Pin Id="HmiTbCUYlZnMbdv3ozY8ti" Name="Output" Kind="StateOutputPin" />
             <Patch Id="Ey6r9wy76y8MqYemXf6uew" ManuallySortedPins="true">
@@ -426,8 +422,6 @@
               </Node>
             </Patch>
             <Pin Id="I41z6fTNbUgNf0MQymdReX" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="BxDCMSh4rfPOqEmg20KQNj" Name="Compositing Model" Kind="InputPin" />
-            <Pin Id="P1mmE7VHwgKPrdvmjgqS5B" Name="Alpha" Kind="InputPin" />
           </Node>
           <Pad Id="JYWbFSunQ1MQUamUfBWQfK" Comment="Sampling Position" Bounds="298,1942,35,15" ShowValueBox="true" isIOBox="true" Value="0.04999999888241291">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -435,9 +429,9 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="227,1578,177,141" Id="Bat8u40rcSROLTIXel22vc">
-            <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
+            <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Layer" />
+              <Choice Kind="ProcessAppFlag" Name="LayerRegion" />
             </p:NodeReference>
             <Pin Id="KjlyuK4QbnkMpMaw51O9wL" Name="Output" Kind="StateOutputPin" />
             <Patch Id="F3EVNsIPfW2Mjh4Wj3TrB4" ManuallySortedPins="true">
@@ -460,13 +454,11 @@
               </Pad>
             </Patch>
             <Pin Id="TjII70CM8R1LcbALMVPr8V" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="FzJOEz0Y4FUQCKFrwx3Pe7" Name="Compositing Model" Kind="InputPin" />
-            <Pin Id="L2URjMjvZq7PNj3uqvuKcF" Name="Alpha" Kind="InputPin" />
           </Node>
           <Node Bounds="202,601,175,141" Id="JQ05wVFEZkXO4wdKYgeCU1">
-            <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
+            <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Layer" />
+              <Choice Kind="ProcessAppFlag" Name="LayerRegion" />
             </p:NodeReference>
             <Pin Id="BiRRV0XFXzDQDTPrJJty8t" Name="Output" Kind="StateOutputPin" />
             <Patch Id="OeTs4e2jNzrOX3knF2LEHK" ManuallySortedPins="true">
@@ -499,13 +491,11 @@
               </Node>
             </Patch>
             <Pin Id="D7DrE37PNyZOMpjNBPVOc2" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="CUqqx14rqLoPYqcKRwy7PW" Name="Compositing Model" Kind="InputPin" />
-            <Pin Id="QJeHGmwLP6RMaSDohPkuXO" Name="Alpha" Kind="InputPin" />
           </Node>
           <Node Bounds="188,1192,208,170" Id="CXPawSWXFgJPNiKTC9c9o2">
-            <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
+            <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Layer" />
+              <Choice Kind="ProcessAppFlag" Name="LayerRegion" />
             </p:NodeReference>
             <Pin Id="LK3x58x9v2KPg4GFcYSqob" Name="Output" Kind="StateOutputPin" />
             <Patch Id="CQqDEQE0uKFMSyq1J5CEf7" ManuallySortedPins="true">
@@ -541,13 +531,11 @@
               </Pad>
             </Patch>
             <Pin Id="BqyGcrKTYuaPAqfPNOxLAt" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="LaI3hKSDmyOPpR72i4ejjN" Name="Compositing Model" Kind="InputPin" />
-            <Pin Id="L3goKdnWjMwNG6WCSTOTUX" Name="Alpha" Kind="InputPin" />
           </Node>
           <Node Bounds="201,783,176,156" Id="G5fmxP9ImHVOMXiRehV0HG">
-            <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
+            <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Layer" />
+              <Choice Kind="ProcessAppFlag" Name="LayerRegion" />
             </p:NodeReference>
             <Pin Id="KQpKlvMakvJQDA9SehQsBP" Name="Output" Kind="StateOutputPin" />
             <Patch Id="GHYSUC0n1CxNflDxsdAoM8" ManuallySortedPins="true">
@@ -573,8 +561,6 @@
               </Node>
             </Patch>
             <Pin Id="LgQjwiWby0nMYTnhE9grDx" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="SoRKksXu8kbPPDu6ZTnaOY" Name="Compositing Model" Kind="InputPin" />
-            <Pin Id="MXC27DwBeWnMzmvUGkVok9" Name="Alpha" Kind="InputPin" />
           </Node>
           <Node Bounds="199,1139,44,19" Id="PNsR8WJ5TKPOgZP7Zf9jjA">
             <p:NodeReference LastCategoryFullName="IO.Midi" LastDependency="VL.IO.Midi.vl">
@@ -657,9 +643,9 @@
             <Patch Id="HzUXMlWLYMWMdgN9gJATpE">
               <Canvas Id="Jr6EKNny7bNOfiOwFIPrUi" CanvasType="Group">
                 <Node Bounds="250,249,295,125" Id="GzlMq9MnOr4N2mvbRaR8gu">
-                  <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
+                  <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                    <Choice Kind="ProcessAppFlag" Name="Layer" />
+                    <Choice Kind="ProcessAppFlag" Name="LayerRegion" />
                   </p:NodeReference>
                   <Pin Id="LAIc0xNAPqrMoPdVTvwf9I" Name="Output" Kind="StateOutputPin" />
                   <Patch Id="E05mDALc1YbLALapsaYo5D" ManuallySortedPins="true">
@@ -694,8 +680,6 @@
                     </Patch>
                   </Patch>
                   <Pin Id="S8oEuxrD8OCQGYOot5NNk6" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="JdV8kmvsFmqQQ0ImHGILl0" Name="Compositing Model" Kind="InputPin" />
-                  <Pin Id="KHgO8Rjy9onOB1tGTWiKLm" Name="Alpha" Kind="InputPin" />
                 </Node>
                 <ControlPoint Id="Q3428IBJs09NM1myBlyr94" Bounds="264,181" />
                 <ControlPoint Id="JsRJ2BirPSMOV53nuif8We" Bounds="343,224" />
@@ -740,9 +724,9 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="829,598,175,166" Id="CZWQBcm2F9APJkdrk0OIUM">
-            <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
+            <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Layer" />
+              <Choice Kind="ProcessAppFlag" Name="LayerRegion" />
             </p:NodeReference>
             <Pin Id="UbaAoCtQSYgL6u7n3loIdx" Name="Output" Kind="StateOutputPin" />
             <Patch Id="Sd9elYnqmRyPYs9mGJmQ9v" ManuallySortedPins="true">
@@ -786,13 +770,11 @@
               </Pad>
             </Patch>
             <Pin Id="MQ90RHVQeO4LPqkBRoKTuj" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="NR39PyXMPtROqyBb4UGEo4" Name="Compositing Model" Kind="InputPin" />
-            <Pin Id="NNCiIBXYX7LO9sL7XbhfCc" Name="Alpha" Kind="InputPin" />
           </Node>
           <Node Bounds="1079,667,195,96" Id="E7c27tkuqwVO3CKCMXPhFY">
-            <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
+            <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Layer" />
+              <Choice Kind="ProcessAppFlag" Name="LayerRegion" />
             </p:NodeReference>
             <Pin Id="Iq45pRfgD8eOSrFEwaTot8" Name="Output" Kind="StateOutputPin" />
             <Patch Id="NTRLfDin7z0OtdF28qYRYr" ManuallySortedPins="true">
@@ -810,8 +792,6 @@
               <ControlPoint Id="Io3qmo1oluCNLxIPQl2B7H" Bounds="1083,756" />
             </Patch>
             <Pin Id="N8dWNW9Su47P55TQZ3jLWL" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="PmdiNTzsyPuPBL9oYXA0Qk" Name="Compositing Model" Kind="InputPin" />
-            <Pin Id="EkCbexRGrDnMmowbSltsMX" Name="Alpha" Kind="InputPin" />
           </Node>
           <Node Bounds="1081,566,45,19" Id="TrF74zMEWNDL7MgP69EU6H">
             <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
@@ -942,9 +922,9 @@
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
           <Node Bounds="172,3313,78,19" Id="VbWLb3XaAeFMmmCbNXVgO7">
-            <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
+            <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Value" />
+              <Choice Kind="ProcessAppFlag" Name="ValueLayer" />
             </p:NodeReference>
             <Pin Id="KxjtH6RGxfnNkJV68YCntT" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="EG3CD9Cr7vPNRZ63SBRKrH" Name="Value" Kind="InputPin" />
@@ -1014,9 +994,9 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="622,305,78,19" Id="EPe62vvvm8IN19kLO4lbkL">
-            <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
+            <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Value" />
+              <Choice Kind="ProcessAppFlag" Name="ValueLayer" />
             </p:NodeReference>
             <Pin Id="RsFMgXjrKZhPTJ4hrtcret" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="SB2RGCEvyMXLXifGB6uErw" Name="Value" Kind="InputPin" />
@@ -1030,19 +1010,17 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="1105,2591,125,19" Id="OBJG4ho5n2DP4M6uoaa8I9">
-            <p:NodeReference LastCategoryFullName="LayerX.1D.Interpolator1D" LastDependency="VL.LayerX.vl">
+            <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolator" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Keyframe (Interpolator1D)" />
+              <Choice Kind="ProcessAppFlag" Name="Keyframe" />
             </p:NodeReference>
             <Pin Id="EuZk4ktmxJvPd9PWqwUqk2" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="SnwRZPxVe8BLEXC2cFxnxO" Name="Layer" Kind="InputPin" />
             <Pin Id="OrKtSe3EfymNsWQTY7nbtk" Name="Position" Kind="InputPin" />
             <Pin Id="O6jT6S24IHTPswFat41WsT" Name="Duration" Kind="InputPin" />
+            <Pin Id="JhKD8Uvdv3qNtxjAfT12jv" Name="Sampling Settings" Kind="InputPin" />
             <Pin Id="EjA3jKxmMRaM03Akg4VhUv" Name="Interpolation Model" Kind="InputPin" />
-            <Pin Id="FOPV1nT57x7MVGMjo5CsFw" Name="Transport Function" Kind="InputPin" IsHidden="true" />
-            <Pin Id="OByBXWxwlTQNwBbYZMaYZP" Name="Enabled" Kind="InputPin" IsHidden="true" />
-            <Pin Id="PWOG2PEJAfrObjm54HAd5P" Name="Alpha" Kind="InputPin" />
-            <Pin Id="UGJeItBaEvvMkiqeh45vwN" Name="Alpha Blending Model" Kind="InputPin" />
+            <Pin Id="OByBXWxwlTQNwBbYZMaYZP" Name="Enabled" Kind="InputPin" />
             <Pin Id="TL1JqQTthEHMToSbfSQy7p" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="NTlpDpj0aJBLffCp57RGvj" Comment="Position" Bounds="1126,2552,35,15" ShowValueBox="true" isIOBox="true" Value="1">
@@ -1064,10 +1042,10 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="390,181,177,141" Id="Fj4UewcaaWhMVnzK5QSl6a">
-            <p:NodeReference LastCategoryFullName="LayerX.Utils" LastDependency="VL.LayerX.vl">
+          <Node Bounds="405,181,177,141" Id="Fj4UewcaaWhMVnzK5QSl6a">
+            <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Layer" />
+              <Choice Kind="ProcessAppFlag" Name="LayerRegion" />
             </p:NodeReference>
             <Pin Id="B3DkBr6lE5MQKKpEoZSVrB" Name="Output" Kind="StateOutputPin" />
             <Patch Id="J9IBadbC8WJODCc6jf2X9O" ManuallySortedPins="true">
@@ -1079,11 +1057,11 @@
                 <Pin Id="PPFBrl2GTZjPmYFmhRWIn5" Name="Value" Kind="OutputPin" />
                 <Pin Id="BtdjskkvgUgNc26FsN3YZQ" Name="Input 4" Kind="InputPin" />
               </Patch>
-              <ControlPoint Id="ELdurDpeDE8QBHPQwPB9UH" Bounds="410,189" />
-              <ControlPoint Id="JqPl3m3fByrQDmECOvoYR7" Bounds="437,213" />
-              <ControlPoint Id="H7qiE8eyS2cPGAoARhT3C3" Bounds="476,241" />
-              <ControlPoint Id="JsiiuDl4n1pO7oE1MMFbhL" Bounds="406,315" />
-              <Pad Id="Qd101cdtUcGN0YZ3wzDIxO" Bounds="406,271,30,20" ShowValueBox="true" isIOBox="true" Value="1, 1, 1, 1">
+              <ControlPoint Id="ELdurDpeDE8QBHPQwPB9UH" Bounds="425,189" />
+              <ControlPoint Id="JqPl3m3fByrQDmECOvoYR7" Bounds="452,213" />
+              <ControlPoint Id="H7qiE8eyS2cPGAoARhT3C3" Bounds="491,241" />
+              <ControlPoint Id="JsiiuDl4n1pO7oE1MMFbhL" Bounds="421,315" />
+              <Pad Id="Qd101cdtUcGN0YZ3wzDIxO" Bounds="421,271,30,20" ShowValueBox="true" isIOBox="true" Value="1, 1, 1, 1">
                 <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="ImmutableTypeFlag" Name="RGBA" />
                   <CategoryReference Kind="Category" Name="Color" />
@@ -1091,8 +1069,6 @@
               </Pad>
             </Patch>
             <Pin Id="Ttfr3Mz6222PqVIFUQ8RWW" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="JfVfNIY2OOjNnmf2r5OhBY" Name="Compositing Model" Kind="InputPin" />
-            <Pin Id="S27eTJyLA5WQaNyxqPIZZr" Name="Alpha" Kind="InputPin" />
           </Node>
           <Pad Id="PR6Qz41JNmQOayBbChUZRW" Bounds="665,659,119,74" ShowValueBox="true" isIOBox="true" Value="Toggle this IOBox and observe the LFO in the Layer region.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -1239,8 +1215,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="OVD4drgo9bxOoEs96ioH1k" Location="VL.CoreLib" Version="2024.6.7-0196-g6a855a4938" />
-  <NugetDependency Id="TwxhErWbpMMP6PXKBqCrZU" Location="VL.IO.OSC" Version="1.1.4" />
-  <NugetDependency Id="Demf5Ybh9QFMDezQ9OGkcg" Location="VL.IO.Midi" Version="1.1.1" />
+  <NugetDependency Id="OVD4drgo9bxOoEs96ioH1k" Location="VL.CoreLib" Version="2025.7.0-0184-g157d61ad29" />
+  <NugetDependency Id="TwxhErWbpMMP6PXKBqCrZU" Location="VL.IO.OSC" Version="1.1.5" />
+  <NugetDependency Id="Demf5Ybh9QFMDezQ9OGkcg" Location="VL.IO.Midi" Version="1.1.6" />
   <NugetDependency Id="PJazwciyfmNMWb3xQchT0O" Location="VL.Kairos.Runtime" Version="0.0.0" />
 </Document>

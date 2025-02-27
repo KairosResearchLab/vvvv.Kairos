@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="OAsdwVeZOQ0QajvjlxLbQE" LanguageVersion="2022.5.0-0363-7bef174365" Version="0.128">
-  <NugetDependency Id="MHNAo07MSl2MlnISnXzi66" Location="VL.CoreLib" Version="2022.5.0-0363-g7bef174365" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="JovDh130p8xMWFavrYsj0e" LanguageVersion="2025.7.0-0184-g157d61ad29" Version="0.128">
+  <NugetDependency Id="MHNAo07MSl2MlnISnXzi66" Location="VL.CoreLib" Version="2025.7.0-0184-g157d61ad29" />
   <Patch Id="JJeqyBxsY5FQKZzkjXGa1h">
     <Canvas Id="NcXb7OitCELPW3Jir0NIzE" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -16,7 +16,7 @@
       <Patch Id="Kjew5k0FRAsPBsgMgmIf9J">
         <Canvas Id="RgwiHBJKkw8LA9pUkjiUNy" CanvasType="Group">
           <Pad Id="M4aHBIVzeFdLNitwJTx9yL" Bounds="44,82,328,31" ShowValueBox="true" isIOBox="true" Value="Interpolate using blending models">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -25,7 +25,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="453,715,133,19" Id="RaYMXS5cItXM3bhWFoP5GC">
-            <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.Model" LastSymbolSource="VL.AlchemX.vl">
+            <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.AlchemX.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SpreadInterpolationModel (ValueAndSpreadCount)" />
             </p:NodeReference>
@@ -34,7 +34,7 @@
             <Pin Id="CkvSc7rCg37PUyiIGyZ51o" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="BX0z3wcLBjbQYt0xKPlVB7" Bounds="53,157,577,43" ShowValueBox="true" isIOBox="true" Value="The great thing is that every blend operation is internally considered also as an interpolator.&#xD;&#xA;This means that you can use all blending models as interpolation models!!!!">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -43,10 +43,11 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="92,904,546,19" Id="Hxv2fuCLJ7LOWaIhbjE9f1">
-            <p:NodeReference LastCategoryFullName="AlchemX.Interpolation" LastSymbolSource="VL.AlchemX.vl">
+            <p:NodeReference LastCategoryFullName="AlchemX.Interpolation" LastDependency="VL.AlchemX.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Interpolator" />
             </p:NodeReference>
+            <Pin Id="QBAds6f67cuNgNuxGhW8vj" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="SblEOq5d6e2LKd9yfkGmxI" Name="A" Kind="InputPin" />
             <Pin Id="Jvy50rwWemmLfYX5P7ft4o" Name="B" Kind="InputPin" />
             <Pin Id="MgBqBAq8ewpOxt9ifM8yDO" Name="Model" Kind="InputPin" />
@@ -54,10 +55,11 @@
             <Pin Id="OEOPvlkfuwOPwgWwKT60qD" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="91,599,85,19" Id="KYe27FsQUCWOQE6LtjyVTO">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LinearSpread" />
             </p:NodeReference>
+            <Pin Id="Pm4tWrhCihfMKUcSYy1V3e" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="MjmpWKoHp8OMMikcW3Q5rY" Name="Center" Kind="InputPin" />
             <Pin Id="KjAuRFXJu0oL4uvC4kRq6T" Name="Width" Kind="InputPin" />
             <Pin Id="KepWOSEHcOrPAZsv1XoQFP" Name="Alignment" Kind="InputPin" />
@@ -66,7 +68,7 @@
             <Pin Id="VpDd0M4jPKxOYlTkzmOLWJ" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="KeTATLP0ZmAOYiqgIwXdUD" Comment="Count" Bounds="173,578,35,15" ShowValueBox="true" isIOBox="true" Value="10">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
@@ -81,10 +83,11 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="273,599,85,19" Id="KOebRrRsLQoPiInOkHBFLj">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RandomSpread" />
             </p:NodeReference>
+            <Pin Id="MDIeIojuvPkPhO3gtjUHnx" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Oa71jL4GKk3OyVvXXuYDYK" Name="Center" Kind="InputPin" />
             <Pin Id="QcUt5aEdVQ5M0iug1fXxAx" Name="Width" Kind="InputPin" />
             <Pin Id="QKZBSeckV6IOnjJPxRj90c" Name="Seed" Kind="InputPin" DefaultValue="7" />
@@ -111,10 +114,13 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="633,783,45,19" Id="TMTERP48gX6OP9aEKbv0ph">
-            <p:NodeReference LastCategoryFullName="Animation" LastSymbolSource="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LFO" />
             </p:NodeReference>
+            <Pin Id="GoludcBrTzjNk9xRvHwD6Y" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="M089piFmALAPlGJMSVxP44" Name="Clock" Kind="InputPin" IsHidden="true" />
+            <Pin Id="TgCrmKUYwJVM4MbriXVwPZ" Name="New Clock" Kind="InputPin" IsHidden="true" />
             <Pin Id="I5SCf6hD95ULXz63yhbbap" Name="Period" Kind="InputPin" DefaultValue="10" />
             <Pin Id="Lh9V6pguqZgLC4OzJWy0hy" Name="Pause" Kind="InputPin" />
             <Pin Id="R6k2V1vnvZqQByNcxaQxfC" Name="Reset" Kind="ApplyPin" />
@@ -123,7 +129,7 @@
             <Pin Id="HidYvuwh13mPIDrONsmN1j" Name="Cycles" Kind="OutputPin" />
           </Node>
           <Node Bounds="633,819,77,19" Id="B16WAFfDAxrQWQhh6VkGYd">
-            <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="TriangleWave" />
             </p:NodeReference>
@@ -132,7 +138,7 @@
             <Pin Id="ULXNhld5UcKLanPLWAR9CA" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="633,857,85,19" Id="NvXXfCpqiSlLqavQZSmO9B">
-            <p:NodeReference LastCategoryFullName="Math.Ranges" LastSymbolSource="VL.CoreLib.vl">
+            <p:NodeReference LastCategoryFullName="Math.Ranges" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Map" />
             </p:NodeReference>
@@ -152,7 +158,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="453,672,131,19" Id="LiObaD1lwDJLkx9O3m930L">
-            <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.Model" LastSymbolSource="VL.AlchemX.vl">
+            <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.AlchemX.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TweenInterpolationModel" />
             </p:NodeReference>
@@ -161,14 +167,15 @@
             <Pin Id="GQm0SrqkeyMNQQMg9RLp9I" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="645,672,102,19" Id="VNpg7yNdSnfNo5zfZbJD0j">
-            <p:NodeReference LastCategoryFullName="AlchemX.Blending.Model" LastSymbolSource="VL.AlchemX.vl">
+            <p:NodeReference LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.AlchemX.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="MaxBlendingModel" />
             </p:NodeReference>
             <Pin Id="TxIaeqsbxeZMTv3KDkrYVK" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="Hb98QxsEWm9LkKE5NNL2XP" Name="Node Context" Kind="InputPin" IsHidden="true" />
           </Node>
           <Pad Id="RjGA0bmlnDYL9QAxZOrICZ" Comment="Count" Bounds="355,578,35,15" ShowValueBox="true" isIOBox="true" Value="5">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
@@ -176,10 +183,11 @@
             <p:ColorIndex p:Type="Int32">5</p:ColorIndex>
           </Overlay>
           <Node Bounds="122,283,311,19" Id="VMsp2ssiT47OVidHdfYvIL">
-            <p:NodeReference LastCategoryFullName="AlchemX.Interpolation" LastSymbolSource="VL.AlchemX.vl">
+            <p:NodeReference LastCategoryFullName="AlchemX.Interpolation" LastDependency="VL.AlchemX.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Interpolator" />
             </p:NodeReference>
+            <Pin Id="DqY4JBkZlx3Mdwb2Jq2Ef1" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="VFaKZJHjH0iNlguH3Ps3SK" Name="A" Kind="InputPin" />
             <Pin Id="CTaOom8aOUHN1sV1PDyjga" Name="B" Kind="InputPin" />
             <Pin Id="UnGDqirzDBtLqGXMLZ9z4n" Name="Model" Kind="InputPin" />
@@ -187,26 +195,27 @@
             <Pin Id="DOCTIRNX11pN7fDejvtsWj" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="Pm9Lil5mvgINyVvCFhM7wU" Comment="A" Bounds="124,248,35,15" ShowValueBox="true" isIOBox="true" Value="2">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Float32" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="LB2D53BMfylMqw8MakTpYX" Comment="B" Bounds="226,246,35,15" ShowValueBox="true" isIOBox="true" Value="0.5">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="326,239,119,19" Id="TEL3Fj5opUcO14MZK8Wjxa">
-            <p:NodeReference LastCategoryFullName="AlchemX.Blending.Model" LastSymbolSource="VL.AlchemX.vl">
+            <p:NodeReference LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.AlchemX.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="MultiplyBlendingModel" />
             </p:NodeReference>
             <Pin Id="GB7q9eIVGsrOwqTSvqQALo" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="CwoPy5wuup2MW5v3Q6Jckw" Name="Node Context" Kind="InputPin" IsHidden="true" />
           </Node>
           <Pad Id="M6ZyhdcajJAQBXXYukWYlI" Comment="" Bounds="124,334,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="V5VUT1S7BggOsNmnSUdV9B" Bounds="53,382,620,153" ShowValueBox="true" isIOBox="true" Value="You might say: what's the point of this? I can use a blender node for doing this!&#xD;&#xA;&#xD;&#xA;Well, there are cases in which this feature could be very interesting.&#xD;&#xA;Example:&#xD;&#xA;we have two spreads. We want to interpolate between them in a linear way, but we want to pick the SpreadCount of the bigger spread.&#xD;&#xA;In this case we can use a LinearInterpolationModel for the Value aspect of the spread, and a MaxBlendingModel for the SpreadCount.">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -242,6 +251,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="OXPS2n3wrZBL26r9HjJWiZ" Location="VL.CoreLib" Version="2022.5.0-0363-g7bef174365" />
-  <NugetDependency Id="GdAxEUzsvkLMEobhxdwR7I" Location="VL.AlchemX" Version="0.0.0.0" />
+  <NugetDependency Id="AqPneUcZNO1NHaCW1s2zZT" Location="VL.Kairos.Runtime" Version="0.0.0" />
 </Document>
