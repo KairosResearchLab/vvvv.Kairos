@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="MtwUIzlaN9sOr1OCOsvBby" LanguageVersion="2025.7.0-0200-g4a7221ecd9" Version="0.128">
-  <NugetDependency Id="UACSJ3Tf6gFMwwDTqHIKJj" Location="VL.CoreLib" Version="2025.7.0-0200-g4a7221ecd9" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="MtwUIzlaN9sOr1OCOsvBby" LanguageVersion="2025.7.0-0247-g1903acec22" Version="0.128">
+  <NugetDependency Id="UACSJ3Tf6gFMwwDTqHIKJj" Location="VL.CoreLib" Version="2025.7.0-0247-g1903acec22" />
   <Patch Id="TV489nMxPaqLpKZKYAjqHP">
     <Canvas Id="OWInQlzrHByL9IsBJUO9hA" DefaultCategory="Kairos.Fuse" CanvasType="FullCategory">
       <Canvas Id="DRuUas5yXICN7U6L4IF5At" Name="AlchemX" Position="162,151">
@@ -462,6 +462,115 @@
               <Link Id="Bn1ubw4oZo1LOSd0h18fiR" Ids="QpFKlEvzENAOORw4pQ4uFU,A3cFBJUYgjoNHpCopyXIy8" />
               <Link Id="PLcVi9Ekvx0Oft63bNljP6" Ids="PuxepY2G81YMNCla7NlvCb,IrOspgNhFJBPJs7iHoLlyM" />
               <Link Id="BUrwfAyXBM1NAz5ZzQXT3B" Ids="Cg6I2i0Uj1GPbJuOmbAUml,G8VRkgKsVROL5zG6QVcIWa" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ ShaderNodeLerp ************************
+
+-->
+          <Node Name="ShaderNodeLerp" Bounds="259,650" Id="GLmZvn3I9PlLZ71zOGXu2i">
+            <p:NodeReference>
+              <Choice Kind="ClassDefinition" />
+            </p:NodeReference>
+            <p:Interfaces>
+              <TypeReference LastCategoryFullName="AlchemX.Interpolation.AdaptiveLerp" LastDependency="VL.Kairos.Runtime.vl">
+                <Choice Kind="InterfaceTypeFlag" Name="ILerp" />
+              </TypeReference>
+            </p:Interfaces>
+            <Patch Id="JMyc4cBdYqRQIWeuQiv2z1" IsGeneric="true" ExplicitTypeParameters="T">
+              <Canvas Id="T7A0i7QkLdULHU5VovZIX6" CanvasType="Group">
+                <!--
+
+    ************************ CreateLerp (Internal) ************************
+
+-->
+                <Node Name="CreateLerp (Internal)" Bounds="617,210,100,115" Id="FkbkSZ8yw5pQGTQq8eLUbN">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                    <Choice Kind="OperationDefinition" Name="Operation" />
+                  </p:NodeReference>
+                  <Patch Id="LSV4yLbOBs2PfmZuJIJVcI" IsGeneric="true" ExplicitTypeParameters="T">
+                    <ControlPoint Id="MRD9Iu0RWORN8HZdrLhz00" Bounds="631,308" />
+                    <Link Id="FB2t6KPslmuL78cf7VzyQA" Ids="MRD9Iu0RWORN8HZdrLhz00,FKrNXyGuq8vODUf35EODLT" IsHidden="true" />
+                    <ControlPoint Id="Q8IxsW267APNMGS6yP89M8" Bounds="631,228" />
+                    <Link Id="VVpf4sI548tPNaNGGm2s97" Ids="D54QagXIZRRM4bQunQVOZt,Q8IxsW267APNMGS6yP89M8" IsHidden="true" />
+                    <Pin Id="D54QagXIZRRM4bQunQVOZt" Name="Node Context" Kind="InputPin">
+                      <p:TypeAnnotation LastCategoryFullName="System.Reflection" LastDependency="VL.CoreLib.vl">
+                        <Choice Kind="TypeFlag" Name="NodeContext" />
+                      </p:TypeAnnotation>
+                    </Pin>
+                    <Pin Id="FKrNXyGuq8vODUf35EODLT" Name="Output" Kind="OutputPin">
+                      <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.AdaptiveLerp" LastDependency="VL.Kairos.Runtime.vl">
+                        <Choice Kind="TypeFlag" Name="ILerp" />
+                        <p:TypeArguments>
+                          <TypeReference>
+                            <Choice Kind="TypeFlag" Name="ShaderNode" />
+                            <p:TypeArguments>
+                              <TypeReference>
+                                <Choice Kind="TypeFlag" Name="T" />
+                              </TypeReference>
+                            </p:TypeArguments>
+                          </TypeReference>
+                        </p:TypeArguments>
+                      </p:TypeAnnotation>
+                    </Pin>
+                    <Node Bounds="629,257,75,26" Id="JCbWGnL8KC1N7ELtYe1c3m">
+                      <p:NodeReference LastCategoryFullName="Kairos.Fuse.AlchemX.Interpolation.ShaderNodeLerp" LastDependency="VL.Kairos.Fuse.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="ClassType" Name="ShaderNodeLerp" />
+                        <Choice Kind="OperationCallFlag" Name="Create" />
+                      </p:NodeReference>
+                      <Pin Id="ChafTcHZEsvPJ2YCm1vVGS" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="U48H3RlgPr3OZxCecpwnBe" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                    </Node>
+                    <Link Id="KKzi9mY6qalOqdsjkIuYIC" Ids="ChafTcHZEsvPJ2YCm1vVGS,MRD9Iu0RWORN8HZdrLhz00" />
+                  </Patch>
+                </Node>
+                <ControlPoint Id="SRqFusETE57PfnOQXB8C6l" Bounds="181,170" />
+                <ControlPoint Id="LdMMShCbkEfNJfxYCGSHPZ" Bounds="248,171" />
+                <ControlPoint Id="N4UBdfXszjRMOfT9rpGqSH" Bounds="203,306" />
+                <ControlPoint Id="DsPJRvFMcUtO4wea6RIzGl" Bounds="346,170" />
+                <Node Bounds="203,230,45,19" Id="I8X3igtKXi2O9QdSK8zlRi">
+                  <p:NodeReference LastCategoryFullName="Fuse.Core.Math" LastDependency="VL.Fuse.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Lerp (Scalar)" />
+                  </p:NodeReference>
+                  <Pin Id="Mi09vlWfsGgMkopaWtF3Ay" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="SPFJB7eHVDzOS2xUMLHT2h" Name="Input1" Kind="InputPin" />
+                  <Pin Id="MiOsM18eejqPj5M5zqqK4m" Name="Input2" Kind="InputPin" />
+                  <Pin Id="KcRmaYrVnM2OfF49z28YDr" Name="Mix" Kind="InputPin" />
+                  <Pin Id="EsVkpOOL77QMIYuTxsAVZF" Name="Output" Kind="OutputPin" />
+                </Node>
+              </Canvas>
+              <Patch Id="Tw41NbnyPDLOHvHwixiICF" Name="Create" />
+              <ProcessDefinition Id="IMe9n2KOFfAObO8HkaktuM" IsHidden="true">
+                <Fragment Id="VpoIh3mQoejM7hgdjnk27L" Patch="Tw41NbnyPDLOHvHwixiICF" Enabled="true" />
+                <Fragment Id="CECItphtDi3OTpqWDLMz7C" Patch="FkbkSZ8yw5pQGTQq8eLUbN" />
+                <Fragment Id="OSjToaB5CPPN91E5HfLinN" Patch="DpEwtL04hacQZwNwHrlwLJ" />
+              </ProcessDefinition>
+              <Patch Id="DpEwtL04hacQZwNwHrlwLJ" Name="Lerp">
+                <Pin Id="S0wzU3xhOaVL3X8ceUSVwk" Name="Input" Kind="InputPin">
+                  <p:TypeAnnotation LastCategoryFullName="Fuse" LastDependency="VL.Fuse.vl">
+                    <Choice Kind="TypeFlag" Name="ShaderNode" />
+                    <p:TypeArguments>
+                      <TypeReference>
+                        <Choice Kind="TypeFlag" Name="T" />
+                      </TypeReference>
+                    </p:TypeArguments>
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="IP4Zlh6fbTBLtwShKHw2Hn" Name="Input 2" Kind="InputPin" />
+                <Pin Id="HdiVn2wXZx2M2Gv31RU3y8" Name="Scalar" Kind="InputPin" />
+                <Pin Id="DYabwVOYGyRL4Mxdv5zVEd" Name="Output" Kind="OutputPin" />
+              </Patch>
+              <Link Id="NtxWOX2IORrNiPU2I6keXH" Ids="S0wzU3xhOaVL3X8ceUSVwk,SRqFusETE57PfnOQXB8C6l" IsHidden="true" />
+              <Link Id="NexWH8lzigHNzKDzQskh8r" Ids="IP4Zlh6fbTBLtwShKHw2Hn,LdMMShCbkEfNJfxYCGSHPZ" IsHidden="true" />
+              <Link Id="DE9FUPteCXwNPhnq7hTEsz" Ids="N4UBdfXszjRMOfT9rpGqSH,DYabwVOYGyRL4Mxdv5zVEd" IsHidden="true" />
+              <Link Id="OegnOywiKF8P7i1DmBDf8u" Ids="HdiVn2wXZx2M2Gv31RU3y8,DsPJRvFMcUtO4wea6RIzGl" IsHidden="true" />
+              <Link Id="S2NsLnvdJFBPQCQRJYVjOk" Ids="SRqFusETE57PfnOQXB8C6l,SPFJB7eHVDzOS2xUMLHT2h" />
+              <Link Id="HTPCxwejW1KPsUxHbEabPq" Ids="LdMMShCbkEfNJfxYCGSHPZ,MiOsM18eejqPj5M5zqqK4m" />
+              <Link Id="Aom4hKgqixsOj8iSuUxEIM" Ids="DsPJRvFMcUtO4wea6RIzGl,KcRmaYrVnM2OfF49z28YDr" />
+              <Link Id="TsVsTN15UyzMLsYc6Rew5U" Ids="EsVkpOOL77QMIYuTxsAVZF,N4UBdfXszjRMOfT9rpGqSH" />
             </Patch>
           </Node>
         </Canvas>
@@ -2904,6 +3013,6 @@
     </Node>
   </Patch>
   <NugetDependency Id="GOLi8tsvgyJPyYddFEPhGp" Location="VL.Fuse" IsForward="true" IsFriend="true" Version="0.0.0" />
-  <NugetDependency Id="TqPBcy2VmLPMJ4TEARVC26" Location="VL.Kairos.Runtime" Version="0.0.0" />
-  <NugetDependency Id="PvtDcqdwqMlL8XMtpCIyhv" Location="VL.Kairos.Fuse" Version="0.0.0" />
+  <NugetDependency Id="TqPBcy2VmLPMJ4TEARVC26" Location="VL.Kairos.Runtime" IsFriend="true" Version="0.0.0" />
+  <NugetDependency Id="PvtDcqdwqMlL8XMtpCIyhv" Location="VL.Kairos.Fuse" IsFriend="true" Version="0.0.0" />
 </Document>
