@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="UGMRoymtuJwOZIPywH1U3x" LanguageVersion="2025.7.0-0184-g157d61ad29" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="UGMRoymtuJwOZIPywH1U3x" LanguageVersion="2025.7.0-0247-g1903acec22" Version="0.128">
   <Patch Id="OdwjHxvmpTwQVNFJ9pLKQP">
     <Canvas Id="TFkrzzMqabMLaJgnlwzp1b" DefaultCategory="Kairos.Common" CanvasType="FullCategory">
       <Pad Id="OZ8lzo3XZxPOvj3AxhVK4e" Bounds="76,104,293,54" ShowValueBox="true" isIOBox="true" Value="Kairos Common">
@@ -952,7 +952,7 @@
                   <FullNameCategoryReference ID="Primitive" />
                 </p:NodeReference>
                 <ControlPoint Id="NnRtkr0umsXLPavXUOlkqx" Bounds="318,204" Alignment="Top" />
-                <Pin Id="Ux4psSoL1lbMSrcLhjeo9y" Name="Force" Kind="InputPin" />
+                <Pin Id="Ux4psSoL1lbMSrcLhjeo9y" Name="Force" Kind="InputPin" DefaultValue="True" />
                 <Pin Id="VWmzCFxZMrMLFKFFO8IpjJ" Name="Dispose Cached Outputs" Kind="InputPin" />
                 <Pin Id="JaWiztJhZFCOyVQhwbwbVD" Name="Has Changed" Kind="OutputPin" />
                 <ControlPoint Id="MYaD0YrXgV0OUvqtfNeZcG" Bounds="280,810" Alignment="Bottom" />
@@ -1549,6 +1549,14 @@
                   </Node>
                 </Patch>
               </Node>
+              <Pad Id="UnR1TdwZ4OyQc4Ax3qMpUK" Comment="Condition" Bounds="132,251,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+                <p:ValueBoxSettings>
+                  <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+                </p:ValueBoxSettings>
+              </Pad>
             </Canvas>
             <ProcessDefinition Id="GZZ5msySq8FOte5GVUKmgU">
               <Fragment Id="VnXWAlQStgBM0oW2nHF0pf" Patch="AhWY5yYdgyUPm4rGJa3k6n" Enabled="true" />
@@ -1579,7 +1587,6 @@
             <Link Id="F81mOzEVXVfLbCZre9gjGU" Ids="HNv72t6BWIDLVVfZNjUUVB,A23PoRuB5VRMhamxK612XM" />
             <Link Id="B59uQIGTyXpMT4F25WOcOA" Ids="GqYVITmgIbdODhNvUmpnKR,OJCBqHDKAd8QDU07eWAiV1" IsFeedback="true" />
             <Link Id="JhPu3jb4tyvNGKoN1zyhyX" Ids="J4NCf3bVqTgONE3R3WjIUD,OJCBqHDKAd8QDU07eWAiV1" />
-            <Link Id="V06AUmQXqIrMfk99OpPu6M" Ids="SMXnN8DzjcjNsPqkzhHpvY,DDkTf652WQ0N7YmLweeNX6" />
             <Link Id="FO4aXxlMgZlOOrWkrtR8jG" Ids="NpSgxAi1CnZP5ZaXQ4CyH0,OFKACPSxZG0OgnXZ7nzPhg" IsFeedback="true" />
             <Link Id="QC5Qe6FTyjHNbEqpWvuer3" Ids="JPVowhwp8wYP8xSP088NC1,NpSgxAi1CnZP5ZaXQ4CyH0" />
             <Link Id="IfVIOJR5IOdPfY48dztxxf" Ids="NpSgxAi1CnZP5ZaXQ4CyH0,GqYVITmgIbdODhNvUmpnKR" />
@@ -1588,6 +1595,7 @@
             <Link Id="QYD7hxtcJSzPGLNdrNniJb" Ids="OJCBqHDKAd8QDU07eWAiV1,LMkYuUXQpbsPvrkXtX7uQ4" />
             <Link Id="EsdUfGIT9rFLE4HjlCqeOT" Ids="SMUojVbStWDLZX7lvEV7Mz,OFKACPSxZG0OgnXZ7nzPhg" />
             <Link Id="Dvykny2mZhwPu03b0aKlN4" Ids="UMRmZjbSB23PWxsEZr5VvF,U6IRp37vmCfM4WdW6q52Bv" />
+            <Link Id="QBQJXI3cxTWNkgxWpozPH3" Ids="UnR1TdwZ4OyQc4Ax3qMpUK,DDkTf652WQ0N7YmLweeNX6" />
           </Patch>
         </Node>
         <!--
@@ -3221,6 +3229,7 @@
                     </p:NodeReference>
                     <Pin Id="F5mXbl9IQT2Nz3W9JTC89i" Name="Node Context" Kind="InputPin" IsHidden="true" />
                     <Pin Id="V11viwi4i7VPa5V9xEEh2k" Name="Input" Kind="InputPin" />
+                    <Pin Id="B5aKguOIAKBLTAGfeXpIZb" Name="Output" Kind="OutputPin" IsHidden="true" />
                     <Pin Id="Ee2w5UpAaKcLbOWMblvZFX" Name="Outputs" Kind="OutputPin" />
                     <Patch Id="Iv6kDnWE7VqN6Swf3k7oFg" ManuallySortedPins="true">
                       <Patch Id="URgjd4q1WRcMQTARu1iohA" Name="Key Selector" ManuallySortedPins="true">
@@ -7817,6 +7826,7 @@
                 <Pin Id="C6CZS8LvaRHML2CmRp0q5d" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="H5XNtIkbkvpLHgFAgNTmBf" Name="Messages" Kind="InputPin" />
                 <Pin Id="VMR0ymYbtZkMEcbVEyw6oE" Name="Reset" Kind="InputPin" />
+                <Pin Id="GzyGWMJMCtnLNi71zeYbfo" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="TLHvRASH5sTPPU5EtAHukQ" Name="Result" Kind="OutputPin" />
                 <Patch Id="G4c6G8ptj8GODR7D3UPVFY" ManuallySortedPins="true">
                   <ControlPoint Id="FqLfhF5eHrJNLFEzi6Xe61" Bounds="620,469" />
@@ -8080,6 +8090,7 @@
                 <Pin Id="GCghdtu632hLON7tH0RrAN" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="PVAHLXazB5QPuI0A9ysY57" Name="Messages" Kind="InputPin" />
                 <Pin Id="ByEV4gmC2jeMxYC6XOtzRx" Name="Reset" Kind="InputPin" />
+                <Pin Id="EuJnYC6GchmMdzWIUDG4Rm" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="MgjlFVZsBDyOItlq3fHzRU" Name="Result" Kind="OutputPin" />
                 <Patch Id="ViBbBeDRHWvMzrVAf6Wfyz" ManuallySortedPins="true">
                   <ControlPoint Id="SgnktbLVTVBL1BuxYtryaa" Bounds="620,469" />
@@ -8271,6 +8282,7 @@
                 <Pin Id="AoNklMugFrtQXO7iMb6uS4" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="Km6a6xoPcezQDse6iy0VWk" Name="Messages" Kind="InputPin" />
                 <Pin Id="OFbsbyBHU0DLFZE6XX3Xsc" Name="Reset" Kind="InputPin" />
+                <Pin Id="O6VpZNtEtf8MRGI7cxz4EA" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="Qni9bFgQ0BaLzaHHvbJfxH" Name="Result" Kind="OutputPin" />
                 <Patch Id="QhJlF8wC6uPQM4T4p5LBZB" ManuallySortedPins="true">
                   <ControlPoint Id="V4NNchPBgOUPlkg2PJLAxp" Bounds="665,634" />
@@ -9234,7 +9246,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="I9r7OOr28ZKQU0kOe9kITs" Location="VL.CoreLib" Version="2025.7.0-0184-g157d61ad29" />
-  <NugetDependency Id="NzWyo4FY2DmNRd8dx9bxjm" Location="VL.Core" Version="2025.7.0-0184-g157d61ad29" />
+  <NugetDependency Id="I9r7OOr28ZKQU0kOe9kITs" Location="VL.CoreLib" Version="2025.7.0-0247-g1903acec22" />
+  <NugetDependency Id="NzWyo4FY2DmNRd8dx9bxjm" Location="VL.Core" Version="2025.7.0-0247-g1903acec22" />
   <PlatformDependency Id="OFQv2TqH1SLLtiUyVVFSio" Location="../lib/net8.0/VL.Kairos.Runtime.CSharp.dll" />
 </Document>
