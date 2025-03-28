@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="T1ULGBGyLF3LMdyBKMN3Rp" LanguageVersion="2025.7.0-0264-g15930191f6" Version="0.128">
-  <NugetDependency Id="TKrHVWOBKJZNPKl7rQv2oy" Location="VL.CoreLib" Version="2025.7.0-0264-g15930191f6" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="T1ULGBGyLF3LMdyBKMN3Rp" LanguageVersion="2025.7.0-0277-g17318dcda9" Version="0.128">
+  <NugetDependency Id="TKrHVWOBKJZNPKl7rQv2oy" Location="VL.CoreLib" Version="2025.7.0-0277-g17318dcda9" />
   <Patch Id="VzmxMhtWO4GL7l2nwmyS1m">
     <Canvas Id="GeDfDvmY4SSMe0jsjKPUNt" DefaultCategory="Kairos.Common.Internal" CanvasType="FullCategory">
       <!--
@@ -40543,6 +40543,26 @@
                 </p:TypeAnnotation>
               </Pad>
               <Pad Id="VVoUZCIaMJ6P0UsbIYgE8Z" Comment="Zoom Speed" Bounds="1214,414,35,15" ShowValueBox="true" isIOBox="true" />
+              <Node Bounds="691,791,225,19" Id="GcGwMLzNB1MQJ00tMY0OM4">
+                <p:NodeReference LastCategoryFullName="Kairos.Common" LastDependency="VL.KairosUI.Common.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="KairosCameraModel" />
+                </p:NodeReference>
+                <Pin Id="InsqQutXDUHNdUrKaOHISF" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="UaXeQwgkRyKLcrcz1vKRAb" Name="Initial Zoom" Kind="InputPin" />
+                <Pin Id="ANIwfOsYH2TNVqWPSqG4tS" Name="Initial Vert Zoom" Kind="InputPin" />
+                <Pin Id="UN3jKUZKockPFY5tncvuIU" Name="Initial Interest" Kind="InputPin" />
+                <Pin Id="QlMpsFNH4MCLZAvAbXm7yS" Name="Minimum Zoom" Kind="InputPin" />
+                <Pin Id="D6fxMXsQHePP9ZwExBtndV" Name="Maximum Zoom" Kind="InputPin" />
+                <Pin Id="NhaAB7coIgOLaQpX8Z12lT" Name="Zoom Speed" Kind="InputPin" />
+                <Pin Id="QB2JDip7aM7OHWRJTjICHL" Name="Scroll Speed" Kind="InputPin" />
+                <Pin Id="Co9ZgRdeT80NCVxRM9eY99" Name="Minimum Position Bound" Kind="InputPin" />
+                <Pin Id="P6b2okkbLdsPvRKyKQjL8r" Name="Minimum Position Bound Enabled" Kind="InputPin" />
+                <Pin Id="KR1f34S8n2YONQ20u1DQMN" Name="Maximum Position Bound" Kind="InputPin" />
+                <Pin Id="TNn6xAAlYwxNtZCn5lz1U7" Name="Maximum Position Bound Enabled" Kind="InputPin" />
+                <Pin Id="DegKaDa2R9pQQ1eYlT6HUd" Name="Initial Transformation" Kind="InputPin" />
+                <Pin Id="NXuPUgbFQxpP0yxLKVGZQG" Name="Output" Kind="StateOutputPin" />
+              </Node>
             </Canvas>
             <Link Id="PApvI5o0GYZL1DUZazcgwn" Ids="NOeieTuCQAYMf1OIXHTOYk,NB7z3mGfLqGORZgNta9qvE" IsHidden="true" />
             <Link Id="ITEKrA2WY7wOPbOlGS34Qk" Ids="A7rfRvACUl5OyjwFVPvLk7,PrmfMe6ZYeSMNoVpzqsWqn" IsHidden="true" />
@@ -40625,7 +40645,17 @@
             <Link Id="RBco0uHWII3MqFldzMYmpG" Ids="EjzWkr7tU6JLUm824JQy1f,RLQd5h1Lu5lLDoEnzwkz2b" />
             <Link Id="ORGh1noJB2ZMYqVxJ9Vkzy" Ids="HhfHp1jVFbGMX7uAgKS25c,NOeieTuCQAYMf1OIXHTOYk" />
             <Link Id="Fk436CEAecMPvoBNsg1or3" Ids="P0NQ4nUBgzOOxyIDuv5Sry,H3lTsMZb7wGQAMacG9b9iz" IsHidden="true" />
-            <Slot Id="VU1zJZMnNo2NxjmCzFVTKl" Name="Model Stream" />
+            <Slot Id="VU1zJZMnNo2NxjmCzFVTKl" Name="Model Stream">
+              <p:TypeAnnotation p:Type="TypeReference">
+                <Choice Kind="TypeFlag" Name="Channel" />
+                <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+                <p:TypeArguments>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="KairosCameraModel" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Slot>
             <Link Id="EDUtUgrC6mSOLn4vt1m7hz" Ids="O0y5LQMp2PTNFxLoDwy5W2,Mf91tNJi8LSOmYuLF5WtYy" />
             <Link Id="IJN8UW3vRDYPO1Ws8pIB5W" Ids="Mf91tNJi8LSOmYuLF5WtYy,D0fCbgijh91OfEopr7DcC4" IsHidden="true" />
             <Link Id="OGoy5qeLv1mMpH7hV7ALmz" Ids="A7rfRvACUl5OyjwFVPvLk7,TolskSZrd1GNzAHifwn9W2" IsHidden="true" />
@@ -48574,10 +48604,10 @@
   </Patch>
   <NugetDependency Id="EY62Stk1ZSMPP2dXWy8amO" Location="VL.Touchy" Version="0.0.0" />
   <NugetDependency Id="M1vbnylsL2VPHDjiuwayi2" Location="VL.Kairos.Runtime" IsFriend="true" Version="0.0.0" />
-  <NugetDependency Id="J6MFBN8E6v8NqC99D5yZBK" Location="VL.Skia" Version="2025.7.0-0264-g15930191f6" />
-  <NugetDependency Id="SDkUJ9IIGRrLaSX4O7gINQ" Location="VL.ImGui" Version="2025.7.0-0264-g15930191f6" />
-  <NugetDependency Id="PGktrRXWLqPQWUGmC8sj0J" Location="VL.HDE" Version="2025.7.0-0264-g15930191f6" />
-  <NugetDependency Id="AmcuUbCeWt7O9nhD7c4UKJ" Location="VL.ImGui.Skia" Version="2025.7.0-0264-g15930191f6" />
-  <NugetDependency Id="J5BeSiDvJEwNpUH85FqzlO" Location="VL.EditingFramework" Version="2025.7.0-0264-g15930191f6" />
+  <NugetDependency Id="J6MFBN8E6v8NqC99D5yZBK" Location="VL.Skia" Version="2025.7.0-0277-g17318dcda9" />
+  <NugetDependency Id="SDkUJ9IIGRrLaSX4O7gINQ" Location="VL.ImGui" Version="2025.7.0-0277-g17318dcda9" />
+  <NugetDependency Id="PGktrRXWLqPQWUGmC8sj0J" Location="VL.HDE" Version="2025.7.0-0277-g17318dcda9" />
+  <NugetDependency Id="AmcuUbCeWt7O9nhD7c4UKJ" Location="VL.ImGui.Skia" Version="2025.7.0-0277-g17318dcda9" />
+  <NugetDependency Id="J5BeSiDvJEwNpUH85FqzlO" Location="VL.EditingFramework" Version="2025.7.0-0277-g17318dcda9" />
   <PlatformDependency Id="Di60Xm95LZMOuczpzVM1LC" Location="System.Windows.Forms" />
 </Document>

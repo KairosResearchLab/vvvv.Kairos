@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="G6DnuE2I3oaMJOr0lKDNFz" LanguageVersion="2025.7.0-0264-g15930191f6" Version="0.128">
-  <NugetDependency Id="B9SmXr23urgOrw4Bu21cwW" Location="VL.CoreLib" Version="2025.7.0-0264-g15930191f6" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="G6DnuE2I3oaMJOr0lKDNFz" LanguageVersion="2025.7.0-0277-g17318dcda9" Version="0.128">
+  <NugetDependency Id="B9SmXr23urgOrw4Bu21cwW" Location="VL.CoreLib" Version="2025.7.0-0277-g17318dcda9" />
   <Patch Id="RPFNdBojq8VOcYe34eyX6g">
-    <Canvas Id="Jx64PswPNNjMfN4f8xRh64" DefaultCategory="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI" CanvasType="FullCategory">
+    <Canvas Id="Jx64PswPNNjMfN4f8xRh64" DefaultCategory="Kairos.LayerX.KeyframeInterpolator.UI" CanvasType="FullCategory">
       <Canvas Id="OmR9TPhPAuvMLaLkDyJrIH" Name="InterpolationUI.Internal" Position="177,207">
         <!--
 
@@ -705,10 +705,10 @@
               <Pad Id="UzP7aP63tnVOG6xs5ZcRJK" SlotId="GAU9fI8V26RPMDu7vBbUmj" Bounds="400,381" />
               <Pad Id="OfGsKLGJB10NlBTPxtSfqx" SlotId="GAU9fI8V26RPMDu7vBbUmj" Bounds="421,612" />
               <ControlPoint Id="HHA9MAfCJTlNmWBlA0sZVD" Bounds="451,380" />
-              <Node Bounds="734,334,100,26" Id="VHVaoOSoGY4OQlNxCil5W7">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="734,334,100,19" Id="VHVaoOSoGY4OQlNxCil5W7">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" />
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetUIModelStream" />
                 </p:NodeReference>
                 <Pin Id="LIDlvkrcbypPWW0H3dPj2f" Name="Input" Kind="StateInputPin" />
@@ -1086,9 +1086,9 @@
                 <Pin Id="VEBFD2hRfoWP3Ao2G8u03G" Name="Keyframe" Kind="OutputPin" />
               </Node>
               <Node Bounds="456,495,345,26" Id="PXOgDBOSC7FNlet0GikGtV">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.Utils.ItemLayout" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" />
+                  <CategoryReference Kind="ClassType" Name="ItemLayout" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="Split" />
                 </p:NodeReference>
                 <Pin Id="DgSpymPGEAyOQhKVLNeNX4" Name="Input" Kind="StateInputPin" />
@@ -1117,7 +1117,7 @@
               <Pad Id="TMCTOgBtGzqORWDw7eRgAe" Bounds="640,559" />
               <Pad Id="VpO3S4oefZnMShzfzI3sXL" Bounds="780,559" />
               <Pad Id="Q3Levflx8TTMQBALn7nWdY" Bounds="801,559" />
-              <Node Bounds="222,633,951,315" Id="Jh8xl40bE6JOLRGvffFKts">
+              <Node Bounds="222,633,922,315" Id="Jh8xl40bE6JOLRGvffFKts">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
@@ -1201,14 +1201,15 @@
                     <Pin Id="DCQzdIrHPgYLFrivLe14ON" Name="Input" Kind="InputPin" />
                     <Pin Id="MhHMTwSuSvuMSyKBlX9tLu" Name="Output" Kind="StateOutputPin" />
                   </Node>
-                  <Node Bounds="401,693,122,19" Id="AhbQ11b70hHPJRGsRQEay5">
-                    <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+                  <Node Bounds="401,693,83,19" Id="AhbQ11b70hHPJRGsRQEay5">
+                    <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
+                      <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
                     </p:NodeReference>
                     <Pin Id="Ok9ZJ0z3zoYP8N4ZjgVKBB" Name="Node Context" Kind="InputPin" IsHidden="true" />
                     <Pin Id="BA4th4r7m6FNzJA49fbcKr" Name="Alpha" Kind="InputPin" />
                     <Pin Id="SbYEncdTtyCPV5aFElFnoM" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="Ftg36X5dMuxOrzKyyMVqTK" Name="Blending Model" Kind="InputPin" IsHidden="true" />
                   </Node>
                   <Node Bounds="872,731,146,26" Id="PuH3FVxQ2ThNe0Lhh4gb8B">
                     <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolator.Keyframe" LastDependency="VL.Kairos.Runtime.vl">
@@ -1235,15 +1236,6 @@
                     <Pin Id="CdKJoxvnsnPP0TQwCu4VbU" Name="Input" Kind="InputPin" />
                     <Pin Id="EyfKKH2aElNPrKhSAtLHTD" Name="Output" Kind="StateOutputPin" />
                   </Node>
-                  <Node Bounds="1039,693,122,19" Id="GlNngrjzMaRMZ1O6Bj8fUS">
-                    <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
-                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
-                    </p:NodeReference>
-                    <Pin Id="BaY75X3p6eNONF6WT9uBQ7" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                    <Pin Id="LSbBnNdvrn2MBO5oep0u0L" Name="Alpha" Kind="InputPin" />
-                    <Pin Id="Gpv41sW9TLfLQJfxDWTYP9" Name="Output" Kind="StateOutputPin" />
-                  </Node>
                   <Node Bounds="907,656,37,19" Id="KAnYzlXeTu1LCWj9nFYagX">
                     <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1257,6 +1249,16 @@
                       <Choice Kind="OperationCallFlag" Name="Zero" />
                     </p:NodeReference>
                     <Pin Id="C5CVHjU5QLKO6tkvv8ruaO" Name="Zero" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="1049,690,83,19" Id="TAxWD0kDxEdLs5aMSQePO6">
+                    <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
+                    </p:NodeReference>
+                    <Pin Id="QBMgD5L3rUzP1KAz9xMH05" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                    <Pin Id="QFA1n0u2pC1MVLMXabJMcm" Name="Alpha" Kind="InputPin" />
+                    <Pin Id="GdmpleFRkIGLcCUY71d1cf" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="T8YNHJoKCDuQCBuiiT92Vk" Name="Blending Model" Kind="InputPin" IsHidden="true" />
                   </Node>
                 </Patch>
               </Node>
@@ -1292,10 +1294,10 @@
                 <Patch Id="AuNR0TSqcDxNjjU1oyTjf2" ManuallySortedPins="true">
                   <Patch Id="LMTmB3nDdAeLRYi5LObMXe" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="GNcCTcQkaTgMNlNrHLX2gK" Name="Then" ManuallySortedPins="true" />
-                  <Node Bounds="792,1134,345,26" Id="By2XODRofzALLB53JfhFcA">
-                    <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+                  <Node Bounds="792,1134,345,19" Id="By2XODRofzALLB53JfhFcA">
+                    <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.Utils.ItemLayout" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" />
+                      <CategoryReference Kind="ClassType" Name="ItemLayout" NeedsToBeDirectParent="true" />
                       <Choice Kind="OperationCallFlag" Name="Split" />
                     </p:NodeReference>
                     <Pin Id="CN8n02BWvzXPCuMYqrrzGB" Name="Input" Kind="StateInputPin" />
@@ -1368,10 +1370,10 @@
                 </p:ValueBoxSettings>
               </Pad>
               <Pad Id="JU3nnq6aX2IPRaC99yHm1o" Bounds="512,390" />
-              <Node Bounds="1277,562,100,26" Id="C6MyjxOmXnxQXYt7WjfodH">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1277,562,100,19" Id="C6MyjxOmXnxQXYt7WjfodH">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" />
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetUIModelStream" />
                 </p:NodeReference>
                 <Pin Id="AtHelvdZPfmOWDCzWrLP8a" Name="Input" Kind="StateInputPin" />
@@ -1492,7 +1494,6 @@
             <Link Id="HKrFNrsEdDUP53TRnVmudw" Ids="BnbYbCudeNtPXRWjq3oeqz,Tfn1HG901LcLEVrIHw8kPe" />
             <Link Id="FUdT7PzzoboOaBzdcXNl2d" Ids="TnnHVRxRrahMrFSfU7MiKC,BnbYbCudeNtPXRWjq3oeqz" />
             <Link Id="H8wSWISeWRjLrdqF9WCGBX" Ids="SbYEncdTtyCPV5aFElFnoM,Qfj51IXJ9WZLeesVP2NL2R" />
-            <Link Id="Cy80fYHS008MWPbVwoAtVI" Ids="Gpv41sW9TLfLQJfxDWTYP9,DAgAbxQO3dzMQFY8Vj3G6E" />
             <Link Id="B6qhQpeEF6HPFvfs5tZo3i" Ids="LZoQFZWCUfJOQDH7cvUQie,CdKJoxvnsnPP0TQwCu4VbU" />
             <Link Id="L9oodQ3WQhDLNvlk8K5DsF" Ids="C5CVHjU5QLKO6tkvv8ruaO,DCQzdIrHPgYLFrivLe14ON" />
             <Link Id="Ob2NNMvG2WeL5gS3eurTv1" Ids="MhHMTwSuSvuMSyKBlX9tLu,CDMEUggJB8EM9HAf1HxkXp" />
@@ -1526,6 +1527,7 @@
             <Link Id="ISRaqjV9UWeO5cibMzqZ8S" Ids="JU3nnq6aX2IPRaC99yHm1o,CN8n02BWvzXPCuMYqrrzGB" />
             <Link Id="A4KEM7N59CuNiH1uztNnw1" Ids="AD1i3dNU2yHMuBzNlI3r27,AtHelvdZPfmOWDCzWrLP8a" />
             <Link Id="Es1xiXYg0YOMSIskgOWqbf" Ids="BqdqPCEbUhSOcSHkjanVqt,BaMdXg90O0KLtvIA3A3XdX" />
+            <Link Id="T8FiYKVAOthPbJ880gcl8n" Ids="GdmpleFRkIGLcCUY71d1cf,DAgAbxQO3dzMQFY8Vj3G6E" />
           </Patch>
         </Node>
         <Canvas Id="NM2DVR9LRUVOFRKgIGCwCW" Name="Utils" Position="1292,117">
@@ -1563,7 +1565,7 @@
                 <ControlPoint Id="V0sfCRXgmy9OF6BtHmNILH" Bounds="665,491" />
                 <ControlPoint Id="SbMUKmHgwaFMf8fiNCSU4w" Bounds="689,1064" />
                 <ControlPoint Id="MEbGB0z2JYYOUbpxuWBF2O" Bounds="763,1063" />
-                <Node Bounds="453,734,951,254" Id="PpwqMwYHVTRNMDy2ZAkR8y">
+                <Node Bounds="453,734,915,254" Id="PpwqMwYHVTRNMDy2ZAkR8y">
                   <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <CategoryReference Kind="Category" Name="Primitive" />
@@ -1610,14 +1612,15 @@
                       <Pin Id="M7mGu05bMFiPKCNvmywQbL" Name="Input" Kind="InputPin" />
                       <Pin Id="E5kWiSielqfNhLskAcH6Mc" Name="Output" Kind="StateOutputPin" />
                     </Node>
-                    <Node Bounds="632,897,122,19" Id="SjgHxQcbpUgQbjlo5eyfAW">
-                      <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+                    <Node Bounds="632,897,83,19" Id="SjgHxQcbpUgQbjlo5eyfAW">
+                      <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
+                        <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
                       </p:NodeReference>
                       <Pin Id="MTLWJIzhCHqO3rAoAo5R1W" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="DFRjUYWHvoxQckiEFIGMhA" Name="Alpha" Kind="InputPin" />
                       <Pin Id="LIHKRFDBglNLivVPbdsNfp" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="BQLbA5lJFTrN94rBPSYHiC" Name="Blending Model" Kind="InputPin" IsHidden="true" />
                     </Node>
                     <Node Bounds="1103,935,109,26" Id="AL2h7DTHZpWPNOaNhkAVJV">
                       <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolator.Keyframe" LastDependency="VL.Kairos.Runtime.vl">
@@ -1643,15 +1646,6 @@
                       <Pin Id="IFjNUxYZjGyNT8GJC8OEkC" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="L9HHEoscNfuPebHZum4LAk" Name="Input" Kind="InputPin" />
                       <Pin Id="GXu0hOJ54NBMv1ysyfchlz" Name="Output" Kind="StateOutputPin" />
-                    </Node>
-                    <Node Bounds="1270,897,122,19" Id="PtwGSWS7snZLggmlINTMtW">
-                      <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
-                      </p:NodeReference>
-                      <Pin Id="BZ14N2LHVEFOvVxAcV9jOA" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                      <Pin Id="JM8Qln7afOoOa6bnphKqLB" Name="Alpha" Kind="InputPin" />
-                      <Pin Id="LpsChHOOSuQMW0Kj6r3Qxz" Name="Output" Kind="StateOutputPin" />
                     </Node>
                     <Node Bounds="1138,860,37,19" Id="UzPuzveF842NHC8Ox2BzTx">
                       <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
@@ -1690,6 +1684,16 @@
                       <Pin Id="L9nh2CgMztwMjJLNHUAd4j" Name="Bottom" Kind="OutputPin" />
                       <Pin Id="OiKVWeTduMmLlklsqDqum3" Name="Left" Kind="OutputPin" />
                       <Pin Id="BaExs2TVjSTN7WlHsSBDx4" Name="Right" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="1273,900,83,19" Id="Fpis6a9YV8YNkQEMxXk3IQ">
+                      <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
+                      </p:NodeReference>
+                      <Pin Id="BWSWVABwNJVLZGOvCqER7c" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                      <Pin Id="K9LISNA70nCMHrCIM3NxvD" Name="Alpha" Kind="InputPin" />
+                      <Pin Id="Mo0M7nNkWFnP6lbMQV7mgC" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="NJ8yavbFp7qPe1heMwQhzP" Name="Blending Model" Kind="InputPin" IsHidden="true" />
                     </Node>
                   </Patch>
                 </Node>
@@ -1838,7 +1842,6 @@
               </Patch>
               <Link Id="A1Xv8MZO6uaOyE6Zjc6d9r" Ids="MEbGB0z2JYYOUbpxuWBF2O,CxB73Clm2BPNzOtmy2Kmlx" IsHidden="true" />
               <Link Id="N9IeycNpiyXPPrfh3LShDq" Ids="LIHKRFDBglNLivVPbdsNfp,R9rGJaWzE3jOr9IJp9n73G" />
-              <Link Id="VPImTVmcKCINHlRehIvOEN" Ids="LpsChHOOSuQMW0Kj6r3Qxz,SPidgj2xBeAOamfElQ2TmF" />
               <Link Id="JsxEAjrmBZbL4xadnyEPte" Ids="BS9RjNxz9mLMbRBK1p6TY1,L9HHEoscNfuPebHZum4LAk" />
               <Link Id="QoQMNPUnHwkLrh0KrcTwO4" Ids="LtCJmArzySOPEHOFOgc7ua,M7mGu05bMFiPKCNvmywQbL" />
               <Link Id="SWZz92AiaMMLY70VmRMELr" Ids="E5kWiSielqfNhLskAcH6Mc,BnZIQMVkAKuQN91YMkwsRe" />
@@ -1891,6 +1894,7 @@
               <Link Id="G1QfyTDGw5bPokNqM4jJAO" Ids="OjgDwqjRCFbMgRvakwvfTa,Gc53XcTtgyjMKXVCr8GgCw" IsHidden="true" />
               <Link Id="VOI2E3xSY22LbMbTOqLply" Ids="VLOmHVJTgG4NKR8bt94jVb,VAdOvYcyLdoMZuDmeFhH8L" />
               <Link Id="Jo7K31gaUG7L5erpX8lMrO" Ids="OjgDwqjRCFbMgRvakwvfTa,VLOmHVJTgG4NKR8bt94jVb" IsHidden="true" />
+              <Link Id="NhRje1iEwNEONkqjLqE6Ux" Ids="Mo0M7nNkWFnP6lbMQV7mgC,SPidgj2xBeAOamfElQ2TmF" />
             </Patch>
           </Node>
           <!--
@@ -3727,10 +3731,10 @@
                   <Pin Id="OLmUOj8k6CnN4zpAnTYno4" Name="Input" Kind="InputPin" />
                   <Pin Id="TvYm1J0uFRiPwrw1uUnKhn" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="364,132,345,26" Id="Tc8gRcI7azeOU9BCTzH8Vz">
-                  <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+                <Node Bounds="364,132,345,19" Id="Tc8gRcI7azeOU9BCTzH8Vz">
+                  <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.Utils.ItemLayout" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" />
+                    <CategoryReference Kind="ClassType" Name="ItemLayout" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Split" />
                   </p:NodeReference>
                   <Pin Id="GjivYnvXiktLXZuNa2l5PB" Name="Input" Kind="StateInputPin" />
@@ -3825,14 +3829,15 @@
                       <Pin Id="RFDSI7uMpjRMxH1kflFhCA" Name="Bottom" Kind="InputPin" />
                       <Pin Id="RJ4atD3AbnZPzwiJvjwNQy" Name="Top" Kind="InputPin" />
                     </Node>
-                    <Node Bounds="556,392,122,19" Id="Ft4Qy0jEg0ZPAoq22emgIV">
-                      <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+                    <Node Bounds="556,392,83,19" Id="Ft4Qy0jEg0ZPAoq22emgIV">
+                      <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
+                        <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
                       </p:NodeReference>
                       <Pin Id="NsfdprztNYWPtoJfmzgTMP" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="GXCpeKfKYCIOaws8BdZP5L" Name="Alpha" Kind="InputPin" />
                       <Pin Id="M5L14h9hP5QPPASiybB4xH" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="KkXX58kYIWVOFMBnFpnTyG" Name="Blending Model" Kind="InputPin" IsHidden="true" />
                     </Node>
                     <Node Bounds="753,434,117,19" Id="CRSqp8pAxqFPs69aN3obMe">
                       <p:NodeReference LastCategoryFullName="LayerX.Background" LastDependency="VL.Kairos.Runtime.vl">
@@ -4454,10 +4459,10 @@
                       <Pin Id="Gqz1iNnPxlzP1lboAKOKt0" Name="Input 2" Kind="InputPin" />
                       <Pin Id="C6E5LDVRIWrPW352eAe1tW" Name="Output" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="191,330,106,26" Id="EMsvJmGmiW5Lj2XkUSCBod">
-                      <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+                    <Node Bounds="191,330,106,19" Id="EMsvJmGmiW5Lj2XkUSCBod">
+                      <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.Utils.ItemLayout" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" />
+                        <CategoryReference Kind="ClassType" Name="ItemLayout" NeedsToBeDirectParent="true" />
                         <Choice Kind="OperationCallFlag" Name="SetPositionDuration" />
                       </p:NodeReference>
                       <Pin Id="G927zu2eNI0QHjZagnFWNc" Name="Input" Kind="StateInputPin" />
@@ -4508,10 +4513,10 @@
                 <ControlPoint Id="B2mpIsPvpp6LGeg0oRpIig" Bounds="403,420" />
                 <ControlPoint Id="En7tUEGXZuZP9Dio41JIkn" Bounds="340,517" />
                 <ControlPoint Id="Az4l1WQG5zyNvdCGkiJ9z2" Bounds="340,600" />
-                <Node Bounds="191,540,152,26" Id="EC4zCPkpcLYNPj0xVEXKKR">
-                  <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+                <Node Bounds="191,540,152,19" Id="EC4zCPkpcLYNPj0xVEXKKR">
+                  <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.Utils.ItemLayout" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" />
+                    <CategoryReference Kind="ClassType" Name="ItemLayout" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Layout" />
                   </p:NodeReference>
                   <Pin Id="O0eQnkfxAjjLaTbdjG9EQd" Name="Input" Kind="StateInputPin" />
@@ -4689,14 +4694,15 @@
                         <Pin Id="JCgOOIFzVbzOdifSD8YKjL" Name="Input" Kind="InputPin" />
                         <Pin Id="R1NbsT0RpLdQL7xmMEmz9h" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="2024,1334,122,19" Id="JFxyskZ5NkTQavejnqqOni">
-                        <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+                      <Node Bounds="2024,1334,83,19" Id="JFxyskZ5NkTQavejnqqOni">
+                        <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
+                          <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
                         </p:NodeReference>
                         <Pin Id="IVBIVQ2Zi5SPWyXAxXF8P5" Name="Node Context" Kind="InputPin" IsHidden="true" />
                         <Pin Id="MOBZteXMfToPvZRRFOI9vV" Name="Alpha" Kind="InputPin" />
                         <Pin Id="N2UGQwWNd5MPxsGBtiZknD" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="Oea9HyjFkbiPYCTaCPkkUw" Name="Blending Model" Kind="InputPin" IsHidden="true" />
                       </Node>
                       <Node Bounds="1972,1263,37,19" Id="Q4fFXNkrW7kMYhLOnjkxe7">
                         <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
@@ -4740,10 +4746,10 @@
                       </Node>
                     </Patch>
                   </Node>
-                  <Node Bounds="1535,1184,345,26" Id="GSrXHe7x8bpN4KTgt08D6q">
-                    <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+                  <Node Bounds="1535,1184,345,19" Id="GSrXHe7x8bpN4KTgt08D6q">
+                    <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.Utils.ItemLayout" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" />
+                      <CategoryReference Kind="ClassType" Name="ItemLayout" NeedsToBeDirectParent="true" />
                       <Choice Kind="OperationCallFlag" Name="Split" />
                     </p:NodeReference>
                     <Pin Id="DGqky2E4DIMOe3KiydnY6n" Name="Input" Kind="StateInputPin" />
@@ -4998,10 +5004,10 @@
                     <Pin Id="PuGAM82WI1gLzzVo4kCltx" Name="Input 2" Kind="InputPin" />
                     <Pin Id="HwdORyFRPiJPF0s8NK8lXE" Name="Output" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="281,862,106,26" Id="EkiX5fkBB6lMbE1iyja1ba">
-                    <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+                  <Node Bounds="281,862,106,19" Id="EkiX5fkBB6lMbE1iyja1ba">
+                    <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.Utils.ItemLayout" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" />
+                      <CategoryReference Kind="ClassType" Name="ItemLayout" NeedsToBeDirectParent="true" />
                       <Choice Kind="OperationCallFlag" Name="SetPositionDuration" />
                     </p:NodeReference>
                     <Pin Id="Qggie2khEmEOB7mXcBQfUJ" Name="Input" Kind="StateInputPin" />
@@ -5037,10 +5043,10 @@
                 <Pin Id="ExjswHIxVxCP8kjDlAGPqY" Name="KeyframeInterpolatorUI" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="J8zRAKgLx4FLbvu7L1BcUn" Bounds="789,695" />
-              <Node Bounds="281,1028,105,26" Id="RYRpX6ubSUdQDNNDyOKRv5">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="281,1028,105,19" Id="RYRpX6ubSUdQDNNDyOKRv5">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.Utils.ItemLayout" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" />
+                  <CategoryReference Kind="ClassType" Name="ItemLayout" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="Layout" />
                 </p:NodeReference>
                 <Pin Id="Hf6r5qX6j0ELG0koZMf9cA" Name="Input" Kind="StateInputPin" />
@@ -5060,10 +5066,10 @@
                 <Pin Id="Vq2UyROpDqXQdbKIJ9enZf" Name="Node Context" Kind="InputPin" IsHidden="true" />
               </Node>
               <Pad Id="SQhRHphTNOUNuC7iD2wxsq" Bounds="215,1270" />
-              <Node Bounds="213,1325,140,26" Id="VChUVJabNyWMVIONM7UHQV">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.InterpolationUI.Utils.SampleTrackSectionAndDrawValue" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="213,1325,140,19" Id="VChUVJabNyWMVIONM7UHQV">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.InterpolationUI.Utils.SampleTrackSectionAndDrawValue" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.InterpolationUI.Utils.SampleTrackSectionAndDrawValue" />
+                  <CategoryReference Kind="ClassType" Name="SampleTrackSectionAndDrawValue" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="Layout" />
                 </p:NodeReference>
                 <Pin Id="O3TqjanLDGxO4tI9EXFHVK" Name="Input" Kind="StateInputPin" />
@@ -5072,10 +5078,10 @@
                 <Pin Id="HxMYAImMufIPeinbsu3jfL" Name="Apply" Kind="InputPin" />
               </Node>
               <Pad Id="JlylS4vyNbtOvANhcz6Jtc" SlotId="CWAyTYdwvOZLPzos0Tabt2" Bounds="383,1085" />
-              <Node Bounds="633,1325,516,26" Id="VE246fASjfoNxFFWtGHVXe">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.InterpolationUI.Utils.SampleTrackSectionAndDrawValue" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="633,1325,516,19" Id="VE246fASjfoNxFFWtGHVXe">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.InterpolationUI.Utils.SampleTrackSectionAndDrawValue" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.InterpolationUI.Utils.SampleTrackSectionAndDrawValue" />
+                  <CategoryReference Kind="ClassType" Name="SampleTrackSectionAndDrawValue" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="Draw" />
                 </p:NodeReference>
                 <Pin Id="MbbLy5Je0pNPAGuIcsMhBS" Name="Input" Kind="StateInputPin" />
@@ -5107,10 +5113,10 @@
                 <Patch Id="TBu78ZpfsjsQTv2TipseSi" ManuallySortedPins="true">
                   <Patch Id="Q1mevdUJAA1PWovShFQ0j1" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="AkJye0xkr0TPmuXeZXjYOZ" Name="Then" ManuallySortedPins="true" />
-                  <Node Bounds="798,1543,345,26" Id="VgXzoy598BxNl8QF1Km7fR">
-                    <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+                  <Node Bounds="798,1543,345,19" Id="VgXzoy598BxNl8QF1Km7fR">
+                    <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.Utils.ItemLayout" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" />
+                      <CategoryReference Kind="ClassType" Name="ItemLayout" NeedsToBeDirectParent="true" />
                       <Choice Kind="OperationCallFlag" Name="Split" />
                     </p:NodeReference>
                     <Pin Id="AJGBiYqNDQgQOqWYhFOvXQ" Name="Input" Kind="StateInputPin" />
@@ -5182,20 +5188,20 @@
                   <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Node Bounds="952,758,100,26" Id="Fk63YvYpKyvP89QkngN51x">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="952,758,100,19" Id="Fk63YvYpKyvP89QkngN51x">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" />
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetUIModelStream" />
                 </p:NodeReference>
                 <Pin Id="KoLfA2N1k5CN2sq8aMrJH0" Name="Input" Kind="StateInputPin" />
                 <Pin Id="Bmza00Xz5Y5L4HXzFua9WE" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="BPLeucYmiKDLwOyk4K8BNL" Name="UI Model Stream" Kind="OutputPin" />
               </Node>
-              <Node Bounds="787,759,100,26" Id="Okr6xK45GesQdthliPbHzV">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="787,759,100,19" Id="Okr6xK45GesQdthliPbHzV">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" />
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetUIModelStream" />
                 </p:NodeReference>
                 <Pin Id="Om7ergiVMkpMzdjK6x1ByD" Name="Input" Kind="StateInputPin" />
@@ -5624,9 +5630,9 @@
                 <Pin Id="KyW5TdG9XkiLxvbgjt68yh" Name="Result" Kind="OutputPin" />
               </Node>
               <Node Bounds="441,497,345,26" Id="BMzUGQGj5XFMWQ4Eu4P2Oa">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.Utils.ItemLayout" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.Utils.ItemLayout" />
+                  <CategoryReference Kind="ClassType" Name="ItemLayout" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="Split" />
                 </p:NodeReference>
                 <Pin Id="OwKGKc59TyzLEeNFvTs0Rf" Name="Input" Kind="StateInputPin" />
@@ -5720,15 +5726,6 @@
                     <Pin Id="Dhur51xboRtLAIphgd2ii5" Name="Bottom" Kind="InputPin" />
                     <Pin Id="HgtCT0B9ztrLD2hsA0EBXC" Name="Top" Kind="InputPin" />
                   </Node>
-                  <Node Bounds="633,757,122,19" Id="OIDxTTbu6ZuPjexqJi5JJl">
-                    <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
-                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
-                    </p:NodeReference>
-                    <Pin Id="PMdTTNb8zENMhVDHGuy5or" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                    <Pin Id="OMfxQOrrCVRPxOxD5Nbn32" Name="Alpha" Kind="InputPin" />
-                    <Pin Id="OVWO4kvcemSP1U19sYCvdg" Name="Output" Kind="StateOutputPin" />
-                  </Node>
                   <Node Bounds="806,804,117,19" Id="L4bAVq2NPVBLKrQX0soE8T">
                     <p:NodeReference LastCategoryFullName="LayerX.Background" LastDependency="VL.Kairos.Runtime.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -5744,6 +5741,16 @@
                       <Choice Kind="OperationCallFlag" Name="Zero" />
                     </p:NodeReference>
                     <Pin Id="Ex8DUp2ufGAOfAXNBcMSQc" Name="Zero" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="646,760,83,19" Id="K8g4tcVi5SNQQV4AuyMNDx">
+                    <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
+                    </p:NodeReference>
+                    <Pin Id="RsIPjhB8dnWNGvBIpsO05S" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                    <Pin Id="DPKptEgBZjqMNVjp7oGBz4" Name="Alpha" Kind="InputPin" />
+                    <Pin Id="ETehze6nQdgM1DtbjKpXM7" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="Qd3qVxY6J28OmKR2QcJKuC" Name="Blending Model" Kind="InputPin" IsHidden="true" />
                   </Node>
                 </Patch>
                 <ControlPoint Id="Ix8f6ZagG4dPt7Ks6K8S1u" Bounds="856,1054" Alignment="Bottom" />
@@ -6068,10 +6075,10 @@
               <Pad Id="PFac0i9rzVqNkoPgvuOlaJ" SlotId="JfPoOGxBbpiPtzzzIDdOYg" Bounds="150,256" />
               <Pad Id="T6gvof3LPuvMV7SGPN8uYl" SlotId="JfPoOGxBbpiPtzzzIDdOYg" Bounds="1864,851" />
               <ControlPoint Id="DVhpOJ6eqAJQNtipQc9xfi" Bounds="651,386" />
-              <Node Bounds="1349,450,100,26" Id="DngFkvAWTMrNZhWbkrxOpz">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1349,450,100,19" Id="DngFkvAWTMrNZhWbkrxOpz">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" />
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetUIModelStream" />
                 </p:NodeReference>
                 <Pin Id="NDVq1ZaPJcMOJe8ATxMBxg" Name="Input" Kind="StateInputPin" />
@@ -6201,7 +6208,6 @@
             <Link Id="J3GN4iIePZnQJROrhh3wX2" Ids="GZ6IZsjQA1BLAYNzJa9Dw2,Dhur51xboRtLAIphgd2ii5" />
             <Link Id="CIDXtTBn9RFO6zRLs4zdCz" Ids="P5VcXZAW0nbPJCnWY0Zrdd,HgtCT0B9ztrLD2hsA0EBXC" />
             <Link Id="SpvLVeKCDTLOx9Q7mk2CLn" Ids="N0dxuefYNGyM8JUViSPwdn,G5BaKcg6jraM6z71DwIiUx" />
-            <Link Id="MXa17Ty3cnkOsMl11fQZO7" Ids="OVWO4kvcemSP1U19sYCvdg,Dta5PZXeQSSNOSKP7G5qhN" />
             <Link Id="JNQ38MBFqPTNNOFJIgvh08" Ids="SZiNBqP7xpENdkys7B9rPl,GDYQYg4opSMLYScnw7UvLC" />
             <Link Id="G4gCTZZC3y0LgSFq9z5Ywp" Ids="I2N4F64Kq7iMG60cH7onSH,InMETTEDjyZM5U29eevE6U" />
             <Link Id="T2gpe1M8PkVLzwWsdug9HD" Ids="KD43YFQO91OL9RBYqvFhKe,SZiNBqP7xpENdkys7B9rPl" />
@@ -6309,6 +6315,7 @@
             <Link Id="Uwndul0XYc0O4MwbYpmhCV" Ids="DVhpOJ6eqAJQNtipQc9xfi,DbcKiegPZfVM2e84ml3q07" IsHidden="true" />
             <Link Id="VEOLg6Pl0B1ME77qvtSxEL" Ids="FUpph7nZwjDMPI0ZDTEawK,NDVq1ZaPJcMOJe8ATxMBxg" />
             <Link Id="TrZ7OnLVVoiNuV05kS7nxs" Ids="OqbyDIWUQ35P6KpPqH9h73,FzSPkR3WzBhPR3QTnyl4Ll" />
+            <Link Id="Rr4mTNoNuzBOGF6l17SNbQ" Ids="ETehze6nQdgM1DtbjKpXM7,Dta5PZXeQSSNOSKP7G5qhN" />
           </Patch>
         </Node>
         <!--
@@ -10801,9 +10808,9 @@
                     <Pin Id="A611RhetSkuQb3Gk9Il0SC" Name="Output" Kind="OutputPin" />
                     <ControlPoint Id="ES4SF3PSgY5Ntq67K1bW4c" Bounds="1930,181" />
                     <Node Bounds="1660,169,72,26" Id="LAtlTqP9d9APw92ED2tb5t">
-                      <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolator.KeyframeModel" LastDependency="VL.Kairos.Runtime.vl">
+                      <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.KeyframeModel" LastDependency="VL.Kairos.Runtime.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <FullNameCategoryReference ID="LayerX.KeyframeInterpolator.KeyframeModel" />
+                        <CategoryReference Kind="RecordType" Name="KeyframeModel" NeedsToBeDirectParent="true" />
                         <Choice Kind="OperationCallFlag" Name="SetDuration" />
                       </p:NodeReference>
                       <Pin Id="KhdVlEHhMKLNsDJeEZRlWv" Name="Input" Kind="StateInputPin" />
@@ -12345,14 +12352,15 @@
                 <Pin Id="BDMkP9jXBGxMxhizfnnuZh" Name="Input" Kind="InputPin" />
                 <Pin Id="S7e9vXGPXClN7MtYXc4bSV" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="503,618,122,19" Id="FoYGrhdxpb0OtOt4DtJd5x">
-                <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+              <Node Bounds="503,618,83,19" Id="FoYGrhdxpb0OtOt4DtJd5x">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
+                  <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
                 </p:NodeReference>
                 <Pin Id="ABYiPZ82yPmPbRiBhyRgmL" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="PUCGvzf5r15OcBLZt3qziw" Name="Alpha" Kind="InputPin" />
                 <Pin Id="REUY7KFVSHlL7aHBNMg7nL" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="CrTEL2RXnuoNrCnb4bqICC" Name="Blending Model" Kind="InputPin" IsHidden="true" />
               </Node>
               <Node Bounds="434,479,37,19" Id="Qxsn5fKFoy3NcHNAVoYcdH">
                 <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
@@ -12737,12 +12745,10 @@
               <ControlPoint Id="RvGDr8iWTHYMKoyfSx7LDe" Bounds="669,184" />
               <ControlPoint Id="LP9DhrBab62NKMg6bTYoN7" Bounds="327,168" />
               <Pad Id="J5iHw2PtGYTQJSr3IJgu0U" SlotId="NQvQNQYuIxBNqsYLqLqorL" Bounds="327,231" />
-              <Node Bounds="564,488,99,26" Id="UQefhuctHP1PFWHMtzvMng">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.KairosUI.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="564,488,99,19" Id="UQefhuctHP1PFWHMtzvMng">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true">
-                    <p:OuterCategoryReference Kind="Category" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
-                  </CategoryReference>
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetLayerContext" />
                 </p:NodeReference>
                 <Pin Id="RIs22Gxg2PCMLPcr9M6qpa" Name="Input" Kind="StateInputPin" />
@@ -12797,10 +12803,10 @@
                 <ControlPoint Id="HXG7U9sMvunQbEg0pRqQB6" Bounds="924,804" Alignment="Bottom" />
               </Node>
               <ControlPoint Id="DaxEPR4jmG5LgaZFDJUV1i" Bounds="808,570" />
-              <Node Bounds="807,593,100,26" Id="S6oD1dC1t1pPdL4OPPbtZe">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="807,593,100,19" Id="S6oD1dC1t1pPdL4OPPbtZe">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" />
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetUIModelStream" />
                 </p:NodeReference>
                 <Pin Id="LCvZ1yRFciuNnxER3jbHm9" Name="Input" Kind="StateInputPin" />
@@ -13699,14 +13705,15 @@
                 <Pin Id="BXYMcDCemkqPiFGh6efL5b" Name="Input" Kind="InputPin" />
                 <Pin Id="J50PaKUJYyPLRcWAOLNctS" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="1390,794,122,19" Id="De6rKkkkI36Munk0UxUXIB">
-                <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+              <Node Bounds="1378,800,83,19" Id="De6rKkkkI36Munk0UxUXIB">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
+                  <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
                 </p:NodeReference>
                 <Pin Id="PbvPetOQmDwNOb6U6y8XD5" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="VX62u3kTHglOB7jFWAGQdO" Name="Alpha" Kind="InputPin" />
                 <Pin Id="S61yvEu0HbmNkgcBTDbvx8" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="G3Nvar9E4Q2MNNXEY7v9v4" Name="Blending Model" Kind="InputPin" IsHidden="true" />
               </Node>
               <ControlPoint Id="NSJ00jXdH98MdHygjqGczO" Bounds="513,1598" />
               <Node Bounds="1321,725,37,19" Id="A34YPh5rPJCOPNBM3E5Reh">
@@ -14400,12 +14407,10 @@
                 <ControlPoint Id="VIs6vYDJHjGOmbo701uSXJ" Bounds="1222,1214" Alignment="Bottom" />
               </Node>
               <ControlPoint Id="JhhXNh3bcv9O5ojv1IhuO9" Bounds="1106,980" />
-              <Node Bounds="1106,788,99,26" Id="DLqOYuenLA6O7QtIalK3V0">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.KairosUI.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1106,788,99,19" Id="DLqOYuenLA6O7QtIalK3V0">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true">
-                    <p:OuterCategoryReference Kind="Category" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
-                  </CategoryReference>
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetLayerContext" />
                 </p:NodeReference>
                 <Pin Id="DZppgpOJLpyNIs6s9hXHEr" Name="Input" Kind="StateInputPin" />
@@ -14413,10 +14418,10 @@
                 <Pin Id="NUtnJtQwLSnMWw06iRryWM" Name="Layer Context" Kind="OutputPin" />
               </Node>
               <Pad Id="LPU8rQUl8vaN7PeMC1Gq6Q" SlotId="QisSI2wkHIZLHVkDIxXxqp" Bounds="1108,765" />
-              <Node Bounds="1104,1001,100,26" Id="SArg1ZFM5FePL3xqnd9s01">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1104,1001,100,19" Id="SArg1ZFM5FePL3xqnd9s01">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" />
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetUIModelStream" />
                 </p:NodeReference>
                 <Pin Id="HJvBoDdBhHtN949NaTuxtl" Name="Input" Kind="StateInputPin" />
@@ -15114,10 +15119,10 @@
                 <ControlPoint Id="Qv1ZTIvCO9qL0ZAD1lmLMU" Bounds="884,710" Alignment="Bottom" />
               </Node>
               <ControlPoint Id="DB6xCLtTnsmLNNmwlGPha2" Bounds="768,476" />
-              <Node Bounds="766,497,100,26" Id="NYJTsuKDenZLUa0fxfM8NS">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="766,497,100,19" Id="NYJTsuKDenZLUa0fxfM8NS">
+                <p:NodeReference LastCategoryFullName="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" />
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetUIModelStream" />
                 </p:NodeReference>
                 <Pin Id="N1UZCeL8BRWNsE0GFUcXsm" Name="Input" Kind="StateInputPin" />
@@ -15549,8 +15554,9 @@
                         <Pin Id="IkNCk6hHbmLLEgG06JONkV" Name="Value" Kind="InputPin" />
                       </Node>
                       <Node Bounds="1325,1176,82,26" Id="JibsxiZ91XzOspLTSMQZ62">
-                        <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolator.KeyframeModel" LastDependency="VL.Kairos.Runtime.vl">
+                        <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.KeyframeModel" LastDependency="VL.Kairos.Runtime.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="RecordType" Name="KeyframeModel" NeedsToBeDirectParent="true" />
                           <Choice Kind="OperationCallFlag" Name="SetLayerModel" />
                         </p:NodeReference>
                         <Pin Id="JzHy6QlKUzeM8ec4UVaNjx" Name="Input" Kind="StateInputPin" />
@@ -15834,10 +15840,10 @@
               <Pad Id="UOL5wfUKv1oMf2NBpfOliz" Comment="Hovered or Moving" Bounds="686,1458,35,35" ShowValueBox="true" isIOBox="true" />
               <Pad Id="DBSFf7Mx9h2NlYDOgYxodg" Comment="Selected" Bounds="820,1487,35,35" ShowValueBox="true" isIOBox="true" />
               <Pad Id="EmghumyMaLvPWYuLAMke4C" Comment="Is Active" Bounds="944,1497,35,35" ShowValueBox="true" isIOBox="true" />
-              <Node Bounds="1653,637,100,26" Id="Raqp1SWAIiKPlCrV2tii4z">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1653,637,100,19" Id="Raqp1SWAIiKPlCrV2tii4z">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" />
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetUIModelStream" />
                 </p:NodeReference>
                 <Pin Id="DvwDq7X3ZnSN1qz9hMc3eQ" Name="Input" Kind="StateInputPin" />
@@ -17517,14 +17523,15 @@
                 <Pin Id="TiuOOpLEr8dPS3sCKo9C8L" Name="Input" Kind="InputPin" />
                 <Pin Id="Q26TBNctQjcP8DOzawEG1D" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="1118,848,122,19" Id="UgDj7U1lFVxM3arsntclKD">
-                <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+              <Node Bounds="1118,848,83,19" Id="UgDj7U1lFVxM3arsntclKD">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
+                  <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
                 </p:NodeReference>
                 <Pin Id="Eeh60f6QSbyNROLh1qwk9v" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="CAvQJvP68YAOIjie226kjt" Name="Alpha" Kind="InputPin" />
                 <Pin Id="D6InNhjPSGyNy4CQVfK13V" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="DngMPfLoD1YLJ3YyfljKwi" Name="Blending Model" Kind="InputPin" IsHidden="true" />
               </Node>
               <Pad Id="VBAQzJlEBGBNfcpUTHiLIa" SlotId="HqoaSohOaLWNAwaMSCncuN" Bounds="878,806" />
               <ControlPoint Id="Qztnz4XT6FNPIzQkQkKPju" Bounds="513,1598" />
@@ -18007,12 +18014,10 @@
                 <ControlPoint Id="GtRU5RUFAxsMqdD8mS8o62" Bounds="1432,1186" Alignment="Bottom" />
               </Node>
               <ControlPoint Id="NeeC0cWRoWDPgX3WAlHppY" Bounds="1316,952" />
-              <Node Bounds="1144,1006,99,26" Id="SFRW7V4zcTzNXPGohxTJPq">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.KairosUI.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1144,1006,99,19" Id="SFRW7V4zcTzNXPGohxTJPq">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true">
-                    <p:OuterCategoryReference Kind="Category" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
-                  </CategoryReference>
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetLayerContext" />
                 </p:NodeReference>
                 <Pin Id="Cw2ayJjhjJHQRzQx0ZfDWc" Name="Input" Kind="StateInputPin" />
@@ -18020,10 +18025,10 @@
                 <Pin Id="S7gp8Ldkz4dM7O8ArJQVO3" Name="Layer Context" Kind="OutputPin" />
               </Node>
               <Pad Id="PThJbncFhPtPQLMQZm52kz" SlotId="HAZ9iEcA3I9PJJwIUyNuIq" Bounds="1146,983" />
-              <Node Bounds="1314,973,100,26" Id="CDWu0ZadOOSMN4RUHIGeZt">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1314,973,100,19" Id="CDWu0ZadOOSMN4RUHIGeZt">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" />
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetUIModelStream" />
                 </p:NodeReference>
                 <Pin Id="EbFLn7Z40HZNCqkFoVcyz2" Name="Input" Kind="StateInputPin" />
@@ -19904,14 +19909,15 @@
                 <Pin Id="Uej07nSDsjzPXm8ACFADpN" Name="Input" Kind="InputPin" />
                 <Pin Id="FDXXJ2CKpX8Mn8tkrqXYyr" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="1580,654,122,19" Id="GbhhFeWZ6b9LzQvdA8uqJF">
-                <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+              <Node Bounds="1580,654,83,19" Id="GbhhFeWZ6b9LzQvdA8uqJF">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
+                  <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
                 </p:NodeReference>
                 <Pin Id="SJvc0CiM81INJfuR6E2RY4" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="JYzRb6lDZTNORjYyDiEh7o" Name="Alpha" Kind="InputPin" />
                 <Pin Id="JhnxFA8rNYaMmgmmmfe7dU" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="OaRu9ubmMQyNP5DQdcQNzG" Name="Blending Model" Kind="InputPin" IsHidden="true" />
               </Node>
               <Node Bounds="1511,515,37,19" Id="QSbrNcCVQBOMxwqomipbyB">
                 <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
@@ -20007,12 +20013,10 @@
               <ControlPoint Id="N0nQu02byMSL9yn9x37bhz" Bounds="703,189" />
               <ControlPoint Id="DqgUor3wCTZNGVpaaZKxjk" Bounds="360,170" />
               <Pad Id="FptdVY3IiP0LgXqtiga37z" SlotId="MnwlX5IfeyEPVoU1t9sdqn" Bounds="360,233" />
-              <Node Bounds="1673,617,99,26" Id="OwT0aogATSiPSgk012hnnk">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.KairosUI.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1673,617,99,19" Id="OwT0aogATSiPSgk012hnnk">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true">
-                    <p:OuterCategoryReference Kind="Category" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
-                  </CategoryReference>
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetLayerContext" />
                 </p:NodeReference>
                 <Pin Id="HVZDhyx6MNsMh5pNeYyR7x" Name="Input" Kind="StateInputPin" />
@@ -20430,14 +20434,15 @@
                 <Pin Id="RxnQVc8UyCkNOGsrwhEAl8" Name="Input" Kind="InputPin" />
                 <Pin Id="PI53Ec5mjy5PAf70vKw9aW" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="1858,888,122,19" Id="D0JgE1iKlnNNmqtcQIiWxA">
-                <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+              <Node Bounds="1858,888,83,19" Id="D0JgE1iKlnNNmqtcQIiWxA">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
+                  <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
                 </p:NodeReference>
                 <Pin Id="VuvhKcNUt9lN8UEtyFNZE6" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="NqNAbvke8VSOGcryMAjZvj" Name="Alpha" Kind="InputPin" />
                 <Pin Id="VR4PC95ZJcsMusq4CcYcmY" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="J6TugEC2z33NVB9wKFNhGL" Name="Blending Model" Kind="InputPin" IsHidden="true" />
               </Node>
               <Node Bounds="1833,811,37,19" Id="Vk66Szf8wy7OWOs0WEyj47">
                 <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
@@ -20817,12 +20822,10 @@
               <ControlPoint Id="A692Kcd0cLFM25XLnEptiS" Bounds="703,200" />
               <ControlPoint Id="P8nO6z09Lr6N59TdMDMp3y" Bounds="359,175" />
               <Pad Id="LnZOrlAnc9tPfS83wkBUaS" SlotId="M8bX2blmO69MMw9jNwFsxb" Bounds="359,238" />
-              <Node Bounds="2087,893,99,26" Id="Go4qEE2S7hHOFdeTdpXCCF">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.KairosUI.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="2087,893,99,19" Id="Go4qEE2S7hHOFdeTdpXCCF">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true">
-                    <p:OuterCategoryReference Kind="Category" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
-                  </CategoryReference>
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetLayerContext" />
                 </p:NodeReference>
                 <Pin Id="BkqvgqOX8kwPtft9EKtgy8" Name="Input" Kind="StateInputPin" />
@@ -21274,14 +21277,15 @@
                 <Pin Id="DXCYcd5D1rqODSnBZLovYr" Name="Input" Kind="InputPin" />
                 <Pin Id="Qq3BiTVdrS4NysxeaHFJ8p" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="1438,888,122,19" Id="AcwsyiYzEIhPTNVo9Y0KAQ">
-                <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+              <Node Bounds="1438,888,83,19" Id="AcwsyiYzEIhPTNVo9Y0KAQ">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
+                  <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
                 </p:NodeReference>
                 <Pin Id="U7YUEsEEiZKLlQg2rGekGn" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="KoRkQsE72W4QAbkcbxwP9z" Name="Alpha" Kind="InputPin" />
                 <Pin Id="My3R7JIyAh4NNsz9bAw80s" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="PSHBUxTNzuuN9tOiUvDR6g" Name="Blending Model" Kind="InputPin" IsHidden="true" />
               </Node>
               <Node Bounds="1413,811,37,19" Id="FpIq7V7LqI7OrdSofB2kAk">
                 <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
@@ -21628,12 +21632,10 @@
               <ControlPoint Id="JgO5BZlsB0YQA5VWbjLESA" Bounds="701,194" />
               <ControlPoint Id="D2tN2ghxp2MNmqdO3oMur3" Bounds="359,171" />
               <Pad Id="M0tln4dZ5MxOzCWy9CECTw" SlotId="HtFQSEyoaxdMSkUVVvlbVd" Bounds="359,234" />
-              <Node Bounds="1655,894,99,26" Id="F4K7eoDcf7sNWE08WKkCix">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.KairosUI.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1655,894,99,19" Id="F4K7eoDcf7sNWE08WKkCix">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true">
-                    <p:OuterCategoryReference Kind="Category" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
-                  </CategoryReference>
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetLayerContext" />
                 </p:NodeReference>
                 <Pin Id="UEzdIiclqobMI4xN1LQaZq" Name="Input" Kind="StateInputPin" />
@@ -22584,14 +22586,15 @@
                 <Pin Id="Lr1cZcsQoG6LeQae2HU6Or" Name="Input" Kind="InputPin" />
                 <Pin Id="VVNabAjcp39OqvNhVmAOk7" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="1284,620,122,19" Id="NTOWDNGhR37OXYhW7hAixQ">
-                <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+              <Node Bounds="1284,620,83,19" Id="NTOWDNGhR37OXYhW7hAixQ">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
+                  <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
                 </p:NodeReference>
                 <Pin Id="GtQ4SSt0q6nL8c4nzbPQoQ" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="FpwlFpA2DFPO1cRXrhAFej" Name="Alpha" Kind="InputPin" />
                 <Pin Id="F2VeIcCmg3DMyT5Io16x3g" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="HggteF2YGuPLWM98YlqpZo" Name="Blending Model" Kind="InputPin" IsHidden="true" />
               </Node>
               <Node Bounds="1215,481,37,19" Id="MSK6SdzFoweQC4F3ytcJUL">
                 <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
@@ -22780,12 +22783,10 @@
               <ControlPoint Id="Vv2OO7T4bZ3NLU3k7c33C5" Bounds="708,227" />
               <ControlPoint Id="UeQSEUE8JqRQIe4hllISmA" Bounds="364,202" />
               <Pad Id="IuikYJHquCQNEAFUiZ9ZCo" SlotId="KtQrMb1OnXeQOXTCFN4iav" Bounds="364,265" />
-              <Node Bounds="1439,612,99,26" Id="F7koyYd0qMGLD4NJw4kxx1">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.KairosUI.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1439,612,99,19" Id="F7koyYd0qMGLD4NJw4kxx1">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true">
-                    <p:OuterCategoryReference Kind="Category" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
-                  </CategoryReference>
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetLayerContext" />
                 </p:NodeReference>
                 <Pin Id="HNgWfTgt0nVLDbH2AVYM6B" Name="Input" Kind="StateInputPin" />
@@ -24487,14 +24488,15 @@
                     <Pin Id="KLUtgbC8eiwMs32q3QqGGi" Name="Input" Kind="InputPin" />
                     <Pin Id="JqAGMTC44BwPVMnLdJIohz" Name="Output" Kind="StateOutputPin" />
                   </Node>
-                  <Node Bounds="1172,648,122,19" Id="B1S7WQaYoTvPi5szI0yyND">
-                    <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+                  <Node Bounds="1172,648,83,19" Id="B1S7WQaYoTvPi5szI0yyND">
+                    <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
+                      <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
                     </p:NodeReference>
                     <Pin Id="UjmxS2YjWufLqkqROXWhnL" Name="Node Context" Kind="InputPin" IsHidden="true" />
                     <Pin Id="RmSsJG57gKkPDfj8qj0cMW" Name="Alpha" Kind="InputPin" />
                     <Pin Id="NVB8pSX4nQbLNvc6Z66XTW" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="MzB8SaTmcKsLMaINwsPjN0" Name="Blending Model" Kind="InputPin" IsHidden="true" />
                   </Node>
                   <Node Bounds="1115,607,73,26" Id="Rxadg84ekuGPXCy79bPX08">
                     <p:NodeReference LastCategoryFullName="Kairos.KeyframeEditorUI.KeyframeUI.KeyframeLayout" LastDependency="VL.Kairos.KeyframeEditorUI.vl">
@@ -24598,12 +24600,10 @@
                 <ControlPoint Id="PMUZRL59V5dQLLAS6v49UJ" Bounds="1830,652" Alignment="Bottom" />
               </Node>
               <ControlPoint Id="JiNVGXnY5z4OFG3vvdTbDn" Bounds="1844,411" />
-              <Node Bounds="1147,461,99,26" Id="UIaQs2nrtyeLMwECljY6D0">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.KairosUI.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1147,461,99,19" Id="UIaQs2nrtyeLMwECljY6D0">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true">
-                    <p:OuterCategoryReference Kind="Category" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
-                  </CategoryReference>
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetLayerContext" />
                 </p:NodeReference>
                 <Pin Id="OKZhgRpnyTyMppar6XrWff" Name="Input" Kind="StateInputPin" />
@@ -24611,10 +24611,10 @@
                 <Pin Id="RAitI4xhSKSLm5NQiLrUrz" Name="Layer Context" Kind="OutputPin" />
               </Node>
               <Pad Id="SrL9RCszT3DOyxpsw8mIQX" SlotId="MPcTwLhDXDbNgNvJm38P5D" Bounds="1149,438" />
-              <Node Bounds="1842,433,100,26" Id="RvIANnZTTbTNZLqJOy1djX">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1842,433,100,19" Id="RvIANnZTTbTNZLqJOy1djX">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" />
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetUIModelStream" />
                 </p:NodeReference>
                 <Pin Id="DBdwVykceevNOzz5AAJjwp" Name="Input" Kind="StateInputPin" />
@@ -24861,13 +24861,14 @@
                 <Pin Id="AtdEL4SAegpNli6TnWwAqw" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="1174,939,122,19" Id="QFSz8ZecrFIQUJJJS41FbM">
-                <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
+                  <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
                 </p:NodeReference>
                 <Pin Id="VP7NGB9Rb0UPPT049fyw7T" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="DaVSjHv9OI3PAm4ucLLn3H" Name="Alpha" Kind="InputPin" />
                 <Pin Id="TaNe08RrPPuLWWw1s7GQ22" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="PCDkU841WO5MeCfUcvgXGh" Name="Blending Model" Kind="InputPin" IsHidden="true" />
               </Node>
               <Pad Id="GcsMrp5kg4lOzKYScagWJd" SlotId="SCrKQVZ0tJYLQ8C7R5AjbW" Bounds="958,697" />
               <Node Bounds="297,664,25,19" Id="A81pA65Dno9PSJigxWnRjC">
@@ -25274,7 +25275,6 @@
               <ControlPoint Id="Oce5HabP0VmP8BBu661xfD" Bounds="880,146" />
               <Pad Id="Jbk8MtTQqrnP5V2YNUrYaG" SlotId="SCrKQVZ0tJYLQ8C7R5AjbW" Bounds="880,215" />
               <Pad Id="KM5SezlyFaBMTdXc5w3j0Y" SlotId="MtIjTUw7XIPMp01Ix1d1Dl" Bounds="1016,215" />
-              <ControlPoint Id="RXknOGF6jxYQcxpYXQOIi7" Bounds="704,146" />
               <ControlPoint Id="V3ymfEiAvVRN4B5w68PHZb" Bounds="1016,146" />
               <ControlPoint Id="P4yr0UlTSBPOh1vSImdOCl" Bounds="1186,146" />
               <ControlPoint Id="QgtyyBwFiGZNcbpqnOVcmj" Bounds="1352,146" />
@@ -25339,12 +25339,10 @@
                 <ControlPoint Id="CGKadSMAFvMOUXtqdz3U38" Bounds="-13,657" Alignment="Bottom" />
               </Node>
               <ControlPoint Id="LWXNROM9Z1zLz8ubg6dYSU" Bounds="1,416" />
-              <Node Bounds="1194,729,99,26" Id="DK6KzvxJXZxP1NpW3XksEX">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.KairosUI.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1194,729,99,19" Id="DK6KzvxJXZxP1NpW3XksEX">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true">
-                    <p:OuterCategoryReference Kind="Category" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
-                  </CategoryReference>
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetLayerContext" />
                 </p:NodeReference>
                 <Pin Id="F9lDhqSof7cOkTmCuDoQT6" Name="Input" Kind="StateInputPin" />
@@ -25352,10 +25350,10 @@
                 <Pin Id="PvtBMGfnHfxNlO2N2DWsf1" Name="Layer Context" Kind="OutputPin" />
               </Node>
               <Pad Id="TVZBpIUn10bLJZMMufPkem" SlotId="RwzZPvgUN27MoiQlqbuHd9" Bounds="1196,706" />
-              <Node Bounds="-1,435,100,26" Id="BFop1CfxGBJQHjSbqtFBjX">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="-1,435,100,19" Id="BFop1CfxGBJQHjSbqtFBjX">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" />
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetUIModelStream" />
                 </p:NodeReference>
                 <Pin Id="EGlYye1i0B7MnaP92xFqqe" Name="Input" Kind="StateInputPin" />
@@ -25400,7 +25398,6 @@
               <Pin Id="RJTPKYs04qiOEvYixwQaqM" Name="KeyframeInterpolatorUI" Kind="InputPin" />
               <Pin Id="K8k4EwadBGWLR3nsGRFteo" Name="KeyframeInterpolator" Kind="InputPin" />
               <Pin Id="PaH7HGGZwOILMVxjQwyhyK" Name="UI Modules" Kind="InputPin" />
-              <Pin Id="LtVexvpfqwKNjdackXHCCj" Name="KeyframeUIModel" Kind="InputPin" />
             </Patch>
             <Slot Id="TcThUGzioLYMgdzgk2Sqm3" Name="Keyframe Drawable Path Names">
               <p:TypeAnnotation p:Type="TypeReference">
@@ -25511,14 +25508,17 @@
             </Slot>
             <Slot Id="RwzZPvgUN27MoiQlqbuHd9" Name="KeyframeInterpolatorUI" />
             <Slot Id="PLW24izYdK1Pp7ifLhiILV" Name="KeyframeModel Stream" />
-            <Slot Id="RrYTfig7tvJN0M3sfoIsXZ" Name="KeyframeUIModel" />
+            <Slot Id="RrYTfig7tvJN0M3sfoIsXZ" Name="KeyframeUIModel">
+              <p:TypeAnnotation p:Type="TypeReference" LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
+                <Choice Kind="TypeFlag" Name="KeyframeUIModel" />
+              </p:TypeAnnotation>
+            </Slot>
             <Slot Id="MtIjTUw7XIPMp01Ix1d1Dl" Name="KeyframeInterpolator" />
             <Slot Id="SE7UvBSLeKBL5mlHM9WtMi" Name="KeyframeUIModel Stream" />
             <Link Id="Noq8nHRibIPNvpv21q5o77" Ids="MZRFfxcInpjPnO0ECeEf2H,K8uq7iS6kMGPnsZ6ouoyrY" />
             <Link Id="Ow3RaxFlNU1O7OkVZgLxEu" Ids="T4Lsne7k19jM4s13rSJr0H,MZRFfxcInpjPnO0ECeEf2H" IsHidden="true" />
             <Link Id="TDvqzjNTNvYNRtmFAABqpT" Ids="TP6JgHE0YG6LMGA9hykzBB,Oce5HabP0VmP8BBu661xfD" IsHidden="true" />
             <Link Id="ArjdxY7QINYMPHdWPBBSY7" Ids="Oce5HabP0VmP8BBu661xfD,Jbk8MtTQqrnP5V2YNUrYaG" />
-            <Link Id="Glj87bhwjYDL07alRruewY" Ids="LtVexvpfqwKNjdackXHCCj,RXknOGF6jxYQcxpYXQOIi7" IsHidden="true" />
             <Link Id="JoVYf9Rv3oBLBdOBtGWOj1" Ids="K8k4EwadBGWLR3nsGRFteo,V3ymfEiAvVRN4B5w68PHZb" IsHidden="true" />
             <Link Id="Ashm2VL7uLmMpP4E5PgrP6" Ids="CJvjt3L5Od8NNJuAILC6UK,P4yr0UlTSBPOh1vSImdOCl" IsHidden="true" />
             <Link Id="Qdw4CujdaorL47MQPYPqH9" Ids="SsPSn4DiLh5O7nFFcxlDjN,QgtyyBwFiGZNcbpqnOVcmj" IsHidden="true" />
@@ -25526,7 +25526,6 @@
             <Link Id="HoE8ozev8mYPExmFy32eSc" Ids="RJTPKYs04qiOEvYixwQaqM,FiHZFfrCjFEL83wF1ZH3lq" IsHidden="true" />
             <Link Id="VbOWsY8B7XTNJJtoyUgmyu" Ids="V3ymfEiAvVRN4B5w68PHZb,KM5SezlyFaBMTdXc5w3j0Y" />
             <Link Id="JlBayBXDTJPOwXdgqvWhwK" Ids="QgtyyBwFiGZNcbpqnOVcmj,NJOo3TeOmorNU8FIO5JIid" />
-            <Link Id="OZlsTD3iJ3NNxu1RmDaQ9V" Ids="RXknOGF6jxYQcxpYXQOIi7,DzlZYWwwX4eM9GcA0yN4o3" />
             <Link Id="O7L3e9ise0UOJpEUC3Sked" Ids="DG2PXsjBuG5OmrdSufdSZi,DzlZYWwwX4eM9GcA0yN4o3" />
             <Link Id="NJy2B9T5XDtPcLtow6TlWa" Ids="P4yr0UlTSBPOh1vSImdOCl,Nm7pyODxmTtM6je6DbcZ0j" />
             <Link Id="GJhqoAjwqctMrGufYc2gWj" Ids="FiHZFfrCjFEL83wF1ZH3lq,BtcND13PuMSMikNDDzEXBC" />
@@ -27876,10 +27875,10 @@
                 <ControlPoint Id="QXhO8U1NmeAO1WpjD3lOHA" Bounds="1516,685" Alignment="Bottom" />
               </Node>
               <ControlPoint Id="FvubHvplZhYPRyAOKBSx0a" Bounds="1530,444" />
-              <Node Bounds="1528,466,100,26" Id="IdZtvjhVmm0NKFY5IKVqhZ">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1528,466,100,19" Id="IdZtvjhVmm0NKFY5IKVqhZ">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" />
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetUIModelStream" />
                 </p:NodeReference>
                 <Pin Id="Frj7dMvIgYPM3i7zA1vJLQ" Name="Input" Kind="StateInputPin" />
@@ -28058,14 +28057,15 @@
                 <Pin Id="KZ1IgopgjVYPVcqWIx0Sq3" Name="Input" Kind="InputPin" />
                 <Pin Id="NAZgCpYnRNzNyinBsVfHCw" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="1139,970,122,19" Id="C95XYNw04ZYO7C6NP0Bm9x">
-                <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+              <Node Bounds="1139,970,83,19" Id="C95XYNw04ZYO7C6NP0Bm9x">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
+                  <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
                 </p:NodeReference>
                 <Pin Id="JAwTWSxY77FNSjc4DWMi9Z" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="A98zyDHEg5DQYdepvmvtR3" Name="Alpha" Kind="InputPin" />
                 <Pin Id="GeRuPQqDJHxLdVitpEO6F2" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="P0E0RW1J79SLhHBs9ya3Gy" Name="Blending Model" Kind="InputPin" IsHidden="true" />
               </Node>
               <Pad Id="G3waDs3QEIUODrEN7SOCHR" SlotId="NTx0aQeuW1sLnmdkkWxFxx" Bounds="923,728" />
               <Node Bounds="262,695,25,19" Id="D2TM5I7A2e0MXgretRt7mT">
@@ -28480,7 +28480,6 @@
               <ControlPoint Id="UACXHrxWcfXMGVrk3rdaAR" Bounds="879,143" />
               <Pad Id="BCPGW2dpMDVMUi838M41fK" SlotId="NTx0aQeuW1sLnmdkkWxFxx" Bounds="879,212" />
               <Pad Id="Op9XWSZxvLTOAYOzvYE188" SlotId="H3cY1s3WKO7MUshvLDclAH" Bounds="1015,212" />
-              <ControlPoint Id="LbLkep6Q8olMHCvQntPASB" Bounds="703,143" />
               <ControlPoint Id="H5A12SYLCR2ODoZdlcHn5v" Bounds="1015,143" />
               <ControlPoint Id="BB5QnG2Uj97PjUg82RlBQo" Bounds="1185,143" />
               <ControlPoint Id="BlCpiGq3qaqOdWDDLONB2S" Bounds="1351,143" />
@@ -28545,12 +28544,10 @@
                 <ControlPoint Id="UEqRp3a4hUwNNCaphqH6FW" Bounds="1924,652" Alignment="Bottom" />
               </Node>
               <ControlPoint Id="ShNIgLgRS5ZPLpLidjwI1J" Bounds="1938,411" />
-              <Node Bounds="1174,765,99,26" Id="BecRRcMC3OXOqaUj0Cl6QV">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.KairosUI.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1174,765,99,19" Id="BecRRcMC3OXOqaUj0Cl6QV">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true">
-                    <p:OuterCategoryReference Kind="Category" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
-                  </CategoryReference>
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetLayerContext" />
                 </p:NodeReference>
                 <Pin Id="SU52JI6bNIcP5A13LINYbD" Name="Input" Kind="StateInputPin" />
@@ -28558,10 +28555,10 @@
                 <Pin Id="KDtWdsIthYgQIY6VE7yUAP" Name="Layer Context" Kind="OutputPin" />
               </Node>
               <Pad Id="L63Uj0wDNMKMuspW7dSk4e" SlotId="KzI3WVGwgzmQFtxoubA8zc" Bounds="1176,742" />
-              <Node Bounds="1936,432,100,26" Id="FFO8SxH1BAfOFqBQ5b2jwf">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1936,432,100,19" Id="FFO8SxH1BAfOFqBQ5b2jwf">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" />
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetUIModelStream" />
                 </p:NodeReference>
                 <Pin Id="CHS9CGInEPQMQ3x8bDC6KY" Name="Input" Kind="StateInputPin" />
@@ -28594,7 +28591,6 @@
               <Pin Id="JYbnemc6ZCzNDAjzfplCsS" Name="KeyframeInterpolatorUI" Kind="InputPin" />
               <Pin Id="O0v27qBLljFOq6ZJQwK7yS" Name="KeyframeInterpolator" Kind="InputPin" />
               <Pin Id="N3iJZtku7ipNMZPCJEllTP" Name="UI Modules" Kind="InputPin" />
-              <Pin Id="To4Q4WhO0KkMXrWLEwV7uw" Name="KeyframeUIModel" Kind="InputPin" />
             </Patch>
             <Slot Id="IADlFicZ5k0NNfjvvUki5L" Name="Keyframe Drawable Path Names">
               <p:TypeAnnotation p:Type="TypeReference">
@@ -28719,7 +28715,6 @@
             <Link Id="LsnT6HK1efvQGZux0w8are" Ids="N3h3Dpzun0yPCWYGIUWzON,P32SNoyLPxoPO4BrelNTvr" IsHidden="true" />
             <Link Id="VH9rdqUfZZGO2fGuCRfJZ3" Ids="MNehQrEgxAfMEaemlJ9su8,UACXHrxWcfXMGVrk3rdaAR" IsHidden="true" />
             <Link Id="ONDqAg9wx6qPvcXxjfBg3K" Ids="UACXHrxWcfXMGVrk3rdaAR,BCPGW2dpMDVMUi838M41fK" />
-            <Link Id="KBLOj4k4vumOJdxOyqs2Ki" Ids="To4Q4WhO0KkMXrWLEwV7uw,LbLkep6Q8olMHCvQntPASB" IsHidden="true" />
             <Link Id="PDLJX7NZcUaLFfY99nuvi9" Ids="O0v27qBLljFOq6ZJQwK7yS,H5A12SYLCR2ODoZdlcHn5v" IsHidden="true" />
             <Link Id="JGkwXNHNqvXNmGM0H64ajw" Ids="FbxZAuSBgcgO0FzaDFNRPb,BB5QnG2Uj97PjUg82RlBQo" IsHidden="true" />
             <Link Id="LLrzxoXPIF2MvTgXU7TnCG" Ids="SxZcg2GaUuAOcEA44HWY5u,BlCpiGq3qaqOdWDDLONB2S" IsHidden="true" />
@@ -28727,7 +28722,6 @@
             <Link Id="He3jiVwI3iJQUbFoc8xnVV" Ids="JYbnemc6ZCzNDAjzfplCsS,R4nHzDc4TEiPCcWIekuYw6" IsHidden="true" />
             <Link Id="E6LOEg2vxO9LDdbFGZYgB7" Ids="H5A12SYLCR2ODoZdlcHn5v,Op9XWSZxvLTOAYOzvYE188" />
             <Link Id="Jd0uHKaIENxOTmj8Zg41ks" Ids="BlCpiGq3qaqOdWDDLONB2S,Ccg90wbd815QEMCOlHX7oJ" />
-            <Link Id="LNDLttBbfatNZzZQN9bqNE" Ids="LbLkep6Q8olMHCvQntPASB,RM3hzubXF0dM2PobMK7tbF" />
             <Link Id="DGBRQk8KUSoQAnsz0LompW" Ids="OKqqgBqxDVvNKrSma9IsJc,RM3hzubXF0dM2PobMK7tbF" />
             <Link Id="JJMR5av7Br7PRNjayQfABQ" Ids="BB5QnG2Uj97PjUg82RlBQo,OgJ6s6b3ZuCMQ2qcFgAxNI" />
             <Link Id="DeG87b7UzU3K9XKp0wbUkW" Ids="R4nHzDc4TEiPCcWIekuYw6,VXFdzRQ9BY9P775h1Uquzc" />
@@ -28779,14 +28773,15 @@
                 <Pin Id="NAxcswBvnZNLYVwrdd1Oos" Name="Input" Kind="InputPin" />
                 <Pin Id="Flp0zy3aum1OeyPYJlxsNZ" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="1139,970,122,19" Id="Bbo3Q2qBfORLSLbab0w6Im">
-                <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+              <Node Bounds="1139,970,83,19" Id="Bbo3Q2qBfORLSLbab0w6Im">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
+                  <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
                 </p:NodeReference>
                 <Pin Id="DyNNwueZTNCMkAlYdYtgC0" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="TwszK6mgAAqOVy96Y2ZHTq" Name="Alpha" Kind="InputPin" />
                 <Pin Id="HbAUFsGsj5qNIAftgfhnDw" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="UwpadpYfqIIPyjOgxgM0qk" Name="Blending Model" Kind="InputPin" IsHidden="true" />
               </Node>
               <Pad Id="EJqH0mWXtyXM65q8c98aXm" SlotId="KFihO7D0Qs3OYAqLFHolYf" Bounds="923,728" />
               <Node Bounds="353,696,25,19" Id="UoHVKbcZYiPLYXFkU02w15">
@@ -29167,7 +29162,6 @@
               <ControlPoint Id="CUbjKeE6GOgLMknEqLwCJi" Bounds="880,144" />
               <Pad Id="B6jqKaa6d41PzqsaZ1T1IT" SlotId="KFihO7D0Qs3OYAqLFHolYf" Bounds="880,213" />
               <Pad Id="Mg2AzcKyVbZMGK4fvECytK" SlotId="Gvz1ZNeDpwhQD08LFhho9V" Bounds="1016,213" />
-              <ControlPoint Id="RPNdjje5ZYVLZUu0aqcZeL" Bounds="704,144" />
               <ControlPoint Id="U8f7RGj2UapQGArM9VbpLH" Bounds="1016,144" />
               <ControlPoint Id="OL4De2rRr6mMSqrpoJseNv" Bounds="1186,144" />
               <ControlPoint Id="L7T86dUekCJNKFWQQYaefA" Bounds="1352,144" />
@@ -29220,12 +29214,10 @@
                 <ControlPoint Id="JB2N6hSItPxM0YGsnshaMx" Bounds="387,643" Alignment="Bottom" />
               </Node>
               <ControlPoint Id="QkCW7QCEadgQMMyeTvADiA" Bounds="271,402" />
-              <Node Bounds="1158,764,99,26" Id="BiHLkYrqsC1LqVbQYtHbU0">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.KairosUI.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1158,764,99,19" Id="BiHLkYrqsC1LqVbQYtHbU0">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true">
-                    <p:OuterCategoryReference Kind="Category" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
-                  </CategoryReference>
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetLayerContext" />
                 </p:NodeReference>
                 <Pin Id="SstKLOWPvjlLTRpJGEPL0X" Name="Input" Kind="StateInputPin" />
@@ -29233,10 +29225,10 @@
                 <Pin Id="GaR5oTfTytaN24ucKwn4o4" Name="Layer Context" Kind="OutputPin" />
               </Node>
               <Pad Id="IEU02dFQ1DPO0k40k6b3B9" SlotId="IDaYuMnZViTLqOd8u1ggj1" Bounds="1160,741" />
-              <Node Bounds="269,423,100,26" Id="L3dabO5Q4eWQEehv0xMfj5">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="269,423,100,19" Id="L3dabO5Q4eWQEehv0xMfj5">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" />
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetUIModelStream" />
                 </p:NodeReference>
                 <Pin Id="E6gPxaTeno1OXypcETJjze" Name="Input" Kind="StateInputPin" />
@@ -29267,7 +29259,6 @@
               <Pin Id="KRXdfWOCneSOLovGmNpA79" Name="KeyframeInterpolatorUI" Kind="InputPin" />
               <Pin Id="DERl8k4sKUjPRfwnZWnUbC" Name="KeyframeInterpolator" Kind="InputPin" />
               <Pin Id="FibqwMceBIEMV7Qxxw65WN" Name="UI Modules" Kind="InputPin" />
-              <Pin Id="EvDthfpq1aGLAnuEtSufL5" Name="KeyframeUIModel" Kind="InputPin" />
             </Patch>
             <Link Id="PhSVi5bJ5x4MYoxNFSOsls" Ids="Om59BSYCfUAN0HRVMksmtE,Jv1TebGygmpPFDGAqSlj4d" IsHidden="true" />
             <Link Id="JLQoy2fDjM8PBvGbM46amc" Ids="EJqH0mWXtyXM65q8c98aXm,MSORBa3YVTmNUFRWupvDqi" />
@@ -29378,7 +29369,6 @@
             <Link Id="Sfdkc7IAHAMPsI0TvfKU02" Ids="VcnSNgRsCqkPPenmfn2rP2,KUwKhUQNiSELXecUZHcgnP" IsHidden="true" />
             <Link Id="V0l2huHHQmhM4BkqQgPKb7" Ids="AxLLQsFkW4pPxdm3Swb3s4,CUbjKeE6GOgLMknEqLwCJi" IsHidden="true" />
             <Link Id="PE0FUbUsShAMrqyxjDjwWr" Ids="CUbjKeE6GOgLMknEqLwCJi,B6jqKaa6d41PzqsaZ1T1IT" />
-            <Link Id="J7OUvdTQNd9NxugE92gMAv" Ids="EvDthfpq1aGLAnuEtSufL5,RPNdjje5ZYVLZUu0aqcZeL" IsHidden="true" />
             <Link Id="TYrwc2RmYoTQcr0fwNUSkn" Ids="DERl8k4sKUjPRfwnZWnUbC,U8f7RGj2UapQGArM9VbpLH" IsHidden="true" />
             <Link Id="RuZtI9b14zjN91lO0VAm35" Ids="FE7sggS8fnhOpa06bRbN6z,OL4De2rRr6mMSqrpoJseNv" IsHidden="true" />
             <Link Id="KQNJFXeXccAQaYiZFTDbYu" Ids="HoFazLKwfukL04fmjS2cnv,L7T86dUekCJNKFWQQYaefA" IsHidden="true" />
@@ -29386,7 +29376,6 @@
             <Link Id="OveV6UZXp66L9uhpPIDZQB" Ids="KRXdfWOCneSOLovGmNpA79,MweMkSrnmKNL70F933y8Wc" IsHidden="true" />
             <Link Id="AwEk1Jnxf9EO9SjzriVOAN" Ids="U8f7RGj2UapQGArM9VbpLH,Mg2AzcKyVbZMGK4fvECytK" />
             <Link Id="IuER3ndeTLKPjwplYbimWU" Ids="L7T86dUekCJNKFWQQYaefA,StnwaK1PCI6PapjPKF0aPB" />
-            <Link Id="Pfn291NxKZoMxT3Xk0ooo1" Ids="RPNdjje5ZYVLZUu0aqcZeL,VMtE4VV1u3wOxdtcgn0BBI" />
             <Link Id="HkjYCOuzqOuOqda7pePVsg" Ids="NnglMPF1I9ZOKueNgEBdfi,VMtE4VV1u3wOxdtcgn0BBI" />
             <Link Id="N9PpfVT5xrOMbizvHGe7ZJ" Ids="OL4De2rRr6mMSqrpoJseNv,OcI5Em05XwbLa8IUm3wu85" />
             <Link Id="L223QjDtfgiPWoHe7LxweR" Ids="MweMkSrnmKNL70F933y8Wc,NJTC7X5RznaP17OWCZPT5a" />
@@ -30042,14 +30031,15 @@
                 <Pin Id="SivHZs6AaUuMS4nUyyM4Ps" Name="Input" Kind="InputPin" />
                 <Pin Id="TKo5UPYURWoLOaWDCxYXhX" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="1783,614,122,19" Id="HZ02tczkrYAOXw3v78bGrh">
-                <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+              <Node Bounds="1783,614,83,19" Id="HZ02tczkrYAOXw3v78bGrh">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
+                  <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
                 </p:NodeReference>
                 <Pin Id="Ndrv5SQgA9COBQomawz7a0" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="RCOoDyoQmRYNOI0r7Ymmyk" Name="Alpha" Kind="InputPin" />
                 <Pin Id="KiqvldaIbmoL2maU1RrZuT" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="U14ZANmKlsXNMmHcDjp6mE" Name="Blending Model" Kind="InputPin" IsHidden="true" />
               </Node>
               <Node Bounds="1714,475,37,19" Id="MSiUZ4WBeAwLGqbO5AfNVV">
                 <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
@@ -30510,12 +30500,10 @@
               <ControlPoint Id="Mxts0raVUaNNl3OCq0JBmW" Bounds="704,183" />
               <ControlPoint Id="Gt9X2h9X7aZO320B3KlonM" Bounds="361,168" />
               <Pad Id="RcrksY2o0FkORLiQJkrbdi" SlotId="AQKwIVLyeFeQFXbr5HroOo" Bounds="361,231" />
-              <Node Bounds="1880,569,99,26" Id="AxNNZZ1hQyGOm0BjUdgc3b">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.KairosUI.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="1880,569,99,19" Id="AxNNZZ1hQyGOm0BjUdgc3b">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true">
-                    <p:OuterCategoryReference Kind="Category" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
-                  </CategoryReference>
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetLayerContext" />
                 </p:NodeReference>
                 <Pin Id="B3HYsdVrR0UNskLtxxIQ4X" Name="Input" Kind="StateInputPin" />
@@ -30935,14 +30923,15 @@
                 <Pin Id="NfzuuYCu8VTNlhC6UJEOBa" Name="Input" Kind="InputPin" />
                 <Pin Id="JU5s16aVGA0Msa4bhzZTdL" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="2172,820,122,19" Id="ABVGEwiqbEZMySsrocmt9T">
-                <p:NodeReference LastCategoryFullName="LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
+              <Node Bounds="2172,820,83,19" Id="ABVGEwiqbEZMySsrocmt9T">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.Alpha" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="ConstantAlphaFunction" />
+                  <Choice Kind="ProcessAppFlag" Name="ConstantAlpha" />
                 </p:NodeReference>
                 <Pin Id="NoJOxWl6HAlPZiHdomrtgF" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="GRWiI6lbXTWPJzAl5R8Ff4" Name="Alpha" Kind="InputPin" />
                 <Pin Id="C4T6ruWLZgjLGbPaQSX3ba" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="Nu7T5UKU1RPNAYwzv6HLyL" Name="Blending Model" Kind="InputPin" IsHidden="true" />
               </Node>
               <Node Bounds="2147,743,37,19" Id="FkZQAfffXgRO2syMgLS60W">
                 <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
@@ -31278,12 +31267,10 @@
               <ControlPoint Id="HcayvAVaNkdP32An39zxzj" Bounds="728,202" />
               <ControlPoint Id="EWHCcXJqfzQMbFTOa4mzsl" Bounds="360,167" />
               <Pad Id="KheME0LSRmwQDizxvj0gc5" SlotId="C6MpOttKVhRNwmqveIpLmP" Bounds="360,230" />
-              <Node Bounds="2207,893,99,26" Id="SjkPmYpwdLfPT6DoHIc49D">
-                <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.KairosUI.LayerX.KeyframeInterpolatorUI.vl">
+              <Node Bounds="2207,893,99,19" Id="SjkPmYpwdLfPT6DoHIc49D">
+                <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true">
-                    <p:OuterCategoryReference Kind="Category" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
-                  </CategoryReference>
+                  <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="GetLayerContext" />
                 </p:NodeReference>
                 <Pin Id="M30dCCzhiP3OyV9V22jmQa" Name="Input" Kind="StateInputPin" />
@@ -33061,7 +33048,7 @@
               <Fragment Id="FIVMeYdB6AVPx6oxrNGr3s" Patch="RtDAlElotTvQKa4FuNmW1M" />
             </ProcessDefinition>
             <Patch Id="RtDAlElotTvQKa4FuNmW1M" Name="Configure">
-              <Pin Id="K3vL62APaZKPgDfQFhivBz" Name="Keyframe Layout" Kind="InputPin" />
+              <Pin Id="BUa9mfQRupJPXV1FJQ6LXW" Name="Keyframe Layout" Kind="InputPin" />
               <Pin Id="Bi1q7vbxL6PLcig2eIbCBs" MergeId="324248" Name="Keyframe" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="LayerX.KeyframeInterpolator" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="TypeFlag" Name="Keyframe" />
@@ -33072,11 +33059,11 @@
                   </p:TypeArguments>
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="IktpOYFPkQAPYqVJDhBhOO" Name="KeyframeUIModel Stream" Kind="InputPin" />
-              <Pin Id="FSdQtQMcKtWOGTmDJ3kRrN" Name="KeyframeModel Stream" Kind="InputPin" />
-              <Pin Id="CFVkpfhJE2DOeeiDkTb5Wn" Name="KeyframeInterpolatorUI" Kind="InputPin" />
-              <Pin Id="U4ndXs29gngMsj93dk82wX" Name="KeyframeInterpolator" Kind="InputPin" />
-              <Pin Id="Iam7AaqkvDXQTkpahAVetg" Name="UI Modules" Kind="InputPin" />
+              <Pin Id="RW0rNQhWewRPzhXx8htHhX" Name="KeyframeUIModel Stream" Kind="InputPin" />
+              <Pin Id="VB5RP4klIHcQcQwDZviDd4" Name="KeyframeModel Stream" Kind="InputPin" />
+              <Pin Id="GkUaxnMYpZ2L7ncCqDdFCq" Name="KeyframeInterpolatorUI" Kind="InputPin" />
+              <Pin Id="GhCYKSLirTaLlHAuKuLewM" Name="KeyframeInterpolator" Kind="InputPin" />
+              <Pin Id="ThgjrFJloGmM80SuxaeN4R" Name="UI Modules" Kind="InputPin" />
             </Patch>
             <Link Id="OEKeHgtPRH5MeAmrns02Zl" Ids="Hi33gwpnOA7P1WPDym0AUR,OBL4T2CezaCNv9BNYvBwQx" />
             <Link Id="CGZqYk1GVNvQW6Ll8hxLBq" Ids="UoJY1FlQJLJLHurp5b18CF,Ej85QtfUwFnP2MEf8feiJm" />
@@ -33130,7 +33117,7 @@
             </ProcessDefinition>
             <Link Id="EJXkqoTk4orNlIMkCpkZ2S" Ids="AIwDAFAvqNLLOPfy6CJzDU,VBNQZhwTx9uPZvWi2RXj3a" />
             <Patch Id="AqobOCvuvqcP3PwmCot5RR" Name="Configure">
-              <Pin Id="KCzjxHtlQGTNTpjrIfiCW3" Name="Keyframe Layout" Kind="InputPin" />
+              <Pin Id="FESFiN8uKWhNhj9uWGBwGz" Name="Keyframe Layout" Kind="InputPin" />
               <Pin Id="Gg7m8s03NU1N5sJwI1uLUh" Name="Keyframe" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="LayerX.KeyframeInterpolator" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="TypeFlag" Name="Keyframe" />
@@ -33141,11 +33128,11 @@
                   </p:TypeArguments>
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="FlAphp6zehmQHodUKU2vdl" Name="KeyframeUIModel Stream" Kind="InputPin" />
-              <Pin Id="I1EafTUieiKMDkxVMjuUaB" Name="KeyframeModel Stream" Kind="InputPin" />
-              <Pin Id="GxN8vUwzTmdMsoqeB2Mpcl" Name="KeyframeInterpolatorUI" Kind="InputPin" />
-              <Pin Id="BKKvqSiFMSIO7tJkfuzVQ8" Name="KeyframeInterpolator" Kind="InputPin" />
-              <Pin Id="JQ61SLU7dwqO7Ll3KQbsTV" Name="UI Modules" Kind="InputPin" />
+              <Pin Id="I05czn3vSNDN8pd2yfsM0Y" Name="KeyframeUIModel Stream" Kind="InputPin" />
+              <Pin Id="H7Eg7fvo0tHMojTLMVsRQJ" Name="KeyframeModel Stream" Kind="InputPin" />
+              <Pin Id="JK99babHnVkNZOdr5E8ecz" Name="KeyframeInterpolatorUI" Kind="InputPin" />
+              <Pin Id="FFZgUIjiwKBML0eBw2vgyd" Name="KeyframeInterpolator" Kind="InputPin" />
+              <Pin Id="LXGCe8OMQjKOTLpVs3sozE" Name="UI Modules" Kind="InputPin" />
             </Patch>
             <Link Id="KgZ8ySujgsQLPjE0ceRWEQ" Ids="EBkLfx1LgwVPODtDQmb8Eg,JWZOiAT4pfqLdmC0cEK7GB" />
             <Link Id="M3sG71xiHU3OJhCRR3hRsj" Ids="Gg7m8s03NU1N5sJwI1uLUh,EBkLfx1LgwVPODtDQmb8Eg" IsHidden="true" />
@@ -34091,10 +34078,10 @@
               <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
             </Overlay>
             <Pad Id="VsSeuIx6UAxOQszkLBEmu1" SlotId="Hw42R07nfCaLnTTALGEVeT" Bounds="1511,144" />
-            <Node Bounds="1509,164,146,26" Id="CpFwmXVgcciP8RX1MxKiR0">
-              <p:NodeReference LastCategoryFullName="LayerX.Layer.ILayerModel" LastDependency="VL.Kairos.Runtime.vl">
+            <Node Bounds="1509,164,146,19" Id="CpFwmXVgcciP8RX1MxKiR0">
+              <p:NodeReference LastCategoryFullName="Kairos.Common.Type.IRuntimeConstructionInfoProvider" LastDependency="VL.Kairos.Runtime.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <FullNameCategoryReference ID="LayerX.Layer.ILayerModel" />
+                <CategoryReference Kind="InterfaceTypeFlag" Name="IRuntimeConstructionInfoProvider" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="GetRuntimeConstructionInfo" />
               </p:NodeReference>
               <Pin Id="QxbQKbmg5xNPO0RIGQQcYB" Name="Input" Kind="StateInputPin" />
@@ -34131,7 +34118,7 @@
                   <Pin Id="BooRAwJRtQxNTvtqnVoxR0" Name="LayerUIModel Type Full Name" Kind="InputPin" />
                   <Pin Id="Rm5T6xE3K4uLzVtXg420Uk" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Pad Id="QucxfV3joG6QPXYF0mxvVQ" Comment="Target LayerModel Type Full name" Bounds="942,793,364,17" ShowValueBox="true" isIOBox="true" Value="KeyframeInterpolatorModel [LayerX.KeyframeInterpolator]">
+                <Pad Id="QucxfV3joG6QPXYF0mxvVQ" Comment="Target LayerModel Type Full name" Bounds="942,793,364,17" ShowValueBox="true" isIOBox="true" Value="KeyframeInterpolatorModel [Kairos.LayerX.KeyframeInterpolator]">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -34143,7 +34130,7 @@
                   </p:TypeAnnotation>
                 </Pad>
                 <Link Id="JFmbGMQTtfmNDbpfeMoyW2" Ids="SakLwAtPkcZN0JHl35AZCN,E8vwlo52TDjMvEoiRiF8xg" />
-                <Pad Id="RLqbWJH51MELLX6qKWbCS0" Comment="LayerUIModel Type Full Name" Bounds="1014,865,347,20" ShowValueBox="true" isIOBox="true" Value="KeyframeInterpolatorUIModel [LayerX.KeyframeInterpolatorUI]">
+                <Pad Id="RLqbWJH51MELLX6qKWbCS0" Comment="LayerUIModel Type Full Name" Bounds="1014,865,347,20" ShowValueBox="true" isIOBox="true" Value="KeyframeInterpolatorUIModel [Kairos.LayerX.KeyframeInterpolator.UI]">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -38628,10 +38615,10 @@
                       <Pin Id="DmV45diJqp0MNxdDW2oO3q" Name="Input" Kind="StateInputPin" />
                       <Pin Id="IkscpUoyNigLGCjIO1qFtD" Name="Size" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="1437,474,99,26" Id="BRkb2QZecdwPfJytwGc7LU">
-                      <p:NodeReference LastCategoryFullName="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" LastDependency="VL.LayerX.KeyframeInterpolatorUI.vl">
+                    <Node Bounds="1437,474,99,19" Id="BRkb2QZecdwPfJytwGc7LU">
+                      <p:NodeReference LastCategoryFullName="Kairos.LayerX.KeyframeInterpolator.UI.KeyframeInterpolatorUI" LastDependency="VL.Kairos.Runtime.LayerX.KeyframeInterpolator.UI.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <FullNameCategoryReference ID="LayerX.KeyframeInterpolatorUI.KeyframeInterpolatorUI" />
+                        <CategoryReference Kind="ClassType" Name="KeyframeInterpolatorUI" NeedsToBeDirectParent="true" />
                         <Choice Kind="OperationCallFlag" Name="SetBounds" />
                       </p:NodeReference>
                       <Pin Id="Fob7MjODkohNfJyn4yx4ll" Name="Input" Kind="StateInputPin" />
@@ -38652,10 +38639,10 @@
                   <ControlPoint Id="I5MCn8SEs3FLqex5eUu5sD" Bounds="1699,356" Alignment="Top" />
                   <ControlPoint Id="PXvEPwr7dd8MMBR9bAZPaf" Bounds="1533,356" Alignment="Top" />
                 </Node>
-                <Node Bounds="1632,306,70,26" Id="P1lLEeBM9xCN1tQP94KPQ8">
-                  <p:NodeReference LastCategoryFullName="LayerX.EnvelopeModel" LastDependency="VL.Kairos.Runtime.vl">
+                <Node Bounds="1632,306,70,19" Id="P1lLEeBM9xCN1tQP94KPQ8">
+                  <p:NodeReference LastCategoryFullName="Kairos.LayerX.EnvelopeModel" LastDependency="VL.Kairos.Runtime.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <FullNameCategoryReference ID="LayerX.EnvelopeModel" />
+                    <CategoryReference Kind="RecordType" Name="EnvelopeModel" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="GetView" />
                   </p:NodeReference>
                   <Pin Id="Llqx9sVqaXOOLKO8TScErI" Name="Input" Kind="StateInputPin" />
@@ -38691,11 +38678,12 @@
                 <Choice Kind="OperationCallFlag" Name="Cons" />
               </p:NodeReference>
               <Pin Id="JNnWOktkwgYNdoqH88q3fJ" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="GJiDcFObKh2MlJpihjm2zP" Name="EditingSection" Kind="InputPin" PinGroupName="Input" />
+              <Pin Id="GJiDcFObKh2MlJpihjm2zP" Name="EditingSection" Kind="InputPin" />
             </Node>
-            <Node Bounds="626,187,102,26" Id="FsPAwNge0UwLxR62HrxuIi">
-              <p:NodeReference LastCategoryFullName="LayerX.Envelope" LastDependency="VL.Kairos.Runtime.vl">
+            <Node Bounds="626,187,102,19" Id="FsPAwNge0UwLxR62HrxuIi">
+              <p:NodeReference LastCategoryFullName="Kairos.LayerX.Envelope" LastDependency="VL.Kairos.Runtime.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="Envelope" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="GetLayerUngeneric" />
               </p:NodeReference>
               <Pin Id="UjpOVBmmdOkLz9V4MF0W0d" Name="Input" Kind="StateInputPin" />
@@ -38712,10 +38700,10 @@
               <Pin Id="MeI8dmShJS0Op0ueS7gOHp" Name="Output" Kind="StateOutputPin" />
               <Pin Id="Q5V9Ah2TQs5PW9FRxcNLHK" Name="Local Context" Kind="OutputPin" />
             </Node>
-            <Node Bounds="572,254,91,26" Id="JMtA454vxKxNc63qIqLvJo">
-              <p:NodeReference LastCategoryFullName="LayerX.Layer.ILayer (Ungeneric)" LastDependency="VL.Kairos.Runtime.vl">
+            <Node Bounds="572,254,91,19" Id="JMtA454vxKxNc63qIqLvJo">
+              <p:NodeReference LastCategoryFullName="Kairos.LayerX.Layer.ILayer (Ungeneric)" LastDependency="VL.Kairos.Runtime.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <FullNameCategoryReference ID="LayerX.Layer.ILayer (Ungeneric)" />
+                <CategoryReference Kind="InterfaceTypeFlag" Name="ILayer (Ungeneric)" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="GetModelStream" />
               </p:NodeReference>
               <Pin Id="P2V4OTgksTCQaYTRJg4NbR" Name="Input" Kind="StateInputPin" />
@@ -39043,11 +39031,11 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Axxdj9yFNa1N9PXEjJL71f" Location="VL.Skia" Version="2025.7.0-0264-g15930191f6" />
-  <NugetDependency Id="McHqbMQRrcaNpOA9LnYljB" Location="VL.ImGui" Version="2025.7.0-0264-g15930191f6" />
+  <NugetDependency Id="Axxdj9yFNa1N9PXEjJL71f" Location="VL.Skia" Version="2025.7.0-0277-g17318dcda9" />
+  <NugetDependency Id="McHqbMQRrcaNpOA9LnYljB" Location="VL.ImGui" Version="2025.7.0-0277-g17318dcda9" />
   <NugetDependency Id="A7JOQkeuQEmNDDvd9l7G5A" Location="VL.Touchy" Version="0.0.0" />
-  <NugetDependency Id="PpydUzptoSBNrdcI4odllh" Location="VL.HDE" Version="2025.7.0-0264-g15930191f6" />
-  <NugetDependency Id="KNbJJecmrMfN96DcpsQYXk" Location="VL.EditingFramework" Version="2025.7.0-0264-g15930191f6" />
+  <NugetDependency Id="PpydUzptoSBNrdcI4odllh" Location="VL.HDE" Version="2025.7.0-0277-g17318dcda9" />
+  <NugetDependency Id="KNbJJecmrMfN96DcpsQYXk" Location="VL.EditingFramework" Version="2025.7.0-0277-g17318dcda9" />
   <NugetDependency Id="SIAm8D0q8sYQcO68hGczUB" Location="VL.Kairos.Runtime" IsFriend="true" Version="0.0.0" />
   <DocumentDependency Id="HDiwbv66gQ1McRsbdIXSMD" Location="./VL.KairosUI.Common.vl" IsFriend="true" />
 </Document>
