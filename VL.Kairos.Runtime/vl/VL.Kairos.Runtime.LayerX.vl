@@ -6081,9 +6081,9 @@
               </Overlay>
               <Pad Id="LwWyT1HYkH2QS0XlXnTA6K" SlotId="FWr2OKloVTKMCecaUhnKCn" Bounds="751,2597" />
               <Pad Id="Pke6rhLKyGRPDfkJoB8Vn1" SlotId="TS5GU38QmV3MUb6CcOIGjl" Bounds="185,2597" />
-              <ControlPoint Id="O20TNGq0aL4OHFc8rHHKGK" Bounds="185,2652" />
-              <ControlPoint Id="PZXAxNv4CiyMyfBjcdWwbg" Bounds="358,2652" />
-              <Pad Id="ArZdpESgSGpNsbiwD0br3T" SlotId="UroHC3V5aVdPqE6JV6UrCl" Bounds="358,2597" />
+              <ControlPoint Id="O20TNGq0aL4OHFc8rHHKGK" Bounds="185,2690" />
+              <ControlPoint Id="PZXAxNv4CiyMyfBjcdWwbg" Bounds="402,2651" />
+              <Pad Id="ArZdpESgSGpNsbiwD0br3T" SlotId="UroHC3V5aVdPqE6JV6UrCl" Bounds="402,2596" />
               <Pad Id="Jko9x1o0BFQLptSrjmTcoj" SlotId="PY1hafpOa4RN3yNznt4rYx" Bounds="603,2597" />
               <ControlPoint Id="EIkLd7F5EiWQDbyzYsdASF" Bounds="603,2652" />
               <Pad Id="RjC3uZhMBPWOZGbKY313To" SlotId="QnDwDLkQpSkMqvwgvldWSj" Bounds="922,2597" />
@@ -6249,6 +6249,7 @@
                 </p:NodeReference>
                 <Pin Id="P4ybCdyIliwNPxM0h4rVqe" Name="Result" Kind="OutputPin" />
               </Node>
+              <ControlPoint Id="NYU9RGJGbB8NWnzHfjJFhn" Bounds="213,2650" />
             </Canvas>
             <Slot Id="IJIlHdoUxMVOBQNFAwJvdc" Name="Downstream Sampling Position Enabled">
               <p:TypeAnnotation p:Type="TypeReference">
@@ -6298,7 +6299,11 @@
               </p:TypeAnnotation>
             </Slot>
             <Patch Id="FkOiFiQe2BePnZZ5cI8Moc" Name="Update">
-              <Pin Id="PRZfR1OlWMzPtuKhqs06wJ" Name="Current Time" Kind="InputPin" />
+              <Pin Id="PRZfR1OlWMzPtuKhqs06wJ" Name="Current Time" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Float64" />
+                </p:TypeAnnotation>
+              </Pin>
             </Patch>
             <Link Id="LsXPlzodqwDLnySzto9NsO" Ids="Hq4aqv7Tl1pPvzvMgNxsxI,UYxne5RTbfHOWeYoMxAzTa" IsHidden="true" />
             <Link Id="AMGk7E9TmdtO6k4sdM1vin" Ids="GFbOU3I8MJvOwPDKR1kWwJ,DNMwsii5OhBObz0JkzQSw0" IsHidden="true" />
@@ -6497,6 +6502,7 @@
               <Fragment Id="CZFtdDjDSSnMs6eLlFahli" Patch="E4KuBAAoUD4Npklc0SdbFB" />
               <Fragment Id="Uha9kEXbpU2PBJhaOkM3Uw" Patch="Pi97bX8cM04LFvH0So03sr" />
               <Fragment Id="S59sS2dB2tINqwXF8slRLw" Patch="GOOnJOPV1l5OphA5beOOJ0" />
+              <Fragment Id="JDwPZCZO0ovOBfySL1CtrT" Patch="RYaiOlDfHdQM6XVYs89Upq" />
             </ProcessDefinition>
             <Link Id="HvyDh5QIudwQNAU9USax6p" Ids="IRn6lN1HsL5LmFYMgVdlEj,U174GcDqpPpQCyXUV6i6lu" IsHidden="true" />
             <Link Id="ErJBtzPaC84P0v6HEBFOeS" Ids="HhW3swdi0mKM5H3TL1BPGq,EyTd1lHMMUON0wzhUNv0x0" />
@@ -6567,7 +6573,11 @@
             <Link Id="RJtHV0P7imvLAMLGs3oumM" Ids="NLUm5U3hS5NNMnKidkbcES,EKiPQPkyydoPlrDIMSr0dW" />
             <Link Id="IGuM5HyBPbHLr5R8Qdv7YN" Ids="EIlLX5lI9t2O4pW8bKKdho,CvuduKjh1GcNoHYjcXcMZT" />
             <Slot Id="UroHC3V5aVdPqE6JV6UrCl" Name="Previous Slot Activation Key" />
-            <Slot Id="TS5GU38QmV3MUb6CcOIGjl" Name="Active Slot Activation Key" />
+            <Slot Id="TS5GU38QmV3MUb6CcOIGjl" Name="Active Slot Activation Key">
+              <p:TypeAnnotation p:Type="TypeReference" LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Object" />
+              </p:TypeAnnotation>
+            </Slot>
             <Link Id="EVBXnJ1k1ArLDufYBO6AcA" Ids="BkzH32jsbvkPCHfqF9jZzs,PDYsKDRnBqfLOQlO9SHWXN" />
             <Link Id="MAvMmkcwZXQPunzuJroWQL" Ids="LwwESAIkQ6dMZebgpBP95J,QS5F1x8c0tRN4YBDnTZgsb" />
             <Link Id="Cwt7nWSpkNzNUNxH2ltzuV" Ids="Q5q71vJI4RcPRgEMZT6VNd,VV8LTNDujN4LLK76qaypol" />
@@ -6582,6 +6592,11 @@
             <Link Id="EPwY05soxyMLMWTCUTtABd" Ids="At26bKrGh47QQ89f2l035G,MEvRgZ8QB0LOFGYwNTVaBm" />
             <Link Id="OETB7Wsw14gPYIOptEcgx9" Ids="P4ybCdyIliwNPxM0h4rVqe,HMSeJ1PYgcuPeKTX2eWPUY" />
             <Link Id="PeSlE44adTNPt8WWhCF63q" Ids="AaSa4BejS7HNhseqkuIA6o,DeGOFb2MIFRMK3FzD0PlfL" />
+            <Link Id="D1Anl3aMmSxPvBFwpPnWWl" Ids="Pke6rhLKyGRPDfkJoB8Vn1,NYU9RGJGbB8NWnzHfjJFhn" />
+            <Link Id="D3Ggo72Q3QSMxHwtKJerWJ" Ids="NYU9RGJGbB8NWnzHfjJFhn,FIX1PFHoJNtNxEkHMpayAm" IsHidden="true" />
+            <Patch Id="RYaiOlDfHdQM6XVYs89Upq" Name="GetActiveSlotActivationKey">
+              <Pin Id="FIX1PFHoJNtNxEkHMpayAm" Name="Active Slot Activation Key" Kind="OutputPin" />
+            </Patch>
           </Patch>
         </Node>
         <!--
@@ -7482,7 +7497,7 @@
                   <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <ControlPoint Id="O5oNA7YwKUuMdAfnPYFraP" Bounds="1577,331" />
+              <ControlPoint Id="O5oNA7YwKUuMdAfnPYFraP" Bounds="1559,331" />
               <Pad Id="HDEm9CrkshPLTI1u9CMrFp" SlotId="LCEkJjSKXA2LhmQwBBXtBG" Bounds="193,272" />
               <ControlPoint Id="Bh4vV2uguPJMN4K8efozcs" Bounds="193,331" />
               <Pad Id="VOmSxzUC7yrOFGjGPsvOo2" SlotId="RX6EJkw9fIALo86OqSQLI9" Bounds="812,277" />
@@ -7558,7 +7573,7 @@
                 <Patch Id="VAuC2oOixVhN00L47I6vwE" Name="Constructor" ManuallySortedPins="true">
                   <Pin Id="Gxe5CuyfTOqOK1uZlADhtI" Name="Result" Kind="OutputPin" />
                   <ControlPoint Id="RXL8u87xX0tMtFuTaNDbo4" Bounds="2495,531" />
-                  <Node Bounds="2493,193,107,26" Id="Jkff6fyDOkoNp8HBLG8doM">
+                  <Node Bounds="2493,193,67,26" Id="Jkff6fyDOkoNp8HBLG8doM">
                     <p:NodeReference LastCategoryFullName="Kairos.LayerX.SlotLauncher.ItemModel (SlotLauncher)" LastDependency="VL.Kairos.Runtime.LayerX.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="SlotItemModel" NeedsToBeDirectParent="true" />
@@ -7567,7 +7582,7 @@
                     <Pin Id="Q1Lmdg5BHSGPq6CswXwesj" Name="Output" Kind="StateOutputPin" />
                     <Pin Id="Dv1ISyN191YOhbP3zaAk4G" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   </Node>
-                  <Node Bounds="2493,243,116,26" Id="CLTSwMyHYzsMb2l3q4RAi8">
+                  <Node Bounds="2493,243,91,26" Id="CLTSwMyHYzsMb2l3q4RAi8">
                     <p:NodeReference LastCategoryFullName="Kairos.LayerX.SlotLauncher.ItemModel (SlotLauncher)" LastDependency="VL.Kairos.Runtime.LayerX.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="SetActivationKey" />
@@ -7576,7 +7591,7 @@
                     <Pin Id="Sq6nG3CXLbDMfzJb3pDX0U" Name="Activation Key" Kind="InputPin" />
                     <Pin Id="JHZRPT8qJ9JNWuOPXZ6baA" Name="Output" Kind="StateOutputPin" />
                   </Node>
-                  <Node Bounds="2493,480,107,26" Id="JrOVLGJzBofL7rAJ2W6wK8">
+                  <Node Bounds="2493,480,82,26" Id="JrOVLGJzBofL7rAJ2W6wK8">
                     <p:NodeReference LastCategoryFullName="Kairos.LayerX.SlotLauncher.ItemModel (SlotLauncher)" LastDependency="VL.Kairos.Runtime.LayerX.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="SlotItemModel" NeedsToBeDirectParent="true" />
@@ -8632,7 +8647,7 @@
             <Link Id="UsQiAp1YWe2MThlZv35n8k" Ids="IoAlAUckBfbOUAP3yVWcGp,DmLrwv4cMosMvqStZh8MWX" />
             <Link Id="HtA2JZVUMynNnEKI2Tr2CN" Ids="VxVlBDSDQK5NkgmxFSnDNr,CVHUjPH7wdCPeDGtLbgtFn" />
             <Link Id="OajmjIgP72FMNUuaBQ02Ok" Ids="LcnMXaIVuE9L6nRriu2wmU,VxVlBDSDQK5NkgmxFSnDNr" IsHidden="true" />
-            <Patch Id="DIuOAf3q1NLNjpJyk6CYHM" Name="TryGetSlotItemFromActivationKey" ManuallySortedPins="true">
+            <Patch Id="DIuOAf3q1NLNjpJyk6CYHM" Name="GetSlotItemFromActivationKey" ManuallySortedPins="true">
               <Pin Id="LcnMXaIVuE9L6nRriu2wmU" Name="Activation Key" Kind="InputPin" />
               <Pin Id="A2XtW8UPmzQOwhjAFelbuS" Name="Found" Kind="OutputPin" />
               <Pin Id="UYPaGay3UV8Py7UjKqjLvz" Name="Output" Kind="OutputPin" />
@@ -9228,10 +9243,16 @@
               <Pad Id="DvQgnsij1hpNoJzOc3teQz" SlotId="NI9b7X0TVD5PBfZNCvleRZ" Bounds="366,220" />
               <ControlPoint Id="QIOGB0udNBXM5FcsvJMWi8" Bounds="707,240" />
               <Pad Id="QBuiQ2tPhl8LhZ0dFkaDGG" SlotId="TsPjUgNmvSRLWVXTfdFHZa" Bounds="707,190" />
+              <Pad Id="MUEFl8l4w8sPVCsFrsIk7K" SlotId="Po6Gj7LWIwmNfIFc3J7ok9" Bounds="949,188" />
+              <ControlPoint Id="QD1wToFn00BNsnlvlh9k0e" Bounds="949,241" />
+              <ControlPoint Id="HFCk3ui9BY5NodjTPqR21b" Bounds="1181,110" />
+              <Pad Id="UXywuNFVUvLNQ0ECHGbeDW" SlotId="GA8jwA5YwZuPAimge9Z23A" Bounds="1181,170" />
             </Canvas>
             <ProcessDefinition Id="Q1fAcFZ2NLmL8vvPnp5yG7" IsHidden="true">
               <Fragment Id="LiYSuKFaTJPPUuoOMeXJ8I" Patch="RoyHAVkapuuQaY5OYgTwr8" />
               <Fragment Id="JEjBFHwRRK8MEFvW51jm0Y" Patch="Sx3g2XYVKn4MPFNwXOADxU" />
+              <Fragment Id="RUmjp7sOKWZNndfijd6p8p" Patch="Vc2k268LiATN7xnXq73mB4" />
+              <Fragment Id="O2r3eFEthvxN15Vujf2NPh" Patch="PsQXIjaEg2UQFBmxDYAfTt" Enabled="true" />
             </ProcessDefinition>
             <Patch Id="RoyHAVkapuuQaY5OYgTwr8" Name="LaunchSlot">
               <Pin Id="Bgw8Z6v4MQOL74CMFjbeLE" MergeId="202560" Name="Slot Activation Key" Kind="InputPin" />
@@ -9253,6 +9274,26 @@
             <Link Id="Mm9u6qNpZtyMIvm9Kwgk7w" Ids="QIOGB0udNBXM5FcsvJMWi8,Oq4ApOhOTQDO2yqXN1vinz" IsHidden="true" />
             <Slot Id="TsPjUgNmvSRLWVXTfdFHZa" Name="Model Ungeneric" />
             <Link Id="MnXy0iX7zRAOsWI2JGG48C" Ids="QBuiQ2tPhl8LhZ0dFkaDGG,QIOGB0udNBXM5FcsvJMWi8" />
+            <Slot Id="Po6Gj7LWIwmNfIFc3J7ok9" Name="Active Slot Activation Key">
+              <p:TypeAnnotation p:Type="TypeReference" LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Object" />
+              </p:TypeAnnotation>
+            </Slot>
+            <Patch Id="Vc2k268LiATN7xnXq73mB4" Name="GetActiveSlotActivationKey">
+              <Pin Id="CpnivkNygJVLH5JgwZwQ5Y" MergeId="1164969" Name="Active Slot Activation Key" Kind="OutputPin" />
+            </Patch>
+            <Link Id="PcxYTjIjWyTL8FAqu6nxzp" Ids="MUEFl8l4w8sPVCsFrsIk7K,QD1wToFn00BNsnlvlh9k0e" />
+            <Link Id="Th5P74QJ8BkOiYUQbPhers" Ids="QD1wToFn00BNsnlvlh9k0e,CpnivkNygJVLH5JgwZwQ5Y" IsHidden="true" />
+            <Patch Id="PsQXIjaEg2UQFBmxDYAfTt" Name="Update">
+              <Pin Id="MMguOsIVhUTOsOF6BCqzRe" MergeId="185294" Name="Current Time" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Float64" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+            <Link Id="Czgn6RHs2GQMO6aJ6Vs9Y9" Ids="MMguOsIVhUTOsOF6BCqzRe,HFCk3ui9BY5NodjTPqR21b" IsHidden="true" />
+            <Slot Id="GA8jwA5YwZuPAimge9Z23A" Name="Current Time" />
+            <Link Id="RVJmBt6UQaUPEC1qcPrUoA" Ids="HFCk3ui9BY5NodjTPqR21b,UXywuNFVUvLNQ0ECHGbeDW" />
           </Patch>
         </Node>
       </Canvas>
