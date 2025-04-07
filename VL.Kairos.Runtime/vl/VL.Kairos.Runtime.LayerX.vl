@@ -5608,11 +5608,11 @@
                         <p:NodeReference LastCategoryFullName="LayerX.SlotLauncher.Item (SlotLauncher)" LastDependency="VL.Kairos.Runtime.LayerX.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="ClassType" Name="SlotItem" NeedsToBeDirectParent="true" />
-                          <Choice Kind="OperationCallFlag" Name="GetSlotIndex" />
+                          <Choice Kind="OperationCallFlag" Name="GetActivationKey" />
                         </p:NodeReference>
                         <Pin Id="Rgmn3Dmmm0MMDLOttUk7vZ" Name="Input" Kind="StateInputPin" />
                         <Pin Id="IDL6Uit5I7aLoiUe3WAcM8" Name="Output" Kind="StateOutputPin" />
-                        <Pin Id="Ht0AZQCIhrzM0FhGSaQ1If" Name="Slot Index" Kind="OutputPin" />
+                        <Pin Id="Ht0AZQCIhrzM0FhGSaQ1If" Name="Activation Key" Kind="OutputPin" />
                       </Node>
                     </Patch>
                     <ControlPoint Id="GHDTTdpDDhiLwUZA5HeD96" Bounds="274,1261" Alignment="Top" />
@@ -6574,8 +6574,8 @@
             <Link Id="IGuM5HyBPbHLr5R8Qdv7YN" Ids="EIlLX5lI9t2O4pW8bKKdho,CvuduKjh1GcNoHYjcXcMZT" />
             <Slot Id="UroHC3V5aVdPqE6JV6UrCl" Name="Previous Slot Activation Key" />
             <Slot Id="TS5GU38QmV3MUb6CcOIGjl" Name="Active Slot Activation Key">
-              <p:TypeAnnotation p:Type="TypeReference" LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="Object" />
+              <p:TypeAnnotation p:Type="TypeReference">
+                <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Slot>
             <Link Id="EVBXnJ1k1ArLDufYBO6AcA" Ids="BkzH32jsbvkPCHfqF9jZzs,PDYsKDRnBqfLOQlO9SHWXN" />
@@ -6652,7 +6652,6 @@
                 <Pin Id="SczDRVuXvJPLlXU9w5vF9p" Name="Transition Duration" Kind="OutputPin" />
                 <Pin Id="ElamUqUqOzNMLZpDuh0KEg" Name="Transition Model" Kind="OutputPin" />
                 <Pin Id="MTKj0ijF3hgQUJoDTTxlwI" Name="Layer Model" Kind="OutputPin" />
-                <Pin Id="QipSTXS7Z4lPzwBg55Xqyk" Name="Compositing Model" Kind="OutputPin" />
               </Node>
               <Node Bounds="795,795,125,19" Id="EryHNO9w619OKdalxw82Vt">
                 <p:NodeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.Kairos.Runtime.LayerX.vl">
@@ -6723,25 +6722,24 @@
               <Pad Id="OrUyqhoxoJgLVhr5bew5kC" SlotId="T08eqCInytOMOUBtFFXSXs" Bounds="825,291" />
               <ControlPoint Id="ULTTbuwuvGFMp2FS0nz3RU" Bounds="825,240" />
               <ControlPoint Id="ERe1ffqMsg4QQjjCpE7SH2" Bounds="825,345" />
-              <Pad Id="A2YK4588HrJNDLbd5yPXwc" SlotId="NfktmdvXjVMLb6oJ89JR4y" Bounds="650,670" />
+              <Pad Id="A2YK4588HrJNDLbd5yPXwc" SlotId="NfktmdvXjVMLb6oJ89JR4y" Bounds="662,670" />
               <Pad Id="TUNgt2l7PtzLqLJ7BmxmRt" SlotId="Se6CTZSwuFXNTxlLcn7WxL" Bounds="525,670" />
-              <ControlPoint Id="McDOSRtSAPGO1qF04ImACI" Bounds="650,720" />
-              <Pad Id="Sttmg1setu7MaDbcAUSH4k" SlotId="J1fKsLKvW2XMLM9leFhmP7" Bounds="388,670" />
+              <ControlPoint Id="McDOSRtSAPGO1qF04ImACI" Bounds="662,720" />
               <ControlPoint Id="FR3IAtUO7M9QX7SQOTe4m8" Bounds="388,720" />
-              <Overlay Id="Na19cCSIgLFMjj5Kd7NAFQ" Name="Sample" Bounds="307,1055,637,423">
+              <Overlay Id="Na19cCSIgLFMjj5Kd7NAFQ" Name="Sample" Bounds="82,1036,637,423">
                 <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
               </Overlay>
-              <ControlPoint Id="Pi6hcYBz73PMM7FjEdaGsQ" Bounds="753,1181" />
-              <Pad Id="E71iOXaPy4vPHoDie9KMQq" SlotId="T08eqCInytOMOUBtFFXSXs" Bounds="819,1211" />
+              <ControlPoint Id="Pi6hcYBz73PMM7FjEdaGsQ" Bounds="528,1162" />
+              <Pad Id="E71iOXaPy4vPHoDie9KMQq" SlotId="T08eqCInytOMOUBtFFXSXs" Bounds="594,1192" />
               <Overlay Id="TqLBbrY7iReLZRujTHfczP" Name="SetModel" Bounds="81,445,953,560">
                 <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
               </Overlay>
-              <ControlPoint Id="NyqCfxfpWsCLrynnc9TGUc" Bounds="525,760" />
-              <ControlPoint Id="MzbDgyNMPFgOFj2r8c6YIn" Bounds="687,1152" />
-              <ControlPoint Id="F5tu8IaWTdJL59wtIpScpj" Bounds="490,1201" />
-              <ControlPoint Id="NOXTwFDUhFbOvPNZshYdRi" Bounds="424,1422" />
-              <ControlPoint Id="FsgFjIp3XgbL4yZzs9ugu3" Bounds="622,1101" />
-              <Node Bounds="422,1246,466,133" Id="L9AvfoL4tJyOYiSg9kiG8X">
+              <ControlPoint Id="NyqCfxfpWsCLrynnc9TGUc" Bounds="525,721" />
+              <ControlPoint Id="MzbDgyNMPFgOFj2r8c6YIn" Bounds="462,1133" />
+              <ControlPoint Id="F5tu8IaWTdJL59wtIpScpj" Bounds="265,1182" />
+              <ControlPoint Id="NOXTwFDUhFbOvPNZshYdRi" Bounds="199,1403" />
+              <ControlPoint Id="FsgFjIp3XgbL4yZzs9ugu3" Bounds="397,1082" />
+              <Node Bounds="197,1227,466,133" Id="L9AvfoL4tJyOYiSg9kiG8X">
                 <p:NodeReference LastCategoryFullName="Kairos.LayerX.Compositing" LastDependency="VL.Kairos.Runtime.LayerX.vl">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="Compositing" />
@@ -6760,15 +6758,15 @@
                     <Pin Id="AYsfZ8emo83PL3uQSqvfU8" Name="Input 7" Kind="InputPin" />
                     <Pin Id="UQ5HqKtvqrkLJgMGgSH2tq" Name="Output" Kind="OutputPin" />
                   </Patch>
-                  <ControlPoint Id="LYa27K7ui1pMSFSe1JuFU1" Bounds="472,1254" />
-                  <ControlPoint Id="RWXhmaxG7weNPyPC8hWYQb" Bounds="532,1254" />
-                  <ControlPoint Id="FPy18U0UV7EOKAKgrRApWw" Bounds="592,1254" />
-                  <ControlPoint Id="BsXG7LiOqnWM5Wijf9XOaA" Bounds="652,1254" />
-                  <ControlPoint Id="NNz6leIV06RNCJr5zBe5ER" Bounds="712,1254" />
-                  <ControlPoint Id="KOykdKnr2BeOsn74RkvDLn" Bounds="772,1254" />
-                  <ControlPoint Id="SW378zKPHDsNd0G9o0HwJV" Bounds="832,1254" />
-                  <ControlPoint Id="UTmoyqjLtexMkbap0kYh7Y" Bounds="436,1372" />
-                  <Node Bounds="434,1321,390,19" Id="E27AXWhrHvNOScPwbCwS5v">
+                  <ControlPoint Id="LYa27K7ui1pMSFSe1JuFU1" Bounds="247,1235" />
+                  <ControlPoint Id="RWXhmaxG7weNPyPC8hWYQb" Bounds="307,1235" />
+                  <ControlPoint Id="FPy18U0UV7EOKAKgrRApWw" Bounds="367,1235" />
+                  <ControlPoint Id="BsXG7LiOqnWM5Wijf9XOaA" Bounds="427,1235" />
+                  <ControlPoint Id="NNz6leIV06RNCJr5zBe5ER" Bounds="487,1235" />
+                  <ControlPoint Id="KOykdKnr2BeOsn74RkvDLn" Bounds="547,1235" />
+                  <ControlPoint Id="SW378zKPHDsNd0G9o0HwJV" Bounds="607,1235" />
+                  <ControlPoint Id="UTmoyqjLtexMkbap0kYh7Y" Bounds="211,1353" />
+                  <Node Bounds="209,1302,342,19" Id="E27AXWhrHvNOScPwbCwS5v">
                     <p:NodeReference LastCategoryFullName="LayerX.Layer.ILayer" LastDependency="VL.LayerX.Runtime.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="InterfaceTypeFlag" Name="ILayer" />
@@ -6793,7 +6791,7 @@
                 <Pin Id="QCdDQ5B8N3uOwAu5yNni9T" Name="Local Context" Kind="InputPin" />
                 <Pin Id="JraqEQWQS6VMKJknh1ZEpA" Name="Enabled" Kind="InputPin" />
               </Node>
-              <ControlPoint Id="H3JBos0kEMsN5XQmLPVOv7" Bounds="424,1212" />
+              <ControlPoint Id="H3JBos0kEMsN5XQmLPVOv7" Bounds="199,1193" />
               <Pad Id="HoeAW3UpRSSPcolG2IzYaD" SlotId="GSM1L2q8oadLq1sKam2cUg" Bounds="382,850" />
               <Pad Id="AelpXoa0QT0NoPcnr3OLsO" SlotId="TFbL77fblbxOk9SA2d6pLB" Bounds="252,821" />
               <Node Bounds="250,770,135,19" Id="U9sIYSP4W92QQyhJ7G2fh0">
@@ -6806,7 +6804,7 @@
                 <Pin Id="JamkxfeFCdiN265beQjPXi" Name="Domain Transport Function" Kind="OutputPin" />
                 <Pin Id="VAPtEqWQzN3Mgh0DBjtnop" Name="Valid" Kind="OutputPin" />
               </Node>
-              <Node Bounds="517,1131,96,19" Id="Fy5uw9OIU1gO2sVqLHkRZU">
+              <Node Bounds="292,1112,96,19" Id="Fy5uw9OIU1gO2sVqLHkRZU">
                 <p:NodeReference LastCategoryFullName="Kairos.LayerX.SlotLauncher.Item (SlotLauncher)" LastDependency="VL.Kairos.Runtime.LayerX.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="DomainTransport" />
@@ -6816,8 +6814,9 @@
                 <Pin Id="ULFlnsgjAPAPqiHYjb9DKF" Name="Sampling Position" Kind="InputPin" />
                 <Pin Id="O3dvidnuXGVOXZBnOsOSHS" Name="Sampling Position" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="GGqAGBnKJ4VNL9fGWMZTPr" Bounds="519,1100" />
+              <ControlPoint Id="GGqAGBnKJ4VNL9fGWMZTPr" Bounds="294,1081" />
               <Pad Id="PiGiyFa4hc2Mc4bVtcCsqY" Bounds="885,910" />
+              <Pad Id="Ihh943ixXfwO1TFvVABEUJ" SlotId="H64UvpZ4zdCPsrMyAdH6fh" Bounds="388,670" />
             </Canvas>
             <Slot Id="PtHVXV2G1ChNc4SnbZ6LSl" Name="Layer">
               <p:TypeAnnotation p:Type="TypeReference">
@@ -6930,12 +6929,9 @@
               <Pin Id="Lr5OKS5oQrKOCmerD59m9Y" Name="Transition Duration" Kind="OutputPin" />
               <Pin Id="EA0w3HGmkjoQBvdQbyUCMc" Name="Transition Model" Kind="OutputPin" />
             </Patch>
-            <Slot Id="J1fKsLKvW2XMLM9leFhmP7" Name="Slot Index" />
-            <Link Id="FcQAaodZRfAPKAW6RCqI2A" Ids="FktDwBUNNgbN9hTrx18L94,Sttmg1setu7MaDbcAUSH4k" />
-            <Link Id="KZ8ORKIaFCHLqt1qkAtLjZ" Ids="Sttmg1setu7MaDbcAUSH4k,FR3IAtUO7M9QX7SQOTe4m8" />
             <Link Id="TSPbff6VhF2M1lmtf4YOwy" Ids="FR3IAtUO7M9QX7SQOTe4m8,Cf4RsMNweGGO5tVa4wZQXi" IsHidden="true" />
-            <Patch Id="UR2mFCDApKIMvcUgUJXIZ9" Name="GetSlotIndex">
-              <Pin Id="Cf4RsMNweGGO5tVa4wZQXi" Name="Slot Index" Kind="OutputPin" />
+            <Patch Id="UR2mFCDApKIMvcUgUJXIZ9" Name="GetActivationKey">
+              <Pin Id="Cf4RsMNweGGO5tVa4wZQXi" Name="Activation Key" Kind="OutputPin" />
             </Patch>
             <Link Id="KJvCLWZPEI0MJ8eehzdLg2" Ids="SAKrrveixqtM2cii83Xnfo,Pi6hcYBz73PMM7FjEdaGsQ" IsHidden="true" />
             <Link Id="ChwMDgDQ5YeMw6BJDv97s6" Ids="KICojAVEFuaO1g6j0hVhir,NevOu1R4BATMu0lLRaGr8p" />
@@ -6993,6 +6989,9 @@
             <Link Id="I6B4hmNU4fzMLZCPwIr64n" Ids="NHlcyEa33vkQW70rd6pQXG,G3ikMec8ckGOl9UyceeLeL" />
             <Link Id="BWs5J8oAIq5Nb6fJIW2tXN" Ids="LkL9Hgtq6TJQbggCdUPUkr,PiGiyFa4hc2Mc4bVtcCsqY" />
             <Link Id="BUdKF44Ek18MInqljbcC5a" Ids="PiGiyFa4hc2Mc4bVtcCsqY,JraqEQWQS6VMKJknh1ZEpA" />
+            <Slot Id="H64UvpZ4zdCPsrMyAdH6fh" Name="Activation Key" />
+            <Link Id="ABx6ClLvaoXMVSqzpLkHfC" Ids="FktDwBUNNgbN9hTrx18L94,Ihh943ixXfwO1TFvVABEUJ" />
+            <Link Id="OR8X2NLpDWYMYYxDJbBKR5" Ids="Ihh943ixXfwO1TFvVABEUJ,FR3IAtUO7M9QX7SQOTe4m8" />
           </Patch>
         </Node>
         <!--
@@ -7433,7 +7432,6 @@
               <ControlPoint Id="I32d67DFvghNj7OVHWTnDe" Bounds="462,705" />
               <ControlPoint Id="P6dcshgsM0BOxP047y2GXW" Bounds="486,674" />
               <ControlPoint Id="NLup1RkncAvLP8rmOgr6Wm" Bounds="1053,470" />
-              <ControlPoint Id="JFHeLNdo4DCMqAL0ts3xiW" Bounds="812,470" />
               <ControlPoint Id="NGGfh7Hiu5BPsldkM7JRYm" Bounds="1413,376" />
               <Pad Id="At4wU1BXTFVOCaWnyQ0fyH" SlotId="CfgQUirtqKzMC1bKjeSeG6" Bounds="1304,213" />
               <Node Bounds="1290,266,140,80" Id="V2tDQqBy9v2PBxTwHsVey8">
@@ -7635,6 +7633,33 @@
               <Pad Id="S314DzNuT6pMRZdnKEbNOO" SlotId="JxvcDgvKaKRL4heJc5lfg1" Bounds="2741,345" />
               <Pad Id="EDlF9s9ZN5ELT1ktlRvnsS" SlotId="PFtsbS4gtbGOhgnaEWTTR5" Bounds="2741,280" />
               <Pad Id="DvZn2ZIddFkLOM37SLZtNE" SlotId="F6vfghurjHhMcYdXlw528j" Bounds="2741,211" />
+              <!--
+
+    ************************ CreateDefault ************************
+
+-->
+              <Node Name="CreateDefault" Bounds="1323,610,69,90" Id="DwOV4ysFE7VQYVYqhzpbjh">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" />
+                </p:NodeReference>
+                <Patch Id="K6j3If50NvhMUnBJbFCoC6">
+                  <Pin Id="QMAvZzR1EvUQNzuRUJHlMq" Name="Output" Kind="OutputPin">
+                    <p:TypeAnnotation LastCategoryFullName="Kairos.LayerX.SlotLauncher" LastDependency="VL.Kairos.Runtime.LayerX.vl">
+                      <Choice Kind="TypeFlag" Name="SlotItemModel" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <ControlPoint Id="PwsgOrU1eATNdnxA1zTne8" Bounds="1337,683" />
+                  <Link Id="BCBKW6wlFheOyBO5klavSa" Ids="PwsgOrU1eATNdnxA1zTne8,QMAvZzR1EvUQNzuRUJHlMq" IsHidden="true" />
+                  <Node Bounds="1335,633,40,19" Id="JjVdwK7H5G2PHgdkNEFFbQ">
+                    <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="NULL" />
+                    </p:NodeReference>
+                    <Pin Id="Gk1cLh5BYbyNkD6hD6dvzm" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="RnVpxEiKtW1OK4I9scuPsv" Ids="Gk1cLh5BYbyNkD6hD6dvzm,PwsgOrU1eATNdnxA1zTne8" />
+                </Patch>
+              </Node>
             </Canvas>
             <Patch Id="N0CoAgTh8ybNDPU6Gp6He3" Name="Create" ParticipatingElements="I2vjEmRUN9iLD40MlUqyAL,CsSensS625LPXyooGhXtir" />
             <Slot Id="JxvcDgvKaKRL4heJc5lfg1" Name="Transition Duration">
@@ -7648,7 +7673,6 @@
               <Pin Id="KCZsa2U4H5dMzkV6KT48Rb" Name="Transition Duration" Kind="OutputPin" />
               <Pin Id="DGQ0OG8AWGDNt79GjFHSTd" Name="Transition Model" Kind="OutputPin" />
               <Pin Id="KcZhJk1Rb5JL4mmjVZOIwI" Name="Layer Model" Kind="OutputPin" />
-              <Pin Id="VNQmA7r1c6mNcEHS5UEtbN" Name="Compositing Model" Kind="OutputPin" />
             </Patch>
             <Slot Id="CfgQUirtqKzMC1bKjeSeG6" Name="Layer Model">
               <p:TypeAnnotation p:Type="TypeReference">
@@ -7722,7 +7746,7 @@
             </Patch>
             <Slot Id="F6vfghurjHhMcYdXlw528j" Name="Activation Key">
               <p:TypeAnnotation p:Type="TypeReference">
-                <Choice Kind="TypeFlag" Name="Object" />
+                <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Slot>
             <Link Id="SQNe3sDxWlYNQxarJzFOfU" Ids="UeRpD2QbMzPNlCJyG8eHSM,RBYmiCjlUwJN5h7EXEKrBJ" />
@@ -7751,7 +7775,6 @@
             <Patch Id="Mk1C5HoRy6cN8g81GJVzhg" Name="GetDomainTransportModel">
               <Pin Id="PihBzqGW7beOnakQezM8VX" MergeId="12559" Name="Domain Transport Model" Kind="OutputPin" />
             </Patch>
-            <Link Id="DDaxNF8ofNAOyUFHYWCXgb" Ids="JFHeLNdo4DCMqAL0ts3xiW,VNQmA7r1c6mNcEHS5UEtbN" IsHidden="true" />
             <Patch Id="BShZRHYAhWQOVxcVxRkyJF" Name="SetDomainTransportModel">
               <Pin Id="Dpm7w5WuOXpMSXaN1zd2s9" MergeId="263663" Name="Domain Transport Model" Kind="InputPin" />
             </Patch>
@@ -7856,7 +7879,6 @@
             <Link Id="POXUmDwN54VMwpcoQLLdCQ" Ids="QgBwm3CkKrPMbiqf3Eyn9Y,EkMYMwbRDEbNa7ZHBLVGiC" />
             <Link Id="SFXljfVHRbHK9YzXk5h4ak" Ids="QZQ1jIA4UOSNHUqOBbgf1B,C17qNz6qS9MOG3PqyRC6B0" />
             <Link Id="J3EBDI6FzPlMQ8IbtdnuuK" Ids="I5EJhi1xqy9N6NPHxvL0Ww,NLup1RkncAvLP8rmOgr6Wm" />
-            <Link Id="R46QHgkJ2HINjYUmFwGyvD" Ids="VOmSxzUC7yrOFGjGPsvOo2,JFHeLNdo4DCMqAL0ts3xiW" />
             <Patch Id="TOVqKyl4zj3Mqv1ZwSU5pc" Name="SetActivationKey">
               <Pin Id="VevNSOZEZFALotilL83nuV" Name="Activation Key" Kind="InputPin" />
             </Patch>
@@ -7885,7 +7907,7 @@
             <Link Id="VtUVsoqznM1LvKjsNZXhDl" Ids="S314DzNuT6pMRZdnKEbNOO,McpWArcKkPIPfy7zdy6vpk" />
             <ProcessDefinition Id="HbX8NtgkLbKMJjlK6xJIax" HasStateOut="true">
               <Fragment Id="JLaPSBI2wstP9xLWIDVK0a" Patch="N0CoAgTh8ybNDPU6Gp6He3" Enabled="true" />
-              <Fragment Id="KrvHllBzntnPrfn8ijtuNb" Patch="BN4ujHGXFCpL6oilQ02gWc" Enabled="true" />
+              <Fragment Id="L2eCzFBfYboLPwwLKeDqRg" Patch="DwOV4ysFE7VQYVYqhzpbjh" />
               <Fragment Id="INk1bavXGpPOz0mlSIvRFo" Patch="TOVqKyl4zj3Mqv1ZwSU5pc" Enabled="true" />
               <Fragment Id="MtAWyAKFP6AL3CYDBsVtC7" Patch="IZyFr348NAaNOvWWB3GYz0" Enabled="true" />
               <Fragment Id="KDW1YcUvsDcQDjgmJur5Aj" Patch="AQAD0Rgcd26OGidsRa9kv4" Enabled="true" />
@@ -7907,6 +7929,7 @@
               <Fragment Id="HZmNqGW9BW3NQdvreVcABt" Patch="Mk1C5HoRy6cN8g81GJVzhg" />
               <Fragment Id="A5TnWAzxnYxLq6RkOScTZ9" Patch="QaLWYeUYGOOLz0QnD9dN48" />
               <Fragment Id="DLpzMOwryx3Og3Pbp5jyvW" Patch="MbICoosB8KxOHeztDDL6Fx" />
+              <Fragment Id="KrvHllBzntnPrfn8ijtuNb" Patch="BN4ujHGXFCpL6oilQ02gWc" Enabled="true" />
             </ProcessDefinition>
           </Patch>
         </Node>
@@ -9260,7 +9283,7 @@
             <Link Id="KwklyltLkUJQGO2nAPeWte" Ids="Bgw8Z6v4MQOL74CMFjbeLE,PwTWwa6Z6PnPR5MlWK4aQv" IsHidden="true" />
             <Slot Id="NI9b7X0TVD5PBfZNCvleRZ" Name="Slot Activation Key">
               <p:TypeAnnotation p:Type="TypeReference">
-                <Choice Kind="TypeFlag" Name="Object" />
+                <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Slot>
             <Link Id="GH5FrFBlxAAQCkS8DSwWHg" Ids="PwTWwa6Z6PnPR5MlWK4aQv,DvQgnsij1hpNoJzOc3teQz" />
@@ -9275,8 +9298,8 @@
             <Slot Id="TsPjUgNmvSRLWVXTfdFHZa" Name="Model Ungeneric" />
             <Link Id="MnXy0iX7zRAOsWI2JGG48C" Ids="QBuiQ2tPhl8LhZ0dFkaDGG,QIOGB0udNBXM5FcsvJMWi8" />
             <Slot Id="Po6Gj7LWIwmNfIFc3J7ok9" Name="Active Slot Activation Key">
-              <p:TypeAnnotation p:Type="TypeReference" LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="Object" />
+              <p:TypeAnnotation p:Type="TypeReference">
+                <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Slot>
             <Patch Id="Vc2k268LiATN7xnXq73mB4" Name="GetActiveSlotActivationKey">
@@ -23402,7 +23425,7 @@
                         <CategoryReference Kind="Category" Name="Primitive" />
                         <Choice Kind="ProcessStatefulRegion" Name="Cache" />
                       </p:NodeReference>
-                      <Pin Id="Lu5IieDBdD5P9fyxDnkFpF" Name="Force" Kind="InputPin" />
+                      <Pin Id="Lu5IieDBdD5P9fyxDnkFpF" Name="Force" Kind="InputPin" DefaultValue="False" />
                       <Pin Id="N9FyC4bbxVbQCwCpBa1HyS" Name="Dispose Cached Outputs" Kind="InputPin" />
                       <Pin Id="VX0Fi77R0C2OmEBn690CXA" Name="Has Changed" Kind="OutputPin" />
                       <Patch Id="C7mRe14RpeCLGyKGM5ciay" ManuallySortedPins="true">

@@ -5237,6 +5237,7 @@
                           <Pin Id="IXM5LiYbz5CNmZxTQJCQnm" Name="Value" Kind="InputPin" />
                           <Pin Id="SySj7jbF21qNCZaJTtUAUY" Name="Author" Kind="InputPin" />
                           <Pin Id="QdNmYqHczdqNecHerbBhJ0" Name="Output" Kind="OutputPin" IsHidden="true" />
+                          <Pin Id="C3J0iNwEtw4NzNJMjDgZo6" Name="Found" Kind="OutputPin" />
                         </Node>
                         <Node Bounds="379,1210,87,26" Id="Cc6Q2LeO5srPdMKznOuYKT">
                           <p:NodeReference LastCategoryFullName="Kairos.Sampling.CompositionSampler.TrackSamplerModel" LastDependency="VL.Kairos.Runtime.Core.vl">
@@ -13475,26 +13476,7 @@
                 <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
               </Overlay>
               <Pad Id="T7jTWHdeQlLLkbtviR2YGX" SlotId="DvKkZ9w8ghPMh6Xn8UN3Bx" Bounds="3152,548" />
-              <Node Bounds="3150,579,53,26" Id="MMD5lo5AAIJOZmG4q8rdXA">
-                <p:NodeReference LastCategoryFullName="Collections.Dictionary" LastDependency="VL.CoreLib.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Keys" />
-                  <CategoryReference Kind="ClassType" Name="Dictionary" NeedsToBeDirectParent="true" />
-                </p:NodeReference>
-                <Pin Id="B2KrAFEdQHXL7cK7tGd3OH" Name="Input" Kind="StateInputPin" />
-                <Pin Id="L0nEdbEiOpWQVD4zUHPtUc" Name="Output" Kind="OutputPin" IsHidden="true" />
-                <Pin Id="HFqA52TPFQcOdBAGv9MTh0" Name="Keys" Kind="OutputPin" />
-              </Node>
-              <ControlPoint Id="DM4Ch4ozD6BLO4zIziYnsM" Bounds="3152,683" />
-              <Node Bounds="3150,620,83,26" Id="UtL1L4sIQqeODhjax6RFAf">
-                <p:NodeReference LastCategoryFullName="Collections.HashSet" LastDependency="VL.CoreLib.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="HashSet" />
-                  <Choice Kind="OperationCallFlag" Name="FromSequence" />
-                </p:NodeReference>
-                <Pin Id="L1flsRKEDBlMk4yXBrvG5J" Name="Input" Kind="StateInputPin" />
-                <Pin Id="MK6CD4AyIQfOaJ7G7tmw4D" Name="Result" Kind="OutputPin" />
-              </Node>
+              <ControlPoint Id="DM4Ch4ozD6BLO4zIziYnsM" Bounds="3152,720" />
               <Overlay Id="UiCZ2YxARtRLbTfRkksXpp" Name="GetTrackList" Bounds="3075,475,219,280">
                 <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
               </Overlay>
@@ -13945,6 +13927,41 @@
                   <Link Id="DUuywnXqUTcPtkl613fXrh" Ids="DY8A4LEv8H3OOKIioULYiY,TQFMbZWGP2uPiYRDS3LvPi" />
                 </Patch>
               </Node>
+              <Node Bounds="3116,577,129,109" Id="KPIqDHBEMmZMGCcabgsrOw">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                  <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                </p:NodeReference>
+                <Pin Id="VXDYoaL16OwPGN0fzUtPaX" Name="Force" Kind="InputPin" />
+                <Pin Id="MP32LwMzkkVQcqps4bhHwP" Name="Dispose Cached Outputs" Kind="InputPin" />
+                <Pin Id="LJEDTk6VUyfOJmirxYFbWd" Name="Has Changed" Kind="OutputPin" />
+                <Patch Id="I32QXna20n8LsUza2M50Ep" ManuallySortedPins="true">
+                  <Patch Id="Q3xv7lmUlRzNhrm9ZpAo7k" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="NKciepRSBmsPsg5U841xV5" Name="Then" ManuallySortedPins="true" />
+                  <Node Bounds="3150,600,53,26" Id="MMD5lo5AAIJOZmG4q8rdXA">
+                    <p:NodeReference LastCategoryFullName="Collections.Dictionary" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Keys" />
+                      <CategoryReference Kind="ClassType" Name="Dictionary" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="B2KrAFEdQHXL7cK7tGd3OH" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="L0nEdbEiOpWQVD4zUHPtUc" Name="Output" Kind="OutputPin" IsHidden="true" />
+                    <Pin Id="HFqA52TPFQcOdBAGv9MTh0" Name="Keys" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="3150,640,83,26" Id="UtL1L4sIQqeODhjax6RFAf">
+                    <p:NodeReference LastCategoryFullName="Collections.HashSet" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="ClassType" Name="HashSet" />
+                      <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                    </p:NodeReference>
+                    <Pin Id="L1flsRKEDBlMk4yXBrvG5J" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="MK6CD4AyIQfOaJ7G7tmw4D" Name="Result" Kind="OutputPin" />
+                  </Node>
+                </Patch>
+                <ControlPoint Id="S1N2bAausG2QMeXn8gXPvU" Bounds="3152,583" Alignment="Top" />
+                <ControlPoint Id="JIyhTGFNA1JL1u1l29tcKJ" Bounds="3152,680" Alignment="Bottom" />
+              </Node>
             </Canvas>
             <Slot Id="DvKkZ9w8ghPMh6Xn8UN3Bx" Name="Tracks">
               <p:TypeAnnotation p:Type="TypeReference">
@@ -14129,12 +14146,9 @@
             <Link Id="Or229XcDpO4PLubPwsAHME" Ids="V43PFDKeQtMLED6qbMXaqo,L5EJvOo7JlGNPvJdbKB4Tx" />
             <Patch Id="Gs18Vv4txIWMTYPr1TZfiq" Name="Validate" ParticipatingElements="OYkJcO2psLQLjHlzxLqqfK,DA4R1JXbBdNMn7P0Ioqn26" />
             <Link Id="IJpQRHjVVpZNll18PZDf05" Ids="DM4Ch4ozD6BLO4zIziYnsM,OkmE9XIF5TVL3f5Mi9Q1f0" IsHidden="true" />
-            <Link Id="JFXVaNeoHuJPnWPTKCTWsA" Ids="HFqA52TPFQcOdBAGv9MTh0,L1flsRKEDBlMk4yXBrvG5J" />
-            <Link Id="MEGD6ZGDzBZPBtk1aQMQ2X" Ids="MK6CD4AyIQfOaJ7G7tmw4D,DM4Ch4ozD6BLO4zIziYnsM" />
-            <Patch Id="DbGNNtwIaUpNCTHncPdOGT" Name="GetTrackList">
+            <Patch Id="DbGNNtwIaUpNCTHncPdOGT" Name="GetTrackList" ParticipatingElements="IR0BhpjhflPP75SxKVaOTA">
               <Pin Id="OkmE9XIF5TVL3f5Mi9Q1f0" Name="Keys" Kind="OutputPin" />
             </Patch>
-            <Link Id="Q5WcmtTny4VLsE310jLlTL" Ids="T7jTWHdeQlLLkbtviR2YGX,B2KrAFEdQHXL7cK7tGd3OH" />
             <Link Id="OwNVVvoZ4LlP9GD2IEWNQ2" Ids="NnO5xnLMItNLRN6S5zCsGA,J5w5TLAkGKJL56AkLqf04h" />
             <Patch Id="QlHWw8imfBiOXATusBYGjr" Name="ClearControllers" ParticipatingElements="H6BqXKEYyzsOXsOm5dGfMD" />
             <Link Id="Nb28OAuwiUPNCNOQYH4NHi" Ids="VtNAZWi1Lt9PZqcfhnPHWh,Ha8KcPC8EswOmcG6sb05uC" IsHidden="true" />
@@ -14333,6 +14347,11 @@
             </Patch>
             <Link Id="C5bNKq9pL5HQJsRfUoMtiT" Ids="AfKIKJJT1daM9vTovcSHPn,VyL3DX0cLieMOgUtxcuYuk" IsHidden="true" />
             <Link Id="SYHMf3i322ZOeMhJyXYivG" Ids="IjubC2IV1R5LO5rPv1C7EN,AfKIKJJT1daM9vTovcSHPn" />
+            <Link Id="JFXVaNeoHuJPnWPTKCTWsA" Ids="HFqA52TPFQcOdBAGv9MTh0,L1flsRKEDBlMk4yXBrvG5J" />
+            <Link Id="IR0BhpjhflPP75SxKVaOTA" Ids="T7jTWHdeQlLLkbtviR2YGX,S1N2bAausG2QMeXn8gXPvU" />
+            <Link Id="A09bJLUZwPKMEYeS9Khb64" Ids="S1N2bAausG2QMeXn8gXPvU,B2KrAFEdQHXL7cK7tGd3OH" />
+            <Link Id="NhhydD3gbbENUS1N4t0Y98" Ids="MK6CD4AyIQfOaJ7G7tmw4D,JIyhTGFNA1JL1u1l29tcKJ" />
+            <Link Id="NDUBd7hzvG7OxcvqwFDXOB" Ids="JIyhTGFNA1JL1u1l29tcKJ,DM4Ch4ozD6BLO4zIziYnsM" />
           </Patch>
         </Node>
         <!--
