@@ -16957,9 +16957,6 @@
           </p:Interfaces>
           <Patch Id="DW7aqNkzdFVNZac361QZ5L">
             <Canvas Id="M7A9VsIoyxpQNBvVe4UL0o" CanvasType="Group">
-              <Pad Id="IindIeKQ4KjNcQrtlEdnl9" SlotId="NKUoOqRuUx3LwKRhm2G9YZ" Bounds="158,522" />
-              <ControlPoint Id="DAE8hEtRKpnNOsaQ2n3ArI" Bounds="158,580" />
-              <ControlPoint Id="HxluKKuhEdTOYtAYmHkOXq" Bounds="158,460" />
               <Pad Id="JoXAzS6eoi0Ojl6N0xGlVl" SlotId="Q8BLQvwBkpyMNjBzv7wFNI" Bounds="315,231" />
               <ControlPoint Id="JIfTPakczEfLdzuJv06RDS" Bounds="315,289" />
               <ControlPoint Id="M1ZLlt2Yw41NWCHZQYISSL" Bounds="315,170" />
@@ -17073,36 +17070,23 @@
                       <Choice Kind="OperationCallFlag" Name="SetValue" />
                     </p:NodeReference>
                     <Pin Id="HMhisrtg3hDOXZYJpmP7qz" Name="Input" Kind="StateInputPin" />
-                    <Pin Id="EHKYaT3a4n5NxAEQot5XkX" Name="Value" Kind="InputPin" />
                     <Pin Id="JikMef5eYsFLvkNFI1tYpB" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="Fmt1qUrRJrVNrceqkui2DG" Name="Value" Kind="InputPin" />
                   </Node>
                 </Patch>
               </Node>
-              <Pad Id="MWxdGoiagF9O9HDwY9VYMN" SlotId="NKUoOqRuUx3LwKRhm2G9YZ" Bounds="2336,123" />
+              <Pad Id="HHB65FoQWJoMpB1kb7mFzK" SlotId="MvqkYKBY8FYQGfcMdOFxgo" Bounds="103,479" />
+              <ControlPoint Id="TyuQeZKyezDPasXqCvJrLz" Bounds="103,430" />
+              <ControlPoint Id="NwZ69qEnNIXMaQGsScTfyi" Bounds="103,530" />
+              <Pad Id="I7I2PoqLjPWMjMh4tCQLr2" SlotId="MvqkYKBY8FYQGfcMdOFxgo" Bounds="2417,200" />
             </Canvas>
             <Patch Id="VaoNZ6hPdwbNttshYlER7m" Name="Create" ParticipatingElements="R0MuBeoDKRXO6yZgCD6wkG,NnvtGPvH0GmOzvIGlgC14D" />
-            <Slot Id="NKUoOqRuUx3LwKRhm2G9YZ" Name="Value">
-              <p:Attributes>
-                <AttributeData>
-                  <p:TypeReference LastCategoryFullName="VL.Core.EditorAttributes" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
-                    <Choice Kind="TypeFlag" Name="ExposedAttribute" />
-                  </p:TypeReference>
-                </AttributeData>
-              </p:Attributes>
-              <p:TypeAnnotation p:Type="TypeReference">
-                <Choice Kind="TypeFlag" Name="Object" />
-              </p:TypeAnnotation>
-            </Slot>
             <Patch Id="IKw25VaNGu0QA76D3Xu1J0" Name="GetValue">
-              <Pin Id="NtqpOVqU2AMQZ4luwqQl5z" Name="Value" Kind="OutputPin" />
+              <Pin Id="JVLrSS2H1zsL91w3i9sgBo" Name="Value" Kind="OutputPin" />
             </Patch>
-            <Link Id="K5RRwwz6GNiLkpcFxp8kkV" Ids="DAE8hEtRKpnNOsaQ2n3ArI,NtqpOVqU2AMQZ4luwqQl5z" IsHidden="true" />
-            <Link Id="CXMlWzuJl3jM1IwbprIlQ0" Ids="IindIeKQ4KjNcQrtlEdnl9,DAE8hEtRKpnNOsaQ2n3ArI" />
-            <Link Id="GpfyYJXLXUjNXI7o0Mw7fx" Ids="HxluKKuhEdTOYtAYmHkOXq,IindIeKQ4KjNcQrtlEdnl9" />
             <Patch Id="Ui9rV52Q6YJMIxB880jsDP" Name="SetValue">
-              <Pin Id="I43gkzfru3FOnRsl1ntCpp" Name="Value" Kind="InputPin" />
+              <Pin Id="IiG0v4n8qiYNs5Z0nYHLJk" Name="Value" Kind="InputPin" />
             </Patch>
-            <Link Id="GGLVDc1rvLnNaFTxXmWoe0" Ids="I43gkzfru3FOnRsl1ntCpp,HxluKKuhEdTOYtAYmHkOXq" IsHidden="true" />
             <Slot Id="Q8BLQvwBkpyMNjBzv7wFNI" Name="Value Type Full Name">
               <p:Attributes>
                 <AttributeData>
@@ -17349,7 +17333,19 @@
             </Patch>
             <Link Id="BNQcpxxp6aoPy0bejmEtrI" Ids="D7SDRhJI2raPcIbgVMucbL,IiWJWgBTHXgO7YoPtbPSN9" IsHidden="true" />
             <Link Id="H1HbCCm35xeQOQBX63hOPn" Ids="IiWJWgBTHXgO7YoPtbPSN9,Ud3SlHx6Dz9LDsvbpkoWFD" />
-            <Slot Id="MqV9jP05aYwN8DfMzrXFn4" Name="Requested Sources" />
+            <Slot Id="MqV9jP05aYwN8DfMzrXFn4" Name="Requested Sources">
+              <p:TypeAnnotation p:Type="TypeReference">
+                <Choice Kind="TypeFlag" Name="IReadOnlyDictionary" />
+                <p:TypeArguments>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </TypeReference>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Slot>
             <ProcessDefinition Id="JbREmSejxnHMdZW0Iyu0MJ" HasStateOut="true">
               <Fragment Id="NkFbej5PwwwMqsnapX1M1m" Patch="VaoNZ6hPdwbNttshYlER7m" Enabled="true" />
               <Fragment Id="UWsf7AjYehgM72xhTHyxvy" Patch="V62ecCAe1bhMUulFZH9YMm" Enabled="true" />
@@ -17378,8 +17374,17 @@
             <Link Id="HebYP7otdy8Ml0D6MvaVqs" Ids="TOkjp3T0jmRNgpmCfgCSbi,UrAJbh3bGSfLbbP3m3PyXb" />
             <Link Id="GVpgUQALK3pOgBuUtPF6rm" Ids="BZWXX4hiY4ZNCrxMPkSeS4,KAFIPMW5rsaOJsnbOeUiMx" />
             <Link Id="DJHqJU9r5ApPOxBAZ8V6g4" Ids="ShP9PhzYATdNpg4O0vpiI8,HMhisrtg3hDOXZYJpmP7qz" />
-            <Link Id="Kn0UV5frBnYQDxcGaH0XCt" Ids="MWxdGoiagF9O9HDwY9VYMN,EHKYaT3a4n5NxAEQot5XkX" />
             <Link Id="CSDdl4eHzIkMY8UdLNXI22" Ids="JikMef5eYsFLvkNFI1tYpB,GnSgYpEcEEDOj1gkDodak3" />
+            <Slot Id="MvqkYKBY8FYQGfcMdOFxgo" Name="Value">
+              <p:TypeAnnotation p:Type="TypeReference">
+                <Choice Kind="TypeFlag" Name="Object" />
+              </p:TypeAnnotation>
+            </Slot>
+            <Link Id="U9egHMlYz4VOiajauBvAg4" Ids="TyuQeZKyezDPasXqCvJrLz,HHB65FoQWJoMpB1kb7mFzK" />
+            <Link Id="TxW3aqfVd49QIphWxlfOtL" Ids="IiG0v4n8qiYNs5Z0nYHLJk,TyuQeZKyezDPasXqCvJrLz" IsHidden="true" />
+            <Link Id="MdVBELHbgZHNRdgxchcAXd" Ids="HHB65FoQWJoMpB1kb7mFzK,NwZ69qEnNIXMaQGsScTfyi" />
+            <Link Id="FqpseGOGvAgMZTuXrHKu5E" Ids="NwZ69qEnNIXMaQGsScTfyi,JVLrSS2H1zsL91w3i9sgBo" IsHidden="true" />
+            <Link Id="Qqu6ty22T2yO3Vr2tz7Sx8" Ids="I7I2PoqLjPWMjMh4tCQLr2,Fmt1qUrRJrVNrceqkui2DG" />
           </Patch>
         </Node>
         <!--
