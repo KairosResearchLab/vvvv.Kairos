@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="OSkeSZdQxgZL5JjNk2VxuL" LanguageVersion="2025.7.0-0296-g5844367e34" Version="0.128">
-  <NugetDependency Id="LFmBLrtXunhLev8NUHsPhG" Location="VL.CoreLib" Version="2025.7.0-0296-g5844367e34" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="OSkeSZdQxgZL5JjNk2VxuL" LanguageVersion="2025.7.0-0305-g98ea128603" Version="0.128">
+  <NugetDependency Id="LFmBLrtXunhLev8NUHsPhG" Location="VL.CoreLib" Version="2025.7.0-0305-g98ea128603" />
   <Patch Id="SJJNa04neIQP11sgj2MhFV">
     <Canvas Id="ITHTwOrOwbELHWmX2XYoFM" DefaultCategory="Kairos.Launcher" CanvasType="FullCategory">
       <Pad Id="RXN1WoQXgveNBSQTTKPMtI" Bounds="36,68,325,59" ShowValueBox="true" isIOBox="true" Value="Launcher">
@@ -1102,6 +1102,29 @@
               </p:NodeReference>
               <Pin Id="L88wayexwtRNOFm31lV2rM" Name="ID" Kind="OutputPin" />
             </Node>
+            <Pad Id="PX43LJnziwmLaF3e3dqEZt" SlotId="ACooGJdWjJUNI8nZS2IUVx" Bounds="272,789" />
+            <Node Bounds="270,820,53,26" Id="KWNM6LuBhTrNE4jNcpK7pj">
+              <p:NodeReference LastCategoryFullName="Collections.Dictionary" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <FullNameCategoryReference ID="Collections.Dictionary" />
+                <Choice Kind="OperationCallFlag" Name="Remove" />
+              </p:NodeReference>
+              <Pin Id="Croi9CF2U3FOtxCfA3ktVW" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Kc2jzPniYuFMAsh3NItwE9" Name="Key" Kind="InputPin" />
+              <Pin Id="HOHBbAVPVopNUWBTe7UdD5" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="KWrCngU7OH0OhNXIUSdjCO" SlotId="ACooGJdWjJUNI8nZS2IUVx" Bounds="272,869" />
+            <ControlPoint Id="GoXJkJAmxJeLKdEx94eKuf" Bounds="320,750" />
+            <Node Bounds="295,780,55,26" Id="DXxOR0pDeXJQbULQU2FcVf">
+              <p:NodeReference LastCategoryFullName="Kairos.Common.IIDProvider" LastDependency="VL.Kairos.Runtime.Common.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="InterfaceTypeFlag" Name="IIDProvider" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="GetID" />
+              </p:NodeReference>
+              <Pin Id="DjvBBsHMlJ5M2LKz0UbwkD" Name="Input" Kind="StateInputPin" />
+              <Pin Id="KoqpLnFxEQ1L2pUswOqRgX" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="IoBbiO1eOi5QHA6EOJlxNB" Name="ID" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <Patch Id="MNBsH9ej2SnOWkl9ShF6T9" Name="Create" ParticipatingElements="VfKvBTA0XVULTLNAGcMl1z,JZsmW1vFdE2NLId3Nr7Z5E" />
           <ProcessDefinition Id="OlbW83Eds6OMegpWHFYJWz" IsHidden="true">
@@ -1115,6 +1138,7 @@
             <Fragment Id="QspUh5xIwTCQY3YS85rgGe" Patch="Az7v2wpadxyLFoMRqatrK0" />
             <Fragment Id="OZqb66bW2XhNuhOlcY0med" Patch="IVPn45kbDWZLiXVnmq1Nqw" />
             <Fragment Id="VtjAIDieNunQD2GgiJQKNb" Patch="V3dp6G9z0ENNIC88GfdSms" />
+            <Fragment Id="HhuzmwDCD2HNfwfmJKd4mT" Patch="EjHvhCSGlZ5PpTghtzS5Ff" />
           </ProcessDefinition>
           <Patch Id="IVPn45kbDWZLiXVnmq1Nqw" Name="CreateRuntime">
             <Pin Id="NTHCs1LBz3fNXTR0Izr0rk" MergeId="199726" Name="Runtime" Kind="OutputPin">
@@ -1200,6 +1224,14 @@
           <Link Id="DeeJ9OdBSd2M6oUJaYjBw2" Ids="CFzL1IOQ0JqL5qtTUnKq6z,B7fnBrGIfuhLBuHzDrcKZ4" IsHidden="true" />
           <Link Id="UY5bUriFmryMQx3hVTkMRX" Ids="Te7ju0E9YQyPVuYDzwFlzv,CFzL1IOQ0JqL5qtTUnKq6z" />
           <Link Id="BmClrc6ve1WO6Vlnd8wXWn" Ids="L88wayexwtRNOFm31lV2rM,Te7ju0E9YQyPVuYDzwFlzv" />
+          <Link Id="S6DTlolqzXvNnkbDsIbEJz" Ids="PX43LJnziwmLaF3e3dqEZt,Croi9CF2U3FOtxCfA3ktVW" />
+          <Link Id="UoWoCzJpAL7MA9SOp0Fh1Y" Ids="HOHBbAVPVopNUWBTe7UdD5,KWrCngU7OH0OhNXIUSdjCO" />
+          <Link Id="EvqDAVpaAGxNVURzhpjWaX" Ids="GoXJkJAmxJeLKdEx94eKuf,DjvBBsHMlJ5M2LKz0UbwkD" />
+          <Link Id="OcgD3DdirpSLkm9v3usVWU" Ids="IoBbiO1eOi5QHA6EOJlxNB,Kc2jzPniYuFMAsh3NItwE9" />
+          <Patch Id="EjHvhCSGlZ5PpTghtzS5Ff" Name="RemovePreset">
+            <Pin Id="Q05n2DNeWGAQVBUxb9lcyB" Name="Preset" Kind="InputPin" />
+          </Patch>
+          <Link Id="UDbSXXL3iURM7Z46wwkOOy" Ids="Q05n2DNeWGAQVBUxb9lcyB,GoXJkJAmxJeLKdEx94eKuf" IsHidden="true" />
         </Patch>
       </Node>
       <!--
