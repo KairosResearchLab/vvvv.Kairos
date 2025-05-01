@@ -46999,7 +46999,7 @@
           <Link Id="F4MD4iv8sFQPZ6tdO5Cst1" Ids="IHaH1O6EjiFLSTszQIkNwA,IM8J3ISiQXoNtYBukoES92" IsHidden="true" />
         </Patch>
       </Node>
-      <Overlay Id="PRqvKgnN9VwPEZO2s8oZv5" Name="LayerUI" Bounds="1505,1415,2035,1271">
+      <Overlay Id="PRqvKgnN9VwPEZO2s8oZv5" Name="LayerUI" Bounds="1505,1415,1731,991">
         <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
       </Overlay>
       <Overlay Id="OOHr6Qg1GgSOvKbSvd16eS" Name="" Bounds="37,1250,1813,80">
@@ -49964,6 +49964,100 @@
           </Node>
           <Link Id="VUcEoBOMnaGNXfbPYl7zL0" Ids="M4Zfx0WclgyPOaJVO1irqV,JreeD05Z43PMHv0RgNyPRk" />
           <Link Id="CvZYDi4M25DPVHUtOINiQM" Ids="R0K8gkrxJ3sPWKflD07NJE,JWK6XQHvsYSPphaV1WgN6Q" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ KairosUIRegistry ************************
+
+-->
+      <Node Name="KairosUIRegistry" Bounds="1066,681" Id="BcIFAZIfccqQKS07KaicDF">
+        <p:NodeReference>
+          <Choice Kind="ClassDefinition" />
+        </p:NodeReference>
+        <Patch Id="EucuRGfeKjsQZt6zX3fUId">
+          <Canvas Id="EwcbYyGf1T1M0JEeLYotre" CanvasType="Group">
+            <Node Bounds="352,261,101,19" Id="OcyD01DPRvPPAJAFYqUAQm">
+              <p:NodeReference LastCategoryFullName="Graphics.Themes" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="DefaultDarkTheme" />
+              </p:NodeReference>
+              <Pin Id="Ot07mAld3UmMJV1mnq52r3" Name="Output" Kind="OutputPin" />
+              <Pin Id="H4dPoxiLaXpOPVdwIKibpb" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            </Node>
+            <Node Bounds="352,310,71,19" Id="GXffFrGDtMEL6Q6eIcWCQT">
+              <p:NodeReference LastCategoryFullName="ImGui.Styling" LastDependency="VL.ImGui.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="ImGui" />
+                <CategoryReference Kind="Category" Name="Styling" />
+                <Choice Kind="ProcessAppFlag" Name="DefaultStyle" />
+              </p:NodeReference>
+              <Pin Id="M6entrh2iECO6TIW2IaObJ" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="AqWyieyj2PHPIpnhKqwnUz" Name="Input" Kind="InputPin" />
+              <Pin Id="ROcuOPizJUeMLf2wgxpTR1" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="TR05n8GacGVOUo6nRFR1lf" SlotId="LW4lhUBGzaPP5dLErjpbOj" Bounds="354,360" />
+            <ControlPoint Id="PxDmA2lBupSMs2hb9hYxkT" Bounds="354,400" />
+            <!--
+
+    ************************ CreateDefault ************************
+
+-->
+            <Node Name="CreateDefault" Bounds="672,280,192,131" Id="PPRBA5oTQf3P2hrfrGdbJ6">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" />
+              </p:NodeReference>
+              <Patch Id="TFgq7mEZcikNH42DKMOynH">
+                <Pin Id="VcBThxjDSJhNfzz2ml2wXl" Name="Output" Kind="OutputPin" />
+                <Node Bounds="753,300,99,71" Id="Sr2sYjlBr4iQbzpBXfgByD">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SingleInstance" />
+                  </p:NodeReference>
+                  <Pin Id="RRxyESGqyCyQP08okl5qHp" Name="Force New Instance" Kind="InputPin" />
+                  <Pin Id="HS7UhJzC0ZvNvF6amphaJX" Name="On Stop" Kind="InputPin" DefaultValue="ReleaseAndDispose" />
+                  <Pin Id="HEGs5DXlXX3MnYeMErn15Y" Name="Singleton" Kind="OutputPin" />
+                  <Patch Id="NqORJkLowgRMssMBH553cz" Name="Producer" ManuallySortedPins="true">
+                    <Pin Id="GYLgQLNpv3SPcuqwzuLAyC" Name="Result" Kind="OutputPin" />
+                    <ControlPoint Id="Vx2dghLEf5LO0e0Dir9ogY" Bounds="767,364" />
+                    <Node Bounds="765,323,75,26" Id="StCDA4KHZUoPhGn30hWQKJ">
+                      <p:NodeReference LastCategoryFullName="Kairos.Common.KairosUIRegistry" LastDependency="VL.KairosUI.Common.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="ClassType" Name="KairosUIRegistry" />
+                        <Choice Kind="OperationCallFlag" Name="Create" />
+                      </p:NodeReference>
+                      <Pin Id="IY0u1v8CMtoPLIVTrhCNZt" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="Hj9h4H8Sp00M7POpsjLwaW" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                    </Node>
+                  </Patch>
+                </Node>
+                <Link Id="ABhs1u03IEtQSFFgyRWqdA" Ids="Vx2dghLEf5LO0e0Dir9ogY,GYLgQLNpv3SPcuqwzuLAyC" IsHidden="true" />
+                <Link Id="ORNH5M8VJPtOBggZsLipUr" Ids="IY0u1v8CMtoPLIVTrhCNZt,Vx2dghLEf5LO0e0Dir9ogY" />
+                <ControlPoint Id="TmddjZL0SPuOG0xbBHkZ8r" Bounds="755,394" />
+                <Link Id="MRuvSBaod8ELVJivjogkwf" Ids="TmddjZL0SPuOG0xbBHkZ8r,VcBThxjDSJhNfzz2ml2wXl" IsHidden="true" />
+                <Link Id="Fpd02miodA3LOQd0DXxCAW" Ids="HEGs5DXlXX3MnYeMErn15Y,TmddjZL0SPuOG0xbBHkZ8r" />
+              </Patch>
+            </Node>
+          </Canvas>
+          <Patch Id="RoBB3NoTcqnNy3sEXPDgAb" Name="Create" ParticipatingElements="JpIDyw8UGQyL04yA7kGgCf" />
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="QXILXQQRtcXQHKPbJrK0Z5" IsHidden="true">
+            <Fragment Id="PnelscdYJAaPf2Agn5PvlP" Patch="RoBB3NoTcqnNy3sEXPDgAb" Enabled="true" />
+            <Fragment Id="QC1OHJ5Y6QQNB1w0AHtvjA" Patch="PPRBA5oTQf3P2hrfrGdbJ6" />
+            <Fragment Id="O55TaurIW67MuZrP5XIO3K" Patch="JvQRiYgyvprPiBgTIpSvKS" />
+          </ProcessDefinition>
+          <Link Id="JpIDyw8UGQyL04yA7kGgCf" Ids="Ot07mAld3UmMJV1mnq52r3,AqWyieyj2PHPIpnhKqwnUz" />
+          <Slot Id="LW4lhUBGzaPP5dLErjpbOj" Name="Default Style" />
+          <Link Id="H6gN5AkPMGZMwVlHc1nn8m" Ids="ROcuOPizJUeMLf2wgxpTR1,TR05n8GacGVOUo6nRFR1lf" />
+          <Link Id="MWUVsNVNBOVPspwsywiSOL" Ids="TR05n8GacGVOUo6nRFR1lf,PxDmA2lBupSMs2hb9hYxkT" />
+          <Link Id="OgogBinPJlzMlHfI8CyIvu" Ids="PxDmA2lBupSMs2hb9hYxkT,JIYik9QLRtXOA61mminyQI" IsHidden="true" />
+          <Patch Id="JvQRiYgyvprPiBgTIpSvKS" Name="GetDefaultStyle">
+            <Pin Id="JIYik9QLRtXOA61mminyQI" Name="Default Style" Kind="OutputPin" />
+          </Patch>
         </Patch>
       </Node>
     </Canvas>
