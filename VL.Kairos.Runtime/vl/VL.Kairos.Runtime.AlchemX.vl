@@ -374,36 +374,6 @@
                   <Link Id="DaQXoITrtJONpIRL1ui8Nm" Ids="KgcdwNBYExnOHhx1EAv25T,Vfhooma1oaeQCe3LF8ju1r" IsHidden="true" />
                   <ControlPoint Id="AJbhR8l1wXHNzpvrwYSXNR" Bounds="413,423" />
                   <Link Id="F9R5QEQPLbKOdZAHAdcOaw" Ids="JlOxViMgmF0MWTjuBU4BCO,AJbhR8l1wXHNzpvrwYSXNR" IsHidden="true" />
-                  <Node Bounds="502,533,92,26" Id="HaP9cVpJU06MBNkOGin8iL">
-                    <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.Interpolator.OscillatorInterpolator" LastDependency="VL.AlchemX.vl">
-                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <CategoryReference Kind="ClassType" Name="OscillatorInterpolator" />
-                      <Choice Kind="OperationCallFlag" Name="Update" />
-                    </p:NodeReference>
-                    <Pin Id="JNhYq3Q277nMADxRP0wAHi" Name="Input" Kind="StateInputPin" />
-                    <Pin Id="LMiKkztPhcHNwiD9e0496F" Name="Filter Time" Kind="InputPin" />
-                    <Pin Id="SiV4Fp08MjfNlwqct4mqj9" Name="Cycles" Kind="InputPin" />
-                    <Pin Id="AvHCk7XKtYEOJmy2bAwMh5" Name="Cyclic" Kind="InputPin" />
-                    <Pin Id="VHPyr6RXASML0af3KLHY5S" Name="Output" Kind="StateOutputPin" />
-                  </Node>
-                  <Link Id="HMbX3PQ2cp9NeONBAsywdS" Ids="M1RN1VlHWXpLtUb9Fy8gp9,JNhYq3Q277nMADxRP0wAHi" />
-                  <Link Id="VTFnFkSwyjpPP3vAh0pDxd" Ids="VHPyr6RXASML0af3KLHY5S,KgcdwNBYExnOHhx1EAv25T" />
-                  <Node Bounds="600,465,118,26" Id="DEnv8mwXR1oPtMorcjAmBb">
-                    <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.Model.OscillatorInterpolationModel" LastDependency="VL.AlchemX.vl">
-                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <CategoryReference Kind="RecordType" Name="OscillatorInterpolationModel" />
-                      <Choice Kind="OperationCallFlag" Name="Split" />
-                    </p:NodeReference>
-                    <Pin Id="LvIA0ZuQYCwN7E4DyACeKu" Name="Input" Kind="StateInputPin" />
-                    <Pin Id="FIJ4NslsUiEO1JMvs1hZop" Name="Output" Kind="OutputPin" IsHidden="true" />
-                    <Pin Id="HTe1IVTROrkL3YPRpsNLl1" Name="Filter Time" Kind="OutputPin" />
-                    <Pin Id="Pu5Ld5X5janLRdormqqwnC" Name="Cycles" Kind="OutputPin" />
-                    <Pin Id="LPqekRAMoRIQT3OMKkrisc" Name="Cyclic" Kind="OutputPin" />
-                  </Node>
-                  <Link Id="LTQQZ7LAulNPtQLZ0hSqV0" Ids="V1S0R0ASDU2MTYBAWr5jcm,LvIA0ZuQYCwN7E4DyACeKu" />
-                  <Link Id="FlrXMH5ceSmOb4hk7fWD2B" Ids="HTe1IVTROrkL3YPRpsNLl1,LMiKkztPhcHNwiD9e0496F" />
-                  <Link Id="N8jxuJZvy79OLgs9bpSl3h" Ids="Pu5Ld5X5janLRdormqqwnC,SiV4Fp08MjfNlwqct4mqj9" />
-                  <Link Id="TYMt8ZQQNdqOeYBPUycjbX" Ids="LPqekRAMoRIQT3OMKkrisc,AvHCk7XKtYEOJmy2bAwMh5" />
                   <Pin Id="JlOxViMgmF0MWTjuBU4BCO" Name="Input" Kind="InputPin">
                     <p:TypeAnnotation>
                       <Choice Kind="TypeFlag" Name="T" />
@@ -438,6 +408,7 @@
                     </p:TypeAnnotation>
                   </Pin>
                   <Link Id="ObC9Qi78WsyPL1XmjKfLX8" Ids="AW9C6QVn7sVPA0r1AjyCNX,H8XCd010f3MNxiemBNQ3ax" IsHidden="true" />
+                  <Link Id="QYmIy7iyw9TQCUDIZVk85H" Ids="M1RN1VlHWXpLtUb9Fy8gp9,KgcdwNBYExnOHhx1EAv25T" />
                 </Patch>
               </Node>
               <ControlPoint Id="CZjbf3j9YiBMlBvzAsoNXC" Bounds="195,287" />
@@ -1212,10 +1183,32 @@
               <ControlPoint Id="QuuuN6kFmTFMYToYzbZW5D" Bounds="583,260" />
               <Pad Id="SW5NvKoRX1cQcYwpbsc2hs" SlotId="HLea2ae5rNZPrqNFfjds9k" Bounds="672,300" />
               <Pad Id="RKSvEOksEjZONvTN04PVUk" SlotId="HLea2ae5rNZPrqNFfjds9k" Bounds="645,790" />
+              <ControlPoint Id="SHnnltpNrV8O8HpusQFsaK" Bounds="721,60" />
+              <Node Bounds="719,80,58,19" Id="SRPAmG6ypHiOyuVyOtp9gC">
+                <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <FullNameCategoryReference ID="Primitive.Object" />
+                  <Choice Kind="OperationCallFlag" Name="HardCast" />
+                </p:NodeReference>
+                <Pin Id="FmfL5uVRzbvQRiv6HAvlwq" Name="Input" Kind="StateInputPin" />
+                <Pin Id="SQ9UoJqHoOCLpPqb8YQYZX" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="719,131,195,26" Id="Dg02P6x1IZ2L95O1gGBs79">
+                <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.Model.SpreadInterpolationModel (ValueAndSpreadCount)" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="RecordType" Name="SpreadInterpolationModel (ValueAndSpreadCount)" />
+                  <Choice Kind="OperationCallFlag" Name="GetInterpolationModels" />
+                </p:NodeReference>
+                <Pin Id="VOJCUbG4tJqNFImnR9IUUb" Name="Input" Kind="StateInputPin" />
+                <Pin Id="JLI5ZyxWvTMNagMksRrh0u" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="VKkqN2fbUaPP6rk67MlqnO" Name="Value Interpolation Model" Kind="OutputPin" />
+                <Pin Id="GJ9wVZPj5epLg4oJzv1dR4" Name="SpreadCount Interpolation Model" Kind="OutputPin" />
+              </Node>
             </Canvas>
             <ProcessDefinition Id="QKsGf4iA7i4O5NlZfonaYu" HasStateOut="true">
               <Fragment Id="VxjYuWtbGnKNcMmYzJLFbP" Patch="RutR1XytlVFNe4BWy1vOfT" Enabled="true" />
               <Fragment Id="HNwVNuWiP4lNYWV8qzc79o" Patch="EhKwGxGMnqjQTazsoBHbzY" Enabled="true" />
+              <Fragment Id="J8knKKcxkwaLxMfSCjJbAq" Patch="GdXLmzmo7r2P4IlkfEcrbL" />
             </ProcessDefinition>
             <Slot Id="UxkWBE176EsQOmKp8dvahq" Name="SpreadCount Interpolator" />
             <Link Id="FfnUrTRvp8kONpokskg1X4" Ids="E0rc9g88zu4P7Veko3IzP6,DrgiK16FT8XN051iJ9uvr5" IsHidden="true" />
@@ -1285,6 +1278,16 @@
             <Slot Id="HLea2ae5rNZPrqNFfjds9k" Name="Custom ID" />
             <Link Id="Eptsb2mSVM5OuCBcD05XZh" Ids="QuuuN6kFmTFMYToYzbZW5D,SW5NvKoRX1cQcYwpbsc2hs" />
             <Link Id="DOI5So7MqyzN1vlIuNhxE2" Ids="RKSvEOksEjZONvTN04PVUk,VAdNr7NIjePOUQxH9Jw92R" />
+            <Patch Id="GdXLmzmo7r2P4IlkfEcrbL" Name="SetModel">
+              <Pin Id="POlEMWC8GXkOzC7sEjl1tO" MergeId="991211" Name="Model" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
+                  <Choice Kind="TypeFlag" Name="IInterpolationModel" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+            <Link Id="OjAfAF8TjwWLnY6oCOKtWe" Ids="POlEMWC8GXkOzC7sEjl1tO,SHnnltpNrV8O8HpusQFsaK" IsHidden="true" />
+            <Link Id="AqtkGyzxpwdNRsotgVXN6D" Ids="SHnnltpNrV8O8HpusQFsaK,FmfL5uVRzbvQRiv6HAvlwq" />
+            <Link Id="PvzFfpiPuwsMD7PDPbRRTo" Ids="SQ9UoJqHoOCLpPqb8YQYZX,VOJCUbG4tJqNFImnR9IUUb" />
           </Patch>
         </Node>
         <!--
@@ -2003,7 +2006,7 @@
                 <Pin Id="ADdrQUD3hyvPAymdqhJi4p" Name="Derivative" Kind="OutputPin" />
                 <Pin Id="AHUVQhZ6gPMNNuiMxD3too" Name="Second Derivative" Kind="OutputPin" />
               </Node>
-              <Node Bounds="479,547,81,26" Id="QHkT1n7V4SpNOUaqCh1Uhn">
+              <Node Bounds="417,520,81,26" Id="QHkT1n7V4SpNOUaqCh1Uhn">
                 <p:NodeReference LastCategoryFullName="Animation.Functions.OscillatorFunction" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
@@ -2012,18 +2015,37 @@
                 <Pin Id="ACUy7UtHBrILzwIWSTb7Kl" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="GXL1KYTiAp1OouEWT32BZp" Name="Node Context" Kind="InputPin" IsHidden="true" />
               </Node>
-              <Pad Id="H0PXJWXtZgbNcajx3fI7M8" Bounds="481,588" />
-              <ControlPoint Id="RW7tdT8JLylPjV8S6UE9Mi" Bounds="720,413" />
-              <ControlPoint Id="IcYh2h3QngcMh1Zva1aeRt" Bounds="775,438" />
-              <ControlPoint Id="V0dA7D1FaaHNcWtw8kNboi" Bounds="822,467" />
-              <Pad Id="GTNBfR9IJzZL3S3rlpnqsK" Bounds="720,471" />
-              <Pad Id="RIlek8qBZDMNHtqFC0VQuv" Bounds="775,472" />
-              <Pad Id="TfQ4AEgzissP4OalbOgHg7" Bounds="823,481" />
+              <Pad Id="H0PXJWXtZgbNcajx3fI7M8" Bounds="419,561" />
+              <ControlPoint Id="AhJsfsplZuaLeOyUuPg6AB" Bounds="810,260" />
+              <Node Bounds="808,280,58,19" Id="LaxDfqVpZHvQBAscJV7l6q">
+                <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <FullNameCategoryReference ID="Primitive.Object" />
+                  <Choice Kind="OperationCallFlag" Name="HardCast" />
+                </p:NodeReference>
+                <Pin Id="OZi8cUFaJl1Lm1Py1bmLgq" Name="Input" Kind="StateInputPin" />
+                <Pin Id="RVWf3f9rmklOLVf6peWkYN" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="808,321,118,26" Id="DPku3E3o4g4NO0CiEHuKt2">
+                <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.Model.OscillatorInterpolationModel" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="RecordType" Name="OscillatorInterpolationModel" />
+                  <Choice Kind="OperationCallFlag" Name="Split" />
+                </p:NodeReference>
+                <Pin Id="MhYMKKkmKcEQMSDriTi4pZ" Name="Input" Kind="StateInputPin" />
+                <Pin Id="DIYbZ2QXO0xLKdTTBh1LSf" Name="Output" Kind="OutputPin" IsHidden="true" />
+                <Pin Id="ME5SsOy1ZRTPCfBXS9f5Sv" Name="Filter Time" Kind="OutputPin" />
+                <Pin Id="L1WehzwPlNtPIj2aqrj2Ut" Name="Cycles" Kind="OutputPin" />
+                <Pin Id="PKocAdhKsB5ObY4B6JGYuB" Name="Cyclic" Kind="OutputPin" />
+              </Node>
+              <Pad Id="ACsI7LflvBgMIjlUJzwktg" SlotId="HZGKCLultLXLknM4UeIaKH" Bounds="810,400" />
+              <Pad Id="IbzhTl1IxkjP8AEQ8LeLUD" SlotId="U3e89mJDao4PhHjhGQqykE" Bounds="866,400" />
+              <Pad Id="R19FsyuEaP7MVaF0544H67" SlotId="MTBWNL0XVOvQbyGl4eM2TI" Bounds="923,400" />
             </Canvas>
             <ProcessDefinition Id="NA1373FuYnwLPCBbMFoWra">
               <Fragment Id="NiuhByFYDI9Me6BcM2Nuvc" Patch="EM6EqRYpMjBNaWPV4Q2dJn" Enabled="true" />
-              <Fragment Id="I9Ssl5QUNXGMBZawFwrwQh" Patch="GVICfp4ExSrLHBWtzxloch" Enabled="true" />
               <Fragment Id="MJNDORHNdUOLGkrVRjT0F4" Patch="LdglrdfIPb4MOs5Af7PIN5" Enabled="true" />
+              <Fragment Id="OCHKd02ZA5aLFFbOLIe0C5" Patch="Over38P7rHSOsuiSQCBERw" />
             </ProcessDefinition>
             <Link Id="GhdW1DUEKpqOYMAHRkAtFD" Ids="Um06O6aYzzEOMdVt30gBAT,FvperAnXoRVPQFsnFhUvl8" IsHidden="true" />
             <Link Id="TqxCL4xYjbmOqqfPifQy0B" Ids="VvpcqlKY2TOQSfcd3RY9jb,MJ5De8oZpm6MyPuL31yLi3" IsHidden="true" />
@@ -2043,29 +2065,34 @@
             <Link Id="GIZh57xzis7OmnyFexYb8W" Ids="TG3XTQrHaZTPpM1LyBaGfJ,TYvXVnk199VMqM7PcZ61ki" />
             <Link Id="CNBcMcQvTpLNXstGuS7aYq" Ids="MJ5De8oZpm6MyPuL31yLi3,M2HHeldEjbcNmcD53kF3dC" />
             <Link Id="D0kudZrwBMONHi3zETPKc1" Ids="GC6rcADVofZLFCadJvyqhK,UAczj4ob2nZMnx3cU3bOoq" />
-            <Link Id="LsIrYqIL5xcLeH8u4pNMse" Ids="RW7tdT8JLylPjV8S6UE9Mi,GTNBfR9IJzZL3S3rlpnqsK" />
-            <Link Id="LchT8YUHZu5LWLiHGFtjwt" Ids="Q338Ppyd1TGL7z8syRdPPA,RW7tdT8JLylPjV8S6UE9Mi" IsHidden="true" />
-            <Link Id="AktRK6wZ6WYQaxlsdnY6vg" Ids="IcYh2h3QngcMh1Zva1aeRt,RIlek8qBZDMNHtqFC0VQuv" />
-            <Link Id="Qvw0KuEyUCHMG9YeMGwHSU" Ids="H196TA0waqzMBmS4Tic7QG,IcYh2h3QngcMh1Zva1aeRt" IsHidden="true" />
-            <Link Id="OJeYZ4yTJR7NJN8M9mk6LY" Ids="V0dA7D1FaaHNcWtw8kNboi,TfQ4AEgzissP4OalbOgHg7" />
-            <Link Id="F6BSbXqUvnzLmOZW4Zn6Gx" Ids="JWb1KGoidZSLFSwT8D6gf1,V0dA7D1FaaHNcWtw8kNboi" IsHidden="true" />
             <Link Id="CCsVxi3mxwdL18dDeva4Gn" Ids="Mt8FZVH2FN1O08rK9ZBZfR,Jxj2rqWXgK6Lb4KXOMTW1J" />
             <Link Id="DoOwL0j0wwSMavG59kHVWX" Ids="Mkqp5gk23M3OgN8HlvyJP2,NqyupHxqaXqP0mwdA1bGcF" />
-            <Link Id="Moso4c59BQ9NcLvezEP9Ki" Ids="GTNBfR9IJzZL3S3rlpnqsK,VagL5CQ8C4UMOdCXbFA9Qx" />
-            <Link Id="FHzIVgV57neLfzOJ6P7ddf" Ids="RIlek8qBZDMNHtqFC0VQuv,O1Y2cIyYRXNQEKfwQ7Fdff" />
-            <Link Id="Ir0DHNkhUMxLrwOt8R9dei" Ids="TfQ4AEgzissP4OalbOgHg7,EzftanJa8rQOmu6MnorMDL" />
             <Patch Id="EM6EqRYpMjBNaWPV4Q2dJn" Name="Create" ParticipatingElements="QHkT1n7V4SpNOUaqCh1Uhn" />
-            <Patch Id="GVICfp4ExSrLHBWtzxloch" Name="Update" ManuallySortedPins="true">
-              <Pin Id="Q338Ppyd1TGL7z8syRdPPA" Name="Filter Time" Kind="InputPin" Bounds="1150,525" />
-              <Pin Id="H196TA0waqzMBmS4Tic7QG" Name="Cycles" Kind="InputPin" Bounds="1205,520" />
-              <Pin Id="JWb1KGoidZSLFSwT8D6gf1" Name="Cyclic" Kind="InputPin" Bounds="1252,534" />
-            </Patch>
             <Patch Id="LdglrdfIPb4MOs5Af7PIN5" Name="Interpolate">
               <Pin Id="VvpcqlKY2TOQSfcd3RY9jb" Name="A" Kind="InputPin" />
               <Pin Id="SiiAA0SHA9TO74YJNDBEU7" Name="B" Kind="InputPin" />
               <Pin Id="Um06O6aYzzEOMdVt30gBAT" Name="Scalar" Kind="InputPin" />
               <Pin Id="CVVUwVCA9gPMIfEdalOOua" Name="Output" Kind="OutputPin" />
             </Patch>
+            <Patch Id="Over38P7rHSOsuiSQCBERw" Name="SetModel">
+              <Pin Id="P0EWYvq7qsMLGpkYlGqxDT" MergeId="986598" Name="Model" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
+                  <Choice Kind="TypeFlag" Name="IInterpolationModel" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+            <Link Id="TuWqhlLCWTSMCtAMYr8a3Y" Ids="P0EWYvq7qsMLGpkYlGqxDT,AhJsfsplZuaLeOyUuPg6AB" IsHidden="true" />
+            <Link Id="L6NDgPCdyCpM7WbIcHaQBv" Ids="AhJsfsplZuaLeOyUuPg6AB,OZi8cUFaJl1Lm1Py1bmLgq" />
+            <Link Id="S4sr2xhhmsjQbw1g8PFEjh" Ids="RVWf3f9rmklOLVf6peWkYN,MhYMKKkmKcEQMSDriTi4pZ" />
+            <Slot Id="HZGKCLultLXLknM4UeIaKH" Name="Filter Time" />
+            <Link Id="AeyzIgeoa0gME8Ax2C8VsR" Ids="ME5SsOy1ZRTPCfBXS9f5Sv,ACsI7LflvBgMIjlUJzwktg" />
+            <Slot Id="U3e89mJDao4PhHjhGQqykE" Name="Cycles" />
+            <Link Id="OogUktJif9rPD5TXAn24hX" Ids="L1WehzwPlNtPIj2aqrj2Ut,IbzhTl1IxkjP8AEQ8LeLUD" />
+            <Slot Id="MTBWNL0XVOvQbyGl4eM2TI" Name="Cyclic" />
+            <Link Id="JDTybtxM2TDOhlHuJjzWEm" Ids="PKocAdhKsB5ObY4B6JGYuB,R19FsyuEaP7MVaF0544H67" />
+            <Link Id="Jq4mzaAVOdyLNVqtWE0RG3" Ids="ACsI7LflvBgMIjlUJzwktg,VagL5CQ8C4UMOdCXbFA9Qx" />
+            <Link Id="CNfVv1ElnUVQLdqDQXIDRv" Ids="IbzhTl1IxkjP8AEQ8LeLUD,O1Y2cIyYRXNQEKfwQ7Fdff" />
+            <Link Id="LY4vJILgEDPM2TV0KfIjQn" Ids="R19FsyuEaP7MVaF0544H67,EzftanJa8rQOmu6MnorMDL" />
           </Patch>
         </Node>
         <!--
@@ -2292,7 +2319,7 @@
                 <Pin Id="KMQUDwx6pnuNtnuUcvpDKu" Name="Force" Kind="InputPin" />
                 <Pin Id="TCSDRtBmBFGNjlN8EmPcu1" Name="Dispose Cached Outputs" Kind="InputPin" DefaultValue="True" />
                 <Pin Id="PiFJBddw2pNNG8zXLrCJlI" Name="Has Changed" Kind="OutputPin" />
-                <ControlPoint Id="CW7kgAVw9bBMdsjWCk3Ep7" Bounds="167,161" Alignment="Top" />
+                <ControlPoint Id="CW7kgAVw9bBMdsjWCk3Ep7" Bounds="191,161" Alignment="Top" />
                 <ControlPoint Id="OuRBJo8RSlOM3zKN1WgUi6" Bounds="167,239" Alignment="Bottom" />
                 <Patch Id="QZEZ4Kqc3WdN1sK5cvYdXp" ManuallySortedPins="true">
                   <Patch Id="UP0ogz0kKvALqL8q5Z3h6c" Name="Create" ManuallySortedPins="true" />
@@ -2310,9 +2337,9 @@
                 </Patch>
                 <ControlPoint Id="OJwtAVakQjwMbL2OhZthhe" Bounds="300,161" Alignment="Top" />
               </Node>
-              <ControlPoint Id="PmFej8vJz8TOyZXt8enlBW" Bounds="167,122" />
-              <ControlPoint Id="FHWdni0FlKxOVFEYBb1moL" Bounds="285,375" />
-              <Node Bounds="165,313,123,26" Id="QXhqakajEG1LtElfYW0AHU">
+              <ControlPoint Id="PmFej8vJz8TOyZXt8enlBW" Bounds="167,81" />
+              <ControlPoint Id="FHWdni0FlKxOVFEYBb1moL" Bounds="285,540" />
+              <Node Bounds="165,478,123,26" Id="QXhqakajEG1LtElfYW0AHU">
                 <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.Interpolator.IInterpolator" LastDependency="VL.AlchemX.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="InterfaceTypeFlag" Name="IInterpolator" />
@@ -2325,9 +2352,9 @@
                 <Pin Id="SOtH8DSvxj7Lomgwoh8r0Q" Name="State Output" Kind="OutputPin" />
                 <Pin Id="OPBMLQ0hRQtNSX2DQ8eska" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <ControlPoint Id="GC9Jp4j4Y4lLYXbP4mtSa9" Bounds="285,283" />
-              <ControlPoint Id="IrMFSdca9IYOzXaRCgcquR" Bounds="246,283" />
-              <ControlPoint Id="NqxCgA65CzKOhGuo7DBWdu" Bounds="206,283" />
+              <ControlPoint Id="GC9Jp4j4Y4lLYXbP4mtSa9" Bounds="285,448" />
+              <ControlPoint Id="IrMFSdca9IYOzXaRCgcquR" Bounds="246,448" />
+              <ControlPoint Id="NqxCgA65CzKOhGuo7DBWdu" Bounds="206,448" />
               <!--
 
     ************************ CreateInterpolatorDynamic (Internal) ************************
@@ -2640,6 +2667,43 @@
                   <Link Id="A6sKKNCH7jhPF01SkKP5Ko" Ids="C6PEu03GuV9PULp8qktAAw,G7nhMpsAUwxNLk59H0tDtR" IsHidden="true" />
                 </Patch>
               </Node>
+              <Node Bounds="189,110,50,26" Id="J8cThREMqVJQKHDrcZpoyI">
+                <p:NodeReference LastCategoryFullName="System.Reflection.IVLObject" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <FullNameCategoryReference ID="System.Reflection.IVLObject" />
+                  <Choice Kind="OperationCallFlag" Name="Type" />
+                </p:NodeReference>
+                <Pin Id="Nrv2NVNGZXSLuAjogqboRT" Name="Input" Kind="StateInputPin" />
+                <Pin Id="DoQjcQ0c0fWLayt8lbJLcY" Name="Type" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="153,300,85,86" Id="HIBVWHTZfBCNOqoiShDsii">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                  <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                </p:NodeReference>
+                <Pin Id="AQWQjSyqe78PSQMoXjS0fm" Name="Force" Kind="InputPin" />
+                <Pin Id="MvxR7fogJNiM4975YXCgZ1" Name="Dispose Cached Outputs" Kind="InputPin" />
+                <Pin Id="Sfj1B2eIWiXQQm1naQIBMS" Name="Has Changed" Kind="OutputPin" />
+                <Patch Id="Mfr5KKktPB6Mv321TvagzB" ManuallySortedPins="true">
+                  <Patch Id="JPADPmZMWmPLHHjqHofsWh" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="HdDbpMqjkcsMVMoUpmETai" Name="Then" ManuallySortedPins="true" />
+                  <Node Bounds="165,330,61,26" Id="GFHUgnBcT8kMCK6L3WC15y">
+                    <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.Interpolator.IInterpolator" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <FullNameCategoryReference ID="AlchemX.Interpolation.Interpolator.IInterpolator" />
+                      <Choice Kind="OperationCallFlag" Name="SetModel" />
+                    </p:NodeReference>
+                    <Pin Id="Hs9Xcf6kQQHMnbmLG2nsF8" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="CH2utvMeaTVPq4ClRSBD1R" Name="Model" Kind="InputPin" />
+                    <Pin Id="FacG0EiiwxUO5jf0LXKI0c" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                </Patch>
+                <ControlPoint Id="QjDkGd0qXMvPgPmPLKVie7" Bounds="167,306" Alignment="Top" />
+                <ControlPoint Id="AsoeXtHELHBPcbc9hVidLI" Bounds="167,380" Alignment="Bottom" />
+                <ControlPoint Id="RqJ5gsMG29VNuX6kYt3BQE" Bounds="223,306" Alignment="Top" />
+              </Node>
+              <ControlPoint Id="Fykz0VwSc73LiHyG6pp07W" Bounds="223,270" />
             </Canvas>
             <ProcessDefinition Id="DBWkqdR8ziwO5149i3BjFw">
               <Fragment Id="NxlIaTxfjKbOR4Ow06ttE9" Patch="EVOAZIpfhgkPym4lSg2Lta" Enabled="true" />
@@ -2647,9 +2711,7 @@
               <Fragment Id="TJIekujJS5FMQ93LCfefQh" Patch="TRRaFt2b8uGQJuY4Pd3flQ" />
               <Fragment Id="UkaspH3i9CTO3tx2mkLjhZ" Patch="V37TWyEXdSrMfTAz9qQAMZ" />
             </ProcessDefinition>
-            <Link Id="NqICG7wP7wRLlAqTLLyTuV" Ids="CW7kgAVw9bBMdsjWCk3Ep7,V6z72OlnJX7OlLw8tIS16e" />
             <Link Id="KqWSsDukOf1MgOIzZsVFpn" Ids="EO5tyCOibiOMJL7D2ra2L7,OuRBJo8RSlOM3zKN1WgUi6" />
-            <Link Id="TUVPkLjd6EBN7jpadF4e4h" Ids="PmFej8vJz8TOyZXt8enlBW,CW7kgAVw9bBMdsjWCk3Ep7" />
             <Link Id="EWUs9saGEQrPjigAEK4csH" Ids="Uv9nDHRk8IVNbofmtisMxd,PmFej8vJz8TOyZXt8enlBW" IsHidden="true" />
             <Link Id="B0QQjfmNfMNN5fdKtSUsDZ" Ids="FHWdni0FlKxOVFEYBb1moL,A3TlwcVwvbsMTWRYfI3v3L" IsHidden="true" />
             <Link Id="SmsUaFGNfg3MyKAGHDDt2g" Ids="OPBMLQ0hRQtNSX2DQ8eska,FHWdni0FlKxOVFEYBb1moL" />
@@ -2672,10 +2734,19 @@
             </Patch>
             <Link Id="KeWLCMuJ1qoPJ2TnLG2CEm" Ids="NqxCgA65CzKOhGuo7DBWdu,JSm3Ja8VKKaMirXILFHgD8" />
             <Link Id="KmQZhdQmmf2OUUYoKXM565" Ids="IrMFSdca9IYOzXaRCgcquR,F4vWQU9zX2lMagT6gWyXNe" />
-            <Link Id="IHf8DTZkwPTQcLnL312Ny0" Ids="OuRBJo8RSlOM3zKN1WgUi6,Ck2LzUtOYX4OxJyJXhQ6Uq" />
             <Link Id="O2NqAIwb0mUQSQ4ISHLgvV" Ids="OJwtAVakQjwMbL2OhZthhe,Ca8mI2kkOsJPH7hK5rVYYF" />
             <Link Id="REoBI1kJp00OSLIL7BbhsJ" Ids="FhSvBicNTM9PtaB3P0C9ew,OJwtAVakQjwMbL2OhZthhe" />
             <Link Id="QQbLnttSO6nQa6zXGhPs8b" Ids="GDsirn7VJ6uLBuEaOsMHGS,FhSvBicNTM9PtaB3P0C9ew" IsHidden="true" />
+            <Link Id="IiZWNoySRA1QaXWBtYpHsk" Ids="PmFej8vJz8TOyZXt8enlBW,Nrv2NVNGZXSLuAjogqboRT" />
+            <Link Id="GDE9RIJvio6LzuEn4pr3RK" Ids="DoQjcQ0c0fWLayt8lbJLcY,CW7kgAVw9bBMdsjWCk3Ep7" />
+            <Link Id="H0bZZFS4Pz4LSCOqRD8uhB" Ids="PmFej8vJz8TOyZXt8enlBW,V6z72OlnJX7OlLw8tIS16e" />
+            <Link Id="KxrYEkkRffVQalSHsgajVp" Ids="OuRBJo8RSlOM3zKN1WgUi6,QjDkGd0qXMvPgPmPLKVie7" />
+            <Link Id="EdCqbtFv4rNOa00heTnt2x" Ids="QjDkGd0qXMvPgPmPLKVie7,Hs9Xcf6kQQHMnbmLG2nsF8" />
+            <Link Id="VnVwb9cSGgiN44yoY7frkC" Ids="FacG0EiiwxUO5jf0LXKI0c,AsoeXtHELHBPcbc9hVidLI" />
+            <Link Id="CQBOlRcghxNNjjaAAYbTna" Ids="AsoeXtHELHBPcbc9hVidLI,Ck2LzUtOYX4OxJyJXhQ6Uq" />
+            <Link Id="U6IUmwcwoDtNowDKdU4h5K" Ids="Uv9nDHRk8IVNbofmtisMxd,Fykz0VwSc73LiHyG6pp07W" IsHidden="true" />
+            <Link Id="VjO6ZqeOUz0OFbMzBq7nic" Ids="Fykz0VwSc73LiHyG6pp07W,RqJ5gsMG29VNuX6kYt3BQE" />
+            <Link Id="JE4juYGsbxBQWEdhAZSiIs" Ids="RqJ5gsMG29VNuX6kYt3BQE,CH2utvMeaTVPq4ClRSBD1R" />
           </Patch>
         </Node>
         <Overlay Id="BwppGvktBaGMH5iGRfgo2q" Name="" Bounds="821,725,179,91">
@@ -9583,9 +9654,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="Du3A2jzPFSENA4WZI9gyxA" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="OIAyU3or4VIPu4H5IjiZzC" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="Sa0BumFkhR0MrCDODdAa04" Name="Cycles" Kind="InputPin" />
-                <Pin Id="EAkdLRLlplLLMfLwnCFw2F" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="L2mlEdlt7SxQciTliW8xhN" Name="A" Kind="InputPin" />
                 <Pin Id="O6ahWzgJcOeNLebrUp0Lci" Name="B" Kind="InputPin" />
                 <Pin Id="C4gf54pSNaHLZzebO8r4xi" Name="Scalar" Kind="InputPin" />
@@ -10037,14 +10105,14 @@
                     <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                   </p:NodeReference>
                   <Pin Id="LVe3cZGu5ZDMZgOGcwgh7m" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="VDuNOiX8lOBN7i5nA632ba" Name="Filter Time" Kind="InputPin" />
-                  <Pin Id="Ft9ULI158Y8PiT6cTvq4iQ" Name="Cycles" Kind="InputPin" />
-                  <Pin Id="BSjtI4l84rUL0BvfpQWEXY" Name="Cyclic" Kind="InputPin" />
                   <Pin Id="QpuSoQuqbmSMq6CTM1fTyb" Name="A" Kind="InputPin" />
                   <Pin Id="T7tww3AGwvzNTFpoM1obfB" Name="B" Kind="InputPin" />
                   <Pin Id="P9WVBuKtcGlNW1A3UaKCMz" Name="Scalar" Kind="InputPin" />
                   <Pin Id="OjJcYMU2snVMNzEm6EMSsi" Name="State Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="MwLSghIyBzcOYxRILH2hhL" Name="Output" Kind="OutputPin" />
+                  <Pin Id="VDuNOiX8lOBN7i5nA632ba" Name="Filter Time" Kind="InputPin" />
+                  <Pin Id="Ft9ULI158Y8PiT6cTvq4iQ" Name="Cycles" Kind="InputPin" />
+                  <Pin Id="BSjtI4l84rUL0BvfpQWEXY" Name="Cyclic" Kind="InputPin" />
                 </Node>
               </Canvas>
               <ProcessDefinition Id="N5DPftT1i8SNT7AxrQG2kC">
@@ -10121,9 +10189,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="CVXFcpIdh0sLT7oGFz1ds1" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="RNEaTaWJbykN2qqpiJMrL7" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="O7AETjT7byLLcPCUabC8nZ" Name="Cycles" Kind="InputPin" />
-                <Pin Id="JJHXUc1N8BzLNctTUNmENN" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="BR91axBimcNOVd9v2OgEux" Name="A" Kind="InputPin" />
                 <Pin Id="GAtyWhm4tz8OYJsVW1so9Y" Name="B" Kind="InputPin" />
                 <Pin Id="P8mxO86VAYDLggGuWYqByV" Name="Scalar" Kind="InputPin" />
@@ -11102,9 +11167,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="RPGlFjbQWFuLzzrrFbK2Ct" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="KoV8a89QjOCLZB6AVGSmkJ" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="FWY2Rq6HLTgPf0lTeMLM9u" Name="Cycles" Kind="InputPin" />
-                <Pin Id="Ph7lBS2xhSMNQWVPXDwpL8" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="HcNk8OEoYjuP1W8e4T5BTL" Name="A" Kind="InputPin" />
                 <Pin Id="OANU5rAtulfObrP21chKAc" Name="B" Kind="InputPin" />
                 <Pin Id="QV0i65KeioDPJmlHzjnVw5" Name="Scalar" Kind="InputPin" />
@@ -11401,14 +11463,14 @@
                     <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                   </p:NodeReference>
                   <Pin Id="G3dfVojr4LkQEdNl2wqg2a" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="Er0ZqKjtJfcL0vYybOKscK" Name="Filter Time" Kind="InputPin" />
-                  <Pin Id="GEwcLz5mdlYMwLbLSx7Y6u" Name="Cycles" Kind="InputPin" />
-                  <Pin Id="GQldWkvhtNKNttt6ymGCNE" Name="Cyclic" Kind="InputPin" />
                   <Pin Id="Pp05LvPHiGxNNRRrjBLA3o" Name="A" Kind="InputPin" />
                   <Pin Id="TPAzVEdQhuWNSM0BA72oGP" Name="B" Kind="InputPin" />
                   <Pin Id="HJsNgB49yGTOIKMOOQEbok" Name="Scalar" Kind="InputPin" />
                   <Pin Id="RgsgAYleriHP2lJWLtcXNc" Name="State Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="JFD1zXYJr1uL9GJUfh0JOV" Name="Output" Kind="OutputPin" />
+                  <Pin Id="Er0ZqKjtJfcL0vYybOKscK" Name="Filter Time" Kind="InputPin" />
+                  <Pin Id="GEwcLz5mdlYMwLbLSx7Y6u" Name="Cycles" Kind="InputPin" />
+                  <Pin Id="GQldWkvhtNKNttt6ymGCNE" Name="Cyclic" Kind="InputPin" />
                 </Node>
               </Canvas>
               <ProcessDefinition Id="U1UXw5yR2ewNhmLhrp30qC">
@@ -11495,9 +11557,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="A56vJztHkLYOapmx3g5YmH" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="KEqAVaSyZqiM6eRi7gZ2sX" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="KWs8K8bH95LOUvM4n2EekN" Name="Cycles" Kind="InputPin" />
-                <Pin Id="SS4V0tyx8ooOn7c59i02KG" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="AGFTXWtabBWMVQ4Nfq8GOP" Name="A" Kind="InputPin" />
                 <Pin Id="Kpm6EjZehW1MqFOgJKjQ7j" Name="B" Kind="InputPin" />
                 <Pin Id="IOknDG0nLnhLmQ6NujQQ7f" Name="Scalar" Kind="InputPin" />
@@ -12450,14 +12509,14 @@
                     <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                   </p:NodeReference>
                   <Pin Id="UIGLu9JHLmwNa2RVKrrDSZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="UzsSsZKRPIiLQNO7SIBqN6" Name="Filter Time" Kind="InputPin" />
-                  <Pin Id="KYqdSiqKcHVL9HlOo2WH9s" Name="Cycles" Kind="InputPin" />
-                  <Pin Id="VZOzXLvG8fuPjfoEtR2hFG" Name="Cyclic" Kind="InputPin" />
                   <Pin Id="R3PeRsHRAfYNe58q1NoxuZ" Name="A" Kind="InputPin" />
                   <Pin Id="GJpqAYytUVlNIbbo3XRAYJ" Name="B" Kind="InputPin" />
                   <Pin Id="BfYmJWfn66eL1nSJTT3gOy" Name="Scalar" Kind="InputPin" />
                   <Pin Id="JDJRkCLr9sTNDlfL1F3G1k" Name="State Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="U8BXCHwGNI7LT3MauFhOSg" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="UzsSsZKRPIiLQNO7SIBqN6" Name="Filter Time" Kind="InputPin" />
+                  <Pin Id="KYqdSiqKcHVL9HlOo2WH9s" Name="Cycles" Kind="InputPin" />
+                  <Pin Id="VZOzXLvG8fuPjfoEtR2hFG" Name="Cyclic" Kind="InputPin" />
                 </Node>
                 <Node Bounds="318,191,69,26" Id="K2ts2XC3kTUNHClKBwNCZ0">
                   <p:NodeReference LastCategoryFullName="3D.Matrix" LastDependency="VL.CoreLib.vl">
@@ -12546,14 +12605,14 @@
                     <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                   </p:NodeReference>
                   <Pin Id="UqZuVEdh1xOMNlE7xgshR7" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="MvMAWAhUOlsNHtnri3BzcJ" Name="Filter Time" Kind="InputPin" />
-                  <Pin Id="EVs4UBjkd5UPmnhANrDbVI" Name="Cycles" Kind="InputPin" />
-                  <Pin Id="L6ht535OLppPRBZ1gWt6SQ" Name="Cyclic" Kind="InputPin" />
                   <Pin Id="UwVT7cKgrA9MZxrSurlFMO" Name="A" Kind="InputPin" />
                   <Pin Id="Ei5cviMvUmCO3124eXuFBV" Name="B" Kind="InputPin" />
                   <Pin Id="KDLr3twcaEpOhLTqiRcnvM" Name="Scalar" Kind="InputPin" />
                   <Pin Id="GT7UrhdDR4WPO3NnNwvAZz" Name="State Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="OSgNUfoGtbYOmitp6vtCYx" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="MvMAWAhUOlsNHtnri3BzcJ" Name="Filter Time" Kind="InputPin" />
+                  <Pin Id="EVs4UBjkd5UPmnhANrDbVI" Name="Cycles" Kind="InputPin" />
+                  <Pin Id="L6ht535OLppPRBZ1gWt6SQ" Name="Cyclic" Kind="InputPin" />
                 </Node>
                 <ControlPoint Id="OAFXJFVk5phNwRmt2N3jwE" Bounds="228,326" />
                 <ControlPoint Id="FEmWyRr5KHrMYDKC2goDQY" Bounds="247,347" />
@@ -12660,9 +12719,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="K35TMleFwtQQEgkE5Tbi9D" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="QzzGga4x4CzPUJVfCLvaWc" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="L0UfalGdCikQasFRid9s6u" Name="Cycles" Kind="InputPin" />
-                <Pin Id="Jf2sShp7NtTPt2Hd3Ywfn5" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="VkuQOGFpU6eP0sXEqCiima" Name="A" Kind="InputPin" />
                 <Pin Id="LaRyy0cLOfiQJundMuhDcu" Name="B" Kind="InputPin" />
                 <Pin Id="TOMDU8pQfC5OOSrx50QD1R" Name="Scalar" Kind="InputPin" />
@@ -13460,14 +13516,14 @@
                     <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                   </p:NodeReference>
                   <Pin Id="BM846m7umCvN9rGl4Cy2Vf" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="EDplUdwJuIGMCo2dA7aNsH" Name="Filter Time" Kind="InputPin" />
-                  <Pin Id="M3ruelvd9itODCzjJ2mU0R" Name="Cycles" Kind="InputPin" />
-                  <Pin Id="UVMbrYNY32OOmOaE3KYMn2" Name="Cyclic" Kind="InputPin" />
                   <Pin Id="TRMzQR4VjCBNU9eb0W8BQY" Name="A" Kind="InputPin" />
                   <Pin Id="QSUvsd1LcILPnJrqQayiXE" Name="B" Kind="InputPin" />
                   <Pin Id="EKTVHi3sZskNpyvfoPFnG7" Name="Scalar" Kind="InputPin" />
                   <Pin Id="NLMjDdlmGWXMkJj1E9i0ve" Name="State Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="HwIOOzKy7qGQSTo4njqh4F" Name="Output" Kind="OutputPin" />
+                  <Pin Id="EDplUdwJuIGMCo2dA7aNsH" Name="Filter Time" Kind="InputPin" />
+                  <Pin Id="M3ruelvd9itODCzjJ2mU0R" Name="Cycles" Kind="InputPin" />
+                  <Pin Id="UVMbrYNY32OOmOaE3KYMn2" Name="Cyclic" Kind="InputPin" />
                 </Node>
                 <ControlPoint Id="HgYCAWrqPitNI54GWtz2kw" Bounds="398,202" />
                 <ControlPoint Id="OHgGb5UypBXL2t3vgQwmPW" Bounds="461,242" />
@@ -13593,9 +13649,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="UeJiGsW7baMNxZoeeApv7z" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="CSdAuETFoffLJmGmXM3VHv" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="NhO6aiw2guWNLQuFKCOB3k" Name="Cycles" Kind="InputPin" />
-                <Pin Id="FUkbcKlwwObOOig0nZ7tkj" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="I0cTGhtpUncNiR7NmYHKcz" Name="A" Kind="InputPin" />
                 <Pin Id="CPXlrOCr7x4MJI4gjDB11h" Name="B" Kind="InputPin" />
                 <Pin Id="R2oh1PouZpJLDUU6RC8ndX" Name="Scalar" Kind="InputPin" />
@@ -14274,9 +14327,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="SU4u6QrKLFIPww3dyn7sXs" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="Oc3c1BfP3X6LiPh5IFsI4P" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="HahQ4KsfOriQLXy4MIQbC0" Name="Cycles" Kind="InputPin" />
-                <Pin Id="I8MmJ7VHOhUMrAcbyXWTW3" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="SsOV8Lpg4f3LM51ZjrT4d7" Name="A" Kind="InputPin" />
                 <Pin Id="HmutqpZ9TSfO0klxvNO9k0" Name="B" Kind="InputPin" />
                 <Pin Id="Aodie1TUXGHNzrLQFA5YyY" Name="Scalar" Kind="InputPin" />
@@ -14686,9 +14736,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="MZq2kyZGrnGPtBUl1n1HdF" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="OsUYCundTLPPO64bjx2lDr" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="DsmLztdjr2pLw3nZcVQsBF" Name="Cycles" Kind="InputPin" />
-                <Pin Id="Rzm5UZUeNq6OrdUJ42r3Mw" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="U8wY5ZohzcjONabYzqeBvh" Name="A" Kind="InputPin" />
                 <Pin Id="GSv0YcEcHRwMOBeFvkPSXV" Name="B" Kind="InputPin" />
                 <Pin Id="NNlr3G36ItaP8nKVuKPSoI" Name="Scalar" Kind="InputPin" />
@@ -15498,9 +15545,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="Bvd1BvLVh9SO6JdOdAsS7m" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="A6kIlAb1GgkPBEPkAI15SO" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="C9szSspzryALjkahhOMX7K" Name="Cycles" Kind="InputPin" />
-                <Pin Id="RZJjf4uQhM1QEynMlA3Zdu" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="Fy7eWVoTbIrMwiwhm12zLI" Name="A" Kind="InputPin" />
                 <Pin Id="DdSSmRqbabxQNQLxuyrzuL" Name="B" Kind="InputPin" />
                 <Pin Id="F0Fi4ZOFxtBPs4MadSpRV6" Name="Scalar" Kind="InputPin" />
@@ -16321,9 +16365,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="BRVI5uwwfkQMYjXhZTTlrj" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="APzjjkdvs3yM7h2RfODCeR" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="LZRbmZkjHuFNcV6AyfRzjf" Name="Cycles" Kind="InputPin" />
-                <Pin Id="Mu7k03Ps2oPLqoQ3CFc1SG" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="QergEzmVvd0OSnwFdCBTWc" Name="A" Kind="InputPin" />
                 <Pin Id="Rp5HlNAhi4VPK8lHFNb8c2" Name="B" Kind="InputPin" />
                 <Pin Id="NTN3JRGJIvJO7oCLNLQJKu" Name="Scalar" Kind="InputPin" />
@@ -17126,9 +17167,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="PQHRdFFoFlVLvpdkhHFOsA" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="QHEjBC6kEh8MVib2zTtRIn" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="PVadKK565xLL5qhuJlcJGI" Name="Cycles" Kind="InputPin" />
-                <Pin Id="KhrLC0UFeA1M2eSeduI86y" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="GgnZauAn0elLCzdqALp8eY" Name="A" Kind="InputPin" />
                 <Pin Id="Ke35fV0ql2MLiFLfakvcKd" Name="B" Kind="InputPin" />
                 <Pin Id="IcM8QlgyeIVML8UxDDbyfG" Name="Scalar" Kind="InputPin" />
@@ -17359,14 +17397,14 @@
                     <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                   </p:NodeReference>
                   <Pin Id="OwJtULxpvXNOYr76WfXAK9" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="FXzL6QzdPPkQOahbNrVXv3" Name="Filter Time" Kind="InputPin" />
-                  <Pin Id="SkScUp1DAVXNIhvms9gwSV" Name="Cycles" Kind="InputPin" />
-                  <Pin Id="FFBIQd1OeCNNpMqG42NC7P" Name="Cyclic" Kind="InputPin" />
                   <Pin Id="Ktdc6E3wWIVMrNX2SfrtPb" Name="A" Kind="InputPin" />
                   <Pin Id="SSohL8E3E1cOS8b4ZaswFJ" Name="B" Kind="InputPin" />
                   <Pin Id="LLyzVU8uiJEP5IT6ZQX6l0" Name="Scalar" Kind="InputPin" />
                   <Pin Id="HQwolzMlzdDLabnPH91zrS" Name="State Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="JD45lRSVE6WPaymiYwV14a" Name="Output" Kind="OutputPin" />
+                  <Pin Id="FXzL6QzdPPkQOahbNrVXv3" Name="Filter Time" Kind="InputPin" />
+                  <Pin Id="SkScUp1DAVXNIhvms9gwSV" Name="Cycles" Kind="InputPin" />
+                  <Pin Id="FFBIQd1OeCNNpMqG42NC7P" Name="Cyclic" Kind="InputPin" />
                 </Node>
                 <Node Bounds="422,516,51,26" Id="RgQEDC6QeA1QNp2O6oCuyd">
                   <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastDependency="VL.CoreLib.vl">
@@ -17537,9 +17575,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="IaDCsuqecktMtUZTWVaknZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="GVzCSloGyNwNBnA477T9Cw" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="BrIOq46fkfOOEXQ5CoyPpB" Name="Cycles" Kind="InputPin" />
-                <Pin Id="O2nNzfXhvLeNUNXepEIJ8u" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="R8DNuKpfvVcNGQToEDEn70" Name="A" Kind="InputPin" />
                 <Pin Id="UPTtJru7gSEMOA2usySTGe" Name="B" Kind="InputPin" />
                 <Pin Id="FtnQuptMYhdLTcOrywy2rF" Name="Scalar" Kind="InputPin" />
@@ -18108,9 +18143,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="Gzdhu8sWfA7LglYHZ22sOf" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="Q2Kb3nQYnpiPXczzIi5S8f" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="U3ftNF5r3x8P9gW0C9MAKr" Name="Cycles" Kind="InputPin" />
-                <Pin Id="S3UsDMpTcTLQE2jiv9dI6o" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="CcVrkIdyeIkN33VA5EKM6i" Name="A" Kind="InputPin" />
                 <Pin Id="Hmt4G08CkQvMhNzxsCVxup" Name="B" Kind="InputPin" />
                 <Pin Id="A3R9C329G8POw7CMedZrJa" Name="Scalar" Kind="InputPin" />
@@ -18342,14 +18374,14 @@
                     <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                   </p:NodeReference>
                   <Pin Id="A7I1A5Aas5yMtR3hJz272f" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="Q91cSht0PnKPzWJWsYSPDW" Name="Filter Time" Kind="InputPin" />
-                  <Pin Id="RGOLwlIT9SrMQt0iGhVQFZ" Name="Cycles" Kind="InputPin" />
-                  <Pin Id="GQJNTDZiiWJMrFMk2Onxy4" Name="Cyclic" Kind="InputPin" />
                   <Pin Id="Gc1Wk5bB71EMf3IVKFDE3Y" Name="A" Kind="InputPin" />
                   <Pin Id="BPPDCiuDsx4Mg7JnsMDOqe" Name="B" Kind="InputPin" />
                   <Pin Id="MW1v1jcGHZwMjBXq6ZPTF9" Name="Scalar" Kind="InputPin" />
                   <Pin Id="MpolnKXT5XBOfLTEjY01H5" Name="State Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="FZeVT2K4di9Mh2jzDAkcUY" Name="Output" Kind="OutputPin" />
+                  <Pin Id="Q91cSht0PnKPzWJWsYSPDW" Name="Filter Time" Kind="InputPin" />
+                  <Pin Id="RGOLwlIT9SrMQt0iGhVQFZ" Name="Cycles" Kind="InputPin" />
+                  <Pin Id="GQJNTDZiiWJMrFMk2Onxy4" Name="Cyclic" Kind="InputPin" />
                 </Node>
               </Canvas>
               <ProcessDefinition Id="MMwUnx2lAzcNX3vJauIxpW">
@@ -18510,9 +18542,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="MOi94nVGXEwQSZQv1Bt2J2" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="BJ4TCZAh93vPJ6TIYAcMPR" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="SzQ7BlCknvoPolJWiIHijV" Name="Cycles" Kind="InputPin" />
-                <Pin Id="RecrmU0aFiKMIbN05OSMda" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="RUXqJI60wJaO5cbE4HGhs0" Name="A" Kind="InputPin" />
                 <Pin Id="H4W56vfi5abLBrbhdiaOlR" Name="B" Kind="InputPin" />
                 <Pin Id="HcaZWomQhDuO35PjaSSOgO" Name="Scalar" Kind="InputPin" />
@@ -20196,9 +20225,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="ClXdJV2kQTQOwA3tZVKLd7" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="KC6HUA8gaTFOxCTO7g4pWz" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="Vz2cex27sHAPQn6UyPiv62" Name="Cycles" Kind="InputPin" />
-                <Pin Id="FINrEH55IscNX1IXCPKrbr" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="TQC51GUZB00NYLOXshFo96" Name="A" Kind="InputPin" />
                 <Pin Id="GBqjiCkNvIANvHLFAgnj9p" Name="B" Kind="InputPin" />
                 <Pin Id="JOQEjuK4gkvOfBXjZ3B09L" Name="Scalar" Kind="InputPin" />
@@ -20951,9 +20977,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="KmsuBF1J3HMNo7AXWYZOGe" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="MXe9Pc98CrpMUwHaqEyHf3" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="EGVN09uIFHGNJpP5i0oShS" Name="Cycles" Kind="InputPin" />
-                <Pin Id="A5m8OpNPJeiPhUlZBxlHrK" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="LdNvwBIwSv2OogBy8L2P8K" Name="A" Kind="InputPin" />
                 <Pin Id="UDd15lzbcq3Mhxfd2l0V2A" Name="B" Kind="InputPin" />
                 <Pin Id="N41BnQrM2DoLJoCrzXU6nw" Name="Scalar" Kind="InputPin" />
@@ -21799,9 +21822,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="EZubJ2hQug4MZOF7CqhWQ2" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="N2TqQwaCnAjLQVcExrlpmR" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="TaQUBepoktGObJo9vwLAxZ" Name="Cycles" Kind="InputPin" />
-                <Pin Id="UEO5QjRR0oaOJmqN6MB8xX" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="GA5BX407NOFNcWe5FHRuaH" Name="A" Kind="InputPin" />
                 <Pin Id="PN7A7O5VOl0PD8KwQWswPt" Name="B" Kind="InputPin" />
                 <Pin Id="NlMB5Py3dW1LMbiR6pguar" Name="Scalar" Kind="InputPin" />
@@ -22704,9 +22724,6 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="HooXe41gZ8GNqMt8ui7VzD" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="IgHNhgF4J5EO7BTWTDc0Ee" Name="Filter Time" Kind="InputPin" />
-                <Pin Id="IkGAyeMG714LgJ9LDWTMcM" Name="Cycles" Kind="InputPin" />
-                <Pin Id="BXTzXkFH6nOQbO5gF4jQl7" Name="Cyclic" Kind="InputPin" />
                 <Pin Id="N1BF7B2TyjZMskn0pDEgBJ" Name="A" Kind="InputPin" />
                 <Pin Id="EKR2es8bI62NGgjWR57E0n" Name="B" Kind="InputPin" />
                 <Pin Id="Tj6YiTKls55Pqv9uLprAP4" Name="Scalar" Kind="InputPin" />
