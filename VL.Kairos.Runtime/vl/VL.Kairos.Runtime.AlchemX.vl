@@ -1183,7 +1183,6 @@
               <ControlPoint Id="QuuuN6kFmTFMYToYzbZW5D" Bounds="583,260" />
               <Pad Id="SW5NvKoRX1cQcYwpbsc2hs" SlotId="HLea2ae5rNZPrqNFfjds9k" Bounds="672,300" />
               <Pad Id="RKSvEOksEjZONvTN04PVUk" SlotId="HLea2ae5rNZPrqNFfjds9k" Bounds="645,790" />
-              <ControlPoint Id="SHnnltpNrV8O8HpusQFsaK" Bounds="721,60" />
               <Node Bounds="719,80,58,19" Id="SRPAmG6ypHiOyuVyOtp9gC">
                 <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1204,11 +1203,12 @@
                 <Pin Id="VKkqN2fbUaPP6rk67MlqnO" Name="Value Interpolation Model" Kind="OutputPin" />
                 <Pin Id="GJ9wVZPj5epLg4oJzv1dR4" Name="SpreadCount Interpolation Model" Kind="OutputPin" />
               </Node>
+              <ControlPoint Id="KmCWpZ5qQbbMjCoKVSnd24" Bounds="721,60" />
             </Canvas>
             <ProcessDefinition Id="QKsGf4iA7i4O5NlZfonaYu" HasStateOut="true">
               <Fragment Id="VxjYuWtbGnKNcMmYzJLFbP" Patch="RutR1XytlVFNe4BWy1vOfT" Enabled="true" />
               <Fragment Id="HNwVNuWiP4lNYWV8qzc79o" Patch="EhKwGxGMnqjQTazsoBHbzY" Enabled="true" />
-              <Fragment Id="J8knKKcxkwaLxMfSCjJbAq" Patch="GdXLmzmo7r2P4IlkfEcrbL" />
+              <Fragment Id="E3obx8vKMuWLnuaxzhllJh" Patch="AFpRlKA9wgoPca4smFgAKj" />
             </ProcessDefinition>
             <Slot Id="UxkWBE176EsQOmKp8dvahq" Name="SpreadCount Interpolator" />
             <Link Id="FfnUrTRvp8kONpokskg1X4" Ids="E0rc9g88zu4P7Veko3IzP6,DrgiK16FT8XN051iJ9uvr5" IsHidden="true" />
@@ -1278,16 +1278,16 @@
             <Slot Id="HLea2ae5rNZPrqNFfjds9k" Name="Custom ID" />
             <Link Id="Eptsb2mSVM5OuCBcD05XZh" Ids="QuuuN6kFmTFMYToYzbZW5D,SW5NvKoRX1cQcYwpbsc2hs" />
             <Link Id="DOI5So7MqyzN1vlIuNhxE2" Ids="RKSvEOksEjZONvTN04PVUk,VAdNr7NIjePOUQxH9Jw92R" />
-            <Patch Id="GdXLmzmo7r2P4IlkfEcrbL" Name="SetModel">
-              <Pin Id="POlEMWC8GXkOzC7sEjl1tO" MergeId="991211" Name="Model" Kind="InputPin">
+            <Link Id="PvzFfpiPuwsMD7PDPbRRTo" Ids="SQ9UoJqHoOCLpPqb8YQYZX,VOJCUbG4tJqNFImnR9IUUb" />
+            <Patch Id="AFpRlKA9wgoPca4smFgAKj" Name="SetInterpolationModel">
+              <Pin Id="Ptqmg2VzQIjN7AbtyrwYa3" MergeId="976997" Name="Interpolation Model" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                   <Choice Kind="TypeFlag" Name="IInterpolationModel" />
                 </p:TypeAnnotation>
               </Pin>
             </Patch>
-            <Link Id="OjAfAF8TjwWLnY6oCOKtWe" Ids="POlEMWC8GXkOzC7sEjl1tO,SHnnltpNrV8O8HpusQFsaK" IsHidden="true" />
-            <Link Id="AqtkGyzxpwdNRsotgVXN6D" Ids="SHnnltpNrV8O8HpusQFsaK,FmfL5uVRzbvQRiv6HAvlwq" />
-            <Link Id="PvzFfpiPuwsMD7PDPbRRTo" Ids="SQ9UoJqHoOCLpPqb8YQYZX,VOJCUbG4tJqNFImnR9IUUb" />
+            <Link Id="Hk13MnunTboO2wz1iov3wD" Ids="Ptqmg2VzQIjN7AbtyrwYa3,KmCWpZ5qQbbMjCoKVSnd24" IsHidden="true" />
+            <Link Id="Kg2nQFOHdy3PBxcDyYJ5SC" Ids="KmCWpZ5qQbbMjCoKVSnd24,FmfL5uVRzbvQRiv6HAvlwq" />
           </Patch>
         </Node>
         <!--
@@ -1308,8 +1308,8 @@
               <Overlay Id="EwQahSNhyHDOMm9PU7rcE9" Name="Interpolate" Bounds="652,171,428,194">
                 <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
               </Overlay>
-              <ControlPoint Id="LRJ3FQVCwvmMNujcwTyHu9" Bounds="1255,221" />
-              <Overlay Id="Lusmd6pnw6oNYuD1Tpbdm1" Name="SetModel" Bounds="1148,170,283,209">
+              <ControlPoint Id="LRJ3FQVCwvmMNujcwTyHu9" Bounds="1242,231" />
+              <Overlay Id="Lusmd6pnw6oNYuD1Tpbdm1" Name="SetInterpolationModel" Bounds="1148,170,283,209">
                 <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
               </Overlay>
             </Canvas>
@@ -1343,8 +1343,8 @@
                 </p:TypeAnnotation>
               </Pin>
             </Patch>
-            <Patch Id="OZadEDBaimuOkEr3pRl8vo" Name="SetModel">
-              <Pin Id="OEjQQSNL3yUMmw64roiLTX" Name="Model" Kind="InputPin">
+            <Patch Id="OZadEDBaimuOkEr3pRl8vo" Name="SetInterpolationModel">
+              <Pin Id="OEjQQSNL3yUMmw64roiLTX" Name="Interpolation Model" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                   <Choice Kind="TypeFlag" Name="IInterpolationModel" />
                 </p:TypeAnnotation>
@@ -1401,7 +1401,6 @@
               <ControlPoint Id="FQUTbIrIFKTLutgpIYbSOl" Bounds="524,410" />
               <ControlPoint Id="O7vzqohO0cLP7uZ2gwRXcC" Bounds="476,481" />
               <Pad Id="FSTbQJpSsJDL6Z2J25ZPJc" Bounds="502,346" />
-              <ControlPoint Id="ALyeU4V3CbgPfg5TknnLpP" Bounds="564,220" />
               <Node Bounds="562,240,58,19" Id="JS8yMALMCtQLfO0XwdHQk2">
                 <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1421,13 +1420,8 @@
                 <Pin Id="IiqGiWgqVvgLpFxRmmdSGb" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="UuhEJ4gHNxtMU2Yk5vKXTW" Name="Step Coord" Kind="OutputPin" />
               </Node>
+              <ControlPoint Id="IoTOaEVzjhEPgOjAvakkHC" Bounds="564,220" />
             </Canvas>
-            <ProcessDefinition Id="R2WPvuHpTR9QdgFe65c6Ea">
-              <Fragment Id="IDQ7GNfni4bLtgTvPvL7is" Patch="PigXPBE9iqcPjSbzD5CBsS" Enabled="true" />
-              <Fragment Id="UzM20uw98QiPWR5R1kyYzb" Patch="NqEjXoB48wmLVc1lHwGrFg" Enabled="true" />
-              <Fragment Id="U8pr4hq8UYALpCCfclU1Z6" Patch="NCaMTE48is5No7hE8DfwpQ" Enabled="true" />
-              <Fragment Id="HPDS8efPYhwPsbBYLwrcA2" Patch="AmflPcA41m6LCKYabIU711" />
-            </ProcessDefinition>
             <Link Id="DRicXjLuKKbN1op7VmNKFm" Ids="EuQB7uO435EQGPOjbpPYxS,QCyFO1dqPqDLCIqX0VCVw7" />
             <Link Id="BSULA4t23kOPgOzXnSIYhL" Ids="HcJN1zVs8lMPpU3WufouqX,EuQB7uO435EQGPOjbpPYxS" IsHidden="true" />
             <Link Id="HqOnCfDtmHaMrzJFQW6V54" Ids="FTYuSMxmJqRO7hsnbXgjEi,LJRulaaGvyBNa1Pdsm6oRY" />
@@ -1439,7 +1433,6 @@
             <Link Id="Vap3jVvfKjKLeeh1awSjZL" Ids="TjR0e3X0XGAPvX2oDJFSKv,FbwgJm0ZKp8MvgWFiA2CAp" />
             <Link Id="DS7TTl0COBJQF6Cvc9Dcvr" Ids="FSTbQJpSsJDL6Z2J25ZPJc,EWW6FeNxFSLLT5VbSr7QAj" />
             <Patch Id="PigXPBE9iqcPjSbzD5CBsS" Name="Create" />
-            <Patch Id="NqEjXoB48wmLVc1lHwGrFg" Name="Update" ManuallySortedPins="true" />
             <Patch Id="NCaMTE48is5No7hE8DfwpQ" Name="Interpolate">
               <Pin Id="Fwz2xlJKJJYN5Ra4g4Jsgr" Name="A" Kind="InputPin" />
               <Pin Id="BF4KYGq0uaHQAT5NE3ncfv" Name="B" Kind="InputPin" />
@@ -1450,17 +1443,22 @@
               </Pin>
               <Pin Id="VM8C3MCBgvMLtI9pd4TIUh" Name="Output" Kind="OutputPin" />
             </Patch>
-            <Patch Id="AmflPcA41m6LCKYabIU711" Name="SetModel">
-              <Pin Id="RYwR8louubYLS5Amy4lTfN" MergeId="976997" Name="Model" Kind="InputPin">
+            <Link Id="HPa7v4UXrHnP4D8X0twDPH" Ids="FkV7JYbYP7ZQFm5CoCVH8p,Q0oDWlkxVYKNzJ27o0HAIF" />
+            <Link Id="IVgoitwcRQiLGVIfHOKY8B" Ids="UuhEJ4gHNxtMU2Yk5vKXTW,FSTbQJpSsJDL6Z2J25ZPJc" />
+            <Patch Id="PKbF3yhgChuO4wqHzW3qjU" Name="SetInterpolationModel">
+              <Pin Id="PNiF18vfS43MwS4E4FEwEk" MergeId="976997" Name="Interpolation Model" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                   <Choice Kind="TypeFlag" Name="IInterpolationModel" />
                 </p:TypeAnnotation>
               </Pin>
             </Patch>
-            <Link Id="R5YhvpxMDvCM1ddxQ1GpSw" Ids="RYwR8louubYLS5Amy4lTfN,ALyeU4V3CbgPfg5TknnLpP" IsHidden="true" />
-            <Link Id="PzDzSaLl5dRLQe8FgNEHZf" Ids="ALyeU4V3CbgPfg5TknnLpP,UB1ctMjBg1COsw74jg0d20" />
-            <Link Id="HPa7v4UXrHnP4D8X0twDPH" Ids="FkV7JYbYP7ZQFm5CoCVH8p,Q0oDWlkxVYKNzJ27o0HAIF" />
-            <Link Id="IVgoitwcRQiLGVIfHOKY8B" Ids="UuhEJ4gHNxtMU2Yk5vKXTW,FSTbQJpSsJDL6Z2J25ZPJc" />
+            <Link Id="JrriIbM8ZitMVM9i7LarAF" Ids="PNiF18vfS43MwS4E4FEwEk,IoTOaEVzjhEPgOjAvakkHC" IsHidden="true" />
+            <Link Id="SdpsSSiYoMYMPriEBRwmok" Ids="IoTOaEVzjhEPgOjAvakkHC,UB1ctMjBg1COsw74jg0d20" />
+            <ProcessDefinition Id="R2WPvuHpTR9QdgFe65c6Ea">
+              <Fragment Id="IDQ7GNfni4bLtgTvPvL7is" Patch="PigXPBE9iqcPjSbzD5CBsS" Enabled="true" />
+              <Fragment Id="IIeHxD0bS6sQCa1nMmgGAE" Patch="PKbF3yhgChuO4wqHzW3qjU" Enabled="true" />
+              <Fragment Id="U8pr4hq8UYALpCCfclU1Z6" Patch="NCaMTE48is5No7hE8DfwpQ" Enabled="true" />
+            </ProcessDefinition>
           </Patch>
         </Node>
         <!--
@@ -1499,12 +1497,12 @@
               </Node>
               <Pad Id="Gm5bfRk1tYRPHhLQQXbVmP" SlotId="UqLD9s23CqqP1uE0cWluwW" Bounds="652,380" />
               <ControlPoint Id="CW0RwvlEDBtMQKrGMtSNih" Bounds="652,340" />
-              <ControlPoint Id="T4aDZxC6aYhPCQQGJyF9d5" Bounds="794,280" />
+              <ControlPoint Id="DiavZkpo5okOPl43JM4srm" Bounds="816,280" />
             </Canvas>
             <ProcessDefinition Id="MOZmrxnQRBzQGbfFEsXyBh">
               <Fragment Id="DVZRRXFMtb7NNKjjqkwFzE" Patch="Hxgs35aFe4hPKkYtJ2WAVt" Enabled="true" />
               <Fragment Id="Ik247KoSGX1QU16AbNBFxg" Patch="AiS5l7WpAkXNvMEj6ulhK0" Enabled="true" />
-              <Fragment Id="AMERhQG81qEPusqpXxyVzD" Patch="EVLl4l0glXCQVdfkSix6Cm" />
+              <Fragment Id="NLZcC3mgqTINeZH60x4J6i" Patch="V0hYF4HFLGjO3A4IxsZwIz" />
             </ProcessDefinition>
             <Link Id="KSHnzHWLCPzLFpGeUsTTqW" Ids="UuR1z1IuclxMiRRln51eQz,SUHopNDDWA8P9tOR9HJjvF" IsHidden="true" />
             <Link Id="MooH7SvogVHPtCIGT7FieP" Ids="MtZljtEuEwtPEKAxyK1xeu,S8UQi5nG0s2LRXOFLHmqdK" IsHidden="true" />
@@ -1527,14 +1525,14 @@
             <Link Id="U9IjmoaATvBQBvhTcJXU9c" Ids="Gm5bfRk1tYRPHhLQQXbVmP,MN0x5ZpOQugPdGupoVlQxU" />
             <Link Id="RRkZJaGWhCSP1zhHkAsRhE" Ids="CW0RwvlEDBtMQKrGMtSNih,Gm5bfRk1tYRPHhLQQXbVmP" />
             <Link Id="MtTpyoGI6uVPtuHOE4RYIh" Ids="FCJLEgdfs2rPvUukbRtTS7,CW0RwvlEDBtMQKrGMtSNih" IsHidden="true" />
-            <Patch Id="EVLl4l0glXCQVdfkSix6Cm" Name="SetModel">
-              <Pin Id="Dlvm1JacuCtNhJNOAjEljw" MergeId="978901" Name="Model" Kind="InputPin">
+            <Patch Id="V0hYF4HFLGjO3A4IxsZwIz" Name="SetInterpolationModel">
+              <Pin Id="OWTOzo4Ob56L7moIY8bKDB" MergeId="976997" Name="Interpolation Model" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                   <Choice Kind="TypeFlag" Name="IInterpolationModel" />
                 </p:TypeAnnotation>
               </Pin>
             </Patch>
-            <Link Id="JYeKnJHoSyZPCNR8UWwiHu" Ids="Dlvm1JacuCtNhJNOAjEljw,T4aDZxC6aYhPCQQGJyF9d5" IsHidden="true" />
+            <Link Id="VgnyKPYK1XVOVNGuWoWt2g" Ids="OWTOzo4Ob56L7moIY8bKDB,DiavZkpo5okOPl43JM4srm" IsHidden="true" />
           </Patch>
         </Node>
         <!--
@@ -1585,7 +1583,6 @@
               <Pad Id="S7VJ0GfkLfDLIcI9FGOc4i" SlotId="Bt5FTxrVBVHLhzwb5klVRq" Bounds="753,370" />
               <Pad Id="A3bZxUDA8tDMR29OdJnmOh" SlotId="KP6dVBYh5V0LgEqYyhjNzG" Bounds="919,431" />
               <ControlPoint Id="VTUo6GX4eWTLwp4GYnoPGv" Bounds="919,391" />
-              <ControlPoint Id="HkUq57BfigAOIKIt9PS5r5" Bounds="651,260" />
               <Node Bounds="649,280,58,19" Id="H6wOHRNgG0hOYeOL5BX8iM">
                 <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1606,12 +1603,8 @@
                 <Pin Id="Ne4ZbPP6Zu9QP0mkQkuAGj" Name="Transition" Kind="OutputPin" />
                 <Pin Id="KCuhLQ5YyWhN2uJOjUUUDy" Name="Mode" Kind="OutputPin" />
               </Node>
+              <ControlPoint Id="OWw3DTHZRvXMP0VEK5C46E" Bounds="651,260" />
             </Canvas>
-            <ProcessDefinition Id="PAB7peKuMs5No1TWmjyrz5">
-              <Fragment Id="GjkZ0sr3L2NLeyIiE3WRC5" Patch="Ec7hqTqiljMNf8UUaIqBP5" Enabled="true" />
-              <Fragment Id="KG0oU8QJafkLK2IMVRTEiB" Patch="COc8WUt6AeBOzMDmEWBKtf" Enabled="true" />
-              <Fragment Id="GUXxsMtDWE9OOgR121PJv3" Patch="SDBuI5Ry75sNeKaYJ2UgDa" />
-            </ProcessDefinition>
             <Link Id="KhwqiJHSoBiN6HONlqJ9ol" Ids="FiMDP5pylGbMjRgJCuKJhZ,LaOgnM1v1N0L2MC08Tgdx1" IsHidden="true" />
             <Link Id="GberCuSM23XNnoj2ETJ5A9" Ids="EI8yW4xWMJMMZ6ETL8sIFG,M3HmdLF1yxgQDMUbQnE0uJ" IsHidden="true" />
             <Link Id="M93vOlPIcwoQOaQwD5Iwy4" Ids="EQNlCk6vmpZMvOWWSwIsoQ,PR0WvsXjPvNLM9xn8DsFsM" IsHidden="true" />
@@ -1636,20 +1629,25 @@
             <Link Id="SJcHKJGk5FPNsxcCsR5EbF" Ids="A3bZxUDA8tDMR29OdJnmOh,Jzfq5o8acGtNS286XFRz6X" />
             <Link Id="ObmjjsonP57LOIDvKbRAhH" Ids="VTUo6GX4eWTLwp4GYnoPGv,A3bZxUDA8tDMR29OdJnmOh" />
             <Link Id="DWdsmCJPH09OrW4621kBYk" Ids="BVEMvZi3zrMQMMTI80e01h,VTUo6GX4eWTLwp4GYnoPGv" IsHidden="true" />
-            <Patch Id="SDBuI5Ry75sNeKaYJ2UgDa" Name="SetModel">
-              <Pin Id="Ive4RZZkiVgNtDEFiiyGyR" MergeId="978901" Name="Model" Kind="InputPin">
-                <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
-                  <Choice Kind="TypeFlag" Name="IInterpolationModel" />
-                </p:TypeAnnotation>
-              </Pin>
-            </Patch>
-            <Link Id="NDeIUVCxEuYNg8ahAcYR2Z" Ids="Ive4RZZkiVgNtDEFiiyGyR,HkUq57BfigAOIKIt9PS5r5" IsHidden="true" />
-            <Link Id="CwClMlhEPJPPr1bu2sLUxJ" Ids="HkUq57BfigAOIKIt9PS5r5,FOQCuejLUaMOpOMmwBtYzm" />
             <Link Id="MATJbuc4LGiLGgFhcvLohT" Ids="F6ECa7GqfjmLMw8OWx8Ub7,U19oQUB6DB3OFwVZYMXbuh" />
             <Link Id="D6A7bOt2jltNlSF8Iegwu0" Ids="Ne4ZbPP6Zu9QP0mkQkuAGj,FU4XGRbYdhKOY07fhzqJkq" />
             <Link Id="GbkZkfeqOkrPsnyC9ecQ8O" Ids="KCuhLQ5YyWhN2uJOjUUUDy,S7VJ0GfkLfDLIcI9FGOc4i" />
             <Slot Id="Bt5FTxrVBVHLhzwb5klVRq" Name="Mode" />
             <Slot Id="GZxofa0BjUoNAprsIG8PLB" Name="Transition" />
+            <Patch Id="FpeVWIFFYHJLxxhmbmMBrV" Name="SetInterpolationModel">
+              <Pin Id="DHMAj8CixqNPqr77iTj70L" MergeId="976997" Name="Interpolation Model" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
+                  <Choice Kind="TypeFlag" Name="IInterpolationModel" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+            <Link Id="RzCpb1kb47bOcNduuYjBCk" Ids="DHMAj8CixqNPqr77iTj70L,OWw3DTHZRvXMP0VEK5C46E" IsHidden="true" />
+            <Link Id="AmEWOoZrFi9O7Z0FxEgk0M" Ids="OWw3DTHZRvXMP0VEK5C46E,FOQCuejLUaMOpOMmwBtYzm" />
+            <ProcessDefinition Id="PAB7peKuMs5No1TWmjyrz5">
+              <Fragment Id="GjkZ0sr3L2NLeyIiE3WRC5" Patch="Ec7hqTqiljMNf8UUaIqBP5" Enabled="true" />
+              <Fragment Id="RoR1K8ROtamPXSrLwgg63U" Patch="FpeVWIFFYHJLxxhmbmMBrV" Enabled="true" />
+              <Fragment Id="KG0oU8QJafkLK2IMVRTEiB" Patch="COc8WUt6AeBOzMDmEWBKtf" Enabled="true" />
+            </ProcessDefinition>
           </Patch>
         </Node>
         <!--
@@ -1812,7 +1810,6 @@
               </Node>
               <Pad Id="D2V63Oy3XKZPyT0sBmlEjh" SlotId="IeljAn65yhPOlIVaDIvTJ9" Bounds="449,320" />
               <Pad Id="EXR17UpmtKANQlNQqtsFqH" SlotId="Ev8UHKeu2CIPABftwPk4tr" Bounds="540,320" />
-              <ControlPoint Id="HeDomNw1fjULVc8wfH4gPN" Bounds="348,140" />
               <Node Bounds="346,160,58,19" Id="FKeBy3MwpJQPVo23DvEvXw">
                 <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1855,6 +1852,7 @@
                 <Pin Id="ILuPuMCo1VFNdLuOzeB9CH" Name="Result" Kind="OutputPin" />
                 <Pin Id="M6Gv460EpVzN7U7KwReXU8" Name="Success" Kind="OutputPin" />
               </Node>
+              <ControlPoint Id="LRx5mw6bHeiLjhTFkq7rY1" Bounds="348,131" />
             </Canvas>
             <Link Id="KuWCRtuXgACOdGICPg5WqS" Ids="RYJP1aHOXODOuEz1ewu4no,T3OKXQ5ZlRKLwhvNnmisB6" IsHidden="true" />
             <Link Id="Oik8wbkUVC6Nc5j4X7v4KB" Ids="HXAzTZ0KWs1N91vcZ80FiU,QoiqRTmrg9dOJrfZ5bUSMP" IsHidden="true" />
@@ -1879,15 +1877,6 @@
             <Link Id="KS2XTIvf4qJMNqset9JtuE" Ids="EXR17UpmtKANQlNQqtsFqH,P44FTP3oVSGMzQU4meEUkS" />
             <Link Id="GW1vNxrKvSoMzGVbcbeFIj" Ids="B1Ii3B4NWuTPGtbizKziIc,Dv2xPSDlOxuMbfc0F9j7Oy" />
             <Link Id="JUhQswuIcuRNMYpv5jrARC" Ids="Ir2EuHwjFbaMbaA6YgD2oL,InB4TrSou29O0HgUguVWlK" />
-            <Patch Id="JYQWmpdApOPPPYOHvdG50q" Name="SetModel">
-              <Pin Id="TAQTjMkWGYSMgGrQC9MXXx" MergeId="982584" Name="Model" Kind="InputPin">
-                <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
-                  <Choice Kind="TypeFlag" Name="IInterpolationModel" />
-                </p:TypeAnnotation>
-              </Pin>
-            </Patch>
-            <Link Id="NIPCjfZCOXWLuSCvdEvJoM" Ids="TAQTjMkWGYSMgGrQC9MXXx,HeDomNw1fjULVc8wfH4gPN" IsHidden="true" />
-            <Link Id="JUMlx4F4HgdNkKfQhizaRE" Ids="HeDomNw1fjULVc8wfH4gPN,O0MoGiMbARGM2hvqz0ceQH" />
             <Link Id="Kg7I5vcAy7ZQH7TUM7niY8" Ids="JEaWRfrMA0DNObkEQtXAa7,QQ3eTbha7oJP3ze96MEIV7" />
             <Link Id="CzbFJLvmBlxNDTXQL4dj7t" Ids="Dd75nZq9tPcQF0uLdL2ixE,D2V63Oy3XKZPyT0sBmlEjh" />
             <Link Id="Ga1f38IEKg4LOnaHHxhhu7" Ids="RrjSJa2QZUwOEzYcAbixz4,EXR17UpmtKANQlNQqtsFqH" />
@@ -1895,9 +1884,18 @@
             <Link Id="QvHvMie4RjtPXQ9NI3Xixl" Ids="Jh6lIqOApSgQIydxCouzgo,UzSASneXdxqOQGNPPz65vV" />
             <Link Id="RsLn0E6pCH8OBQACiNO9FE" Ids="C986jRtStHHORWRQNc3NWo,B1Ii3B4NWuTPGtbizKziIc" />
             <Link Id="GPPavSEwBY4OKhjynCTm11" Ids="ILuPuMCo1VFNdLuOzeB9CH,Ir2EuHwjFbaMbaA6YgD2oL" />
+            <Patch Id="VLURrugCkVyNSSAgwuWjuM" Name="SetInterpolationModel">
+              <Pin Id="A7U7GridzfmOI3jeCS9NpW" MergeId="976997" Name="Interpolation Model" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
+                  <Choice Kind="TypeFlag" Name="IInterpolationModel" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+            <Link Id="Fw8MlKZq6VQL1jrSz0fXU5" Ids="A7U7GridzfmOI3jeCS9NpW,LRx5mw6bHeiLjhTFkq7rY1" IsHidden="true" />
+            <Link Id="ETbOJhoa08nPaHDfZIHRLv" Ids="LRx5mw6bHeiLjhTFkq7rY1,O0MoGiMbARGM2hvqz0ceQH" />
             <ProcessDefinition Id="KyH73v3ZY5QPEEeYtyvv63">
               <Fragment Id="V50rAJIRMwfM5E6POgPglJ" Patch="DSkZDYbfwvnMat1pgpARXr" Enabled="true" />
-              <Fragment Id="NdIhoTuUhefMpyHbWALex3" Patch="JYQWmpdApOPPPYOHvdG50q" Enabled="true" />
+              <Fragment Id="Ed67ryCKYhcPiKYuBktpTD" Patch="VLURrugCkVyNSSAgwuWjuM" Enabled="true" />
               <Fragment Id="LAixJpPsP9RQHkmeBxH5Ac" Patch="BPZKDpnynyVN32XQqd24xs" Enabled="true" />
               <Fragment Id="BeWR9JAo3hQOSa7GKtILV8" Patch="BQgL3tPSTIMPNhbTdXumiA" />
             </ProcessDefinition>
@@ -2016,7 +2014,6 @@
                 <Pin Id="GXL1KYTiAp1OouEWT32BZp" Name="Node Context" Kind="InputPin" IsHidden="true" />
               </Node>
               <Pad Id="H0PXJWXtZgbNcajx3fI7M8" Bounds="419,561" />
-              <ControlPoint Id="AhJsfsplZuaLeOyUuPg6AB" Bounds="810,260" />
               <Node Bounds="808,280,58,19" Id="LaxDfqVpZHvQBAscJV7l6q">
                 <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -2041,6 +2038,7 @@
               <Pad Id="ACsI7LflvBgMIjlUJzwktg" SlotId="HZGKCLultLXLknM4UeIaKH" Bounds="810,400" />
               <Pad Id="IbzhTl1IxkjP8AEQ8LeLUD" SlotId="U3e89mJDao4PhHjhGQqykE" Bounds="866,400" />
               <Pad Id="R19FsyuEaP7MVaF0544H67" SlotId="MTBWNL0XVOvQbyGl4eM2TI" Bounds="923,400" />
+              <ControlPoint Id="V49oWGXDhLEP506oS9J8Lr" Bounds="810,250" />
             </Canvas>
             <Link Id="GhdW1DUEKpqOYMAHRkAtFD" Ids="Um06O6aYzzEOMdVt30gBAT,FvperAnXoRVPQFsnFhUvl8" IsHidden="true" />
             <Link Id="TqxCL4xYjbmOqqfPifQy0B" Ids="VvpcqlKY2TOQSfcd3RY9jb,MJ5De8oZpm6MyPuL31yLi3" IsHidden="true" />
@@ -2069,15 +2067,6 @@
               <Pin Id="Um06O6aYzzEOMdVt30gBAT" Name="Scalar" Kind="InputPin" />
               <Pin Id="CVVUwVCA9gPMIfEdalOOua" Name="Output" Kind="OutputPin" />
             </Patch>
-            <Patch Id="Over38P7rHSOsuiSQCBERw" Name="SetModel">
-              <Pin Id="P0EWYvq7qsMLGpkYlGqxDT" MergeId="986598" Name="Model" Kind="InputPin">
-                <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
-                  <Choice Kind="TypeFlag" Name="IInterpolationModel" />
-                </p:TypeAnnotation>
-              </Pin>
-            </Patch>
-            <Link Id="TuWqhlLCWTSMCtAMYr8a3Y" Ids="P0EWYvq7qsMLGpkYlGqxDT,AhJsfsplZuaLeOyUuPg6AB" IsHidden="true" />
-            <Link Id="L6NDgPCdyCpM7WbIcHaQBv" Ids="AhJsfsplZuaLeOyUuPg6AB,OZi8cUFaJl1Lm1Py1bmLgq" />
             <Link Id="S4sr2xhhmsjQbw1g8PFEjh" Ids="RVWf3f9rmklOLVf6peWkYN,MhYMKKkmKcEQMSDriTi4pZ" />
             <Slot Id="HZGKCLultLXLknM4UeIaKH" Name="Filter Time" />
             <Link Id="AeyzIgeoa0gME8Ax2C8VsR" Ids="ME5SsOy1ZRTPCfBXS9f5Sv,ACsI7LflvBgMIjlUJzwktg" />
@@ -2088,9 +2077,18 @@
             <Link Id="Jq4mzaAVOdyLNVqtWE0RG3" Ids="ACsI7LflvBgMIjlUJzwktg,VagL5CQ8C4UMOdCXbFA9Qx" />
             <Link Id="CNfVv1ElnUVQLdqDQXIDRv" Ids="IbzhTl1IxkjP8AEQ8LeLUD,O1Y2cIyYRXNQEKfwQ7Fdff" />
             <Link Id="LY4vJILgEDPM2TV0KfIjQn" Ids="R19FsyuEaP7MVaF0544H67,EzftanJa8rQOmu6MnorMDL" />
+            <Patch Id="DUDzmsmaasvMGJrAdYlpuM" Name="SetInterpolationModel">
+              <Pin Id="GNVhaJnB4x6PBpCprS2ssn" MergeId="976997" Name="Interpolation Model" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
+                  <Choice Kind="TypeFlag" Name="IInterpolationModel" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+            <Link Id="NLbElOZjWpNME8aaRoBtnu" Ids="GNVhaJnB4x6PBpCprS2ssn,V49oWGXDhLEP506oS9J8Lr" IsHidden="true" />
+            <Link Id="NoGP4rhD7mVQPIVyW7iQ6i" Ids="V49oWGXDhLEP506oS9J8Lr,OZi8cUFaJl1Lm1Py1bmLgq" />
             <ProcessDefinition Id="NA1373FuYnwLPCBbMFoWra">
               <Fragment Id="NiuhByFYDI9Me6BcM2Nuvc" Patch="EM6EqRYpMjBNaWPV4Q2dJn" Enabled="true" />
-              <Fragment Id="OCHKd02ZA5aLFFbOLIe0C5" Patch="Over38P7rHSOsuiSQCBERw" Enabled="true" />
+              <Fragment Id="Ft5IDprlk8IQVV9G3BONjV" Patch="DUDzmsmaasvMGJrAdYlpuM" Enabled="true" />
               <Fragment Id="MJNDORHNdUOLGkrVRjT0F4" Patch="LdglrdfIPb4MOs5Af7PIN5" Enabled="true" />
             </ProcessDefinition>
           </Patch>
@@ -2676,7 +2674,7 @@
                 <Pin Id="Nrv2NVNGZXSLuAjogqboRT" Name="Input" Kind="StateInputPin" />
                 <Pin Id="DoQjcQ0c0fWLayt8lbJLcY" Name="Type" Kind="OutputPin" />
               </Node>
-              <Node Bounds="153,300,85,86" Id="HIBVWHTZfBCNOqoiShDsii">
+              <Node Bounds="153,304,140,82" Id="HIBVWHTZfBCNOqoiShDsii">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
@@ -2688,22 +2686,22 @@
                 <Patch Id="Mfr5KKktPB6Mv321TvagzB" ManuallySortedPins="true">
                   <Patch Id="JPADPmZMWmPLHHjqHofsWh" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="HdDbpMqjkcsMVMoUpmETai" Name="Then" ManuallySortedPins="true" />
-                  <Node Bounds="165,330,61,26" Id="GFHUgnBcT8kMCK6L3WC15y">
+                  <Node Bounds="165,330,116,26" Id="GFHUgnBcT8kMCK6L3WC15y">
                     <p:NodeReference LastCategoryFullName="AlchemX.Interpolation.Interpolator.IInterpolator" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <FullNameCategoryReference ID="AlchemX.Interpolation.Interpolator.IInterpolator" />
-                      <Choice Kind="OperationCallFlag" Name="SetModel" />
+                      <Choice Kind="OperationCallFlag" Name="SetInterpolationModel" />
                     </p:NodeReference>
                     <Pin Id="Hs9Xcf6kQQHMnbmLG2nsF8" Name="Input" Kind="StateInputPin" />
-                    <Pin Id="CH2utvMeaTVPq4ClRSBD1R" Name="Model" Kind="InputPin" />
+                    <Pin Id="CH2utvMeaTVPq4ClRSBD1R" Name="Interpolation Model" Kind="InputPin" />
                     <Pin Id="FacG0EiiwxUO5jf0LXKI0c" Name="Output" Kind="StateOutputPin" />
                   </Node>
                 </Patch>
-                <ControlPoint Id="QjDkGd0qXMvPgPmPLKVie7" Bounds="167,306" Alignment="Top" />
+                <ControlPoint Id="QjDkGd0qXMvPgPmPLKVie7" Bounds="167,310" Alignment="Top" />
                 <ControlPoint Id="AsoeXtHELHBPcbc9hVidLI" Bounds="167,380" Alignment="Bottom" />
-                <ControlPoint Id="RqJ5gsMG29VNuX6kYt3BQE" Bounds="223,306" Alignment="Top" />
+                <ControlPoint Id="RqJ5gsMG29VNuX6kYt3BQE" Bounds="278,310" Alignment="Top" />
               </Node>
-              <ControlPoint Id="Fykz0VwSc73LiHyG6pp07W" Bounds="223,270" />
+              <ControlPoint Id="Fykz0VwSc73LiHyG6pp07W" Bounds="278,274" />
             </Canvas>
             <ProcessDefinition Id="DBWkqdR8ziwO5149i3BjFw">
               <Fragment Id="NxlIaTxfjKbOR4Ow06ttE9" Patch="EVOAZIpfhgkPym4lSg2Lta" Enabled="true" />
@@ -3171,8 +3169,8 @@
               <ControlPoint Id="LyzaHdax7dbMqskKU5Prql" Bounds="456,278" />
               <ControlPoint Id="JfhIVxSZTSuMPsSvOvqYAP" Bounds="583,370" />
               <ControlPoint Id="OEDw7Y1jRQlNye7qJ4PfS9" Bounds="583,278" />
-              <ControlPoint Id="OeOT8FzmsoJQGWtXKxEQvU" Bounds="902,270" />
-              <Overlay Id="Q1tecVjMFxiNOVYnY2IfWo" Name="SetModel" Bounds="791,210,283,209">
+              <ControlPoint Id="OeOT8FzmsoJQGWtXKxEQvU" Bounds="885,271" />
+              <Overlay Id="Q1tecVjMFxiNOVYnY2IfWo" Name="SetBlendingModel" Bounds="791,210,283,209">
                 <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
               </Overlay>
               <Overlay Id="TuMmZYQdUnnOvke9TE5V4i" Name="Blend" Bounds="423,210,283,209">
@@ -3200,8 +3198,8 @@
               </Pin>
               <Pin Id="STbkvkxMA29NQO6NwC4P7O" Name="Output" Kind="OutputPin" />
             </Patch>
-            <Patch Id="LRGE9u1RUPRM3xVfjexajH" Name="SetModel">
-              <Pin Id="JJr4c4E3DXmP2OSNqBMGJU" MergeId="976997" Name="Model" Kind="InputPin">
+            <Patch Id="LRGE9u1RUPRM3xVfjexajH" Name="SetBlendingModel">
+              <Pin Id="JJr4c4E3DXmP2OSNqBMGJU" MergeId="976997" Name="Blending Model" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                   <Choice Kind="TypeFlag" Name="IBlendingModel" />
                 </p:TypeAnnotation>
@@ -3236,14 +3234,8 @@
               <ControlPoint Id="BFRYDAivquPMea5OtX7MHG" Bounds="290,374" />
               <ControlPoint Id="UVM0zexAuWuO0wZGLanwzr" Bounds="318,374" />
               <ControlPoint Id="U2rycZ9bgtPPStYjxaxzyN" Bounds="290,455" />
-              <ControlPoint Id="SpdSl8jH7XQNhzWnZPXBsp" Bounds="575,180" />
+              <ControlPoint Id="C5V29Idi13fNSNk3QCy9fp" Bounds="563,190" />
             </Canvas>
-            <ProcessDefinition Id="Mohs2IRth8UN0sbh1DFeSM">
-              <Fragment Id="PRyW8QBt1b8Py5X4m2Yve4" Patch="KYzHMUA4ricLeNWxUukvzE" Enabled="true" />
-              <Fragment Id="NjVrFzeySNnP9TiPV3WHuw" Patch="FA3Zb6XOmCxPSRw72ksBII" Enabled="true" />
-              <Fragment Id="OgxIUKRZUMALyw8a9l8fgV" Patch="O13HmPIc7r2MsNjf677Pgc" />
-              <Fragment Id="A6I6aAw5BriQK35GoIdTZd" Patch="Tx7VJK5Hcg5LtFrCWi2EHb" />
-            </ProcessDefinition>
             <Link Id="S2gjRqyCed2MpZr2qWaoC5" Ids="Vh0FRJKIj0gPEYbkp96vvr,LXM9P3JIMiqMxC5jS6DC68" />
             <Link Id="NkOlinDUYuNMTznFdQukCb" Ids="LXM9P3JIMiqMxC5jS6DC68,NvcB1scdPgsNKUY99CBfkf" IsHidden="true" />
             <Patch Id="KYzHMUA4ricLeNWxUukvzE" Name="Create" />
@@ -3281,14 +3273,20 @@
             <Link Id="JyYwhBt9BmJNFZ0CFhpxSK" Ids="HdwnvpXtsrFOJUUwgphz9K,UVM0zexAuWuO0wZGLanwzr" IsHidden="true" />
             <Link Id="RwSHlTrBZUIPaE6IQOGdrN" Ids="U2rycZ9bgtPPStYjxaxzyN,HgXN1CUctPSQTL6NygaqQU" IsHidden="true" />
             <Link Id="FGjDNPgk1POOIs9sIR2Un1" Ids="UVM0zexAuWuO0wZGLanwzr,U2rycZ9bgtPPStYjxaxzyN" />
-            <Patch Id="Tx7VJK5Hcg5LtFrCWi2EHb" Name="SetModel">
-              <Pin Id="FlmzHQxgjetNZ3UYPwADDi" MergeId="1002599" Name="Model" Kind="InputPin">
+            <Patch Id="BFdjibOJrSDL35FZiPuBwn" Name="SetBlendingModel">
+              <Pin Id="Orf5ZMCK2efLchDatAtP1J" MergeId="1002599" Name="Blending Model" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                   <Choice Kind="TypeFlag" Name="IBlendingModel" />
                 </p:TypeAnnotation>
               </Pin>
             </Patch>
-            <Link Id="CM5FW4MmBLNNIoe19XqH2C" Ids="FlmzHQxgjetNZ3UYPwADDi,SpdSl8jH7XQNhzWnZPXBsp" IsHidden="true" />
+            <Link Id="Os5CQEHURoCNzkUATXomXL" Ids="Orf5ZMCK2efLchDatAtP1J,C5V29Idi13fNSNk3QCy9fp" IsHidden="true" />
+            <ProcessDefinition Id="Mohs2IRth8UN0sbh1DFeSM">
+              <Fragment Id="PRyW8QBt1b8Py5X4m2Yve4" Patch="KYzHMUA4ricLeNWxUukvzE" Enabled="true" />
+              <Fragment Id="PP2LYZMPHSoOic7I4jEsW1" Patch="BFdjibOJrSDL35FZiPuBwn" Enabled="true" />
+              <Fragment Id="NjVrFzeySNnP9TiPV3WHuw" Patch="FA3Zb6XOmCxPSRw72ksBII" Enabled="true" />
+              <Fragment Id="OgxIUKRZUMALyw8a9l8fgV" Patch="O13HmPIc7r2MsNjf677Pgc" />
+            </ProcessDefinition>
           </Patch>
         </Node>
         <!--
@@ -3368,15 +3366,8 @@
                 <Pin Id="F4lZueexjZQN887LNCYfTK" Name="Value" Kind="InputPin" />
                 <Pin Id="CI7YedJNLdJOXYBUMkgYRW" Name="Output" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="BH5MHxXCuCQLBYFxDuJI9s" Bounds="655,260" />
+              <ControlPoint Id="Qhqyxrxc2N4Mc2qM4Q18T4" Bounds="617,270" />
             </Canvas>
-            <ProcessDefinition Id="ClHbHvNcEUONEk0CP6Ccpr">
-              <Fragment Id="BNqpblMl0VjQTsfBrcdIzZ" Patch="U3ao6NuDRaUMfg3U0K56Jw" Enabled="true" />
-              <Fragment Id="RzGXvp7HAsBO9P1PhfKZns" Patch="EAhei75wDdKM5Obz7MebG9" Enabled="true" />
-              <Fragment Id="APgqZEr6WV4ONMA0TEuTN6" Patch="FO0k03deNASLnowK1IHLSl" />
-              <Fragment Id="VTynfYoHRaqNqLWwu29IZO" Patch="EfTKwHArgIWN57Cl0rJx23" />
-              <Fragment Id="SQEATmkcSjpOTn3eQsQSY0" Patch="QmyNsAtymkyL6lunlY5jqv" />
-            </ProcessDefinition>
             <Link Id="RmZeTTBXWA3NQOpli8jXVu" Ids="RB48pHYfyr0M1r6XOXqMiE,L1q8ARt7uoJLMy3ntS3lfO" />
             <Link Id="OlakesICm61LpxDGe6h6Te" Ids="MSSR81C17xoP6MjU9Yqw78,ET64m4IctzYMootLEVM2sq" />
             <Link Id="S4KHPeg9987MwbqP9akL49" Ids="OlMDJ9L0d8WPAzn9mS85Yf,BqvECjUT8OyPCOLXyg7UgJ" />
@@ -3418,14 +3409,21 @@
             <Link Id="TXmoRycceo5LYgSCCF2hmI" Ids="KwQhLWEuuZ2ObjMLtLuYap,JUnokwVFJD6OTKQTGtKRIM" />
             <Link Id="G1POSrBSYiRM250HA3zMMK" Ids="KA3VGRKFvRVMx16TIGovsb,F4lZueexjZQN887LNCYfTK" />
             <Link Id="N12qvDUNA13Mwbl1zhZi0W" Ids="CI7YedJNLdJOXYBUMkgYRW,NqFJCJESTBnOjLbb86Yhpl" />
-            <Patch Id="QmyNsAtymkyL6lunlY5jqv" Name="SetModel">
-              <Pin Id="RFQQMmlIkilNbEgd9gt4XP" MergeId="1002599" Name="Model" Kind="InputPin">
+            <Patch Id="IpUFFpdaYJVOO65hfOfe9l" Name="SetBlendingModel">
+              <Pin Id="N4AVdBSAaVMNkt96mQ4wwA" MergeId="1002599" Name="Blending Model" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                   <Choice Kind="TypeFlag" Name="IBlendingModel" />
                 </p:TypeAnnotation>
               </Pin>
             </Patch>
-            <Link Id="LsYrk4HSNf3Mmylqm1vthD" Ids="RFQQMmlIkilNbEgd9gt4XP,BH5MHxXCuCQLBYFxDuJI9s" IsHidden="true" />
+            <Link Id="LkQTWy18d0QLWIzgw3UUnE" Ids="N4AVdBSAaVMNkt96mQ4wwA,Qhqyxrxc2N4Mc2qM4Q18T4" IsHidden="true" />
+            <ProcessDefinition Id="ClHbHvNcEUONEk0CP6Ccpr">
+              <Fragment Id="BNqpblMl0VjQTsfBrcdIzZ" Patch="U3ao6NuDRaUMfg3U0K56Jw" Enabled="true" />
+              <Fragment Id="TyJRkcsCkxoNEaBdYTkWgD" Patch="IpUFFpdaYJVOO65hfOfe9l" Enabled="true" />
+              <Fragment Id="RzGXvp7HAsBO9P1PhfKZns" Patch="EAhei75wDdKM5Obz7MebG9" Enabled="true" />
+              <Fragment Id="APgqZEr6WV4ONMA0TEuTN6" Patch="FO0k03deNASLnowK1IHLSl" />
+              <Fragment Id="VTynfYoHRaqNqLWwu29IZO" Patch="EfTKwHArgIWN57Cl0rJx23" />
+            </ProcessDefinition>
           </Patch>
         </Node>
         <!--
@@ -3505,15 +3503,8 @@
                 <Pin Id="FRPvBADLQ3dLWKYSn8Tx0u" Name="Value" Kind="InputPin" />
                 <Pin Id="OJZJCp5HnGEPeCv1ZbxdwK" Name="Output" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="OWxQBSdMlBKMFWnMaaX7IH" Bounds="690,320" />
+              <ControlPoint Id="R1TfdGjWhVyLhnWQVfjyGX" Bounds="677,320" />
             </Canvas>
-            <ProcessDefinition Id="AwUT1wC92nJN1zQmvhBcdK">
-              <Fragment Id="EbUP1O3w0SzPIbg9HxoLA1" Patch="IPDI4HqwxmKPzqMajiEhoQ" Enabled="true" />
-              <Fragment Id="CJWlMLgpIuuO3X1fT72YCg" Patch="IR6RACRmS9dObI0GU36RZm" Enabled="true" />
-              <Fragment Id="JgibxbdMcY8LRbS6aVEKla" Patch="FHx2vbcCnCePp9Snss6L7d" />
-              <Fragment Id="MnjOhWk9GzCMp6sU6tnyNC" Patch="PlcaAOgZaWSLSOu04Wr428" />
-              <Fragment Id="CPqI5z1W0lGMtiQ3Af1C8Q" Patch="TYbRScYtjhjO54Z1XzSPhJ" />
-            </ProcessDefinition>
             <Link Id="Rzu7KPOrnlPPeLoskqng1b" Ids="M7rXLBMpyL6MKXJACSulC9,U2JB2IYbbdzO8PaoCLgygq" />
             <Link Id="JErFOE3yUvvLaWiVPXjjuC" Ids="RdVqcGWfnhFPDp1vVVVaJd,SaogoCOmGPdMxsCUtZfYFf" />
             <Link Id="PQxbvncIbg4O6qVzsnqdyt" Ids="HZLgnSNFiz2PB9KRTHxThw,Dbtj8TA1syBPs5ui5BPK91" />
@@ -3547,14 +3538,21 @@
             <Link Id="DIuO3dee3qwM62NlcXeBid" Ids="VBSxTCiuKSRNZpePahG1Ti,FRPvBADLQ3dLWKYSn8Tx0u" />
             <Link Id="JHeOhTF8P0jQQaRAa0eRL0" Ids="OJZJCp5HnGEPeCv1ZbxdwK,OfLj8ISM6p3NQVshzjgIqD" />
             <Link Id="Irbrz1IgDyHNYcxGyJMc5o" Ids="DuFNqqKvvGsLgSU1EVhomF,ESHCBVy3gDIMe3NfTw63l7" />
-            <Patch Id="TYbRScYtjhjO54Z1XzSPhJ" Name="SetModel">
-              <Pin Id="BVtKVt0DrkjQAd1QX5as0a" MergeId="1002599" Name="Model" Kind="InputPin">
+            <Patch Id="HoWN8xbX1Q5MtkkKHYoXMZ" Name="SetBlendingModel">
+              <Pin Id="H62jPily98EL7saaqxbz9U" MergeId="1002599" Name="Blending Model" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                   <Choice Kind="TypeFlag" Name="IBlendingModel" />
                 </p:TypeAnnotation>
               </Pin>
             </Patch>
-            <Link Id="CbCOxx0fA9dO8Mw5xyM3yc" Ids="BVtKVt0DrkjQAd1QX5as0a,OWxQBSdMlBKMFWnMaaX7IH" IsHidden="true" />
+            <Link Id="QgEGC07eTVnOtMZzulDAhx" Ids="H62jPily98EL7saaqxbz9U,R1TfdGjWhVyLhnWQVfjyGX" IsHidden="true" />
+            <ProcessDefinition Id="AwUT1wC92nJN1zQmvhBcdK">
+              <Fragment Id="EbUP1O3w0SzPIbg9HxoLA1" Patch="IPDI4HqwxmKPzqMajiEhoQ" Enabled="true" />
+              <Fragment Id="DycaE5oFRPsQb9JHHUTfDZ" Patch="HoWN8xbX1Q5MtkkKHYoXMZ" Enabled="true" />
+              <Fragment Id="CJWlMLgpIuuO3X1fT72YCg" Patch="IR6RACRmS9dObI0GU36RZm" Enabled="true" />
+              <Fragment Id="JgibxbdMcY8LRbS6aVEKla" Patch="FHx2vbcCnCePp9Snss6L7d" />
+              <Fragment Id="MnjOhWk9GzCMp6sU6tnyNC" Patch="PlcaAOgZaWSLSOu04Wr428" />
+            </ProcessDefinition>
           </Patch>
         </Node>
         <!--
@@ -3634,15 +3632,8 @@
                 <Pin Id="GHLQEmV2Ld4Nd0mrVXNlBY" Name="Value" Kind="InputPin" />
                 <Pin Id="MCpbBroNzlLNZXhYZARaWQ" Name="Output" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="QKqX6PpSmGWMz0Oh8Thqy0" Bounds="553,210" />
+              <ControlPoint Id="FyP1OSUka1qPxX3975OnrB" Bounds="556,190" />
             </Canvas>
-            <ProcessDefinition Id="KYxFiMe0FSULaT9bIZILgT">
-              <Fragment Id="Utgs9J4EN8GOxU1DHSrXaH" Patch="AKyf7T59Cf2OcUdSMObneR" Enabled="true" />
-              <Fragment Id="HBw1poQZiPeQL9f84sLgGo" Patch="JhVazp9OmTcLFCK3Vmmumu" Enabled="true" />
-              <Fragment Id="BAWcrTFbssdNEggO1gy9Qf" Patch="VfT9kkMaT6BLILf2t5sCnr" />
-              <Fragment Id="Huko1DJaHnhLt2qmgo1I39" Patch="TZRTUmJXROELjhQuq5KiId" />
-              <Fragment Id="JzOiaq8BTc9PYYWhYmQTwJ" Patch="Mv3xoe1t5sUNNTb7Fb4GuD" />
-            </ProcessDefinition>
             <Link Id="P9NTzL9p5pKOb1lyfCtxBD" Ids="R8rwgsmQT8bO6lTCcGcGLW,VPKlUTY7VRRLd2l2tKBrro" IsHidden="true" />
             <Link Id="Ky3d0MNV07MQNQWYB1hzcg" Ids="VPKlUTY7VRRLd2l2tKBrro,M5H5ThmNwB2PARTnw3wBBr" />
             <Link Id="LOOTeQUvi1jLsyt2rkAp6O" Ids="N0pTud3Sh31NUDTJYwmTvx,U4qEZU5HY5DOxDSCeHSFRB" />
@@ -3676,14 +3667,21 @@
             <Link Id="NYXjHKupc2oN2bzxgByYDn" Ids="CkMZCfAQJazMUDkKIDAnMZ,Klk0ZfLkes7PJz6Cj1sYaH" />
             <Link Id="LMZPDaabWqCPcftVijRzlu" Ids="J8NR5L6n9rpMVjSw0UQEXG,GHLQEmV2Ld4Nd0mrVXNlBY" />
             <Link Id="ORJuVKfGZddMTTKD8jA5XT" Ids="MCpbBroNzlLNZXhYZARaWQ,QY3CNKxpJmhLrwuOOwptN8" />
-            <Patch Id="Mv3xoe1t5sUNNTb7Fb4GuD" Name="SetModel">
-              <Pin Id="IO6enxayWd9PscIZsVC1on" MergeId="1002599" Name="Model" Kind="InputPin">
+            <Patch Id="Lwrsayt686NOXSZn2QjVvD" Name="SetBlendingModel">
+              <Pin Id="Rt4QltmA1ORQWdlDjasfhq" MergeId="1002599" Name="Blending Model" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                   <Choice Kind="TypeFlag" Name="IBlendingModel" />
                 </p:TypeAnnotation>
               </Pin>
             </Patch>
-            <Link Id="NCWUca3iOtRQUgTE0e52NR" Ids="IO6enxayWd9PscIZsVC1on,QKqX6PpSmGWMz0Oh8Thqy0" IsHidden="true" />
+            <Link Id="FnvpQU7phFpOsaxOwlmJz5" Ids="Rt4QltmA1ORQWdlDjasfhq,FyP1OSUka1qPxX3975OnrB" IsHidden="true" />
+            <ProcessDefinition Id="KYxFiMe0FSULaT9bIZILgT">
+              <Fragment Id="Utgs9J4EN8GOxU1DHSrXaH" Patch="AKyf7T59Cf2OcUdSMObneR" Enabled="true" />
+              <Fragment Id="U4uX6TNjqZyNKTTk5T7iBr" Patch="Lwrsayt686NOXSZn2QjVvD" Enabled="true" />
+              <Fragment Id="HBw1poQZiPeQL9f84sLgGo" Patch="JhVazp9OmTcLFCK3Vmmumu" Enabled="true" />
+              <Fragment Id="BAWcrTFbssdNEggO1gy9Qf" Patch="VfT9kkMaT6BLILf2t5sCnr" />
+              <Fragment Id="Huko1DJaHnhLt2qmgo1I39" Patch="TZRTUmJXROELjhQuq5KiId" />
+            </ProcessDefinition>
           </Patch>
         </Node>
         <!--
@@ -3722,26 +3720,26 @@
     ************************ DivideBlend (Adaptive) ************************
 
 -->
-              <Node Name="DivideBlend (Adaptive)" Bounds="796,399,154,140" Id="DA9OVq2dvEjN4ue8mOLltC">
+              <Node Name="DivideBlend (Adaptive)" Bounds="912,399,154,140" Id="DA9OVq2dvEjN4ue8mOLltC">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
                   <Choice Kind="OperationDefinition" Name="Operation" />
                 </p:NodeReference>
                 <Patch Id="MzA9tpyxzNlMALuGuofPBT" IsGeneric="true" ExplicitTypeParameters="T">
-                  <ControlPoint Id="IP82PtOFUtzPtYJV7CmFhg" Bounds="810,417" />
+                  <ControlPoint Id="IP82PtOFUtzPtYJV7CmFhg" Bounds="926,417" />
                   <Pin Id="LjhkD0iV4G8P78QZe3guL7" Name="Background" Kind="InputPin" Bounds="716,446">
                     <p:TypeAnnotation>
                       <Choice Kind="TypeFlag" Name="T" />
                     </p:TypeAnnotation>
                   </Pin>
                   <Link Id="FxfxKnKpjBDMfmxBYbjxiK" Ids="LjhkD0iV4G8P78QZe3guL7,IP82PtOFUtzPtYJV7CmFhg" IsHidden="true" />
-                  <ControlPoint Id="TO3Emue80sSN1oBNm2gOFG" Bounds="902,417" />
+                  <ControlPoint Id="TO3Emue80sSN1oBNm2gOFG" Bounds="1018,417" />
                   <Pin Id="AgZhRBgYLRbNRzqtgizHd9" Name="Value" Kind="InputPin" Bounds="778,445">
                     <p:TypeAnnotation>
                       <Choice Kind="TypeFlag" Name="T" />
                     </p:TypeAnnotation>
                   </Pin>
                   <Link Id="QoFpM9JzAm8MMU6lFDfw7s" Ids="AgZhRBgYLRbNRzqtgizHd9,TO3Emue80sSN1oBNm2gOFG" IsHidden="true" />
-                  <ControlPoint Id="R7qxngk0Cq2Mhm2nuRLPzW" Bounds="810,522" />
+                  <ControlPoint Id="R7qxngk0Cq2Mhm2nuRLPzW" Bounds="926,522" />
                   <Pin Id="LbowWf1ysmFN0hmAeRln9U" Name="Output" Kind="OutputPin" Bounds="717,514">
                     <p:TypeAnnotation>
                       <Choice Kind="TypeFlag" Name="T" />
@@ -3763,15 +3761,8 @@
                 <Pin Id="JR6VdBsZLKbNeiffHmgDER" Name="Value" Kind="InputPin" />
                 <Pin Id="FJmdM7zVUaEOggyBFWXhex" Name="Output" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="QaKEGUEZA07PO5vlf9HXLP" Bounds="629,390" />
+              <ControlPoint Id="O2NHUv2GTyNPZoBOzqeHED" Bounds="652,380" />
             </Canvas>
-            <ProcessDefinition Id="IpleGr6twqIMYI8UcPt2g0">
-              <Fragment Id="PV5g60cOgnFLiU7drDtcex" Patch="BzBgWYqiyF7MqkWPzTb49W" Enabled="true" />
-              <Fragment Id="Han9hr2KFsVOiSnEpNxe7l" Patch="VMMg8zvL5I1NuieYE7xr7J" Enabled="true" />
-              <Fragment Id="IQEJjOtYhZjQS7IAomUuW6" Patch="DA9OVq2dvEjN4ue8mOLltC" />
-              <Fragment Id="TFnyATycZEPLoR7frW7e5j" Patch="SZtYZlABvtSMGoudNh2CwJ" />
-              <Fragment Id="ARp4jxq3CXeMqYuJh1EDhZ" Patch="O0YDd0aOm2nLZoX3pOQ6m7" />
-            </ProcessDefinition>
             <Link Id="BTwc0ip8CDTMQ2Dk191ACE" Ids="EGTgqv1fZgzPsrQfdWgfc7,UpX1dWIztwMMNlBuOxyCkK" IsHidden="true" />
             <Link Id="U0RsDKYaZbsPLdwCudL1aK" Ids="HPOZVKvhL4nPpXTRAegXUe,FKF0nF23KqnPGG0YrWgK9S" />
             <Link Id="JLhEe90WDHeOUrBB0RGN0I" Ids="UpX1dWIztwMMNlBuOxyCkK,U5dnCTsSqLgPvXtuPjCJ50" />
@@ -3805,14 +3796,21 @@
             <Link Id="E0pdUkUF5R1LsKLGfkvlxk" Ids="RdAZoCHB4kCNH6YlKTgYrW,FGTVTWYmONZOtPc4bIQpgP" />
             <Link Id="BwFUl0l5qR0OvSOnuNnjjh" Ids="QP2IWkhqk9yNuvTiNJeV7H,JR6VdBsZLKbNeiffHmgDER" />
             <Link Id="V1yFVe4OeoXNXKRCZxDj52" Ids="FJmdM7zVUaEOggyBFWXhex,AxF7xOqSTtEOFnOKSmAKdB" />
-            <Patch Id="O0YDd0aOm2nLZoX3pOQ6m7" Name="SetModel">
-              <Pin Id="CozkqmixhJ6LVx95xj6m1r" MergeId="1002599" Name="Model" Kind="InputPin">
+            <Patch Id="UfcTxh3gg4tM6HWfQjhDY8" Name="SetBlendingModel">
+              <Pin Id="Np9jkJUTNIhLhTrB1YoWGX" MergeId="1002599" Name="Blending Model" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                   <Choice Kind="TypeFlag" Name="IBlendingModel" />
                 </p:TypeAnnotation>
               </Pin>
             </Patch>
-            <Link Id="FBYoxOvBX3wOSI48gNLy0X" Ids="CozkqmixhJ6LVx95xj6m1r,QaKEGUEZA07PO5vlf9HXLP" IsHidden="true" />
+            <Link Id="EMHrAn6HFI4OdEmldYhG6C" Ids="Np9jkJUTNIhLhTrB1YoWGX,O2NHUv2GTyNPZoBOzqeHED" IsHidden="true" />
+            <ProcessDefinition Id="IpleGr6twqIMYI8UcPt2g0">
+              <Fragment Id="PV5g60cOgnFLiU7drDtcex" Patch="BzBgWYqiyF7MqkWPzTb49W" Enabled="true" />
+              <Fragment Id="EulQF18Fb0TLKWzwK84pRk" Patch="UfcTxh3gg4tM6HWfQjhDY8" Enabled="true" />
+              <Fragment Id="Han9hr2KFsVOiSnEpNxe7l" Patch="VMMg8zvL5I1NuieYE7xr7J" Enabled="true" />
+              <Fragment Id="IQEJjOtYhZjQS7IAomUuW6" Patch="DA9OVq2dvEjN4ue8mOLltC" />
+              <Fragment Id="TFnyATycZEPLoR7frW7e5j" Patch="SZtYZlABvtSMGoudNh2CwJ" />
+            </ProcessDefinition>
           </Patch>
         </Node>
         <!--
@@ -3851,26 +3849,26 @@
     ************************ DifferenceBlend (Adaptive) ************************
 
 -->
-              <Node Name="DifferenceBlend (Adaptive)" Bounds="786,356,155,140" Id="Hd49gvOmQbvOlGBTxGtsmF">
+              <Node Name="DifferenceBlend (Adaptive)" Bounds="918,356,155,140" Id="Hd49gvOmQbvOlGBTxGtsmF">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
                   <Choice Kind="OperationDefinition" Name="Operation" />
                 </p:NodeReference>
                 <Patch Id="Frky2ZedvyaMcygcvGf1kR" IsGeneric="true" ExplicitTypeParameters="T">
-                  <ControlPoint Id="JRhCEm67LhRPyA1YNXYwKC" Bounds="800,374" />
+                  <ControlPoint Id="JRhCEm67LhRPyA1YNXYwKC" Bounds="932,374" />
                   <Pin Id="QRihKatpfCOMlb1ERVzxi6" Name="Background" Kind="InputPin" Bounds="716,446">
                     <p:TypeAnnotation>
                       <Choice Kind="TypeFlag" Name="T" />
                     </p:TypeAnnotation>
                   </Pin>
                   <Link Id="R9VN40YK7huM0JCXo5LMvm" Ids="QRihKatpfCOMlb1ERVzxi6,JRhCEm67LhRPyA1YNXYwKC" IsHidden="true" />
-                  <ControlPoint Id="RugaPFLzSgNLl2AvvPqlwa" Bounds="893,374" />
+                  <ControlPoint Id="RugaPFLzSgNLl2AvvPqlwa" Bounds="1025,374" />
                   <Pin Id="G8n7PnUCnIqMftW5gNU5ea" Name="Value" Kind="InputPin" Bounds="778,445">
                     <p:TypeAnnotation>
                       <Choice Kind="TypeFlag" Name="T" />
                     </p:TypeAnnotation>
                   </Pin>
                   <Link Id="OgBhLHB0ugENuP23ddwCtk" Ids="G8n7PnUCnIqMftW5gNU5ea,RugaPFLzSgNLl2AvvPqlwa" IsHidden="true" />
-                  <ControlPoint Id="Jo4h5J3L2LPM3a7iXRlyz8" Bounds="800,479" />
+                  <ControlPoint Id="Jo4h5J3L2LPM3a7iXRlyz8" Bounds="932,479" />
                   <Pin Id="MDN9IJ7nSltPoLJMrBOHW4" Name="Output" Kind="OutputPin" Bounds="717,514">
                     <p:TypeAnnotation>
                       <Choice Kind="TypeFlag" Name="T" />
@@ -3892,15 +3890,8 @@
                 <Pin Id="FwgcM4Q9YkWQUSFvn7OGOv" Name="Value" Kind="InputPin" />
                 <Pin Id="LcdWo3dL3YILkaJxKnrHvm" Name="Output" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="Isepu8mYesKLjwhstavZoo" Bounds="629,360" />
+              <ControlPoint Id="MkjQlRARIjPOmSkFG058si" Bounds="656,340" />
             </Canvas>
-            <ProcessDefinition Id="SFjMKjeSzdAOdO0zrqoIIn">
-              <Fragment Id="TEUvjPA9RGQL8A0r48ogBD" Patch="NkHarKEAyXnNKRTbsKW4uI" Enabled="true" />
-              <Fragment Id="NR7YJ8kVBUMQNEdj56eorj" Patch="JzB0QaXlpnpMfUvGqAlfGw" Enabled="true" />
-              <Fragment Id="Hxkzu9vbdeYMGZhUnZ9mrG" Patch="Hd49gvOmQbvOlGBTxGtsmF" />
-              <Fragment Id="LVwqHTnjNJsNj83xgVZzog" Patch="DXy1tcnjwgpOZvLjbds9wm" />
-              <Fragment Id="NaqU01IwhvCMcpN6UNTn6c" Patch="IStCsCjMTi0PJ2xUW8c509" />
-            </ProcessDefinition>
             <Link Id="BWlf947J5mKLypbN0HlTS4" Ids="JiZrv75gVvmONJp6YL3LIb,ITHiW327UcDQZj75iVerlT" IsHidden="true" />
             <Link Id="Pow6dAtm2GiLIpIG9d8OrP" Ids="RrWTBbY7G6aONcJyAfJ0xl,SQMgFBP7w26O6zJuchUp4r" />
             <Link Id="JrP2nVi7f7fNZIm36qXlFJ" Ids="ITHiW327UcDQZj75iVerlT,HitXQzQ7iWkLW15KyLYFNJ" />
@@ -3934,14 +3925,21 @@
             <Link Id="C1NRhcSG1ZuLysnKHqHcoU" Ids="K2r8aAAOgXhM4hw2rnE6nt,HzwizuW6eZ1Nyo7ROov1wD" />
             <Link Id="HPNGHa6lGl8Lj9U5Fb753T" Ids="Svv6vwnhFIfOrBPJVTjEgR,FwgcM4Q9YkWQUSFvn7OGOv" />
             <Link Id="SZn58hOxap3QIxrYrIOrHt" Ids="LcdWo3dL3YILkaJxKnrHvm,DNQmoA150UbOuidqICkyDH" />
-            <Patch Id="IStCsCjMTi0PJ2xUW8c509" Name="SetModel">
-              <Pin Id="G1tQYD4DFhqOdbdwGgV5hN" MergeId="1002599" Name="Model" Kind="InputPin">
+            <Patch Id="KeSVJy9dtI5LaAOSCx94zN" Name="SetBlendingModel">
+              <Pin Id="RiNiRBRyGv0Omo2wMlRTaD" MergeId="1002599" Name="Blending Model" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                   <Choice Kind="TypeFlag" Name="IBlendingModel" />
                 </p:TypeAnnotation>
               </Pin>
             </Patch>
-            <Link Id="TdlLYKiabeJLmTIXE3Zuuf" Ids="G1tQYD4DFhqOdbdwGgV5hN,Isepu8mYesKLjwhstavZoo" IsHidden="true" />
+            <Link Id="UQBd3PPFMMBNi20iYCky2A" Ids="RiNiRBRyGv0Omo2wMlRTaD,MkjQlRARIjPOmSkFG058si" IsHidden="true" />
+            <ProcessDefinition Id="SFjMKjeSzdAOdO0zrqoIIn">
+              <Fragment Id="TEUvjPA9RGQL8A0r48ogBD" Patch="NkHarKEAyXnNKRTbsKW4uI" Enabled="true" />
+              <Fragment Id="Qx6ldPTuglyNDeEBiGEQIj" Patch="KeSVJy9dtI5LaAOSCx94zN" Enabled="true" />
+              <Fragment Id="NR7YJ8kVBUMQNEdj56eorj" Patch="JzB0QaXlpnpMfUvGqAlfGw" Enabled="true" />
+              <Fragment Id="Hxkzu9vbdeYMGZhUnZ9mrG" Patch="Hd49gvOmQbvOlGBTxGtsmF" />
+              <Fragment Id="LVwqHTnjNJsNj83xgVZzog" Patch="DXy1tcnjwgpOZvLjbds9wm" />
+            </ProcessDefinition>
           </Patch>
         </Node>
         <!--
@@ -4012,7 +4010,7 @@
               <ControlPoint Id="OotWXTXnZqYPErq2UIIg5d" Bounds="451,535" />
               <ControlPoint Id="L0s2TNKOkBjO7Htw3UasjR" Bounds="493,535" />
               <ControlPoint Id="R6FnYU31i5uMpcdUXPdzbu" Bounds="451,616" />
-              <Node Bounds="449,566,51,19" Id="KCSHtelsq4iL6F55jJIE8e">
+              <Node Bounds="449,566,58,19" Id="KCSHtelsq4iL6F55jJIE8e">
                 <p:NodeReference LastCategoryFullName="AlchemX.Blending.Blender.MinBlender" LastDependency="VL.AlchemX.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="MinBlend" />
@@ -4021,15 +4019,8 @@
                 <Pin Id="HZ2TZmW1t5RLCSSYi02i0d" Name="Value" Kind="InputPin" />
                 <Pin Id="MqRPBsroVZ1NaRbioCcOY0" Name="Output" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="F7wkqnlVJL1OuHdQOSQfEv" Bounds="700,310" />
+              <ControlPoint Id="HOoOknLb7OBM9roSbPAIjD" Bounds="684,300" />
             </Canvas>
-            <ProcessDefinition Id="Hbeamj7fXVALo7bAVTBWPg">
-              <Fragment Id="Etk2u8L8gpRLcioWO5YEoO" Patch="URLic3hNF7bLIujXiHMa8R" Enabled="true" />
-              <Fragment Id="Vz0aewGuIsXLEMicvDVxjr" Patch="ARX6vZDhx4mLayYfOq6tkM" Enabled="true" />
-              <Fragment Id="DUw0sgVeh7XLj4TRILK6It" Patch="By9ocVrHqkMQV2kGwHlS8m" />
-              <Fragment Id="C1Bv4ACs5hnPdGzUJNA3C6" Patch="DZtIlYWcvX1MIfUZWIrIHe" />
-              <Fragment Id="StV035oXEoZPwb3dGG8EJR" Patch="F0qCIBxEPBEO8qASDYHTaW" />
-            </ProcessDefinition>
             <Link Id="FJfzD7PtN0bQLFel7xin8Y" Ids="OnViFcyqEGtLN2osMdKpGR,Pbi4PGyRfNTOEiMpAWrZD9" IsHidden="true" />
             <Link Id="AiKzLJ4h25OPwznxMMC68A" Ids="DE4GTkCx08WOJ9BOa0vgIy,PnHQaWt9ACmQYXAV2lNq8D" />
             <Link Id="OW36SiBNHReN8HvwxjQC6U" Ids="Pbi4PGyRfNTOEiMpAWrZD9,LQ3FJIHo8vNOCiUCyTmjql" />
@@ -4063,14 +4054,21 @@
             <Link Id="J6HTXg8SodqNQErugGPTO5" Ids="OotWXTXnZqYPErq2UIIg5d,LNV5j33wAYpOJWXx7QFu8D" />
             <Link Id="QIpKfPGNAzSQNmI8vHHYIb" Ids="L0s2TNKOkBjO7Htw3UasjR,HZ2TZmW1t5RLCSSYi02i0d" />
             <Link Id="EUT7ZYxqVzVOv0bw2pIVrY" Ids="MqRPBsroVZ1NaRbioCcOY0,R6FnYU31i5uMpcdUXPdzbu" />
-            <Patch Id="F0qCIBxEPBEO8qASDYHTaW" Name="SetModel">
-              <Pin Id="EgNzQdRPrhjPQ165bRZcDK" MergeId="1002599" Name="Model" Kind="InputPin">
+            <Patch Id="BtDYytpi7MXOWEYjNjjNGF" Name="SetBlendingModel">
+              <Pin Id="VFTFCSlXzyFL6ZJtzLsC3j" MergeId="1002599" Name="Blending Model" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                   <Choice Kind="TypeFlag" Name="IBlendingModel" />
                 </p:TypeAnnotation>
               </Pin>
             </Patch>
-            <Link Id="JsQrYEli3EtMdP1rAErbKV" Ids="EgNzQdRPrhjPQ165bRZcDK,F7wkqnlVJL1OuHdQOSQfEv" IsHidden="true" />
+            <Link Id="ATmFmZLkzxsQJPlPu6Ft09" Ids="VFTFCSlXzyFL6ZJtzLsC3j,HOoOknLb7OBM9roSbPAIjD" IsHidden="true" />
+            <ProcessDefinition Id="Hbeamj7fXVALo7bAVTBWPg">
+              <Fragment Id="Etk2u8L8gpRLcioWO5YEoO" Patch="URLic3hNF7bLIujXiHMa8R" Enabled="true" />
+              <Fragment Id="TUkzM5bIDekMRq1lyiwcUD" Patch="BtDYytpi7MXOWEYjNjjNGF" Enabled="true" />
+              <Fragment Id="Vz0aewGuIsXLEMicvDVxjr" Patch="ARX6vZDhx4mLayYfOq6tkM" Enabled="true" />
+              <Fragment Id="DUw0sgVeh7XLj4TRILK6It" Patch="By9ocVrHqkMQV2kGwHlS8m" />
+              <Fragment Id="C1Bv4ACs5hnPdGzUJNA3C6" Patch="DZtIlYWcvX1MIfUZWIrIHe" />
+            </ProcessDefinition>
           </Patch>
         </Node>
         <!--
@@ -4141,7 +4139,7 @@
               <ControlPoint Id="GhPmbftVa5KNP04s9IOuCN" Bounds="447,541" />
               <ControlPoint Id="NofqWURutQVOplPUv5ZfOa" Bounds="489,541" />
               <ControlPoint Id="VmWv4gPMrrgP8XyncwQd0E" Bounds="447,622" />
-              <Node Bounds="445,574,29,19" Id="HF0lNzq9FddQGo9cvab8Cr">
+              <Node Bounds="445,574,60,19" Id="HF0lNzq9FddQGo9cvab8Cr">
                 <p:NodeReference LastCategoryFullName="AlchemX.Blending.Blender.MaxBlender" LastDependency="VL.AlchemX.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="MaxBlend" />
@@ -4150,15 +4148,8 @@
                 <Pin Id="G9ioPmrEaeQMuxiOyuKsf7" Name="Value" Kind="InputPin" />
                 <Pin Id="BmJWvsE3UE9PGRDUKmVrfm" Name="Output" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="BS1NrDKzzS9MgSwiECGI4s" Bounds="697,360" />
+              <ControlPoint Id="B2odhXZwggaOzUFKcWIva4" Bounds="692,340" />
             </Canvas>
-            <ProcessDefinition Id="AdcbdINiXBrPuImZWxDI1o">
-              <Fragment Id="P2FQcU8fFkuPZJL7PBNrco" Patch="OlW4MBsfTR3OqwOwt5qBg4" Enabled="true" />
-              <Fragment Id="Pm0RDJtKM3hNn8bAB4RzbK" Patch="RFTOrZ9eylHMTQObr77jXz" Enabled="true" />
-              <Fragment Id="FGFralUj6HeMCCsuZxlo1j" Patch="IJCBRwIuESENdb9mQCPfwi" />
-              <Fragment Id="B0DnBH7dqQaNYILywJWlCJ" Patch="A4HcqSDEzdhNp2WMs9iscs" />
-              <Fragment Id="Vp4JxiNonfVMXFc171kZnj" Patch="M0tsOy0Z6CsPW3iLNVV2cv" />
-            </ProcessDefinition>
             <Link Id="DClIvRCPxJIQDcVIoC8vkn" Ids="VnIUjqn0bOmPXeRntc26v8,Cy5nQoJQxDzOA4WM6Gg1CG" IsHidden="true" />
             <Link Id="HsOBVRIWnFEPZfne9ZT6Vq" Ids="NYqrbN9dbuqOQeWUjo5zhz,JfMxzH7TvprPKibETfRfVf" />
             <Link Id="JJC8XxwKk3SPcdNnSixHQx" Ids="Cy5nQoJQxDzOA4WM6Gg1CG,CIxDzQbQqdwLS8rWKNrH6C" />
@@ -4192,14 +4183,21 @@
             <Link Id="Rhx3ejMae2yPk0QAGVoTN3" Ids="GhPmbftVa5KNP04s9IOuCN,Li7fdINK1VcMDWrnuv7Qkb" />
             <Link Id="P6W1pWso1k1Mne8OsV34XA" Ids="NofqWURutQVOplPUv5ZfOa,G9ioPmrEaeQMuxiOyuKsf7" />
             <Link Id="CuQhsEmZmZPPdh9n52G3uw" Ids="BmJWvsE3UE9PGRDUKmVrfm,VmWv4gPMrrgP8XyncwQd0E" />
-            <Patch Id="M0tsOy0Z6CsPW3iLNVV2cv" Name="SetModel">
-              <Pin Id="LMdgeFMQKhDN7qgQKJY6E0" MergeId="1002599" Name="Model" Kind="InputPin">
+            <Patch Id="UQ99E0b0UHzMJCPEE3JiHz" Name="SetBlendingModel">
+              <Pin Id="Er2AO9KUUdLOhdBKVJ3DVf" MergeId="1002599" Name="Blending Model" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                   <Choice Kind="TypeFlag" Name="IBlendingModel" />
                 </p:TypeAnnotation>
               </Pin>
             </Patch>
-            <Link Id="FyihHjmUtIKL6SD9IDQjvp" Ids="LMdgeFMQKhDN7qgQKJY6E0,BS1NrDKzzS9MgSwiECGI4s" IsHidden="true" />
+            <Link Id="RKo3cpobO99P8bTKSkm6mV" Ids="Er2AO9KUUdLOhdBKVJ3DVf,B2odhXZwggaOzUFKcWIva4" IsHidden="true" />
+            <ProcessDefinition Id="AdcbdINiXBrPuImZWxDI1o">
+              <Fragment Id="P2FQcU8fFkuPZJL7PBNrco" Patch="OlW4MBsfTR3OqwOwt5qBg4" Enabled="true" />
+              <Fragment Id="Rt1hNGBMAbQLXi3vSmppvY" Patch="UQ99E0b0UHzMJCPEE3JiHz" Enabled="true" />
+              <Fragment Id="Pm0RDJtKM3hNn8bAB4RzbK" Patch="RFTOrZ9eylHMTQObr77jXz" Enabled="true" />
+              <Fragment Id="FGFralUj6HeMCCsuZxlo1j" Patch="IJCBRwIuESENdb9mQCPfwi" />
+              <Fragment Id="B0DnBH7dqQaNYILywJWlCJ" Patch="A4HcqSDEzdhNp2WMs9iscs" />
+            </ProcessDefinition>
           </Patch>
         </Node>
         <!--
@@ -4279,15 +4277,8 @@
                 <Pin Id="GewctjIN53gMYFdFmhqbu0" Name="Value" Kind="InputPin" />
                 <Pin Id="NLwRzJps91qLqw64jXKsq0" Name="Output" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="QH3dVvLtdC3LrmdeQEfpaA" Bounds="717,360" />
+              <ControlPoint Id="HITk434bZ6KP2zm9JejgGO" Bounds="718,340" />
             </Canvas>
-            <ProcessDefinition Id="Bif7gZyXU6mOTqmWOnuVH9">
-              <Fragment Id="VIkYpeaA9JDLJ0TTnx8qcw" Patch="QJ52vCgnnN3M2NYsvMLLjX" Enabled="true" />
-              <Fragment Id="HZPcyp25VMSPr4SCYHkDZI" Patch="DuVSMVLhHt7OgNN43tfKPI" Enabled="true" />
-              <Fragment Id="MkYuOUt3ui3MsFhJFkF6Dl" Patch="VNWRMPkqfJLQIHYjU4FZE7" />
-              <Fragment Id="MOeBaJAe5aoMpJh0VdT5iW" Patch="E9asICux9dzNkD17tbh3AG" />
-              <Fragment Id="BFdU4L6WsMlQHzQHu4YAau" Patch="INlBTmPm1RYOcXTCj1V7vn" />
-            </ProcessDefinition>
             <Link Id="DwpA1HR1YEnNZkDYaTQ5WW" Ids="MWK6DfVtHedLgWn58GCVI0,HOYSB4RzInBQKBTxJrvYk3" IsHidden="true" />
             <Link Id="DpdoRgo9rgHOM5LJ542XE2" Ids="EXG468lqhgEOf5mJhuT209,PHKnyjfSPZCOuOMRfBQuQK" />
             <Link Id="C4sUgyJ4nlfPMjY3bKuZEo" Ids="HOYSB4RzInBQKBTxJrvYk3,C0Pf3LptMMmPO6KwcvPQrX" />
@@ -4321,14 +4312,21 @@
             <Link Id="R7xVAUtKjZzPFgf37HjEo2" Ids="PJaud39udVAPLbtDYNg4tS,K1SyczGRAkZLh4EhAc3qaA" />
             <Link Id="FwOdSsLvJm7L32iGeYBU8q" Ids="CTjLEoY9XUDOMVfwVeAxtl,GewctjIN53gMYFdFmhqbu0" />
             <Link Id="BX2UgsDqXz1Mn8uNHJKadv" Ids="NLwRzJps91qLqw64jXKsq0,SLLJo5MlZH0QYJuJlwmJjH" />
-            <Patch Id="INlBTmPm1RYOcXTCj1V7vn" Name="SetModel">
-              <Pin Id="ClQ5mdjEtZRMxtty4IJDoa" MergeId="1002599" Name="Model" Kind="InputPin">
+            <Patch Id="MMEoXa9mvSIQWJ2HlAmoEE" Name="SetBlendingModel">
+              <Pin Id="RRiGzC6VficPO9Bg2iwReC" MergeId="1002599" Name="Blending Model" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                   <Choice Kind="TypeFlag" Name="IBlendingModel" />
                 </p:TypeAnnotation>
               </Pin>
             </Patch>
-            <Link Id="JMYUTr1thzgOp7FUne1y0K" Ids="ClQ5mdjEtZRMxtty4IJDoa,QH3dVvLtdC3LrmdeQEfpaA" IsHidden="true" />
+            <Link Id="L5Yt2Lm3Sj8MMgR0mJTtZ2" Ids="RRiGzC6VficPO9Bg2iwReC,HITk434bZ6KP2zm9JejgGO" IsHidden="true" />
+            <ProcessDefinition Id="Bif7gZyXU6mOTqmWOnuVH9">
+              <Fragment Id="VIkYpeaA9JDLJ0TTnx8qcw" Patch="QJ52vCgnnN3M2NYsvMLLjX" Enabled="true" />
+              <Fragment Id="J5CxqeX2dLwNCG9JQSIUTN" Patch="MMEoXa9mvSIQWJ2HlAmoEE" Enabled="true" />
+              <Fragment Id="HZPcyp25VMSPr4SCYHkDZI" Patch="DuVSMVLhHt7OgNN43tfKPI" Enabled="true" />
+              <Fragment Id="MkYuOUt3ui3MsFhJFkF6Dl" Patch="VNWRMPkqfJLQIHYjU4FZE7" />
+              <Fragment Id="MOeBaJAe5aoMpJh0VdT5iW" Patch="E9asICux9dzNkD17tbh3AG" />
+            </ProcessDefinition>
           </Patch>
         </Node>
         <!--
@@ -4408,15 +4406,8 @@
                 <Pin Id="FtXdIiXFROTMJvBNHVKugb" Name="Value" Kind="InputPin" />
                 <Pin Id="RPuLEhR0r5CK99hS6l6iIs" Name="Output" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="U7jysUKA86mLzo79R4qKtg" Bounds="679,380" />
+              <ControlPoint Id="UBJ2h0mIP6kNpDXhanJwqc" Bounds="672,360" />
             </Canvas>
-            <ProcessDefinition Id="NnrDNWRfEM4Niu1g5OSjpx">
-              <Fragment Id="B07rk5WphiKPO6VzAzk6gZ" Patch="RLwObzxAcadPOOdNSI7kHg" Enabled="true" />
-              <Fragment Id="JMPRZQ1yOCVOqwhdOkla1Y" Patch="HuGwoM9dFsoOYJ1qy8wVJo" Enabled="true" />
-              <Fragment Id="M0UfrI9ohIHO6dAA0RGZlH" Patch="NjQ8m78yT0MMrCxiXRfFW6" />
-              <Fragment Id="MVkotNJv0HJPKoYHf1lVwy" Patch="HZUpKmQ6DoVOtGvc57Yu4Q" />
-              <Fragment Id="T7oyzQ8KMHxPcAOpS2sb0U" Patch="FpiSAqjTomfPbKka2Cya3x" />
-            </ProcessDefinition>
             <Link Id="PfHMNIA2GnpLZqpXlAgZA4" Ids="K1SMh6UJbtCOwbIgB10p2G,HUNzdhDuJHTMhcNgG8duEN" IsHidden="true" />
             <Link Id="M5Be8zPeFS8LLlthGr0dUK" Ids="Fg4JKSAFx5hOnQ0Dhqwjjq,E26FQlQqcd7NS6RCGOyEwz" />
             <Link Id="JQZZ6FGT4FNOt14aSFZHF2" Ids="HUNzdhDuJHTMhcNgG8duEN,EFB9MBZuLfaMrpFO3VxQAw" />
@@ -4450,14 +4441,21 @@
             <Link Id="H9uJKsNKWtRLxEPgJu7wDq" Ids="OFGkClY2fImMJEjnl7FipJ,EyB78JsoUllQN922k1NrHM" />
             <Link Id="DJJZRvvHNB3QaZCTgpQMxh" Ids="E4SIpOkgZyAOVEeVwJTwNq,FtXdIiXFROTMJvBNHVKugb" />
             <Link Id="LkP3BanorpBLtIyVyvoHy8" Ids="RPuLEhR0r5CK99hS6l6iIs,U9Z51V6YVg2OfTuuEO53bJ" />
-            <Patch Id="FpiSAqjTomfPbKka2Cya3x" Name="SetModel">
-              <Pin Id="KFpMynyVqrhLUXnAV0ktCt" MergeId="1002599" Name="Model" Kind="InputPin">
+            <Patch Id="D1MK6tsvdsANqyQ5XtC3GP" Name="SetBlendingModel">
+              <Pin Id="Nz5ywzECnkoNa8zbbkFdLA" MergeId="1002599" Name="Blending Model" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                   <Choice Kind="TypeFlag" Name="IBlendingModel" />
                 </p:TypeAnnotation>
               </Pin>
             </Patch>
-            <Link Id="H8kPYe5WOeuM8Mrg3Guc7i" Ids="KFpMynyVqrhLUXnAV0ktCt,U7jysUKA86mLzo79R4qKtg" IsHidden="true" />
+            <Link Id="SBz54VYN53VOPCwNbn5qxb" Ids="Nz5ywzECnkoNa8zbbkFdLA,UBJ2h0mIP6kNpDXhanJwqc" IsHidden="true" />
+            <ProcessDefinition Id="NnrDNWRfEM4Niu1g5OSjpx">
+              <Fragment Id="B07rk5WphiKPO6VzAzk6gZ" Patch="RLwObzxAcadPOOdNSI7kHg" Enabled="true" />
+              <Fragment Id="AKqazgcajpcNg7KetLEKAd" Patch="D1MK6tsvdsANqyQ5XtC3GP" Enabled="true" />
+              <Fragment Id="JMPRZQ1yOCVOqwhdOkla1Y" Patch="HuGwoM9dFsoOYJ1qy8wVJo" Enabled="true" />
+              <Fragment Id="M0UfrI9ohIHO6dAA0RGZlH" Patch="NjQ8m78yT0MMrCxiXRfFW6" />
+              <Fragment Id="MVkotNJv0HJPKoYHf1lVwy" Patch="HZUpKmQ6DoVOtGvc57Yu4Q" />
+            </ProcessDefinition>
           </Patch>
         </Node>
         <Overlay Id="BxOpzeAjCHqNlNVOjKZgQG" Name="Blender" Bounds="716,60,611,856">
@@ -6532,7 +6530,7 @@
                 <Pin Id="KBruWsE6xQtL3z8prt6JtT" Name="Input" Kind="StateInputPin" />
                 <Pin Id="NKMCVf4jCGAMJDdjZiwE6N" Name="Type" Kind="OutputPin" />
               </Node>
-              <Node Bounds="153,310,82,86" Id="KqD4p5gyvpNLALa402tD9y">
+              <Node Bounds="153,314,121,82" Id="KqD4p5gyvpNLALa402tD9y">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
@@ -6548,18 +6546,18 @@
                     <p:NodeReference LastCategoryFullName="AlchemX.Blending.Blender.IBlender" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <FullNameCategoryReference ID="AlchemX.Blending.Blender.IBlender" />
-                      <Choice Kind="OperationCallFlag" Name="SetModel" />
+                      <Choice Kind="OperationCallFlag" Name="SetBlendingModel" />
                     </p:NodeReference>
                     <Pin Id="AToVvIfE7uiMSjxemosIrp" Name="Input" Kind="StateInputPin" />
-                    <Pin Id="HvKAlcNYko9ONsLWTqFgei" Name="Model" Kind="InputPin" />
+                    <Pin Id="HvKAlcNYko9ONsLWTqFgei" Name="Blending Model" Kind="InputPin" />
                     <Pin Id="SGWIgMHlkUSQCSWT8fjUAd" Name="Output" Kind="StateOutputPin" />
                   </Node>
                 </Patch>
-                <ControlPoint Id="C6F22R773qEP0rnG3SlDAj" Bounds="167,316" Alignment="Top" />
-                <ControlPoint Id="HhaF4IjLeSYOUeJ2lZ21F1" Bounds="220,316" Alignment="Top" />
+                <ControlPoint Id="C6F22R773qEP0rnG3SlDAj" Bounds="167,320" Alignment="Top" />
+                <ControlPoint Id="HhaF4IjLeSYOUeJ2lZ21F1" Bounds="259,320" Alignment="Top" />
                 <ControlPoint Id="JcsHMRFc9SnNdqJvwsNJrc" Bounds="167,390" Alignment="Bottom" />
               </Node>
-              <ControlPoint Id="HFFCEI0EdXdMYRtumFud8W" Bounds="220,270" />
+              <ControlPoint Id="HFFCEI0EdXdMYRtumFud8W" Bounds="259,274" />
             </Canvas>
             <ProcessDefinition Id="V4uXKrAFyAMNJzqpqjRdQt">
               <Fragment Id="NKTrKgVTuUCPlZzD7cJEex" Patch="D8pHzxEYFCaOeKwJA0VpcP" Enabled="true" />
@@ -6924,13 +6922,13 @@
               </Node>
               <ControlPoint Id="LuWOsT1jBWfPO81TR7fHXo" Bounds="1224,933" />
               <ControlPoint Id="OPg3iLmOwpJQPEnvNXUdZW" Bounds="1267,933" />
-              <ControlPoint Id="PjYlQThXm6nMAoZglbp2NR" Bounds="729,90" />
+              <ControlPoint Id="HphmLVdVCpROtsX8ipWC7o" Bounds="751,90" />
             </Canvas>
             <ProcessDefinition Id="QcZYUjJRaiBNtRNMWOhbMV" HasStateOut="true">
               <Fragment Id="EwVODFNEadJMAMW55SZl1N" Patch="AZ0wqeYu7OrLxanVXz1JzZ" Enabled="true" />
               <Fragment Id="OkoLS3LrtEpL1mPaCnv3Y4" Patch="QBea4UZxzk4M1TgxxC3tvG" Enabled="true" />
               <Fragment Id="VMOjqDDJcaEOIcpQT15FiE" Patch="PjwJy0BgfqSPQr1jVEJ2k3" />
-              <Fragment Id="QMqOBrkBwrJMOyHe9yEJqO" Patch="I5Wj0pmXUlBLRGxU9j6zop" />
+              <Fragment Id="NxG69USVG5qOM7ZvG7B54n" Patch="Kl10XISTXKyNZF4WNaamhE" />
             </ProcessDefinition>
             <Slot Id="IhXg44sIBb3NQePREx2ZMR" Name="SpreadCount Blending" />
             <Link Id="FPeIwHKTa8oNsPO5aG992O" Ids="EIgAUTE9Wg2Pr5ibDrpMHY,FP6UjxlPjukOJw5QrGVFhx" IsHidden="true" />
@@ -7042,14 +7040,14 @@
               <Pin Id="Rr3MYUMBO06NwAeXxR7RLI" MergeId="174406" Name="Scalar" Kind="InputPin" Bounds="476,267" />
               <Pin Id="HEhiqxMoCJxOUUA0xdTfN2" MergeId="174407" Name="Output" Kind="OutputPin" Bounds="475,497" />
             </Patch>
-            <Patch Id="I5Wj0pmXUlBLRGxU9j6zop" Name="SetModel">
-              <Pin Id="RebuVdAufniNhGHrZsSIiQ" MergeId="1002599" Name="Model" Kind="InputPin">
+            <Patch Id="Kl10XISTXKyNZF4WNaamhE" Name="SetBlendingModel">
+              <Pin Id="NvV0Ckww31XL6lI46xY4ts" MergeId="1002599" Name="Blending Model" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                   <Choice Kind="TypeFlag" Name="IBlendingModel" />
                 </p:TypeAnnotation>
               </Pin>
             </Patch>
-            <Link Id="Sb54WA0EQN6ONZOFaNYlsA" Ids="RebuVdAufniNhGHrZsSIiQ,PjYlQThXm6nMAoZglbp2NR" IsHidden="true" />
+            <Link Id="Uv9EnqL6BYSO9cXL04wdwt" Ids="NvV0Ckww31XL6lI46xY4ts,HphmLVdVCpROtsX8ipWC7o" IsHidden="true" />
           </Patch>
         </Node>
         <!--
@@ -9824,7 +9822,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="Du3A2jzPFSENA4WZI9gyxA" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="ViK4IcrGVYcPJUOvJwt2kt" Name="Model" Kind="InputPin" />
+                <Pin Id="NrLHAev7OA4OY38B2UUnty" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="L2mlEdlt7SxQciTliW8xhN" Name="A" Kind="InputPin" />
                 <Pin Id="O6ahWzgJcOeNLebrUp0Lci" Name="B" Kind="InputPin" />
                 <Pin Id="C4gf54pSNaHLZzebO8r4xi" Name="Scalar" Kind="InputPin" />
@@ -9837,7 +9835,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="TLgNiRZESCwPVQNwruFJD3" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="JTI2hu97wEUNS8i5I3Oqrq" Name="Model" Kind="InputPin" />
+                <Pin Id="TmXHhoAsNsNN6I0b6IEuyq" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="URjpbbht2ksNBtz0deg4bd" Name="A" Kind="InputPin" />
                 <Pin Id="KaKbNRZLW17LOHOfXfsoFS" Name="B" Kind="InputPin" />
                 <Pin Id="SKaXPri3Y4KNtBv71NVbX7" Name="Scalar" Kind="InputPin" />
@@ -10259,20 +10257,15 @@
                     <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                   </p:NodeReference>
                   <Pin Id="LVe3cZGu5ZDMZgOGcwgh7m" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="AbBquVXorbENfWxuSWvWfC" Name="Model" Kind="InputPin" />
+                  <Pin Id="KyFJ8uQfe11NEoTbXMw9jx" Name="Interpolation Model" Kind="InputPin" />
                   <Pin Id="QpuSoQuqbmSMq6CTM1fTyb" Name="A" Kind="InputPin" />
                   <Pin Id="T7tww3AGwvzNTFpoM1obfB" Name="B" Kind="InputPin" />
                   <Pin Id="P9WVBuKtcGlNW1A3UaKCMz" Name="Scalar" Kind="InputPin" />
                   <Pin Id="OjJcYMU2snVMNzEm6EMSsi" Name="State Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="MwLSghIyBzcOYxRILH2hhL" Name="Output" Kind="OutputPin" />
                 </Node>
-                <ControlPoint Id="J21SmxSXSZpLGv0PXh34RC" Bounds="431,320" />
+                <ControlPoint Id="EsS2l3lc48RLdTOqRJLaOM" Bounds="434,310" />
               </Canvas>
-              <ProcessDefinition Id="N5DPftT1i8SNT7AxrQG2kC">
-                <Fragment Id="CsW8m5sQVR9MSIOwoKC3XE" Patch="JAFsjcOdifGPA3LRVITyCy" Enabled="true" />
-                <Fragment Id="NCwgEWvp5KVNSfEXfya0xh" Patch="RDQ0HRUlWNMLjYPwjHRQjZ" Enabled="true" />
-                <Fragment Id="JtHemHmUdOOLRTKcEEYI4o" Patch="Qz6JDKcEXRzN6JWly1mW9w" />
-              </ProcessDefinition>
               <Link Id="HdJjGbGfhwfPXIdl3xHaNe" Ids="NUL6YhqsiTEPvBndYGXwRW,JTJX36MRjSuOiY7IKISkN3" IsHidden="true" />
               <Link Id="KFHeCCuNzPgLnlFKadSnKt" Ids="UNyYf6leGRyMta0epOmFsD,Slr8EUijDfxMFrJXwmt05k" IsHidden="true" />
               <Link Id="Het4fvaeNnKPr1zTQqo1u8" Ids="U9MQY0kcJ2zNYwhH3Iv9fp,GNlIQTCY8qwOwjhByv8SER" IsHidden="true" />
@@ -10299,15 +10292,20 @@
                 <Pin Id="UNyYf6leGRyMta0epOmFsD" MergeId="400461" Name="Scalar" Kind="InputPin" />
                 <Pin Id="JTJX36MRjSuOiY7IKISkN3" MergeId="400462" Name="Output" Kind="OutputPin" />
               </Patch>
-              <Patch Id="Qz6JDKcEXRzN6JWly1mW9w" Name="SetModel">
-                <Pin Id="Kmb9hOF53tALHGwPDWBH4C" MergeId="1067051" Name="Model" Kind="InputPin">
+              <Patch Id="GWPeqCyrP5wN7wzQGGmv79" Name="SetInterpolationModel">
+                <Pin Id="RotRJAM0eUUNPCDGkZtZzf" MergeId="976997" Name="Interpolation Model" Kind="InputPin">
                   <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                     <Choice Kind="TypeFlag" Name="IInterpolationModel" />
                   </p:TypeAnnotation>
                 </Pin>
               </Patch>
-              <Link Id="Sj2ykMR4m9TN3LVOTWZJ8j" Ids="Kmb9hOF53tALHGwPDWBH4C,J21SmxSXSZpLGv0PXh34RC" IsHidden="true" />
-              <Link Id="FD3PEgn1FtMMs1JYQEG8AZ" Ids="J21SmxSXSZpLGv0PXh34RC,AbBquVXorbENfWxuSWvWfC" />
+              <Link Id="BxpT6ODKwiqOj4Y4mU0Ynk" Ids="RotRJAM0eUUNPCDGkZtZzf,EsS2l3lc48RLdTOqRJLaOM" IsHidden="true" />
+              <Link Id="CvIK6L9ctbAQG9vVACLHYf" Ids="EsS2l3lc48RLdTOqRJLaOM,KyFJ8uQfe11NEoTbXMw9jx" />
+              <ProcessDefinition Id="N5DPftT1i8SNT7AxrQG2kC">
+                <Fragment Id="CsW8m5sQVR9MSIOwoKC3XE" Patch="JAFsjcOdifGPA3LRVITyCy" Enabled="true" />
+                <Fragment Id="GYIZiLE2kSvNsxoXaT8tqW" Patch="GWPeqCyrP5wN7wzQGGmv79" Enabled="true" />
+                <Fragment Id="NCwgEWvp5KVNSfEXfya0xh" Patch="RDQ0HRUlWNMLjYPwjHRQjZ" Enabled="true" />
+              </ProcessDefinition>
             </Patch>
           </Node>
           <!--
@@ -10339,7 +10337,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="CVXFcpIdh0sLT7oGFz1ds1" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="GQ8NrsNChRkLnCAfRdrO2a" Name="Model" Kind="InputPin" />
+                <Pin Id="UU3XrxmzcQRMOkIsd1C7Fl" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="BR91axBimcNOVd9v2OgEux" Name="A" Kind="InputPin" />
                 <Pin Id="GAtyWhm4tz8OYJsVW1so9Y" Name="B" Kind="InputPin" />
                 <Pin Id="P8mxO86VAYDLggGuWYqByV" Name="Scalar" Kind="InputPin" />
@@ -10352,7 +10350,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="NofcZaD9r27N1e2hEi9XNI" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="Ih3vyp29c7vPwFK7DE7qm9" Name="Model" Kind="InputPin" />
+                <Pin Id="S7NmJpo80XgP87PotkvDQ3" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="NK2Q63NU7nXNsKxjb902p2" Name="A" Kind="InputPin" />
                 <Pin Id="DLd0kKgsZa8N3JT9y4fBow" Name="B" Kind="InputPin" />
                 <Pin Id="JWmQHiCJmigLl3tFaecESX" Name="Scalar" Kind="InputPin" />
@@ -11317,7 +11315,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="RPGlFjbQWFuLzzrrFbK2Ct" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="QaZr8GDGUJGP5bAvRFA9Rn" Name="Model" Kind="InputPin" />
+                <Pin Id="M1WtlpoOrtJOowak5wBxGz" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="HcNk8OEoYjuP1W8e4T5BTL" Name="A" Kind="InputPin" />
                 <Pin Id="OANU5rAtulfObrP21chKAc" Name="B" Kind="InputPin" />
                 <Pin Id="QV0i65KeioDPJmlHzjnVw5" Name="Scalar" Kind="InputPin" />
@@ -11330,7 +11328,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="OlYd1omahONNmNM2srNj8R" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="JonnrBrScr1ODxU2cw10yb" Name="Model" Kind="InputPin" />
+                <Pin Id="JCWDSMivr7xLm0B01QbLYt" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="VYZkMrGEXdGOMYi1js6mZI" Name="A" Kind="InputPin" />
                 <Pin Id="IoeulZ7XvrHOUauB1uGsqn" Name="B" Kind="InputPin" />
                 <Pin Id="IOSjMr4FcJwMH7Ty7zGkBY" Name="Scalar" Kind="InputPin" />
@@ -11597,20 +11595,15 @@
                     <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                   </p:NodeReference>
                   <Pin Id="G3dfVojr4LkQEdNl2wqg2a" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="DVFXh10b2L8OLMM9iTCJc4" Name="Model" Kind="InputPin" />
+                  <Pin Id="EISQozLacqlLG0d199cuSf" Name="Interpolation Model" Kind="InputPin" />
                   <Pin Id="Pp05LvPHiGxNNRRrjBLA3o" Name="A" Kind="InputPin" />
                   <Pin Id="TPAzVEdQhuWNSM0BA72oGP" Name="B" Kind="InputPin" />
                   <Pin Id="HJsNgB49yGTOIKMOOQEbok" Name="Scalar" Kind="InputPin" />
                   <Pin Id="RgsgAYleriHP2lJWLtcXNc" Name="State Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="JFD1zXYJr1uL9GJUfh0JOV" Name="Output" Kind="OutputPin" />
                 </Node>
-                <ControlPoint Id="RrKT16mTBtcPx8LQy9KPt4" Bounds="443,340" />
+                <ControlPoint Id="GmjIUlvdo2mQdqLXP3YOQM" Bounds="422,340" />
               </Canvas>
-              <ProcessDefinition Id="U1UXw5yR2ewNhmLhrp30qC">
-                <Fragment Id="TacVvRkH9EwMRY51AR12F3" Patch="M6ezs9H1T7CNeRiyHsT4tj" Enabled="true" />
-                <Fragment Id="R6pIhqokyAiL2r1dZIVAYb" Patch="Bhuhs9JD5QyMjXS1a3xbNa" Enabled="true" />
-                <Fragment Id="BWPAsLwbgMbL1Hb5dPFHXW" Patch="NUFnLhCYY3aNbaZrbJrkAK" />
-              </ProcessDefinition>
               <Link Id="KPJsrNCdWS7NQ2VbUppVZz" Ids="CFKDWsNJmXVMtJo41B4Uiy,PIgZajXQQBzQXklSOVo5Nw" IsHidden="true" />
               <Link Id="Fw6bGsxKYCzMdFvL5rc67L" Ids="NOzYIskdfgvNWYT0EywwrM,Qvv1k1RbqbBLuDnIStRrHU" IsHidden="true" />
               <Link Id="B8IQZaqhRSQNO53TYslCwN" Ids="DU9tmQ68cU9Of3kfoStbLr,CRJfA6R3LveM9hy26OvTNU" IsHidden="true" />
@@ -11637,15 +11630,20 @@
                 <Pin Id="NOzYIskdfgvNWYT0EywwrM" MergeId="400461" Name="Scalar" Kind="InputPin" />
                 <Pin Id="PIgZajXQQBzQXklSOVo5Nw" MergeId="400462" Name="Output" Kind="OutputPin" />
               </Patch>
-              <Patch Id="NUFnLhCYY3aNbaZrbJrkAK" Name="SetModel">
-                <Pin Id="EFX8hvSWLZ9OIPCdEgNGfl" MergeId="1067051" Name="Model" Kind="InputPin">
+              <Patch Id="EPcEAsXHCKeLDwPL25eYRS" Name="SetInterpolationModel">
+                <Pin Id="PcSsux6HQh9NuV9gJCZOu5" MergeId="976997" Name="Interpolation Model" Kind="InputPin">
                   <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                     <Choice Kind="TypeFlag" Name="IInterpolationModel" />
                   </p:TypeAnnotation>
                 </Pin>
               </Patch>
-              <Link Id="SEoUoWqvKHGPQoPO3T56Eq" Ids="EFX8hvSWLZ9OIPCdEgNGfl,RrKT16mTBtcPx8LQy9KPt4" IsHidden="true" />
-              <Link Id="T30B1AOYGFhPVhOm6P7Cmw" Ids="RrKT16mTBtcPx8LQy9KPt4,DVFXh10b2L8OLMM9iTCJc4" />
+              <Link Id="Rm2eOaUB8cSOFX8Pe5vnXI" Ids="PcSsux6HQh9NuV9gJCZOu5,GmjIUlvdo2mQdqLXP3YOQM" IsHidden="true" />
+              <Link Id="LR3FlRyNTXVO258BXdq8cC" Ids="GmjIUlvdo2mQdqLXP3YOQM,EISQozLacqlLG0d199cuSf" />
+              <ProcessDefinition Id="U1UXw5yR2ewNhmLhrp30qC">
+                <Fragment Id="TacVvRkH9EwMRY51AR12F3" Patch="M6ezs9H1T7CNeRiyHsT4tj" Enabled="true" />
+                <Fragment Id="IAgJI9FPYqJPn3xf0ViNBO" Patch="EPcEAsXHCKeLDwPL25eYRS" Enabled="true" />
+                <Fragment Id="R6pIhqokyAiL2r1dZIVAYb" Patch="Bhuhs9JD5QyMjXS1a3xbNa" Enabled="true" />
+              </ProcessDefinition>
             </Patch>
           </Node>
           <!--
@@ -11687,7 +11685,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="A56vJztHkLYOapmx3g5YmH" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="M4qOSDZIoVnPcYY8H6K02x" Name="Model" Kind="InputPin" />
+                <Pin Id="Q66VBVsNGXpLFHwsKQtr71" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="AGFTXWtabBWMVQ4Nfq8GOP" Name="A" Kind="InputPin" />
                 <Pin Id="Kpm6EjZehW1MqFOgJKjQ7j" Name="B" Kind="InputPin" />
                 <Pin Id="IOknDG0nLnhLmQ6NujQQ7f" Name="Scalar" Kind="InputPin" />
@@ -11700,7 +11698,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="RoFQQ94lpgtNQAdO6tDLJ0" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="ISlPJZSYzjIM9sYgWHuUKw" Name="Model" Kind="InputPin" />
+                <Pin Id="V3dS5AHYqn5OmiTsdvccHQ" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="MsHeJjdx6ViQRqdq6Ms1BM" Name="A" Kind="InputPin" />
                 <Pin Id="OMWpfZkfZWnMvziPn2V4fs" Name="B" Kind="InputPin" />
                 <Pin Id="OvYyucF70QYOTeYs0kN9FB" Name="Scalar" Kind="InputPin" />
@@ -12639,7 +12637,7 @@
                     <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                   </p:NodeReference>
                   <Pin Id="UIGLu9JHLmwNa2RVKrrDSZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="PCfqALYEc9VMgmQms10T5F" Name="Model" Kind="InputPin" />
+                  <Pin Id="LIMcBoKRxI9NNgu1AnuMEO" Name="Interpolation Model" Kind="InputPin" />
                   <Pin Id="R3PeRsHRAfYNe58q1NoxuZ" Name="A" Kind="InputPin" />
                   <Pin Id="GJpqAYytUVlNIbbo3XRAYJ" Name="B" Kind="InputPin" />
                   <Pin Id="BfYmJWfn66eL1nSJTT3gOy" Name="Scalar" Kind="InputPin" />
@@ -12717,7 +12715,7 @@
                     <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator (Quaternion)" />
                   </p:NodeReference>
                   <Pin Id="KvpY88HvyELNg0fmKY2WKF" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="QcNrEhON1CaLC0D79WSmL9" Name="Model" Kind="InputPin" />
+                  <Pin Id="KKCt4J8pSySPkVwnXM7vlB" Name="Interpolation Model" Kind="InputPin" />
                   <Pin Id="MT90FEL6InaL9sQDql6FRN" Name="A" Kind="InputPin" />
                   <Pin Id="Hkvkedkc76PPwiBO3CxLK4" Name="B" Kind="InputPin" />
                   <Pin Id="MFQal0wcP2XMFwyAsCVCHf" Name="Scalar" Kind="InputPin" />
@@ -12731,14 +12729,14 @@
                     <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                   </p:NodeReference>
                   <Pin Id="UqZuVEdh1xOMNlE7xgshR7" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="BkzGNa9ek9OP5bH845UP6Z" Name="Model" Kind="InputPin" />
+                  <Pin Id="SxsDYqYaQVAOM3KRvkcOrW" Name="Interpolation Model" Kind="InputPin" />
                   <Pin Id="UwVT7cKgrA9MZxrSurlFMO" Name="A" Kind="InputPin" />
                   <Pin Id="Ei5cviMvUmCO3124eXuFBV" Name="B" Kind="InputPin" />
                   <Pin Id="KDLr3twcaEpOhLTqiRcnvM" Name="Scalar" Kind="InputPin" />
                   <Pin Id="GT7UrhdDR4WPO3NnNwvAZz" Name="State Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="OSgNUfoGtbYOmitp6vtCYx" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <ControlPoint Id="JbBqzBNM2mwOjQKN1oah8n" Bounds="165,200" />
+                <ControlPoint Id="Pa15pyw8uQQLhhYaLPGeUy" Bounds="219,280" />
               </Canvas>
               <Link Id="LTN7lFp12JyQBgcKK8J3f0" Ids="Tuh4twTGb8NMrVCl9brEZ1,IhXl0VCMn12LZrSuqN0S52" IsHidden="true" />
               <Link Id="LcHlyI4ZqDpMLHI23kJQOm" Ids="S9u5g0sRuibL62Nvj32Q1v,Bp9Qmpl6RyBQMCGe2GS9nB" IsHidden="true" />
@@ -12765,12 +12763,6 @@
               <Link Id="LHqMV8chCsaOvBQD4d4kdc" Ids="VFUTrhiAtJqPNrdgXK6O94,GJpqAYytUVlNIbbo3XRAYJ" />
               <Link Id="J3JQiiNqW6kP3wINZkd0EE" Ids="C1omyJqXHxFQLrwyocFYDI,Hkvkedkc76PPwiBO3CxLK4" />
               <Link Id="TuvK3tLa5m1Ouf2M7d4hmQ" Ids="UXqvIapzqKCQWwzpwNO34T,Ei5cviMvUmCO3124eXuFBV" />
-              <ProcessDefinition Id="FowkeJXpxADPSiMmzqwCCF">
-                <Fragment Id="JCOiG7wgDyEOfxHKEx3mso" Patch="DcRM6oGKNOiOwebMmvyw8v" Enabled="true" />
-                <Fragment Id="IuW3d2DkekKPhrZZA07lX8" Patch="GcyuijhyVFkN7nF594hFaA" Enabled="true" />
-                <Fragment Id="RpmzW68W3bZMfH7FGwcdsV" Patch="UN6nHonP2FEMHwc3GaMOxO" Enabled="true" />
-                <Fragment Id="MEh6iMD6u6rM203Wr8NrGs" Patch="A3Wjkq4RuaKMR2BVJ35oSw" />
-              </ProcessDefinition>
               <Patch Id="DcRM6oGKNOiOwebMmvyw8v" Name="Create" />
               <Patch Id="UN6nHonP2FEMHwc3GaMOxO" Name="Interpolate">
                 <Pin Id="SBrv4iermL7PpZ4ZfR1VB0" Name="A" Kind="InputPin">
@@ -12782,18 +12774,22 @@
                 <Pin Id="S9u5g0sRuibL62Nvj32Q1v" MergeId="400461" Name="Scalar" Kind="InputPin" />
                 <Pin Id="IhXl0VCMn12LZrSuqN0S52" MergeId="400462" Name="Output" Kind="OutputPin" />
               </Patch>
-              <Patch Id="GcyuijhyVFkN7nF594hFaA" Name="Update" />
-              <Patch Id="A3Wjkq4RuaKMR2BVJ35oSw" Name="SetModel">
-                <Pin Id="A8TyhrkKTRTMaLZ2Vztj5P" MergeId="1067051" Name="Model" Kind="InputPin">
+              <Patch Id="MErv3WUu4ZHPXgJooiIgE7" Name="SetInterpolationModel">
+                <Pin Id="VMSpbv2A84GPw09LiWa784" MergeId="976997" Name="Interpolation Model" Kind="InputPin">
                   <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                     <Choice Kind="TypeFlag" Name="IInterpolationModel" />
                   </p:TypeAnnotation>
                 </Pin>
               </Patch>
-              <Link Id="C7M2z1snZJUOVru3178u6m" Ids="A8TyhrkKTRTMaLZ2Vztj5P,JbBqzBNM2mwOjQKN1oah8n" IsHidden="true" />
-              <Link Id="DW0hhxqX5kgNXV9m5Q63bA" Ids="JbBqzBNM2mwOjQKN1oah8n,PCfqALYEc9VMgmQms10T5F" />
-              <Link Id="Qij9G4X1qP5OTww2eLNZa7" Ids="JbBqzBNM2mwOjQKN1oah8n,BkzGNa9ek9OP5bH845UP6Z" />
-              <Link Id="HVUHL18us8fMvovHK2Aydz" Ids="JbBqzBNM2mwOjQKN1oah8n,QcNrEhON1CaLC0D79WSmL9" />
+              <Link Id="HnfgxdkEMJwPd0hg8HrmKb" Ids="VMSpbv2A84GPw09LiWa784,Pa15pyw8uQQLhhYaLPGeUy" IsHidden="true" />
+              <Link Id="ShUmrI0XHHvOqAQ9Yh5gL1" Ids="Pa15pyw8uQQLhhYaLPGeUy,LIMcBoKRxI9NNgu1AnuMEO" />
+              <Link Id="IWgzWMela4fOiYlfIGe5C8" Ids="Pa15pyw8uQQLhhYaLPGeUy,KKCt4J8pSySPkVwnXM7vlB" />
+              <Link Id="AqOqp1RS3FUPiiX20ciLdC" Ids="Pa15pyw8uQQLhhYaLPGeUy,SxsDYqYaQVAOM3KRvkcOrW" />
+              <ProcessDefinition Id="FowkeJXpxADPSiMmzqwCCF">
+                <Fragment Id="JCOiG7wgDyEOfxHKEx3mso" Patch="DcRM6oGKNOiOwebMmvyw8v" Enabled="true" />
+                <Fragment Id="S37lU4nWxymPH70h0KvkAx" Patch="MErv3WUu4ZHPXgJooiIgE7" Enabled="true" />
+                <Fragment Id="RpmzW68W3bZMfH7FGwcdsV" Patch="UN6nHonP2FEMHwc3GaMOxO" Enabled="true" />
+              </ProcessDefinition>
             </Patch>
           </Node>
           <!--
@@ -12825,7 +12821,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="K35TMleFwtQQEgkE5Tbi9D" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="BsSAUEJi3zTPv7N3G0xg4u" Name="Model" Kind="InputPin" />
+                <Pin Id="TMbYDNrG7saL6q3SJSZCmh" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="VkuQOGFpU6eP0sXEqCiima" Name="A" Kind="InputPin" />
                 <Pin Id="LaRyy0cLOfiQJundMuhDcu" Name="B" Kind="InputPin" />
                 <Pin Id="TOMDU8pQfC5OOSrx50QD1R" Name="Scalar" Kind="InputPin" />
@@ -12838,7 +12834,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="CzIxZ3QALA1LrNNy0aUfwz" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="THkf1He05BMOJEmnV75sUq" Name="Model" Kind="InputPin" />
+                <Pin Id="HuOfDkKHK1nOLzKiMBLZRv" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="F9LdFXcFRjRPYuFCrspbjB" Name="A" Kind="InputPin" />
                 <Pin Id="BJIa1RHUIZiMu5m7Bc7Mfc" Name="B" Kind="InputPin" />
                 <Pin Id="TFhuLpIu1XyNsP4yoOw7Fi" Name="Scalar" Kind="InputPin" />
@@ -13622,14 +13618,14 @@
                     <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                   </p:NodeReference>
                   <Pin Id="BM846m7umCvN9rGl4Cy2Vf" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="HLe5MqS3kQoQV4WzLXeHRf" Name="Model" Kind="InputPin" />
+                  <Pin Id="SqqQphwl3zZMqYNpCpGRnO" Name="Interpolation Model" Kind="InputPin" />
                   <Pin Id="TRMzQR4VjCBNU9eb0W8BQY" Name="A" Kind="InputPin" />
                   <Pin Id="QSUvsd1LcILPnJrqQayiXE" Name="B" Kind="InputPin" />
                   <Pin Id="EKTVHi3sZskNpyvfoPFnG7" Name="Scalar" Kind="InputPin" />
                   <Pin Id="NLMjDdlmGWXMkJj1E9i0ve" Name="State Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="HwIOOzKy7qGQSTo4njqh4F" Name="Output" Kind="OutputPin" />
                 </Node>
-                <ControlPoint Id="Bn8r5UlsvSBM4ALGyATTRa" Bounds="359,240" />
+                <ControlPoint Id="RdKRJ6r8crjQAP83Jag7KF" Bounds="367,240" />
               </Canvas>
               <Link Id="Lc7qjOthW6eNjNTChz8tD4" Ids="R14qBIzkpiSPOgSsCeEwIJ,CpYZzvX663OQBhISMJoRdQ" IsHidden="true" />
               <Link Id="RDJnEhBHveINYdIp7EJsNU" Ids="Q96GjUeDeoZLkGVhxyRhdl,Mz0qVKakCPdLC7mPOTxIvS" IsHidden="true" />
@@ -13649,18 +13645,18 @@
               </Patch>
               <Link Id="DHiC7EqfKNVP1e97md4FMK" Ids="E1EjaZ2pX5gP93Lh3tMGxF,TRMzQR4VjCBNU9eb0W8BQY" />
               <Link Id="TS6srQkyVCOQE4bCbSqGYo" Ids="OUZivPK1XppNgtszj6Bt3q,QSUvsd1LcILPnJrqQayiXE" />
-              <Patch Id="Nw2ATJaY7kjMOYBCSTyrGV" Name="SetModel">
-                <Pin Id="TJYqqWUFls0Oduj08CJ1Tt" MergeId="1067051" Name="Model" Kind="InputPin">
+              <Patch Id="I4GguJL4MXyQYp43HpD2jk" Name="SetInterpolationModel">
+                <Pin Id="V7icbp37RXzMGwY2donb9M" MergeId="976997" Name="Interpolation Model" Kind="InputPin">
                   <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                     <Choice Kind="TypeFlag" Name="IInterpolationModel" />
                   </p:TypeAnnotation>
                 </Pin>
               </Patch>
-              <Link Id="IP25bSaNxyrOaVt0XBr4Iz" Ids="TJYqqWUFls0Oduj08CJ1Tt,Bn8r5UlsvSBM4ALGyATTRa" IsHidden="true" />
-              <Link Id="But22K9ZTG5MDrr4yC3whA" Ids="Bn8r5UlsvSBM4ALGyATTRa,HLe5MqS3kQoQV4WzLXeHRf" />
+              <Link Id="PjXl8gmnlMdOwUbs2bDLdT" Ids="V7icbp37RXzMGwY2donb9M,RdKRJ6r8crjQAP83Jag7KF" IsHidden="true" />
+              <Link Id="IGw02xwleKvMzwOBoFMTAd" Ids="RdKRJ6r8crjQAP83Jag7KF,SqqQphwl3zZMqYNpCpGRnO" />
               <ProcessDefinition Aspects="Internal" Id="DJN6eYXgoC6LfLyhEZbRwu">
                 <Fragment Id="JoEp1pEAvG5MlC6VFdtbgi" Patch="BYk5iM5LlMVOBbmx2onR97" Enabled="true" />
-                <Fragment Id="MZnRKEo3hvYQWuEqTIFliA" Patch="Nw2ATJaY7kjMOYBCSTyrGV" Enabled="true" />
+                <Fragment Id="PhWJuSbgyVAMqSPBJDtqgY" Patch="I4GguJL4MXyQYp43HpD2jk" Enabled="true" />
                 <Fragment Id="LSXSj4H6gvMN8xNIP3HhEx" Patch="SAp4uZN4yAPQbYHFz7OMR1" Enabled="true" />
               </ProcessDefinition>
             </Patch>
@@ -13749,7 +13745,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="UeJiGsW7baMNxZoeeApv7z" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="EwhDWGGSyzZLwlqh5OqqDR" Name="Model" Kind="InputPin" />
+                <Pin Id="Gw4Rv5BIqTWLVmsgYtjTsg" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="I0cTGhtpUncNiR7NmYHKcz" Name="A" Kind="InputPin" />
                 <Pin Id="CPXlrOCr7x4MJI4gjDB11h" Name="B" Kind="InputPin" />
                 <Pin Id="R2oh1PouZpJLDUU6RC8ndX" Name="Scalar" Kind="InputPin" />
@@ -13762,7 +13758,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="BbpyxD7GheaNbiPBt73EaK" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="RWzjNl2aLzTOLBsXgppiHn" Name="Model" Kind="InputPin" />
+                <Pin Id="VGg6hXvlVHdQNQath69AdW" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="NUx5fcJsF22Li3GunHbyTK" Name="A" Kind="InputPin" />
                 <Pin Id="HJ73LSTkn4TOWOIz0NfFbL" Name="B" Kind="InputPin" />
                 <Pin Id="FkNiWnMkRDPP0rQG7L7XzK" Name="Scalar" Kind="InputPin" />
@@ -14427,7 +14423,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="SU4u6QrKLFIPww3dyn7sXs" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="BCErwUiapV4OjcA4DzszqZ" Name="Model" Kind="InputPin" />
+                <Pin Id="I8qj1XIhTGsMgDP258lwhx" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="SsOV8Lpg4f3LM51ZjrT4d7" Name="A" Kind="InputPin" />
                 <Pin Id="HmutqpZ9TSfO0klxvNO9k0" Name="B" Kind="InputPin" />
                 <Pin Id="Aodie1TUXGHNzrLQFA5YyY" Name="Scalar" Kind="InputPin" />
@@ -14440,7 +14436,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="OpSEnQEPYJtMa6K1FI84wo" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="TJA7dJstaDqLqWWT708tHI" Name="Model" Kind="InputPin" />
+                <Pin Id="UZU5GovXCdAP6JdFBr2giX" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="LiMB6pXGcwePv9uiSSAAxn" Name="A" Kind="InputPin" />
                 <Pin Id="G39fGbpSZqePvKUoFFA8UJ" Name="B" Kind="InputPin" />
                 <Pin Id="CzTnD3ssxDPMvcO0gydDO1" Name="Scalar" Kind="InputPin" />
@@ -14836,7 +14832,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="MZq2kyZGrnGPtBUl1n1HdF" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="IhX2UCtenUyOF1cwHQPaUh" Name="Model" Kind="InputPin" />
+                <Pin Id="QyULrpgMGvSNZwy8LeWng2" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="U8wY5ZohzcjONabYzqeBvh" Name="A" Kind="InputPin" />
                 <Pin Id="GSv0YcEcHRwMOBeFvkPSXV" Name="B" Kind="InputPin" />
                 <Pin Id="NNlr3G36ItaP8nKVuKPSoI" Name="Scalar" Kind="InputPin" />
@@ -14849,7 +14845,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="A5h0G59X7UNOIhJd9mm7Am" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="E0xC67s91jIOgxkHN34vbg" Name="Model" Kind="InputPin" />
+                <Pin Id="IdgLWk9K8uxLjwajZZ2zz6" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="AQ5UOwKwcmHP0ZZxdKrHih" Name="A" Kind="InputPin" />
                 <Pin Id="B0Im4KnAxV4NnLQ8MGPQBF" Name="B" Kind="InputPin" />
                 <Pin Id="QAxHfiAsFCTQXrNd4aBxCK" Name="Scalar" Kind="InputPin" />
@@ -15645,7 +15641,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="Bvd1BvLVh9SO6JdOdAsS7m" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="Muaj6Cr0GFkN5BuFM8bBWk" Name="Model" Kind="InputPin" />
+                <Pin Id="PKbmYYCSfiGMjcZ2GSeuZS" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="Fy7eWVoTbIrMwiwhm12zLI" Name="A" Kind="InputPin" />
                 <Pin Id="DdSSmRqbabxQNQLxuyrzuL" Name="B" Kind="InputPin" />
                 <Pin Id="F0Fi4ZOFxtBPs4MadSpRV6" Name="Scalar" Kind="InputPin" />
@@ -15658,7 +15654,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="Qc0xeVH2QL9NxMTF1PVfAX" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="KjzuSY0McGCNXJRyV1NJqI" Name="Model" Kind="InputPin" />
+                <Pin Id="GS2UwHsS0I9Ng5yebV8s0t" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="D8ktEy9OSN5LkAljesHTKx" Name="A" Kind="InputPin" />
                 <Pin Id="EGc4exQtEA7M6jGVaSvpYL" Name="B" Kind="InputPin" />
                 <Pin Id="EbObkTyEVsyPNJIhTyuVgL" Name="Scalar" Kind="InputPin" />
@@ -16465,7 +16461,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="BRVI5uwwfkQMYjXhZTTlrj" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="COS3l8RiZTMNuWJvdZNFFW" Name="Model" Kind="InputPin" />
+                <Pin Id="AtA0JuHnIKGPM701z8zDWE" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="QergEzmVvd0OSnwFdCBTWc" Name="A" Kind="InputPin" />
                 <Pin Id="Rp5HlNAhi4VPK8lHFNb8c2" Name="B" Kind="InputPin" />
                 <Pin Id="NTN3JRGJIvJO7oCLNLQJKu" Name="Scalar" Kind="InputPin" />
@@ -16478,7 +16474,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="J70FWbBnoNGOl9Emn3HEwm" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="H3xVD2UBTFGPp6qTdV2Mrn" Name="Model" Kind="InputPin" />
+                <Pin Id="S8hgqVy6dbgMNLTD1DPcsp" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="DDcpTtjuQPGN65PjyhvGRh" Name="A" Kind="InputPin" />
                 <Pin Id="NmkA7dpQM1MQYCUwsdHXpa" Name="B" Kind="InputPin" />
                 <Pin Id="HL6VfEMKKH3P1g2yTRykZZ" Name="Scalar" Kind="InputPin" />
@@ -17267,7 +17263,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="PQHRdFFoFlVLvpdkhHFOsA" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="K2DgATSQSDGQJUuR9XFnBL" Name="Model" Kind="InputPin" />
+                <Pin Id="RGdy083yE1BNjcveHMBv8n" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="GgnZauAn0elLCzdqALp8eY" Name="A" Kind="InputPin" />
                 <Pin Id="Ke35fV0ql2MLiFLfakvcKd" Name="B" Kind="InputPin" />
                 <Pin Id="IcM8QlgyeIVML8UxDDbyfG" Name="Scalar" Kind="InputPin" />
@@ -17280,7 +17276,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="BRbxJqWnVZ7NrqYV16f27p" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="N3BWleajTMHLzuUjXZPM3Q" Name="Model" Kind="InputPin" />
+                <Pin Id="EBsN32gzy4FNLa8iPDTFZi" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="KwFMO0jjEx9Nu4PDTrp1Dn" Name="A" Kind="InputPin" />
                 <Pin Id="EwRjywzawdgL25stZgP6n4" Name="B" Kind="InputPin" />
                 <Pin Id="Pofhy1S0c1iNKOv1XhNMpW" Name="Scalar" Kind="InputPin" />
@@ -17481,7 +17477,7 @@
                     <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                   </p:NodeReference>
                   <Pin Id="OwJtULxpvXNOYr76WfXAK9" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="EjpevVscvGbMXHWbXIQLzT" Name="Model" Kind="InputPin" />
+                  <Pin Id="UFJEE7JgTPiMQmeTf7ssNP" Name="Interpolation Model" Kind="InputPin" />
                   <Pin Id="Ktdc6E3wWIVMrNX2SfrtPb" Name="A" Kind="InputPin" />
                   <Pin Id="SSohL8E3E1cOS8b4ZaswFJ" Name="B" Kind="InputPin" />
                   <Pin Id="LLyzVU8uiJEP5IT6ZQX6l0" Name="Scalar" Kind="InputPin" />
@@ -17497,8 +17493,7 @@
                   <Pin Id="MH7myfS7ENtNwUN384Epjg" Name="Input" Kind="StateInputPin" />
                   <Pin Id="Dr7UkX4MAMmOC4VGl7TCwc" Name="Result" Kind="OutputPin" />
                 </Node>
-                <ControlPoint Id="GpTwpIKyLwwLuQNWVJu4NT" Bounds="448,361" />
-                <Node Bounds="446,390,58,19" Id="VVfS97SPIfdLBXqyLsMTXZ">
+                <Node Bounds="432,410,58,19" Id="VVfS97SPIfdLBXqyLsMTXZ">
                   <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="HardCast" />
@@ -17506,12 +17501,8 @@
                   <Pin Id="TL2u1UyKSKBNKRpoxf4xnu" Name="Input" Kind="StateInputPin" />
                   <Pin Id="N2ROky8tOcuO8DewekZ4cz" Name="Result" Kind="OutputPin" />
                 </Node>
+                <ControlPoint Id="BirQfnnTfU4LepUrOoyl0d" Bounds="434,370" />
               </Canvas>
-              <ProcessDefinition Id="D57PDxduoZdOa1DJVJ2ggP">
-                <Fragment Id="E43C3hWZ86UNfnkQOUU5s1" Patch="F1Maj8Czs03P7GMVil3eKF" Enabled="true" />
-                <Fragment Id="Qdf3INRiA3WN2KZu7XjUzG" Patch="Sfy1b44P1RQLUbEAq2tcwU" Enabled="true" />
-                <Fragment Id="SlKJzwlbitoOjPsTanQQYB" Patch="GM5gmdUKHmrPO9cSnIsJda" />
-              </ProcessDefinition>
               <Link Id="D92UerlmQ02LYp69eY9zLy" Ids="JQ4sJCzfPgTOu2CJpazO8K,JlSABB48LR2P1LqtRRh3sN" IsHidden="true" />
               <Link Id="DFd21dLrgT9OBZ0rHqyWg7" Ids="G4PyVnwANsPOmVEmnVT8Kg,BUAQhswBKaXNuSB0w7b3gs" IsHidden="true" />
               <Link Id="AONp4P8cNW4MbJBpT6Kqhl" Ids="PfwRw3gIgWWLwgId2WAJgI,PWWNx7tnMRFMVoJmoefdfI" IsHidden="true" />
@@ -17543,16 +17534,21 @@
               </Patch>
               <Link Id="HrmKC6Zqq6XNEFGLVxvZ9O" Ids="PswlDx57qkSLxb83IahcYZ,MH7myfS7ENtNwUN384Epjg" />
               <Link Id="P4xtAgTE0guMAZpeBjV9Sp" Ids="Dr7UkX4MAMmOC4VGl7TCwc,JQ4sJCzfPgTOu2CJpazO8K" />
-              <Patch Id="GM5gmdUKHmrPO9cSnIsJda" Name="SetModel">
-                <Pin Id="AiQb32T7IuqMnVC8eSpHZM" MergeId="1002599" Name="Model" Kind="InputPin">
+              <Patch Id="ASnKpsM3KqwOw7S8Iq2anI" Name="SetInterpolationModel">
+                <Pin Id="N2LqjejgSwvLV2HTc61oin" MergeId="976997" Name="Interpolation Model" Kind="InputPin">
                   <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                     <Choice Kind="TypeFlag" Name="IInterpolationModel" />
                   </p:TypeAnnotation>
                 </Pin>
               </Patch>
-              <Link Id="SlA5g8Fv4jcQSYZsEkgbNn" Ids="AiQb32T7IuqMnVC8eSpHZM,GpTwpIKyLwwLuQNWVJu4NT" IsHidden="true" />
-              <Link Id="QYagM2Ik84hMNmIhgOSFUL" Ids="GpTwpIKyLwwLuQNWVJu4NT,TL2u1UyKSKBNKRpoxf4xnu" />
-              <Link Id="Lfn2uGRAaY6OZZ89idIug6" Ids="N2ROky8tOcuO8DewekZ4cz,EjpevVscvGbMXHWbXIQLzT" />
+              <Link Id="Nj2cl3OlnXFLwv2Gfy2S2v" Ids="N2LqjejgSwvLV2HTc61oin,BirQfnnTfU4LepUrOoyl0d" IsHidden="true" />
+              <Link Id="UST9PukydbdPue9aObp0hx" Ids="BirQfnnTfU4LepUrOoyl0d,TL2u1UyKSKBNKRpoxf4xnu" />
+              <Link Id="BYL0ngj5GdGLTsTnFiZEzf" Ids="N2ROky8tOcuO8DewekZ4cz,UFJEE7JgTPiMQmeTf7ssNP" />
+              <ProcessDefinition Id="D57PDxduoZdOa1DJVJ2ggP">
+                <Fragment Id="E43C3hWZ86UNfnkQOUU5s1" Patch="F1Maj8Czs03P7GMVil3eKF" Enabled="true" />
+                <Fragment Id="R9IbdwW87IwOiKEnmxivKp" Patch="ASnKpsM3KqwOw7S8Iq2anI" Enabled="true" />
+                <Fragment Id="Qdf3INRiA3WN2KZu7XjUzG" Patch="Sfy1b44P1RQLUbEAq2tcwU" Enabled="true" />
+              </ProcessDefinition>
             </Patch>
           </Node>
           <!--
@@ -17664,7 +17660,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="IaDCsuqecktMtUZTWVaknZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="BQmtLPLrYl0L6iFYAukeoC" Name="Model" Kind="InputPin" />
+                <Pin Id="UmLgFVhgp5fQaykmXKbbUX" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="R8DNuKpfvVcNGQToEDEn70" Name="A" Kind="InputPin" />
                 <Pin Id="UPTtJru7gSEMOA2usySTGe" Name="B" Kind="InputPin" />
                 <Pin Id="FtnQuptMYhdLTcOrywy2rF" Name="Scalar" Kind="InputPin" />
@@ -17677,7 +17673,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="FERPqgeCXEoOjp4pPpxnRc" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="OD2LnbSR6pAOcK6l8nIHI9" Name="Model" Kind="InputPin" />
+                <Pin Id="HGcvQDtL649Lky5lfkUBL8" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="RfMntUezZSFL9BPvZ4nvFY" Name="A" Kind="InputPin" />
                 <Pin Id="F5AoVRNRlywO9pUU5ZXX4h" Name="B" Kind="InputPin" />
                 <Pin Id="IxU2iFX5Y7aOUXeuYWHMKW" Name="Scalar" Kind="InputPin" />
@@ -18232,7 +18228,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="Gzdhu8sWfA7LglYHZ22sOf" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="GPzcBp33a52Na9lCH6nql6" Name="Model" Kind="InputPin" />
+                <Pin Id="DU87e1yqdjwPCwp4EwKEM0" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="CcVrkIdyeIkN33VA5EKM6i" Name="A" Kind="InputPin" />
                 <Pin Id="Hmt4G08CkQvMhNzxsCVxup" Name="B" Kind="InputPin" />
                 <Pin Id="A3R9C329G8POw7CMedZrJa" Name="Scalar" Kind="InputPin" />
@@ -18245,7 +18241,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="NTmiK1K2p9VMsZGatrwAex" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="BiTItvu4mZoNgSvxeW2Kui" Name="Model" Kind="InputPin" />
+                <Pin Id="IoFNTnifupXPfAwLRuMKhB" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="Lx3t2u86zqaPIYLfTRc8cC" Name="A" Kind="InputPin" />
                 <Pin Id="Ub4UPUDNkLNNDdxmBAlU2w" Name="B" Kind="InputPin" />
                 <Pin Id="SQKFB7hGU4oNnNdhFBktiV" Name="Scalar" Kind="InputPin" />
@@ -18447,20 +18443,15 @@
                     <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                   </p:NodeReference>
                   <Pin Id="A7I1A5Aas5yMtR3hJz272f" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="QIPrFHqRas4MuKO0xwhTbu" Name="Model" Kind="InputPin" />
+                  <Pin Id="VhUF1MKCJJgLf0evc8K7I7" Name="Interpolation Model" Kind="InputPin" />
                   <Pin Id="Gc1Wk5bB71EMf3IVKFDE3Y" Name="A" Kind="InputPin" />
                   <Pin Id="BPPDCiuDsx4Mg7JnsMDOqe" Name="B" Kind="InputPin" />
                   <Pin Id="MW1v1jcGHZwMjBXq6ZPTF9" Name="Scalar" Kind="InputPin" />
                   <Pin Id="MpolnKXT5XBOfLTEjY01H5" Name="State Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="FZeVT2K4di9Mh2jzDAkcUY" Name="Output" Kind="OutputPin" />
                 </Node>
-                <ControlPoint Id="HoTyPWSZSXUPHGjiwvnqMs" Bounds="409,290" />
+                <ControlPoint Id="KdMxO7OAwtnM0JvLL0i2Ds" Bounds="409,330" />
               </Canvas>
-              <ProcessDefinition Id="MMwUnx2lAzcNX3vJauIxpW">
-                <Fragment Id="J62JsY6DrGYMcrHCitiTiV" Patch="C70l0PKszTIMg0xAL82VIp" Enabled="true" />
-                <Fragment Id="NGxCTwC1AAMP4sYihgF8aR" Patch="IPXVWxx79JUNb2lhgovUqY" Enabled="true" />
-                <Fragment Id="UtiPkT56RNAPTUQB5I98Pc" Patch="UDc0OLrU6I8LsBOX26vbba" />
-              </ProcessDefinition>
               <Link Id="UyPA8koDyfTPCw99kY9rLS" Ids="JF6Dev7oZJeNBNRYf5FT7a,QSJHB8vkUo8LWWByN9ptJS" IsHidden="true" />
               <Link Id="MIxrALJtkSbQKlytBuHBPO" Ids="QkNWU5xMeFOOYjh2PXQhyc,DP85IoDkaFUQTig0iA2n4v" IsHidden="true" />
               <Link Id="I4nbDKChHliL9ux8LpSSWb" Ids="JSLjqZm84pfP8MDg9Dun4B,O2BjDigFKNeM90orbcTQys" IsHidden="true" />
@@ -18491,15 +18482,20 @@
                 </Pin>
               </Patch>
               <Link Id="QNFEDaKWrRTL97SfRtVKhV" Ids="TzUZKfCjCAYLKyrKtJ9XJR,JF6Dev7oZJeNBNRYf5FT7a" />
-              <Patch Id="UDc0OLrU6I8LsBOX26vbba" Name="SetModel">
-                <Pin Id="JrhTQNNkJndNzGn7rFjVQp" MergeId="1002599" Name="Model" Kind="InputPin">
+              <Patch Id="Pt7M5xHct5POPYNBy43251" Name="SetInterpolationModel">
+                <Pin Id="QVH8TbV1jwVOkddhpu4sCk" MergeId="976997" Name="Interpolation Model" Kind="InputPin">
                   <p:TypeAnnotation LastCategoryFullName="AlchemX.Interpolation.Model" LastDependency="VL.Kairos.Runtime.AlchemX.vl">
                     <Choice Kind="TypeFlag" Name="IInterpolationModel" />
                   </p:TypeAnnotation>
                 </Pin>
               </Patch>
-              <Link Id="FH4nonNblhgLr30H8tIa5G" Ids="JrhTQNNkJndNzGn7rFjVQp,HoTyPWSZSXUPHGjiwvnqMs" IsHidden="true" />
-              <Link Id="DRRLxPmqwO6MMpx9zuJ3w1" Ids="HoTyPWSZSXUPHGjiwvnqMs,QIPrFHqRas4MuKO0xwhTbu" />
+              <Link Id="RlucLe5XyfhQFv6Hgu7hSW" Ids="QVH8TbV1jwVOkddhpu4sCk,KdMxO7OAwtnM0JvLL0i2Ds" IsHidden="true" />
+              <Link Id="N7QLhriN4R4LBXWSaADPdt" Ids="KdMxO7OAwtnM0JvLL0i2Ds,VhUF1MKCJJgLf0evc8K7I7" />
+              <ProcessDefinition Id="MMwUnx2lAzcNX3vJauIxpW">
+                <Fragment Id="J62JsY6DrGYMcrHCitiTiV" Patch="C70l0PKszTIMg0xAL82VIp" Enabled="true" />
+                <Fragment Id="D47a3GWU8TEMItNwUhy336" Patch="Pt7M5xHct5POPYNBy43251" Enabled="true" />
+                <Fragment Id="NGxCTwC1AAMP4sYihgF8aR" Patch="IPXVWxx79JUNb2lhgovUqY" Enabled="true" />
+              </ProcessDefinition>
             </Patch>
           </Node>
           <!--
@@ -18611,7 +18607,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="MOi94nVGXEwQSZQv1Bt2J2" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="SkiYkHfS1QPOMMrvAQwBCN" Name="Model" Kind="InputPin" />
+                <Pin Id="TTciyAA6XNRQRQDNQicETr" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="RUXqJI60wJaO5cbE4HGhs0" Name="A" Kind="InputPin" />
                 <Pin Id="H4W56vfi5abLBrbhdiaOlR" Name="B" Kind="InputPin" />
                 <Pin Id="HcaZWomQhDuO35PjaSSOgO" Name="Scalar" Kind="InputPin" />
@@ -18624,7 +18620,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="QQ635SdkZj5OnAhCx1EzU4" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="St3fnSAGqLmOvq9YIpcDUY" Name="Model" Kind="InputPin" />
+                <Pin Id="Dd5OAVDm8QXMr0ZvixzE0D" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="Pi81VN4rL9RPG2WdlADVhl" Name="A" Kind="InputPin" />
                 <Pin Id="MkItpwlZCQbLiJxIRz4rPq" Name="B" Kind="InputPin" />
                 <Pin Id="DurVffi23GpORyaHfArmcm" Name="Scalar" Kind="InputPin" />
@@ -20294,7 +20290,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="ClXdJV2kQTQOwA3tZVKLd7" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="FgFduhcTe88OebkE99M2Qi" Name="Model" Kind="InputPin" />
+                <Pin Id="IW0e07GYuePNBDTxoStSrT" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="TQC51GUZB00NYLOXshFo96" Name="A" Kind="InputPin" />
                 <Pin Id="GBqjiCkNvIANvHLFAgnj9p" Name="B" Kind="InputPin" />
                 <Pin Id="JOQEjuK4gkvOfBXjZ3B09L" Name="Scalar" Kind="InputPin" />
@@ -20307,7 +20303,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="MBPsn1uoexvNEMpKS3mAgJ" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="ITncIXpxC2FMGh7HD8F50d" Name="Model" Kind="InputPin" />
+                <Pin Id="G63HiAPVQsYQRZiZZQIA1V" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="SE49zjjDqjmMlKkYCbQH92" Name="A" Kind="InputPin" />
                 <Pin Id="GsWJZY3C4iPMw4BxD0I1IY" Name="B" Kind="InputPin" />
                 <Pin Id="JHot7h9zC1SP7b77ushyJH" Name="Scalar" Kind="InputPin" />
@@ -21046,7 +21042,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="KmsuBF1J3HMNo7AXWYZOGe" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="A9PTCyMhQbLNR2MVuGRL6a" Name="Model" Kind="InputPin" />
+                <Pin Id="CfUCObB1PSmLk1l3Wk1CFu" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="LdNvwBIwSv2OogBy8L2P8K" Name="A" Kind="InputPin" />
                 <Pin Id="UDd15lzbcq3Mhxfd2l0V2A" Name="B" Kind="InputPin" />
                 <Pin Id="N41BnQrM2DoLJoCrzXU6nw" Name="Scalar" Kind="InputPin" />
@@ -21059,7 +21055,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="SNN27nlCSHsLmTA3ssry4Y" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="FgffXZvtwgiM9V4DpQP8Sq" Name="Model" Kind="InputPin" />
+                <Pin Id="IIk9oyTYF75L979FAvs6O5" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="Qw1I1yB8cXZNhdzcnTL7me" Name="A" Kind="InputPin" />
                 <Pin Id="IVhjF4pcKfwNSXsmFVwDcw" Name="B" Kind="InputPin" />
                 <Pin Id="VA6anT132WoMT5EWj1ndeX" Name="Scalar" Kind="InputPin" />
@@ -21891,7 +21887,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="EZubJ2hQug4MZOF7CqhWQ2" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="FUlhV2oy8q1MX89Fv9yKs3" Name="Model" Kind="InputPin" />
+                <Pin Id="UlMOJtz0UgNL5KQCOTfiJS" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="GA5BX407NOFNcWe5FHRuaH" Name="A" Kind="InputPin" />
                 <Pin Id="PN7A7O5VOl0PD8KwQWswPt" Name="B" Kind="InputPin" />
                 <Pin Id="NlMB5Py3dW1LMbiR6pguar" Name="Scalar" Kind="InputPin" />
@@ -21904,7 +21900,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="Py3r0k9MKHEMtwg3rbh5QD" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="VUc9tEeRA8mPrM0XRGmTAP" Name="Model" Kind="InputPin" />
+                <Pin Id="RoCWqk0FjjxLxca8b1tlpV" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="Gjfleeu0YisORQy7AWicSO" Name="A" Kind="InputPin" />
                 <Pin Id="U0NY61DnmLqMeaGvpmCIds" Name="B" Kind="InputPin" />
                 <Pin Id="TjLcjT7Bjj2LqKRQReMHx9" Name="Scalar" Kind="InputPin" />
@@ -22793,7 +22789,7 @@
                   <Choice Kind="ProcessAppFlag" Name="OscillatorInterpolator" />
                 </p:NodeReference>
                 <Pin Id="HooXe41gZ8GNqMt8ui7VzD" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="VuHKLNtMAkFQV8ihUMKkan" Name="Model" Kind="InputPin" />
+                <Pin Id="KwC92mWUJZROfXuhVQInqm" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="N1BF7B2TyjZMskn0pDEgBJ" Name="A" Kind="InputPin" />
                 <Pin Id="EKR2es8bI62NGgjWR57E0n" Name="B" Kind="InputPin" />
                 <Pin Id="Tj6YiTKls55Pqv9uLprAP4" Name="Scalar" Kind="InputPin" />
@@ -22806,7 +22802,7 @@
                   <Choice Kind="ProcessAppFlag" Name="BezierInterpolator" />
                 </p:NodeReference>
                 <Pin Id="BudRivr3hjuPsiWtbx9NrX" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="TY56f5kvIkMMB2xvgI5GiX" Name="Model" Kind="InputPin" />
+                <Pin Id="I8kHcJrRzxVPg6Srmlt4Wg" Name="Interpolation Model" Kind="InputPin" />
                 <Pin Id="FSkZ9c4Kux7Oi0fW5RJrP8" Name="A" Kind="InputPin" />
                 <Pin Id="JulMYKKngv7LOgjTqdvC8T" Name="B" Kind="InputPin" />
                 <Pin Id="UNvIdOSyksCLN26kjOxYxe" Name="Scalar" Kind="InputPin" />
