@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="T1ULGBGyLF3LMdyBKMN3Rp" LanguageVersion="2025.7.0-0340-g1b1e5767de" Version="0.128">
-  <NugetDependency Id="TKrHVWOBKJZNPKl7rQv2oy" Location="VL.CoreLib" Version="2025.7.0-0340-g1b1e5767de" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="T1ULGBGyLF3LMdyBKMN3Rp" LanguageVersion="2025.7.0-0349-g7f1d700e80" Version="0.128">
+  <NugetDependency Id="TKrHVWOBKJZNPKl7rQv2oy" Location="VL.CoreLib" Version="2025.7.0-0349-g7f1d700e80" />
   <Patch Id="VzmxMhtWO4GL7l2nwmyS1m">
     <Canvas Id="GeDfDvmY4SSMe0jsjKPUNt" DefaultCategory="Kairos.Common.Internal" CanvasType="FullCategory">
       <!--
@@ -50251,6 +50251,33 @@
             </Node>
             <Pad Id="TNVop1HKNFhNjpkkgKMRPU" SlotId="F4GpyIkAli4PKb6kBStiaj" Bounds="1177,920" />
             <ControlPoint Id="ORztwoz8FWNMEvAdB3Usp5" Bounds="1177,971" />
+            <Node Bounds="972,780,119,19" Id="CXsn2q0SDDMQbtMbhgz8jP">
+              <p:NodeReference LastCategoryFullName="Kairos.Common" LastDependency="VL.KairosUI.Common.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="EditableMappingModel" />
+              </p:NodeReference>
+              <Pin Id="HO6DbMNB2H3OmST0zO4DsR" Name="Tags" Kind="InputPin" />
+              <Pin Id="GnM4txyQsUBOFXPOwtvF0r" Name="Value" Kind="InputPin" />
+              <Pin Id="HeMoYWA9jeYO1EAymJ6iMF" Name="Tags" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="972,810,138,19" Id="DyD56acRYxNMlKNaLudiBD">
+              <p:NodeReference LastCategoryFullName="Kairos.Common" LastDependency="VL.KairosUI.Common.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="EditableCompositingModel" />
+              </p:NodeReference>
+              <Pin Id="PwGJsPJaPftPAyw6c6IpLH" Name="Tags" Kind="InputPin" />
+              <Pin Id="I4183hBdHefQbqmEWvu4Ey" Name="Value" Kind="InputPin" />
+              <Pin Id="N8fHrz3NiT7MhSf05tjzoX" Name="Tags" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="972,840,103,19" Id="IN5D5MteWojPLHXnRbrs37">
+              <p:NodeReference LastCategoryFullName="Kairos.Common" LastDependency="VL.KairosUI.Common.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="EditableMaskModel" />
+              </p:NodeReference>
+              <Pin Id="AqfmsoY6ECJQE6SLOVAYog" Name="Tags" Kind="InputPin" />
+              <Pin Id="C2uVvQyD0AxMLhGG2qxsE2" Name="Value" Kind="InputPin" />
+              <Pin Id="HvhfCxEQYeFLZXoT3BrKyB" Name="Tags" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <Patch Id="IUMB4kMhedMN5NIZ6WnR3E" Name="Create" ParticipatingElements="SSqHmkTRt7fM53ou95P35R,SWhJYJqTF5EP5fdQS9kzoN,AUTSpbux3A7LtH1xYuw1Nx,RNYDJcSap2EPuH41lnWSRm" />
           <ProcessDefinition Id="G7nOru4dL72M341nNYX3Wy" IsHidden="true">
@@ -50362,6 +50389,9 @@
           <Link Id="JVzgEmBpln9LIoOdYjyfPe" Ids="SvntJwFis0DPGMuKtuQUOS,TDsHCJxW5M3L4dlIBkQCcZ" />
           <Link Id="EJnKGM1Fa0eM8ev7bPFGgv" Ids="SvntJwFis0DPGMuKtuQUOS,I6MHmUr61t0Ot7bCEL9FSC" />
           <Link Id="SFlOSmzTHohLLSWZLn7VTx" Ids="U1AhDJ7ZsGjNXPK0zchJEK,RnIY5qW31wrQOZr6wSSdyb" />
+          <Link Id="MlU0DZNpRokLTMLpH2IbtR" Ids="N8fHrz3NiT7MhSf05tjzoX,AqfmsoY6ECJQE6SLOVAYog" />
+          <Link Id="OxhfFwrcbmSPJat65F672N" Ids="HeMoYWA9jeYO1EAymJ6iMF,PwGJsPJaPftPAyw6c6IpLH" />
+          <Link Id="Sj5V7RC912HPhMty3sSLbA" Ids="HvhfCxEQYeFLZXoT3BrKyB,PRjeJJiC1d6O1SU2kxgjuM" />
         </Patch>
       </Node>
       <Overlay Id="AHgLSRMgyHoPBl5cDHGIjr" Name="" Bounds="2023,250,274,201">
@@ -51392,6 +51422,388 @@
           <Link Id="Qxy1hE3cuweLrhHZ9uix0U" Ids="NqvjeqOH4xbLQ70mCwjwx1,N6P1j6SVoyNLyTHKJdWXfo" />
         </Patch>
       </Node>
+      <!--
+
+    ************************ EditableCompositingModel ************************
+
+-->
+      <Node Name="EditableCompositingModel" Bounds="2527,40,260,164" Id="LtQfoLmNn0CMdkltqnWKBa">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" />
+        </p:NodeReference>
+        <Patch Id="O8UVbQ7PdmiPsSEF2XcYAG">
+          <Node Bounds="2574,128,53,26" Id="P3lRE1PyGH6OPRyKGtzFqT">
+            <p:NodeReference LastCategoryFullName="Collections.Dictionary" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Dictionary" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="SetItem" />
+            </p:NodeReference>
+            <Pin Id="PhYVZUOg5Z8Lql6Wx98iWY" Name="Input" Kind="StateInputPin" />
+            <Pin Id="MoRB3oTK9A1Lm9X6bGkMhg" Name="Key" Kind="InputPin" />
+            <Pin Id="TsJNkNecBq4O1A907Hd6as" Name="Value" Kind="InputPin" />
+            <Pin Id="VBnGnw7d9wkMr3yuJOTIIV" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="U9msosuIgfsOLzCZKL6pg3" Comment="Key" Bounds="2600,68,136,17" ShowValueBox="true" isIOBox="true" Value="EditableCompositingModel">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Link Id="SOyrXulxSXrNXZDQgd72Av" Ids="U9msosuIgfsOLzCZKL6pg3,MoRB3oTK9A1Lm9X6bGkMhg" />
+          <ControlPoint Id="Tks8eGpgxAsLXMqKWwaiuk" Bounds="2624,97" />
+          <Link Id="KhwJLZ2ChmhP6qFrlyZO2P" Ids="Tks8eGpgxAsLXMqKWwaiuk,TsJNkNecBq4O1A907Hd6as" />
+          <Pin Id="US5gxzgpJ77LrZaXo21H2F" Name="Tags" Kind="InputPin">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Dictionary" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="Object" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Pin>
+          <Link Id="Cxz5ZbgExumMR4EZBDTmZm" Ids="US5gxzgpJ77LrZaXo21H2F,RP5dPbleNLrPOdzzpRCaUj" IsHidden="true" />
+          <Pin Id="FDLVS5j6xytNg36H6q5NYF" Name="Value" Kind="InputPin" DefaultValue="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pin>
+          <Link Id="L5gk0cdeVGiMptdhF7PLYt" Ids="FDLVS5j6xytNg36H6q5NYF,Tks8eGpgxAsLXMqKWwaiuk" IsHidden="true" />
+          <ControlPoint Id="RP5dPbleNLrPOdzzpRCaUj" Bounds="2541,77" />
+          <Link Id="CWt4PxmplIPNCbFqrcoThm" Ids="RP5dPbleNLrPOdzzpRCaUj,PhYVZUOg5Z8Lql6Wx98iWY" />
+          <ControlPoint Id="DhVEZ5mmevgNMJOtrNufwD" Bounds="2541,187" />
+          <Link Id="Nq16lz9IvIxQK5gSLByVMP" Ids="VBnGnw7d9wkMr3yuJOTIIV,DhVEZ5mmevgNMJOtrNufwD" />
+          <Pin Id="I4cIoBfA8rYMEbvDUQ4PIX" Name="Tags" Kind="OutputPin" />
+          <Link Id="LOH2T8ErSDhPehttTFiz6r" Ids="DhVEZ5mmevgNMJOtrNufwD,I4cIoBfA8rYMEbvDUQ4PIX" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ EditableMappingModel ************************
+
+-->
+      <Node Name="EditableMappingModel" Bounds="2835,40,260,164" Id="OAPE8XYdbltMW8vclDOvjK">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" />
+        </p:NodeReference>
+        <Patch Id="FKnDBU0AQrlM0g4Sxytp09">
+          <Node Bounds="2882,128,53,26" Id="CJeYlhrnQB0P7UJxJFZ1rz">
+            <p:NodeReference LastCategoryFullName="Collections.Dictionary" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Dictionary" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="SetItem" />
+            </p:NodeReference>
+            <Pin Id="C1o7iZRMupNPltR0wofkVa" Name="Input" Kind="StateInputPin" />
+            <Pin Id="TQVzFl6RF51NwqPMfMOSPS" Name="Key" Kind="InputPin" />
+            <Pin Id="FR5aFRyP18qMiJXjzF1kDn" Name="Value" Kind="InputPin" />
+            <Pin Id="VEjgI1oDvHUMPHDyLZACqG" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="RBsVzJcUBteP16GFZ23r5J" Comment="Key" Bounds="2908,68,136,17" ShowValueBox="true" isIOBox="true" Value="EditableMappingModel">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Link Id="B8AaliCXqqGL7OicbGOymO" Ids="RBsVzJcUBteP16GFZ23r5J,TQVzFl6RF51NwqPMfMOSPS" />
+          <ControlPoint Id="Blc5djzdpADOaeU4fdOKRG" Bounds="2932,97" />
+          <Link Id="Qvi9ikYSLK6QDzegECWaPb" Ids="Blc5djzdpADOaeU4fdOKRG,FR5aFRyP18qMiJXjzF1kDn" />
+          <Pin Id="ITGIIN3rdy4MANx0AfTBJN" Name="Tags" Kind="InputPin">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Dictionary" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="Object" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Pin>
+          <Link Id="EFP61wuMImwNByJ2tH7mZ0" Ids="ITGIIN3rdy4MANx0AfTBJN,CsQS6Wx9jLkMX0xF8QrVDN" IsHidden="true" />
+          <Pin Id="OvTQlrPpaBSLX9W95KJmkv" Name="Value" Kind="InputPin" DefaultValue="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pin>
+          <Link Id="GuUiMepP2VGQDKtYY7tFMA" Ids="OvTQlrPpaBSLX9W95KJmkv,Blc5djzdpADOaeU4fdOKRG" IsHidden="true" />
+          <ControlPoint Id="CsQS6Wx9jLkMX0xF8QrVDN" Bounds="2849,77" />
+          <Link Id="LxrwaE1HH6MPFCxs4psYZy" Ids="CsQS6Wx9jLkMX0xF8QrVDN,C1o7iZRMupNPltR0wofkVa" />
+          <ControlPoint Id="QUsumNu7z4JOfTtRnxexRu" Bounds="2849,187" />
+          <Link Id="DAeiT71KvqHPVMEmItOtDd" Ids="VEjgI1oDvHUMPHDyLZACqG,QUsumNu7z4JOfTtRnxexRu" />
+          <Pin Id="MJH2R1EvrdsPqitl8bfyKo" Name="Tags" Kind="OutputPin" />
+          <Link Id="IWOJLURH29UPHJLSdR72Sm" Ids="QUsumNu7z4JOfTtRnxexRu,MJH2R1EvrdsPqitl8bfyKo" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ EditableMaskModel ************************
+
+-->
+      <Node Name="EditableMaskModel" Bounds="3136,38,260,164" Id="B2bMsXZxxaMLYdSWXr9xu6">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" />
+        </p:NodeReference>
+        <Patch Id="PrpGEO2k5kuNanZ8JSveYx">
+          <Node Bounds="3183,126,53,26" Id="RdazNoMrF12OIhrpCJmOsc">
+            <p:NodeReference LastCategoryFullName="Collections.Dictionary" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Dictionary" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="SetItem" />
+            </p:NodeReference>
+            <Pin Id="ByCvWhdSMMVMbvw4o0mRSf" Name="Input" Kind="StateInputPin" />
+            <Pin Id="VufsMFVwfGgO4oBKIunO9C" Name="Key" Kind="InputPin" />
+            <Pin Id="OIfVOVM4dOPMAap18heqap" Name="Value" Kind="InputPin" />
+            <Pin Id="CpdgsX6nqEcQA8BQuBH0pk" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="SBq4YW8eABAOhAJ60SOteM" Comment="Key" Bounds="3209,66,136,17" ShowValueBox="true" isIOBox="true" Value="EditableMaskModel">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Link Id="NnnORm7oKZjLxmBQgy2kit" Ids="SBq4YW8eABAOhAJ60SOteM,VufsMFVwfGgO4oBKIunO9C" />
+          <ControlPoint Id="Dbx70e0pqYUOnBLxeDArxO" Bounds="3233,95" />
+          <Link Id="AmNEKVXO6B6PD19DuJ6mZc" Ids="Dbx70e0pqYUOnBLxeDArxO,OIfVOVM4dOPMAap18heqap" />
+          <Pin Id="SOf9R6i61r6NkjSt7v3lU5" Name="Tags" Kind="InputPin">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Dictionary" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="Object" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Pin>
+          <Link Id="LqzZGqXH9u9NrooVpF5Ouz" Ids="SOf9R6i61r6NkjSt7v3lU5,H9MentfEa1TQaVTX7fuF2u" IsHidden="true" />
+          <Pin Id="PEjZCfTbsZNO3crzamSIHU" Name="Value" Kind="InputPin" DefaultValue="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pin>
+          <Link Id="JciMHp8GqSPQXFmyQii9EV" Ids="PEjZCfTbsZNO3crzamSIHU,Dbx70e0pqYUOnBLxeDArxO" IsHidden="true" />
+          <ControlPoint Id="H9MentfEa1TQaVTX7fuF2u" Bounds="3150,75" />
+          <Link Id="SvtGfOyTCj9K9bzKNQXEc4" Ids="H9MentfEa1TQaVTX7fuF2u,ByCvWhdSMMVMbvw4o0mRSf" />
+          <ControlPoint Id="FS0OoJHznpEODsxyCQFLNC" Bounds="3150,185" />
+          <Link Id="Rt02XX2Y6YPLYJWmxBovFz" Ids="CpdgsX6nqEcQA8BQuBH0pk,FS0OoJHznpEODsxyCQFLNC" />
+          <Pin Id="Ap5k9S1LcxJPStPlwwJr86" Name="Tags" Kind="OutputPin" />
+          <Link Id="OqDeZrNbskNNQMKneXc6du" Ids="FS0OoJHznpEODsxyCQFLNC,Ap5k9S1LcxJPStPlwwJr86" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ CheckEditableCompositingModel ************************
+
+-->
+      <Node Name="CheckEditableCompositingModel" Bounds="2531,282,247,176" Id="OXrXqpDlDNvN4J5trA6ond">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" />
+        </p:NodeReference>
+        <Patch Id="VzGrBWAgkTbOSCrzHqCYun">
+          <Node Bounds="2543,350,71,26" Id="Iy4PFeyioGhOXIfjM2gsDX">
+            <p:NodeReference LastCategoryFullName="Collections.Dictionary" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Dictionary" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="TryGetValue" />
+            </p:NodeReference>
+            <Pin Id="MA29X4W4cxUQPr5I4MjeS1" Name="Input" Kind="StateInputPin" />
+            <Pin Id="AMb4yCrDl5LNAkY9jWSa9Z" Name="Key" Kind="InputPin" />
+            <Pin Id="DtazBKWzmacMb6eGbQgwxQ" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="UyoTvLCTQbPPIEVtL6Xqx2" Name="Result" Kind="OutputPin" />
+            <Pin Id="BcrItvpRKLROoqD7h50EbD" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Pin Id="KD2akFmsqNWOrVqpsbws5a" Name="Tags" Kind="InputPin">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Dictionary" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="Object" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Pin>
+          <ControlPoint Id="B9PtDSMkDO8QZ8TLqQTtB2" Bounds="2545,311" />
+          <Link Id="VarWYspcxWDPmBNHShppLV" Ids="KD2akFmsqNWOrVqpsbws5a,B9PtDSMkDO8QZ8TLqQTtB2" IsHidden="true" />
+          <Link Id="KDHhp3LAOB6Prx690LO8ub" Ids="B9PtDSMkDO8QZ8TLqQTtB2,MA29X4W4cxUQPr5I4MjeS1" />
+          <Pad Id="ArY4pB8tJsKOfltp8fP17Q" Comment="" Bounds="2611,310,136,17" ShowValueBox="true" isIOBox="true" Value="EditableCompositingModel">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Link Id="Bdzol6QykaALr7ZPSQaXf1" Ids="ArY4pB8tJsKOfltp8fP17Q,AMb4yCrDl5LNAkY9jWSa9Z" />
+          <Link Id="GtXsoaaKCE0MIgIfxrE9GO" Ids="BcrItvpRKLROoqD7h50EbD,QJlBAl2UES3OIdDkUuabhE" />
+          <Node Bounds="2609,390,48,19" Id="TCGDH4GWAu4Qd2ktu2ou3O">
+            <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <FullNameCategoryReference ID="Primitive.Object" />
+              <Choice Kind="OperationCallFlag" Name="CastAs" />
+            </p:NodeReference>
+            <Pin Id="QJlBAl2UES3OIdDkUuabhE" Name="Input" Kind="StateInputPin" />
+            <Pin Id="OBffinykrKNMigFDG8qnRK" Name="Default" Kind="InputPin" />
+            <Pin Id="QqJgO8v2fSxNa0ttldTE8D" Name="Result" Kind="OutputPin" />
+            <Pin Id="HOZz3B8Qci8MJuEHT92IIz" Name="Success" Kind="OutputPin" />
+          </Node>
+          <ControlPoint Id="FZwd91fOel6PZZnB5ZldXG" Bounds="2611,441" />
+          <Link Id="PzCqYSjlrHcNSHczRJQU2v" Ids="QqJgO8v2fSxNa0ttldTE8D,FZwd91fOel6PZZnB5ZldXG" />
+          <Pin Id="SASq3rkDA0vOicEfTqTuWG" Name="Result" Kind="OutputPin">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pin>
+          <Link Id="SmuNxT0Qfr7NUbeMEjNajy" Ids="FZwd91fOel6PZZnB5ZldXG,SASq3rkDA0vOicEfTqTuWG" IsHidden="true" />
+          <ControlPoint Id="CHbAzVfBGAkNsWVMfgJFVn" Bounds="2654,360" />
+          <Link Id="NWaLug5wvOQOjg3X3UAJeP" Ids="CHbAzVfBGAkNsWVMfgJFVn,OBffinykrKNMigFDG8qnRK" />
+          <Pin Id="KIRRDOZ4AEBObLWu5ks9JQ" Name="Fallback Value" Kind="InputPin" />
+          <Link Id="DWD9q7Wgsv0PGj0Q2cQT8S" Ids="KIRRDOZ4AEBObLWu5ks9JQ,CHbAzVfBGAkNsWVMfgJFVn" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ CheckEditableMappingModel ************************
+
+-->
+      <Node Name="CheckEditableMappingModel" Bounds="2831,282,247,176" Id="ItNQnMTPiX5Mxr6CB1Bzql">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" />
+        </p:NodeReference>
+        <Patch Id="FxZSoH6iRy3LSvQrSMIQlx">
+          <Node Bounds="2843,350,71,26" Id="Etv6QatVP6dPRvphUe1geF">
+            <p:NodeReference LastCategoryFullName="Collections.Dictionary" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Dictionary" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="TryGetValue" />
+            </p:NodeReference>
+            <Pin Id="A5vi8wjaMG8LiK3cc8sW6X" Name="Input" Kind="StateInputPin" />
+            <Pin Id="UlNj9PCvptxNI4Wl6KHLSq" Name="Key" Kind="InputPin" />
+            <Pin Id="S1ViqFZKAt8LIOXozWpAHe" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="HVJ7YESvQeWMXm21B18Ent" Name="Result" Kind="OutputPin" />
+            <Pin Id="TIkAWs1DkziNzOyC3pMD6I" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Pin Id="BKztQkRZ8Y8OOFU1AgA0MR" Name="Tags" Kind="InputPin">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Dictionary" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="Object" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Pin>
+          <ControlPoint Id="PCxWvL4biPYMZCxCR3y332" Bounds="2845,311" />
+          <Link Id="TSbK3w68jJJN73MBAApDxB" Ids="BKztQkRZ8Y8OOFU1AgA0MR,PCxWvL4biPYMZCxCR3y332" IsHidden="true" />
+          <Link Id="S9SruGjl2uLPvB5vuhYIJe" Ids="PCxWvL4biPYMZCxCR3y332,A5vi8wjaMG8LiK3cc8sW6X" />
+          <Pad Id="RAqMh7YIbPaP3VhVommmNa" Comment="" Bounds="2911,310,136,17" ShowValueBox="true" isIOBox="true" Value="EditableMappingModel">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Link Id="MS8NMOj4hGmMquIEsVbPVD" Ids="RAqMh7YIbPaP3VhVommmNa,UlNj9PCvptxNI4Wl6KHLSq" />
+          <Link Id="My9sZsmZZGbPEYsUNBR9IS" Ids="TIkAWs1DkziNzOyC3pMD6I,Gx4CzTnWJISPJCyid4oDif" />
+          <Node Bounds="2909,390,48,19" Id="ABaEAY4iRz5OMWL8S0CZ7D">
+            <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <FullNameCategoryReference ID="Primitive.Object" />
+              <Choice Kind="OperationCallFlag" Name="CastAs" />
+            </p:NodeReference>
+            <Pin Id="Gx4CzTnWJISPJCyid4oDif" Name="Input" Kind="StateInputPin" />
+            <Pin Id="I1bRrnxK9uWNez3OOXsu8r" Name="Default" Kind="InputPin" />
+            <Pin Id="OET1viF985aMUIwbWiIxxf" Name="Result" Kind="OutputPin" />
+            <Pin Id="HRkXlKnpKByLTik2nPFz3T" Name="Success" Kind="OutputPin" />
+          </Node>
+          <ControlPoint Id="CGRdYSNOohGNLBdpeGfsaP" Bounds="2911,441" />
+          <Link Id="Dv1500PoxDeOs8IgNVX9bs" Ids="OET1viF985aMUIwbWiIxxf,CGRdYSNOohGNLBdpeGfsaP" />
+          <Pin Id="M6yNafAAGESPoeCM82F6QP" Name="Result" Kind="OutputPin">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pin>
+          <Link Id="BfpUINMQQOBPxJl7YwocIM" Ids="CGRdYSNOohGNLBdpeGfsaP,M6yNafAAGESPoeCM82F6QP" IsHidden="true" />
+          <ControlPoint Id="EuvaOxIqQaqOBn1iRYEjRp" Bounds="2954,360" />
+          <Link Id="DbWMLr9JnoZOTswe6Lx9aD" Ids="EuvaOxIqQaqOBn1iRYEjRp,I1bRrnxK9uWNez3OOXsu8r" />
+          <Pin Id="Pw54ttW3ZjoLmqECuGe24J" Name="Fallback Value" Kind="InputPin" />
+          <Link Id="BOjYxAleFOqNXpOA56C7Bu" Ids="Pw54ttW3ZjoLmqECuGe24J,EuvaOxIqQaqOBn1iRYEjRp" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ CheckEditableMaskModel ************************
+
+-->
+      <Node Name="CheckEditableMaskModel" Bounds="3131,282,247,176" Id="VsOG6zXHAxSOHq3BQL4OQh">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" />
+        </p:NodeReference>
+        <Patch Id="CL4FMaA9Wv3PRYOS3Dcx4t">
+          <Node Bounds="3143,350,71,26" Id="KkUUNFFR6EBPhPw3uTQcpO">
+            <p:NodeReference LastCategoryFullName="Collections.Dictionary" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Dictionary" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="TryGetValue" />
+            </p:NodeReference>
+            <Pin Id="Dj9OQoqRCVUPcbzEJKTU6O" Name="Input" Kind="StateInputPin" />
+            <Pin Id="SqywwKievCiLBAPCOfEp8P" Name="Key" Kind="InputPin" />
+            <Pin Id="QRUV88cOXK3PzlKSqjn5ky" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="Gd8V0sJwYPuMrpwWWjxtES" Name="Result" Kind="OutputPin" />
+            <Pin Id="F2jSaff5p9TP0DGKZKIkVv" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Pin Id="VznSV2ojwKuNJaHzpral7Z" Name="Tags" Kind="InputPin">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Dictionary" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="Object" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Pin>
+          <ControlPoint Id="CR8N1PzfFZJOhW8JcMr2lx" Bounds="3145,311" />
+          <Link Id="Fd0QA3KEad8QGwup2Dh7Ue" Ids="VznSV2ojwKuNJaHzpral7Z,CR8N1PzfFZJOhW8JcMr2lx" IsHidden="true" />
+          <Link Id="A4991bXBt88OehZkF6aZBD" Ids="CR8N1PzfFZJOhW8JcMr2lx,Dj9OQoqRCVUPcbzEJKTU6O" />
+          <Pad Id="Jn9z6G5PdrWMxUwF68CLpG" Comment="" Bounds="3211,310,113,18" ShowValueBox="true" isIOBox="true" Value="EditableMaskModel">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Link Id="T4VaD6jV5y8M6OBoLYOCLG" Ids="Jn9z6G5PdrWMxUwF68CLpG,SqywwKievCiLBAPCOfEp8P" />
+          <Link Id="HHXy54xE9ZcMYjdm5yHs3L" Ids="F2jSaff5p9TP0DGKZKIkVv,Pk48Oo61OfPPMkprrcCBbd" />
+          <Node Bounds="3209,390,48,19" Id="HjT2VBrlmxuPEzUPQqbxbF">
+            <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <FullNameCategoryReference ID="Primitive.Object" />
+              <Choice Kind="OperationCallFlag" Name="CastAs" />
+            </p:NodeReference>
+            <Pin Id="Pk48Oo61OfPPMkprrcCBbd" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Nj86DWjN9KdNHtB55lvgNw" Name="Default" Kind="InputPin" />
+            <Pin Id="P229Lpc0GQRNRT1CLuqm7o" Name="Result" Kind="OutputPin" />
+            <Pin Id="Mx8GnElaWRUQWLcb6iVcOI" Name="Success" Kind="OutputPin" />
+          </Node>
+          <ControlPoint Id="SgbHg5cYyAaO9eHafyTI0g" Bounds="3211,441" />
+          <Link Id="SZza4O6nDS8M3Ov9h561W8" Ids="P229Lpc0GQRNRT1CLuqm7o,SgbHg5cYyAaO9eHafyTI0g" />
+          <Pin Id="HHboKAZSMKrNcACKylRFmT" Name="Result" Kind="OutputPin">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pin>
+          <Link Id="NajHhlBcxVhQLUiLrctOnh" Ids="SgbHg5cYyAaO9eHafyTI0g,HHboKAZSMKrNcACKylRFmT" IsHidden="true" />
+          <ControlPoint Id="KnxRriOWLQJLLu18O98sh0" Bounds="3254,360" />
+          <Link Id="HBuTiBoHAQ6PLVPWyDpfNB" Ids="KnxRriOWLQJLLu18O98sh0,Nj86DWjN9KdNHtB55lvgNw" />
+          <Pin Id="BDxOTGF8uRHOtc7CbpCVGC" Name="Fallback Value" Kind="InputPin" />
+          <Link Id="QCQzdInXkiKOvSKuk1d4hU" Ids="BDxOTGF8uRHOtc7CbpCVGC,KnxRriOWLQJLLu18O98sh0" IsHidden="true" />
+        </Patch>
+      </Node>
+      <Overlay Id="CLQwxMKRpT3OBNygZsPrgI" Name="KairosUIFactory Tags" Bounds="2446,-80,1028,591" />
     </Canvas>
     <!--
 
@@ -51415,11 +51827,11 @@
     </Node>
   </Patch>
   <NugetDependency Id="EY62Stk1ZSMPP2dXWy8amO" Location="VL.Touchy" Version="0.0.0" />
-  <NugetDependency Id="J6MFBN8E6v8NqC99D5yZBK" Location="VL.Skia" Version="2025.7.0-0340-g1b1e5767de" />
-  <NugetDependency Id="SDkUJ9IIGRrLaSX4O7gINQ" Location="VL.ImGui" Version="2025.7.0-0340-g1b1e5767de" />
-  <NugetDependency Id="PGktrRXWLqPQWUGmC8sj0J" Location="VL.HDE" Version="2025.7.0-0340-g1b1e5767de" />
-  <NugetDependency Id="AmcuUbCeWt7O9nhD7c4UKJ" Location="VL.ImGui.Skia" Version="2025.7.0-0340-g1b1e5767de" />
-  <NugetDependency Id="J5BeSiDvJEwNpUH85FqzlO" Location="VL.EditingFramework" Version="2025.7.0-0340-g1b1e5767de" />
+  <NugetDependency Id="J6MFBN8E6v8NqC99D5yZBK" Location="VL.Skia" Version="2025.7.0-0349-g7f1d700e80" />
+  <NugetDependency Id="SDkUJ9IIGRrLaSX4O7gINQ" Location="VL.ImGui" Version="2025.7.0-0349-g7f1d700e80" />
+  <NugetDependency Id="PGktrRXWLqPQWUGmC8sj0J" Location="VL.HDE" Version="2025.7.0-0349-g7f1d700e80" />
+  <NugetDependency Id="AmcuUbCeWt7O9nhD7c4UKJ" Location="VL.ImGui.Skia" Version="2025.7.0-0349-g7f1d700e80" />
+  <NugetDependency Id="J5BeSiDvJEwNpUH85FqzlO" Location="VL.EditingFramework" Version="2025.7.0-0349-g7f1d700e80" />
   <PlatformDependency Id="Di60Xm95LZMOuczpzVM1LC" Location="System.Windows.Forms" />
   <NugetDependency Id="OxGF0bFNIx6QNmHFzWnqxY" Location="VL.Kairos" IsFriend="true" Version="0.0.0" />
 </Document>
