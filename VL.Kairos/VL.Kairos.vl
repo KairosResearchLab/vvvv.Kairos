@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="F71xDblX41WLpjme0AY0iv" LanguageVersion="2025.7.0-0332-gad0670a654" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="F71xDblX41WLpjme0AY0iv" LanguageVersion="2025.7.0-0357-gd997588cb6" Version="0.128">
   <Patch Id="D2othUnTm8PLmxhBjgYYoO">
     <Canvas Id="Tu1o9F78Y7pPw6M7dbbdBI" DefaultCategory="Kairos" CanvasType="FullCategory">
       <!--
@@ -707,8 +707,6 @@
                 <Pin Id="VIGjRat1TmmNDBwtiuVWQh" Name="Update" Kind="InputPin" />
                 <Pin Id="Km0uKqkNxJ9Llf2CH7ElnQ" Name="Session Commands" Kind="OutputPin" />
               </Node>
-              <Pad Id="G7dBQRgmi8OMJD8SS4jBZp" SlotId="QZ4r3WwKn3pPtoyNSdQO8y" Bounds="1471,680" />
-              <ControlPoint Id="Sevkd9xWqKyPlUW2sp7Oew" Bounds="1471,746" />
               <Node Bounds="179,854,91,26" Id="TI8E0CUygNqNUrCN1022nf">
                 <p:NodeReference LastCategoryFullName="Kairos.Timeline.Timeline" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -926,21 +924,6 @@
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="1469,633,43,19" Id="SifyAiCygvQLd3EgIMMO1t">
-                <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="Select (ByPath)" />
-                </p:NodeReference>
-                <Pin Id="O29gUa1KtYJLTZH1efX97g" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="Lg5R4mLQd5bNKP3QoENrBp" Name="Input" Kind="InputPin" />
-                <Pin Id="BuEuGy8SzdEOddDUNPYgKV" Name="Path" Kind="InputPin" />
-                <Pin Id="I8RYgicxqXXNWNzkrUheJS" Name="Output" Kind="OutputPin" />
-              </Node>
-              <Pad Id="NQiApy33NuyPLOeXNw47BX" Comment="" Bounds="1509,612,94,15" ShowValueBox="true" isIOBox="true" Value="KeyframeEditor UI Model">
-                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                  <Choice Kind="TypeFlag" Name="String" />
-                </p:TypeAnnotation>
-              </Pad>
               <Node Bounds="1785,633,43,19" Id="CviDQ9ZKN1YOkn4a3AOYo6">
                 <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1002,21 +985,7 @@
             <Patch Id="FWIl56BkZe2OfT8UJIlw0I" Name="GetFilePath">
               <Pin Id="GzYNccPe2WgOhgPnFpmUR3" Name="File Path" Kind="OutputPin" />
             </Patch>
-            <Slot Id="QZ4r3WwKn3pPtoyNSdQO8y" Name="KeyframeEditor UI Model Stream">
-              <p:TypeAnnotation p:Type="TypeReference">
-                <Choice Kind="TypeFlag" Name="Channel" />
-                <p:TypeArguments>
-                  <TypeReference>
-                    <Choice Kind="TypeFlag" Name="IKairosNodeUIModel" />
-                  </TypeReference>
-                </p:TypeArguments>
-              </p:TypeAnnotation>
-            </Slot>
-            <Link Id="OAsyHvfRkzUNg8pxmQSaKd" Ids="G7dBQRgmi8OMJD8SS4jBZp,Sevkd9xWqKyPlUW2sp7Oew" />
-            <Link Id="K2T8MYSejfJLR16XD4x201" Ids="Sevkd9xWqKyPlUW2sp7Oew,FKZLxjR3XdrMa6anIwKORu" IsHidden="true" />
-            <Patch Id="MlAkp40BMXULkyBHaWpMO1" Name="GetKeyframeEditorUIModelStream">
-              <Pin Id="FKZLxjR3XdrMa6anIwKORu" Name="KeyframeEditor UI Model Stream" Kind="OutputPin" />
-            </Patch>
+            <Patch Id="MlAkp40BMXULkyBHaWpMO1" Name="GetKeyframeEditorUIModelStream" />
             <Link Id="AbHtd6yht1jLaBncNUHc34" Ids="RbYuhJuXoq2OzQtNTu7ohw,BM71abuDlNeMOKY3kUcxST" />
             <Link Id="D3f8diN5gTrPXp6Yh02Nm2" Ids="RbYuhJuXoq2OzQtNTu7ohw,RJhY1OYUiSDL0CKUOnGsy4" />
             <Link Id="PgZkay2PCZEPOw9ALntfQ6" Ids="MIQBXpNvsEiLx7C47SY22f,NuhZQ4VXChiQGKBO7SVtzt" IsHidden="true" />
@@ -1080,9 +1049,6 @@
             <Link Id="I6Hiqw3irHCNLBzh5RMceE" Ids="Sndf7ayHX93NjNauck1wAD,Iz0YRIHo4UZOxLYEP86BVm" />
             <Link Id="QgKuU7TVvN5McGGrwGuiAj" Ids="GneqlKeQLLNO1b43lQ0eBW,D52NwNvi6r9QKVdDRaSUYI" />
             <Link Id="JJMS5wSeHwUPQanauwDcYw" Ids="GneqlKeQLLNO1b43lQ0eBW,T6e6J6SyDbbLf0EUJtV3RG" />
-            <Link Id="FBbH5vxKT3CM87A4amkEug" Ids="NQiApy33NuyPLOeXNw47BX,BuEuGy8SzdEOddDUNPYgKV" />
-            <Link Id="JubnFCUp3UiOyWERultO52" Ids="Sndf7ayHX93NjNauck1wAD,Lg5R4mLQd5bNKP3QoENrBp" />
-            <Link Id="HrFCCANE4ZiPTk6tdcecZC" Ids="I8RYgicxqXXNWNzkrUheJS,G7dBQRgmi8OMJD8SS4jBZp" />
             <Link Id="Fx2K6mHunxPOREUXDHQL3p" Ids="V4Ltl0mDdFOLJAa7MACAvQ,JCjyQal9UgINcEu2K6PSe3" />
             <Link Id="IXh0cWupMypMouHHxU0i37" Ids="Sndf7ayHX93NjNauck1wAD,COmRdNNNRnPL1bIOwKk2Rv" />
             <Link Id="AbgfH0jYrrGQc86VrEYr4M" Ids="Q6YDyRq5ygNPssTpPlnXok,CvKlbLdGW3eNngI4Zq45cD" />
@@ -2956,14 +2922,14 @@
     </Patch>
   </Patch>
   <NugetDependency Id="UUSToxE4x4NNqojjVHEgWm" Location="VL.Kairos.Runtime" IsForward="true" IsFriend="true" Version="2.1.0" />
-  <NugetDependency Id="RONaeGCuUrlMDhXvQVMY8C" Location="VL.CoreLib" Version="2025.7.0-0332-gad0670a654" />
-  <NugetDependency Id="LIDp3KxtUFdOq8Qps9I5Kn" Location="VL.Skia" Version="2025.7.0-0332-gad0670a654" />
-  <NugetDependency Id="UGVGIYVMD28M2Xt2zgW3yP" Location="VL.ImGui" Version="2025.7.0-0332-gad0670a654" />
-  <NugetDependency Id="C4iz8GfaxTHOPzbTdIGhPj" Location="VL.ImGui.Skia" Version="2025.7.0-0332-gad0670a654" />
+  <NugetDependency Id="RONaeGCuUrlMDhXvQVMY8C" Location="VL.CoreLib" Version="2025.7.0-0357-gd997588cb6" />
+  <NugetDependency Id="LIDp3KxtUFdOq8Qps9I5Kn" Location="VL.Skia" Version="2025.7.0-0357-gd997588cb6" />
+  <NugetDependency Id="UGVGIYVMD28M2Xt2zgW3yP" Location="VL.ImGui" Version="2025.7.0-0357-gd997588cb6" />
+  <NugetDependency Id="C4iz8GfaxTHOPzbTdIGhPj" Location="VL.ImGui.Skia" Version="2025.7.0-0357-gd997588cb6" />
   <NugetDependency Id="HchzITl1qL0Pl5J9Bq2Ign" Location="VL.Touchy" IsFriend="true" Version="1.1.0" />
-  <NugetDependency Id="NgL0IY7UFyFOpBoFCwzPM0" Location="VL.CoreLib.Windows" Version="2025.7.0-0332-gad0670a654" />
-  <NugetDependency Id="TJl8wZHN8i0QC59vyR9UH1" Location="VL.HDE" Version="2025.7.0-0332-gad0670a654" />
-  <NugetDependency Id="JdMGwJLU3i9MSjf5PAMf7b" Location="VL.Core" Version="2025.7.0-0332-gad0670a654" />
+  <NugetDependency Id="NgL0IY7UFyFOpBoFCwzPM0" Location="VL.CoreLib.Windows" Version="2025.7.0-0357-gd997588cb6" />
+  <NugetDependency Id="TJl8wZHN8i0QC59vyR9UH1" Location="VL.HDE" Version="2025.7.0-0357-gd997588cb6" />
+  <NugetDependency Id="JdMGwJLU3i9MSjf5PAMf7b" Location="VL.Core" Version="2025.7.0-0357-gd997588cb6" />
   <DocumentDependency Id="H6WJLfoYP9fLUw5zjlmCyh" Location="./vl/VL.KairosUI.Common.vl" IsForward="true" IsFriend="true" />
   <DocumentDependency Id="KgXV9vPbNx2PPdz6fGGqNF" Location="./vl/VL.Kairos.LayerX.UI.vl" IsForward="true" />
   <DocumentDependency Id="GRQXh5850kiPw2IGcJTRuP" Location="./vl/VL.Kairos.AlchemX.UI.vl" IsForward="true" />
