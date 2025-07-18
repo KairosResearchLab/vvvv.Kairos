@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Q5gxGPO5irXPMzGPkC28oK" LanguageVersion="2025.7.0-0411-g5864c70f83" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="Q5gxGPO5irXPMzGPkC28oK" LanguageVersion="2025.7.0-0277-g17318dcda9" Version="0.128">
   <Patch Id="LXv0ddmdjXNQZnqEXXDb3W">
     <Canvas Id="KCGQRwxbluWObmtEmvdQAk" DefaultCategory="Kairos.LayerX" CanvasType="FullCategory">
       <Canvas Id="PftHvP35pKrMWHSa0o9qSO" Name="Background" Position="97,129">
@@ -21196,7 +21196,7 @@
               <Choice Kind="InterfaceTypeFlag" Name="ILayerModel" />
             </TypeReference>
             <TypeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.LayerX.Runtime.vl">
-              <Choice Kind="InterfaceTypeFlag" Name="ISamplingLayer" />
+              <Choice Kind="InterfaceTypeFlag" Name="ISamplingLayerModel" />
             </TypeReference>
           </p:Interfaces>
           <Patch Id="BtxCg2nPGQQMea4r6NViAB">
@@ -21313,26 +21313,6 @@
               <ControlPoint Id="K7rbahCeCyaPrO6TZHZAUK" Bounds="2458,230" />
             </Canvas>
             <Patch Id="Bnjp1vX3kp1MpfdE3aGY22" Name="Create" ParticipatingElements="JFo2CbLegtCPqv4QbxkfH0,U2USE47xriwM3VOdq4nFDk" />
-            <ProcessDefinition Id="CITNkmbMEhpLnnflMwvRa6" HasStateOut="true">
-              <Fragment Id="I30JajMkVXbP9lMfcizsYC" Patch="Bnjp1vX3kp1MpfdE3aGY22" Enabled="true" />
-              <Fragment Id="HI2nZ3nvOygMBUnauq0tE5" Patch="KMTSL4rj5AJPXoh7HJhCo5" Enabled="true" />
-              <Fragment Id="GKx683ukDinPF50ElXWwX7" Patch="AG76xjzawqgO4akQJMSraW" />
-              <Fragment Id="En9tnOtK8NxQIA1ysAtcf9" Patch="VDbrg26eV3xLAWOlO9RbKU" />
-              <Fragment Id="IO6lPNgEtprLwe4MBjUiZj" Patch="HjLozWcWRxYM35IWQYffyE" />
-              <Fragment Id="H6aJa50vWiGLJ0SlNbFl2N" Patch="K89xNrQbMvyOJM8fQxFyCz" />
-              <Fragment Id="GI2j8Th5UvqPiNWKFYOOYD" Patch="RWk0W2iIJrgNILiElhCk9q" />
-              <Fragment Id="GhTORXqd420M5Za037aa8j" Patch="NuZtG0WdySzM1AVLS4PtZ8" />
-              <Fragment Id="SdodevWbZRbOSKbJYNyHGq" Patch="Gsfv7yXH7p4OvIW1upCBmI" />
-              <Fragment Id="KFE1EBTKsaFNTk3n1RepL6" Patch="KpHngajarpHOTO7BzlM5a0" />
-              <Fragment Id="Pt0XcpQAnmdPLRCLCvk1f6" Patch="TgGmMTeRsTNLuXId0znJRC" />
-              <Fragment Id="Bg30XNtvEkFOfFCxNYVtPg" Patch="JETxA1AVClMOl4c7ryItmG" />
-              <Fragment Id="M2MZu0cKe5MQbSIQMZRPN7" Patch="Gj8133mJAHZPKQKDz5QL7s" />
-              <Fragment Id="SUc7gqeFUQnOtOMD3uvisc" Patch="UOSYvI5cKCsOU3Xizixr3E" />
-              <Fragment Id="PyLPX0IFWokLUbs6yImDXJ" Patch="Sm9PCxiFbENPy9eM956f6b" />
-              <Fragment Id="Vu5W3TbCSEAQFseS3Kk382" Patch="O6SxRc5IMa4MyoYHUaEvrh" />
-              <Fragment Id="SWQMNSyTamdPu3UA6obbUk" Patch="UzuxcSZDyLWLlU4krOnLOC" />
-              <Fragment Id="MvKTKRewQPgONkdodc4nfJ" Patch="CH6LKUoWjzLMnn6wnYMCI8" />
-            </ProcessDefinition>
             <Patch Id="KMTSL4rj5AJPXoh7HJhCo5" Name="Update" />
             <Patch Id="AG76xjzawqgO4akQJMSraW" Name="GetRequestedSources">
               <Pin Id="HYmbvkCEI7lM04G5SbHUnN" Name="Requested Sources" Kind="OutputPin" />
@@ -21495,6 +21475,26 @@
             <Link Id="FrW3zJovAt3QAgyKpq9ZiV" Ids="N0zZ86Miw8WPImXQC1JJsQ,THDfOKvgldEQX6KwwqZAfM" IsHidden="true" />
             <Link Id="BE4RbQXmiRaNWa7q5jdG2P" Ids="KUIqkvxozrbMccId8oD1hq,K7rbahCeCyaPrO6TZHZAUK" IsHidden="true" />
             <Link Id="VMNKMDuCHTkOrMpAWd5TgD" Ids="K7rbahCeCyaPrO6TZHZAUK,Ifg3UyKHNBuNjbUVgHAl9c" />
+            <ProcessDefinition Id="CITNkmbMEhpLnnflMwvRa6" HasStateOut="true">
+              <Fragment Id="I30JajMkVXbP9lMfcizsYC" Patch="Bnjp1vX3kp1MpfdE3aGY22" Enabled="true" />
+              <Fragment Id="En9tnOtK8NxQIA1ysAtcf9" Patch="VDbrg26eV3xLAWOlO9RbKU" Enabled="true" />
+              <Fragment Id="HI2nZ3nvOygMBUnauq0tE5" Patch="KMTSL4rj5AJPXoh7HJhCo5" Enabled="true" />
+              <Fragment Id="GKx683ukDinPF50ElXWwX7" Patch="AG76xjzawqgO4akQJMSraW" />
+              <Fragment Id="IO6lPNgEtprLwe4MBjUiZj" Patch="HjLozWcWRxYM35IWQYffyE" />
+              <Fragment Id="H6aJa50vWiGLJ0SlNbFl2N" Patch="K89xNrQbMvyOJM8fQxFyCz" />
+              <Fragment Id="GI2j8Th5UvqPiNWKFYOOYD" Patch="RWk0W2iIJrgNILiElhCk9q" />
+              <Fragment Id="GhTORXqd420M5Za037aa8j" Patch="NuZtG0WdySzM1AVLS4PtZ8" />
+              <Fragment Id="SdodevWbZRbOSKbJYNyHGq" Patch="Gsfv7yXH7p4OvIW1upCBmI" />
+              <Fragment Id="KFE1EBTKsaFNTk3n1RepL6" Patch="KpHngajarpHOTO7BzlM5a0" />
+              <Fragment Id="Pt0XcpQAnmdPLRCLCvk1f6" Patch="TgGmMTeRsTNLuXId0znJRC" />
+              <Fragment Id="Bg30XNtvEkFOfFCxNYVtPg" Patch="JETxA1AVClMOl4c7ryItmG" />
+              <Fragment Id="M2MZu0cKe5MQbSIQMZRPN7" Patch="Gj8133mJAHZPKQKDz5QL7s" />
+              <Fragment Id="SUc7gqeFUQnOtOMD3uvisc" Patch="UOSYvI5cKCsOU3Xizixr3E" />
+              <Fragment Id="PyLPX0IFWokLUbs6yImDXJ" Patch="Sm9PCxiFbENPy9eM956f6b" />
+              <Fragment Id="Vu5W3TbCSEAQFseS3Kk382" Patch="O6SxRc5IMa4MyoYHUaEvrh" />
+              <Fragment Id="SWQMNSyTamdPu3UA6obbUk" Patch="UzuxcSZDyLWLlU4krOnLOC" />
+              <Fragment Id="MvKTKRewQPgONkdodc4nfJ" Patch="CH6LKUoWjzLMnn6wnYMCI8" />
+            </ProcessDefinition>
           </Patch>
         </Node>
         <!--
@@ -22656,7 +22656,7 @@
               <Choice Kind="InterfaceTypeFlag" Name="ILayerModel" />
             </TypeReference>
             <TypeReference LastCategoryFullName="LayerX.Layer" LastDependency="VL.LayerX.Runtime.vl">
-              <Choice Kind="InterfaceTypeFlag" Name="ISamplingLayer" />
+              <Choice Kind="InterfaceTypeFlag" Name="ISamplingLayerModel" />
             </TypeReference>
           </p:Interfaces>
           <Patch Id="KIuu9f7wc2sNf5lk3IJdzX">
@@ -23452,19 +23452,19 @@
         </Node>
         <!--
 
-    ************************ ISamplingLayer ************************
+    ************************ ISamplingLayerModel ************************
 
 -->
-        <Node Name="ISamplingLayer" Bounds="131,389" Id="EQzIF8L4l92PstQgqPR5sY">
+        <Node Name="ISamplingLayerModel" Bounds="131,389" Id="EQzIF8L4l92PstQgqPR5sY">
           <p:NodeReference>
             <Choice Kind="InterfaceDefinition" />
           </p:NodeReference>
           <Patch Id="VZnekGaxH49N2wPtgg9k9Z">
-            <Canvas Id="RFn9bEwbAzNNiRP30kGJal" BordersChecked="false" CanvasType="Group" />
+            <Canvas Id="RFn9bEwbAzNNiRP30kGJal" CanvasType="Group" />
             <ProcessDefinition Id="D2bounajparLlsNlEY354l" IsHidden="true" />
           </Patch>
         </Node>
-        <Pad Id="FsqFtGc22N9MV02vM26U7n" Bounds="266,374,417,23" ShowValueBox="true" isIOBox="true" Value="Marker Interface to recognise those layers that sample other layers">
+        <Pad Id="FsqFtGc22N9MV02vM26U7n" Bounds="305,373,417,23" ShowValueBox="true" isIOBox="true" Value="Marker Interface to recognise those layers that sample other layers">
           <p:TypeAnnotation>
             <Choice Kind="TypeFlag" Name="String" />
           </p:TypeAnnotation>
@@ -27464,12 +27464,12 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="MLOtAeqy8fMMhV9zqpnaJc" Name="Model" Kind="OutputPin" />
-            <Pin Id="DGcRx9ordfRMBB5EJDkHju" Name="View Zoom" Kind="InputPin" DefaultValue="1">
+            <Pin Id="DGcRx9ordfRMBB5EJDkHju" Name="View Zoom" Kind="InputPin" DefaultValue="1" Visibility="Optional">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="OfeaUIvff5COhxfGXs4fac" Name="View Offset" Kind="InputPin">
+            <Pin Id="OfeaUIvff5COhxfGXs4fac" Name="View Offset" Kind="InputPin" Visibility="Optional">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
@@ -31564,12 +31564,12 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="MyABzVsCkmyO6L7QbDWitL" Name="Model" Kind="OutputPin" />
-            <Pin Id="NaE3neHYgKzMVWN1URS9Tx" Name="View Zoom" Kind="InputPin" DefaultValue="1">
+            <Pin Id="NaE3neHYgKzMVWN1URS9Tx" Name="View Zoom" Kind="InputPin" DefaultValue="1" Visibility="Optional">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="I8YCCWe92oAOZKvjVzVQH1" Name="View Offset" Kind="InputPin">
+            <Pin Id="I8YCCWe92oAOZKvjVzVQH1" Name="View Offset" Kind="InputPin" Visibility="Optional">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
@@ -40947,7 +40947,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="QnDHxC4i33tP8umQ1pzflv" Location="VL.CoreLib" Version="2025.7.0-0411-g5864c70f83" />
+  <NugetDependency Id="QnDHxC4i33tP8umQ1pzflv" Location="VL.CoreLib" Version="2025.7.0-0277-g17318dcda9" />
   <DocumentDependency Id="H3Iu0axjfxyMngsCP9F3W3" Location="./VL.FancyRect.vl" IsForward="true" />
   <DocumentDependency Id="VcJd1NRnzzwN1vg59ywAwa" Location="./VL.Kairos.Runtime.AlchemX.vl" IsForward="true" IsFriend="true" />
   <DocumentDependency Id="RvC6Z2N6e7HOuK0rpD8wH1" Location="./VL.Kairos.Runtime.Common.vl" IsFriend="true" />

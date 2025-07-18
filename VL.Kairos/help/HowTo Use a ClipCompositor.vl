@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="SEMNwpJIxcTLQ4HuJWO6N5" LanguageVersion="2025.7.0-0411-g5864c70f83" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="SEMNwpJIxcTLQ4HuJWO6N5" LanguageVersion="2025.7.0-0277-g17318dcda9" Version="0.128">
   <Patch Id="HGUDXWO9Z7cNKkjkxtdjvd">
     <Canvas Id="C7TP0nEsgmMPljBzBOMo3C" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -365,7 +365,7 @@
             <Pin Id="GCZkZ9ZXOW8Mdq3CsQXA3p" Name="Idle" Kind="OutputPin" />
           </Node>
           <Pad Id="SLpbx8i66T6MwZI10SS71e" SlotId="AHF277AUWl3LA8DStBlBUY" Bounds="290,1237" />
-          <Pad Id="J4XKi4LQfEdLlxWSuwoHUK" SlotId="AHF277AUWl3LA8DStBlBUY" Bounds="220,1086" />
+          <Pad Id="J4XKi4LQfEdLlxWSuwoHUK" SlotId="AHF277AUWl3LA8DStBlBUY" Bounds="316,1081" />
           <Node Bounds="2200,69,120,19" Id="D5qJqLO4pgpMa9hyGVmHyw">
             <p:NodeReference LastCategoryFullName="AlchemX.Blending.Model" LastDependency="VL.LayerX.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -497,7 +497,7 @@
               <Choice Kind="ImmutableTypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="QZ9PSKEC6zWMJJ6zHlJU7W" Comment="Position" Bounds="1331,556,35,15" ShowValueBox="true" isIOBox="true">
+          <Pad Id="QZ9PSKEC6zWMJJ6zHlJU7W" Comment="Position" Bounds="1331,556,35,15" ShowValueBox="true" isIOBox="true" Value="0.05761931265343752">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float64" />
             </p:TypeAnnotation>
@@ -826,7 +826,7 @@
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="1850,549,123,19" Id="QH3UNufbdqRO7UE69wPVJQ">
@@ -1061,7 +1061,7 @@
               </CategoryReference>
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="ReymzJYfojLNYxCcZxzsvm" Name="Bounds" Kind="InputPin" DefaultValue="467, 369, 986, 294" IsHidden="true" />
+            <Pin Id="ReymzJYfojLNYxCcZxzsvm" Name="Bounds" Kind="InputPin" DefaultValue="881, 688, 986, 294" IsHidden="true" />
             <Pin Id="LEFfSy3EMMkOhcvBaecmi7" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="IVMkPRoKvTfL7fnaNFcOLd" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="FLacknYCt53ODWOrnwWvw3" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -1087,14 +1087,14 @@
               <Choice Kind="ProcessAppFlag" Name="ClipComposition" />
             </p:NodeReference>
             <Pin Id="VmQ6ziRJhKWNRQvv62PmMP" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="S3160bjx0uQPnUXjDC3FyK" Name="Write on model change" Kind="InputPin" IsHidden="true" />
+            <Pin Id="S3160bjx0uQPnUXjDC3FyK" Name="Write on model change" Kind="InputPin" DefaultValue="False" />
             <Pin Id="CeGymzir8zVOHTMWMcAaIF" Name="Model" Kind="InputPin">
               <p:DefaultValue r:IsNull="true" />
             </Pin>
             <Pin Id="T7ozrJw1VvUN3XUNzLZHik" Name="Sources Input Pin Group Enabled" Kind="InputPin" IsHidden="true" />
             <Pin Id="OifrElyxxIYO0gMHHqQJV2" Name="Channel Hub" Kind="InputPin" IsHidden="true" />
-            <Pin Id="AZxgZeTTf4lL11ri7dxtCU" Name="MySimplexLayer" Kind="InputPin" PinGroupName="Input">
-              <p:TypeAnnotation>
+            <Pin Id="AZxgZeTTf4lL11ri7dxtCU" Name="MySimplexLayer" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Kairos.LayerX.Layer" LastDependency="VL.Kairos.Runtime.vl">
                 <Choice Kind="TypeFlag" Name="ILayer" />
                 <FullNameCategoryReference ID="Kairos.LayerX.Layer" />
                 <p:TypeArguments>
@@ -1109,7 +1109,7 @@
                 </p:TypeArguments>
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="JKTUgUS0tz9M30b7IYylnx" Name="Random" Kind="InputPin" PinGroupName="Input">
+            <Pin Id="JKTUgUS0tz9M30b7IYylnx" Name="Random" Kind="InputPin">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
                 <CategoryReference Kind="Category" Name="Primitive" NeedsToBeDirectParent="true" />
@@ -1126,6 +1126,20 @@
             <Pin Id="UgcomTacqsWOBAyCIbf57e" Name="Layer Model Stream" Kind="OutputPin" />
             <Pin Id="KfnllsQoQ56PGeaCZLl23P" Name="Alpha Function" Kind="InputPin" IsHidden="true" />
             <Pin Id="GA6QePmyEDGOCBoEdqW04L" Name="Context" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Node Bounds="218,1110,101,19" Id="KsM7ncDrCGtMVwkYFtLrNw">
+            <p:NodeReference LastCategoryFullName="Kairos.LayerX.ClipCompositor.UI" LastDependency="VL.Kairos.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ClipCompositionUI" />
+            </p:NodeReference>
+            <Pin Id="CuCk0CLzTloLYvRpPZxdky" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="J3VEG90uxgbN0wIN5VbpRF" Name="Save To Pin Enabled" Kind="InputPin" />
+            <Pin Id="UfJFqs98XWtLutQx2FvPa6" Name="Model" Kind="InputPin" />
+            <Pin Id="QuQFBdLx2p3MoN5Llsnx9d" Name="ClipComposition" Kind="InputPin" />
+            <Pin Id="CZazw5ceyZ8PC6V4PvXED4" Name="Interaction Enabled" Kind="InputPin" />
+            <Pin Id="FAeqjSuw5KRPUcdnnQhjvZ" Name="Client Bounds" Kind="InputPin" />
+            <Pin Id="AnAJciSQIyrMlaN0eZNaZq" Name="State Output" Kind="StateOutputPin" />
+            <Pin Id="OeIuk7gHxEcLbGxGjERz2z" Name="Output" Kind="OutputPin" />
           </Node>
         </Canvas>
         <Patch Id="FSVHgsUJMVHN69WuqjNh39" Name="Create" />
@@ -1231,7 +1245,6 @@
         <Link Id="LPHz51skzLNPv7DvioBaFD" Ids="Kgxdgzf5z2fMoJbZnyysFB,AQSDjsRUTskNmt7An76D4Q" />
         <Link Id="RkyzYwyxckEMxfOtTu6Q3U" Ids="UQ3yIZdsR0hQON2hI3oJjW,VdnbVRdUipCPW9XMUjzNrE" />
         <Link Id="SsknArMmrUNOuy0j4Eo0Ua" Ids="D2o6kxs84GzLvKeqv2GWNe,VHZdaaTwTW0MpTkghx2fee" />
-        <Link Id="L6ud4v4WIwUP4um4t3PSrm" Ids="HNmbcxeNlQDPVT4erdlVSu,QZ9PSKEC6zWMJJ6zHlJU7W" />
         <Link Id="Pl4ichkgd8tO71rwBDze2Q" Ids="IV1Proj7xxIMKFmmcWwpCt,UsVgB7G01gPLNYD2ibB4nE" />
         <Link Id="QpP5L27Gf07MbS3fzD0yXN" Ids="ODBGQsxqMUHQSoziANnTsn,PPZjr3HKlAwPbD6iFmikjz" />
         <Link Id="JPLdDGLnOpqQRUs738MPln" Ids="NQ9tcwRbWZwN0LGaXyeH3P,Ej6K0AEfyZvLVEq3Efv0qj" />
@@ -1262,15 +1275,18 @@
         <Link Id="K440sIMNjWXLFvo8nZhK2B" Ids="T9wcDeIeiArPPVfokGQ7ig,JKTUgUS0tz9M30b7IYylnx" />
         <Link Id="LrW3p6YHrkZLwn0uMJjFVZ" Ids="FWgMQG66hTYQAdd5tm5dtp,U81pUTOZEMTMxUk2kSTrFJ" />
         <Link Id="KPJtVXfzGQbPTu7uCaW4Ck" Ids="U81pUTOZEMTMxUk2kSTrFJ,C6YA6ZgPAejOpPnk2QL33w" />
+        <Link Id="LyDVCvAcjvWOCZsYlniwNO" Ids="SzOnAuaiVXLLRnErJpwLS6,QuQFBdLx2p3MoN5Llsnx9d" />
+        <Link Id="KhoTACO8LL0OSM6rKGyOc4" Ids="OeIuk7gHxEcLbGxGjERz2z,Cz9Ak8iU8qmPGAMXZIDyKa" />
+        <Link Id="RyLRrWI4bbLQbzt20I2iOZ" Ids="J4XKi4LQfEdLlxWSuwoHUK,FAeqjSuw5KRPUcdnnQhjvZ" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="OVD4drgo9bxOoEs96ioH1k" Location="VL.CoreLib" Version="2025.7.0-0411-g5864c70f83" />
+  <NugetDependency Id="OVD4drgo9bxOoEs96ioH1k" Location="VL.CoreLib" Version="2025.7.0-0277-g17318dcda9" />
   <NugetDependency Id="HAazudD4VAhL5OzlZIorgI" Location="VL.Kairos" IsFriend="true" Version="0.0.0" />
   <NugetDependency Id="S99Yxuqfu7jPIWI5GqWTrH" Location="VL.Kairos.Runtime" IsFriend="true" Version="0.0.0" />
-  <NugetDependency Id="IYc0UkCF5H6Pnf2ZIurodS" Location="VL.Skia" Version="2025.7.0-0411-g5864c70f83" />
-  <NugetDependency Id="Izi3fvogrkJL8dA4nhH2Pu" Location="VL.ImGui" Version="2025.7.0-0411-g5864c70f83" />
-  <NugetDependency Id="FH7sCt4QoLaMe4oOoMDDnz" Location="VL.ImGui.Skia" Version="2025.7.0-0411-g5864c70f83" />
+  <NugetDependency Id="IYc0UkCF5H6Pnf2ZIurodS" Location="VL.Skia" Version="2025.7.0-0277-g17318dcda9" />
+  <NugetDependency Id="Izi3fvogrkJL8dA4nhH2Pu" Location="VL.ImGui" Version="2025.7.0-0277-g17318dcda9" />
+  <NugetDependency Id="FH7sCt4QoLaMe4oOoMDDnz" Location="VL.ImGui.Skia" Version="2025.7.0-0277-g17318dcda9" />
   <NugetDependency Id="ClViUCOOXC6OhMlh94pJCa" Location="VL.Touchy" Version="0.0.0" />
-  <NugetDependency Id="HgRAHdo6i1YLj2ukY9QTjo" Location="VL.HDE" Version="2025.7.0-0411-g5864c70f83" />
+  <NugetDependency Id="HgRAHdo6i1YLj2ukY9QTjo" Location="VL.HDE" Version="2025.7.0-0277-g17318dcda9" />
 </Document>

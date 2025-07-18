@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="SR5mMryJ0IPPBQlmxmhVG5" LanguageVersion="2025.7.0-0411-g5864c70f83" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="SR5mMryJ0IPPBQlmxmhVG5" LanguageVersion="2025.7.0-0277-g17318dcda9" Version="0.128">
   <Patch Id="OdwjHxvmpTwQVNFJ9pLKQP">
     <Canvas Id="TFkrzzMqabMLaJgnlwzp1b" DefaultCategory="Kairos" CanvasType="FullCategory">
       <Pad Id="OZ8lzo3XZxPOvj3AxhVK4e" Bounds="76,104,218,52" ShowValueBox="true" isIOBox="true" Value="Kairos Core">
@@ -6155,7 +6155,7 @@
                 <Overlay Id="Iyr9ZOOBC7XNm0ZHagUKc7" Name="Syncronize to Model" Bounds="89,170,425,389">
                   <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
                 </Overlay>
-                <Node Bounds="228,379,206,149" Id="VcepmiSDoUPMx1u9jYK6u2">
+                <Node Bounds="228,379,191,140" Id="VcepmiSDoUPMx1u9jYK6u2">
                   <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="ForEach (Channel)" />
@@ -6179,7 +6179,7 @@
                       <Pin Id="CYMZmFuoSIWMoZk9h1d4k7" Name="Output Pin Dictionary Builder" Kind="InputPin" />
                       <Pin Id="HkEsV0YgpeeNFfkMu1dZpn" Name="Model" Kind="InputPin" />
                     </Node>
-                    <Node Bounds="312,489,110,19" Id="Va86cpEibHfOdCjhUFb0cV">
+                    <Node Bounds="295,480,110,19" Id="Va86cpEibHfOdCjhUFb0cV">
                       <p:NodeReference LastCategoryFullName="Kairos.Sampling" LastDependency="VL.Kairos.Runtime.Core.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="SyncOutputPinGroup" />
@@ -7309,10 +7309,10 @@
           </Overlay>
           <!--
 
-    ************************ CompositionSampler1D ************************
+    ************************ CompositionSampler ************************
 
 -->
-          <Node Name="CompositionSampler1D" Aspects="Advanced" Bounds="508,774" Id="NPzRAmQ3hPbLLDjy9JDdfP">
+          <Node Name="CompositionSampler" Aspects="Advanced" Bounds="508,774" Id="NPzRAmQ3hPbLLDjy9JDdfP">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="ClassDefinition" Name="Class" />
             </p:NodeReference>
@@ -7380,7 +7380,7 @@
                     <Link Id="Hh1gJwdjJI2N3xym76s2aI" Ids="K2Ofq7zUZPXMJDO6zh3VRF,InZxOF5a8NYOu7pYELBKvu" />
                     <Pin Id="ICeHnrl9B1pOjbJhS6gbyg" Name="Output" Kind="OutputPin">
                       <p:TypeAnnotation LastCategoryFullName="Kairos.Sampling" LastDependency="VL.Kairos.Runtime.Core.vl">
-                        <Choice Kind="TypeFlag" Name="CompositionSampler1D" />
+                        <Choice Kind="TypeFlag" Name="CompositionSampler" />
                       </p:TypeAnnotation>
                     </Pin>
                   </Patch>
@@ -7415,7 +7415,7 @@
                 </Node>
                 <ControlPoint Id="PI8sImdCjXiLoEng5MIrrh" Bounds="1341,485" />
                 <ControlPoint Id="KjmhCtgQm44MTY7xEDYhMs" Bounds="1388,514" />
-                <ControlPoint Id="GsKUxFFmEnLQadVJggSx8Z" Bounds="1189,701" />
+                <ControlPoint Id="GsKUxFFmEnLQadVJggSx8Z" Bounds="1190,691" />
                 <Node Bounds="1120,784,392,559" Id="RKVaWsIS77cNq8Qvx5DyaN">
                   <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -7679,7 +7679,7 @@
                   <Pin Id="JnQlYioBf6EK9uK11O2D70" Name="Not Assigned" Kind="OutputPin" />
                 </Node>
                 <ControlPoint Id="CECkF2hTb5YM218g4zZGTd" Bounds="1534,1157" />
-                <Node Bounds="601,585,275,19" Id="GaehAERZYn1LOhj3brCuRJ">
+                <Node Bounds="508,560,275,19" Id="GaehAERZYn1LOhj3brCuRJ">
                   <p:NodeReference LastCategoryFullName="Kairos.Sampling.CompositionSampler" LastDependency="VL.Kairos.Runtime.Core.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="SyncCompositionSamplerModelToSourceModel" />
@@ -7942,7 +7942,6 @@
               <Link Id="LGMhWB6Wub1LSLDUUwA4I4" Ids="TpInJnIarAPNI4gwzMJ5gv,AZMFbyZAw5tMfJVWLlw8bi" />
               <Link Id="FlwRB6VTQcIPik8EaCteOf" Ids="SdPevJvwJAaQddHyHBEf8O,CECkF2hTb5YM218g4zZGTd" IsHidden="true" />
               <Link Id="NDW4GBsu90SOe2hP3mD4ne" Ids="QJkCIYAj0fHPXwHHfSzZqs,ODQwYRYqcPjLFE7Zxt6szV" />
-              <Link Id="HC7FUMevM4jQctQs1HQZ4J" Ids="QHkg9aHxfkyNH79uwQAHIN,HHNDyeopyIQOX45yioehJT" />
               <Link Id="PLOmXzwlKYZQZ0hePAttW6" Ids="UH0kxqRbfKsN5GoBx9HrTQ,RqXdFH2NvLQPXRFmpZHsfx" />
               <Link Id="Ol5cSGDqIrlPZxY8Pk5c2p" Ids="Aic979oa0ZgPLNEZFyZ7OR,LPTb0ypgTRKODu4caEPEkj" />
               <Link Id="BY5n2Dq73hCNDB5mQZK0vc" Ids="NZEo519g2tXQXkmUwFpHI8,Mv2mIOrFfYuPXGXPfLnd1E" />
@@ -7977,6 +7976,7 @@
                 <Fragment Id="FLl1bHwEwRxLoNXK2F8jVE" Patch="LCZ7pMp3hCoOMyL6Zw5Xlq" />
                 <Fragment Id="PFim3J7nWDiLw6Miif0vvp" Patch="N327pLkZXU7Li20qfOs8Km" />
               </ProcessDefinition>
+              <Link Id="KDF8rHaeGjlNSdRlFQCeqb" Ids="QHkg9aHxfkyNH79uwQAHIN,HHNDyeopyIQOX45yioehJT" />
             </Patch>
           </Node>
         </Canvas>
@@ -16606,10 +16606,10 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="I9r7OOr28ZKQU0kOe9kITs" Location="VL.CoreLib" Version="2025.7.0-0411-g5864c70f83" />
+  <NugetDependency Id="I9r7OOr28ZKQU0kOe9kITs" Location="VL.CoreLib" Version="2025.7.0-0277-g17318dcda9" />
   <DocumentDependency Id="TADROdiqlnXNaObdVLQiV7" Location="./TypeForwards.vl" IsFriend="true" />
-  <NugetDependency Id="NKKoDC2vdSNMzZUwNeHncX" Location="VL.IO.Midi" Version="1.1.7" />
-  <NugetDependency Id="NzWyo4FY2DmNRd8dx9bxjm" Location="VL.Core" Version="2025.7.0-0411-g5864c70f83" />
+  <NugetDependency Id="NKKoDC2vdSNMzZUwNeHncX" Location="VL.IO.Midi" Version="1.1.6" />
+  <NugetDependency Id="NzWyo4FY2DmNRd8dx9bxjm" Location="VL.Core" Version="2025.7.0-0277-g17318dcda9" />
   <DocumentDependency Id="I4daLuQUXS3LuPN9hJK4IS" Location="./VL.Kairos.Runtime.AlchemX.vl" IsForward="true" IsFriend="true" />
   <DocumentDependency Id="Lg6XLhqk2DPOjhBrHjwUcl" Location="./VL.Kairos.Runtime.LayerX.vl" IsForward="true" IsFriend="true" />
   <PlatformDependency Id="ESDlZLAqGdTQTo1Er0cYwc" Location="../src/VL.Kairos.Runtime.CSharp/obj/Release/net6.0/VL.Kairos.Runtime.CSharp.dll" IsForward="true" />
