@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Ot9ZRqENmuyQZ7a1Wzd7Hx" LanguageVersion="2025.7.0-0277-g17318dcda9" Version="0.128">
-  <NugetDependency Id="B9SmXr23urgOrw4Bu21cwW" Location="VL.CoreLib" Version="2025.7.0-0277-g17318dcda9" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Ot9ZRqENmuyQZ7a1Wzd7Hx" LanguageVersion="2025.7.0" Version="0.128">
+  <NugetDependency Id="B9SmXr23urgOrw4Bu21cwW" Location="VL.CoreLib" Version="2025.7.0" />
   <Patch Id="RPFNdBojq8VOcYe34eyX6g">
     <Canvas Id="Jx64PswPNNjMfN4f8xRh64" DefaultCategory="Kairos.LayerX.ClipCompositor.UI" CanvasType="FullCategory">
       <Canvas Id="RzS9j8gVuayOO1aRtnAC75" Name="ClipUI.Internal" Position="177,150">
@@ -124,6 +124,7 @@
               <Pin Id="RSi92wdUWkLPMKgWQabtYy" Name="Context" Kind="InputPin" />
               <Pin Id="Lk7rirGyLsKOPqvrrCrQgX" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="TD3F0wN4pdRLQUlYGOYYK6" Name="Result" Kind="OutputPin" />
+              <Pin Id="Izg2o7MX7HANZIjCB5buQs" Name="Arguments" Kind="InputPin" />
             </Node>
             <Node Bounds="238,2359,58,19" Id="F5ZqtWyzCqQMPcUA4CrEGM">
               <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
@@ -2102,6 +2103,7 @@
                   <Pin Id="He7VQgP74LsOnviEy08KEM" Name="Value" Kind="InputPin" />
                   <Pin Id="RuJqux53Yn8OFMSaR4gVGD" Name="Output" Kind="OutputPin" />
                   <Pin Id="T7Z4YKFkGFKN2edDGw0I3C" Name="Value" Kind="OutputPin" />
+                  <Pin Id="OyQssv9JuMHPIMQlrOuTRB" Name="Author" Kind="InputPin" IsHidden="true" />
                 </Node>
                 <ControlPoint Id="KLVQoGMF48IQAaw5QYxcdq" Bounds="1779,936" />
                 <Pad Id="QggkUm4hdQ9N3NDVKAuiKW" Bounds="2702,218,185,22" ShowValueBox="true" isIOBox="true" Value="Stack Index On Move Start">
@@ -10442,7 +10444,7 @@
               <Fragment Id="FIVMeYdB6AVPx6oxrNGr3s" Patch="RtDAlElotTvQKa4FuNmW1M" />
             </ProcessDefinition>
             <Patch Id="RtDAlElotTvQKa4FuNmW1M" Name="Configure">
-              <Pin Id="N3CYCIOKuGLOOnMepI5wKS" Name="Clip Layout" Kind="InputPin" />
+              <Pin Id="LpdjmY4YKmmPSL7gQhzn70" Name="Clip Layout" Kind="InputPin" />
               <Pin Id="Bi1q7vbxL6PLcig2eIbCBs" MergeId="324248" Name="Clip" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="LayerX.ClipCompositor" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="TypeFlag" Name="Clip" />
@@ -10453,11 +10455,11 @@
                   </p:TypeArguments>
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="ROSAtCNosAGL79OCApDM9Z" Name="ClipUIModel Stream" Kind="InputPin" />
-              <Pin Id="F1fZcHmsFvqLYE1r1OVJcF" Name="ClipModel Stream" Kind="InputPin" />
-              <Pin Id="HTwmQs2T56XPoSeXAvhKFG" Name="ClipCompositorUI" Kind="InputPin" />
-              <Pin Id="VxTdgXbxGN8MjtmKIj940l" Name="ClipCompositor" Kind="InputPin" />
-              <Pin Id="RydLCOnb4jVPDjtxLlbXmr" Name="UI Modules" Kind="InputPin" />
+              <Pin Id="QXt7mQ2AfWZMpnJPnkJmGf" Name="ClipUIModel Stream" Kind="InputPin" />
+              <Pin Id="RJvnSQL7KRjLngEnN9VPvw" Name="ClipModel Stream" Kind="InputPin" />
+              <Pin Id="Nq3yBVprTddO7MCA93WBKW" Name="ClipCompositorUI" Kind="InputPin" />
+              <Pin Id="LMZdNddziN6L8U65uehEXn" Name="ClipCompositor" Kind="InputPin" />
+              <Pin Id="BjOzGo5hzgvMI8nlnTrLLP" Name="UI Modules" Kind="InputPin" />
             </Patch>
             <Link Id="OEKeHgtPRH5MeAmrns02Zl" Ids="Hi33gwpnOA7P1WPDym0AUR,OBL4T2CezaCNv9BNYvBwQx" />
             <Link Id="CGZqYk1GVNvQW6Ll8hxLBq" Ids="UoJY1FlQJLJLHurp5b18CF,Ej85QtfUwFnP2MEf8feiJm" />
@@ -10511,7 +10513,7 @@
             </ProcessDefinition>
             <Link Id="EJXkqoTk4orNlIMkCpkZ2S" Ids="AIwDAFAvqNLLOPfy6CJzDU,VBNQZhwTx9uPZvWi2RXj3a" />
             <Patch Id="AqobOCvuvqcP3PwmCot5RR" Name="Configure">
-              <Pin Id="BgCnW0f6lU1QQdPv7comY0" Name="Clip Layout" Kind="InputPin" />
+              <Pin Id="GQoDKFgEqFxMuq1dYxoRFD" Name="Clip Layout" Kind="InputPin" />
               <Pin Id="Gg7m8s03NU1N5sJwI1uLUh" Name="Clip" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="LayerX.ClipCompositor" LastDependency="VL.Kairos.Runtime.vl">
                   <Choice Kind="TypeFlag" Name="Clip" />
@@ -10522,11 +10524,11 @@
                   </p:TypeArguments>
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="I3VkElerVphLx7tTbHs9pR" Name="ClipUIModel Stream" Kind="InputPin" />
-              <Pin Id="OQm9nCjJof2QR8MsZKRVtq" Name="ClipModel Stream" Kind="InputPin" />
-              <Pin Id="POlYY1l2OQ1PQ7alKvZFC2" Name="ClipCompositorUI" Kind="InputPin" />
-              <Pin Id="AqKQjSOFFMSMeVfhFKt8Ki" Name="ClipCompositor" Kind="InputPin" />
-              <Pin Id="C8YQhHbko0kOV9CEkZm5UR" Name="UI Modules" Kind="InputPin" />
+              <Pin Id="ItzfSNlfSV1OlLiyg3eCQ4" Name="ClipUIModel Stream" Kind="InputPin" />
+              <Pin Id="CvByuw9uXhHPylGkOEAwQb" Name="ClipModel Stream" Kind="InputPin" />
+              <Pin Id="E3aFelu5tEfLtFjtBoBHkO" Name="ClipCompositorUI" Kind="InputPin" />
+              <Pin Id="Lb1NPqduDLrPt5yxLNWNUg" Name="ClipCompositor" Kind="InputPin" />
+              <Pin Id="HkADKMUNCxNNnADsYdRaeT" Name="UI Modules" Kind="InputPin" />
             </Patch>
             <Link Id="KgZ8ySujgsQLPjE0ceRWEQ" Ids="EBkLfx1LgwVPODtDQmb8Eg,JWZOiAT4pfqLdmC0cEK7GB" />
             <Link Id="M3sG71xiHU3OJhCRR3hRsj" Ids="Gg7m8s03NU1N5sJwI1uLUh,EBkLfx1LgwVPODtDQmb8Eg" IsHidden="true" />
@@ -10894,6 +10896,7 @@
                   <Pin Id="ICNoleuOm0jOKfJ6CPNknt" Name="Runtime" Kind="InputPin" />
                   <Pin Id="SzOiSw7urw8Nf9Hs5HI6XU" Name="Model" Kind="InputPin" />
                   <Pin Id="PIztmhWWjhrQB36JuxCCGL" Name="Output" Kind="OutputPin" />
+                  <Pin Id="QAmUw9UOdbeOc1rfBfAQRg" Name="Update Model" Kind="InputPin" IsHidden="true" />
                 </Node>
               </Patch>
             </Node>
@@ -13206,6 +13209,7 @@
               <Pin Id="OVd2qBFvpvJMEa9v3dAGMD" Name="Value" Kind="InputPin" />
               <Pin Id="Hhv7GVPlW4wMqzXJoaC4PM" Name="Output" Kind="OutputPin" />
               <Pin Id="L4t0Ye9IUp4L51PyD7Uact" Name="Value" Kind="OutputPin" />
+              <Pin Id="TidJoJXmpQeLn4AEnGwx32" Name="Author" Kind="InputPin" IsHidden="true" />
             </Node>
             <Node Bounds="2192,1056,128,19" Id="LZ8VUK5R1VTOv4Nz3nHFlF">
               <p:NodeReference LastCategoryFullName="Touchy.Behavior" LastDependency="VL.Touchy.vl">
@@ -15080,6 +15084,7 @@
               <Pin Id="N2WBHMttgXMNrba2DrjjTw" Name="Value" Kind="InputPin" />
               <Pin Id="G6yLOb5IYMPOqGtyOmFRzt" Name="Output" Kind="OutputPin" />
               <Pin Id="SZFqZfiMojPP2RWbD7E2gq" Name="Value" Kind="OutputPin" />
+              <Pin Id="V5NbCa2yQi1NfppxFT6fY1" Name="Author" Kind="InputPin" IsHidden="true" />
             </Node>
             <ControlPoint Id="H3JApEGIi9eNfrlSaoIWEI" Bounds="320,54" />
             <ControlPoint Id="TzIamdNQTPnM2NcRCsLUCs" Bounds="320,383" />
@@ -15779,13 +15784,13 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Axxdj9yFNa1N9PXEjJL71f" Location="VL.Skia" Version="2025.7.0-0277-g17318dcda9" />
-  <NugetDependency Id="McHqbMQRrcaNpOA9LnYljB" Location="VL.ImGui" Version="2025.7.0-0277-g17318dcda9" />
+  <NugetDependency Id="Axxdj9yFNa1N9PXEjJL71f" Location="VL.Skia" Version="2025.7.0" />
+  <NugetDependency Id="McHqbMQRrcaNpOA9LnYljB" Location="VL.ImGui" Version="2025.7.0" />
   <NugetDependency Id="A7JOQkeuQEmNDDvd9l7G5A" Location="VL.Touchy" Version="0.0.0" />
-  <NugetDependency Id="PpydUzptoSBNrdcI4odllh" Location="VL.HDE" Version="2025.7.0-0277-g17318dcda9" />
-  <NugetDependency Id="KNbJJecmrMfN96DcpsQYXk" Location="VL.EditingFramework" Version="2025.7.0-0277-g17318dcda9" />
+  <NugetDependency Id="PpydUzptoSBNrdcI4odllh" Location="VL.HDE" Version="2025.7.0" />
+  <NugetDependency Id="KNbJJecmrMfN96DcpsQYXk" Location="VL.EditingFramework" Version="2025.7.0" />
   <NugetDependency Id="SIAm8D0q8sYQcO68hGczUB" Location="VL.Kairos.Runtime" IsFriend="true" Version="0.0.0" />
   <NugetDependency Id="KrlpR6PbqALPMJryrWV0OR" Location="VL.Kairos" Version="0.0.0" />
   <DocumentDependency Id="Hipkab3RY1FOiI0QlGaySB" Location="./VL.KairosUI.Common.vl" IsFriend="true" />
-  <NugetDependency Id="FuKNNPoD3lqNqJmPkE77EP" Location="VL.ImGui.Skia" Version="2025.7.0-0277-g17318dcda9" />
+  <NugetDependency Id="FuKNNPoD3lqNqJmPkE77EP" Location="VL.ImGui.Skia" Version="2025.7.0" />
 </Document>
