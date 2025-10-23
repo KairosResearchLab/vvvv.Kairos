@@ -1,5 +1,17 @@
 # Changelog
 
+### 2.5.0
+#### General
+- kairos works with vvvv gamma 7.0 stable
+
+#### Keyframe Editor
+- Keyframe Editor now opens with Ctrl+F7 shortcut
+- Fixed some UI issues in Bezier Interpolation
+- Implemented Keyframe model editors for better readibility in the vvvv gamma Inspector
+
+#### AlchemX
+- Bezier Interpolation Model now stores relative values (offsets) to the inputs (for the handles)
+
 ### 2.0.0
 #### General
 - Kairos integrated in vvvv as an extension 

@@ -8,7 +8,7 @@ A complete framework for data control and composition in [vvvv](http://visualpro
 
 ## Requirements
 
-Kairos works with the latest vvvv gamma 5.2. Get it [here](http://visualprogramming.net)
+Kairos works with the latest vvvv gamma 7.0. Get it [here](http://visualprogramming.net)
 
 ## Installing
 
