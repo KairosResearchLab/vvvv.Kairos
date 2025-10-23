@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="IUMRpqDUaolOVC1keWX5yF" LanguageVersion="2024.6.7-0136-ga34ff89f71" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="IUMRpqDUaolOVC1keWX5yF" LanguageVersion="2025.7.0" Version="0.128">
   <Patch Id="F7bnzPLW06JPZzJNwudf2b">
     <Canvas Id="Bir0z0GB6wqMBKzMwb1Y5m" DefaultCategory="HDE" CanvasType="FullCategory">
       <!--
@@ -273,7 +273,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VoEE97U1FDGNNN9soH0bDB" Comment="" Bounds="97,1091,119,15" ShowValueBox="true" isIOBox="true" Value="Control">
+          <Pad Id="VoEE97U1FDGNNN9soH0bDB" Comment="" Bounds="97,1091,120,15" ShowValueBox="true" isIOBox="true" Value="Control">
             <p:TypeAnnotation LastCategoryFullName="IO.Keyboard" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Keys" />
             </p:TypeAnnotation>
@@ -287,7 +287,7 @@
             <Pin Id="AombCLgGjqePkCqoeKw38F" Name="Input 2" Kind="InputPin" />
             <Pin Id="Be6T3WKSvtdNX7ATmeCRSW" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="Hl8BDzE2cvGLlXmsCrSACd" Comment="" Bounds="117,1111,119,15" ShowValueBox="true" isIOBox="true" Value="F4">
+          <Pad Id="Hl8BDzE2cvGLlXmsCrSACd" Comment="" Bounds="117,1111,120,15" ShowValueBox="true" isIOBox="true" Value="F7">
             <p:TypeAnnotation LastCategoryFullName="IO.Keyboard" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Keys" />
             </p:TypeAnnotation>
@@ -306,6 +306,7 @@
             <Pin Id="UtvT4ipdyCdLWgvHV1Ac6I" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="KS4NCZWfGL4PR7iGPRffAn" Name="Messages" Kind="InputPin" />
             <Pin Id="RV2DOx2w5GtMKMQDKOvRl7" Name="Reset" Kind="InputPin" />
+            <Pin Id="Mfa4FKiEVH6QGKSf1kCkHL" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="HhciO0DgLckLZGiR8LFscZ" Name="Result" Kind="OutputPin" />
             <Patch Id="NXef6STEaQrQVpNkjho46M" ManuallySortedPins="true">
               <Patch Id="FBGQM0edjmML2mN6An9xZ2" Name="Create" ManuallySortedPins="true" />
@@ -642,6 +643,8 @@
                 </p:NodeReference>
                 <Pin Id="G0FpxwZFdsIOy9obMofOsq" Name="Window Context" Kind="InputPin" />
                 <Pin Id="UobnRg8zqwfMSSikS53Wtq" Name="Show Hint" Kind="InputPin" DefaultValue="DockBottom" />
+                <Pin Id="MrukuWEW5twQHr79siSfDx" Name="Location" Kind="InputPin" />
+                <Pin Id="H8cS6jIyxSbQUmzj0qp2oT" Name="Size" Kind="InputPin" />
                 <Pin Id="FlDbDdkUDxjObDJUydK48c" Name="Input" Kind="InputPin" />
                 <Pin Id="Mz0lCSJEsOBP46wbi00zSG" Name="Name" Kind="InputPin" />
                 <Pin Id="KyaHAvmE4SpQRgSERLDXPJ" Name="Color" Kind="InputPin" />
@@ -698,8 +701,9 @@
             <Pin Id="T9dTNqDLiSJOwTHYEThFqQ" Name="Force" Kind="InputPin" DefaultValue="False" />
           </Node>
           <Node Bounds="606,34,62,19" Id="NAvUXEEKKD8QZYpPmbUjxx">
-            <p:NodeReference LastCategoryFullName="GlobalChannelsCommand" LastDependency="VL.CoreLib.HDE.vl">
+            <p:NodeReference LastCategoryFullName="HDE" LastDependency="VL.Kairos.HDE.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="HDE" NeedsToBeDirectParent="true" />
               <Choice Kind="ProcessAppFlag" Name="ActiveApp" />
             </p:NodeReference>
             <Pin Id="Jx7fDiaj35aLhiknj0kg4D" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -823,10 +827,10 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RZ1cz496dpgNj0r1GJdwKs" Location="VL.HDE" IsFriend="true" Version="2024.6.7-0136-ga34ff89f71" />
-  <NugetDependency Id="IdDPloCqQavPJlhM5jY3Lb" Location="VL.Skia" Version="2024.6.7-0136-ga34ff89f71" />
-  <NugetDependency Id="U4rnJ58Je0dMe7sTAiWUhv" Location="VL.CoreLib.Windows" Version="2024.6.7-0136-ga34ff89f71" />
+  <NugetDependency Id="RZ1cz496dpgNj0r1GJdwKs" Location="VL.HDE" IsFriend="true" Version="2025.7.0" />
+  <NugetDependency Id="IdDPloCqQavPJlhM5jY3Lb" Location="VL.Skia" Version="2025.7.0" />
+  <NugetDependency Id="U4rnJ58Je0dMe7sTAiWUhv" Location="VL.CoreLib.Windows" Version="2025.7.0" />
   <NugetDependency Id="VAJIFhbeQlyOXuZ9ClMkq1" Location="VL.Kairos" IsFriend="true" Version="0.0.0" />
-  <NugetDependency Id="LO6F2ERqcrvLSBjon9jVlC" Location="VL.ImGui.Skia" Version="2024.6.7-0136-ga34ff89f71" />
-  <NugetDependency Id="Ibh9LC70XHuPxWxeGsosvF" Location="VL.CoreLib" IsFriend="true" Version="2024.6.7-0136-ga34ff89f71" />
+  <NugetDependency Id="LO6F2ERqcrvLSBjon9jVlC" Location="VL.ImGui.Skia" Version="2025.7.0" />
+  <NugetDependency Id="Ibh9LC70XHuPxWxeGsosvF" Location="VL.CoreLib" IsFriend="true" Version="2025.7.0" />
 </Document>

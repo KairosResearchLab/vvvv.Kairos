@@ -10,7 +10,7 @@ namespace Kairos.Utils
     public enum MappingType
     {
         Float, Clamp, Mirror, Wrap
-    }
+    };
 }
 
 namespace Kairos.Runtime
@@ -18,12 +18,11 @@ namespace Kairos.Runtime
     public enum FallbackOption
     {
         Background, Latest
-    }
+    };
 
     public enum TrackItemType
     {
         ConstantValue, LiveValue, Layer
-    }
-
+    };
 }
 
